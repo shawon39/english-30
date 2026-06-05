@@ -1,0 +1,819 @@
+{
+  "schemaVersion": "2.0",
+  "day": 6,
+  "theme": "Future: will / going to / present continuous",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "will = an instant decision or a prediction. going to = a plan/intention already decided, or a prediction from present evidence. Present continuous = a fixed arrangement with a time or place.",
+  "rule_bn": "তাৎক্ষণিক সিদ্ধান্ত/ভবিষ্যদ্বাণী → will; আগে থেকে ঠিক করা পরিকল্পনা → going to; নির্দিষ্ট সময়সহ পাকা অ্যাপয়েন্টমেন্ট → present continuous।",
+  "sessions": [
+    {
+      "id": "d06s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d06s1i1",
+          "type": "error-find",
+          "prompt_en": "The build failed again — fine, I am going to restart the pipeline",
+          "tokens": [
+            "The",
+            "build",
+            "failed",
+            "again",
+            "—",
+            "fine,",
+            "I",
+            "am going to",
+            "restart",
+            "the",
+            "pipeline"
+          ],
+          "error_index": 7,
+          "options": [
+            "will",
+            "am restarting",
+            "restart"
+          ],
+          "answer": "will",
+          "explain_en": "A decision made at the moment of speaking takes 'will', not the pre-planned 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i2",
+          "type": "error-find",
+          "prompt_en": "We will migrate the Salesforce org to the new API version next quarter; it's already approved",
+          "tokens": [
+            "We",
+            "will",
+            "migrate",
+            "the",
+            "Salesforce",
+            "org",
+            "to",
+            "the",
+            "new",
+            "API",
+            "version",
+            "next",
+            "quarter;",
+            "it's",
+            "already",
+            "approved"
+          ],
+          "error_index": 1,
+          "options": [
+            "are going to",
+            "would",
+            "are migrate"
+          ],
+          "answer": "are going to",
+          "explain_en": "An already-approved plan uses 'going to', while 'will' signals a spontaneous decision.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i3",
+          "type": "error-find",
+          "prompt_en": "I will meet the client at 3 p.m. tomorrow, it's in my calendar",
+          "tokens": [
+            "I",
+            "will meet",
+            "the",
+            "client",
+            "at",
+            "3",
+            "p.m.",
+            "tomorrow,",
+            "it's",
+            "in",
+            "my",
+            "calendar"
+          ],
+          "error_index": 1,
+          "options": [
+            "am meeting",
+            "will meet",
+            "would meet"
+          ],
+          "answer": "am meeting",
+          "explain_en": "A fixed arrangement with a set time uses present continuous 'am meeting', not 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i4",
+          "type": "error-find",
+          "prompt_en": "Look at the memory graph — this service will crash any second",
+          "tokens": [
+            "Look",
+            "at",
+            "the",
+            "memory",
+            "graph",
+            "—",
+            "this",
+            "service",
+            "will",
+            "crash",
+            "any",
+            "second"
+          ],
+          "error_index": 8,
+          "options": [
+            "is going to",
+            "is",
+            "would"
+          ],
+          "answer": "is going to",
+          "explain_en": "A prediction based on present evidence you can see uses 'going to', not 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i5",
+          "type": "error-find",
+          "prompt_en": "That deploy looks stuck — don't worry, I am going to help you",
+          "tokens": [
+            "That",
+            "deploy",
+            "looks",
+            "stuck",
+            "—",
+            "don't",
+            "worry,",
+            "I",
+            "am going to",
+            "help",
+            "you"
+          ],
+          "error_index": 8,
+          "options": [
+            "will",
+            "am helping",
+            "help"
+          ],
+          "answer": "will",
+          "explain_en": "An offer decided at the moment of speaking uses 'will', not 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i6",
+          "type": "error-find",
+          "prompt_en": "After the release, I will learn Apex testing properly; I've wanted to for months",
+          "tokens": [
+            "After",
+            "the",
+            "release,",
+            "I",
+            "will",
+            "learn",
+            "Apex",
+            "testing",
+            "properly;",
+            "I've",
+            "wanted",
+            "to",
+            "for",
+            "months"
+          ],
+          "error_index": 4,
+          "options": [
+            "am going to",
+            "would",
+            "am learn"
+          ],
+          "answer": "am going to",
+          "explain_en": "A pre-existing intention uses 'going to', whereas 'will' marks an on-the-spot choice.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i7",
+          "type": "error-find",
+          "prompt_en": "The team is going to fly to Dublin on Monday; the tickets are booked",
+          "tokens": [
+            "The",
+            "team",
+            "is going to fly",
+            "to",
+            "Dublin",
+            "on",
+            "Monday;",
+            "the",
+            "tickets",
+            "are",
+            "booked"
+          ],
+          "error_index": 2,
+          "options": [
+            "is flying",
+            "flies",
+            "flew"
+          ],
+          "answer": "is flying",
+          "explain_en": "A booked arrangement with a day uses present continuous ('is flying'), not 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i8",
+          "type": "error-find",
+          "prompt_en": "I think the new feature is going to probably ship late",
+          "tokens": [
+            "I",
+            "think",
+            "the",
+            "new",
+            "feature",
+            "is going to",
+            "probably",
+            "ship",
+            "late"
+          ],
+          "error_index": 5,
+          "options": [
+            "will",
+            "ships",
+            "is shipping"
+          ],
+          "answer": "will",
+          "explain_en": "A general prediction with 'I think' and 'probably' naturally takes 'will', not 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i9",
+          "type": "error-find",
+          "prompt_en": "You raised a good point — I promise I am going to review your code tonight",
+          "tokens": [
+            "You",
+            "raised",
+            "a",
+            "good",
+            "point",
+            "—",
+            "I",
+            "promise",
+            "I",
+            "am going to",
+            "review",
+            "your",
+            "code",
+            "tonight"
+          ],
+          "error_index": 9,
+          "options": [
+            "will",
+            "am reviewing",
+            "review"
+          ],
+          "answer": "will",
+          "explain_en": "A promise made at the moment of speaking uses 'will', not 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s1i10",
+          "type": "error-find",
+          "prompt_en": "She is going to give her demo at 10 tomorrow; the room is reserved",
+          "tokens": [
+            "She",
+            "is going to give",
+            "her",
+            "demo",
+            "at",
+            "10",
+            "tomorrow;",
+            "the",
+            "room",
+            "is",
+            "reserved"
+          ],
+          "error_index": 1,
+          "options": [
+            "is giving",
+            "gives",
+            "gave"
+          ],
+          "answer": "is giving",
+          "explain_en": "A reserved appointment with a set time uses present continuous ('is giving'), not 'going to'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d06s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d06s2i1",
+          "type": "mcq",
+          "prompt_en": "\"The build just failed.\" \"Don't worry, I ___ fix it right now.\"",
+          "options": [
+            "will",
+            "am going to",
+            "am fixing",
+            "fix"
+          ],
+          "answer": "will",
+          "explain_en": "'will' = an instant decision made at the moment of speaking, reacting to the failed build.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i2",
+          "type": "mcq",
+          "prompt_en": "I ___ learn Apex this quarter; I've already signed up for the Trailhead course.",
+          "options": [
+            "am going to",
+            "will",
+            "am learning",
+            "learn"
+          ],
+          "answer": "am going to",
+          "explain_en": "'going to' = a plan/intention already decided before speaking (the sign-up shows it).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i3",
+          "type": "mcq",
+          "prompt_en": "We ___ the new feature to production at 9 a.m. tomorrow; the release is scheduled.",
+          "options": [
+            "are deploying",
+            "will deploy",
+            "deploy",
+            "will be deploying"
+          ],
+          "answer": "are deploying",
+          "explain_en": "Present continuous = a fixed arrangement with a set time (9 a.m. tomorrow).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i4",
+          "type": "mcq",
+          "prompt_en": "Look at all these failing tests — this code ___ pass code review.",
+          "options": [
+            "isn't going to",
+            "won't be",
+            "isn't",
+            "doesn't"
+          ],
+          "answer": "isn't going to",
+          "explain_en": "'going to' = a prediction based on present evidence (the failing tests you can see now).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i5",
+          "type": "mcq",
+          "prompt_en": "\"Who can demo the LWC?\" \"I ___ do it.\"",
+          "options": [
+            "will",
+            "am going to",
+            "am doing",
+            "do"
+          ],
+          "answer": "will",
+          "explain_en": "'will' = an instant decision to volunteer, made right now in response.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i6",
+          "type": "fill-bank",
+          "prompt_en": "By 2030, AI ___ probably write most of our boilerplate code.",
+          "options": [
+            "will",
+            "going to",
+            "writes"
+          ],
+          "answer": "will",
+          "explain_en": "'will' is used for a general future prediction not based on present evidence.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i7",
+          "type": "fill-bank",
+          "prompt_en": "I ___ the architects at 3 p.m. — the meeting is already on my calendar.",
+          "options": [
+            "am meeting",
+            "will meeting",
+            "meet"
+          ],
+          "answer": "am meeting",
+          "explain_en": "Present continuous = a fixed arrangement with a definite time (3 p.m.).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i8",
+          "type": "fill-bank",
+          "prompt_en": "She has decided she ___ apply for the senior developer role next month.",
+          "options": [
+            "is going to",
+            "will applies",
+            "applies"
+          ],
+          "answer": "is going to",
+          "explain_en": "'going to' = an intention already decided (\"has decided\") before speaking.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i9",
+          "type": "fill-bank",
+          "prompt_en": "The deploy log is full of red errors — this release ___ go smoothly.",
+          "options": [
+            "isn't going to",
+            "won't be",
+            "isn't"
+          ],
+          "answer": "isn't going to",
+          "explain_en": "'going to' = a prediction from present evidence (the red errors in the log now).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s2i10",
+          "type": "fill-bank",
+          "prompt_en": "\"My laptop just crashed!\" \"Okay, I ___ lend you mine.\"",
+          "options": [
+            "will",
+            "am going to",
+            "lend"
+          ],
+          "answer": "will",
+          "explain_en": "'will' = a spontaneous, instant decision made in reaction to the crash.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d06s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d06s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I",
+            "back",
+            "you",
+            "right",
+            "will",
+            "call",
+            "."
+          ],
+          "answer": "I will call you right back .",
+          "explain_en": "Instant decision made at the moment of speaking, so 'will' fits here.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "We",
+            "are",
+            "the",
+            "API",
+            "next",
+            "going",
+            "to",
+            "sprint",
+            "refactor",
+            "."
+          ],
+          "answer": "We are going to refactor the API next sprint .",
+          "explain_en": "'going to' marks a plan already decided before speaking.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "The",
+            "deploy",
+            "is",
+            "at",
+            "starting",
+            "9",
+            "tomorrow",
+            "."
+          ],
+          "answer": "The deploy is starting at 9 tomorrow .",
+          "explain_en": "Present continuous shows a fixed arrangement with a set time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "Look",
+            "at",
+            "the",
+            "logs",
+            "the",
+            "job",
+            "fail",
+            "is",
+            "going",
+            "to",
+            ",",
+            "."
+          ],
+          "answer": "Look at the logs , the job is going to fail .",
+          "explain_en": "'going to' is a prediction based on present evidence (the logs).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I",
+            "think",
+            "this",
+            "release",
+            "smooth",
+            "be",
+            "will",
+            "."
+          ],
+          "answer": "I think this release will be smooth .",
+          "explain_en": "After 'I think', use 'will' for a prediction or opinion.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I'm",
+            "the",
+            "client",
+            "meeting",
+            "on",
+            "Friday",
+            "morning",
+            "."
+          ],
+          "answer": "I'm meeting the client on Friday morning .",
+          "explain_en": "Present continuous fits a fixed arrangement with a day and time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I",
+            "going",
+            "am",
+            "to",
+            "for",
+            "study",
+            "the",
+            "Salesforce",
+            "exam",
+            "weekend",
+            "this",
+            "."
+          ],
+          "answer": "I am going to study for the Salesforce exam this weekend .",
+          "explain_en": "'going to' shows an intention you already decided on.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "Don't",
+            "worry",
+            "I",
+            "the",
+            "bug",
+            "fix",
+            "now",
+            "will",
+            ",",
+            "."
+          ],
+          "answer": "Don't worry , I will fix the bug now .",
+          "explain_en": "A willing decision made right now takes 'will', not 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i9",
+          "type": "speak",
+          "prompt_en": "Say a sentence about a plan you already decided for your career using 'going to'.",
+          "model_en": "I'm going to apply for a senior Salesforce developer role next month.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s3i10",
+          "type": "speak",
+          "prompt_en": "Say a sentence about a fixed work arrangement for tomorrow using the present continuous.",
+          "model_en": "I'm presenting the demo to the team at 10 tomorrow.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d06s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d06s4i1",
+          "type": "error-find",
+          "prompt_en": "Look, the deploy bar is red — the build will fail",
+          "tokens": [
+            "Look,",
+            "the",
+            "deploy",
+            "bar",
+            "is",
+            "red",
+            "—",
+            "the",
+            "build",
+            "will",
+            "fail"
+          ],
+          "error_index": 9,
+          "options": [
+            "will",
+            "is going to",
+            "fails"
+          ],
+          "answer": "is going to",
+          "explain_en": "Present evidence (the red bar) signals a prediction, so use 'going to', not 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i2",
+          "type": "error-find",
+          "prompt_en": "I have decided it: I will refactor this Apex class tomorrow",
+          "tokens": [
+            "I",
+            "have",
+            "decided",
+            "it:",
+            "I",
+            "will",
+            "refactor",
+            "this",
+            "Apex",
+            "class",
+            "tomorrow"
+          ],
+          "error_index": 5,
+          "options": [
+            "am going to",
+            "will",
+            "refactor"
+          ],
+          "answer": "am going to",
+          "explain_en": "A decision already made before speaking takes 'going to', not the instant-decision 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i3",
+          "type": "error-find",
+          "prompt_en": "The phone is ringing — that's the client. I am going to take it",
+          "tokens": [
+            "The",
+            "phone",
+            "is",
+            "ringing",
+            "—",
+            "that's",
+            "the",
+            "client.",
+            "I",
+            "am going to",
+            "take",
+            "it"
+          ],
+          "error_index": 9,
+          "options": [
+            "will",
+            "am going to",
+            "took"
+          ],
+          "answer": "will",
+          "explain_en": "An instant decision made at the moment of speaking uses 'will', not the pre-planned 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i4",
+          "type": "mcq",
+          "prompt_en": "My flight to the conference ___ at 6 a.m. tomorrow, so I packed already.",
+          "options": [
+            "left",
+            "is leaving",
+            "will leave",
+            "is going to leave"
+          ],
+          "answer": "is leaving",
+          "explain_en": "A fixed travel arrangement with a set time uses present continuous ('is leaving').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i5",
+          "type": "mcq",
+          "prompt_en": "Don't worry about the merge conflict — I ___ help you resolve it.",
+          "options": [
+            "will",
+            "am",
+            "going to",
+            "am being"
+          ],
+          "answer": "will",
+          "explain_en": "A spontaneous offer decided right now uses 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i6",
+          "type": "mcq",
+          "prompt_en": "Look at those error logs piling up — the integration ___ break soon.",
+          "options": [
+            "is going to",
+            "is",
+            "leaves",
+            "would"
+          ],
+          "answer": "is going to",
+          "explain_en": "A prediction based on present evidence (the logs) uses 'going to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i7",
+          "type": "fill-bank",
+          "prompt_en": "We ___ the new release at 3 p.m. on Friday; the calendar invite is sent.",
+          "options": [
+            "are demoing",
+            "will demo",
+            "demo"
+          ],
+          "answer": "are demoing",
+          "explain_en": "A fixed arrangement with a set time and place uses present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i8",
+          "type": "fill-bank",
+          "prompt_en": "I think our team ___ win the hackathon next month.",
+          "options": [
+            "will",
+            "is",
+            "am going"
+          ],
+          "answer": "will",
+          "explain_en": "A prediction or opinion with no present evidence uses 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i9",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "going",
+            "I",
+            "to",
+            "am",
+            "learn",
+            "Salesforce",
+            "Flow",
+            "this",
+            "weekend",
+            "."
+          ],
+          "answer": "I am going to learn Salesforce Flow this weekend .",
+          "explain_en": "A pre-made plan uses 'be going to' + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d06s4i10",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "the",
+            "I",
+            "am",
+            "recruiter",
+            "meeting",
+            "on",
+            "Monday",
+            "morning",
+            "."
+          ],
+          "answer": "I am meeting the recruiter on Monday morning .",
+          "explain_en": "A fixed personal arrangement with a time uses present continuous.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

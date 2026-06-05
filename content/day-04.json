@@ -1,0 +1,616 @@
+{
+  "schemaVersion": "2.0",
+  "day": 4,
+  "theme": "Past Simple vs Past Continuous",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "Past continuous (was/were + -ing) = an action in progress in the past, often the background. Past simple = a completed action, often the one that interrupts.",
+  "rule_bn": "অতীতে চলমান/পটভূমির কাজ → past continuous; সম্পন্ন বা মাঝে ঘটে যাওয়া কাজ → past simple।",
+  "sessions": [
+    {
+      "id": "d04s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d04s1i1",
+          "type": "error-find",
+          "prompt_en": "While I was reviewing the pull request, the build was failing",
+          "tokens": [
+            "While",
+            "I",
+            "was",
+            "reviewing",
+            "the",
+            "pull",
+            "request,",
+            "the",
+            "build",
+            "was failing"
+          ],
+          "error_index": 9,
+          "options": [
+            "failed",
+            "was failing",
+            "is failing"
+          ],
+          "answer": "failed",
+          "explain_en": "The short interrupting event (the build failing) takes past simple, while the ongoing background action stays in past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i2",
+          "type": "error-find",
+          "prompt_en": "I deployed the patch while the team tested the old release",
+          "tokens": [
+            "I",
+            "deployed",
+            "the",
+            "patch",
+            "while",
+            "the",
+            "team",
+            "tested",
+            "the",
+            "old",
+            "release"
+          ],
+          "error_index": 7,
+          "options": [
+            "was testing",
+            "tested",
+            "tests"
+          ],
+          "answer": "was testing",
+          "explain_en": "The background action in progress during the deploy needs past continuous, not past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i3",
+          "type": "error-find",
+          "prompt_en": "When the alert fired, I debugged the Apex trigger",
+          "tokens": [
+            "When",
+            "the",
+            "alert",
+            "fired,",
+            "I",
+            "debugged",
+            "the",
+            "Apex",
+            "trigger"
+          ],
+          "error_index": 5,
+          "options": [
+            "was debugging",
+            "debugged",
+            "debug"
+          ],
+          "answer": "was debugging",
+          "explain_en": "An action already in progress when the alert interrupted it takes past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i4",
+          "type": "error-find",
+          "prompt_en": "Yesterday morning I was finishing the report when the standup was starting",
+          "tokens": [
+            "Yesterday",
+            "morning",
+            "I",
+            "was",
+            "finishing",
+            "the",
+            "report",
+            "when",
+            "the",
+            "standup",
+            "was starting"
+          ],
+          "error_index": 10,
+          "options": [
+            "started",
+            "was starting",
+            "starts"
+          ],
+          "answer": "started",
+          "explain_en": "The standup is a single completed event that interrupts the work, so it takes past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i5",
+          "type": "error-find",
+          "prompt_en": "She was writing the test cases when her laptop was freezing",
+          "tokens": [
+            "She",
+            "was",
+            "writing",
+            "the",
+            "test",
+            "cases",
+            "when",
+            "her",
+            "laptop",
+            "was freezing"
+          ],
+          "error_index": 9,
+          "options": [
+            "froze",
+            "was freezing",
+            "freezes"
+          ],
+          "answer": "froze",
+          "explain_en": "The sudden interrupting event (the laptop freezing) is a completed action in past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i6",
+          "type": "error-find",
+          "prompt_en": "I merged the branch while the pipeline ran the tests",
+          "tokens": [
+            "I",
+            "merged",
+            "the",
+            "branch",
+            "while",
+            "the",
+            "pipeline",
+            "ran",
+            "the",
+            "tests"
+          ],
+          "error_index": 7,
+          "options": [
+            "was running",
+            "ran",
+            "runs"
+          ],
+          "answer": "was running",
+          "explain_en": "An ongoing process forming the background during the merge needs past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i7",
+          "type": "error-find",
+          "prompt_en": "The client called while we deployed the release to production",
+          "tokens": [
+            "The",
+            "client",
+            "called",
+            "while",
+            "we",
+            "deployed",
+            "the",
+            "release",
+            "to",
+            "production"
+          ],
+          "error_index": 5,
+          "options": [
+            "were deploying",
+            "deployed",
+            "deploy"
+          ],
+          "answer": "were deploying",
+          "explain_en": "The deploy was in progress when the call interrupted it, so it takes past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i8",
+          "type": "error-find",
+          "prompt_en": "As I was walking to the office, I was getting the offer call",
+          "tokens": [
+            "As",
+            "I",
+            "was",
+            "walking",
+            "to",
+            "the",
+            "office,",
+            "I",
+            "was getting",
+            "the",
+            "offer",
+            "call"
+          ],
+          "error_index": 8,
+          "options": [
+            "got",
+            "was getting",
+            "get"
+          ],
+          "answer": "got",
+          "explain_en": "The offer call is a single completed event that interrupts the walking, so it takes past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i9",
+          "type": "error-find",
+          "prompt_en": "I fixed the validation rule while the data loaded",
+          "tokens": [
+            "I",
+            "fixed",
+            "the",
+            "validation",
+            "rule",
+            "while",
+            "the",
+            "data",
+            "loaded"
+          ],
+          "error_index": 8,
+          "options": [
+            "was loading",
+            "loaded",
+            "loads"
+          ],
+          "answer": "was loading",
+          "explain_en": "The data loading is the ongoing background action, so it needs past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s1i10",
+          "type": "error-find",
+          "prompt_en": "When the demo began, the sandbox synced the metadata",
+          "tokens": [
+            "When",
+            "the",
+            "demo",
+            "began,",
+            "the",
+            "sandbox",
+            "synced",
+            "the",
+            "metadata"
+          ],
+          "error_index": 6,
+          "options": [
+            "was syncing",
+            "synced",
+            "syncs"
+          ],
+          "answer": "was syncing",
+          "explain_en": "The sandbox was in the middle of syncing when the demo began, so it takes past continuous.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d04s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d04s2i1",
+          "type": "mcq",
+          "prompt_en": "While the deployment ___, the build pipeline suddenly failed.",
+          "options": [
+            "was running",
+            "ran",
+            "runs",
+            "has run"
+          ],
+          "answer": "was running",
+          "explain_en": "Past continuous (was running) sets the ongoing background; the past simple 'failed' interrupts it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i2",
+          "type": "mcq",
+          "prompt_en": "I ___ the bug report when my manager called me.",
+          "options": [
+            "was reading",
+            "read",
+            "had read",
+            "reads"
+          ],
+          "answer": "was reading",
+          "explain_en": "An action in progress (was reading) is interrupted by a completed action (called).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i3",
+          "type": "mcq",
+          "prompt_en": "When the user clicked Save, the page ___ instantly.",
+          "options": [
+            "crashed",
+            "was crashing",
+            "crashes",
+            "is crashing"
+          ],
+          "answer": "crashed",
+          "explain_en": "Past simple 'crashed' is the single completed action triggered at the moment of the click.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i4",
+          "type": "mcq",
+          "prompt_en": "She ___ for a Salesforce job online when the recruiter suddenly emailed her.",
+          "options": [
+            "was searching",
+            "searched",
+            "searches",
+            "has searched"
+          ],
+          "answer": "was searching",
+          "explain_en": "Past continuous (was searching) is the ongoing background action interrupted by the completed 'emailed'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i5",
+          "type": "mcq",
+          "prompt_en": "We ___ the new Apex class yesterday and then merged it.",
+          "options": [
+            "tested",
+            "were testing",
+            "test",
+            "are testing"
+          ],
+          "answer": "tested",
+          "explain_en": "Two completed actions in sequence ('tested' then 'merged') both take the past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i6",
+          "type": "fill-bank",
+          "prompt_en": "While I ___ lunch, my teammate fixed the broken test.",
+          "options": [
+            "was having",
+            "had",
+            "have"
+          ],
+          "answer": "was having",
+          "explain_en": "Past continuous (was having) is the background action interrupted by the completed 'fixed'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i7",
+          "type": "fill-bank",
+          "prompt_en": "The server ___ down at exactly 3 p.m. during the demo.",
+          "options": [
+            "went",
+            "was going",
+            "goes"
+          ],
+          "answer": "went",
+          "explain_en": "A sudden completed event at a precise time takes the past simple 'went'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i8",
+          "type": "fill-bank",
+          "prompt_en": "They ___ a meeting when the fire alarm rang.",
+          "options": [
+            "were having",
+            "had",
+            "have"
+          ],
+          "answer": "were having",
+          "explain_en": "The ongoing meeting (were having) is interrupted by the completed action 'rang'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i9",
+          "type": "fill-bank",
+          "prompt_en": "I ___ my laptop when the power went out.",
+          "options": [
+            "was using",
+            "used",
+            "use"
+          ],
+          "answer": "was using",
+          "explain_en": "Past continuous (was using) describes the action in progress that the outage interrupted.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s2i10",
+          "type": "fill-bank",
+          "prompt_en": "Last night he ___ the documentation and then went to bed.",
+          "options": [
+            "finished",
+            "was finishing",
+            "finishes"
+          ],
+          "answer": "finished",
+          "explain_en": "A completed action followed by another ('then went') uses the past simple 'finished'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d04s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d04s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I",
+            "was",
+            "deploying",
+            "the",
+            "change",
+            "set",
+            "when",
+            "the",
+            "org",
+            "suddenly",
+            "crashed",
+            "."
+          ],
+          "answer": "I was deploying the change set when the org suddenly crashed .",
+          "explain_en": "Past continuous (was deploying) is the background action in progress; past simple (crashed) is the completed interruption.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "While",
+            "she",
+            "was",
+            "reviewing",
+            "my",
+            "pull",
+            "request",
+            ",",
+            "I",
+            "fixed",
+            "another",
+            "bug",
+            "."
+          ],
+          "answer": "While she was reviewing my pull request , I fixed another bug .",
+          "explain_en": "'While' marks the longer ongoing action (was reviewing); the short completed action takes past simple (fixed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "The",
+            "tests",
+            "were",
+            "running",
+            "while",
+            "we",
+            "discussed",
+            "the",
+            "new",
+            "feature",
+            "."
+          ],
+          "answer": "The tests were running while we discussed the new feature .",
+          "explain_en": "Past continuous (were running) sets the ongoing background; past simple (discussed) is the action that happened during it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "He",
+            "was",
+            "writing",
+            "the",
+            "Apex",
+            "trigger",
+            "when",
+            "his",
+            "laptop",
+            "died",
+            "."
+          ],
+          "answer": "He was writing the Apex trigger when his laptop died .",
+          "explain_en": "The in-progress action uses was writing; the sudden completed event interrupting it uses past simple (died).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "When",
+            "the",
+            "recruiter",
+            "called",
+            ",",
+            "I",
+            "was",
+            "cooking",
+            "dinner",
+            "."
+          ],
+          "answer": "When the recruiter called , I was cooking dinner .",
+          "explain_en": "The short event (called) is past simple; the longer background activity already in progress is past continuous (was cooking).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "We",
+            "were",
+            "debugging",
+            "the",
+            "flow",
+            "when",
+            "the",
+            "demo",
+            "started",
+            "."
+          ],
+          "answer": "We were debugging the flow when the demo started .",
+          "explain_en": "Past continuous (were debugging) is the ongoing action; past simple (started) is the completed point that interrupts it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "solved",
+            "the",
+            "issue",
+            "while",
+            "the",
+            "build",
+            "was",
+            "compiling",
+            "."
+          ],
+          "answer": "She solved the issue while the build was compiling .",
+          "explain_en": "The completed action takes past simple (solved); the parallel ongoing process takes past continuous (was compiling).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I",
+            "was",
+            "studying",
+            "for",
+            "the",
+            "certification",
+            "when",
+            "the",
+            "power",
+            "went",
+            "out",
+            "."
+          ],
+          "answer": "I was studying for the certification when the power went out .",
+          "explain_en": "Was studying is the ongoing background; the sudden completed interruption uses past simple (went out).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i9",
+          "type": "speak",
+          "prompt_en": "Say a sentence about what you were doing yesterday evening when something suddenly interrupted you. Use past continuous for the background action and past simple for the interruption.",
+          "model_en": "I was testing the integration yesterday evening when my manager messaged me about an urgent ticket.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d04s3i10",
+          "type": "speak",
+          "prompt_en": "Say a sentence describing two past actions: one that was in progress and one short action that happened during it. Use 'while' with the past continuous.",
+          "model_en": "While I was preparing for the interview, the recruiter sent me the final schedule.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

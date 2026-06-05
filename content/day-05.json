@@ -1,0 +1,633 @@
+{
+  "schemaVersion": "2.0",
+  "day": 5,
+  "theme": "Past Perfect (sequencing)",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "Past perfect (had + past participle) = the earlier of two past actions. Past simple = the later action. Use past perfect to show what had already happened before another past moment.",
+  "rule_bn": "দুটি অতীত কাজের মধ্যে আগেরটি → past perfect (had + V3); পরেরটি → past simple।",
+  "sessions": [
+    {
+      "id": "d05s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d05s1i1",
+          "type": "error-find",
+          "prompt_en": "By the time I joined the team, they shipped the Salesforce app",
+          "tokens": [
+            "By",
+            "the",
+            "time",
+            "I",
+            "joined",
+            "the",
+            "team,",
+            "they",
+            "shipped",
+            "the",
+            "Salesforce",
+            "app"
+          ],
+          "error_index": 8,
+          "options": [
+            "had shipped",
+            "have shipped",
+            "shipping"
+          ],
+          "answer": "had shipped",
+          "explain_en": "The shipping happened before I joined, so the earlier past action takes past perfect 'had shipped'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i2",
+          "type": "error-find",
+          "prompt_en": "After we had fixed the bug, the customer had reopened the ticket",
+          "tokens": [
+            "After",
+            "we",
+            "had",
+            "fixed",
+            "the",
+            "bug,",
+            "the",
+            "customer",
+            "had reopened",
+            "the",
+            "ticket"
+          ],
+          "error_index": 8,
+          "options": [
+            "reopened",
+            "had reopen",
+            "reopening"
+          ],
+          "answer": "reopened",
+          "explain_en": "Only the earlier action ('had fixed') uses past perfect; the later action takes past simple 'reopened'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i3",
+          "type": "error-find",
+          "prompt_en": "By the time the demo started, she deployed the hotfix",
+          "tokens": [
+            "By",
+            "the",
+            "time",
+            "the",
+            "demo",
+            "started,",
+            "she",
+            "deployed",
+            "the",
+            "hotfix"
+          ],
+          "error_index": 7,
+          "options": [
+            "had deployed",
+            "have deployed",
+            "deploying"
+          ],
+          "answer": "had deployed",
+          "explain_en": "The deploy happened before the demo started, so the earlier action takes past perfect 'had deployed'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i4",
+          "type": "error-find",
+          "prompt_en": "When the manager called, I already finished the demo",
+          "tokens": [
+            "When",
+            "the",
+            "manager",
+            "called,",
+            "I",
+            "already finished",
+            "the",
+            "demo"
+          ],
+          "error_index": 5,
+          "options": [
+            "had already finished",
+            "have already finished",
+            "already finishing"
+          ],
+          "answer": "had already finished",
+          "explain_en": "Finishing the demo came before the call, so it takes past perfect 'had already finished'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i5",
+          "type": "error-find",
+          "prompt_en": "Before I learned Apex, I had never wrote a single line of code",
+          "tokens": [
+            "Before",
+            "I",
+            "learned",
+            "Apex,",
+            "I",
+            "had",
+            "never",
+            "wrote",
+            "a",
+            "single",
+            "line",
+            "of",
+            "code"
+          ],
+          "error_index": 7,
+          "options": [
+            "written",
+            "write",
+            "writing"
+          ],
+          "answer": "written",
+          "explain_en": "Past perfect needs the past participle, so 'had never wrote' becomes 'had never written'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i6",
+          "type": "error-find",
+          "prompt_en": "The build failed because someone has changed the config earlier",
+          "tokens": [
+            "The",
+            "build",
+            "failed",
+            "because",
+            "someone",
+            "has",
+            "changed",
+            "the",
+            "config",
+            "earlier"
+          ],
+          "error_index": 5,
+          "options": [
+            "had",
+            "have",
+            "was"
+          ],
+          "answer": "had",
+          "explain_en": "The change happened before the failure in the past, so use past perfect 'had changed', not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i7",
+          "type": "error-find",
+          "prompt_en": "Once she had merged the branch, the pipeline starting running",
+          "tokens": [
+            "Once",
+            "she",
+            "had",
+            "merged",
+            "the",
+            "branch,",
+            "the",
+            "pipeline",
+            "starting",
+            "running"
+          ],
+          "error_index": 8,
+          "options": [
+            "started",
+            "had started",
+            "had start"
+          ],
+          "answer": "started",
+          "explain_en": "The later action after the merge takes past simple 'started', not past perfect or a bare gerund.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i8",
+          "type": "error-find",
+          "prompt_en": "I realized that I forgotten to save the new report before the demo",
+          "tokens": [
+            "I",
+            "realized",
+            "that",
+            "I",
+            "forgotten",
+            "to",
+            "save",
+            "the",
+            "new",
+            "report",
+            "before",
+            "the",
+            "demo"
+          ],
+          "error_index": 4,
+          "options": [
+            "had forgotten",
+            "have forgotten",
+            "forgetting"
+          ],
+          "answer": "had forgotten",
+          "explain_en": "Forgetting happened before I realized it, so the earlier action needs past perfect 'had forgotten'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i9",
+          "type": "error-find",
+          "prompt_en": "After the server had crashed, the team had restarted it quickly",
+          "tokens": [
+            "After",
+            "the",
+            "server",
+            "had",
+            "crashed,",
+            "the",
+            "team",
+            "had restarted",
+            "it",
+            "quickly"
+          ],
+          "error_index": 7,
+          "options": [
+            "restarted",
+            "had restart",
+            "restarting"
+          ],
+          "answer": "restarted",
+          "explain_en": "Only the earlier action ('had crashed') uses past perfect; the later restart takes past simple 'restarted'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s1i10",
+          "type": "error-find",
+          "prompt_en": "By the time the meeting ended, we had agree on the new plan",
+          "tokens": [
+            "By",
+            "the",
+            "time",
+            "the",
+            "meeting",
+            "ended,",
+            "we",
+            "had",
+            "agree",
+            "on",
+            "the",
+            "new",
+            "plan"
+          ],
+          "error_index": 8,
+          "options": [
+            "agreed",
+            "agreeing",
+            "agree"
+          ],
+          "answer": "agreed",
+          "explain_en": "Past perfect needs the past participle, so 'had agree' becomes 'had agreed'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d05s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d05s2i1",
+          "type": "mcq",
+          "prompt_en": "By the time the demo started, the team ___ all the bugs.",
+          "options": [
+            "had fixed",
+            "fixed",
+            "fixes",
+            "has fixed"
+          ],
+          "answer": "had fixed",
+          "explain_en": "Past perfect (had fixed) marks the earlier action completed before the later past action (the demo started).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i2",
+          "type": "mcq",
+          "prompt_en": "When I opened the org, I realized someone ___ my validation rule.",
+          "options": [
+            "had changed",
+            "changed",
+            "changes",
+            "was changing"
+          ],
+          "answer": "had changed",
+          "explain_en": "The change happened before I opened the org, so the earlier action takes past perfect (had changed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i3",
+          "type": "mcq",
+          "prompt_en": "She deployed the fix only after she ___ it in the sandbox.",
+          "options": [
+            "had tested",
+            "tested",
+            "tests",
+            "has tested"
+          ],
+          "answer": "had tested",
+          "explain_en": "Testing came first, then deploying; the earlier action uses past perfect after 'after'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i4",
+          "type": "mcq",
+          "prompt_en": "The build failed because the developer ___ to commit the new file.",
+          "options": [
+            "had forgotten",
+            "forgot",
+            "forgets",
+            "has forgotten"
+          ],
+          "answer": "had forgotten",
+          "explain_en": "The forgetting happened before the build failed, so the earlier cause uses past perfect (had forgotten).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i5",
+          "type": "mcq",
+          "prompt_en": "By 2022, he ___ three Salesforce certifications.",
+          "options": [
+            "had earned",
+            "earned",
+            "earns",
+            "was earning"
+          ],
+          "answer": "had earned",
+          "explain_en": "'By 2022' sets a past point, and past perfect shows the earning was completed before it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i6",
+          "type": "fill-bank",
+          "prompt_en": "By the time anyone replied, the ticket ___ open for two weeks.",
+          "options": [
+            "had stayed",
+            "stayed",
+            "stays"
+          ],
+          "answer": "had stayed",
+          "explain_en": "The ticket stayed open before anyone replied, so the earlier action uses past perfect (had stayed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i7",
+          "type": "fill-bank",
+          "prompt_en": "By the time the meeting ended, I realized I ___ to share my screen the whole time.",
+          "options": [
+            "had forgotten",
+            "forgot",
+            "forget"
+          ],
+          "answer": "had forgotten",
+          "explain_en": "The forgetting started before I realized it, so past perfect (had forgotten) marks the earlier action.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i8",
+          "type": "fill-bank",
+          "prompt_en": "We couldn't merge the branch because she ___ already deleted it.",
+          "options": [
+            "had",
+            "has",
+            "was"
+          ],
+          "answer": "had",
+          "explain_en": "'Already' before another past action signals past perfect; 'had + deleted' shows the earlier action.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i9",
+          "type": "fill-bank",
+          "prompt_en": "By the time the manager arrived, the standup ___ finished.",
+          "options": [
+            "had",
+            "has",
+            "did"
+          ],
+          "answer": "had",
+          "explain_en": "The standup finished before the manager arrived, so the earlier action uses past perfect 'had finished'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s2i10",
+          "type": "fill-bank",
+          "prompt_en": "By the time QA started testing, the developers ___ the feature.",
+          "options": [
+            "had finished",
+            "finished",
+            "were finishing"
+          ],
+          "answer": "had finished",
+          "explain_en": "The feature was finished before QA started, so the earlier action takes past perfect: had finished.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d05s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d05s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "had",
+            "I",
+            "the",
+            "new",
+            "By",
+            "already",
+            "time",
+            "deployed",
+            "demo",
+            "flow",
+            ",",
+            "started",
+            "the",
+            "the",
+            "."
+          ],
+          "answer": "By the time the demo started , I had already deployed the new flow .",
+          "explain_en": "Past perfect (had deployed) marks the earlier action; past simple (started) marks the later one.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "written",
+            "test",
+            "She",
+            "the",
+            "before",
+            "class",
+            "pushed",
+            "she",
+            "had",
+            "the",
+            "code",
+            "."
+          ],
+          "answer": "She had written the test class before she pushed the code .",
+          "explain_en": "'Before' shows order: the earlier action takes past perfect (had written), the later takes past simple (pushed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "build",
+            "because",
+            "changed",
+            "someone",
+            "The",
+            "failed",
+            "had",
+            "the",
+            "API",
+            "version",
+            "."
+          ],
+          "answer": "The build failed because someone had changed the API version .",
+          "explain_en": "The change happened first (had changed), so it precedes the failure in past simple (failed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "I",
+            "the",
+            "When",
+            "joined",
+            "they",
+            "had",
+            "team",
+            ",",
+            "finished",
+            "the",
+            "migration",
+            "."
+          ],
+          "answer": "When I joined the team , they had finished the migration .",
+          "explain_en": "The migration was already complete (had finished) before the past-simple moment of joining.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "realized",
+            "he",
+            "He",
+            "forgotten",
+            "had",
+            "his",
+            "after",
+            "laptop",
+            "he",
+            "left",
+            "home",
+            "."
+          ],
+          "answer": "He realized he had forgotten his laptop after he left home .",
+          "explain_en": "The forgetting (had forgotten) happened before he later realized it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "the",
+            "customer",
+            "After",
+            "had",
+            "reported",
+            "the",
+            "bug",
+            ",",
+            "we",
+            "fixed",
+            "it",
+            "quickly",
+            "."
+          ],
+          "answer": "After the customer had reported the bug , we fixed it quickly .",
+          "explain_en": "After + past perfect (had reported) shows the report came first, then the past-simple fix.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "never",
+            "I",
+            "used",
+            "had",
+            "Apex",
+            "before",
+            "I",
+            "started",
+            "this",
+            "job",
+            "."
+          ],
+          "answer": "I had never used Apex before I started this job .",
+          "explain_en": "Past perfect with 'never...before' shows no prior experience up to the later past moment (started).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "went",
+            "release",
+            "The",
+            "smoothly",
+            "because",
+            "we",
+            "had",
+            "tested",
+            "everything",
+            "carefully",
+            "."
+          ],
+          "answer": "The release went smoothly because we had tested everything carefully .",
+          "explain_en": "The testing (had tested) was completed before the later past-simple release (went).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i9",
+          "type": "speak",
+          "prompt_en": "Say a sentence about something you had already finished before a meeting started yesterday.",
+          "model_en": "By the time the standup started, I had already merged my pull request.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d05s3i10",
+          "type": "speak",
+          "prompt_en": "Say a sentence using past perfect to explain why a deployment failed last week.",
+          "model_en": "The deployment failed because we hadn't updated the config file.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
