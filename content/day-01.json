@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 1,
+  "theme": "Present Simple vs Present Continuous",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "Present simple = habits, routines, and facts. Present continuous = happening right now or temporary.",
+  "rule_bn": "অভ্যাস/রুটিন/সত্য → present simple; এই মুহূর্তে ঘটছে → present continuous।",
+  "sessions": [
+    {
+      "id": "d01s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d01s1i1",
+          "type": "error-find",
+          "prompt_en": "She go to the office every day.",
+          "tokens": ["She", "go", "to", "the", "office", "every", "day"],
+          "error_index": 1,
+          "options": ["goes", "is going", "went"],
+          "answer": "goes",
+          "explain_en": "Habit → present simple; add -s for she/he/it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i2",
+          "type": "error-find",
+          "prompt_en": "He watch Netflix every evening.",
+          "tokens": ["He", "watch", "Netflix", "every", "evening"],
+          "error_index": 1,
+          "options": ["watches", "is watching", "watch"],
+          "answer": "watches",
+          "explain_en": "Routine → present simple; he/she/it + -s.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i3",
+          "type": "error-find",
+          "prompt_en": "They works from home on Fridays.",
+          "tokens": ["They", "works", "from", "home", "on", "Fridays"],
+          "error_index": 1,
+          "options": ["work", "working", "are work"],
+          "answer": "work",
+          "explain_en": "They → no -s in present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i4",
+          "type": "error-find",
+          "prompt_en": "Water boil at 100 degrees.",
+          "tokens": ["Water", "boil", "at", "100", "degrees"],
+          "error_index": 1,
+          "options": ["boils", "is boiling", "boiled"],
+          "answer": "boils",
+          "explain_en": "General fact → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i5",
+          "type": "error-find",
+          "prompt_en": "Right now she writes the release notes.",
+          "tokens": ["Right", "now", "she", "writes", "the", "release", "notes"],
+          "error_index": 3,
+          "options": ["is writing", "wrote", "writes"],
+          "answer": "is writing",
+          "explain_en": "Happening now → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i6",
+          "type": "error-find",
+          "prompt_en": "Listen, the server makes a strange noise.",
+          "tokens": ["Listen", "the", "server", "makes", "a", "strange", "noise"],
+          "error_index": 3,
+          "options": ["is making", "made", "makes"],
+          "answer": "is making",
+          "explain_en": "Action at this moment → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i7",
+          "type": "error-find",
+          "prompt_en": "The tests runs automatically every night.",
+          "tokens": ["The", "tests", "runs", "automatically", "every", "night"],
+          "error_index": 2,
+          "options": ["run", "are run", "running"],
+          "answer": "run",
+          "explain_en": "The tests (plural) → no -s.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i8",
+          "type": "error-find",
+          "prompt_en": "My code compile without errors.",
+          "tokens": ["My", "code", "compile", "without", "errors"],
+          "error_index": 2,
+          "options": ["compiles", "is compiling", "compiled"],
+          "answer": "compiles",
+          "explain_en": "It (the code) → add -s in present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i9",
+          "type": "error-find",
+          "prompt_en": "At the moment I debug the login flow.",
+          "tokens": ["At", "the", "moment", "I", "debug", "the", "login", "flow"],
+          "error_index": 4,
+          "options": ["am debugging", "debug", "debugged"],
+          "answer": "am debugging",
+          "explain_en": "At the moment → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s1i10",
+          "type": "error-find",
+          "prompt_en": "We deploy right now to production.",
+          "tokens": ["We", "deploy", "right", "now", "to", "production"],
+          "error_index": 1,
+          "options": ["are deploying", "deploy", "deployed"],
+          "answer": "are deploying",
+          "explain_en": "Right now → present continuous.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d01s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d01s2i1",
+          "type": "mcq",
+          "prompt_en": "She ___ to work by train every day.",
+          "options": ["goes", "is going", "go", "gone"],
+          "answer": "goes",
+          "explain_en": "Habit → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i2",
+          "type": "mcq",
+          "prompt_en": "Quiet please — I ___ to a customer right now.",
+          "options": ["am talking", "talk", "talks", "am talk"],
+          "answer": "am talking",
+          "explain_en": "Now → present continuous.",
+          "explain_bn": "এই মুহূর্তে ঘটছে এমন কাজ → present continuous; অভ্যাস → present simple।"
+        },
+        {
+          "id": "d01s2i3",
+          "type": "mcq",
+          "prompt_en": "The deploy script ___ at midnight every night.",
+          "options": ["runs", "is running", "run", "running"],
+          "answer": "runs",
+          "explain_en": "Scheduled routine → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i4",
+          "type": "mcq",
+          "prompt_en": "Why ___ you reading the logs?",
+          "options": ["are", "do", "is", "be"],
+          "answer": "are",
+          "explain_en": "Continuous question → be + subject + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i5",
+          "type": "mcq",
+          "prompt_en": "I ___ coffee, but today I'm drinking tea.",
+          "options": ["usually drink", "am usually drinking", "drinks", "usually drinks"],
+          "answer": "usually drink",
+          "explain_en": "Habit → present simple; today's exception → continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i6",
+          "type": "fill-bank",
+          "prompt_en": "I ___ my code right now.",
+          "options": ["test", "am testing", "tested"],
+          "answer": "am testing",
+          "explain_en": "Right now → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i7",
+          "type": "fill-bank",
+          "prompt_en": "He ___ the standup every morning.",
+          "options": ["leads", "is leading", "lead"],
+          "answer": "leads",
+          "explain_en": "Daily routine → present simple (+s).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Look! The pipeline ___ green.",
+          "options": ["is turning", "turns", "turn"],
+          "answer": "is turning",
+          "explain_en": "Happening as we watch → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i9",
+          "type": "fill-bank",
+          "prompt_en": "They ___ in Dhaka.",
+          "options": ["live", "are living", "lives"],
+          "answer": "live",
+          "explain_en": "Permanent fact → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s2i10",
+          "type": "fill-bank",
+          "prompt_en": "Water ___ at 100°C.",
+          "options": ["boils", "is boiling", "boil"],
+          "answer": "boils",
+          "explain_en": "Scientific fact → present simple.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d01s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d01s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["goes", "She", "the", "to", "every", "office", "day", "."],
+          "answer": "She goes to the office every day .",
+          "explain_en": "Habit → present simple; she + goes.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["fixing", "I", "the", "am", "now", "bug", "right", "."],
+          "answer": "I am fixing the bug right now .",
+          "explain_en": "Right now → am + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["work", "They", "home", "from", "Fridays", "on", "."],
+          "answer": "They work from home on Fridays .",
+          "explain_en": "They → base verb, no -s.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["reviewing", "He", "my", "is", "request", "pull", "."],
+          "answer": "He is reviewing my pull request .",
+          "explain_en": "In progress now → is + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["runs", "The", "every", "build", "night", "."],
+          "answer": "The build runs every night .",
+          "explain_en": "Routine → present simple (+s).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["deploying", "We", "to", "are", "now", "production", "."],
+          "answer": "We are deploying to production now .",
+          "explain_en": "Now → are + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["joins", "She", "the", "usually", "standup", "."],
+          "answer": "She usually joins the standup .",
+          "explain_en": "Frequency adverb → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["not", "I", "working", "am", "today", "."],
+          "answer": "I am not working today .",
+          "explain_en": "Temporary, today → am + not + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i9",
+          "type": "speak",
+          "prompt_en": "Say what you are doing right now. Use present continuous.",
+          "model_en": "I am writing a Jira ticket right now.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d01s3i10",
+          "type": "speak",
+          "prompt_en": "Say one thing you do every workday. Use present simple.",
+          "model_en": "I check my emails before the standup.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

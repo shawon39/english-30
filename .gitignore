@@ -1,0 +1,8 @@
+# OS junk
+.DS_Store
+
+# Local Claude Code tooling / preview scaffolding
+.claude/
+
+# Exported progress backups (these live in the browser, not the repo)
+progress.json

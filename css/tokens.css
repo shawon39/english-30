@@ -1,0 +1,97 @@
+/* tokens.css — "Ember Ledger" design system.
+   Crisp white light + refined cool near-black dark. One disciplined amber accent
+   that flares only on rewards. Contrast-audited for WCAG AA.
+   :root = LIGHT (default). :root[data-theme="dark"] = DARK overrides. */
+:root {
+  /* ---- color: LIGHT (default) ---- */
+  --ink: #FFFFFF;                                  /* page background */
+  --bg-glow: rgba(245, 158, 11, 0.05);            /* subtle amber glow behind page */
+  --surface: #FFFFFF;                              /* cards (depth via border+shadow) */
+  --surface-2: #F4F5F7;                            /* secondary surfaces, inputs, keycaps */
+  --surface-hover: #ECEEF1;
+  --cream: #18181B;                                /* primary text */
+  --muted: #5B5F66;                                /* secondary text */
+  --accent: #F59E0B;                               /* amber FILL: buttons, ring, bars */
+  --accent-ink: #18181B;                           /* text/icon on amber fill (8.25:1) */
+  --accent-text: #9A5B00;                          /* amber as TEXT on surface (5.4:1) */
+  --accent-soft: rgba(245, 158, 11, 0.12);
+  --accent-glow: 0 0 6px rgba(245, 158, 11, 0.35);
+  --correct: #16A34A;
+  --correct-bg: rgba(22, 163, 74, 0.10);
+  --correct-text: #157F3C;
+  --correct-line: rgba(22, 163, 74, 0.45);
+  --wrong: #E11D48;
+  --wrong-bg: rgba(225, 29, 72, 0.10);
+  --wrong-text: #C01A3E;
+  --line: rgba(24, 24, 27, 0.08);                  /* hairline borders */
+  --line-strong: rgba(24, 24, 27, 0.16);           /* hover borders */
+  --note-bg: rgba(245, 158, 11, 0.08);
+  --note-border: rgba(245, 158, 11, 0.22);
+  --note-text: #6B4A12;
+  --bn-text: #3F4147;
+  --scrim: rgba(16, 18, 24, 0.45);
+  --shadow-1: 0 1px 2px rgba(24,24,27,0.04), 0 4px 12px rgba(24,24,27,0.06);
+  --shadow-2: 0 8px 24px rgba(24,24,27,0.10), 0 24px 60px rgba(24,24,27,0.14);
+  --sheen: inset 0 1px 0 rgba(255,255,255,0.25);
+
+  /* ---- type ---- */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-bn: "Hind Siliguri", "Hanken Grotesk", sans-serif;
+
+  /* ---- spacing ---- */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+
+  /* ---- radii ---- */
+  --r-token: 10px; --r-control: 14px; --r-cell: 16px;
+  --r-card: 20px; --r-modal: 24px; --r-pill: 999px;
+
+  /* ---- motion ---- */
+  --dur-micro: 140ms; --dur-state: 280ms; --dur-reward: 720ms;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.4, 1);
+  --ease: var(--ease-out-soft);
+
+  /* ---- layout ---- */
+  --col: 660px;
+
+  color-scheme: light;
+}
+
+/* ---- color: DARK ---- */
+:root[data-theme="dark"] {
+  --ink: #0C0D10;
+  --bg-glow: rgba(245, 158, 11, 0.10);
+  --surface: #15161A;
+  --surface-2: #1E2026;
+  --surface-hover: #262932;
+  --cream: #F4F4F5;
+  --muted: #A1A3AB;
+  --accent: #F59E0B;
+  --accent-ink: #15161A;
+  --accent-text: #FBBF24;
+  --accent-soft: rgba(245, 158, 11, 0.16);
+  --accent-glow: 0 0 10px rgba(245, 158, 11, 0.55);
+  --correct: #22C55E;
+  --correct-bg: rgba(34, 197, 94, 0.14);
+  --correct-text: #4ADE80;
+  --correct-line: rgba(34, 197, 94, 0.50);
+  --wrong: #F43F5E;
+  --wrong-bg: rgba(244, 63, 94, 0.14);
+  --wrong-text: #FB7185;
+  --line: rgba(244, 244, 245, 0.09);
+  --line-strong: rgba(244, 244, 245, 0.18);
+  --note-bg: rgba(245, 158, 11, 0.12);
+  --note-border: rgba(245, 158, 11, 0.28);
+  --note-text: #F0C674;
+  --bn-text: #D4D6DD;
+  --scrim: rgba(0, 0, 0, 0.6);
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.40), 0 6px 16px rgba(0,0,0,0.45);
+  --shadow-2: 0 10px 30px rgba(0,0,0,0.55), 0 30px 70px rgba(0,0,0,0.60);
+  --sheen: inset 0 1px 0 rgba(255,255,255,0.06);
+
+  color-scheme: dark;
+}
