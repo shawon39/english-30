@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 3,
+  "theme": "Present Perfect vs Present Perfect Continuous",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "Present perfect (have/has done) = a completed result or 'how many'. Present perfect continuous (have/has been doing) = an ongoing or recent activity, or 'how long'.",
+  "rule_bn": "ফলাফল বা সংখ্যা বোঝালে present perfect; কত সময় ধরে চলছে বোঝালে present perfect continuous।",
+  "sessions": [
+    {
+      "id": "d03s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d03s1i1",
+          "type": "error-find",
+          "prompt_en": "I have been fixing three bugs in the deployment pipeline today",
+          "tokens": ["I", "have", "been fixing", "three", "bugs", "in", "the", "deployment", "pipeline", "today"],
+          "error_index": 2,
+          "options": ["fixed", "been fixing", "fixing"],
+          "answer": "fixed",
+          "explain_en": "A countable result ('three bugs') needs present perfect 'have fixed', not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i2",
+          "type": "error-find",
+          "prompt_en": "She has worked on this Apex class since this morning so she looks tired",
+          "tokens": ["She", "has", "worked", "on", "this", "Apex", "class", "since", "this", "morning", "so", "she", "looks", "tired"],
+          "error_index": 2,
+          "options": ["been working", "worked", "work"],
+          "answer": "been working",
+          "explain_en": "An ongoing activity over a duration ('since this morning') with a visible effect needs the continuous 'has been working'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i3",
+          "type": "error-find",
+          "prompt_en": "How long have you deployed to production without a single rollback",
+          "tokens": ["How", "long", "have", "you", "deployed", "to", "production", "without", "a", "single", "rollback"],
+          "error_index": 4,
+          "options": ["been deploying", "deployed", "deploy"],
+          "answer": "been deploying",
+          "explain_en": "'How long' asks about a continuing situation, so use the continuous 'have you been deploying'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i4",
+          "type": "error-find",
+          "prompt_en": "We have been releasing the new feature so the client can test it now",
+          "tokens": ["We", "have", "been releasing", "the", "new", "feature", "so", "the", "client", "can", "test", "it", "now"],
+          "error_index": 2,
+          "options": ["released", "been releasing", "releasing"],
+          "answer": "released",
+          "explain_en": "A completed result that lets the client test now needs present perfect 'have released', not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i5",
+          "type": "error-find",
+          "prompt_en": "My eyes hurt because I have stared at the screen for six hours",
+          "tokens": ["My", "eyes", "hurt", "because", "I", "have", "stared", "at", "the", "screen", "for", "six", "hours"],
+          "error_index": 6,
+          "options": ["been staring", "stared", "staring"],
+          "answer": "been staring",
+          "explain_en": "A recent ongoing activity explaining a present effect ('eyes hurt') needs the continuous 'have been staring'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i6",
+          "type": "error-find",
+          "prompt_en": "He has been writing four blog posts about Salesforce flows this month",
+          "tokens": ["He", "has", "been writing", "four", "blog", "posts", "about", "Salesforce", "flows", "this", "month"],
+          "error_index": 2,
+          "options": ["written", "been writing", "writing"],
+          "answer": "written",
+          "explain_en": "A finished number of results ('four blog posts') needs present perfect 'has written', not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i7",
+          "type": "error-find",
+          "prompt_en": "They have studied for the certification all weekend and still feel unprepared",
+          "tokens": ["They", "have", "studied", "for", "the", "certification", "all", "weekend", "and", "still", "feel", "unprepared"],
+          "error_index": 2,
+          "options": ["been studying", "studied", "study"],
+          "answer": "been studying",
+          "explain_en": "A continuous effort over a duration ('all weekend') uses the continuous 'have been studying'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i8",
+          "type": "error-find",
+          "prompt_en": "Our team has already been finishing the sprint so we can plan the next release",
+          "tokens": ["Our", "team", "has", "already", "been finishing", "the", "sprint", "so", "we", "can", "plan", "the", "next", "release"],
+          "error_index": 4,
+          "options": ["finished", "been finishing", "finishing"],
+          "answer": "finished",
+          "explain_en": "A completed result with 'already' takes present perfect 'has finished', not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i9",
+          "type": "error-find",
+          "prompt_en": "I have been reading that documentation twice but it still confuses me",
+          "tokens": ["I", "have", "been reading", "that", "documentation", "twice", "but", "it", "still", "confuses", "me"],
+          "error_index": 2,
+          "options": ["read", "been reading", "reading"],
+          "answer": "read",
+          "explain_en": "'Twice' counts completed actions, so use present perfect 'have read', not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s1i10",
+          "type": "error-find",
+          "prompt_en": "It has rained all afternoon so the streets are completely flooded now",
+          "tokens": ["It", "has", "rained", "all", "afternoon", "so", "the", "streets", "are", "completely", "flooded", "now"],
+          "error_index": 2,
+          "options": ["been raining", "rained", "rain"],
+          "answer": "been raining",
+          "explain_en": "An ongoing activity over a duration ('all afternoon') with a present result uses the continuous 'has been raining'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d03s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d03s2i1",
+          "type": "mcq",
+          "prompt_en": "I ___ the deployment, so the new feature is now live.",
+          "options": ["have finished", "have been finishing", "am finishing", "finish"],
+          "answer": "have finished",
+          "explain_en": "A completed result (it's live now) takes present perfect, not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i2",
+          "type": "mcq",
+          "prompt_en": "She ___ on the Salesforce integration all morning and looks exhausted.",
+          "options": ["has worked", "has been working", "worked", "is working"],
+          "answer": "has been working",
+          "explain_en": "An ongoing activity over a duration ('all morning') uses present perfect continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i3",
+          "type": "mcq",
+          "prompt_en": "How many bugs ___ this sprint?",
+          "options": ["have you fixed", "have you been fixing", "are you fixing", "do you fix"],
+          "answer": "have you fixed",
+          "explain_en": "'How many' asks for a counted result, so present perfect is correct.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i4",
+          "type": "mcq",
+          "prompt_en": "How long ___ on the Salesforce integration without a break?",
+          "options": ["have you been working", "work you", "do you work", "are you work"],
+          "answer": "have you been working",
+          "explain_en": "'How long' about an ongoing activity uses present perfect continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i5",
+          "type": "mcq",
+          "prompt_en": "My eyes hurt because I ___ at the screen for hours.",
+          "options": ["have been staring", "have stared", "stared", "stare"],
+          "answer": "have been staring",
+          "explain_en": "A recent activity explaining a present effect uses present perfect continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i6",
+          "type": "fill-bank",
+          "prompt_en": "Don't merge yet — I ___ the code review.",
+          "options": ["haven't finished", "haven't been finishing", "don't finish"],
+          "answer": "haven't finished",
+          "explain_en": "An incomplete result up to now takes present perfect, not the continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i7",
+          "type": "fill-bank",
+          "prompt_en": "I'm tired because I ___ all day without a break.",
+          "options": ["have been coding", "have coded", "code"],
+          "answer": "have been coding",
+          "explain_en": "An ongoing activity ('all day') causing a present state uses present perfect continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i8",
+          "type": "fill-bank",
+          "prompt_en": "We ___ three new engineers this year.",
+          "options": ["have hired", "have been hiring", "hire"],
+          "answer": "have hired",
+          "explain_en": "A counted, completed result ('three') takes present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i9",
+          "type": "fill-bank",
+          "prompt_en": "She ___ for the certification exam since January.",
+          "options": ["has been studying", "has studied", "studies"],
+          "answer": "has been studying",
+          "explain_en": "An ongoing action over a period ('since January') uses present perfect continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s2i10",
+          "type": "fill-bank",
+          "prompt_en": "I ___ that error before, so I know the fix.",
+          "options": ["have seen", "have been seeing", "see"],
+          "answer": "have seen",
+          "explain_en": "A completed experience with present relevance takes present perfect; 'see' is not used in the continuous here.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d03s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d03s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "deployed", "the", "new", "Apex", "class", "to", "production", "."],
+          "answer": "I have deployed the new Apex class to production .",
+          "explain_en": "Present perfect (have deployed) = a completed result: the deployment is done.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "been", "debugging", "this", "trigger", "all", "morning", "."],
+          "answer": "I have been debugging this trigger all morning .",
+          "explain_en": "Present perfect continuous (have been debugging) = an ongoing activity over a duration.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "has", "fixed", "three", "bugs", "today", "."],
+          "answer": "She has fixed three bugs today .",
+          "explain_en": "Present perfect (has fixed) with 'how many' (three bugs) = completed, countable results.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["How", "long", "have", "you", "been", "learning", "Salesforce", "?"],
+          "answer": "How long have you been learning Salesforce ?",
+          "explain_en": "Present perfect continuous answers 'how long' = duration of an ongoing activity.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "have", "been", "working", "on", "the", "integration", "since", "Monday", "."],
+          "answer": "We have been working on the integration since Monday .",
+          "explain_en": "Present perfect continuous with 'since Monday' = an activity continuing up to now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "has", "written", "fifty", "unit", "tests", "this", "week", "."],
+          "answer": "He has written fifty unit tests this week .",
+          "explain_en": "Present perfect (has written) with a number = completed results, focus on quantity.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["My", "eyes", "are", "tired", "because", "I", "have", "been", "staring", "at", "code", "for", "hours", "."],
+          "answer": "My eyes are tired because I have been staring at code for hours .",
+          "explain_en": "Present perfect continuous explains a present result through a recent ongoing activity.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "already", "sent", "you", "the", "report", "."],
+          "answer": "I have already sent you the report .",
+          "explain_en": "Present perfect (have sent) with 'already' = a finished action with a present result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i9",
+          "type": "speak",
+          "prompt_en": "Say a sentence with present perfect continuous about how long you have been doing your current task.",
+          "model_en": "I have been reviewing pull requests for the last two hours.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d03s3i10",
+          "type": "speak",
+          "prompt_en": "Say a sentence with present perfect about a completed result you achieved at work today.",
+          "model_en": "I have finished the bug fix and pushed it to the repository.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

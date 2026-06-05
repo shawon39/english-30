@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 2,
+  "theme": "Past Simple vs Present Perfect",
+  "pillar": "tense",
+  "star": true,
+  "rule_en": "Past simple = a finished time (yesterday, last week, in 2020, ago). Present perfect = a past action still linked to now (just, already, yet, ever, never, since, for).",
+  "rule_bn": "নির্দিষ্ট অতীত সময় বোঝালে past simple; কাজটি এখনো প্রাসঙ্গিক বা সময় অনির্দিষ্ট হলে present perfect।",
+  "sessions": [
+    {
+      "id": "d02s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d02s1i1",
+          "type": "error-find",
+          "prompt_en": "I have deployed the new flow to production yesterday",
+          "tokens": ["I", "have deployed", "the", "new", "flow", "to", "production", "yesterday"],
+          "error_index": 1,
+          "options": ["deployed", "have deployed", "deploy"],
+          "answer": "deployed",
+          "explain_en": "'Yesterday' is a finished time, so use past simple 'deployed', not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i2",
+          "type": "error-find",
+          "prompt_en": "I worked at Salesforce since 2019 and still love it",
+          "tokens": ["I", "worked", "at", "Salesforce", "since", "2019", "and", "still", "love", "it"],
+          "error_index": 1,
+          "options": ["have worked", "worked", "was working"],
+          "answer": "have worked",
+          "explain_en": "'Since 2019' links the past to now, so use present perfect 'have worked'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i3",
+          "type": "error-find",
+          "prompt_en": "We have fixed that bug last week before the release",
+          "tokens": ["We", "have fixed", "that", "bug", "last", "week", "before", "the", "release"],
+          "error_index": 1,
+          "options": ["fixed", "have fixed", "fix"],
+          "answer": "fixed",
+          "explain_en": "'Last week' is a finished time, so use past simple 'fixed', not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i4",
+          "type": "error-find",
+          "prompt_en": "Did you ever broken the production build by mistake",
+          "tokens": ["Did", "you", "ever", "broken", "the", "production", "build", "by", "mistake"],
+          "error_index": 0,
+          "options": ["Have", "Did", "Were"],
+          "answer": "Have",
+          "explain_en": "'Ever' with the past participle 'broken' needs present perfect: 'Have you ever broken'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i5",
+          "type": "error-find",
+          "prompt_en": "He has joined the standup call two hours ago",
+          "tokens": ["He", "has joined", "the", "standup", "call", "two", "hours", "ago"],
+          "error_index": 1,
+          "options": ["joined", "has joined", "joins"],
+          "answer": "joined",
+          "explain_en": "'Ago' marks a finished time, so use past simple 'joined', not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i6",
+          "type": "error-find",
+          "prompt_en": "I knew my manager since I joined the team in 2021",
+          "tokens": ["I", "knew", "my", "manager", "since", "I", "joined", "the", "team", "in", "2021"],
+          "error_index": 1,
+          "options": ["have known", "knew", "was knowing"],
+          "answer": "have known",
+          "explain_en": "'Since I joined' links the past to now, so use present perfect 'have known'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i7",
+          "type": "error-find",
+          "prompt_en": "Our team has shipped two releases last sprint",
+          "tokens": ["Our", "team", "has shipped", "two", "releases", "last", "sprint"],
+          "error_index": 2,
+          "options": ["shipped", "has shipped", "ships"],
+          "answer": "shipped",
+          "explain_en": "'Last sprint' is a finished time, so use past simple 'shipped', not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i8",
+          "type": "error-find",
+          "prompt_en": "We used this Salesforce flow since the last release",
+          "tokens": ["We", "used", "this", "Salesforce", "flow", "since", "the", "last", "release"],
+          "error_index": 1,
+          "options": ["have used", "used", "were using"],
+          "answer": "have used",
+          "explain_en": "'Since the last release' links the past to now, so use present perfect 'have used'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i9",
+          "type": "error-find",
+          "prompt_en": "I have written the incident report last night",
+          "tokens": ["I", "have written", "the", "incident", "report", "last", "night"],
+          "error_index": 1,
+          "options": ["wrote", "have written", "write"],
+          "answer": "wrote",
+          "explain_en": "'Last night' is a finished time, so use past simple 'wrote', not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s1i10",
+          "type": "error-find",
+          "prompt_en": "She led the team since January",
+          "tokens": ["She", "led", "the", "team", "since", "January"],
+          "error_index": 1,
+          "options": ["has led", "led", "was leading"],
+          "answer": "has led",
+          "explain_en": "'Since January' links the past to now, so use present perfect 'has led'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d02s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d02s2i1",
+          "type": "mcq",
+          "prompt_en": "I ___ the deployment to production yesterday.",
+          "options": ["finished", "have finished", "have been finishing", "finish"],
+          "answer": "finished",
+          "explain_en": "'Yesterday' is a finished time, so use past simple: finished.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i2",
+          "type": "mcq",
+          "prompt_en": "She ___ already merged the pull request, so we can review it now.",
+          "options": ["has", "did", "had", "was"],
+          "answer": "has",
+          "explain_en": "'Already' with a result that matters now needs present perfect: has merged.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i3",
+          "type": "mcq",
+          "prompt_en": "We ___ this Salesforce flow in 2021, but it still works fine.",
+          "options": ["built", "have built", "have been building", "build"],
+          "answer": "built",
+          "explain_en": "'In 2021' is a specific finished time, so use past simple: built.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i4",
+          "type": "mcq",
+          "prompt_en": "___ you ever seen a production outage during a release?",
+          "options": ["Have", "Did", "Do", "Are"],
+          "answer": "Have",
+          "explain_en": "'Ever' (any time in your life up to now) takes present perfect: Have you ever seen.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i5",
+          "type": "mcq",
+          "prompt_en": "I ___ at this company since 2019.",
+          "options": ["have worked", "worked", "work", "had worked"],
+          "answer": "have worked",
+          "explain_en": "'Since 2019' means it started in the past and continues now, so present perfect: have worked.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i6",
+          "type": "fill-bank",
+          "prompt_en": "I can't merge yet because I ___ the tests.",
+          "options": ["haven't run", "didn't run", "don't run"],
+          "answer": "haven't run",
+          "explain_en": "'Yet' (not done up to now) pairs with present perfect: haven't run.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i7",
+          "type": "fill-bank",
+          "prompt_en": "He ___ the bug report two hours ago.",
+          "options": ["sent", "has sent", "send"],
+          "answer": "sent",
+          "explain_en": "'Two hours ago' is a finished time, so use past simple: sent.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i8",
+          "type": "fill-bank",
+          "prompt_en": "The team hasn't finished testing the new API ___.",
+          "options": ["yet", "ago", "last week"],
+          "answer": "yet",
+          "explain_en": "'Yet' pairs with present perfect for something not done up to now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i9",
+          "type": "fill-bank",
+          "prompt_en": "I ___ never coded in Python, only in Apex.",
+          "options": ["have", "did", "had"],
+          "answer": "have",
+          "explain_en": "'Never' (not at any time in life) takes present perfect: have never coded.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s2i10",
+          "type": "fill-bank",
+          "prompt_en": "When I was a junior, I ___ long hours debugging.",
+          "options": ["worked", "have worked", "work"],
+          "answer": "worked",
+          "explain_en": "'When I was a junior' sets a finished past period, so use past simple: worked.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d02s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d02s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "deployed", "the", "fix", "yesterday", "."],
+          "answer": "I deployed the fix yesterday .",
+          "explain_en": "Past simple with 'yesterday' (a finished time) — not present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "just", "merged", "the", "pull", "request", "."],
+          "answer": "I have just merged the pull request .",
+          "explain_en": "Present perfect with 'just' for a recent action linked to now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "released", "the", "app", "last", "week", "."],
+          "answer": "We released the app last week .",
+          "explain_en": "Past simple with 'last week' marks a finished time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "worked", "with", "Salesforce", "since", "2019", "."],
+          "answer": "I have worked with Salesforce since 2019 .",
+          "explain_en": "Present perfect with 'since' for a situation continuing up to now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "fixed", "the", "bug", "two", "hours", "ago", "."],
+          "answer": "She fixed the bug two hours ago .",
+          "explain_en": "Past simple with 'ago' points to a finished moment in the past.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Have", "you", "reviewed", "my", "code", "yet", "?"],
+          "answer": "Have you reviewed my code yet ?",
+          "explain_en": "Present perfect question with 'yet' asks about something up to now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "joined", "the", "team", "in", "2020", "."],
+          "answer": "He joined the team in 2020 .",
+          "explain_en": "Past simple with 'in 2020' is a finished point in time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "never", "used", "that", "API", "before", "."],
+          "answer": "I have never used that API before .",
+          "explain_en": "Present perfect with 'never' covers all time up to now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about a task you finished yesterday, using the past simple.",
+          "model_en": "I closed three Jira tickets yesterday.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence about your career so far using the present perfect with 'for' or 'since'.",
+          "model_en": "I have been a Salesforce developer for five years.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d02s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d02s4i1",
+          "type": "error-find",
+          "prompt_en": "I have deployed the fix yesterday",
+          "tokens": ["I", "have deployed", "the", "fix", "yesterday"],
+          "error_index": 1,
+          "options": ["deployed", "have deployed", "deploy"],
+          "answer": "deployed",
+          "explain_en": "'Yesterday' is a finished time, so use past simple: deployed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i2",
+          "type": "error-find",
+          "prompt_en": "She has finished the sprint last week",
+          "tokens": ["She", "has finished", "the", "sprint", "last", "week"],
+          "error_index": 1,
+          "options": ["finished", "has finished", "finishes"],
+          "answer": "finished",
+          "explain_en": "'Last week' is a finished time, so use past simple: finished.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i3",
+          "type": "error-find",
+          "prompt_en": "We released three versions since January",
+          "tokens": ["We", "released", "three", "versions", "since", "January"],
+          "error_index": 1,
+          "options": ["have released", "released", "were releasing"],
+          "answer": "have released",
+          "explain_en": "'Since January' links the past to now, so use present perfect: have released.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i4",
+          "type": "mcq",
+          "prompt_en": "I ___ Apex two years ago, and I still use it every day.",
+          "options": ["learned", "have learned", "have been learning", "was learning"],
+          "answer": "learned",
+          "explain_en": "'Two years ago' is a finished time, so past simple 'learned' is correct.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i5",
+          "type": "mcq",
+          "prompt_en": "___ you ever worked with the Salesforce API?",
+          "options": ["Have", "Did", "Do", "Were"],
+          "answer": "Have",
+          "explain_en": "'Ever' (life experience up to now) takes present perfect: Have you ever worked.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i6",
+          "type": "mcq",
+          "prompt_en": "She ___ her standup yet, so she's still preparing notes.",
+          "options": ["hasn't joined", "didn't join", "doesn't join", "isn't joining"],
+          "answer": "hasn't joined",
+          "explain_en": "'Yet' signals present perfect, so 'hasn't joined'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i7",
+          "type": "fill-bank",
+          "prompt_en": "We ___ the new login screen last month.",
+          "options": ["shipped", "have shipped", "have been shipping"],
+          "answer": "shipped",
+          "explain_en": "'Last month' is a finished time, so past simple 'shipped'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i8",
+          "type": "fill-bank",
+          "prompt_en": "I ___ already merged the pull request, so you can review it now.",
+          "options": ["have", "did", "was"],
+          "answer": "have",
+          "explain_en": "'Already' with a result that matters now takes present perfect 'have merged'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i9",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "just", "fixed", "the", "bug", "."],
+          "answer": "I have just fixed the bug .",
+          "explain_en": "'Just' for a very recent action takes present perfect: I have just fixed the bug.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d02s4i10",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The", "team", "moved", "to", "Salesforce", "in", "2020", "."],
+          "answer": "The team moved to Salesforce in 2020 .",
+          "explain_en": "'In 2020' is a finished time, so use past simple: moved.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
