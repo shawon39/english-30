@@ -1,0 +1,605 @@
+{
+  "schemaVersion": "2.0",
+  "day": 8,
+  "theme": "used to / would",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "used to + base = a past habit or STATE that is no longer true. would + base = a repeated past action (a routine) — but NOT for states (be, have, know, like).",
+  "rule_bn": "অতীতের অভ্যাস বা অবস্থা (যা এখন নেই) → used to; অতীতে বারবার করা কাজ → would; কিন্তু অবস্থা বোঝাতে would নয়, used to।",
+  "sessions": [
+    {
+      "id": "d08s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d08s1i1",
+          "type": "error-find",
+          "prompt_en": "When I was new, I use to ask the seniors for help every day",
+          "tokens": [
+            "When",
+            "I",
+            "was",
+            "new,",
+            "I",
+            "use to",
+            "ask",
+            "the",
+            "seniors",
+            "for",
+            "help",
+            "every",
+            "day"
+          ],
+          "error_index": 5,
+          "options": [
+            "used to",
+            "would to",
+            "did use to"
+          ],
+          "answer": "used to",
+          "explain_en": "The correct past-habit form is 'used to' with a 'd', not the bare 'use to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i2",
+          "type": "error-find",
+          "prompt_en": "Before the migration, our org would be much slower than it is now",
+          "tokens": [
+            "Before",
+            "the",
+            "migration,",
+            "our",
+            "org",
+            "would be",
+            "much",
+            "slower",
+            "than",
+            "it",
+            "is",
+            "now"
+          ],
+          "error_index": 5,
+          "options": [
+            "used to be",
+            "use to be",
+            "would been"
+          ],
+          "answer": "used to be",
+          "explain_en": "'would' cannot describe a past state with 'be', so a past condition that ended needs 'used to be'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i3",
+          "type": "error-find",
+          "prompt_en": "I used to working late before I learned how to delegate tasks",
+          "tokens": [
+            "I",
+            "used to working",
+            "late",
+            "before",
+            "I",
+            "learned",
+            "how",
+            "to",
+            "delegate",
+            "tasks"
+          ],
+          "error_index": 1,
+          "options": [
+            "used to work",
+            "use to work",
+            "would working"
+          ],
+          "answer": "used to work",
+          "explain_en": "'used to' takes the base verb, so it is 'used to work', never 'used to working'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i4",
+          "type": "error-find",
+          "prompt_en": "Did you used to deploy on Fridays at your old company",
+          "tokens": [
+            "Did",
+            "you",
+            "used to",
+            "deploy",
+            "on",
+            "Fridays",
+            "at",
+            "your",
+            "old",
+            "company"
+          ],
+          "error_index": 2,
+          "options": [
+            "use to",
+            "would",
+            "used"
+          ],
+          "answer": "use to",
+          "explain_en": "After the auxiliary 'did', the base form 'use to' is required, not 'used to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i5",
+          "type": "error-find",
+          "prompt_en": "I would have an old laptop that crashed during every long build",
+          "tokens": [
+            "I",
+            "would have",
+            "an",
+            "old",
+            "laptop",
+            "that",
+            "crashed",
+            "during",
+            "every",
+            "long",
+            "build"
+          ],
+          "error_index": 1,
+          "options": [
+            "used to have",
+            "use to have",
+            "would having"
+          ],
+          "answer": "used to have",
+          "explain_en": "'have' here is a past state of possession, so it needs 'used to have', not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i6",
+          "type": "error-find",
+          "prompt_en": "She would know every Apex governor limit by heart back then",
+          "tokens": [
+            "She",
+            "would know",
+            "every",
+            "Apex",
+            "governor",
+            "limit",
+            "by",
+            "heart",
+            "back",
+            "then"
+          ],
+          "error_index": 1,
+          "options": [
+            "used to know",
+            "use to know",
+            "would knew"
+          ],
+          "answer": "used to know",
+          "explain_en": "'know' is a state verb, so a past state that ended takes 'used to know', not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i7",
+          "type": "error-find",
+          "prompt_en": "Every Friday afternoon we would deploying the new release to production",
+          "tokens": [
+            "Every",
+            "Friday",
+            "afternoon",
+            "we",
+            "would deploying",
+            "the",
+            "new",
+            "release",
+            "to",
+            "production"
+          ],
+          "error_index": 4,
+          "options": [
+            "would deploy",
+            "would deployed",
+            "used to deploying"
+          ],
+          "answer": "would deploy",
+          "explain_en": "'would' for a repeated past routine takes the base verb, giving 'would deploy'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i8",
+          "type": "error-find",
+          "prompt_en": "I would like working alone, but now I really enjoy pairing with teammates",
+          "tokens": [
+            "I",
+            "would like",
+            "working",
+            "alone,",
+            "but",
+            "now",
+            "I",
+            "really",
+            "enjoy",
+            "pairing",
+            "with",
+            "teammates"
+          ],
+          "error_index": 1,
+          "options": [
+            "used to like",
+            "use to like",
+            "would liked"
+          ],
+          "answer": "used to like",
+          "explain_en": "'like' is a state verb, so a past preference that changed needs 'used to like', not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i9",
+          "type": "error-find",
+          "prompt_en": "I didn't used to write unit tests until my mentor finally insisted on it",
+          "tokens": [
+            "I",
+            "didn't used to",
+            "write",
+            "unit",
+            "tests",
+            "until",
+            "my",
+            "mentor",
+            "finally",
+            "insisted",
+            "on",
+            "it"
+          ],
+          "error_index": 1,
+          "options": [
+            "didn't use to",
+            "didn't used",
+            "wouldn't used to"
+          ],
+          "answer": "didn't use to",
+          "explain_en": "After the negative auxiliary 'didn't', the base form 'use to' is correct, not 'used to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s1i10",
+          "type": "error-find",
+          "prompt_en": "When the team was tiny, our codebase would be easy to understand",
+          "tokens": [
+            "When",
+            "the",
+            "team",
+            "was",
+            "tiny,",
+            "our",
+            "codebase",
+            "would be",
+            "easy",
+            "to",
+            "understand"
+          ],
+          "error_index": 7,
+          "options": [
+            "used to be",
+            "use to be",
+            "would being"
+          ],
+          "answer": "used to be",
+          "explain_en": "A past state with 'be' that is no longer true takes 'used to be', since 'would' cannot mark states.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d08s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d08s2i1",
+          "type": "mcq",
+          "prompt_en": "Before we adopted Salesforce, our team ___ track every lead in a spreadsheet.",
+          "options": [
+            "used to",
+            "use to",
+            "uses to",
+            "using to"
+          ],
+          "answer": "used to",
+          "explain_en": "For a past habit that is no longer true, use 'used to' (with -d), not 'use to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i2",
+          "type": "mcq",
+          "prompt_en": "___ you use to write Apex triggers before switching to Flows?",
+          "options": [
+            "Did",
+            "Do",
+            "Used",
+            "Were"
+          ],
+          "answer": "Did",
+          "explain_en": "In questions the past is carried by 'did', so the main verb drops the -d: 'Did you use to...?'",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i3",
+          "type": "mcq",
+          "prompt_en": "Every Friday after the sprint, the team ___ get coffee together and review the demo.",
+          "options": [
+            "would",
+            "use to",
+            "would to",
+            "did used to"
+          ],
+          "answer": "would",
+          "explain_en": "A repeated past routine (an action) can take 'would' + base verb, just like 'used to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i4",
+          "type": "mcq",
+          "prompt_en": "I ___ a junior developer, but now I lead the integrations team.",
+          "options": [
+            "used to be",
+            "would be",
+            "use to be",
+            "used to being"
+          ],
+          "answer": "used to be",
+          "explain_en": "'Be' is a state, so only 'used to' works here, not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i5",
+          "type": "mcq",
+          "prompt_en": "She ___ know much about Salesforce, but after the course she became an admin.",
+          "options": [
+            "used to",
+            "would",
+            "use to",
+            "would to"
+          ],
+          "answer": "used to",
+          "explain_en": "'Know' is a state verb, so only 'used to' is correct; 'would' cannot describe a state.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i6",
+          "type": "fill-bank",
+          "prompt_en": "We ___ deploy manually every night before we set up the CI pipeline.",
+          "options": [
+            "used to",
+            "use to",
+            "would to"
+          ],
+          "answer": "used to",
+          "explain_en": "A past habit no longer true takes 'used to' + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Did your manager ___ review every pull request himself?",
+          "options": [
+            "use to",
+            "used to",
+            "uses to"
+          ],
+          "answer": "use to",
+          "explain_en": "After 'did', the verb loses the -d, so it is 'use to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i8",
+          "type": "fill-bank",
+          "prompt_en": "On long deploys, my old teammate ___ order pizza for everyone in the office.",
+          "options": [
+            "would",
+            "would to",
+            "use to"
+          ],
+          "answer": "would",
+          "explain_en": "A repeated past action (routine) takes 'would' + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i9",
+          "type": "fill-bank",
+          "prompt_en": "He used to ___ a long commute, but now he works from home.",
+          "options": [
+            "have",
+            "having",
+            "had"
+          ],
+          "answer": "have",
+          "explain_en": "'Used to' is followed by the base verb, so 'have', not 'having' or 'had'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s2i10",
+          "type": "fill-bank",
+          "prompt_en": "She ___ every Salesforce shortcut, but now she relies on the AI assistant.",
+          "options": [
+            "used to know",
+            "would know",
+            "use to know"
+          ],
+          "answer": "used to know",
+          "explain_en": "'Know' is a state verb, so use 'used to know', not 'would'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d08s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d08s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "used",
+            "to",
+            "I",
+            "deploy",
+            "manually",
+            "on",
+            "Fridays",
+            "."
+          ],
+          "answer": "I used to deploy manually on Fridays .",
+          "explain_en": "Past habit no longer true: 'used to' + base verb (deploy).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "used",
+            "to",
+            "be",
+            "a",
+            "QA",
+            "tester",
+            "."
+          ],
+          "answer": "She used to be a QA tester .",
+          "explain_en": "A past state uses 'used to be', never 'would be'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "we",
+            "Did",
+            "use",
+            "to",
+            "share",
+            "one",
+            "sandbox",
+            "?"
+          ],
+          "answer": "Did we use to share one sandbox ?",
+          "explain_en": "After 'did', drop the -d: 'Did ... use to', not 'used to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "My",
+            "manager",
+            "would",
+            "review",
+            "every",
+            "pull",
+            "request",
+            "himself",
+            "."
+          ],
+          "answer": "My manager would review every pull request himself .",
+          "explain_en": "'would' + base verb describes a repeated past action (a routine).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "used",
+            "to",
+            "He",
+            "know",
+            "every",
+            "Apex",
+            "class",
+            "by",
+            "heart",
+            "."
+          ],
+          "answer": "He used to know every Apex class by heart .",
+          "explain_en": "'know' is a state, so only 'used to' works, not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "didn't",
+            "use",
+            "to",
+            "I",
+            "enjoy",
+            "code",
+            "reviews",
+            "."
+          ],
+          "answer": "I didn't use to enjoy code reviews .",
+          "explain_en": "Negative form is 'didn't use to', not 'didn't used to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "Every",
+            "morning",
+            "she",
+            "would",
+            "check",
+            "the",
+            "deployment",
+            "logs",
+            "."
+          ],
+          "answer": "Every morning she would check the deployment logs .",
+          "explain_en": "'would' + base verb fits a repeated past routine ('every morning').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "used",
+            "to",
+            "We",
+            "have",
+            "a",
+            "smaller",
+            "team",
+            "."
+          ],
+          "answer": "We used to have a smaller team .",
+          "explain_en": "'have' is a state, so use 'used to have', not 'would have'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about a past work habit you have stopped, using 'used to' + base verb.",
+          "model_en": "I used to write all my tests after release, but now I write them first.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d08s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence describing a repeated past routine on your old team, using 'would' + base verb.",
+          "model_en": "On my old team, we would meet every Monday to plan the sprint.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

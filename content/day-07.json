@@ -1,0 +1,621 @@
+{
+  "schemaVersion": "2.0",
+  "day": 7,
+  "theme": "Future Perfect & Continuous",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "Future perfect (will have + past participle) = finished before a point in the future ('by then'). Future continuous (will be + -ing) = in progress at a point in the future ('at that time').",
+  "rule_bn": "ভবিষ্যতের কোনো সময়ের আগেই শেষ হবে → future perfect (will have + V3); ভবিষ্যতের কোনো মুহূর্তে চলমান থাকবে → future continuous (will be + V-ing)।",
+  "sessions": [
+    {
+      "id": "d07s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d07s1i1",
+          "type": "error-find",
+          "prompt_en": "By Friday I will be finishing the deployment script",
+          "tokens": [
+            "By",
+            "Friday",
+            "I",
+            "will be finishing",
+            "the",
+            "deployment",
+            "script"
+          ],
+          "error_index": 3,
+          "options": [
+            "will have finished",
+            "am finishing",
+            "finish"
+          ],
+          "answer": "will have finished",
+          "explain_en": "\"By Friday\" marks a deadline, so use future perfect (will have finished) for an action completed before that point.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i2",
+          "type": "error-find",
+          "prompt_en": "At 9 tonight I will have debugged the Apex trigger",
+          "tokens": [
+            "At",
+            "9",
+            "tonight",
+            "I",
+            "will have debugged",
+            "the",
+            "Apex",
+            "trigger"
+          ],
+          "error_index": 4,
+          "options": [
+            "will be debugging",
+            "debug",
+            "have debugged"
+          ],
+          "answer": "will be debugging",
+          "explain_en": "\"At 9 tonight\" describes an action in progress at that moment, so use future continuous (will be debugging).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i3",
+          "type": "error-find",
+          "prompt_en": "By the time you arrive I will be deploying the new release",
+          "tokens": [
+            "By",
+            "the",
+            "time",
+            "you",
+            "arrive",
+            "I",
+            "will be deploying",
+            "the",
+            "new",
+            "release"
+          ],
+          "error_index": 6,
+          "options": [
+            "will have deployed",
+            "deploy",
+            "am deploying"
+          ],
+          "answer": "will have deployed",
+          "explain_en": "\"By the time you arrive\" signals completion before that point, so use future perfect (will have deployed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i4",
+          "type": "error-find",
+          "prompt_en": "This time tomorrow we will have running the demo for the client",
+          "tokens": [
+            "This",
+            "time",
+            "tomorrow",
+            "we",
+            "will have running",
+            "the",
+            "demo",
+            "for",
+            "the",
+            "client"
+          ],
+          "error_index": 4,
+          "options": [
+            "will be running",
+            "run",
+            "have run"
+          ],
+          "answer": "will be running",
+          "explain_en": "\"This time tomorrow\" points to an action in progress at that moment, so use future continuous (will be running).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i5",
+          "type": "error-find",
+          "prompt_en": "By next month she will be earning her Salesforce Admin certification",
+          "tokens": [
+            "By",
+            "next",
+            "month",
+            "she",
+            "will be earning",
+            "her",
+            "Salesforce",
+            "Admin",
+            "certification"
+          ],
+          "error_index": 4,
+          "options": [
+            "will have earned",
+            "earns",
+            "is earning"
+          ],
+          "answer": "will have earned",
+          "explain_en": "\"By next month\" marks a deadline for a completed achievement, so use future perfect (will have earned).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i6",
+          "type": "error-find",
+          "prompt_en": "Don't call at noon because I will have presenting the sprint review",
+          "tokens": [
+            "Don't",
+            "call",
+            "at",
+            "noon",
+            "because",
+            "I",
+            "will have presenting",
+            "the",
+            "sprint",
+            "review"
+          ],
+          "error_index": 6,
+          "options": [
+            "will be presenting",
+            "present",
+            "have presented"
+          ],
+          "answer": "will be presenting",
+          "explain_en": "\"At noon\" describes being mid-action, so use future continuous (will be presenting).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i7",
+          "type": "error-find",
+          "prompt_en": "By the end of the year I will be saving enough for a laptop",
+          "tokens": [
+            "By",
+            "the",
+            "end",
+            "of",
+            "the",
+            "year",
+            "I",
+            "will be saving",
+            "enough",
+            "for",
+            "a",
+            "laptop"
+          ],
+          "error_index": 7,
+          "options": [
+            "will have saved",
+            "save",
+            "am saving"
+          ],
+          "answer": "will have saved",
+          "explain_en": "\"By the end of the year\" marks a goal completed before that point, so use future perfect (will have saved).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i8",
+          "type": "error-find",
+          "prompt_en": "When you log in at 8 the team will have standing by the whiteboard",
+          "tokens": [
+            "When",
+            "you",
+            "log",
+            "in",
+            "at",
+            "8",
+            "the",
+            "team",
+            "will have standing",
+            "by",
+            "the",
+            "whiteboard"
+          ],
+          "error_index": 8,
+          "options": [
+            "will be standing",
+            "stand",
+            "have stood"
+          ],
+          "answer": "will be standing",
+          "explain_en": "\"At 8\" describes an ongoing situation at that moment, so use future continuous (will be standing).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i9",
+          "type": "error-find",
+          "prompt_en": "By tomorrow morning the integration tests will be passing completely",
+          "tokens": [
+            "By",
+            "tomorrow",
+            "morning",
+            "the",
+            "integration",
+            "tests",
+            "will be passing",
+            "completely"
+          ],
+          "error_index": 6,
+          "options": [
+            "will have passed",
+            "pass",
+            "are passing"
+          ],
+          "answer": "will have passed",
+          "explain_en": "\"By tomorrow morning\" marks completion before that point, so use future perfect (will have passed).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s1i10",
+          "type": "error-find",
+          "prompt_en": "At this time next week I will have flying to the conference",
+          "tokens": [
+            "At",
+            "this",
+            "time",
+            "next",
+            "week",
+            "I",
+            "will have flying",
+            "to",
+            "the",
+            "conference"
+          ],
+          "error_index": 6,
+          "options": [
+            "will be flying",
+            "fly",
+            "have flown"
+          ],
+          "answer": "will be flying",
+          "explain_en": "\"At this time next week\" points to an action in progress then, so use future continuous (will be flying).",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d07s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d07s2i1",
+          "type": "mcq",
+          "prompt_en": "By the time the sprint ends on Friday, we ___ all the failing test classes.",
+          "options": [
+            "will have fixed",
+            "will be fixing",
+            "fix",
+            "are fixing"
+          ],
+          "answer": "will have fixed",
+          "explain_en": "Future perfect (will have + fixed): completed before a future point ('By the time the sprint ends').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i2",
+          "type": "mcq",
+          "prompt_en": "Don't call me at 3 p.m. tomorrow; I ___ a live demo for the client then.",
+          "options": [
+            "will be running",
+            "will have run",
+            "run",
+            "have run"
+          ],
+          "answer": "will be running",
+          "explain_en": "Future continuous (will be + running): in progress at that specific future time ('at 3 p.m. ... then').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i3",
+          "type": "mcq",
+          "prompt_en": "By next December, I ___ at Salesforce for five years.",
+          "options": [
+            "will have worked",
+            "will be working",
+            "work",
+            "am working"
+          ],
+          "answer": "will have worked",
+          "explain_en": "Future perfect (will have + worked): a duration completed by a future point ('By next December').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i4",
+          "type": "mcq",
+          "prompt_en": "This time next week, she ___ on the new Apex integration while we review the design.",
+          "options": [
+            "will be working",
+            "will have worked",
+            "works",
+            "worked"
+          ],
+          "answer": "will be working",
+          "explain_en": "Future continuous (will be + working): ongoing at a future moment ('This time next week').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i5",
+          "type": "fill-bank",
+          "prompt_en": "The deploy starts at 9; by 9:30 the pipeline ___ all the unit tests.",
+          "options": [
+            "will have finished",
+            "will be finishing",
+            "will finish"
+          ],
+          "answer": "will have finished",
+          "explain_en": "Future perfect (will have + finished): complete before the future point ('by 9:30').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i6",
+          "type": "mcq",
+          "prompt_en": "By the time you arrive at the office, I ___ the release notes.",
+          "options": [
+            "will have written",
+            "will be writing",
+            "wrote",
+            "write"
+          ],
+          "answer": "will have written",
+          "explain_en": "Future perfect (will have written): finished before the future point.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i7",
+          "type": "fill-bank",
+          "prompt_en": "At 8 o'clock tonight I ___ for the certification exam, so please don't disturb me.",
+          "options": [
+            "will be studying",
+            "will have studied",
+            "will study"
+          ],
+          "answer": "will be studying",
+          "explain_en": "Future continuous (will be + studying): in progress at a specific future time ('At 8 o'clock tonight').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i8",
+          "type": "fill-bank",
+          "prompt_en": "By the end of this year, our team ___ over fifty bug tickets.",
+          "options": [
+            "will have closed",
+            "will be closing",
+            "will close"
+          ],
+          "answer": "will have closed",
+          "explain_en": "Future perfect (will have closed): a total completed by a future point.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i9",
+          "type": "fill-bank",
+          "prompt_en": "This time tomorrow, we ___ on the train to the conference.",
+          "options": [
+            "will be travelling",
+            "will have travelled",
+            "will travel"
+          ],
+          "answer": "will be travelling",
+          "explain_en": "Future continuous (will be travelling): in progress at that future moment.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s2i10",
+          "type": "fill-bank",
+          "prompt_en": "By the time the manager joins the call, the engineers ___ the root cause.",
+          "options": [
+            "will have found",
+            "will be finding",
+            "will find"
+          ],
+          "answer": "will have found",
+          "explain_en": "Future perfect (will have + found): completed before the future point ('By the time the manager joins').",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d07s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d07s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "By",
+            "Friday",
+            ",",
+            "I",
+            "will",
+            "have",
+            "deployed",
+            "the",
+            "Salesforce",
+            "package",
+            "."
+          ],
+          "answer": "By Friday , I will have deployed the Salesforce package .",
+          "explain_en": "Future perfect 'will have deployed' = finished before the future point 'by Friday'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "At",
+            "9",
+            "a.m.",
+            "tomorrow",
+            ",",
+            "I",
+            "will",
+            "be",
+            "reviewing",
+            "your",
+            "pull",
+            "request",
+            "."
+          ],
+          "answer": "At 9 a.m. tomorrow , I will be reviewing your pull request .",
+          "explain_en": "Future continuous 'will be reviewing' = in progress at the future point '9 a.m. tomorrow'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "By",
+            "the",
+            "time",
+            "you",
+            "log",
+            "in",
+            ",",
+            "the",
+            "tests",
+            "will",
+            "have",
+            "finished",
+            "."
+          ],
+          "answer": "By the time you log in , the tests will have finished .",
+          "explain_en": "Future perfect 'will have finished' = completed before the future moment you log in.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "This",
+            "time",
+            "next",
+            "week",
+            ",",
+            "we",
+            "will",
+            "be",
+            "migrating",
+            "the",
+            "data",
+            "."
+          ],
+          "answer": "This time next week , we will be migrating the data .",
+          "explain_en": "Future continuous 'will be migrating' = an action in progress at that future time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "By",
+            "December",
+            ",",
+            "she",
+            "will",
+            "have",
+            "passed",
+            "her",
+            "Salesforce",
+            "exam",
+            "."
+          ],
+          "answer": "By December , she will have passed her Salesforce exam .",
+          "explain_en": "Future perfect 'will have passed' = achieved before the future deadline 'by December'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "Don't",
+            "call",
+            "me",
+            "at",
+            "noon",
+            ";",
+            "I",
+            "will",
+            "be",
+            "interviewing",
+            "a",
+            "candidate",
+            "."
+          ],
+          "answer": "Don't call me at noon ; I will be interviewing a candidate .",
+          "explain_en": "Future continuous 'will be interviewing' = ongoing at the specific future time 'at noon'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "By",
+            "next",
+            "year",
+            ",",
+            "they",
+            "will",
+            "have",
+            "shipped",
+            "three",
+            "new",
+            "features",
+            "."
+          ],
+          "answer": "By next year , they will have shipped three new features .",
+          "explain_en": "Future perfect 'will have shipped' = completed before the future point 'by next year'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "While",
+            "you",
+            "sleep",
+            "tonight",
+            ",",
+            "the",
+            "server",
+            "will",
+            "be",
+            "running",
+            "the",
+            "batch",
+            "job",
+            "."
+          ],
+          "answer": "While you sleep tonight , the server will be running the batch job .",
+          "explain_en": "Future continuous 'will be running' = in progress during a future stretch of time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i9",
+          "type": "speak",
+          "prompt_en": "Say a sentence using the future perfect to describe a Salesforce task you will have finished before a future deadline.",
+          "model_en": "By the end of this sprint, I will have refactored the trigger logic.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d07s3i10",
+          "type": "speak",
+          "prompt_en": "Say a sentence using the future continuous to describe what you will be doing at a specific time tomorrow.",
+          "model_en": "At ten o'clock tomorrow, I will be running the integration tests.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

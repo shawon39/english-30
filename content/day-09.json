@@ -1,0 +1,766 @@
+{
+  "schemaVersion": "2.0",
+  "day": 9,
+  "theme": "Reported speech (backshift)",
+  "pillar": "tense",
+  "star": true,
+  "rule_en": "In reported speech, shift the tense back one step: present → past, will → would, can → could, may → might, and present perfect/past → past perfect. Shift pronouns and time words too. Use 'tell someone' but 'say (to someone)'.",
+  "rule_bn": "Reported speech-এ tense এক ধাপ পিছিয়ে যায়: present → past, will → would, can → could; pronoun ও সময়সূচক শব্দও বদলায়; 'tell' এর পরে object লাগে, 'say' এর পরে লাগে না।",
+  "sessions": [
+    {
+      "id": "d09s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d09s1i1",
+          "type": "error-find",
+          "prompt_en": "She told me she will deploy the fix after lunch",
+          "tokens": [
+            "She",
+            "told",
+            "me",
+            "she",
+            "will deploy",
+            "the",
+            "fix",
+            "after",
+            "lunch"
+          ],
+          "error_index": 4,
+          "options": [
+            "would deploy",
+            "will deploy",
+            "deploys"
+          ],
+          "answer": "would deploy",
+          "explain_en": "After a past reporting verb, 'will' backshifts to 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i2",
+          "type": "error-find",
+          "prompt_en": "He said the API is down during the demo",
+          "tokens": [
+            "He",
+            "said",
+            "the",
+            "API",
+            "is",
+            "down",
+            "during",
+            "the",
+            "demo"
+          ],
+          "error_index": 4,
+          "options": [
+            "was",
+            "is",
+            "are"
+          ],
+          "answer": "was",
+          "explain_en": "After a past reporting verb, present 'is' backshifts to 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i3",
+          "type": "error-find",
+          "prompt_en": "My manager said the team can handle the release",
+          "tokens": [
+            "My",
+            "manager",
+            "said",
+            "the",
+            "team",
+            "can",
+            "handle",
+            "the",
+            "release"
+          ],
+          "error_index": 5,
+          "options": [
+            "could",
+            "can",
+            "cans"
+          ],
+          "answer": "could",
+          "explain_en": "In reported speech, 'can' backshifts to 'could'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i4",
+          "type": "error-find",
+          "prompt_en": "She told us the build passes every test",
+          "tokens": [
+            "She",
+            "told",
+            "us",
+            "the",
+            "build",
+            "passes",
+            "every",
+            "test"
+          ],
+          "error_index": 5,
+          "options": [
+            "passed",
+            "passes",
+            "pass"
+          ],
+          "answer": "passed",
+          "explain_en": "Present simple 'passes' backshifts to past 'passed' after a past report.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i5",
+          "type": "error-find",
+          "prompt_en": "He said the client has approved the budget",
+          "tokens": [
+            "He",
+            "said",
+            "the",
+            "client",
+            "has approved",
+            "the",
+            "budget"
+          ],
+          "error_index": 4,
+          "options": [
+            "had approved",
+            "has approved",
+            "have approved"
+          ],
+          "answer": "had approved",
+          "explain_en": "Present perfect 'has approved' backshifts to past perfect 'had approved'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i6",
+          "type": "error-find",
+          "prompt_en": "He said me that the server was overloaded",
+          "tokens": [
+            "He",
+            "said",
+            "me",
+            "that",
+            "the",
+            "server",
+            "was",
+            "overloaded"
+          ],
+          "error_index": 1,
+          "options": [
+            "told",
+            "said",
+            "spoke"
+          ],
+          "answer": "told",
+          "explain_en": "Use 'tell someone' (told me), not 'say someone'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i7",
+          "type": "error-find",
+          "prompt_en": "She told to me that the sprint was extended",
+          "tokens": [
+            "She",
+            "told",
+            "to me",
+            "that",
+            "the",
+            "sprint",
+            "was",
+            "extended"
+          ],
+          "error_index": 2,
+          "options": [
+            "me",
+            "to me",
+            "for me"
+          ],
+          "answer": "me",
+          "explain_en": "'Tell' takes a direct object: tell me, not 'tell to me'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i8",
+          "type": "error-find",
+          "prompt_en": "He said he liked this dashboard the most",
+          "tokens": [
+            "He",
+            "said",
+            "he",
+            "liked",
+            "this",
+            "dashboard",
+            "the",
+            "most"
+          ],
+          "error_index": 4,
+          "options": [
+            "that",
+            "this",
+            "these"
+          ],
+          "answer": "that",
+          "explain_en": "In reported speech, 'this' shifts to 'that'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i9",
+          "type": "error-find",
+          "prompt_en": "She told me she would finish the report today",
+          "tokens": [
+            "She",
+            "told",
+            "me",
+            "she",
+            "would",
+            "finish",
+            "the",
+            "report",
+            "today"
+          ],
+          "error_index": 8,
+          "options": [
+            "that day",
+            "today",
+            "now"
+          ],
+          "answer": "that day",
+          "explain_en": "In reported speech, 'today' shifts to 'that day'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s1i10",
+          "type": "error-find",
+          "prompt_en": "He said the new hire may join the standup",
+          "tokens": [
+            "He",
+            "said",
+            "the",
+            "new",
+            "hire",
+            "may",
+            "join",
+            "the",
+            "standup"
+          ],
+          "error_index": 5,
+          "options": [
+            "might",
+            "may",
+            "mays"
+          ],
+          "answer": "might",
+          "explain_en": "In reported speech, 'may' backshifts to 'might'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d09s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d09s2i1",
+          "type": "mcq",
+          "prompt_en": "Maria said she ___ finish the deployment by Friday.",
+          "options": [
+            "would",
+            "will",
+            "is",
+            "can"
+          ],
+          "answer": "would",
+          "explain_en": "In reported speech, 'will' backshifts to 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i2",
+          "type": "mcq",
+          "prompt_en": "The recruiter told me the role ___ remote.",
+          "options": [
+            "was",
+            "is",
+            "will",
+            "be"
+          ],
+          "answer": "was",
+          "explain_en": "Reported speech shifts present 'is' back to past 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i3",
+          "type": "mcq",
+          "prompt_en": "He said the flow ___ handle bulk records without errors.",
+          "options": [
+            "could",
+            "can",
+            "could to",
+            "cans"
+          ],
+          "answer": "could",
+          "explain_en": "'Can' backshifts to 'could' in reported speech.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i4",
+          "type": "mcq",
+          "prompt_en": "My manager ___ me that the sprint had been extended.",
+          "options": [
+            "told",
+            "said",
+            "said to",
+            "spoke"
+          ],
+          "answer": "told",
+          "explain_en": "Use 'tell someone' (told me); 'say' takes no direct object.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i5",
+          "type": "mcq",
+          "prompt_en": "She said she ___ already merged the pull request.",
+          "options": [
+            "had",
+            "has",
+            "have",
+            "was"
+          ],
+          "answer": "had",
+          "explain_en": "Present perfect 'has merged' backshifts to past perfect 'had merged'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The lead said the API ___ ready for testing.",
+          "options": [
+            "was",
+            "is",
+            "will"
+          ],
+          "answer": "was",
+          "explain_en": "Reported speech shifts present 'is' back to past 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i7",
+          "type": "fill-bank",
+          "prompt_en": "He said his team ___ ship the feature next week.",
+          "options": [
+            "would",
+            "will",
+            "can"
+          ],
+          "answer": "would",
+          "explain_en": "'Will' backshifts to 'would' in reported speech.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i8",
+          "type": "fill-bank",
+          "prompt_en": "She told us the bug ___ been fixed in the latest build.",
+          "options": [
+            "had",
+            "has",
+            "have"
+          ],
+          "answer": "had",
+          "explain_en": "Present perfect 'has been' backshifts to past perfect 'had been'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i9",
+          "type": "fill-bank",
+          "prompt_en": "The engineer said the script ___ run overnight without crashing.",
+          "options": [
+            "could",
+            "can",
+            "could to"
+          ],
+          "answer": "could",
+          "explain_en": "'Can' backshifts to 'could' in reported speech.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s2i10",
+          "type": "fill-bank",
+          "prompt_en": "She said the demo ___ go smoothly on Monday.",
+          "options": [
+            "would",
+            "will",
+            "is"
+          ],
+          "answer": "would",
+          "explain_en": "In reported speech, 'will' backshifts to 'would'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d09s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d09s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "said",
+            "she",
+            "would",
+            "deploy",
+            "the",
+            "fix",
+            "."
+          ],
+          "answer": "She said she would deploy the fix .",
+          "explain_en": "Reported speech backshifts 'will' to 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "He",
+            "told",
+            "me",
+            "the",
+            "build",
+            "was",
+            "broken",
+            "."
+          ],
+          "answer": "He told me the build was broken .",
+          "explain_en": "Use 'told someone'; present 'is' backshifts to 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "said",
+            "she",
+            "could",
+            "review",
+            "my",
+            "code",
+            "."
+          ],
+          "answer": "She said she could review my code .",
+          "explain_en": "Reported speech backshifts 'can' to 'could'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "He",
+            "told",
+            "us",
+            "he",
+            "worked",
+            "at",
+            "Salesforce",
+            "."
+          ],
+          "answer": "He told us he worked at Salesforce .",
+          "explain_en": "Present simple 'work' backshifts to past 'worked'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "said",
+            "she",
+            "had",
+            "finished",
+            "the",
+            "report",
+            "."
+          ],
+          "answer": "She said she had finished the report .",
+          "explain_en": "Present perfect 'has finished' backshifts to past perfect 'had finished'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "He",
+            "said",
+            "that",
+            "bug",
+            "was",
+            "hard",
+            "to",
+            "fix",
+            "."
+          ],
+          "answer": "He said that bug was hard to fix .",
+          "explain_en": "In reported speech 'this' becomes 'that' and 'is' becomes 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "told",
+            "me",
+            "they",
+            "were",
+            "busy",
+            "that",
+            "day",
+            "."
+          ],
+          "answer": "She told me they were busy that day .",
+          "explain_en": "In reported speech 'today' becomes 'that day' and 'are' becomes 'were'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "He",
+            "said",
+            "to",
+            "me",
+            "he",
+            "would",
+            "call",
+            "later",
+            "."
+          ],
+          "answer": "He said to me he would call later .",
+          "explain_en": "Use 'said to someone'; 'will' backshifts to 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i9",
+          "type": "speak",
+          "prompt_en": "Say a sentence reporting what a teammate told you yesterday, backshifting a 'will' statement to 'would'.",
+          "model_en": "My teammate told me he would merge the pull request after lunch.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s3i10",
+          "type": "speak",
+          "prompt_en": "Say a sentence reporting what your manager said, backshifting a present-tense statement and the word 'today' to 'that day'.",
+          "model_en": "My manager said the release was scheduled for that day.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d09s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d09s4i1",
+          "type": "error-find",
+          "prompt_en": "She said she will review my pull request later",
+          "tokens": [
+            "She",
+            "said",
+            "she",
+            "will",
+            "review",
+            "my",
+            "pull",
+            "request",
+            "later"
+          ],
+          "error_index": 3,
+          "options": [
+            "would",
+            "will be",
+            "shall"
+          ],
+          "answer": "would",
+          "explain_en": "In reported speech 'will' backshifts to 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i2",
+          "type": "error-find",
+          "prompt_en": "He told me the Salesforce deploy is running now",
+          "tokens": [
+            "He",
+            "told",
+            "me",
+            "the",
+            "Salesforce",
+            "deploy",
+            "is",
+            "running",
+            "now"
+          ],
+          "error_index": 6,
+          "options": [
+            "was",
+            "are",
+            "be"
+          ],
+          "answer": "was",
+          "explain_en": "Reported present 'is' backshifts to 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i3",
+          "type": "error-find",
+          "prompt_en": "My lead said she can fix the bug today",
+          "tokens": [
+            "My",
+            "lead",
+            "said",
+            "she",
+            "can",
+            "fix",
+            "the",
+            "bug",
+            "today"
+          ],
+          "error_index": 4,
+          "options": [
+            "could",
+            "can be",
+            "cans"
+          ],
+          "answer": "could",
+          "explain_en": "Reported 'can' backshifts to 'could'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i4",
+          "type": "mcq",
+          "prompt_en": "The architect said the API ___ the request the previous day.",
+          "options": [
+            "had logged",
+            "logs",
+            "is logging",
+            "will log"
+          ],
+          "answer": "had logged",
+          "explain_en": "Reported past/present perfect backshifts to past perfect 'had logged'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i5",
+          "type": "mcq",
+          "prompt_en": "He told me he ___ tired after the late release.",
+          "options": [
+            "was",
+            "is",
+            "are",
+            "be"
+          ],
+          "answer": "was",
+          "explain_en": "Reported present 'is' backshifts to past 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i6",
+          "type": "mcq",
+          "prompt_en": "She said the team ___ deploy on Fridays anymore.",
+          "options": [
+            "couldn't",
+            "can't",
+            "cannot",
+            "won't can"
+          ],
+          "answer": "couldn't",
+          "explain_en": "Reported 'can't' backshifts to 'couldn't'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i7",
+          "type": "fill-bank",
+          "prompt_en": "The manager ___ me the standup would start at nine.",
+          "options": [
+            "told",
+            "said",
+            "spoke"
+          ],
+          "answer": "told",
+          "explain_en": "Use 'tell someone'; 'say' does not take an object like this.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i8",
+          "type": "fill-bank",
+          "prompt_en": "He said he ___ already merged the branch.",
+          "options": [
+            "had",
+            "has",
+            "have"
+          ],
+          "answer": "had",
+          "explain_en": "Reported present perfect 'has merged' backshifts to past perfect 'had merged'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i9",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "She",
+            "said",
+            "she",
+            "would",
+            "demo",
+            "the",
+            "feature",
+            "."
+          ],
+          "answer": "She said she would demo the feature .",
+          "explain_en": "Reported 'will demo' becomes 'would demo'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d09s4i10",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "He",
+            "told",
+            "us",
+            "the",
+            "server",
+            "was",
+            "down",
+            "that",
+            "day",
+            "."
+          ],
+          "answer": "He told us the server was down that day .",
+          "explain_en": "Reported 'is down today' becomes 'was down that day' with 'tell us'.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
