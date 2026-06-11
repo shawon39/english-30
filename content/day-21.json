@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 21,
+  "theme": "may / might / could (possibility)",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "may / might / could + base = present or future possibility (might is the least certain). Negatives differ: may not / might not = maybe not; couldn't = impossible.",
+  "rule_bn": "may / might / could + base = সম্ভাবনা (might = সবচেয়ে কম নিশ্চিত)। may not / might not = হয়তো না; couldn't = অসম্ভব।",
+  "sessions": [
+    {
+      "id": "d21s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d21s1i1",
+          "type": "error-find",
+          "prompt_en": "The deploy might fails if the cache isn't warmed",
+          "tokens": ["The", "deploy", "might fails", "if", "the", "cache", "isn't", "warmed"],
+          "error_index": 2,
+          "options": ["might fail", "might failing", "might to fail"],
+          "answer": "might fail",
+          "explain_en": "Modal + base verb: might fail.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i2",
+          "type": "error-find",
+          "prompt_en": "She may to join the call from the airport lounge",
+          "tokens": ["She", "may to join", "the", "call", "from", "the", "airport", "lounge"],
+          "error_index": 1,
+          "options": ["may join", "may joining", "mays join"],
+          "answer": "may join",
+          "explain_en": "may + base verb, no 'to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i3",
+          "type": "error-find",
+          "prompt_en": "It could rains during the launch event, so book a hall",
+          "tokens": ["It", "could rains", "during", "the", "launch", "event,", "so", "book", "a", "hall"],
+          "error_index": 1,
+          "options": ["could rain", "could raining", "could to rain"],
+          "answer": "could rain",
+          "explain_en": "could + base verb: rain.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i4",
+          "type": "error-find",
+          "prompt_en": "The vendor might could extend the trial if we ask nicely",
+          "tokens": ["The", "vendor", "might could extend", "the", "trial", "if", "we", "ask", "nicely"],
+          "error_index": 2,
+          "options": ["might extend", "might could to extend", "could might extend"],
+          "answer": "might extend",
+          "explain_en": "Two modals can't stack — pick one.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i5",
+          "type": "error-find",
+          "prompt_en": "This error may caused by the stale token",
+          "tokens": ["This", "error", "may caused", "by", "the", "stale", "token"],
+          "error_index": 2,
+          "options": ["may be caused", "may causing", "may been caused"],
+          "answer": "may be caused",
+          "explain_en": "Passive possibility → may BE + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i6",
+          "type": "error-find",
+          "prompt_en": "He might not to like the new branching strategy",
+          "tokens": ["He", "might", "not to like", "the", "new", "branching", "strategy"],
+          "error_index": 2,
+          "options": ["not like", "not liking", "to not like"],
+          "answer": "not like",
+          "explain_en": "might not + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i7",
+          "type": "error-find",
+          "prompt_en": "The fix mights work, but let's test it on one org first",
+          "tokens": ["The", "fix", "mights", "work,", "but", "let's", "test", "it", "on", "one", "org", "first"],
+          "error_index": 2,
+          "options": ["might", "might to", "may to"],
+          "answer": "might",
+          "explain_en": "Modals never take -s: might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i8",
+          "type": "error-find",
+          "prompt_en": "We may will need a bigger instance for the data load",
+          "tokens": ["We", "may will need", "a", "bigger", "instance", "for", "the", "data", "load"],
+          "error_index": 1,
+          "options": ["may need", "may will to need", "will may need"],
+          "answer": "may need",
+          "explain_en": "One modal only: may need.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i9",
+          "type": "error-find",
+          "prompt_en": "She could being at lunch — her status shows away",
+          "tokens": ["She", "could being", "at", "lunch", "—", "her", "status", "shows", "away"],
+          "error_index": 1,
+          "options": ["could be", "could been", "can being"],
+          "answer": "could be",
+          "explain_en": "could + base verb: be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s1i10",
+          "type": "error-find",
+          "prompt_en": "Careful — that query might brings down the whole org",
+          "tokens": ["Careful", "—", "that", "query", "might brings", "down", "the", "whole", "org"],
+          "error_index": 4,
+          "options": ["might bring", "might bringing", "might to bring"],
+          "answer": "might bring",
+          "explain_en": "Base verb after might: bring.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d21s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d21s2i1",
+          "type": "mcq",
+          "prompt_en": "Take an umbrella — it ___ rain later.",
+          "options": ["might", "must to", "can't", "should to"],
+          "answer": "might",
+          "explain_en": "Uncertain future → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i2",
+          "type": "mcq",
+          "prompt_en": "The API ___ respond slowly during the nightly batch window.",
+          "options": ["may", "mustn't", "needn't", "ought"],
+          "answer": "may",
+          "explain_en": "A real possibility → may.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i3",
+          "type": "mcq",
+          "prompt_en": "Don't call yet — she ___ still be in the board meeting.",
+          "options": ["could", "must to", "needn't", "will to"],
+          "answer": "could",
+          "explain_en": "Present possibility → could be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i4",
+          "type": "mcq",
+          "prompt_en": "We ___ hit the API limit if all three jobs run at once.",
+          "options": ["might", "needn't", "mustn't", "used to"],
+          "answer": "might",
+          "explain_en": "Possible risk → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i5",
+          "type": "mcq",
+          "prompt_en": "The badge reader is flaky; you ___ need a second tap.",
+          "options": ["might", "must to", "needn't", "can to"],
+          "answer": "might",
+          "explain_en": "Maybe necessary → might need.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The package ___ arrive today or tomorrow, depending on customs.",
+          "options": ["may", "must to", "needn't"],
+          "answer": "may",
+          "explain_en": "Open possibility → may.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Heads up: this refactor ___ touch the billing module too.",
+          "options": ["might", "ought", "must to"],
+          "answer": "might",
+          "explain_en": "Possible side effect → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i8",
+          "type": "fill-bank",
+          "prompt_en": "It ___ be a permissions issue — try logging in as the test user.",
+          "options": ["could", "needn't", "must to"],
+          "answer": "could",
+          "explain_en": "One possible explanation → could be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i9",
+          "type": "fill-bank",
+          "prompt_en": "We ___ not make the early slot; the airport queue is huge.",
+          "options": ["might", "must", "ought to"],
+          "answer": "might",
+          "explain_en": "might not = maybe not.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s2i10",
+          "type": "fill-bank",
+          "prompt_en": "Ask in #platform — someone there ___ know the root cause.",
+          "options": ["might", "must to", "needn't"],
+          "answer": "might",
+          "explain_en": "Uncertain → might know.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d21s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d21s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The meeting", "might", "run", "over", "by", "ten", "minutes", "."],
+          "answer": "The meeting might run over by ten minutes .",
+          "explain_en": "might + base verb for a possibility.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "may", "need", "approval", "from", "the security team", "."],
+          "answer": "We may need approval from the security team .",
+          "explain_en": "may need = it is possible we need.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["This flag", "could", "break", "the older clients", "."],
+          "answer": "This flag could break the older clients .",
+          "explain_en": "could = a possible outcome.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "might", "not", "have", "time", "for", "a full review", "."],
+          "answer": "She might not have time for a full review .",
+          "explain_en": "might not = maybe not.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The outage", "may", "be", "related", "to", "the DNS change", "."],
+          "answer": "The outage may be related to the DNS change .",
+          "explain_en": "may be + adjective/participle for a possible state.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["It", "could", "take", "a week", "to", "reindex", "everything", "."],
+          "answer": "It could take a week to reindex everything .",
+          "explain_en": "could take = a possible duration.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The client", "might", "prefer", "a", "shorter", "weekly", "call", "."],
+          "answer": "The client might prefer a shorter weekly call .",
+          "explain_en": "might + base verb: prefer.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Prices", "may", "change", "after", "the beta", "ends", "."],
+          "answer": "Prices may change after the beta ends .",
+          "explain_en": "may change = official-sounding possibility.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i9",
+          "type": "speak",
+          "prompt_en": "Make two guesses about why a test is failing, using 'might' and 'could'.",
+          "model_en": "It might be a stale fixture, or it could be a timezone bug.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s3i10",
+          "type": "speak",
+          "prompt_en": "Say one thing that may change in your team next quarter.",
+          "model_en": "We may move to trunk-based development next quarter.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d21s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d21s4i1",
+          "type": "error-find",
+          "prompt_en": "The migration might takes longer on the big orgs",
+          "tokens": ["The", "migration", "might takes", "longer", "on", "the", "big", "orgs"],
+          "error_index": 2,
+          "options": ["might take", "might taking", "might to take"],
+          "answer": "might take",
+          "explain_en": "Modal + base verb: take.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i2",
+          "type": "mcq",
+          "prompt_en": "Why is the dashboard empty? — The ETL job ___ still be running.",
+          "options": ["might", "must to", "needn't", "would to"],
+          "answer": "might",
+          "explain_en": "Possible explanation → might still be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i3",
+          "type": "fill-bank",
+          "prompt_en": "Bring a jacket; the venue ___ be cold.",
+          "options": ["could", "must to", "needn't"],
+          "answer": "could",
+          "explain_en": "Possibility → could be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The review", "may", "take", "longer", "than", "usual", "."],
+          "answer": "The review may take longer than usual .",
+          "explain_en": "may + base verb for a possibility.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i5",
+          "type": "error-find",
+          "prompt_en": "She may comes back before the retro ends",
+          "tokens": ["She", "may comes", "back", "before", "the", "retro", "ends"],
+          "error_index": 1,
+          "options": ["may come", "may coming", "mays come"],
+          "answer": "may come",
+          "explain_en": "may + base verb: come.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i6",
+          "type": "mcq",
+          "prompt_en": "The new intern ___ know Apex already — check her resume.",
+          "options": ["might", "must to", "needn't to", "can to"],
+          "answer": "might",
+          "explain_en": "Uncertain guess → might know.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i7",
+          "type": "fill-bank",
+          "prompt_en": "The hotfix ___ not reach all pods until tonight.",
+          "options": ["might", "must", "should to"],
+          "answer": "might",
+          "explain_en": "might not = maybe it won't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["This experiment", "could", "double", "our signup rate", "."],
+          "answer": "This experiment could double our signup rate .",
+          "explain_en": "could = possible big outcome.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i9",
+          "type": "error-find",
+          "prompt_en": "The auditors may to visit the office next month",
+          "tokens": ["The", "auditors", "may to visit", "the", "office", "next", "month"],
+          "error_index": 2,
+          "options": ["may visit", "may visiting", "may visits"],
+          "answer": "may visit",
+          "explain_en": "may + base verb, no 'to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d21s4i10",
+          "type": "mcq",
+          "prompt_en": "I'm not sure where the lead is — he ___ be at the dentist.",
+          "options": ["could", "mustn't", "needn't", "ought"],
+          "answer": "could",
+          "explain_en": "Present possibility → could be.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

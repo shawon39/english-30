@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 19,
+  "theme": "must / have to / need to",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "must = strong obligation from the speaker (and rules). have to = external obligation, and it carries tense: had to, will have to. Negatives differ: mustn't = forbidden; don't have to / don't need to = not necessary.",
+  "rule_bn": "must = কঠোর বাধ্যবাধকতা; have to = বাইরের নিয়ম, tense বদলায় (had to / will have to)। mustn't = নিষেধ; don't have to = দরকার নেই — দুটো এক নয়।",
+  "sessions": [
+    {
+      "id": "d19s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d19s1i1",
+          "type": "error-find",
+          "prompt_en": "You mustn't submit a timesheet — it's optional this week",
+          "tokens": ["You", "mustn't", "submit", "a", "timesheet", "—", "it's", "optional", "this", "week"],
+          "error_index": 1,
+          "options": ["don't have to", "must", "aren't must"],
+          "answer": "don't have to",
+          "explain_en": "Not necessary → don't have to; mustn't = forbidden.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i2",
+          "type": "error-find",
+          "prompt_en": "She must to renew her certification before March",
+          "tokens": ["She", "must to renew", "her", "certification", "before", "March"],
+          "error_index": 1,
+          "options": ["must renew", "must renewing", "musts renew"],
+          "answer": "must renew",
+          "explain_en": "must + base verb, no 'to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i3",
+          "type": "error-find",
+          "prompt_en": "Yesterday I must stay late to finish the data load",
+          "tokens": ["Yesterday", "I", "must stay", "late", "to", "finish", "the", "data", "load"],
+          "error_index": 2,
+          "options": ["had to stay", "must stayed", "have to stay"],
+          "answer": "had to stay",
+          "explain_en": "'must' has no past — use had to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i4",
+          "type": "error-find",
+          "prompt_en": "He don't have to attend the retro if he's on leave",
+          "tokens": ["He", "don't have to", "attend", "the", "retro", "if", "he's", "on", "leave"],
+          "error_index": 1,
+          "options": ["doesn't have to", "don't has to", "doesn't must"],
+          "answer": "doesn't have to",
+          "explain_en": "he/she/it → doesn't have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i5",
+          "type": "error-find",
+          "prompt_en": "Visitors must not to enter the server room without a badge",
+          "tokens": ["Visitors", "must not to enter", "the", "server", "room", "without", "a", "badge"],
+          "error_index": 1,
+          "options": ["must not enter", "must not entering", "not must enter"],
+          "answer": "must not enter",
+          "explain_en": "must (not) + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i6",
+          "type": "error-find",
+          "prompt_en": "We will must migrate the org before the API retires",
+          "tokens": ["We", "will must migrate", "the", "org", "before", "the", "API", "retires"],
+          "error_index": 1,
+          "options": ["will have to migrate", "will must to migrate", "must will migrate"],
+          "answer": "will have to migrate",
+          "explain_en": "No future 'must' — use will have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i7",
+          "type": "error-find",
+          "prompt_en": "You needn't to fill the survey; it takes two minutes anyway",
+          "tokens": ["You", "needn't to fill", "the", "survey;", "it", "takes", "two", "minutes", "anyway"],
+          "error_index": 1,
+          "options": ["needn't fill", "needn't filling", "need not to fill"],
+          "answer": "needn't fill",
+          "explain_en": "needn't + base verb (= don't need to).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i8",
+          "type": "error-find",
+          "prompt_en": "All contractors has to sign the NDA before day one",
+          "tokens": ["All", "contractors", "has to", "sign", "the", "NDA", "before", "day", "one"],
+          "error_index": 2,
+          "options": ["have to", "must to", "having to"],
+          "answer": "have to",
+          "explain_en": "Plural subject → have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i9",
+          "type": "error-find",
+          "prompt_en": "Do we must update the dependencies this sprint?",
+          "tokens": ["Do", "we", "must update", "the", "dependencies", "this", "sprint?"],
+          "error_index": 2,
+          "options": ["have to update", "must to update", "had update"],
+          "answer": "have to update",
+          "explain_en": "Questions with 'do' use have to: Do we have to…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s1i10",
+          "type": "error-find",
+          "prompt_en": "She didn't need submit the report because the client cancelled",
+          "tokens": ["She", "didn't", "need submit", "the", "report", "because", "the", "client", "cancelled"],
+          "error_index": 2,
+          "options": ["need to submit", "needs to submit", "need submitting"],
+          "answer": "need to submit",
+          "explain_en": "didn't need TO + base verb.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d19s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d19s2i1",
+          "type": "mcq",
+          "prompt_en": "You ___ deploy to production directly — it's blocked by policy.",
+          "options": ["mustn't", "don't have to", "needn't", "don't need to"],
+          "answer": "mustn't",
+          "explain_en": "Forbidden → mustn't; the others mean 'not necessary'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i2",
+          "type": "mcq",
+          "prompt_en": "We ___ wear badges in the old office; nobody checked.",
+          "options": ["didn't have to", "mustn't", "don't have to", "hadn't to"],
+          "answer": "didn't have to",
+          "explain_en": "Past lack of obligation → didn't have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i3",
+          "type": "mcq",
+          "prompt_en": "My visa expires soon, so I ___ book the embassy appointment this week.",
+          "options": ["have to", "might", "don't have to", "would"],
+          "answer": "have to",
+          "explain_en": "External deadline → have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i4",
+          "type": "mcq",
+          "prompt_en": "You ___ memorize the API — just know where the docs are.",
+          "options": ["don't need to", "mustn't", "must", "will have to"],
+          "answer": "don't need to",
+          "explain_en": "Not necessary → don't need to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i5",
+          "type": "mcq",
+          "prompt_en": "Everyone ___ complete the security training by Friday; it's mandatory.",
+          "options": ["must", "might", "would rather", "used to"],
+          "answer": "must",
+          "explain_en": "A firm rule → must.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The build is broken, so we ___ fix main before anything else.",
+          "options": ["have to", "don't have to", "mustn't"],
+          "answer": "have to",
+          "explain_en": "Forced by the situation → have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i7",
+          "type": "fill-bank",
+          "prompt_en": "You ___ answer work chats on vacation — that's the whole point.",
+          "options": ["don't have to", "must", "have to"],
+          "answer": "don't have to",
+          "explain_en": "No obligation → don't have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Last quarter we ___ rewrite the sync job twice.",
+          "options": ["had to", "must", "have to"],
+          "answer": "had to",
+          "explain_en": "Past obligation → had to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i9",
+          "type": "fill-bank",
+          "prompt_en": "Candidates ___ bring a laptop; we provide one for the pairing round.",
+          "options": ["needn't", "must", "had to"],
+          "answer": "needn't",
+          "explain_en": "needn't = it isn't necessary.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s2i10",
+          "type": "fill-bank",
+          "prompt_en": "After the acquisition, every vendor ___ pass a new security review.",
+          "options": ["will have to", "must to", "needn't to"],
+          "answer": "will have to",
+          "explain_en": "Future obligation → will have to.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d19s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d19s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "must", "rotate", "the API keys", "every", "quarter", "."],
+          "answer": "You must rotate the API keys every quarter .",
+          "explain_en": "A firm rule → must + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "had", "to", "roll", "back", "the release", "at", "midnight", "."],
+          "answer": "We had to roll back the release at midnight .",
+          "explain_en": "Past obligation → had to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "doesn't", "have", "to", "attend", "every", "design review", "."],
+          "answer": "She doesn't have to attend every design review .",
+          "explain_en": "Not necessary → doesn't have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Visitors", "mustn't", "plug", "laptops", "into", "the lab network", "."],
+          "answer": "Visitors mustn't plug laptops into the lab network .",
+          "explain_en": "Forbidden → mustn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "don't", "need", "to", "apologize", "for", "asking", "questions", "."],
+          "answer": "You don't need to apologize for asking questions .",
+          "explain_en": "No need → don't need to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "will", "have", "to", "upgrade", "the API version", "next year", "."],
+          "answer": "We will have to upgrade the API version next year .",
+          "explain_en": "Future obligation → will have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Do", "I", "have", "to", "join", "both", "stand-ups", "today", "?"],
+          "answer": "Do I have to join both stand-ups today ?",
+          "explain_en": "Obligation question → Do I have to…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Everyone", "must", "lock", "their screen", "before", "leaving", "."],
+          "answer": "Everyone must lock their screen before leaving .",
+          "explain_en": "A workplace rule → must.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i9",
+          "type": "speak",
+          "prompt_en": "Tell a new hire one rule they must follow and one thing they don't have to do.",
+          "model_en": "You must enable two-factor authentication, but you don't have to install the VPN on your phone.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d19s3i10",
+          "type": "speak",
+          "prompt_en": "Describe a past obligation using 'had to'.",
+          "model_en": "Last release I had to coordinate three teams across two time zones.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

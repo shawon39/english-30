@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 20,
+  "theme": "should / ought to / had better",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "should / ought to = advice or expectation. had better = strong warning with consequences — followed by the bare verb: You'd better hurry. Negative: had better not.",
+  "rule_bn": "should / ought to = পরামর্শ; had better = কড়া সতর্কতা (ফল খারাপ হতে পারে) + bare verb। নেতিবাচক: had better not।",
+  "sessions": [
+    {
+      "id": "d20s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d20s1i1",
+          "type": "error-find",
+          "prompt_en": "You should to split that pull request into smaller pieces",
+          "tokens": ["You", "should to split", "that", "pull", "request", "into", "smaller", "pieces"],
+          "error_index": 1,
+          "options": ["should split", "should splitting", "should splits"],
+          "answer": "should split",
+          "explain_en": "should + base verb, no 'to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i2",
+          "type": "error-find",
+          "prompt_en": "We had better to test this on staging first",
+          "tokens": ["We", "had better to test", "this", "on", "staging", "first"],
+          "error_index": 1,
+          "options": ["had better test", "had better testing", "had to better test"],
+          "answer": "had better test",
+          "explain_en": "had better + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i3",
+          "type": "error-find",
+          "prompt_en": "He ought take the architect role; he's ready",
+          "tokens": ["He", "ought take", "the", "architect", "role;", "he's", "ready"],
+          "error_index": 1,
+          "options": ["ought to take", "ought taking", "oughts take"],
+          "answer": "ought to take",
+          "explain_en": "ought TO + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i4",
+          "type": "error-find",
+          "prompt_en": "You had better not to skip the smoke tests tonight",
+          "tokens": ["You", "had", "better", "not to skip", "the", "smoke", "tests", "tonight"],
+          "error_index": 3,
+          "options": ["not skip", "not skipping", "to not skip"],
+          "answer": "not skip",
+          "explain_en": "had better not + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i5",
+          "type": "error-find",
+          "prompt_en": "She shoulds present the demo since she built the feature",
+          "tokens": ["She", "shoulds", "present", "the", "demo", "since", "she", "built", "the", "feature"],
+          "error_index": 1,
+          "options": ["should", "should to", "is should"],
+          "answer": "should",
+          "explain_en": "Modals never take -s.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i6",
+          "type": "error-find",
+          "prompt_en": "We ought to reviewed the logs before blaming the network",
+          "tokens": ["We", "ought to reviewed", "the", "logs", "before", "blaming", "the", "network"],
+          "error_index": 1,
+          "options": ["ought to review", "ought to reviewing", "ought reviewed"],
+          "answer": "ought to review",
+          "explain_en": "After 'ought to' → base verb: review.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i7",
+          "type": "error-find",
+          "prompt_en": "You had better backs up the org before the deployment",
+          "tokens": ["You", "had", "better", "backs up", "the", "org", "before", "the", "deployment"],
+          "error_index": 3,
+          "options": ["back up", "backing up", "to back up"],
+          "answer": "back up",
+          "explain_en": "had better + bare verb: back up.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i8",
+          "type": "error-find",
+          "prompt_en": "I think you shouldn't to ignore that deprecation warning",
+          "tokens": ["I", "think", "you", "shouldn't to ignore", "that", "deprecation", "warning"],
+          "error_index": 3,
+          "options": ["shouldn't ignore", "shouldn't ignoring", "not should ignore"],
+          "answer": "shouldn't ignore",
+          "explain_en": "shouldn't + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i9",
+          "type": "error-find",
+          "prompt_en": "The client ought to receives the report every Monday morning",
+          "tokens": ["The", "client", "ought to receives", "the", "report", "every", "Monday", "morning"],
+          "error_index": 2,
+          "options": ["ought to receive", "ought to receiving", "ought receives"],
+          "answer": "ought to receive",
+          "explain_en": "Base verb after ought to: receive.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s1i10",
+          "type": "error-find",
+          "prompt_en": "We had better hurried before the auditors arrive",
+          "tokens": ["We", "had", "better", "hurried", "before", "the", "auditors", "arrive"],
+          "error_index": 3,
+          "options": ["hurry", "hurrying", "to hurry"],
+          "answer": "hurry",
+          "explain_en": "had better + bare verb: hurry.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d20s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d20s2i1",
+          "type": "mcq",
+          "prompt_en": "Your laptop fan is screaming — you ___ close some of those tabs.",
+          "options": ["should", "mustn't", "needn't", "used to"],
+          "answer": "should",
+          "explain_en": "Friendly advice → should.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i2",
+          "type": "mcq",
+          "prompt_en": "We ___ leave now, or we'll miss the client dinner.",
+          "options": ["had better", "should to", "ought", "would rather"],
+          "answer": "had better",
+          "explain_en": "Urgent warning with a consequence → had better.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i3",
+          "type": "mcq",
+          "prompt_en": "Teams ___ document breaking changes in the changelog.",
+          "options": ["ought to", "ought", "had better to", "should to"],
+          "answer": "ought to",
+          "explain_en": "ought TO + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i4",
+          "type": "mcq",
+          "prompt_en": "You ___ promise a date until the scope is locked.",
+          "options": ["had better not", "had not better", "should better not", "ought not better"],
+          "answer": "had better not",
+          "explain_en": "Negative warning → had better not + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i5",
+          "type": "mcq",
+          "prompt_en": "Newcomers ___ shadow a senior on-call before taking shifts.",
+          "options": ["should", "mustn't", "can't", "may not"],
+          "answer": "should",
+          "explain_en": "Recommendation → should.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i6",
+          "type": "fill-bank",
+          "prompt_en": "You ___ charge your phone before the all-day workshop.",
+          "options": ["had better", "ought", "should to"],
+          "answer": "had better",
+          "explain_en": "Warning before trouble → had better + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Drivers ___ check mirrors before changing lanes.",
+          "options": ["ought to", "had better to", "should to"],
+          "answer": "ought to",
+          "explain_en": "ought to = should.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i8",
+          "type": "fill-bank",
+          "prompt_en": "You ___ push secrets to GitHub, even in private repos.",
+          "options": ["shouldn't", "should", "ought"],
+          "answer": "shouldn't",
+          "explain_en": "Advice against → shouldn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i9",
+          "type": "fill-bank",
+          "prompt_en": "We ___ probably loop in legal before signing this.",
+          "options": ["should", "had better to", "ought"],
+          "answer": "should",
+          "explain_en": "Soft suggestion → should (often with 'probably').",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s2i10",
+          "type": "fill-bank",
+          "prompt_en": "You'd ___ renew the SSL cert today; it expires tonight.",
+          "options": ["better", "ought to", "should"],
+          "answer": "better",
+          "explain_en": "You'd better = you had better.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d20s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d20s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "should", "take", "a break", "after", "that incident", "."],
+          "answer": "You should take a break after that incident .",
+          "explain_en": "Advice → should + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "had", "better", "freeze", "the branch", "before", "the demo", "."],
+          "answer": "We had better freeze the branch before the demo .",
+          "explain_en": "Strong warning → had better + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "ought", "to", "own", "the migration runbook", "."],
+          "answer": "He ought to own the migration runbook .",
+          "explain_en": "ought to = should.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "had", "better", "not", "deploy", "during", "the sales call", "."],
+          "answer": "You had better not deploy during the sales call .",
+          "explain_en": "had better not + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "should", "ask", "the platform team", "for", "a quota increase", "."],
+          "answer": "She should ask the platform team for a quota increase .",
+          "explain_en": "Advice → should ask.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Teams", "ought", "to", "keep", "their dashboards", "honest", "."],
+          "answer": "Teams ought to keep their dashboards honest .",
+          "explain_en": "ought to + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "shouldn't", "review", "code", "when", "you", "are", "angry", "."],
+          "answer": "You shouldn't review code when you are angry .",
+          "explain_en": "shouldn't + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "had", "better", "order", "the hardware", "this week", "."],
+          "answer": "We had better order the hardware this week .",
+          "explain_en": "had better for a time-sensitive warning.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i9",
+          "type": "speak",
+          "prompt_en": "Give a junior engineer one piece of advice using 'should'.",
+          "model_en": "You should read the existing tests before changing the code.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d20s3i10",
+          "type": "speak",
+          "prompt_en": "Warn someone about a deadline using 'had better'.",
+          "model_en": "You'd better submit the expense report today, or finance will reject it.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
