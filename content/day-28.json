@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 28,
+  "theme": "Work English: standups, code reviews, Jira",
+  "pillar": "applied",
+  "star": false,
+  "rule_en": "Standup formula: past simple for yesterday (I fixed…), present perfect for results that still matter (I've deployed…), will / going to for today, and polite modals in reviews (Could we…, This might break…).",
+  "rule_bn": "Standup: গতকাল → past simple; এখনো প্রাসঙ্গিক ফল → present perfect; আজ → will/going to; রিভিউতে ভদ্র modal (Could we…, This might…)।",
+  "sessions": [
+    {
+      "id": "d28s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d28s1i1",
+          "type": "error-find",
+          "prompt_en": "Yesterday I have fixed the flaky login test",
+          "tokens": ["Yesterday", "I", "have fixed", "the", "flaky", "login", "test"],
+          "error_index": 2,
+          "options": ["fixed", "has fixed", "am fixing"],
+          "answer": "fixed",
+          "explain_en": "'Yesterday' → past simple in standups.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i2",
+          "type": "error-find",
+          "prompt_en": "I just deploy the hotfix, so staging is fresh",
+          "tokens": ["I", "just deploy", "the", "hotfix,", "so", "staging", "is", "fresh"],
+          "error_index": 1,
+          "options": ["have just deployed", "just deploying", "am just deploy"],
+          "answer": "have just deployed",
+          "explain_en": "A fresh result → present perfect: have just deployed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i3",
+          "type": "error-find",
+          "prompt_en": "Today I am work on the permission bug after lunch",
+          "tokens": ["Today", "I", "am work", "on", "the", "permission", "bug", "after", "lunch"],
+          "error_index": 2,
+          "options": ["will work", "am works", "work am"],
+          "answer": "will work",
+          "explain_en": "Today's plan → will work (or am working).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i4",
+          "type": "error-find",
+          "prompt_en": "This PR might breaks the bulk import on large files",
+          "tokens": ["This", "PR", "might breaks", "the", "bulk", "import", "on", "large", "files"],
+          "error_index": 2,
+          "options": ["might break", "might breaking", "might to break"],
+          "answer": "might break",
+          "explain_en": "Review comment → might + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i5",
+          "type": "error-find",
+          "prompt_en": "Could you adds a test for the null case?",
+          "tokens": ["Could", "you", "adds", "a", "test", "for", "the", "null", "case?"],
+          "error_index": 2,
+          "options": ["add", "adding", "added"],
+          "answer": "add",
+          "explain_en": "Could you + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i6",
+          "type": "error-find",
+          "prompt_en": "The ticket is block by the missing API credentials",
+          "tokens": ["The", "ticket", "is block", "by", "the", "missing", "API", "credentials"],
+          "error_index": 2,
+          "options": ["is blocked", "is blocking", "blocks"],
+          "answer": "is blocked",
+          "explain_en": "Passive → is blocked by.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i7",
+          "type": "error-find",
+          "prompt_en": "We didn't received the updated designs yet",
+          "tokens": ["We", "didn't received", "the", "updated", "designs", "yet"],
+          "error_index": 1,
+          "options": ["haven't received", "didn't receives", "hasn't received"],
+          "answer": "haven't received",
+          "explain_en": "With 'yet' → present perfect: haven't received.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i8",
+          "type": "error-find",
+          "prompt_en": "I'll update the ticket once the fix will pass QA",
+          "tokens": ["I'll", "update", "the", "ticket", "once", "the", "fix", "will pass", "QA"],
+          "error_index": 7,
+          "options": ["passes", "pass", "would pass"],
+          "answer": "passes",
+          "explain_en": "After 'once/when' → present simple, not will.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i9",
+          "type": "error-find",
+          "prompt_en": "This method should returns early when the list is empty",
+          "tokens": ["This", "method", "should returns", "early", "when", "the", "list", "is", "empty"],
+          "error_index": 2,
+          "options": ["should return", "should returning", "should to return"],
+          "answer": "should return",
+          "explain_en": "Code review advice → should + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s1i10",
+          "type": "error-find",
+          "prompt_en": "I am agree with the proposed schema change",
+          "tokens": ["I", "am agree", "with", "the", "proposed", "schema", "change"],
+          "error_index": 1,
+          "options": ["agree", "am agreeing", "agreed am"],
+          "answer": "agree",
+          "explain_en": "'agree' is a verb: I agree (never 'I am agree').",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d28s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d28s2i1",
+          "type": "mcq",
+          "prompt_en": "Standup: 'Yesterday I ___ the cache layer; today I'll add metrics.'",
+          "options": ["refactored", "have refactored", "refactor", "am refactoring"],
+          "answer": "refactored",
+          "explain_en": "'Yesterday' → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i2",
+          "type": "mcq",
+          "prompt_en": "Review comment: '___ we extract this into a helper?'",
+          "options": ["Could", "Must", "Ought", "May to"],
+          "answer": "Could",
+          "explain_en": "Polite suggestion → Could we…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i3",
+          "type": "mcq",
+          "prompt_en": "'I ___ on the migration script since Tuesday — almost done.'",
+          "options": ["have been working", "am working", "worked", "work"],
+          "answer": "have been working",
+          "explain_en": "since Tuesday + still going → present perfect continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i4",
+          "type": "mcq",
+          "prompt_en": "Jira comment: 'Blocked — we ___ access the vendor sandbox until they renew the cert.'",
+          "options": ["can't", "couldn't to", "mustn't to", "don't can"],
+          "answer": "can't",
+          "explain_en": "Current inability → can't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i5",
+          "type": "mcq",
+          "prompt_en": "'The fix ___ ready by EOD; the tests are running now.'",
+          "options": ["should be", "should being", "shoulds be", "should is"],
+          "answer": "should be",
+          "explain_en": "Expectation → should be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i6",
+          "type": "fill-bank",
+          "prompt_en": "'I ___ pair with Nadia on this after the standup.'",
+          "options": ["am going to", "am going", "going to"],
+          "answer": "am going to",
+          "explain_en": "Plan → am going to + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i7",
+          "type": "fill-bank",
+          "prompt_en": "'This query ___ time out on orgs with millions of rows.'",
+          "options": ["might", "must to", "needn't"],
+          "answer": "might",
+          "explain_en": "Review warning → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i8",
+          "type": "fill-bank",
+          "prompt_en": "'We ___ shipped the feature flag cleanup last sprint.'",
+          "options": ["should have", "should", "must to"],
+          "answer": "should have",
+          "explain_en": "Past advice/regret → should have + participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i9",
+          "type": "fill-bank",
+          "prompt_en": "'Once QA ___ off, I'll merge and tag the release.'",
+          "options": ["signs", "will sign", "signed"],
+          "answer": "signs",
+          "explain_en": "After 'once' → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s2i10",
+          "type": "fill-bank",
+          "prompt_en": "'The demo org ___ refreshed every Monday morning.'",
+          "options": ["gets", "getting", "get"],
+          "answer": "gets",
+          "explain_en": "Routine passive → gets refreshed.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d28s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d28s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Yesterday", "I", "closed", "three", "tickets", "from", "the backlog", "."],
+          "answer": "Yesterday I closed three tickets from the backlog .",
+          "explain_en": "Yesterday → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "already", "pushed", "the fix", "to", "staging", "."],
+          "answer": "I have already pushed the fix to staging .",
+          "explain_en": "Result that matters now → present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Today", "I", "will", "pair", "with", "QA", "on", "the edge cases", "."],
+          "answer": "Today I will pair with QA on the edge cases .",
+          "explain_en": "Today's plan → will + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Could", "we", "split", "this ticket", "into", "two", "stories", "?"],
+          "answer": "Could we split this ticket into two stories ?",
+          "explain_en": "Polite suggestion → Could we…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["This change", "might", "affect", "the nightly batch", "."],
+          "answer": "This change might affect the nightly batch .",
+          "explain_en": "Review warning → might + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The release", "is", "blocked", "by", "a", "failing", "smoke", "test", "."],
+          "answer": "The release is blocked by a failing smoke test .",
+          "explain_en": "Jira status → passive: is blocked by.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "am", "going", "to", "document", "the rollback steps", "."],
+          "answer": "I am going to document the rollback steps .",
+          "explain_en": "Intention → am going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Has", "anyone", "seen", "this error", "in", "production", "before", "?"],
+          "answer": "Has anyone seen this error in production before ?",
+          "explain_en": "Experience question → present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i9",
+          "type": "speak",
+          "prompt_en": "Give your real standup update for today in three sentences.",
+          "model_en": "Yesterday I finished the data fix. Today I'm going to write the tests. No blockers.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d28s3i10",
+          "type": "speak",
+          "prompt_en": "Leave a polite review comment about a long method.",
+          "model_en": "This works, but could we break this method up? It might be hard to test as one piece.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

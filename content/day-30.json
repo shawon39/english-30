@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 30,
+  "theme": "Final boss: mixed timed exam",
+  "pillar": "mastery",
+  "star": false,
+  "rule_en": "Final boss: everything from Days 1-29 — tenses, conditionals, modals, deductions, wishes, and polite forms. Trust the time markers and keep modals with base verbs.",
+  "rule_bn": "ফাইনাল বস: ৩০ দিনের সব নিয়ম একসাথে। সময়ের সূত্র দেখো, modal-এর পরে base verb।",
+  "sessions": [
+    {
+      "id": "d30s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d30s1i1",
+          "type": "error-find",
+          "prompt_en": "The pipeline run every night at two thirty",
+          "tokens": ["The", "pipeline", "run", "every", "night", "at", "two", "thirty"],
+          "error_index": 2,
+          "options": ["runs", "running", "is run"],
+          "answer": "runs",
+          "explain_en": "Habit, third person → runs.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i2",
+          "type": "error-find",
+          "prompt_en": "He has been debug the same flow for six hours",
+          "tokens": ["He", "has been debug", "the", "same", "flow", "for", "six", "hours"],
+          "error_index": 1,
+          "options": ["has been debugging", "has been debugged", "is been debugging"],
+          "answer": "has been debugging",
+          "explain_en": "Present perfect continuous → been + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i3",
+          "type": "error-find",
+          "prompt_en": "By the time we noticed, the job has deleted half the records",
+          "tokens": ["By", "the", "time", "we", "noticed,", "the", "job", "has deleted", "half", "the", "records"],
+          "error_index": 7,
+          "options": ["had deleted", "have deleted", "deletes"],
+          "answer": "had deleted",
+          "explain_en": "Before a past moment → past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i4",
+          "type": "error-find",
+          "prompt_en": "We would have an office gym before the downsizing",
+          "tokens": ["We", "would have", "an", "office", "gym", "before", "the", "downsizing"],
+          "error_index": 1,
+          "options": ["used to have", "would had", "will have"],
+          "answer": "used to have",
+          "explain_en": "Past state → used to, not would.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i5",
+          "type": "error-find",
+          "prompt_en": "If the scanner will find a secret, the commit gets rejected",
+          "tokens": ["If", "the", "scanner", "will find", "a", "secret,", "the", "commit", "gets", "rejected"],
+          "error_index": 3,
+          "options": ["finds", "find", "would find"],
+          "answer": "finds",
+          "explain_en": "No will in the if-clause.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i6",
+          "type": "error-find",
+          "prompt_en": "The launch wouldn't have crashed if we would have load-tested",
+          "tokens": ["The", "launch", "wouldn't", "have", "crashed", "if", "we", "would have load-tested"],
+          "error_index": 7,
+          "options": ["had load-tested", "have load-tested", "would load-test"],
+          "answer": "had load-tested",
+          "explain_en": "If-clause → past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i7",
+          "type": "error-find",
+          "prompt_en": "I wish I has more patience with legacy code",
+          "tokens": ["I", "wish", "I", "has", "more", "patience", "with", "legacy", "code"],
+          "error_index": 3,
+          "options": ["had", "have", "will have"],
+          "answer": "had",
+          "explain_en": "wish + past simple: had.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i8",
+          "type": "error-find",
+          "prompt_en": "Yesterday everyone must attend the security briefing",
+          "tokens": ["Yesterday", "everyone", "must attend", "the", "security", "briefing"],
+          "error_index": 2,
+          "options": ["had to attend", "must attended", "have to attend"],
+          "answer": "had to attend",
+          "explain_en": "Past obligation → had to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i9",
+          "type": "error-find",
+          "prompt_en": "This mustn't be the production URL; it has 'dev' in it",
+          "tokens": ["This", "mustn't be", "the", "production", "URL;", "it", "has", "'dev'", "in", "it"],
+          "error_index": 1,
+          "options": ["can't be", "must be", "needn't be"],
+          "answer": "can't be",
+          "explain_en": "Impossible → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s1i10",
+          "type": "error-find",
+          "prompt_en": "The cron is suppose to pause during the maintenance window",
+          "tokens": ["The", "cron", "is suppose to", "pause", "during", "the", "maintenance", "window"],
+          "error_index": 2,
+          "options": ["is supposed to", "is supposing to", "supposes to"],
+          "answer": "is supposed to",
+          "explain_en": "supposed to, with the d.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d30s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d30s2i1",
+          "type": "mcq",
+          "prompt_en": "We ___ the contract in 2023 and renewed it twice since then.",
+          "options": ["signed", "have signed", "sign", "had signed"],
+          "answer": "signed",
+          "explain_en": "Finished time (2023) → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i2",
+          "type": "mcq",
+          "prompt_en": "The kickoff ___ at nine sharp tomorrow — it's on the calendar.",
+          "options": ["starts", "will to start", "is start", "would start"],
+          "answer": "starts",
+          "explain_en": "Scheduled event → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i3",
+          "type": "mcq",
+          "prompt_en": "The PM said the budget ___ final until the board met.",
+          "options": ["wasn't", "isn't", "won't be", "not"],
+          "answer": "wasn't",
+          "explain_en": "Reported speech backshifts is → was.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i4",
+          "type": "mcq",
+          "prompt_en": "Keep the fallback ready — the new API ___ throttle us.",
+          "options": ["might", "must to", "needn't", "ought"],
+          "answer": "might",
+          "explain_en": "Possible risk → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i5",
+          "type": "mcq",
+          "prompt_en": "The lock file changed, so someone ___ have run npm install.",
+          "options": ["must", "can't", "mustn't", "needn't to"],
+          "answer": "must",
+          "explain_en": "Past deduction → must have run.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i6",
+          "type": "fill-bank",
+          "prompt_en": "By the next audit, we ___ all the legacy flows.",
+          "options": ["will have retired", "will retiring", "have will retired"],
+          "answer": "will have retired",
+          "explain_en": "Done by a future point → future perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i7",
+          "type": "fill-bank",
+          "prompt_en": "If the team ___ smaller, decisions would take minutes.",
+          "options": ["were", "is", "will be"],
+          "answer": "were",
+          "explain_en": "Unreal present → were.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i8",
+          "type": "fill-bank",
+          "prompt_en": "If we had picked the managed package route, we ___ less custom code now.",
+          "options": ["would maintain", "will have maintained", "maintain"],
+          "answer": "would maintain",
+          "explain_en": "Past choice → present result: would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i9",
+          "type": "fill-bank",
+          "prompt_en": "We'll renew the license ___ the price stays flat.",
+          "options": ["as long as", "unless", "if only"],
+          "answer": "as long as",
+          "explain_en": "Condition for renewing → as long as.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s2i10",
+          "type": "fill-bank",
+          "prompt_en": "Would you mind ___ the meeting notes today?",
+          "options": ["taking", "take", "to take"],
+          "answer": "taking",
+          "explain_en": "mind + -ing.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d30s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d30s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The pager", "went", "off", "while", "I", "was", "cooking", "dinner", "."],
+          "answer": "The pager went off while I was cooking dinner .",
+          "explain_en": "Past simple interruption + past continuous background.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "said", "the client", "would", "renew", "in", "January", "."],
+          "answer": "She said the client would renew in January .",
+          "explain_en": "Reported speech: will → would.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "we", "had", "read", "the logs", ",", "we", "would", "have", "caught", "it", "sooner", "."],
+          "answer": "If we had read the logs , we would have caught it sooner .",
+          "explain_en": "Third conditional: unreal past.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Unless", "the tests", "pass", ",", "nothing", "gets", "merged", "."],
+          "answer": "Unless the tests pass , nothing gets merged .",
+          "explain_en": "unless = if they don't pass.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "were", "able", "to", "restore", "everything", "from", "the backup", "."],
+          "answer": "We were able to restore everything from the backup .",
+          "explain_en": "One-time past success → were able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "had", "better", "rehearse", "the demo", "twice", "."],
+          "answer": "You had better rehearse the demo twice .",
+          "explain_en": "Strong advice → had better + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Someone", "must", "have", "changed", "the firewall rules", "."],
+          "answer": "Someone must have changed the firewall rules .",
+          "explain_en": "Past deduction → must have changed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "wish", "every", "sprint", "ended", "this", "smoothly", "."],
+          "answer": "I wish every sprint ended this smoothly .",
+          "explain_en": "Present wish → wish + past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i9",
+          "type": "speak",
+          "prompt_en": "Summarize your 30-day challenge in two sentences, using a perfect tense and a conditional.",
+          "model_en": "I've drilled a hundred sessions in thirty days. If I hadn't practiced daily, my fast speech would still betray me.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s3i10",
+          "type": "speak",
+          "prompt_en": "Make one promise about your English going forward, using 'will' and 'going to'.",
+          "model_en": "I will keep reviewing my mistakes, and I'm going to speak up more in client calls.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d30s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d30s4i1",
+          "type": "error-find",
+          "prompt_en": "I have saw this exact error two years ago",
+          "tokens": ["I", "have saw", "this", "exact", "error", "two", "years", "ago"],
+          "error_index": 1,
+          "options": ["saw", "have seen", "had saw"],
+          "answer": "saw",
+          "explain_en": "'ago' = finished past → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i2",
+          "type": "mcq",
+          "prompt_en": "If you ___ the flag off, the old UI comes back.",
+          "options": ["turn", "will turn", "turned", "would turn"],
+          "answer": "turn",
+          "explain_en": "Zero conditional → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i3",
+          "type": "fill-bank",
+          "prompt_en": "The vendor ___ respond today; their office just opened.",
+          "options": ["might", "must to", "needn't"],
+          "answer": "might",
+          "explain_en": "Possibility → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "are", "launching", "the beta", "next", "Tuesday", "."],
+          "answer": "We are launching the beta next Tuesday .",
+          "explain_en": "Fixed arrangement → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i5",
+          "type": "error-find",
+          "prompt_en": "You don't has to attend both retros this week",
+          "tokens": ["You", "don't has to", "attend", "both", "retros", "this", "week"],
+          "error_index": 1,
+          "options": ["don't have to", "doesn't have to", "don't must"],
+          "answer": "don't have to",
+          "explain_en": "you → don't have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i6",
+          "type": "mcq",
+          "prompt_en": "If I hadn't taken that Salesforce course, I ___ a different career now.",
+          "options": ["would have", "will have", "have", "had"],
+          "answer": "would have",
+          "explain_en": "Past condition → present result: would have (= possess).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i7",
+          "type": "fill-bank",
+          "prompt_en": "He mentioned that the sprint goal ___ changed the night before.",
+          "options": ["had", "has", "will have"],
+          "answer": "had",
+          "explain_en": "Reported past-before-past → had changed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The staging org", "must", "be", "out", "of", "storage", "."],
+          "answer": "The staging org must be out of storage .",
+          "explain_en": "Present deduction → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i9",
+          "type": "error-find",
+          "prompt_en": "Could you shares your screen for the retro board?",
+          "tokens": ["Could", "you", "shares", "your", "screen", "for", "the", "retro", "board?"],
+          "error_index": 2,
+          "options": ["share", "sharing", "shared"],
+          "answer": "share",
+          "explain_en": "Could you + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d30s4i10",
+          "type": "mcq",
+          "prompt_en": "Looking back, we ___ have started the migration a quarter earlier.",
+          "options": ["should", "must to", "needn't", "can to"],
+          "answer": "should",
+          "explain_en": "Past advice → should have + participle.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

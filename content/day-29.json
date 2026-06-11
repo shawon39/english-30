@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 29,
+  "theme": "Your fast-speech error patterns (targeted)",
+  "pillar": "applied",
+  "star": true,
+  "rule_en": "Your greatest hits: didn't + base (never didn't went), he/she doesn't, for two years / since 2023, no perfect with finished time, said vs told, If + past perfect (never 'would have' twice), was able to (never 'could able to'), and stative verbs stay simple (I know, not I'm knowing).",
+  "rule_bn": "তোমার কমন ভুল: didn't + base verb; he/she + doesn't; for + সময়কাল, since + শুরুর বিন্দু; শেষ হওয়া সময়ের সাথে perfect নয়; said me নয় — told me; 'could able to' বলে কিছু নেই; know/like/need always simple।",
+  "sessions": [
+    {
+      "id": "d29s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d29s1i1",
+          "type": "error-find",
+          "prompt_en": "I didn't went to the retro because of the incident",
+          "tokens": ["I", "didn't went", "to", "the", "retro", "because", "of", "the", "incident"],
+          "error_index": 1,
+          "options": ["didn't go", "didn't gone", "not went"],
+          "answer": "didn't go",
+          "explain_en": "didn't + base verb: go.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i2",
+          "type": "error-find",
+          "prompt_en": "He don't know the deployment password anymore",
+          "tokens": ["He", "don't know", "the", "deployment", "password", "anymore"],
+          "error_index": 1,
+          "options": ["doesn't know", "don't knows", "not know"],
+          "answer": "doesn't know",
+          "explain_en": "he/she/it → doesn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i3",
+          "type": "error-find",
+          "prompt_en": "I am knowing the answer, give me one second",
+          "tokens": ["I", "am knowing", "the", "answer,", "give", "me", "one", "second"],
+          "error_index": 1,
+          "options": ["know", "am know", "knowing"],
+          "answer": "know",
+          "explain_en": "'know' is stative — never continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i4",
+          "type": "error-find",
+          "prompt_en": "She has been working here since two years",
+          "tokens": ["She", "has", "been", "working", "here", "since two years"],
+          "error_index": 5,
+          "options": ["for two years", "since two year", "from two years"],
+          "answer": "for two years",
+          "explain_en": "Duration → for; starting point → since.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i5",
+          "type": "error-find",
+          "prompt_en": "I have met the client yesterday about the renewal",
+          "tokens": ["I", "have met", "the", "client", "yesterday", "about", "the", "renewal"],
+          "error_index": 1,
+          "options": ["met", "has met", "am meeting"],
+          "answer": "met",
+          "explain_en": "Finished time (yesterday) → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i6",
+          "type": "error-find",
+          "prompt_en": "She said me the budget was already approved",
+          "tokens": ["She", "said me", "the", "budget", "was", "already", "approved"],
+          "error_index": 1,
+          "options": ["told me", "said to", "telled me"],
+          "answer": "told me",
+          "explain_en": "tell + person; say + thing: She told me.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i7",
+          "type": "error-find",
+          "prompt_en": "I would have joined the call if I would have known",
+          "tokens": ["I", "would", "have", "joined", "the", "call", "if", "I", "would have known"],
+          "error_index": 8,
+          "options": ["had known", "have known", "would know"],
+          "answer": "had known",
+          "explain_en": "The if-clause takes past perfect — never a second 'would have'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i8",
+          "type": "error-find",
+          "prompt_en": "We could able to reproduce the bug on the second try",
+          "tokens": ["We", "could able to", "reproduce", "the", "bug", "on", "the", "second", "try"],
+          "error_index": 1,
+          "options": ["were able to", "could able", "can able to"],
+          "answer": "were able to",
+          "explain_en": "'could able to' doesn't exist — was/were able to (or could).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i9",
+          "type": "error-find",
+          "prompt_en": "The job must have went over its time limit",
+          "tokens": ["The", "job", "must", "have went", "over", "its", "time", "limit"],
+          "error_index": 3,
+          "options": ["have gone", "have going", "has gone"],
+          "answer": "have gone",
+          "explain_en": "must have + past participle: gone.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s1i10",
+          "type": "error-find",
+          "prompt_en": "He told that the release was delayed by a week",
+          "tokens": ["He", "told", "that", "the", "release", "was", "delayed", "by", "a", "week"],
+          "error_index": 1,
+          "options": ["said", "telled", "saying"],
+          "answer": "said",
+          "explain_en": "No object after it → said that; tell needs a person.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d29s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d29s2i1",
+          "type": "mcq",
+          "prompt_en": "I ___ him twice so far this morning, but no reply.",
+          "options": ["have pinged", "pinged", "am pinging", "will ping"],
+          "answer": "have pinged",
+          "explain_en": "'so far' = unfinished period → present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i2",
+          "type": "mcq",
+          "prompt_en": "She ___ in Dhaka before she moved to Dubai in 2024.",
+          "options": ["had lived", "has lived", "lives", "is living"],
+          "answer": "had lived",
+          "explain_en": "Earlier of two past events → past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i3",
+          "type": "mcq",
+          "prompt_en": "He ___ me that the demo had gone well.",
+          "options": ["told", "said", "says to", "telled"],
+          "answer": "told",
+          "explain_en": "tell + person: told me.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i4",
+          "type": "mcq",
+          "prompt_en": "I ___ this codebase since my first week here.",
+          "options": ["have known", "know", "am knowing", "knew"],
+          "answer": "have known",
+          "explain_en": "Stative + since → present perfect simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i5",
+          "type": "mcq",
+          "prompt_en": "If she ___ the warning, she wouldn't have merged.",
+          "options": ["had seen", "would have seen", "saw", "sees"],
+          "answer": "had seen",
+          "explain_en": "If-clause → past perfect, not 'would have'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i6",
+          "type": "fill-bank",
+          "prompt_en": "He ___ have permissions for that object; the insert failed.",
+          "options": ["doesn't", "don't", "didn't has"],
+          "answer": "doesn't",
+          "explain_en": "he → doesn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i7",
+          "type": "fill-bank",
+          "prompt_en": "We've used this vendor ___ 2022 without a single outage.",
+          "options": ["since", "for", "from"],
+          "answer": "since",
+          "explain_en": "A starting point → since.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i8",
+          "type": "fill-bank",
+          "prompt_en": "I ___ understand the requirement now — thanks for the diagram.",
+          "options": ["understand", "am understanding", "understanding"],
+          "answer": "understand",
+          "explain_en": "Stative verb → simple form.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i9",
+          "type": "fill-bank",
+          "prompt_en": "They ___ to reproduce the crash after fifty attempts.",
+          "options": ["were able", "could able", "can able"],
+          "answer": "were able",
+          "explain_en": "One-time success → were able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s2i10",
+          "type": "fill-bank",
+          "prompt_en": "She ___ go to the offsite last month; the visa came late.",
+          "options": ["couldn't", "didn't could", "wasn't able"],
+          "answer": "couldn't",
+          "explain_en": "Past inability → couldn't + base.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d29s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d29s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "didn't", "see", "your message", "until", "this morning", "."],
+          "answer": "I didn't see your message until this morning .",
+          "explain_en": "didn't + base verb: see.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "doesn't", "work", "on", "Fridays", "anymore", "."],
+          "answer": "She doesn't work on Fridays anymore .",
+          "explain_en": "she → doesn't + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "known", "Rafi", "since", "the bootcamp days", "."],
+          "answer": "I have known Rafi since the bootcamp days .",
+          "explain_en": "Stative + since → present perfect simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "told", "me", "the org refresh", "had", "finished", "."],
+          "answer": "He told me the org refresh had finished .",
+          "explain_en": "told + person; reported past → had finished.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "have", "worked", "together", "for", "three", "years", "."],
+          "answer": "We have worked together for three years .",
+          "explain_en": "Duration → for three years.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "had", "known", "sooner", ",", "I", "would", "have", "warned", "the team", "."],
+          "answer": "If I had known sooner , I would have warned the team .",
+          "explain_en": "If + past perfect, would have + participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "was", "able", "to", "recover", "the deleted records", "."],
+          "answer": "I was able to recover the deleted records .",
+          "explain_en": "One-time past success → was able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "said", "the integration tests", "were", "green", "."],
+          "answer": "He said the integration tests were green .",
+          "explain_en": "said + clause (no person object).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i9",
+          "type": "speak",
+          "prompt_en": "Say what you did yesterday and what you've finished this week — watch your tenses.",
+          "model_en": "Yesterday I reviewed two pull requests, and this week I've closed five tickets.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d29s3i10",
+          "type": "speak",
+          "prompt_en": "Report something a teammate told you, using 'told me'.",
+          "model_en": "Nadia told me the client had approved the new flow.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
