@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 25,
+  "theme": "Permission & requests",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "Asking permission: Can I… (casual), Could I… (polite), May I… (formal) + base verb. Making requests: Could/Would you + base verb, or Would you mind + -ing. 'Do you mind if I…' takes the present simple.",
+  "rule_bn": "অনুমতি: Can I (সহজ), Could I (ভদ্র), May I (আনুষ্ঠানিক) + base verb। অনুরোধ: Could/Would you + base verb; Would you mind + -ing।",
+  "sessions": [
+    {
+      "id": "d25s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d25s1i1",
+          "type": "error-find",
+          "prompt_en": "May I to leave the workshop thirty minutes early?",
+          "tokens": ["May", "I", "to leave", "the", "workshop", "thirty", "minutes", "early?"],
+          "error_index": 2,
+          "options": ["leave", "leaving", "left"],
+          "answer": "leave",
+          "explain_en": "May I + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i2",
+          "type": "error-find",
+          "prompt_en": "Do you mind if I opens the window a little?",
+          "tokens": ["Do", "you", "mind", "if", "I", "opens", "the", "window", "a", "little?"],
+          "error_index": 5,
+          "options": ["open", "opened", "opening"],
+          "answer": "open",
+          "explain_en": "Do you mind if I + present simple: open.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i3",
+          "type": "error-find",
+          "prompt_en": "Could you sending me the recording after the call?",
+          "tokens": ["Could", "you", "sending", "me", "the", "recording", "after", "the", "call?"],
+          "error_index": 2,
+          "options": ["send", "to send", "sent"],
+          "answer": "send",
+          "explain_en": "Could you + base verb: send.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i4",
+          "type": "error-find",
+          "prompt_en": "Would you mind close the door during the interview?",
+          "tokens": ["Would", "you", "mind", "close", "the", "door", "during", "the", "interview?"],
+          "error_index": 3,
+          "options": ["closing", "to close", "closed"],
+          "answer": "closing",
+          "explain_en": "Would you mind + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i5",
+          "type": "error-find",
+          "prompt_en": "Can I borrows your charger until lunch?",
+          "tokens": ["Can", "I", "borrows", "your", "charger", "until", "lunch?"],
+          "error_index": 2,
+          "options": ["borrow", "borrowing", "borrowed"],
+          "answer": "borrow",
+          "explain_en": "Can I + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i6",
+          "type": "error-find",
+          "prompt_en": "Might I asking who approved this change?",
+          "tokens": ["Might", "I", "asking", "who", "approved", "this", "change?"],
+          "error_index": 2,
+          "options": ["ask", "to ask", "asked"],
+          "answer": "ask",
+          "explain_en": "Might I + base verb (very formal).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i7",
+          "type": "error-find",
+          "prompt_en": "Would you please to forward the invite to the vendor?",
+          "tokens": ["Would", "you", "please", "to forward", "the", "invite", "to", "the", "vendor?"],
+          "error_index": 3,
+          "options": ["forward", "forwarding", "forwarded"],
+          "answer": "forward",
+          "explain_en": "Would you (please) + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i8",
+          "type": "error-find",
+          "prompt_en": "Is it okay if he join the call as a listener?",
+          "tokens": ["Is", "it", "okay", "if", "he", "join", "the", "call", "as", "a", "listener?"],
+          "error_index": 5,
+          "options": ["joins", "joining", "to join"],
+          "answer": "joins",
+          "explain_en": "if he + present simple with -s: joins.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i9",
+          "type": "error-find",
+          "prompt_en": "Could I taking tomorrow off instead of Friday?",
+          "tokens": ["Could", "I", "taking", "tomorrow", "off", "instead", "of", "Friday?"],
+          "error_index": 2,
+          "options": ["take", "to take", "took"],
+          "answer": "take",
+          "explain_en": "Could I + base verb: take.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s1i10",
+          "type": "error-find",
+          "prompt_en": "Do you mind to turn the AC down a notch?",
+          "tokens": ["Do", "you", "mind", "to turn", "the", "AC", "down", "a", "notch?"],
+          "error_index": 3,
+          "options": ["turning", "turn to", "turned"],
+          "answer": "turning",
+          "explain_en": "Do you mind + -ing: turning.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d25s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d25s2i1",
+          "type": "mcq",
+          "prompt_en": "___ I use your monitor while you're in the meeting?",
+          "options": ["May", "Would to", "Should to", "Must to"],
+          "answer": "May",
+          "explain_en": "Formal permission → May I…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i2",
+          "type": "mcq",
+          "prompt_en": "___ you mind waiting while I finish this query?",
+          "options": ["Would", "Could", "May", "Can to"],
+          "answer": "Would",
+          "explain_en": "The set phrase is Would you mind + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i3",
+          "type": "mcq",
+          "prompt_en": "Excuse me, ___ I squeeze past? My desk is behind you.",
+          "options": ["could", "must", "would to", "ought"],
+          "answer": "could",
+          "explain_en": "Polite permission → Could I…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i4",
+          "type": "mcq",
+          "prompt_en": "___ you possibly review this before your next meeting?",
+          "options": ["Could", "May", "Must", "Ought to"],
+          "answer": "Could",
+          "explain_en": "Polite request to someone → Could you…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i5",
+          "type": "mcq",
+          "prompt_en": "Do you mind if I ___ the standup five minutes early today?",
+          "options": ["leave", "will leave", "would leave", "leaving"],
+          "answer": "leave",
+          "explain_en": "Do you mind if I + present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i6",
+          "type": "fill-bank",
+          "prompt_en": "___ I see your screen for a second?",
+          "options": ["Could", "Would to", "Must to"],
+          "answer": "Could",
+          "explain_en": "Polite ask → Could I…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Would you mind ___ that Jira ticket to me?",
+          "options": ["assigning", "assign", "to assign"],
+          "answer": "assigning",
+          "explain_en": "mind + -ing: assigning.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i8",
+          "type": "fill-bank",
+          "prompt_en": "___ it be okay if I worked from Sylhet next week?",
+          "options": ["Would", "May", "Must"],
+          "answer": "Would",
+          "explain_en": "Would it be okay if + past: a soft ask.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i9",
+          "type": "fill-bank",
+          "prompt_en": "Can I ___ a guest to the demo day?",
+          "options": ["bring", "brings", "bringing"],
+          "answer": "bring",
+          "explain_en": "Can I + base verb: bring.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s2i10",
+          "type": "fill-bank",
+          "prompt_en": "___ I have your attention for a moment, everyone?",
+          "options": ["May", "Do", "Am"],
+          "answer": "May",
+          "explain_en": "Formal address → May I have…",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d25s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d25s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["May", "I", "leave", "early", "for", "the embassy appointment", "?"],
+          "answer": "May I leave early for the embassy appointment ?",
+          "explain_en": "Formal permission → May I + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Could", "you", "re-run", "the failing job", "?"],
+          "answer": "Could you re-run the failing job ?",
+          "explain_en": "Polite request → Could you + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Would", "you", "mind", "reviewing", "the data model", "?"],
+          "answer": "Would you mind reviewing the data model ?",
+          "explain_en": "Would you mind + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Do", "you", "mind", "if", "I", "record", "this session", "?"],
+          "answer": "Do you mind if I record this session ?",
+          "explain_en": "Do you mind if I + present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Can", "I", "grab", "five", "minutes", "after", "the standup", "?"],
+          "answer": "Can I grab five minutes after the standup ?",
+          "explain_en": "Casual ask → Can I + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Could", "I", "get", "edit", "access", "to", "the roadmap doc", "?"],
+          "answer": "Could I get edit access to the roadmap doc ?",
+          "explain_en": "Polite permission → Could I get…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Would", "it", "be", "okay", "if", "I", "joined", "remotely", "?"],
+          "answer": "Would it be okay if I joined remotely ?",
+          "explain_en": "Soft ask → Would it be okay if + past.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["May", "I", "introduce", "our new solution architect", "?"],
+          "answer": "May I introduce our new solution architect ?",
+          "explain_en": "Formal introduction → May I introduce…",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i9",
+          "type": "speak",
+          "prompt_en": "Ask your manager for a day off, politely.",
+          "model_en": "Could I take next Thursday off? I'll hand over the on-call before then.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d25s3i10",
+          "type": "speak",
+          "prompt_en": "Ask a stranger at a conference to watch your laptop.",
+          "model_en": "Would you mind keeping an eye on my laptop for two minutes?",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

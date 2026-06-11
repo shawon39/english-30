@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 27,
+  "theme": "Modals review",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "Review: ability (can/could/was able to), obligation (must/have to), advice (should/had better), possibility (may/might/could), deduction (must be / can't be; must have / can't have + participle), politeness (would), and supposed to / going to.",
+  "rule_bn": "রিভিউ: সামর্থ্য, বাধ্যবাধকতা, পরামর্শ, সম্ভাবনা, অনুমান (বর্তমান/অতীত), ভদ্রতা, supposed to / going to — সব মডাল + base verb।",
+  "sessions": [
+    {
+      "id": "d27s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d27s1i1",
+          "type": "error-find",
+          "prompt_en": "She can codes in three languages without an IDE",
+          "tokens": ["She", "can codes", "in", "three", "languages", "without", "an", "IDE"],
+          "error_index": 1,
+          "options": ["can code", "can coding", "cans code"],
+          "answer": "can code",
+          "explain_en": "Modal + base verb: can code.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i2",
+          "type": "error-find",
+          "prompt_en": "We could fix the outage in twenty minutes last night",
+          "tokens": ["We", "could fix", "the", "outage", "in", "twenty", "minutes", "last", "night"],
+          "error_index": 1,
+          "options": ["were able to fix", "could fixed", "can fix"],
+          "answer": "were able to fix",
+          "explain_en": "One-time past success → was/were able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i3",
+          "type": "error-find",
+          "prompt_en": "Everyone must to badge in, even on weekends",
+          "tokens": ["Everyone", "must to badge", "in,", "even", "on", "weekends"],
+          "error_index": 1,
+          "options": ["must badge", "must badging", "musts badge"],
+          "answer": "must badge",
+          "explain_en": "must + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i4",
+          "type": "error-find",
+          "prompt_en": "You mustn't attend the optional training if you're busy",
+          "tokens": ["You", "mustn't", "attend", "the", "optional", "training", "if", "you're", "busy"],
+          "error_index": 1,
+          "options": ["don't have to", "must", "can't to"],
+          "answer": "don't have to",
+          "explain_en": "Optional → don't have to; mustn't = forbidden.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i5",
+          "type": "error-find",
+          "prompt_en": "You had better checks the visa rules before booking",
+          "tokens": ["You", "had", "better", "checks", "the", "visa", "rules", "before", "booking"],
+          "error_index": 3,
+          "options": ["check", "checking", "to check"],
+          "answer": "check",
+          "explain_en": "had better + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i6",
+          "type": "error-find",
+          "prompt_en": "The client might cancels the pilot after this bug",
+          "tokens": ["The", "client", "might cancels", "the", "pilot", "after", "this", "bug"],
+          "error_index": 2,
+          "options": ["might cancel", "might cancelling", "might to cancel"],
+          "answer": "might cancel",
+          "explain_en": "might + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i7",
+          "type": "error-find",
+          "prompt_en": "He mustn't be the owner; his name isn't on the doc",
+          "tokens": ["He", "mustn't be", "the", "owner;", "his", "name", "isn't", "on", "the", "doc"],
+          "error_index": 1,
+          "options": ["can't be", "must be", "shouldn't to be"],
+          "answer": "can't be",
+          "explain_en": "Impossible deduction → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i8",
+          "type": "error-find",
+          "prompt_en": "Someone must have leave the VPN on all weekend",
+          "tokens": ["Someone", "must", "have leave", "the", "VPN", "on", "all", "weekend"],
+          "error_index": 2,
+          "options": ["have left", "have leaved", "has left"],
+          "answer": "have left",
+          "explain_en": "must have + past participle: left.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i9",
+          "type": "error-find",
+          "prompt_en": "Would you mind to update the ticket status?",
+          "tokens": ["Would", "you", "mind", "to update", "the", "ticket", "status?"],
+          "error_index": 3,
+          "options": ["updating", "update", "to updating"],
+          "answer": "updating",
+          "explain_en": "Would you mind + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s1i10",
+          "type": "error-find",
+          "prompt_en": "This flow is suppose to fire only on insert",
+          "tokens": ["This", "flow", "is suppose to", "fire", "only", "on", "insert"],
+          "error_index": 2,
+          "options": ["is supposed to", "is supposing to", "supposes to"],
+          "answer": "is supposed to",
+          "explain_en": "supposed to, with the d.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d27s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d27s2i1",
+          "type": "mcq",
+          "prompt_en": "The login works again — the cert ___ have been renewed.",
+          "options": ["must", "can't", "needn't", "ought"],
+          "answer": "must",
+          "explain_en": "Past deduction → must have been.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i2",
+          "type": "mcq",
+          "prompt_en": "You ___ share customer data in screenshots. Ever.",
+          "options": ["mustn't", "don't have to", "needn't", "might not"],
+          "answer": "mustn't",
+          "explain_en": "Forbidden → mustn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i3",
+          "type": "mcq",
+          "prompt_en": "By Friday we ___ run the whole suite in under ten minutes.",
+          "options": ["will be able to", "can to", "could to", "will can"],
+          "answer": "will be able to",
+          "explain_en": "Future ability → will be able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i4",
+          "type": "mcq",
+          "prompt_en": "It's late — we ___ call it a day and review fresh tomorrow.",
+          "options": ["should", "mustn't", "can't", "may to"],
+          "answer": "should",
+          "explain_en": "Advice → should.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i5",
+          "type": "mcq",
+          "prompt_en": "I ___ finish the data fix tonight, but no promises.",
+          "options": ["might", "must to", "ought", "can to"],
+          "answer": "might",
+          "explain_en": "Uncertain → might.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i6",
+          "type": "fill-bank",
+          "prompt_en": "She ___ be in the office; her laptop is still docked.",
+          "options": ["must", "mustn't", "needn't"],
+          "answer": "must",
+          "explain_en": "Evidence → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i7",
+          "type": "fill-bank",
+          "prompt_en": "You ___ have to renew the contract until next March.",
+          "options": ["don't", "mustn't", "needn't to"],
+          "answer": "don't",
+          "explain_en": "don't have to = not necessary yet.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i8",
+          "type": "fill-bank",
+          "prompt_en": "According to the policy, contractors are ___ to badge in at reception.",
+          "options": ["supposed", "going", "about"],
+          "answer": "supposed",
+          "explain_en": "A policy expectation → are supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i9",
+          "type": "fill-bank",
+          "prompt_en": "___ you hand me the HDMI cable?",
+          "options": ["Could", "May", "Must"],
+          "answer": "Could",
+          "explain_en": "Request to someone → Could you…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s2i10",
+          "type": "fill-bank",
+          "prompt_en": "When the office was in Banani, I ___ walk to work.",
+          "options": ["could", "was able", "can"],
+          "answer": "could",
+          "explain_en": "Past general ability → could.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d27s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d27s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "must", "be", "exhausted", "after", "three", "midnight", "releases", "."],
+          "answer": "You must be exhausted after three midnight releases .",
+          "explain_en": "Present deduction → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Could", "you", "walk", "me", "through", "the rollback plan", "?"],
+          "answer": "Could you walk me through the rollback plan ?",
+          "explain_en": "Polite request → Could you…",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "had", "better", "document", "this", "before", "we", "forget", "."],
+          "answer": "We had better document this before we forget .",
+          "explain_en": "Urgent advice → had better + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The intern", "might", "have", "found", "a", "real", "bug", "."],
+          "answer": "The intern might have found a real bug .",
+          "explain_en": "Possible past → might have found.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "don't", "have", "to", "stay", "for", "the whole webinar", "."],
+          "answer": "You don't have to stay for the whole webinar .",
+          "explain_en": "Not necessary → don't have to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "should", "be", "able", "to", "answer", "that question", "."],
+          "answer": "He should be able to answer that question .",
+          "explain_en": "should + be able to: expected ability.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["They", "were", "supposed", "to", "send", "the invoice", "yesterday", "."],
+          "answer": "They were supposed to send the invoice yesterday .",
+          "explain_en": "Unmet expectation → were supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "would", "rather", "ship", "small", "changes", "every", "day", "."],
+          "answer": "I would rather ship small changes every day .",
+          "explain_en": "Preference → would rather + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i9",
+          "type": "speak",
+          "prompt_en": "Make a deduction about your teammate's day using 'must have'.",
+          "model_en": "Her calendar was solid blue, so she must have had back-to-back calls.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s3i10",
+          "type": "speak",
+          "prompt_en": "Give advice about deployments using 'should' or 'had better'.",
+          "model_en": "You should always tag the release before you deploy.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d27s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d27s4i1",
+          "type": "error-find",
+          "prompt_en": "He can't to access the repo since the org migration",
+          "tokens": ["He", "can't to access", "the", "repo", "since", "the", "org", "migration"],
+          "error_index": 1,
+          "options": ["can't access", "can't accessing", "cannot to access"],
+          "answer": "can't access",
+          "explain_en": "can't + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i2",
+          "type": "mcq",
+          "prompt_en": "The badge isn't scanning — it ___ have been deactivated.",
+          "options": ["must", "needn't", "ought", "can to"],
+          "answer": "must",
+          "explain_en": "Deduction → must have been.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i3",
+          "type": "fill-bank",
+          "prompt_en": "You ___ better take the earlier shuttle; traffic is brutal.",
+          "options": ["had", "would", "should"],
+          "answer": "had",
+          "explain_en": "had better = strong advice.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "may", "need", "to", "extend", "the trial", "."],
+          "answer": "We may need to extend the trial .",
+          "explain_en": "Possibility → may need to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i5",
+          "type": "error-find",
+          "prompt_en": "You should asks the architect before changing the schema",
+          "tokens": ["You", "should asks", "the", "architect", "before", "changing", "the", "schema"],
+          "error_index": 1,
+          "options": ["should ask", "should asking", "should to ask"],
+          "answer": "should ask",
+          "explain_en": "should + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i6",
+          "type": "mcq",
+          "prompt_en": "___ I leave my bag at your desk during the tour?",
+          "options": ["Could", "Must", "Should to", "Ought"],
+          "answer": "Could",
+          "explain_en": "Permission → Could I…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i7",
+          "type": "fill-bank",
+          "prompt_en": "The team ___ supposed to rotate the demo duty weekly.",
+          "options": ["is", "are going", "must"],
+          "answer": "is",
+          "explain_en": "is supposed to = the agreed rule.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "couldn't", "have", "merged", "without", "a review", "."],
+          "answer": "She couldn't have merged without a review .",
+          "explain_en": "Impossible past → couldn't have merged.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i9",
+          "type": "error-find",
+          "prompt_en": "We must has approval before touching the billing code",
+          "tokens": ["We", "must has", "approval", "before", "touching", "the", "billing", "code"],
+          "error_index": 1,
+          "options": ["must have", "must had", "musts have"],
+          "answer": "must have",
+          "explain_en": "must + base verb: have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d27s4i10",
+          "type": "mcq",
+          "prompt_en": "The release ___ slip a week if the security scan flags anything.",
+          "options": ["might", "must to", "needn't", "would to"],
+          "answer": "might",
+          "explain_en": "Possible outcome → might slip.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

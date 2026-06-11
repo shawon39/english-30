@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 26,
+  "theme": "Semi-modals (be supposed to, be going to)",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "be supposed to = what the rule or plan expects: I'm supposed to be on call. be going to = intention. The past forms mean it didn't happen: I was supposed to call (but didn't); I was going to refactor (but plans changed).",
+  "rule_bn": "be supposed to = নিয়ম/প্রত্যাশা অনুযায়ী যা হওয়ার কথা; be going to = ইচ্ছা/পরিকল্পনা। অতীত রূপ মানে হয়নি: was supposed to / was going to।",
+  "sessions": [
+    {
+      "id": "d26s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d26s1i1",
+          "type": "error-find",
+          "prompt_en": "The nightly job is suppose to clear the temp tables",
+          "tokens": ["The", "nightly", "job", "is suppose to", "clear", "the", "temp", "tables"],
+          "error_index": 3,
+          "options": ["is supposed to", "is supposing to", "supposes to"],
+          "answer": "is supposed to",
+          "explain_en": "supposed with a 'd': is supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i2",
+          "type": "error-find",
+          "prompt_en": "I am going to refactored this service next sprint",
+          "tokens": ["I", "am", "going", "to refactored", "this", "service", "next", "sprint"],
+          "error_index": 3,
+          "options": ["to refactor", "to refactoring", "refactored to"],
+          "answer": "to refactor",
+          "explain_en": "going to + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i3",
+          "type": "error-find",
+          "prompt_en": "We was going to demo today, but the org went down",
+          "tokens": ["We", "was going", "to", "demo", "today,", "but", "the", "org", "went", "down"],
+          "error_index": 1,
+          "options": ["were going", "was go", "are went"],
+          "answer": "were going",
+          "explain_en": "We → were going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i4",
+          "type": "error-find",
+          "prompt_en": "You're supposed to filing the expense report by Friday",
+          "tokens": ["You're", "supposed", "to filing", "the", "expense", "report", "by", "Friday"],
+          "error_index": 2,
+          "options": ["to file", "to filed", "filing to"],
+          "answer": "to file",
+          "explain_en": "supposed to + base verb: file.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i5",
+          "type": "error-find",
+          "prompt_en": "He is going to joins the platform team in July",
+          "tokens": ["He", "is", "going", "to joins", "the", "platform", "team", "in", "July"],
+          "error_index": 3,
+          "options": ["to join", "to joining", "joins to"],
+          "answer": "to join",
+          "explain_en": "going to + base verb: join.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i6",
+          "type": "error-find",
+          "prompt_en": "Wasn't she supposed be presenting the QBR right now?",
+          "tokens": ["Wasn't", "she", "supposed be", "presenting", "the", "QBR", "right", "now?"],
+          "error_index": 2,
+          "options": ["supposed to be", "suppose to be", "supposed being"],
+          "answer": "supposed to be",
+          "explain_en": "supposed TO be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i7",
+          "type": "error-find",
+          "prompt_en": "They are going to announcing the reorg on Monday",
+          "tokens": ["They", "are", "going", "to announcing", "the", "reorg", "on", "Monday"],
+          "error_index": 3,
+          "options": ["to announce", "to announced", "announce to"],
+          "answer": "to announce",
+          "explain_en": "going to + base verb: announce.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i8",
+          "type": "error-find",
+          "prompt_en": "I were going to ask you the same question",
+          "tokens": ["I", "were going", "to", "ask", "you", "the", "same", "question"],
+          "error_index": 1,
+          "options": ["was going", "am went", "were go"],
+          "answer": "was going",
+          "explain_en": "I → was going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i9",
+          "type": "error-find",
+          "prompt_en": "This button is supposed open the export wizard",
+          "tokens": ["This", "button", "is", "supposed open", "the", "export", "wizard"],
+          "error_index": 3,
+          "options": ["supposed to open", "suppose to open", "supposed opening"],
+          "answer": "supposed to open",
+          "explain_en": "supposed TO + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s1i10",
+          "type": "error-find",
+          "prompt_en": "Who is suppose to own the release checklist this week?",
+          "tokens": ["Who", "is suppose to", "own", "the", "release", "checklist", "this", "week?"],
+          "error_index": 1,
+          "options": ["is supposed to", "is supposing to", "are supposed to"],
+          "answer": "is supposed to",
+          "explain_en": "Always 'supposed to', with the d.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d26s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d26s2i1",
+          "type": "mcq",
+          "prompt_en": "I ___ call the vendor yesterday, but the meeting ran over.",
+          "options": ["was supposed to", "am supposed to", "is supposed to", "was suppose to"],
+          "answer": "was supposed to",
+          "explain_en": "Past expectation that didn't happen → was supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i2",
+          "type": "mcq",
+          "prompt_en": "Look at the sprint board — we ___ finish twelve tickets this week.",
+          "options": ["are supposed to", "are supposing to", "supposed to", "are suppose to"],
+          "answer": "are supposed to",
+          "explain_en": "The plan expects it → are supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i3",
+          "type": "mcq",
+          "prompt_en": "She ___ quit last year, but the counteroffer changed her mind.",
+          "options": ["was going to", "is going to", "goes to", "was going"],
+          "answer": "was going to",
+          "explain_en": "Cancelled intention → was going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i4",
+          "type": "mcq",
+          "prompt_en": "We ___ migrate the legacy jobs in Q3 — it's on the roadmap.",
+          "options": ["are going to", "were going to", "are go to", "going to"],
+          "answer": "are going to",
+          "explain_en": "Planned future → are going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i5",
+          "type": "mcq",
+          "prompt_en": "Visitors ___ wear a badge at all times in this wing.",
+          "options": ["are supposed to", "are going to", "were going to", "may to"],
+          "answer": "are supposed to",
+          "explain_en": "A rule → are supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i6",
+          "type": "fill-bank",
+          "prompt_en": "Look at those clouds — it ___ pour any minute.",
+          "options": ["is going to", "is supposed to", "was supposed to"],
+          "answer": "is going to",
+          "explain_en": "Visible evidence → is going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i7",
+          "type": "fill-bank",
+          "prompt_en": "You ___ get manager approval before touching prod. That's the policy.",
+          "options": ["are supposed to", "are going to", "were going to"],
+          "answer": "are supposed to",
+          "explain_en": "Policy → are supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i8",
+          "type": "fill-bank",
+          "prompt_en": "I ___ clean my inbox tonight, but this incident killed the plan.",
+          "options": ["was going to", "am going to", "am supposed to"],
+          "answer": "was going to",
+          "explain_en": "Abandoned plan → was going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i9",
+          "type": "fill-bank",
+          "prompt_en": "The patch ___ ship tomorrow unless QA finds something.",
+          "options": ["is going to", "was going to", "is suppose to"],
+          "answer": "is going to",
+          "explain_en": "Current plan → is going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s2i10",
+          "type": "fill-bank",
+          "prompt_en": "Wasn't this report ___ be automated months ago?",
+          "options": ["supposed to", "going", "suppose to"],
+          "answer": "supposed to",
+          "explain_en": "supposed to be + past participle: expectation unmet.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d26s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d26s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The sync", "is", "supposed", "to", "run", "every", "hour", "."],
+          "answer": "The sync is supposed to run every hour .",
+          "explain_en": "Expected behavior → is supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "am", "going", "to", "automate", "this report", "next week", "."],
+          "answer": "I am going to automate this report next week .",
+          "explain_en": "Intention → am going to + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "were", "supposed", "to", "rotate", "the on-call", "today", "."],
+          "answer": "You were supposed to rotate the on-call today .",
+          "explain_en": "Unmet expectation → were supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "was", "going", "to", "resign", "before", "the promotion", "."],
+          "answer": "She was going to resign before the promotion .",
+          "explain_en": "Changed plan → was going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "are", "going", "to", "need", "a", "bigger", "sandbox", "."],
+          "answer": "We are going to need a bigger sandbox .",
+          "explain_en": "Prediction from the situation → are going to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Interns", "aren't", "supposed", "to", "deploy", "alone", "."],
+          "answer": "Interns aren't supposed to deploy alone .",
+          "explain_en": "A rule against → aren't supposed to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Who", "is", "supposed", "to", "approve", "this request", "?"],
+          "answer": "Who is supposed to approve this request ?",
+          "explain_en": "Asking about the expected owner.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["It", "is", "going", "to", "be", "a", "long", "release", "night", "."],
+          "answer": "It is going to be a long release night .",
+          "explain_en": "Prediction → is going to be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i9",
+          "type": "speak",
+          "prompt_en": "Say one thing you were going to do this week but haven't yet.",
+          "model_en": "I was going to update my resume, but the sprint ate my evenings.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d26s3i10",
+          "type": "speak",
+          "prompt_en": "Describe a team rule using 'supposed to'.",
+          "model_en": "We're supposed to demo every feature before it merges.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
