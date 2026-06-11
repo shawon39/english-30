@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 13,
+  "theme": "Third conditional",
+  "pillar": "conditional",
+  "star": true,
+  "rule_en": "Third conditional = unreal past: If + past perfect, would have + past participle. It imagines a different past: If I had tested it, it wouldn't have crashed.",
+  "rule_bn": "অতীত নিয়ে কল্পনা → If + past perfect, would have + past participle। যা ঘটেনি: If I had tested it, it wouldn't have crashed.",
+  "sessions": [
+    {
+      "id": "d13s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d13s1i1",
+          "type": "error-find",
+          "prompt_en": "If you would have tested the flow, it wouldn't have crashed",
+          "tokens": ["If", "you", "would have tested", "the", "flow,", "it", "wouldn't", "have", "crashed"],
+          "error_index": 2,
+          "options": ["had tested", "have tested", "tested have"],
+          "answer": "had tested",
+          "explain_en": "No 'would' in the if-clause: If + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i2",
+          "type": "error-find",
+          "prompt_en": "If we had froze the scope, we would have shipped on time",
+          "tokens": ["If", "we", "had froze", "the", "scope,", "we", "would", "have", "shipped", "on", "time"],
+          "error_index": 2,
+          "options": ["had frozen", "had freeze", "have froze"],
+          "answer": "had frozen",
+          "explain_en": "Past perfect = had + past participle: frozen.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i3",
+          "type": "error-find",
+          "prompt_en": "She would have catch the bug if she had reviewed the diff",
+          "tokens": ["She", "would have catch", "the", "bug", "if", "she", "had", "reviewed", "the", "diff"],
+          "error_index": 1,
+          "options": ["would have caught", "would have catched", "would had caught"],
+          "answer": "would have caught",
+          "explain_en": "would have + past participle: caught.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i4",
+          "type": "error-find",
+          "prompt_en": "If the demo had worked, the client would has signed the deal",
+          "tokens": ["If", "the", "demo", "had", "worked,", "the", "client", "would has signed", "the", "deal"],
+          "error_index": 7,
+          "options": ["would have signed", "would have sign", "will have signed"],
+          "answer": "would have signed",
+          "explain_en": "'would have' never changes to 'would has'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i5",
+          "type": "error-find",
+          "prompt_en": "If I knew about the outage, I would have cancelled the demo",
+          "tokens": ["If", "I", "knew", "about", "the", "outage,", "I", "would", "have", "cancelled", "the", "demo"],
+          "error_index": 2,
+          "options": ["had known", "have known", "would know"],
+          "answer": "had known",
+          "explain_en": "An unreal past condition → past perfect, not past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i6",
+          "type": "error-find",
+          "prompt_en": "If they hadn't skip the retro, they would have caught the pattern",
+          "tokens": ["If", "they", "hadn't skip", "the", "retro,", "they", "would", "have", "caught", "the", "pattern"],
+          "error_index": 2,
+          "options": ["hadn't skipped", "didn't skipped", "hadn't skipping"],
+          "answer": "hadn't skipped",
+          "explain_en": "had/hadn't + past participle: skipped.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i7",
+          "type": "error-find",
+          "prompt_en": "We would have win the hackathon if the wifi hadn't died",
+          "tokens": ["We", "would have win", "the", "hackathon", "if", "the", "wifi", "hadn't", "died"],
+          "error_index": 1,
+          "options": ["would have won", "would have winned", "would had won"],
+          "answer": "would have won",
+          "explain_en": "Past participle after 'would have': won.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i8",
+          "type": "error-find",
+          "prompt_en": "If you had asked me, I would helped you with the migration",
+          "tokens": ["If", "you", "had", "asked", "me,", "I", "would helped", "you", "with", "the", "migration"],
+          "error_index": 6,
+          "options": ["would have helped", "would has helped", "had helped"],
+          "answer": "would have helped",
+          "explain_en": "The result needs the full chain: would + have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i9",
+          "type": "error-find",
+          "prompt_en": "If the backup had ran last night, we wouldn't have lost data",
+          "tokens": ["If", "the", "backup", "had ran", "last", "night,", "we", "wouldn't", "have", "lost", "data"],
+          "error_index": 3,
+          "options": ["had run", "has ran", "had running"],
+          "answer": "had run",
+          "explain_en": "had + past participle: run.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s1i10",
+          "type": "error-find",
+          "prompt_en": "If she has joined the call, she would have heard the decision",
+          "tokens": ["If", "she", "has joined", "the", "call,", "she", "would", "have", "heard", "the", "decision"],
+          "error_index": 2,
+          "options": ["had joined", "have joined", "joins"],
+          "answer": "had joined",
+          "explain_en": "Third conditional if-clause: had + past participle, not 'has'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d13s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d13s2i1",
+          "type": "mcq",
+          "prompt_en": "If we ___ the logs earlier, we would have found the leak.",
+          "options": ["had checked", "checked", "have checked", "would check"],
+          "answer": "had checked",
+          "explain_en": "Unreal past → if + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i2",
+          "type": "mcq",
+          "prompt_en": "She would have taken the offer if the role ___ remote.",
+          "options": ["had been", "is being", "will be", "has been"],
+          "answer": "had been",
+          "explain_en": "Past unreal 'be' → had been.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i3",
+          "type": "mcq",
+          "prompt_en": "If you had told me sooner, I ___ the meeting.",
+          "options": ["would have moved", "would move", "will have moved", "had moved"],
+          "answer": "would have moved",
+          "explain_en": "A past result → would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i4",
+          "type": "mcq",
+          "prompt_en": "We ___ the data if the script had asked for confirmation.",
+          "options": ["wouldn't have lost", "wouldn't lose", "didn't lose", "hadn't lost"],
+          "answer": "wouldn't have lost",
+          "explain_en": "An unreal past result → wouldn't have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i5",
+          "type": "mcq",
+          "prompt_en": "If the recruiter ___ , I might have missed this job entirely.",
+          "options": ["hadn't called", "didn't call", "wouldn't call", "hasn't called"],
+          "answer": "hadn't called",
+          "explain_en": "A negative unreal past → hadn't + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i6",
+          "type": "fill-bank",
+          "prompt_en": "If I had slept more, I ___ that silly mistake.",
+          "options": ["wouldn't have made", "won't have made", "didn't make"],
+          "answer": "wouldn't have made",
+          "explain_en": "would(n't) have + past participle for the unreal past result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i7",
+          "type": "fill-bank",
+          "prompt_en": "The release would have failed if QA ___ the edge case.",
+          "options": ["hadn't caught", "didn't caught", "hasn't caught"],
+          "answer": "hadn't caught",
+          "explain_en": "If-clause: had/hadn't + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i8",
+          "type": "fill-bank",
+          "prompt_en": "If we ___ earlier, we could have fixed it before the demo.",
+          "options": ["had known", "knew", "know"],
+          "answer": "had known",
+          "explain_en": "Third conditional if-clause: past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i9",
+          "type": "fill-bank",
+          "prompt_en": "She ___ the bug if she had run the full test suite.",
+          "options": ["would have seen", "would see", "has seen"],
+          "answer": "would have seen",
+          "explain_en": "Past participle after 'would have': seen.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s2i10",
+          "type": "fill-bank",
+          "prompt_en": "If the meeting ___ shorter, I would have stayed until the end.",
+          "options": ["had been", "was", "is"],
+          "answer": "had been",
+          "explain_en": "Unreal past 'be' → had been.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d13s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d13s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "you", "had", "called", "me", ",", "I", "would", "have", "helped", "."],
+          "answer": "If you had called me , I would have helped .",
+          "explain_en": "If + past perfect, would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "we", "had", "cached", "the results", ",", "the page", "would", "have", "loaded", "faster", "."],
+          "answer": "If we had cached the results , the page would have loaded faster .",
+          "explain_en": "An unreal past cause and its unreal past effect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "would", "have", "joined", "the team", "if", "the office", "had", "been", "closer", "."],
+          "answer": "She would have joined the team if the office had been closer .",
+          "explain_en": "Result clause first; the if-clause still takes past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the tests", "had", "run", ",", "the bug", "would", "have", "surfaced", "earlier", "."],
+          "answer": "If the tests had run , the bug would have surfaced earlier .",
+          "explain_en": "had + run (past participle) in the if-clause.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "would", "have", "missed", "the flight", "if", "the demo", "had", "run", "long", "."],
+          "answer": "We would have missed the flight if the demo had run long .",
+          "explain_en": "would have missed = the unreal past result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "had", "saved", "my work", ",", "the crash", "wouldn't", "have", "mattered", "."],
+          "answer": "If I had saved my work , the crash wouldn't have mattered .",
+          "explain_en": "wouldn't have + past participle for the negative result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "he", "had", "read", "the docs", ",", "he", "would", "have", "avoided", "that trap", "."],
+          "answer": "If he had read the docs , he would have avoided that trap .",
+          "explain_en": "If + past perfect, would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["They", "would", "have", "signed", "if", "we", "had", "demoed", "the mobile app", "."],
+          "answer": "They would have signed if we had demoed the mobile app .",
+          "explain_en": "Both halves stay in the unreal past.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i9",
+          "type": "speak",
+          "prompt_en": "Say one thing you would have done differently in your last project.",
+          "model_en": "If I had written tests first, I would have shipped with more confidence.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s3i10",
+          "type": "speak",
+          "prompt_en": "Describe a past mistake using 'If I hadn't…'.",
+          "model_en": "If I hadn't deployed on a Friday, I wouldn't have spent the weekend firefighting.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d13s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d13s4i1",
+          "type": "error-find",
+          "prompt_en": "We would have reacted sooner if the alert would have fired",
+          "tokens": ["We", "would", "have", "reacted", "sooner", "if", "the", "alert", "would have fired"],
+          "error_index": 8,
+          "options": ["had fired", "has fired", "would fire"],
+          "answer": "had fired",
+          "explain_en": "Only the result clause takes 'would have' — the if-clause takes past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i2",
+          "type": "mcq",
+          "prompt_en": "If I hadn't switched teams, I ___ the chance to learn LWC.",
+          "options": ["wouldn't have had", "won't have had", "didn't have", "hadn't had"],
+          "answer": "wouldn't have had",
+          "explain_en": "Past unreal result → would(n't) have + past participle: had.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i3",
+          "type": "fill-bank",
+          "prompt_en": "If the patch had gone out on time, nobody ___ the outage.",
+          "options": ["would have noticed", "noticed", "will notice"],
+          "answer": "would have noticed",
+          "explain_en": "Unreal past result → would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "would", "have", "released", "the patch", "if", "QA", "had", "signed", "off", "."],
+          "answer": "We would have released the patch if QA had signed off .",
+          "explain_en": "would have + past participle, then if + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i5",
+          "type": "error-find",
+          "prompt_en": "I would have finish the report if the data had loaded",
+          "tokens": ["I", "would have finish", "the", "report", "if", "the", "data", "had", "loaded"],
+          "error_index": 1,
+          "options": ["would have finished", "would have finishing", "would had finished"],
+          "answer": "would have finished",
+          "explain_en": "Past participle after 'would have': finished.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i6",
+          "type": "mcq",
+          "prompt_en": "The merge ___ if you had rebased first.",
+          "options": ["would have succeeded", "would has succeeded", "succeeded", "will succeed"],
+          "answer": "would have succeeded",
+          "explain_en": "Unreal past result → would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i7",
+          "type": "fill-bank",
+          "prompt_en": "If you had pinged me, I ___ you the admin link.",
+          "options": ["would have sent", "will have sent", "sent"],
+          "answer": "would have sent",
+          "explain_en": "would have + past participle: sent.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "would", "have", "noticed", "the typo", "if", "he", "had", "slowed", "down", "."],
+          "answer": "He would have noticed the typo if he had slowed down .",
+          "explain_en": "Third conditional with the result clause first.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i9",
+          "type": "error-find",
+          "prompt_en": "If we had took the earlier flight, we would have made the keynote",
+          "tokens": ["If", "we", "had took", "the", "earlier", "flight,", "we", "would", "have", "made", "the", "keynote"],
+          "error_index": 2,
+          "options": ["had taken", "had take", "have took"],
+          "answer": "had taken",
+          "explain_en": "had + past participle: taken.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d13s4i10",
+          "type": "mcq",
+          "prompt_en": "If the org ___ sandbox seeding, onboarding would have taken a week.",
+          "options": ["hadn't supported", "didn't support", "wouldn't support", "hasn't supported"],
+          "answer": "hadn't supported",
+          "explain_en": "Negative unreal past → hadn't + past participle.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

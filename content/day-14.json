@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 14,
+  "theme": "Mixed conditionals",
+  "pillar": "conditional",
+  "star": false,
+  "rule_en": "Mixed conditionals cross time: past condition → present result (If + past perfect, would + base) or present condition → past result (If + past simple, would have + past participle).",
+  "rule_bn": "সময় মেশানো: অতীত শর্ত → বর্তমান ফল (If + past perfect, would + base); বর্তমান শর্ত → অতীত ফল (If + past simple, would have + past participle)।",
+  "sessions": [
+    {
+      "id": "d14s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d14s1i1",
+          "type": "error-find",
+          "prompt_en": "If I had taken that offer, I will be in Dubai now",
+          "tokens": ["If", "I", "had", "taken", "that", "offer,", "I", "will be", "in", "Dubai", "now"],
+          "error_index": 7,
+          "options": ["would be", "will have been", "am"],
+          "answer": "would be",
+          "explain_en": "Past condition, present result → would + base now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i2",
+          "type": "error-find",
+          "prompt_en": "If she wasn't so busy, she would have joined us yesterday",
+          "tokens": ["If", "she", "wasn't", "so", "busy,", "she", "would", "have", "joined", "us", "yesterday"],
+          "error_index": 2,
+          "options": ["weren't", "isn't", "won't be"],
+          "answer": "weren't",
+          "explain_en": "A general present state in the if-clause → were(n't) for unreal.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i3",
+          "type": "error-find",
+          "prompt_en": "If you had set up alerts, you wouldn't being blind to errors now",
+          "tokens": ["If", "you", "had", "set", "up", "alerts,", "you", "wouldn't being", "blind", "to", "errors", "now"],
+          "error_index": 7,
+          "options": ["wouldn't be", "won't being", "aren't"],
+          "answer": "wouldn't be",
+          "explain_en": "A present result of a past condition → wouldn't + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i4",
+          "type": "error-find",
+          "prompt_en": "If he was better at delegating, he wouldn't have burned out last quarter",
+          "tokens": ["If", "he", "was", "better", "at", "delegating,", "he", "wouldn't", "have", "burned", "out", "last", "quarter"],
+          "error_index": 2,
+          "options": ["were", "is", "will be"],
+          "answer": "were",
+          "explain_en": "An unreal present trait → were; the past result keeps would have + participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i5",
+          "type": "error-find",
+          "prompt_en": "If we hadn't chosen microservices, deployment will be simpler today",
+          "tokens": ["If", "we", "hadn't", "chosen", "microservices,", "deployment", "will be", "simpler", "today"],
+          "error_index": 6,
+          "options": ["would be", "will have been", "is"],
+          "answer": "would be",
+          "explain_en": "A past choice with a present consequence → would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i6",
+          "type": "error-find",
+          "prompt_en": "If I didn't trusted the team, I would have reviewed every line yesterday",
+          "tokens": ["If", "I", "didn't trusted", "the", "team,", "I", "would", "have", "reviewed", "every", "line", "yesterday"],
+          "error_index": 2,
+          "options": ["didn't trust", "don't trusted", "hadn't trust"],
+          "answer": "didn't trust",
+          "explain_en": "didn't + base verb: trust.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i7",
+          "type": "error-find",
+          "prompt_en": "If you had documented the API, new hires would been faster now",
+          "tokens": ["If", "you", "had", "documented", "the", "API,", "new", "hires", "would been", "faster", "now"],
+          "error_index": 8,
+          "options": ["would be", "would have", "will been"],
+          "answer": "would be",
+          "explain_en": "would + base for a present result: would be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i8",
+          "type": "error-find",
+          "prompt_en": "If she weren't the only admin, she could had taken a real vacation",
+          "tokens": ["If", "she", "weren't", "the", "only", "admin,", "she", "could had taken", "a", "real", "vacation"],
+          "error_index": 7,
+          "options": ["could have taken", "could has taken", "can have taken"],
+          "answer": "could have taken",
+          "explain_en": "could have + past participle for the unreal past result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i9",
+          "type": "error-find",
+          "prompt_en": "If we had hired earlier, we are not so behind on the roadmap",
+          "tokens": ["If", "we", "had", "hired", "earlier,", "we", "are not", "so", "behind", "on", "the", "roadmap"],
+          "error_index": 6,
+          "options": ["wouldn't be", "weren't", "haven't been"],
+          "answer": "wouldn't be",
+          "explain_en": "Past condition, present result → wouldn't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s1i10",
+          "type": "error-find",
+          "prompt_en": "If I knew Apex better, I would have wrote the trigger myself last sprint",
+          "tokens": ["If", "I", "knew", "Apex", "better,", "I", "would have wrote", "the", "trigger", "myself", "last", "sprint"],
+          "error_index": 6,
+          "options": ["would have written", "would have write", "would had written"],
+          "answer": "would have written",
+          "explain_en": "Past participle after 'would have': written.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d14s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d14s2i1",
+          "type": "mcq",
+          "prompt_en": "If I had learned to touch-type, I ___ much faster today.",
+          "options": ["would code", "will have coded", "coded", "am coding"],
+          "answer": "would code",
+          "explain_en": "Past condition → present result: would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i2",
+          "type": "mcq",
+          "prompt_en": "If she ___ so stubborn, she would have accepted the feedback.",
+          "options": ["weren't", "won't be", "isn't", "wasn't being"],
+          "answer": "weren't",
+          "explain_en": "A permanent trait now → were(n't); the result stays in the past.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i3",
+          "type": "mcq",
+          "prompt_en": "If we hadn't migrated to the cloud, we ___ for new servers right now.",
+          "options": ["would be shopping", "would have shopped", "are shopping", "will shop"],
+          "answer": "would be shopping",
+          "explain_en": "Past condition → present continuous result: would be + verb-ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i4",
+          "type": "mcq",
+          "prompt_en": "He ___ yesterday's standup in person if he lived closer to the office.",
+          "options": ["would have joined", "would join", "joined", "will join"],
+          "answer": "would have joined",
+          "explain_en": "Present condition → past result: would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i5",
+          "type": "mcq",
+          "prompt_en": "If money ___ no object, I would have bought the M3 Max last year.",
+          "options": ["were", "will be", "is", "would be"],
+          "answer": "were",
+          "explain_en": "A condition still true now → were; the result sits in the past.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i6",
+          "type": "fill-bank",
+          "prompt_en": "If I had finished the report yesterday, I ___ relaxing now.",
+          "options": ["would be", "will have been", "am"],
+          "answer": "would be",
+          "explain_en": "Past condition → present result: would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i7",
+          "type": "fill-bank",
+          "prompt_en": "If he weren't so careful, he ___ that edge case last week.",
+          "options": ["would have missed", "would miss", "missed"],
+          "answer": "would have missed",
+          "explain_en": "Present trait → past result: would have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i8",
+          "type": "fill-bank",
+          "prompt_en": "If we used feature flags, yesterday's rollback ___ one click.",
+          "options": ["would have taken", "would take", "takes"],
+          "answer": "would have taken",
+          "explain_en": "Present habit (we don't) → past result: would have taken.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i9",
+          "type": "fill-bank",
+          "prompt_en": "If they had automated the tests, they ___ every release by hand now.",
+          "options": ["wouldn't verify", "won't have verified", "don't verify"],
+          "answer": "wouldn't verify",
+          "explain_en": "Past condition → present result: wouldn't + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s2i10",
+          "type": "fill-bank",
+          "prompt_en": "If I ___ allergic to cats, I would have adopted one years ago.",
+          "options": ["weren't", "wasn't being", "am not"],
+          "answer": "weren't",
+          "explain_en": "A still-true condition → weren't; the past result keeps would have + participle.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d14s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d14s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "had", "taken", "that job", ",", "I", "would", "live", "in", "London", "."],
+          "answer": "If I had taken that job , I would live in London .",
+          "explain_en": "Past condition (had taken) → present result (would live).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "she", "had", "saved", "her notes", ",", "she", "wouldn't", "need", "my help", "."],
+          "answer": "If she had saved her notes , she wouldn't need my help .",
+          "explain_en": "Past mistake → present consequence: wouldn't + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "he", "were", "braver", ",", "he", "would", "have", "asked", "for", "a raise", "."],
+          "answer": "If he were braver , he would have asked for a raise .",
+          "explain_en": "Present trait (were) → past result (would have asked).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "we", "had", "written", "tests", ",", "this refactor", "would", "feel", "safe", "."],
+          "answer": "If we had written tests , this refactor would feel safe .",
+          "explain_en": "Past condition → how things would feel now.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "weren't", "on call", ",", "I", "would", "have", "gone", "to", "the concert", "."],
+          "answer": "If I weren't on call , I would have gone to the concert .",
+          "explain_en": "Present condition (weren't) → past result (would have gone).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "they", "had", "picked", "Postgres", ",", "scaling", "would", "be", "much", "easier", "."],
+          "answer": "If they had picked Postgres , scaling would be much easier .",
+          "explain_en": "Past choice → present consequence: would be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "knew", "the autosave", "worked", ",", "I", "would", "have", "skipped", "the manual backup", "."],
+          "answer": "If I knew the autosave worked , I would have skipped the manual backup .",
+          "explain_en": "Present belief (knew) → past action skipped.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "she", "hadn't", "muted", "the channel", ",", "she", "would", "know", "the plan", "."],
+          "answer": "If she hadn't muted the channel , she would know the plan .",
+          "explain_en": "Past action (hadn't muted) → present knowledge (would know).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i9",
+          "type": "speak",
+          "prompt_en": "Say how your life would be different now if you had studied something else.",
+          "model_en": "If I had studied design, I would be building interfaces instead of triggers.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d14s3i10",
+          "type": "speak",
+          "prompt_en": "Describe a past decision that still helps you, using a mixed conditional.",
+          "model_en": "If I hadn't joined that first startup, I wouldn't have this network today.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

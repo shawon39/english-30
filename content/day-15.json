@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 15,
+  "theme": "wish / if only",
+  "pillar": "conditional",
+  "star": false,
+  "rule_en": "wish/if only + past simple = a present regret (I wish I had more time). wish + past perfect = a past regret (I wish I had tested it). wish + would = an annoying habit you want changed.",
+  "rule_bn": "বর্তমান আক্ষেপ → wish + past simple; অতীত আক্ষেপ → wish + past perfect; অন্যের বিরক্তিকর অভ্যাস → wish + would।",
+  "sessions": [
+    {
+      "id": "d15s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d15s1i1",
+          "type": "error-find",
+          "prompt_en": "I wish I have more time for code reviews",
+          "tokens": ["I", "wish", "I", "have", "more", "time", "for", "code", "reviews"],
+          "error_index": 3,
+          "options": ["had", "has", "will have"],
+          "answer": "had",
+          "explain_en": "A present wish takes the past simple: wish + had.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i2",
+          "type": "error-find",
+          "prompt_en": "She wishes she didn't accepted the meeting invite",
+          "tokens": ["She", "wishes", "she", "didn't accepted", "the", "meeting", "invite"],
+          "error_index": 3,
+          "options": ["hadn't accepted", "didn't accepting", "hasn't accept"],
+          "answer": "hadn't accepted",
+          "explain_en": "A past regret → wish + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i3",
+          "type": "error-find",
+          "prompt_en": "If only the build would passes before the demo",
+          "tokens": ["If", "only", "the", "build", "would passes", "before", "the", "demo"],
+          "error_index": 4,
+          "options": ["would pass", "would passing", "will passes"],
+          "answer": "would pass",
+          "explain_en": "would + base verb: pass.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i4",
+          "type": "error-find",
+          "prompt_en": "I wish my laptop will stop freezing during screen shares",
+          "tokens": ["I", "wish", "my", "laptop", "will stop", "freezing", "during", "screen", "shares"],
+          "error_index": 4,
+          "options": ["would stop", "will stops", "is stop"],
+          "answer": "would stop",
+          "explain_en": "An annoying habit → wish + would, never 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i5",
+          "type": "error-find",
+          "prompt_en": "He wishes he can join the offsite next month",
+          "tokens": ["He", "wishes", "he", "can", "join", "the", "offsite", "next", "month"],
+          "error_index": 3,
+          "options": ["could", "will", "cans"],
+          "answer": "could",
+          "explain_en": "wish shifts 'can' back to 'could'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i6",
+          "type": "error-find",
+          "prompt_en": "I wish I am not the only one who updates the wiki",
+          "tokens": ["I", "wish", "I", "am not", "the", "only", "one", "who", "updates", "the", "wiki"],
+          "error_index": 3,
+          "options": ["weren't", "won't be", "am never"],
+          "answer": "weren't",
+          "explain_en": "Present unreal after wish → were/weren't for every person.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i7",
+          "type": "error-find",
+          "prompt_en": "If only we listened to QA before we shipped that build",
+          "tokens": ["If", "only", "we", "listened", "to", "QA", "before", "we", "shipped", "that", "build"],
+          "error_index": 3,
+          "options": ["had listened", "have listened", "listen"],
+          "answer": "had listened",
+          "explain_en": "A regret about a finished past event → if only + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i8",
+          "type": "error-find",
+          "prompt_en": "I wish you wouldn't to push directly to main",
+          "tokens": ["I", "wish", "you", "wouldn't to push", "directly", "to", "main"],
+          "error_index": 3,
+          "options": ["wouldn't push", "wouldn't pushing", "won't to push"],
+          "answer": "wouldn't push",
+          "explain_en": "wish + would(n't) + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i9",
+          "type": "error-find",
+          "prompt_en": "She wishes she knows the answer during yesterday's interview",
+          "tokens": ["She", "wishes", "she", "knows", "the", "answer", "during", "yesterday's", "interview"],
+          "error_index": 3,
+          "options": ["had known", "knew", "will know"],
+          "answer": "had known",
+          "explain_en": "'yesterday' makes it a past regret → wish + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s1i10",
+          "type": "error-find",
+          "prompt_en": "I wish there is a faster way to refresh this sandbox",
+          "tokens": ["I", "wish", "there", "is", "a", "faster", "way", "to", "refresh", "this", "sandbox"],
+          "error_index": 3,
+          "options": ["were", "will be", "be"],
+          "answer": "were",
+          "explain_en": "wish + past (were) for a present reality you want different.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d15s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d15s2i1",
+          "type": "mcq",
+          "prompt_en": "I wish I ___ to the architecture review last week.",
+          "options": ["had gone", "went", "go", "would go"],
+          "answer": "had gone",
+          "explain_en": "A past regret → wish + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i2",
+          "type": "mcq",
+          "prompt_en": "She wishes her commute ___ shorter.",
+          "options": ["were", "is", "will be", "had"],
+          "answer": "were",
+          "explain_en": "A present wish about a state → past simple 'were'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i3",
+          "type": "mcq",
+          "prompt_en": "I wish the printer ___ jamming every Monday morning.",
+          "options": ["would stop", "stops", "will stop", "is stopping"],
+          "answer": "would stop",
+          "explain_en": "A recurring annoyance → wish + would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i4",
+          "type": "mcq",
+          "prompt_en": "If only I ___ the backup before running the delete script.",
+          "options": ["had checked", "checked", "check", "would check"],
+          "answer": "had checked",
+          "explain_en": "A past regret → if only + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i5",
+          "type": "mcq",
+          "prompt_en": "I wish I ___ speak French as well as you do.",
+          "options": ["could", "can", "would", "will"],
+          "answer": "could",
+          "explain_en": "An ability you lack now → wish + could.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i6",
+          "type": "fill-bank",
+          "prompt_en": "I wish we ___ fewer meetings on Fridays.",
+          "options": ["had", "have", "will have"],
+          "answer": "had",
+          "explain_en": "A present wish → past simple: had.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i7",
+          "type": "fill-bank",
+          "prompt_en": "He wishes he ___ the job offer in writing before resigning.",
+          "options": ["had gotten", "got", "gets"],
+          "answer": "had gotten",
+          "explain_en": "A past regret → wish + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i8",
+          "type": "fill-bank",
+          "prompt_en": "If only this dashboard ___ in real time.",
+          "options": ["updated", "updates", "will update"],
+          "answer": "updated",
+          "explain_en": "A present wish → past simple after 'if only'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i9",
+          "type": "fill-bank",
+          "prompt_en": "I wish you ___ your changes before pushing them.",
+          "options": ["would test", "will test", "testing"],
+          "answer": "would test",
+          "explain_en": "Asking someone to change a habit → wish + would.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s2i10",
+          "type": "fill-bank",
+          "prompt_en": "I wish I ___ on a beach right now instead of in this meeting.",
+          "options": ["were", "am", "will be"],
+          "answer": "were",
+          "explain_en": "A 'right now' wish → were.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d15s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d15s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "wish", "I", "had", "more", "screen", "space", "."],
+          "answer": "I wish I had more screen space .",
+          "explain_en": "Present wish → wish + past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "wishes", "she", "had", "joined", "the earlier call", "."],
+          "answer": "She wishes she had joined the earlier call .",
+          "explain_en": "Past regret → wish + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "only", "the tests", "ran", "faster", "on", "my machine", "."],
+          "answer": "If only the tests ran faster on my machine .",
+          "explain_en": "If only + past simple for a present wish.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "wish", "you", "would", "stop", "merging", "without", "review", "."],
+          "answer": "I wish you would stop merging without review .",
+          "explain_en": "wish + would for someone else's habit.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "wishes", "he", "had", "asked", "for", "help", "sooner", "."],
+          "answer": "He wishes he had asked for help sooner .",
+          "explain_en": "Past regret → had + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "wish", "this sandbox", "refreshed", "itself", "every", "night", "."],
+          "answer": "I wish this sandbox refreshed itself every night .",
+          "explain_en": "Present wish about how things work → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "only", "I", "had", "written", "that idea", "down", "."],
+          "answer": "If only I had written that idea down .",
+          "explain_en": "If only + past perfect for a past regret.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "wish", "my phone", "would", "charge", "a", "little", "faster", "."],
+          "answer": "I wish my phone would charge a little faster .",
+          "explain_en": "wish + would for a thing's annoying behavior.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i9",
+          "type": "speak",
+          "prompt_en": "Say one present wish about your work setup.",
+          "model_en": "I wish I had a second monitor at home.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d15s3i10",
+          "type": "speak",
+          "prompt_en": "Say one past regret using 'I wish I had…'.",
+          "model_en": "I wish I had negotiated my first salary.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
