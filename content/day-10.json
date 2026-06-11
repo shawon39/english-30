@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 10,
+  "theme": "Tense review (timed)",
+  "pillar": "tense",
+  "star": false,
+  "rule_en": "Review: trust the time markers — yesterday → past simple, since/for → perfect, right now → continuous, by + future time → future perfect, and reported speech shifts one step back.",
+  "rule_bn": "সময়ের সূত্র দেখো: yesterday → past simple; since/for → perfect; right now → continuous; reported speech → এক ধাপ অতীতে।",
+  "sessions": [
+    {
+      "id": "d10s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d10s1i1",
+          "type": "error-find",
+          "prompt_en": "Since the sprint started, I fixed eleven bugs",
+          "tokens": ["Since", "the", "sprint", "started,", "I", "fixed", "eleven", "bugs"],
+          "error_index": 5,
+          "options": ["have fixed", "am fixing", "had fixed"],
+          "answer": "have fixed",
+          "explain_en": "'Since' + an unfinished period takes the present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i2",
+          "type": "error-find",
+          "prompt_en": "By the time QA opened the ticket, I already fixed the bug",
+          "tokens": ["By", "the", "time", "QA", "opened", "the", "ticket,", "I", "already fixed", "the", "bug"],
+          "error_index": 8,
+          "options": ["had already fixed", "have already fixed", "already fixing"],
+          "answer": "had already fixed",
+          "explain_en": "An action finished before another past action takes the past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i3",
+          "type": "error-find",
+          "prompt_en": "She is talk to the client right now, so call back later",
+          "tokens": ["She", "is talk", "to", "the", "client", "right", "now,", "so", "call", "back", "later"],
+          "error_index": 1,
+          "options": ["is talking", "talks", "talked"],
+          "answer": "is talking",
+          "explain_en": "'right now' needs the present continuous: is + verb-ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i4",
+          "type": "error-find",
+          "prompt_en": "I am working on this migration since Monday morning",
+          "tokens": ["I", "am working", "on", "this", "migration", "since", "Monday", "morning"],
+          "error_index": 1,
+          "options": ["have been working", "am being work", "was working"],
+          "answer": "have been working",
+          "explain_en": "'since Monday' needs the present perfect continuous for an action still going.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i5",
+          "type": "error-find",
+          "prompt_en": "The server crashed while I deployed the new package",
+          "tokens": ["The", "server", "crashed", "while", "I", "deployed", "the", "new", "package"],
+          "error_index": 5,
+          "options": ["was deploying", "have deployed", "am deploying"],
+          "answer": "was deploying",
+          "explain_en": "A longer background action interrupted in the past takes the past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i6",
+          "type": "error-find",
+          "prompt_en": "We will to release the hotfix as soon as the tests pass",
+          "tokens": ["We", "will to release", "the", "hotfix", "as", "soon", "as", "the", "tests", "pass"],
+          "error_index": 1,
+          "options": ["will release", "will releases", "will to releasing"],
+          "answer": "will release",
+          "explain_en": "'will' takes the bare verb, never 'to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i7",
+          "type": "error-find",
+          "prompt_en": "By December, she will work here for exactly ten years",
+          "tokens": ["By", "December,", "she", "will work", "here", "for", "exactly", "ten", "years"],
+          "error_index": 3,
+          "options": ["will have worked", "will be work", "is working"],
+          "answer": "will have worked",
+          "explain_en": "A duration completed by a future point takes the future perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i8",
+          "type": "error-find",
+          "prompt_en": "I would have a Blackberry before smartphones took over",
+          "tokens": ["I", "would have", "a", "Blackberry", "before", "smartphones", "took", "over"],
+          "error_index": 1,
+          "options": ["used to have", "would had", "use to have"],
+          "answer": "used to have",
+          "explain_en": "'would' cannot describe a past state like owning something — use 'used to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i9",
+          "type": "error-find",
+          "prompt_en": "The manager said the release is delayed until next quarter",
+          "tokens": ["The", "manager", "said", "the", "release", "is", "delayed", "until", "next", "quarter"],
+          "error_index": 5,
+          "options": ["was", "will", "be"],
+          "answer": "was",
+          "explain_en": "Reported speech backshifts present 'is' to past 'was'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s1i10",
+          "type": "error-find",
+          "prompt_en": "I have seen that error yesterday in the staging logs",
+          "tokens": ["I", "have seen", "that", "error", "yesterday", "in", "the", "staging", "logs"],
+          "error_index": 1,
+          "options": ["saw", "see", "had see"],
+          "answer": "saw",
+          "explain_en": "A finished time like 'yesterday' takes the past simple, not the present perfect.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d10s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d10s2i1",
+          "type": "mcq",
+          "prompt_en": "By the time the audit starts, we ___ all the security gaps.",
+          "options": ["will have closed", "will close", "closed", "have closed"],
+          "answer": "will have closed",
+          "explain_en": "Completed before a future deadline → future perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i2",
+          "type": "mcq",
+          "prompt_en": "She told me she ___ the design doc the night before.",
+          "options": ["had finished", "has finished", "finishes", "will finish"],
+          "answer": "had finished",
+          "explain_en": "Reported speech pushes the past one step further back: past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i3",
+          "type": "mcq",
+          "prompt_en": "Careful — the intern ___ the production org right now.",
+          "options": ["is editing", "edits", "edited", "has edited"],
+          "answer": "is editing",
+          "explain_en": "'right now' → present continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i4",
+          "type": "mcq",
+          "prompt_en": "When I joined, I ___ check Stack Overflow ten times a day.",
+          "options": ["would", "am used to", "would be", "will"],
+          "answer": "would",
+          "explain_en": "'would' works for a repeated past action (a routine).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i5",
+          "type": "mcq",
+          "prompt_en": "We ___ three regressions since the last release.",
+          "options": ["have found", "found", "find", "had found"],
+          "answer": "have found",
+          "explain_en": "'since the last release' connects past to now → present perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The lights went out while we ___ the demo.",
+          "options": ["were recording", "recorded", "record"],
+          "answer": "were recording",
+          "explain_en": "A background action in progress → past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Relax — I ___ you when the build finishes.",
+          "options": ["will ping", "ping", "pinged"],
+          "answer": "will ping",
+          "explain_en": "An on-the-spot promise takes 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i8",
+          "type": "fill-bank",
+          "prompt_en": "He ___ at RocketPhone before he moved to the platform team.",
+          "options": ["had worked", "has worked", "works"],
+          "answer": "had worked",
+          "explain_en": "The earlier of two past actions takes the past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i9",
+          "type": "fill-bank",
+          "prompt_en": "My eyes hurt because I ___ at dashboards all morning.",
+          "options": ["have been staring", "stare", "am staring"],
+          "answer": "have been staring",
+          "explain_en": "Present perfect continuous explains a present result of a long action.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s2i10",
+          "type": "fill-bank",
+          "prompt_en": "She said she ___ handle the on-call shift that weekend.",
+          "options": ["could", "can", "will"],
+          "answer": "could",
+          "explain_en": "Reported speech backshifts 'can' to 'could'.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d10s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d10s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "have", "been", "debugging", "this", "flow", "since", "breakfast", "."],
+          "answer": "I have been debugging this flow since breakfast .",
+          "explain_en": "Present perfect continuous: have been + verb-ing for an ongoing action.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["By", "Friday", "we", "will", "have", "migrated", "every", "record", "."],
+          "answer": "By Friday we will have migrated every record .",
+          "explain_en": "Future perfect: will have + past participle for a future deadline.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "said", "the patch", "had", "fixed", "the login bug", "."],
+          "answer": "She said the patch had fixed the login bug .",
+          "explain_en": "Reported speech backshifts past simple to past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["While", "I", "was", "testing", ",", "the network", "went", "down", "."],
+          "answer": "While I was testing , the network went down .",
+          "explain_en": "Past continuous background + past simple interruption.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "used", "to", "write", "code", "without", "any", "tests", "."],
+          "answer": "I used to write code without any tests .",
+          "explain_en": "'used to' + base verb for a past habit that ended.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "are", "meeting", "the client", "after", "the standup", "."],
+          "answer": "We are meeting the client after the standup .",
+          "explain_en": "Present continuous for a fixed arrangement.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "had", "already", "left", "when", "the alert", "fired", "."],
+          "answer": "He had already left when the alert fired .",
+          "explain_en": "Past perfect for the action that happened first.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "will", "have", "been", "coding", "for", "ten", "years", "by", "June", "."],
+          "answer": "She will have been coding for ten years by June .",
+          "explain_en": "Future perfect continuous: will have been + verb-ing for a duration up to a future point.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i9",
+          "type": "speak",
+          "prompt_en": "Say what you were doing when your last meeting started.",
+          "model_en": "I was reviewing a pull request when the meeting started.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s3i10",
+          "type": "speak",
+          "prompt_en": "Report one thing your manager said this week, backshifting the tense.",
+          "model_en": "My manager said the roadmap was almost final.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d10s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d10s4i1",
+          "type": "error-find",
+          "prompt_en": "The release is going to fails if we skip the smoke tests",
+          "tokens": ["The", "release", "is", "going", "to", "fails", "if", "we", "skip", "the", "smoke", "tests"],
+          "error_index": 5,
+          "options": ["fail", "failing", "failed"],
+          "answer": "fail",
+          "explain_en": "'going to' takes the base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i2",
+          "type": "mcq",
+          "prompt_en": "I ___ this laptop in 2023, and it still runs fine.",
+          "options": ["bought", "have bought", "buy", "had bought"],
+          "answer": "bought",
+          "explain_en": "A finished time (2023) → past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i3",
+          "type": "fill-bank",
+          "prompt_en": "This time tomorrow, we ___ the new release at the all-hands.",
+          "options": ["will be demoing", "demo", "have demoed"],
+          "answer": "will be demoing",
+          "explain_en": "'This time tomorrow' → future continuous for an action in progress.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "told", "me", "he", "had", "tested", "the flow", "twice", "."],
+          "answer": "He told me he had tested the flow twice .",
+          "explain_en": "Reported speech: past simple backshifts to past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i5",
+          "type": "error-find",
+          "prompt_en": "She has been wrote documentation all afternoon",
+          "tokens": ["She", "has", "been", "wrote", "documentation", "all", "afternoon"],
+          "error_index": 3,
+          "options": ["writing", "write", "written"],
+          "answer": "writing",
+          "explain_en": "Present perfect continuous = has/have been + verb-ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i6",
+          "type": "mcq",
+          "prompt_en": "There ___ be a free snack bar on this floor, but they removed it.",
+          "options": ["used to", "would", "will", "use to"],
+          "answer": "used to",
+          "explain_en": "A past state that ended → 'used to', not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i7",
+          "type": "fill-bank",
+          "prompt_en": "I ___ home when the on-call alert went off.",
+          "options": ["was driving", "drove", "am driving"],
+          "answer": "was driving",
+          "explain_en": "An interrupted background action → past continuous.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "rarely", "checks", "her email", "before", "the standup", "."],
+          "answer": "She rarely checks her email before the standup .",
+          "explain_en": "A habit takes the present simple; frequency adverb before the verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i9",
+          "type": "error-find",
+          "prompt_en": "We realized the script had ran twice on the same records",
+          "tokens": ["We", "realized", "the", "script", "had ran", "twice", "on", "the", "same", "records"],
+          "error_index": 4,
+          "options": ["had run", "has ran", "had running"],
+          "answer": "had run",
+          "explain_en": "Past perfect = had + past participle: 'had run'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d10s4i10",
+          "type": "mcq",
+          "prompt_en": "Look at those clouds — it ___ rain any minute.",
+          "options": ["is going to", "would", "is", "was going to"],
+          "answer": "is going to",
+          "explain_en": "Evidence you can see → 'going to' for predictions.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

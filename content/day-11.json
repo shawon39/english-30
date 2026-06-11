@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 11,
+  "theme": "Zero & First conditional",
+  "pillar": "conditional",
+  "star": false,
+  "rule_en": "Zero conditional = general truths: If + present, present. First conditional = real future possibilities: If + present, will + base — never put 'will' inside the if-clause.",
+  "rule_bn": "সাধারণ সত্য → If + present, present। বাস্তব ভবিষ্যৎ → If + present, will + base; if-এর ভেতরে will বসে না।",
+  "sessions": [
+    {
+      "id": "d11s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d11s1i1",
+          "type": "error-find",
+          "prompt_en": "If you will deploy on Friday, someone will work the weekend",
+          "tokens": ["If", "you", "will deploy", "on", "Friday,", "someone", "will", "work", "the", "weekend"],
+          "error_index": 2,
+          "options": ["deploy", "deployed", "would deploy"],
+          "answer": "deploy",
+          "explain_en": "No 'will' in the if-clause: If + present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i2",
+          "type": "error-find",
+          "prompt_en": "If the tests pass, the pipeline deploy the build automatically",
+          "tokens": ["If", "the", "tests", "pass,", "the", "pipeline", "deploy", "the", "build", "automatically"],
+          "error_index": 6,
+          "options": ["deploys", "will deploys", "deploying"],
+          "answer": "deploys",
+          "explain_en": "Zero conditional fact: present simple, third person adds -s.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i3",
+          "type": "error-find",
+          "prompt_en": "If I finish early, I would join the evening review",
+          "tokens": ["If", "I", "finish", "early,", "I", "would join", "the", "evening", "review"],
+          "error_index": 5,
+          "options": ["will join", "joined", "am join"],
+          "answer": "will join",
+          "explain_en": "A real future result → will + base, not 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i4",
+          "type": "error-find",
+          "prompt_en": "If the demo crashes, restarts the laptop and stay calm",
+          "tokens": ["If", "the", "demo", "crashes,", "restarts", "the", "laptop", "and", "stay", "calm"],
+          "error_index": 4,
+          "options": ["restart", "restarting", "will restarts"],
+          "answer": "restart",
+          "explain_en": "A first conditional can take an imperative result: the base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i5",
+          "type": "error-find",
+          "prompt_en": "Water boils if you will heat it to one hundred degrees",
+          "tokens": ["Water", "boils", "if", "you", "will heat", "it", "to", "one", "hundred", "degrees"],
+          "error_index": 4,
+          "options": ["heat", "heated", "would heat"],
+          "answer": "heat",
+          "explain_en": "Zero conditional: present simple in both halves.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i6",
+          "type": "error-find",
+          "prompt_en": "If the client signs today, we will starting onboarding tomorrow",
+          "tokens": ["If", "the", "client", "signs", "today,", "we", "will starting", "onboarding", "tomorrow"],
+          "error_index": 6,
+          "options": ["will start", "will to start", "starting"],
+          "answer": "will start",
+          "explain_en": "'will' + base verb: will start.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i7",
+          "type": "error-find",
+          "prompt_en": "You will get an alert if the disk will fill up",
+          "tokens": ["You", "will", "get", "an", "alert", "if", "the", "disk", "will fill up"],
+          "error_index": 8,
+          "options": ["fills up", "fill up", "would fill"],
+          "answer": "fills up",
+          "explain_en": "The if-clause stays in the present simple even when it comes second.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i8",
+          "type": "error-find",
+          "prompt_en": "If he won't reply by noon, escalate the ticket",
+          "tokens": ["If", "he", "won't reply", "by", "noon,", "escalate", "the", "ticket"],
+          "error_index": 2,
+          "options": ["doesn't reply", "don't reply", "not replies"],
+          "answer": "doesn't reply",
+          "explain_en": "A negative if-clause uses doesn't/don't, not 'won't'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i9",
+          "type": "error-find",
+          "prompt_en": "If you push to main without review, the lead get angry",
+          "tokens": ["If", "you", "push", "to", "main", "without", "review,", "the", "lead", "get", "angry"],
+          "error_index": 9,
+          "options": ["gets", "will gets", "getting"],
+          "answer": "gets",
+          "explain_en": "Zero conditional truth: present simple with -s for he/she/it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s1i10",
+          "type": "error-find",
+          "prompt_en": "If it rains tomorrow, the team lunch will happens indoors",
+          "tokens": ["If", "it", "rains", "tomorrow,", "the", "team", "lunch", "will happens", "indoors"],
+          "error_index": 7,
+          "options": ["will happen", "happens will", "will happening"],
+          "answer": "will happen",
+          "explain_en": "After 'will', the verb stays in its base form.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d11s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d11s2i1",
+          "type": "mcq",
+          "prompt_en": "If you ___ the cache, the page loads twice as fast.",
+          "options": ["clear", "will clear", "cleared", "would clear"],
+          "answer": "clear",
+          "explain_en": "Zero conditional: if + present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i2",
+          "type": "mcq",
+          "prompt_en": "If the API ___ down tonight, the on-call engineer will get paged.",
+          "options": ["goes", "will go", "went", "would go"],
+          "answer": "goes",
+          "explain_en": "Future meaning, but the if-clause stays in the present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i3",
+          "type": "mcq",
+          "prompt_en": "What happens if I ___ this red button?",
+          "options": ["press", "will press", "pressed", "would press"],
+          "answer": "press",
+          "explain_en": "A zero conditional question: present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i4",
+          "type": "mcq",
+          "prompt_en": "If we slip the date again this time, the client ___ happy.",
+          "options": ["won't be", "isn't", "wouldn't be", "won't being"],
+          "answer": "won't be",
+          "explain_en": "A specific future result → will/won't + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i5",
+          "type": "mcq",
+          "prompt_en": "I'll review your pull request as soon as I ___ lunch.",
+          "options": ["finish", "will finish", "finished", "am finish"],
+          "answer": "finish",
+          "explain_en": "'as soon as' works like 'if': present simple for future time.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i6",
+          "type": "fill-bank",
+          "prompt_en": "If you ___ admin rights, ask the platform team.",
+          "options": ["need", "will need", "needed"],
+          "answer": "need",
+          "explain_en": "A condition about now or anytime → present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i7",
+          "type": "fill-bank",
+          "prompt_en": "If the demo goes well, we ___ the contract this quarter.",
+          "options": ["will sign", "sign", "signed"],
+          "answer": "will sign",
+          "explain_en": "A real future result → will + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Ice melts if the temperature ___ above zero.",
+          "options": ["rises", "will rise", "rose"],
+          "answer": "rises",
+          "explain_en": "A scientific fact → zero conditional, present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i9",
+          "type": "fill-bank",
+          "prompt_en": "If she ___ the certification exam, she'll lead the next project.",
+          "options": ["passes", "will pass", "passed"],
+          "answer": "passes",
+          "explain_en": "The if-clause takes the present simple, even for the future.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s2i10",
+          "type": "fill-bank",
+          "prompt_en": "If nobody picks up this alert tonight, it ___ into a bigger incident.",
+          "options": ["will turn", "turning", "turned"],
+          "answer": "will turn",
+          "explain_en": "A real future consequence → will + base.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d11s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d11s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the tests", "fail", ",", "the merge", "is", "blocked", "."],
+          "answer": "If the tests fail , the merge is blocked .",
+          "explain_en": "Zero conditional: present simple in both clauses.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "you", "restart", "the router", ",", "the connection", "comes", "back", "."],
+          "answer": "If you restart the router , the connection comes back .",
+          "explain_en": "A general truth → zero conditional.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "will", "ship", "the feature", "if", "QA", "approves", "it", "."],
+          "answer": "We will ship the feature if QA approves it .",
+          "explain_en": "First conditional: will + base in the result, present simple after 'if'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the standup", "runs", "long", ",", "I", "will", "leave", "early", "."],
+          "answer": "If the standup runs long , I will leave early .",
+          "explain_en": "Real future possibility: If + present, will + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "will", "call", "you", "if", "the client", "changes", "the scope", "."],
+          "answer": "She will call you if the client changes the scope .",
+          "explain_en": "The if-clause stays present simple even at the end.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "you", "heat", "ice", ",", "it", "melts", "."],
+          "answer": "If you heat ice , it melts .",
+          "explain_en": "The classic zero conditional: fact, present + present.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "will", "escalate", "the bug", "if", "nobody", "answers", "me", "."],
+          "answer": "I will escalate the bug if nobody answers me .",
+          "explain_en": "First conditional with the result clause first.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the sprint", "ends", "early", ",", "we", "will", "clean", "the backlog", "."],
+          "answer": "If the sprint ends early , we will clean the backlog .",
+          "explain_en": "If + present simple, then will + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i9",
+          "type": "speak",
+          "prompt_en": "Say what you will do if your next deploy fails.",
+          "model_en": "If the deploy fails, I will roll back and check the logs.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d11s3i10",
+          "type": "speak",
+          "prompt_en": "Say one thing that always happens if you skip breakfast.",
+          "model_en": "If I skip breakfast, I get grumpy before lunch.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

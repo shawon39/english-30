@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 12,
+  "theme": "Second conditional",
+  "pillar": "conditional",
+  "star": false,
+  "rule_en": "Second conditional = unreal or unlikely present/future: If + past simple, would + base. With 'be', use 'were' for every person: If I were you.",
+  "rule_bn": "অবাস্তব বা কাল্পনিক পরিস্থিতি → If + past simple, would + base। 'be' হলে সব person-এ 'were': If I were you.",
+  "sessions": [
+    {
+      "id": "d12s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d12s1i1",
+          "type": "error-find",
+          "prompt_en": "If I would have more time, I would automate this report",
+          "tokens": ["If", "I", "would have", "more", "time,", "I", "would", "automate", "this", "report"],
+          "error_index": 2,
+          "options": ["had", "have", "will have"],
+          "answer": "had",
+          "explain_en": "No 'would' in the if-clause: If + past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i2",
+          "type": "error-find",
+          "prompt_en": "If she was the team lead, she would cancel half these meetings",
+          "tokens": ["If", "she", "was", "the", "team", "lead,", "she", "would", "cancel", "half", "these", "meetings"],
+          "error_index": 2,
+          "options": ["were", "is", "be"],
+          "answer": "were",
+          "explain_en": "Unreal 'be' takes 'were' for every person.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i3",
+          "type": "error-find",
+          "prompt_en": "If we had a bigger budget, we will hire two more engineers",
+          "tokens": ["If", "we", "had", "a", "bigger", "budget,", "we", "will hire", "two", "more", "engineers"],
+          "error_index": 7,
+          "options": ["would hire", "will hired", "hire"],
+          "answer": "would hire",
+          "explain_en": "An unreal result → would + base, not 'will'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i4",
+          "type": "error-find",
+          "prompt_en": "I would took the remote job if they offered better pay",
+          "tokens": ["I", "would took", "the", "remote", "job", "if", "they", "offered", "better", "pay"],
+          "error_index": 1,
+          "options": ["would take", "would taking", "will took"],
+          "answer": "would take",
+          "explain_en": "'would' takes the base verb: would take.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i5",
+          "type": "error-find",
+          "prompt_en": "If I am you, I would rewrite that trigger from scratch",
+          "tokens": ["If", "I", "am", "you,", "I", "would", "rewrite", "that", "trigger", "from", "scratch"],
+          "error_index": 2,
+          "options": ["were", "was being", "will be"],
+          "answer": "were",
+          "explain_en": "'If I were you' is the fixed advice pattern.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i6",
+          "type": "error-find",
+          "prompt_en": "If the org would allow it, we would test directly in production",
+          "tokens": ["If", "the", "org", "would allow", "it,", "we", "would", "test", "directly", "in", "production"],
+          "error_index": 3,
+          "options": ["allowed", "allows", "will allow"],
+          "answer": "allowed",
+          "explain_en": "The if-clause takes the past simple, never 'would'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i7",
+          "type": "error-find",
+          "prompt_en": "She would travels more if her project had less on-call duty",
+          "tokens": ["She", "would travels", "more", "if", "her", "project", "had", "less", "on-call", "duty"],
+          "error_index": 1,
+          "options": ["would travel", "would traveling", "will travels"],
+          "answer": "would travel",
+          "explain_en": "The base verb follows 'would': would travel.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i8",
+          "type": "error-find",
+          "prompt_en": "If we don't had legacy code, releases would take a day",
+          "tokens": ["If", "we", "don't had", "legacy", "code,", "releases", "would", "take", "a", "day"],
+          "error_index": 2,
+          "options": ["didn't have", "don't have", "hadn't"],
+          "answer": "didn't have",
+          "explain_en": "An unreal negative: didn't + base in the if-clause.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i9",
+          "type": "error-find",
+          "prompt_en": "What will you do if you won the lottery tomorrow?",
+          "tokens": ["What", "will", "you", "do", "if", "you", "won", "the", "lottery", "tomorrow?"],
+          "error_index": 1,
+          "options": ["would", "did", "do"],
+          "answer": "would",
+          "explain_en": "An unlikely dream → second conditional: would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s1i10",
+          "type": "error-find",
+          "prompt_en": "If our app would crash less, support tickets would drop fast",
+          "tokens": ["If", "our", "app", "would crash", "less,", "support", "tickets", "would", "drop", "fast"],
+          "error_index": 3,
+          "options": ["crashed", "crashes", "will crash"],
+          "answer": "crashed",
+          "explain_en": "Keep 'would' out of the if-clause — past simple instead.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d12s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d12s2i1",
+          "type": "mcq",
+          "prompt_en": "If I ___ the CTO, I would freeze new features for a month.",
+          "options": ["were", "am", "was being", "will be"],
+          "answer": "were",
+          "explain_en": "An unreal role: 'were' for all persons.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i2",
+          "type": "mcq",
+          "prompt_en": "If we ___ TypeScript, we would catch these bugs at compile time.",
+          "options": ["used", "use", "will use", "would use"],
+          "answer": "used",
+          "explain_en": "If + past simple for the unreal condition.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i3",
+          "type": "mcq",
+          "prompt_en": "She ___ for a startup if the salary weren't so risky.",
+          "options": ["would work", "will work", "works", "worked"],
+          "answer": "would work",
+          "explain_en": "An unreal result → would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i4",
+          "type": "mcq",
+          "prompt_en": "What ___ you change if you owned this codebase?",
+          "options": ["would", "will", "do", "did"],
+          "answer": "would",
+          "explain_en": "A hypothetical question → would.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i5",
+          "type": "mcq",
+          "prompt_en": "If my laptop ___ faster, these builds wouldn't hurt so much.",
+          "options": ["were", "is", "will be", "would be"],
+          "answer": "were",
+          "explain_en": "An unreal state with 'be' → were.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i6",
+          "type": "fill-bank",
+          "prompt_en": "If I had three monitors, I ___ so many windows.",
+          "options": ["wouldn't juggle", "won't juggle", "don't juggle"],
+          "answer": "wouldn't juggle",
+          "explain_en": "Unreal result: would/wouldn't + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i7",
+          "type": "fill-bank",
+          "prompt_en": "If you ___ any language, which one would you master?",
+          "options": ["could learn", "can learn", "will learn"],
+          "answer": "could learn",
+          "explain_en": "The second conditional uses 'could' as the past of 'can'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i8",
+          "type": "fill-bank",
+          "prompt_en": "He would say yes if you ___ him directly.",
+          "options": ["asked", "ask", "will ask"],
+          "answer": "asked",
+          "explain_en": "The if-clause takes the past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i9",
+          "type": "fill-bank",
+          "prompt_en": "If I ___ you, I would take the certification this quarter.",
+          "options": ["were", "am", "would be"],
+          "answer": "were",
+          "explain_en": "The fixed advice pattern: If I were you.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s2i10",
+          "type": "fill-bank",
+          "prompt_en": "If the meeting were optional, half the team ___ .",
+          "options": ["wouldn't come", "won't come", "doesn't come"],
+          "answer": "wouldn't come",
+          "explain_en": "An unreal situation → wouldn't + base.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d12s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d12s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "had", "more", "RAM", ",", "this build", "would", "fly", "."],
+          "answer": "If I had more RAM , this build would fly .",
+          "explain_en": "If + past simple, would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "were", "you", ",", "I", "would", "ask", "for", "a raise", "."],
+          "answer": "If I were you , I would ask for a raise .",
+          "explain_en": "The advice pattern: If I were you, I would …",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "would", "sleep", "more", "if", "the pager", "stayed", "quiet", "."],
+          "answer": "She would sleep more if the pager stayed quiet .",
+          "explain_en": "Result clause first: would + base, then if + past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "bugs", "fixed", "themselves", ",", "we", "would", "lose", "our jobs", "."],
+          "answer": "If bugs fixed themselves , we would lose our jobs .",
+          "explain_en": "An imaginary situation → second conditional.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "would", "travel", "for", "a year", "if", "money", "were", "no", "problem", "."],
+          "answer": "I would travel for a year if money were no problem .",
+          "explain_en": "Unreal 'be' → were, even after 'money'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the office", "had", "a gym", ",", "he", "would", "go", "every", "day", "."],
+          "answer": "If the office had a gym , he would go every day .",
+          "explain_en": "If + past simple sets up the unreal condition.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "would", "hire", "her", "if", "the budget", "allowed", "it", "."],
+          "answer": "We would hire her if the budget allowed it .",
+          "explain_en": "would + base in the result, past simple after 'if'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "this query", "were", "faster", ",", "the page", "would", "load", "instantly", "."],
+          "answer": "If this query were faster , the page would load instantly .",
+          "explain_en": "Unreal state → were; unreal result → would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i9",
+          "type": "speak",
+          "prompt_en": "Say what you would do if you didn't have to work tomorrow.",
+          "model_en": "If I didn't have to work tomorrow, I would sleep in and then go for a long walk.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d12s3i10",
+          "type": "speak",
+          "prompt_en": "Give a teammate advice using 'If I were you'.",
+          "model_en": "If I were you, I would split that pull request into two smaller ones.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
