@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 23,
+  "theme": "Deduction past (it could have happened)",
+  "pillar": "modal",
+  "star": true,
+  "rule_en": "Deduction about the past: must have + past participle = surely happened; can't / couldn't have + participle = surely didn't; might / could have + participle = possibly happened. Never 'must had' or 'could of'.",
+  "rule_bn": "অতীত অনুমান: must have + V3 = নিশ্চয়ই ঘটেছে; can't/couldn't have + V3 = ঘটেনি নিশ্চিত; might/could have + V3 = হয়তো ঘটেছে। 'could of' বলে কিছু নেই।",
+  "sessions": [
+    {
+      "id": "d23s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d23s1i1",
+          "type": "error-find",
+          "prompt_en": "The disk is full — the backup job must has run twice",
+          "tokens": ["The", "disk", "is", "full", "—", "the", "backup", "job", "must has run", "twice"],
+          "error_index": 8,
+          "options": ["must have run", "must had run", "must have ran"],
+          "answer": "must have run",
+          "explain_en": "must HAVE + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i2",
+          "type": "error-find",
+          "prompt_en": "She can't have wrote this; she was offline all day",
+          "tokens": ["She", "can't", "have wrote", "this;", "she", "was", "offline", "all", "day"],
+          "error_index": 2,
+          "options": ["have written", "have writed", "has written"],
+          "answer": "have written",
+          "explain_en": "have + past participle: written.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i3",
+          "type": "error-find",
+          "prompt_en": "The deploy could of failed silently during the night",
+          "tokens": ["The", "deploy", "could of failed", "silently", "during", "the", "night"],
+          "error_index": 2,
+          "options": ["could have failed", "could of fail", "could had failed"],
+          "answer": "could have failed",
+          "explain_en": "'could of' doesn't exist — could HAVE.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i4",
+          "type": "error-find",
+          "prompt_en": "He mustn't have seen your message; he never ignores you",
+          "tokens": ["He", "mustn't have seen", "your", "message;", "he", "never", "ignores", "you"],
+          "error_index": 1,
+          "options": ["can't have seen", "must have saw", "mustn't had seen"],
+          "answer": "can't have seen",
+          "explain_en": "Impossible past → can't have + participle, not 'mustn't have'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i5",
+          "type": "error-find",
+          "prompt_en": "They might have took the earlier train to the office",
+          "tokens": ["They", "might", "have took", "the", "earlier", "train", "to", "the", "office"],
+          "error_index": 2,
+          "options": ["have taken", "have take", "had took"],
+          "answer": "have taken",
+          "explain_en": "have + past participle: taken.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i6",
+          "type": "error-find",
+          "prompt_en": "Someone must had changed the validation rule last night",
+          "tokens": ["Someone", "must had changed", "the", "validation", "rule", "last", "night"],
+          "error_index": 1,
+          "options": ["must have changed", "must has changed", "must had change"],
+          "answer": "must have changed",
+          "explain_en": "Never 'must had' — must have + participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i7",
+          "type": "error-find",
+          "prompt_en": "The client couldn't have sign the contract; it's still in drafts",
+          "tokens": ["The", "client", "couldn't", "have sign", "the", "contract;", "it's", "still", "in", "drafts"],
+          "error_index": 3,
+          "options": ["have signed", "have signing", "has signed"],
+          "answer": "have signed",
+          "explain_en": "have + past participle: signed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i8",
+          "type": "error-find",
+          "prompt_en": "I might have leave my access card in the taxi",
+          "tokens": ["I", "might", "have leave", "my", "access", "card", "in", "the", "taxi"],
+          "error_index": 2,
+          "options": ["have left", "have leaved", "had left"],
+          "answer": "have left",
+          "explain_en": "have + past participle: left.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i9",
+          "type": "error-find",
+          "prompt_en": "The linter must have catch this typo — check the CI logs",
+          "tokens": ["The", "linter", "must", "have catch", "this", "typo", "—", "check", "the", "CI", "logs"],
+          "error_index": 3,
+          "options": ["have caught", "have catched", "has caught"],
+          "answer": "have caught",
+          "explain_en": "have + past participle: caught.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s1i10",
+          "type": "error-find",
+          "prompt_en": "She could has presented the roadmap; she knows it best",
+          "tokens": ["She", "could has presented", "the", "roadmap;", "she", "knows", "it", "best"],
+          "error_index": 1,
+          "options": ["could have presented", "could had presented", "can has presented"],
+          "answer": "could have presented",
+          "explain_en": "could HAVE + past participle.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d23s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d23s2i1",
+          "type": "mcq",
+          "prompt_en": "The logs stop at 2 a.m. — the server ___ crashed then.",
+          "options": ["must have", "must had", "must has", "must of"],
+          "answer": "must have",
+          "explain_en": "Sure about the past → must have + participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i2",
+          "type": "mcq",
+          "prompt_en": "He ___ have merged it himself; he doesn't have write access.",
+          "options": ["can't", "must", "should to", "may to"],
+          "answer": "can't",
+          "explain_en": "Impossible past → can't have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i3",
+          "type": "mcq",
+          "prompt_en": "We ___ have hit a rate limit — the errors are all 429s.",
+          "options": ["must", "can't", "mustn't", "needn't"],
+          "answer": "must",
+          "explain_en": "Evidence (429s) → must have hit.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i4",
+          "type": "mcq",
+          "prompt_en": "The email ___ have landed in spam; check that folder first.",
+          "options": ["might", "must to", "can to", "needn't"],
+          "answer": "might",
+          "explain_en": "Possible past → might have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i5",
+          "type": "mcq",
+          "prompt_en": "She ___ have known about the layoff — she looked completely shocked.",
+          "options": ["couldn't", "must", "should to", "might to"],
+          "answer": "couldn't",
+          "explain_en": "Surely not → couldn't have known.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The bug disappeared after the restart; a stale cache ___ been the cause.",
+          "options": ["must have", "must had", "must has"],
+          "answer": "must have",
+          "explain_en": "Past deduction → must have been.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i7",
+          "type": "fill-bank",
+          "prompt_en": "You ___ have seen Priya at the summit; she was in Dhaka that week.",
+          "options": ["can't", "must", "should to"],
+          "answer": "can't",
+          "explain_en": "Impossible → can't have seen.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i8",
+          "type": "fill-bank",
+          "prompt_en": "I don't see your commit; it ___ have failed to push.",
+          "options": ["might", "must to", "needn't"],
+          "answer": "might",
+          "explain_en": "Possible explanation → might have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i9",
+          "type": "fill-bank",
+          "prompt_en": "The intern fixed it alone? Someone ___ have helped him.",
+          "options": ["must", "can't", "needn't to"],
+          "answer": "must",
+          "explain_en": "Strong belief about the past → must have helped.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s2i10",
+          "type": "fill-bank",
+          "prompt_en": "They ___ have tested this on mobile; the layout is completely broken.",
+          "options": ["can't", "must", "ought"],
+          "answer": "can't",
+          "explain_en": "The result says it never happened → can't have tested.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d23s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d23s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The job", "must", "have", "finished", "before", "midnight", "."],
+          "answer": "The job must have finished before midnight .",
+          "explain_en": "must have + past participle: surely happened.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "can't", "have", "approved", "this design", "."],
+          "answer": "She can't have approved this design .",
+          "explain_en": "can't have + participle: surely didn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The package", "might", "have", "expired", "in", "the queue", "."],
+          "answer": "The package might have expired in the queue .",
+          "explain_en": "might have + participle: possibly happened.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Someone", "must", "have", "rotated", "the credentials", "."],
+          "answer": "Someone must have rotated the credentials .",
+          "explain_en": "Past deduction → must have rotated.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "couldn't", "have", "known", "about", "the schema change", "."],
+          "answer": "He couldn't have known about the schema change .",
+          "explain_en": "couldn't have known = impossible that he knew.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The alert", "could", "have", "fired", "hours", "earlier", "."],
+          "answer": "The alert could have fired hours earlier .",
+          "explain_en": "could have + participle: a possibility that didn't happen.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["They", "must", "have", "skipped", "the dry run", "."],
+          "answer": "They must have skipped the dry run .",
+          "explain_en": "Result-based deduction → must have skipped.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "might", "have", "closed", "the wrong ticket", "."],
+          "answer": "I might have closed the wrong ticket .",
+          "explain_en": "Admitting a possible past mistake → might have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i9",
+          "type": "speak",
+          "prompt_en": "Explain a mysterious bug from your past using 'must have'.",
+          "model_en": "The job ran twice, so someone must have clicked the button during the timeout.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s3i10",
+          "type": "speak",
+          "prompt_en": "Defend a teammate using 'can't have'.",
+          "model_en": "Rafi can't have broken the build; his branch wasn't even merged.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d23s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d23s4i1",
+          "type": "error-find",
+          "prompt_en": "The sync must have fail around noon; the data stops there",
+          "tokens": ["The", "sync", "must", "have fail", "around", "noon;", "the", "data", "stops", "there"],
+          "error_index": 3,
+          "options": ["have failed", "have failing", "has failed"],
+          "answer": "have failed",
+          "explain_en": "have + past participle: failed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i2",
+          "type": "mcq",
+          "prompt_en": "My keys aren't in my bag — I ___ have dropped them in the cab.",
+          "options": ["must", "can't", "needn't", "ought"],
+          "answer": "must",
+          "explain_en": "Best explanation → must have dropped.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i3",
+          "type": "fill-bank",
+          "prompt_en": "He ___ have left the office; his jacket is still on the chair.",
+          "options": ["can't", "must", "ought to"],
+          "answer": "can't",
+          "explain_en": "Evidence against → can't have left.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The report", "must", "have", "used", "stale", "data", "."],
+          "answer": "The report must have used stale data .",
+          "explain_en": "Past deduction → must have used.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i5",
+          "type": "error-find",
+          "prompt_en": "You could of asked me before deleting the sandbox",
+          "tokens": ["You", "could of asked", "me", "before", "deleting", "the", "sandbox"],
+          "error_index": 1,
+          "options": ["could have asked", "could has asked", "could of ask"],
+          "answer": "could have asked",
+          "explain_en": "'of' is never a verb — could HAVE asked.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i6",
+          "type": "mcq",
+          "prompt_en": "The demo went perfectly. They ___ have rehearsed a lot.",
+          "options": ["must", "can't", "mustn't", "needn't to"],
+          "answer": "must",
+          "explain_en": "Past deduction from a result → must have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i7",
+          "type": "fill-bank",
+          "prompt_en": "The ticket vanished from the board; someone ___ have archived it.",
+          "options": ["might", "must to", "can to"],
+          "answer": "might",
+          "explain_en": "Possible past action → might have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "might", "have", "missed", "the calendar invite", "."],
+          "answer": "She might have missed the calendar invite .",
+          "explain_en": "Possible past → might have missed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i9",
+          "type": "error-find",
+          "prompt_en": "He must have wore the wrong badge to the data center",
+          "tokens": ["He", "must", "have wore", "the", "wrong", "badge", "to", "the", "data", "center"],
+          "error_index": 2,
+          "options": ["have worn", "have weared", "has worn"],
+          "answer": "have worn",
+          "explain_en": "have + past participle: worn.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d23s4i10",
+          "type": "mcq",
+          "prompt_en": "The org was untouched for years, so the password ___ have expired long ago.",
+          "options": ["must", "can't", "needn't", "shouldn't to"],
+          "answer": "must",
+          "explain_en": "Logical conclusion → must have expired.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

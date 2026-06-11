@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 22,
+  "theme": "Deduction present (must be / can't be)",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "Deduction now: must be = I'm sure it's true; can't be = I'm sure it's impossible (NOT 'mustn't be'); might/could be = possible. The modal is always followed by the base verb.",
+  "rule_bn": "অনুমান: must be = নিশ্চিত সত্য; can't be = নিশ্চিত অসম্ভব (mustn't be নয়); might/could be = হতে পারে।",
+  "sessions": [
+    {
+      "id": "d22s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d22s1i1",
+          "type": "error-find",
+          "prompt_en": "The office lights are on — someone must being inside",
+          "tokens": ["The", "office", "lights", "are", "on", "—", "someone", "must being", "inside"],
+          "error_index": 7,
+          "options": ["must be", "must been", "must is"],
+          "answer": "must be",
+          "explain_en": "Deduction → must BE.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i2",
+          "type": "error-find",
+          "prompt_en": "That mustn't be the right endpoint; it returns a 404",
+          "tokens": ["That", "mustn't be", "the", "right", "endpoint;", "it", "returns", "a", "404"],
+          "error_index": 1,
+          "options": ["can't be", "must be", "shouldn't being"],
+          "answer": "can't be",
+          "explain_en": "Impossible deduction → can't be, not 'mustn't be'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i3",
+          "type": "error-find",
+          "prompt_en": "She must knows the schema; she wrote half the triggers",
+          "tokens": ["She", "must knows", "the", "schema;", "she", "wrote", "half", "the", "triggers"],
+          "error_index": 1,
+          "options": ["must know", "must knowing", "must to know"],
+          "answer": "must know",
+          "explain_en": "Modal + base verb: must know.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i4",
+          "type": "error-find",
+          "prompt_en": "He can't to be on vacation; he just replied in the channel",
+          "tokens": ["He", "can't to be", "on", "vacation;", "he", "just", "replied", "in", "the", "channel"],
+          "error_index": 1,
+          "options": ["can't be", "can't being", "cannot to be"],
+          "answer": "can't be",
+          "explain_en": "can't + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i5",
+          "type": "error-find",
+          "prompt_en": "The job must running now — the CPU graph just spiked",
+          "tokens": ["The", "job", "must running", "now", "—", "the", "CPU", "graph", "just", "spiked"],
+          "error_index": 2,
+          "options": ["must be running", "must runs", "must to run"],
+          "answer": "must be running",
+          "explain_en": "Deduction about an action now → must be + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i6",
+          "type": "error-find",
+          "prompt_en": "You can't be serious — that quote must is a typo",
+          "tokens": ["You", "can't", "be", "serious", "—", "that", "quote", "must is", "a", "typo"],
+          "error_index": 7,
+          "options": ["must be", "must been", "musts be"],
+          "answer": "must be",
+          "explain_en": "must + be, never 'must is'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i7",
+          "type": "error-find",
+          "prompt_en": "Her badge is at the desk, so she might still is in the building",
+          "tokens": ["Her", "badge", "is", "at", "the", "desk,", "so", "she", "might still is", "in", "the", "building"],
+          "error_index": 8,
+          "options": ["might still be", "might still being", "must still is"],
+          "answer": "might still be",
+          "explain_en": "Modal + base verb: might still be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i8",
+          "type": "error-find",
+          "prompt_en": "That can't been our package; we don't write JavaScript alerts",
+          "tokens": ["That", "can't been", "our", "package;", "we", "don't", "write", "JavaScript", "alerts"],
+          "error_index": 1,
+          "options": ["can't be", "can't being", "couldn't been"],
+          "answer": "can't be",
+          "explain_en": "can't + be for a present deduction.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i9",
+          "type": "error-find",
+          "prompt_en": "The demo org must has the beta flag enabled — look at the navbar",
+          "tokens": ["The", "demo", "org", "must has", "the", "beta", "flag", "enabled", "—", "look", "at", "the", "navbar"],
+          "error_index": 3,
+          "options": ["must have", "must having", "musts have"],
+          "answer": "must have",
+          "explain_en": "must + base verb: have.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s1i10",
+          "type": "error-find",
+          "prompt_en": "Look at his commit history — he must writes code in his sleep",
+          "tokens": ["Look", "at", "his", "commit", "history", "—", "he", "must writes", "code", "in", "his", "sleep"],
+          "error_index": 7,
+          "options": ["must write", "must writing", "must to write"],
+          "answer": "must write",
+          "explain_en": "Modal + base verb: must write.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d22s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d22s2i1",
+          "type": "mcq",
+          "prompt_en": "Three monitors and a mechanical keyboard? He ___ be a developer.",
+          "options": ["must", "can't", "mustn't", "needn't"],
+          "answer": "must",
+          "explain_en": "Strong evidence → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i2",
+          "type": "mcq",
+          "prompt_en": "She ___ be the new CTO — the CTO is presenting on stage right now.",
+          "options": ["can't", "must", "should to", "may to"],
+          "answer": "can't",
+          "explain_en": "Impossible → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i3",
+          "type": "mcq",
+          "prompt_en": "The fans are loud and the case is hot — the GPU ___ be under heavy load.",
+          "options": ["must", "can't", "needn't", "mustn't"],
+          "answer": "must",
+          "explain_en": "Clear evidence → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i4",
+          "type": "mcq",
+          "prompt_en": "This ___ be the production org; the banner says SANDBOX.",
+          "options": ["can't", "must", "might to", "ought"],
+          "answer": "can't",
+          "explain_en": "Contradicting evidence → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i5",
+          "type": "mcq",
+          "prompt_en": "I hear typing on the call — someone ___ be taking notes.",
+          "options": ["must", "can't", "mustn't", "won't to"],
+          "answer": "must",
+          "explain_en": "Deduction from sound → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i6",
+          "type": "fill-bank",
+          "prompt_en": "He knows every flow by name; he ___ work with this org daily.",
+          "options": ["must", "can't", "mustn't"],
+          "answer": "must",
+          "explain_en": "Confident conclusion → must.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i7",
+          "type": "fill-bank",
+          "prompt_en": "That ___ be Maria's laptop — hers has a RocketPhone sticker.",
+          "options": ["can't", "must", "needn't"],
+          "answer": "can't",
+          "explain_en": "Evidence rules it out → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i8",
+          "type": "fill-bank",
+          "prompt_en": "The query returns in milliseconds now; the index ___ be working.",
+          "options": ["must", "can't", "mustn't"],
+          "answer": "must",
+          "explain_en": "The result proves it → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i9",
+          "type": "fill-bank",
+          "prompt_en": "The package isn't in the org list; it ___ be installed under a different namespace.",
+          "options": ["might", "can't", "must to"],
+          "answer": "might",
+          "explain_en": "Open possibility → might be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s2i10",
+          "type": "fill-bank",
+          "prompt_en": "The file is dated tomorrow? That ___ be right.",
+          "options": ["can't", "must", "needn't"],
+          "answer": "can't",
+          "explain_en": "Logically impossible → can't be.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d22s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d22s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "must", "be", "tired", "after", "the release weekend", "."],
+          "answer": "You must be tired after the release weekend .",
+          "explain_en": "Confident deduction → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["This", "can't", "be", "the final version", "of", "the report", "."],
+          "answer": "This can't be the final version of the report .",
+          "explain_en": "Sure it's false → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Someone", "must", "be", "testing", "in", "production", "again", "."],
+          "answer": "Someone must be testing in production again .",
+          "explain_en": "Action happening now → must be + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The error", "can't", "be", "related", "to", "my change", "."],
+          "answer": "The error can't be related to my change .",
+          "explain_en": "Ruling something out → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "must", "have", "a reason", "for", "the silence", "."],
+          "answer": "He must have a reason for the silence .",
+          "explain_en": "Deduction with another verb → must have (= possess).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["The meeting room", "must", "be", "free", "by", "now", "."],
+          "answer": "The meeting room must be free by now .",
+          "explain_en": "Confident guess about now → must be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["She", "might", "be", "commuting", "at", "this hour", "."],
+          "answer": "She might be commuting at this hour .",
+          "explain_en": "Possible, not certain → might be + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["That story", "can't", "be", "true", "."],
+          "answer": "That story can't be true .",
+          "explain_en": "Strong disbelief → can't be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i9",
+          "type": "speak",
+          "prompt_en": "Look around your room and make one 'must be' deduction.",
+          "model_en": "My neighbor's car is gone — he must be at work already.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d22s3i10",
+          "type": "speak",
+          "prompt_en": "Reject an impossible explanation using 'can't be'.",
+          "model_en": "It can't be a network issue; the other services are fine.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

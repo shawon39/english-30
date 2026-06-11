@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 24,
+  "theme": "would (habit, polite, hypothetical)",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "would = (1) repeated past actions: Every Friday we would demo; (2) polite forms: Would you mind + -ing, I'd like to…; (3) hypotheticals: That would be great. Not for past states — use used to.",
+  "rule_bn": "would = অতীতের বারবার করা কাজ; ভদ্র অনুরোধ (Would you mind + -ing, I'd like to…); কল্পনা (That would be great)। অতীত অবস্থা বোঝাতে would নয় — used to।",
+  "sessions": [
+    {
+      "id": "d24s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d24s1i1",
+          "type": "error-find",
+          "prompt_en": "Every Friday we would demoed whatever we had built",
+          "tokens": ["Every", "Friday", "we", "would demoed", "whatever", "we", "had", "built"],
+          "error_index": 3,
+          "options": ["would demo", "would demoing", "would to demo"],
+          "answer": "would demo",
+          "explain_en": "would + base verb: demo.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i2",
+          "type": "error-find",
+          "prompt_en": "Would you mind to share your screen for a second?",
+          "tokens": ["Would", "you", "mind", "to share", "your", "screen", "for", "a", "second?"],
+          "error_index": 3,
+          "options": ["sharing", "share", "to sharing"],
+          "answer": "sharing",
+          "explain_en": "Would you mind + -ing: sharing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i3",
+          "type": "error-find",
+          "prompt_en": "I would liked a standing desk if there's budget left",
+          "tokens": ["I", "would liked", "a", "standing", "desk", "if", "there's", "budget", "left"],
+          "error_index": 1,
+          "options": ["would like", "would liking", "would likes"],
+          "answer": "would like",
+          "explain_en": "would + base verb: like.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i4",
+          "type": "error-find",
+          "prompt_en": "When deadlines neared, he would worked through the weekend",
+          "tokens": ["When", "deadlines", "neared,", "he", "would worked", "through", "the", "weekend"],
+          "error_index": 4,
+          "options": ["would work", "would working", "would works"],
+          "answer": "would work",
+          "explain_en": "Past routine → would + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i5",
+          "type": "error-find",
+          "prompt_en": "We would have a tiny office downtown back then",
+          "tokens": ["We", "would have", "a", "tiny", "office", "downtown", "back", "then"],
+          "error_index": 1,
+          "options": ["used to have", "would had", "would has"],
+          "answer": "used to have",
+          "explain_en": "A past state (having) → used to, not would.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i6",
+          "type": "error-find",
+          "prompt_en": "Would you minds closing the door? The demo is recording",
+          "tokens": ["Would", "you", "minds", "closing", "the", "door?", "The", "demo", "is", "recording"],
+          "error_index": 2,
+          "options": ["mind", "minded", "minding"],
+          "answer": "mind",
+          "explain_en": "Would you MIND + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i7",
+          "type": "error-find",
+          "prompt_en": "That would being my dream role, honestly",
+          "tokens": ["That", "would being", "my", "dream", "role,", "honestly"],
+          "error_index": 1,
+          "options": ["would be", "would been", "would is"],
+          "answer": "would be",
+          "explain_en": "would + base: be.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i8",
+          "type": "error-find",
+          "prompt_en": "I'd rather to take the night flight and sleep on the plane",
+          "tokens": ["I'd", "rather", "to take", "the", "night", "flight", "and", "sleep", "on", "the", "plane"],
+          "error_index": 2,
+          "options": ["take", "taking", "took"],
+          "answer": "take",
+          "explain_en": "would rather + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i9",
+          "type": "error-find",
+          "prompt_en": "As kids, we would built forts out of sofa cushions",
+          "tokens": ["As", "kids,", "we", "would built", "forts", "out", "of", "sofa", "cushions"],
+          "error_index": 3,
+          "options": ["would build", "would building", "would to build"],
+          "answer": "would build",
+          "explain_en": "would + base verb: build.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s1i10",
+          "type": "error-find",
+          "prompt_en": "Would you like attend the architecture review tomorrow?",
+          "tokens": ["Would", "you", "like attend", "the", "architecture", "review", "tomorrow?"],
+          "error_index": 2,
+          "options": ["like to attend", "liking to attend", "like attends"],
+          "answer": "like to attend",
+          "explain_en": "Would you like TO + base verb.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d24s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d24s2i1",
+          "type": "mcq",
+          "prompt_en": "___ you mind reviewing my PR before lunch?",
+          "options": ["Would", "Must", "Ought", "May to"],
+          "answer": "Would",
+          "explain_en": "Polite request → Would you mind + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i2",
+          "type": "mcq",
+          "prompt_en": "Back in the startup days, we ___ ship twice a day.",
+          "options": ["would", "would to", "use to", "had better"],
+          "answer": "would",
+          "explain_en": "Repeated past action → would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i3",
+          "type": "mcq",
+          "prompt_en": "I ___ a quick call instead of this thread, honestly.",
+          "options": ["would prefer", "would prefers", "prefer would", "would preferring"],
+          "answer": "would prefer",
+          "explain_en": "Preference → would prefer.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i4",
+          "type": "mcq",
+          "prompt_en": "A second staging org? That ___ so much flakiness.",
+          "options": ["would remove", "will removes", "would removing", "removes would"],
+          "answer": "would remove",
+          "explain_en": "Hypothetical benefit → would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i5",
+          "type": "mcq",
+          "prompt_en": "My grandmother ___ tell us stories during load-shedding evenings.",
+          "options": ["would", "would to", "will", "had better"],
+          "answer": "would",
+          "explain_en": "Past routine → would tell.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i6",
+          "type": "fill-bank",
+          "prompt_en": "___ you like some feedback on the deck before you present?",
+          "options": ["Would", "Will to", "Should to"],
+          "answer": "Would",
+          "explain_en": "Polite offer → Would you like…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i7",
+          "type": "fill-bank",
+          "prompt_en": "He ___ always review the riskiest file first.",
+          "options": ["would", "will to", "ought"],
+          "answer": "would",
+          "explain_en": "Past habit → would always + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i8",
+          "type": "fill-bank",
+          "prompt_en": "I'd ___ work from the office on demo days.",
+          "options": ["rather", "liked to", "want"],
+          "answer": "rather",
+          "explain_en": "I'd rather + bare verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i9",
+          "type": "fill-bank",
+          "prompt_en": "Winning the hackathon ___ look great on the team wiki.",
+          "options": ["would", "will to", "would to"],
+          "answer": "would",
+          "explain_en": "Imagined outcome → would look.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s2i10",
+          "type": "fill-bank",
+          "prompt_en": "Every standup last year, she ___ start with the blockers.",
+          "options": ["would", "will", "would to"],
+          "answer": "would",
+          "explain_en": "Past routine → would start.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d24s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d24s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Would", "you", "mind", "muting", "your microphone", "?"],
+          "answer": "Would you mind muting your microphone ?",
+          "explain_en": "Would you mind + -ing.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Every", "winter", ",", "the team", "would", "rent", "a cabin", "."],
+          "answer": "Every winter , the team would rent a cabin .",
+          "explain_en": "Repeated past action → would rent.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "would", "like", "to", "switch", "to", "the platform team", "."],
+          "answer": "I would like to switch to the platform team .",
+          "explain_en": "Polite wish → would like to + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "would", "always", "bring", "snacks", "to", "the retro", "."],
+          "answer": "He would always bring snacks to the retro .",
+          "explain_en": "would always + base for a fond past habit.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["That", "would", "save", "us", "a full day", "every", "sprint", "."],
+          "answer": "That would save us a full day every sprint .",
+          "explain_en": "Hypothetical benefit → would save.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I'd", "rather", "pair", "on", "this", "than", "debug", "alone", "."],
+          "answer": "I'd rather pair on this than debug alone .",
+          "explain_en": "I'd rather + bare verb … than …",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Would", "you", "like", "a walkthrough", "of", "the new flow", "?"],
+          "answer": "Would you like a walkthrough of the new flow ?",
+          "explain_en": "Polite offer → Would you like…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["On", "slow", "afternoons", ",", "we", "would", "refactor", "old", "utils", "."],
+          "answer": "On slow afternoons , we would refactor old utils .",
+          "explain_en": "Past routine → would refactor.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i9",
+          "type": "speak",
+          "prompt_en": "Make a polite request to a teammate using 'Would you mind…?'.",
+          "model_en": "Would you mind double-checking my SOQL before I run it on production?",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d24s3i10",
+          "type": "speak",
+          "prompt_en": "Describe a childhood routine using 'would'.",
+          "model_en": "During summer holidays, we would play cricket until the light faded.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
