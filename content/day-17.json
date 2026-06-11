@@ -1,0 +1,427 @@
+{
+  "schemaVersion": "2.0",
+  "day": 17,
+  "theme": "Conditionals review",
+  "pillar": "conditional",
+  "star": false,
+  "rule_en": "Review: real future → If + present, will; unreal now → If + past, would; unreal past → If + past perfect, would have; wish mirrors the same shifts; unless = if not.",
+  "rule_bn": "রিভিউ: বাস্তব ভবিষ্যৎ → will; অবাস্তব বর্তমান → would; অবাস্তব অতীত → would have; wish-ও একই নিয়মে পেছায়; unless = যদি না।",
+  "sessions": [
+    {
+      "id": "d17s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d17s1i1",
+          "type": "error-find",
+          "prompt_en": "If the import will finish early, I will review the results tonight",
+          "tokens": ["If", "the", "import", "will finish", "early,", "I", "will", "review", "the", "results", "tonight"],
+          "error_index": 3,
+          "options": ["finishes", "finish", "would finish"],
+          "answer": "finishes",
+          "explain_en": "No 'will' in the if-clause: present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i2",
+          "type": "error-find",
+          "prompt_en": "If I had a spare sandbox, I will test the package there",
+          "tokens": ["If", "I", "had", "a", "spare", "sandbox,", "I", "will test", "the", "package", "there"],
+          "error_index": 7,
+          "options": ["would test", "will tested", "tested"],
+          "answer": "would test",
+          "explain_en": "Unreal present (If + past) → would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i3",
+          "type": "error-find",
+          "prompt_en": "If you had flagged the risk, we would have plan around it",
+          "tokens": ["If", "you", "had", "flagged", "the", "risk,", "we", "would have plan", "around", "it"],
+          "error_index": 7,
+          "options": ["would have planned", "would have planning", "would had planned"],
+          "answer": "would have planned",
+          "explain_en": "would have + past participle: planned.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i4",
+          "type": "error-find",
+          "prompt_en": "The oldest jobs get dropped if the queue overflow",
+          "tokens": ["The", "oldest", "jobs", "get", "dropped", "if", "the", "queue", "overflow"],
+          "error_index": 8,
+          "options": ["overflows", "overflowed", "will overflow"],
+          "answer": "overflows",
+          "explain_en": "Zero conditional: 'queue' is singular → overflows.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i5",
+          "type": "error-find",
+          "prompt_en": "I wish we have a staging org that matched production",
+          "tokens": ["I", "wish", "we", "have", "a", "staging", "org", "that", "matched", "production"],
+          "error_index": 3,
+          "options": ["had", "has", "will have"],
+          "answer": "had",
+          "explain_en": "Present wish → wish + past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i6",
+          "type": "error-find",
+          "prompt_en": "Unless you don't hear from me, assume the deploy went fine",
+          "tokens": ["Unless", "you", "don't hear", "from", "me,", "assume", "the", "deploy", "went", "fine"],
+          "error_index": 2,
+          "options": ["hear", "heard", "will hear"],
+          "answer": "hear",
+          "explain_en": "'Unless' already means 'if not' — keep the verb positive.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i7",
+          "type": "error-find",
+          "prompt_en": "If we had chosen Flutter, we will have one codebase now",
+          "tokens": ["If", "we", "had", "chosen", "Flutter,", "we", "will have", "one", "codebase", "now"],
+          "error_index": 6,
+          "options": ["would have", "will had", "would having"],
+          "answer": "would have",
+          "explain_en": "Past choice → present result: would + base (have).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i8",
+          "type": "error-find",
+          "prompt_en": "She wouldn't has missed the alert if the pager had worked",
+          "tokens": ["She", "wouldn't has missed", "the", "alert", "if", "the", "pager", "had", "worked"],
+          "error_index": 1,
+          "options": ["wouldn't have missed", "wouldn't had missed", "won't has missed"],
+          "answer": "wouldn't have missed",
+          "explain_en": "wouldn't + have + past participle.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i9",
+          "type": "error-find",
+          "prompt_en": "You can demo from my org as long as you will log out after",
+          "tokens": ["You", "can", "demo", "from", "my", "org", "as", "long", "as", "you", "will log out", "after"],
+          "error_index": 10,
+          "options": ["log out", "logged out", "would log out"],
+          "answer": "log out",
+          "explain_en": "'as long as' takes the present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s1i10",
+          "type": "error-find",
+          "prompt_en": "If only I listened to the architect before building this",
+          "tokens": ["If", "only", "I", "listened", "to", "the", "architect", "before", "building", "this"],
+          "error_index": 3,
+          "options": ["had listened", "have listened", "listen"],
+          "answer": "had listened",
+          "explain_en": "Past regret → if only + past perfect.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d17s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d17s2i1",
+          "type": "mcq",
+          "prompt_en": "If we ___ the contract last month, we would be staffed by now.",
+          "options": ["had signed", "signed", "have signed", "would sign"],
+          "answer": "had signed",
+          "explain_en": "Past condition for a present result → past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i2",
+          "type": "mcq",
+          "prompt_en": "If you ___ a flaky test, quarantine it the same day.",
+          "options": ["see", "will see", "saw", "would see"],
+          "answer": "see",
+          "explain_en": "General policy → zero conditional: present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i3",
+          "type": "mcq",
+          "prompt_en": "I wouldn't ship on a Friday ___ the fix were truly urgent.",
+          "options": ["unless", "as long as", "provided that", "so that"],
+          "answer": "unless",
+          "explain_en": "The only exception → unless = if not.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i4",
+          "type": "mcq",
+          "prompt_en": "If only we ___ more time before the audit.",
+          "options": ["had", "have", "will have", "would have"],
+          "answer": "had",
+          "explain_en": "If only + past simple for a present wish.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i5",
+          "type": "mcq",
+          "prompt_en": "If the cert exam ___ easier, everyone would have one.",
+          "options": ["were", "is", "would be", "will be"],
+          "answer": "were",
+          "explain_en": "Unreal present → were.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i6",
+          "type": "fill-bank",
+          "prompt_en": "If the build breaks, the bot ___ the commit author automatically.",
+          "options": ["pings", "will pings", "pinged"],
+          "answer": "pings",
+          "explain_en": "An automatic rule → zero conditional, present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i7",
+          "type": "fill-bank",
+          "prompt_en": "I would have joined the beta if I ___ about it.",
+          "options": ["had known", "knew", "know"],
+          "answer": "had known",
+          "explain_en": "Third conditional if-clause: past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i8",
+          "type": "fill-bank",
+          "prompt_en": "We'll keep the legacy API running ___ customers still depend on it.",
+          "options": ["as long as", "unless", "if only"],
+          "answer": "as long as",
+          "explain_en": "For the duration of the condition → as long as.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i9",
+          "type": "fill-bank",
+          "prompt_en": "I wish the sprint board ___ itself after each release.",
+          "options": ["archived", "archives", "will archive"],
+          "answer": "archived",
+          "explain_en": "wish + past simple for a present wish.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s2i10",
+          "type": "fill-bank",
+          "prompt_en": "If I ___ you, I'd take the certification voucher before it expires.",
+          "options": ["were", "am", "had been"],
+          "answer": "were",
+          "explain_en": "Advice → If I were you.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d17s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d17s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the migration", "fails", ",", "we", "will", "restore", "the backup", "."],
+          "answer": "If the migration fails , we will restore the backup .",
+          "explain_en": "First conditional: present in the if-clause, will in the result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "had", "admin", "access", ",", "I", "would", "fix", "this", "myself", "."],
+          "answer": "If I had admin access , I would fix this myself .",
+          "explain_en": "Second conditional: If + past, would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "we", "had", "labeled", "the tickets", ",", "triage", "would", "have", "been", "quick", "."],
+          "answer": "If we had labeled the tickets , triage would have been quick .",
+          "explain_en": "Third conditional: unreal past on both sides.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the token", "expires", ",", "refresh", "it", "and", "retry", "."],
+          "answer": "If the token expires , refresh it and retry .",
+          "explain_en": "Conditional + imperative result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "wish", "deployments", "were", "completely", "boring", "."],
+          "answer": "I wish deployments were completely boring .",
+          "explain_en": "wish + past simple (were) for a present wish.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Unless", "the client", "objects", ",", "we", "will", "launch", "on", "Monday", "."],
+          "answer": "Unless the client objects , we will launch on Monday .",
+          "explain_en": "unless + present simple; will in the main clause.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Provided that", "the numbers", "hold", ",", "the board", "will", "approve", "the budget", "."],
+          "answer": "Provided that the numbers hold , the board will approve the budget .",
+          "explain_en": "provided that = strict condition for the result.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "I", "had", "set", "an alert", ",", "I", "would", "know", "the answer", "."],
+          "answer": "If I had set an alert , I would know the answer .",
+          "explain_en": "Mixed: past condition → present result (would know).",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i9",
+          "type": "speak",
+          "prompt_en": "Make a real promise about your next release using a first conditional.",
+          "model_en": "If the smoke tests pass, I will promote the build to production.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s3i10",
+          "type": "speak",
+          "prompt_en": "Say one 'if only' regret from this month.",
+          "model_en": "If only I had estimated that ticket more honestly.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d17s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d17s4i1",
+          "type": "error-find",
+          "prompt_en": "We will rollback quickly if anything will look wrong",
+          "tokens": ["We", "will", "rollback", "quickly", "if", "anything", "will look", "wrong"],
+          "error_index": 6,
+          "options": ["looks", "look", "would look"],
+          "answer": "looks",
+          "explain_en": "The if-clause stays present simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i2",
+          "type": "mcq",
+          "prompt_en": "If the demo ___ , we would have lost the account.",
+          "options": ["had failed", "failed", "fails", "would fail"],
+          "answer": "had failed",
+          "explain_en": "Unreal past → if + past perfect.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i3",
+          "type": "fill-bank",
+          "prompt_en": "I wish this meeting ___ a clear agenda for once.",
+          "options": ["had", "has", "will have"],
+          "answer": "had",
+          "explain_en": "Present wish → past simple: had.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "the API", "were", "public", ",", "adoption", "would", "explode", "."],
+          "answer": "If the API were public , adoption would explode .",
+          "explain_en": "Second conditional: were + would.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i5",
+          "type": "error-find",
+          "prompt_en": "Nobody touches the config unless they don't have approval",
+          "tokens": ["Nobody", "touches", "the", "config", "unless", "they", "don't have", "approval"],
+          "error_index": 6,
+          "options": ["have", "has", "will have"],
+          "answer": "have",
+          "explain_en": "'unless' is already negative — the clause stays positive.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i6",
+          "type": "mcq",
+          "prompt_en": "If I hadn't automated the reports, I ___ them every Friday now.",
+          "options": ["would still build", "will have built", "still build", "am building"],
+          "answer": "would still build",
+          "explain_en": "Past condition → present habit result: would + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i7",
+          "type": "fill-bank",
+          "prompt_en": "If we ___ unlimited budget, we'd buy everyone an M4.",
+          "options": ["had", "have", "will have"],
+          "answer": "had",
+          "explain_en": "Unreal present → if + past simple.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["If", "you", "find", "a security bug", ",", "report", "it", "immediately", "."],
+          "answer": "If you find a security bug , report it immediately .",
+          "explain_en": "Conditional + imperative: report it.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i9",
+          "type": "error-find",
+          "prompt_en": "If she had stayed calm, she would have pass the system design round",
+          "tokens": ["If", "she", "had", "stayed", "calm,", "she", "would have pass", "the", "system", "design", "round"],
+          "error_index": 6,
+          "options": ["would have passed", "would have passing", "would had passed"],
+          "answer": "would have passed",
+          "explain_en": "Past participle after 'would have': passed.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d17s4i10",
+          "type": "mcq",
+          "prompt_en": "You'll get the refund ___ you cancel within thirty days.",
+          "options": ["provided that", "unless", "if only", "even though"],
+          "answer": "provided that",
+          "explain_en": "A strict condition → provided that.",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

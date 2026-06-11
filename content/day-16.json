@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 16,
+  "theme": "unless / as long as / provided that",
+  "pillar": "conditional",
+  "star": false,
+  "rule_en": "unless = if not (no extra negative after it). as long as / provided that = only if — the condition must hold. All take the present simple, even for future time.",
+  "rule_bn": "unless = যদি না (পরে আর না-বোধক নয়)। as long as / provided that = শুধু যদি — শর্ত পূরণ হলে। ভবিষ্যৎ হলেও present simple।",
+  "sessions": [
+    {
+      "id": "d16s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d16s1i1",
+          "type": "error-find",
+          "prompt_en": "Unless you don't restart the service, the cache stays stale",
+          "tokens": ["Unless", "you", "don't restart", "the", "service,", "the", "cache", "stays", "stale"],
+          "error_index": 2,
+          "options": ["restart", "restarted", "will restart"],
+          "answer": "restart",
+          "explain_en": "'Unless' already means 'if not' — no second negative.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i2",
+          "type": "error-find",
+          "prompt_en": "We will miss the deadline unless we will get one more engineer",
+          "tokens": ["We", "will", "miss", "the", "deadline", "unless", "we", "will get", "one", "more", "engineer"],
+          "error_index": 7,
+          "options": ["get", "got", "would get"],
+          "answer": "get",
+          "explain_en": "After 'unless', use the present simple, even for the future.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i3",
+          "type": "error-find",
+          "prompt_en": "You can use my sandbox as long as you will refresh it after",
+          "tokens": ["You", "can", "use", "my", "sandbox", "as", "long", "as", "you", "will refresh", "it", "after"],
+          "error_index": 9,
+          "options": ["refresh", "refreshed", "would refresh"],
+          "answer": "refresh",
+          "explain_en": "'as long as' takes the present simple for future conditions.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i4",
+          "type": "error-find",
+          "prompt_en": "We can merge tonight provided that the tests passes",
+          "tokens": ["We", "can", "merge", "tonight", "provided", "that", "the", "tests", "passes"],
+          "error_index": 8,
+          "options": ["pass", "will pass", "passing"],
+          "answer": "pass",
+          "explain_en": "Plural subject 'tests' → base form: pass.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i5",
+          "type": "error-find",
+          "prompt_en": "Unless the client signs off, we will to hold the release",
+          "tokens": ["Unless", "the", "client", "signs", "off,", "we", "will to hold", "the", "release"],
+          "error_index": 6,
+          "options": ["will hold", "will holding", "hold to"],
+          "answer": "will hold",
+          "explain_en": "will + base verb: hold.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i6",
+          "type": "error-find",
+          "prompt_en": "As long as you didn't break main, nobody will cares",
+          "tokens": ["As", "long", "as", "you", "didn't", "break", "main,", "nobody", "will cares"],
+          "error_index": 8,
+          "options": ["will care", "will caring", "cares will"],
+          "answer": "will care",
+          "explain_en": "After 'will', the verb stays base: care.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i7",
+          "type": "error-find",
+          "prompt_en": "You won't get access unless you won't complete the security training",
+          "tokens": ["You", "won't", "get", "access", "unless", "you", "won't complete", "the", "security", "training"],
+          "error_index": 6,
+          "options": ["complete", "completed", "will complete"],
+          "answer": "complete",
+          "explain_en": "'unless' carries the negative itself — the verb after it stays positive.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i8",
+          "type": "error-find",
+          "prompt_en": "Provided that he agree to the scope, the project starts Monday",
+          "tokens": ["Provided", "that", "he", "agree", "to", "the", "scope,", "the", "project", "starts", "Monday"],
+          "error_index": 3,
+          "options": ["agrees", "agreeing", "will agrees"],
+          "answer": "agrees",
+          "explain_en": "he/she/it takes -s: agrees.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i9",
+          "type": "error-find",
+          "prompt_en": "I will run the retro again unless somebody volunteer",
+          "tokens": ["I", "will", "run", "the", "retro", "again", "unless", "somebody", "volunteer"],
+          "error_index": 8,
+          "options": ["volunteers", "volunteered", "will volunteer"],
+          "answer": "volunteers",
+          "explain_en": "'somebody' is third person singular → volunteers.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s1i10",
+          "type": "error-find",
+          "prompt_en": "As long as the budget will allow it, we keep the test devices",
+          "tokens": ["As", "long", "as", "the", "budget", "will allow", "it,", "we", "keep", "the", "test", "devices"],
+          "error_index": 5,
+          "options": ["allows", "allow", "allowing"],
+          "answer": "allows",
+          "explain_en": "The condition clause → present simple: allows.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d16s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d16s2i1",
+          "type": "mcq",
+          "prompt_en": "___ you back up first, don't run the migration.",
+          "options": ["Unless", "As long as", "Provided", "If only"],
+          "answer": "Unless",
+          "explain_en": "Unless = if you don't: no backup → no migration.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i2",
+          "type": "mcq",
+          "prompt_en": "You can deploy on Friday ___ you stay on call over the weekend.",
+          "options": ["as long as", "unless", "even if", "so that"],
+          "answer": "as long as",
+          "explain_en": "as long as = only on this condition.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i3",
+          "type": "mcq",
+          "prompt_en": "The demo will go fine ___ nobody touches the wifi router.",
+          "options": ["provided that", "unless", "in case", "despite"],
+          "answer": "provided that",
+          "explain_en": "provided that = strictly on the condition that.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i4",
+          "type": "mcq",
+          "prompt_en": "I'll approve the PR ___ you add tests for the new branch logic.",
+          "options": ["as long as", "unless", "although", "whereas"],
+          "answer": "as long as",
+          "explain_en": "A condition for approval → as long as.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i5",
+          "type": "mcq",
+          "prompt_en": "___ the data is anonymized, legal won't approve the export.",
+          "options": ["Unless", "Provided that", "As long as", "Because"],
+          "answer": "Unless",
+          "explain_en": "No anonymization → no approval: unless = if not.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i6",
+          "type": "fill-bank",
+          "prompt_en": "Take the company card, ___ you keep the receipts.",
+          "options": ["as long as", "unless", "because"],
+          "answer": "as long as",
+          "explain_en": "Permission with a condition → as long as.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i7",
+          "type": "fill-bank",
+          "prompt_en": "We'll hit the launch date ___ the app review takes too long.",
+          "options": ["unless", "as long as", "provided that"],
+          "answer": "unless",
+          "explain_en": "The one thing that could stop it → unless.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i8",
+          "type": "fill-bank",
+          "prompt_en": "___ that the contract is signed, we start onboarding next week.",
+          "options": ["Provided", "Unless", "As long"],
+          "answer": "Provided",
+          "explain_en": "'Provided that' = on the condition that.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i9",
+          "type": "fill-bank",
+          "prompt_en": "Unless the standup ___ early, I'll miss my train.",
+          "options": ["ends", "will end", "ended"],
+          "answer": "ends",
+          "explain_en": "After 'unless' → present simple, even for the future.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s2i10",
+          "type": "fill-bank",
+          "prompt_en": "You can keep admin rights as long as you ___ the audit log clean.",
+          "options": ["keep", "will keep", "kept"],
+          "answer": "keep",
+          "explain_en": "The condition clause → present simple.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d16s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d16s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Unless", "you", "rebase", ",", "the merge", "will", "fail", "."],
+          "answer": "Unless you rebase , the merge will fail .",
+          "explain_en": "Unless = if you don't rebase.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "can", "leave", "early", "as long as", "the release", "is", "stable", "."],
+          "answer": "You can leave early as long as the release is stable .",
+          "explain_en": "Permission tied to a condition → as long as.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Provided that", "QA", "signs", "off", ",", "we", "ship", "tonight", "."],
+          "answer": "Provided that QA signs off , we ship tonight .",
+          "explain_en": "provided that + present simple condition.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Unless", "someone", "objects", ",", "this plan", "is", "final", "."],
+          "answer": "Unless someone objects , this plan is final .",
+          "explain_en": "Unless = if nobody objects, it stands.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "will", "lose", "the slot", "unless", "we", "pay", "the deposit", "."],
+          "answer": "We will lose the slot unless we pay the deposit .",
+          "explain_en": "unless-clause stays present simple; result takes will.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["As long as", "it", "works", ",", "nobody", "asks", "questions", "."],
+          "answer": "As long as it works , nobody asks questions .",
+          "explain_en": "A general truth held by a condition.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "will", "join", "the call", "provided that", "the agenda", "is", "short", "."],
+          "answer": "He will join the call provided that the agenda is short .",
+          "explain_en": "provided that can follow the main clause too.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Unless", "the logs", "say", "otherwise", ",", "the fix", "worked", "."],
+          "answer": "Unless the logs say otherwise , the fix worked .",
+          "explain_en": "unless = if the logs don't say otherwise.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i9",
+          "type": "speak",
+          "prompt_en": "Set one condition for lending a friend your laptop, using 'as long as'.",
+          "model_en": "You can borrow my laptop as long as you don't install anything weird.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d16s3i10",
+          "type": "speak",
+          "prompt_en": "Warn a teammate about a risk using 'unless'.",
+          "model_en": "Unless we cap the batch size, this job will time out in production.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

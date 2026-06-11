@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "2.0",
+  "day": 18,
+  "theme": "can / could / be able to",
+  "pillar": "modal",
+  "star": false,
+  "rule_en": "can = present ability/permission. could = past general ability or polite requests. be able to fills the gaps: future (will be able to), perfect (have been able to), and one-time past success (was able to — not 'could').",
+  "rule_bn": "can = বর্তমান সামর্থ্য; could = অতীত সাধারণ সামর্থ্য; নির্দিষ্ট একবারের অতীত সাফল্য → was able to (could নয়); ভবিষ্যৎ → will be able to।",
+  "sessions": [
+    {
+      "id": "d18s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d18s1i1",
+          "type": "error-find",
+          "prompt_en": "After two hours of debugging, I could finally fix the leak",
+          "tokens": ["After", "two", "hours", "of", "debugging,", "I", "could finally fix", "the", "leak"],
+          "error_index": 6,
+          "options": ["was finally able to fix", "could finally fixed", "can finally fix"],
+          "answer": "was finally able to fix",
+          "explain_en": "A one-time past success → was able to, not 'could'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i2",
+          "type": "error-find",
+          "prompt_en": "She will can review the package after the offsite",
+          "tokens": ["She", "will can review", "the", "package", "after", "the", "offsite"],
+          "error_index": 1,
+          "options": ["will be able to review", "will can to review", "can will review"],
+          "answer": "will be able to review",
+          "explain_en": "Two modals can't stack — future ability → will be able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i3",
+          "type": "error-find",
+          "prompt_en": "When I was a student, I can code all night without coffee",
+          "tokens": ["When", "I", "was", "a", "student,", "I", "can", "code", "all", "night", "without", "coffee"],
+          "error_index": 6,
+          "options": ["could", "can to", "am able"],
+          "answer": "could",
+          "explain_en": "Past general ability → could.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i4",
+          "type": "error-find",
+          "prompt_en": "We haven't been able reproduce the bug on staging",
+          "tokens": ["We", "haven't", "been", "able reproduce", "the", "bug", "on", "staging"],
+          "error_index": 3,
+          "options": ["able to reproduce", "able reproducing", "able reproduced"],
+          "answer": "able to reproduce",
+          "explain_en": "be able TO + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i5",
+          "type": "error-find",
+          "prompt_en": "Could you to share the dashboard link in the channel?",
+          "tokens": ["Could", "you", "to share", "the", "dashboard", "link", "in", "the", "channel?"],
+          "error_index": 2,
+          "options": ["share", "sharing", "to sharing"],
+          "answer": "share",
+          "explain_en": "Modal + base verb: Could you share…",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i6",
+          "type": "error-find",
+          "prompt_en": "He cans approve expense reports up to five hundred dollars",
+          "tokens": ["He", "cans", "approve", "expense", "reports", "up", "to", "five", "hundred", "dollars"],
+          "error_index": 1,
+          "options": ["can", "could to", "is can"],
+          "answer": "can",
+          "explain_en": "Modals never take -s: he can.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i7",
+          "type": "error-find",
+          "prompt_en": "I didn't could join the call because my train was underground",
+          "tokens": ["I", "didn't could join", "the", "call", "because", "my", "train", "was", "underground"],
+          "error_index": 1,
+          "options": ["couldn't join", "didn't can join", "not could join"],
+          "answer": "couldn't join",
+          "explain_en": "Negative of could = couldn't, no 'did'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i8",
+          "type": "error-find",
+          "prompt_en": "Since the upgrade, we can to run the full suite in five minutes",
+          "tokens": ["Since", "the", "upgrade,", "we", "can to run", "the", "full", "suite", "in", "five", "minutes"],
+          "error_index": 4,
+          "options": ["can run", "can running", "are can run"],
+          "answer": "can run",
+          "explain_en": "can + base verb, no 'to'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i9",
+          "type": "error-find",
+          "prompt_en": "It would be great to can edit messages after sending",
+          "tokens": ["It", "would", "be", "great", "to can edit", "messages", "after", "sending"],
+          "error_index": 4,
+          "options": ["to be able to edit", "to could edit", "can edit to"],
+          "answer": "to be able to edit",
+          "explain_en": "After 'to', use be able to — modals have no infinitive.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s1i10",
+          "type": "error-find",
+          "prompt_en": "Yesterday the intern could deployed to the sandbox on his own",
+          "tokens": ["Yesterday", "the", "intern", "could deployed", "to", "the", "sandbox", "on", "his", "own"],
+          "error_index": 3,
+          "options": ["was able to deploy", "could deploying", "can deployed"],
+          "answer": "was able to deploy",
+          "explain_en": "A specific past achievement → was able to + base.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d18s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d18s2i1",
+          "type": "mcq",
+          "prompt_en": "___ you grab me the error ID from the logs, please?",
+          "options": ["Could", "Might to", "Able to", "Will to"],
+          "answer": "Could",
+          "explain_en": "Polite request → Could you…",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i2",
+          "type": "mcq",
+          "prompt_en": "After the index rebuild, we ___ query a year of data in seconds.",
+          "options": ["are able to", "could to", "can to", "able to"],
+          "answer": "are able to",
+          "explain_en": "Present ability → can / be able to + base.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i3",
+          "type": "mcq",
+          "prompt_en": "I ___ swim until I was fifteen.",
+          "options": ["couldn't", "can't", "wasn't able", "couldn't to"],
+          "answer": "couldn't",
+          "explain_en": "Past inability → couldn't.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i4",
+          "type": "mcq",
+          "prompt_en": "By next sprint, you ___ create scratch orgs yourself.",
+          "options": ["will be able to", "will can", "are able", "could to"],
+          "answer": "will be able to",
+          "explain_en": "Future ability → will be able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i5",
+          "type": "mcq",
+          "prompt_en": "Thanks to the proxy logs, we ___ trace the failed request yesterday.",
+          "options": ["were able to", "could", "can", "are able to"],
+          "answer": "were able to",
+          "explain_en": "A specific past success → was/were able to, not 'could'.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i6",
+          "type": "fill-bank",
+          "prompt_en": "My grandfather ___ fix almost anything with a screwdriver.",
+          "options": ["could", "can", "is able to"],
+          "answer": "could",
+          "explain_en": "Past general ability → could.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i7",
+          "type": "fill-bank",
+          "prompt_en": "If we add the index, users ___ search by phone number.",
+          "options": ["will be able to", "can to", "could to"],
+          "answer": "will be able to",
+          "explain_en": "Future result → will be able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i8",
+          "type": "fill-bank",
+          "prompt_en": "I've never ___ focus in open-plan offices.",
+          "options": ["been able to", "could", "can"],
+          "answer": "been able to",
+          "explain_en": "Perfect tense → have/has been able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i9",
+          "type": "fill-bank",
+          "prompt_en": "___ I leave early today? My visa appointment is at four.",
+          "options": ["Could", "Was able to", "Will can"],
+          "answer": "Could",
+          "explain_en": "Polite permission → Could I…?",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s2i10",
+          "type": "fill-bank",
+          "prompt_en": "The new hire ___ already push to the shared sandbox.",
+          "options": ["can", "could to", "is able"],
+          "answer": "can",
+          "explain_en": "Present permission/ability → can + base.",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d18s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d18s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "can", "review", "your pull request", "after", "lunch", "."],
+          "answer": "I can review your pull request after lunch .",
+          "explain_en": "can + base verb for a present offer.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Could", "you", "send", "me", "the staging credentials", "?"],
+          "answer": "Could you send me the staging credentials ?",
+          "explain_en": "Polite request: Could you + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["He", "could", "solve", "the puzzle", "without", "any", "hints", "."],
+          "answer": "He could solve the puzzle without any hints .",
+          "explain_en": "could = past general ability.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["We", "were", "able", "to", "recover", "every", "single", "record", "."],
+          "answer": "We were able to recover every single record .",
+          "explain_en": "One-time past success → were able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["You", "will", "be", "able", "to", "vote", "on", "features", "next", "quarter", "."],
+          "answer": "You will be able to vote on features next quarter .",
+          "explain_en": "Future ability → will be able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["I", "haven't", "been", "able", "to", "sleep", "before", "big", "releases", "."],
+          "answer": "I haven't been able to sleep before big releases .",
+          "explain_en": "Perfect tense → haven't been able to.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Can", "the vendor", "support", "single sign-on", "?"],
+          "answer": "Can the vendor support single sign-on ?",
+          "explain_en": "Ability question: Can + subject + base verb.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["After", "the patch", ",", "users", "could", "log", "in", "again", "."],
+          "answer": "After the patch , users could log in again .",
+          "explain_en": "Restored general ability → could.",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i9",
+          "type": "speak",
+          "prompt_en": "Politely ask a teammate to cover your on-call shift.",
+          "model_en": "Could you cover my on-call shift this Saturday? I'll take yours next week.",
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d18s3i10",
+          "type": "speak",
+          "prompt_en": "Say one thing you couldn't do a year ago but can do now.",
+          "model_en": "A year ago I couldn't write Apex tests confidently, but now I can.",
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}
