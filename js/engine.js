@@ -1,8 +1,9 @@
 // engine.js — content loading + session player (scoring, combo, streak, persist).
 
 import { pad } from "./curriculum.js";
-import { renderItem, h, beep } from "./render.js";
+import { renderItem, h, beep, shuffle } from "./render.js";
 import * as store from "./storage.js";
+import * as srs from "./srs.js";
 
 const cache = new Map();
 
@@ -27,6 +28,39 @@ export async function probeAvailableDays() {
   }
   const res = await Promise.all(checks);
   return new Set(res.filter(Boolean));
+}
+
+// Assembles a "Quick Review" session from due mistake-bank items, pulling the live
+// item content from its source day JSON (via the same fetchDay cache) rather than
+// duplicating content into the mistake record.
+export async function buildReviewSession(limit = 10) {
+  const candidates = srs.pickReviewCandidates(limit);
+  if (!candidates.length) return null;
+
+  const byDay = new Map();
+  candidates.forEach((c) => {
+    if (!byDay.has(c.day)) byDay.set(c.day, []);
+    byDay.get(c.day).push(c);
+  });
+
+  const items = [];
+  for (const [day, recs] of byDay) {
+    let content;
+    try {
+      content = await fetchDay(day);
+    } catch {
+      continue; // day file unreachable — skip, don't abort the whole review
+    }
+    const allItems = (content.sessions || []).flatMap((s) => s.items || []);
+    recs.forEach((rec) => {
+      const found = allItems.find((it) => it.id === rec.itemId);
+      if (found) items.push({ ...found, _day: day });
+      else store.deleteMistake(rec.itemId); // stale record — item no longer exists in content
+    });
+  }
+  if (!items.length) return null;
+
+  return { id: "review", title: "Quick Review", type: "mixed", isReview: true, items: shuffle(items) };
 }
 
 function fmtTime(ms) {
@@ -97,12 +131,14 @@ export async function playSession({ mount, day, session, sessionIdsOfDay, onExit
       if (answered) return;
       answered = true;
       if (!skipped) {
+        srs.recordItemResult(items[i], ok);
         if (ok) {
           combo += 1;
           maxCombo = Math.max(maxCombo, combo);
           const gain = 10 + Math.min(combo - 1, 9) * 5;
           points += gain;
           correct += 1;
+          store.addPoints(items[i]._day ?? day.day, gain);
           stage.classList.add("good");
           flashGain(gain);
           beep(true);
@@ -131,9 +167,8 @@ export async function playSession({ mount, day, session, sessionIdsOfDay, onExit
     fill.style.width = "100%";
     const timeMs = timed ? Math.round(performance.now() - startTs) : null;
     store.setSessionResult(session.id, { correct, total: n, timeMs });
-    store.addPoints(day.day, points);
     store.markActiveToday();
-    store.markDayDoneIfComplete(day.day, sessionIdsOfDay);
+    if (!session.isReview) store.markDayDoneIfComplete(day.day, sessionIdsOfDay);
     celebrate({ mount, day, session, correct, n, points, maxCombo, timeMs, onNavigate, reduce });
   }
 
@@ -152,10 +187,12 @@ function celebrate({ mount, day, session, correct, n, points, maxCombo, timeMs, 
   root.append(h("div", { class: "cele-sub" }, subBits.join("  ·  ")));
 
   const acts = h("div", { class: "cele-acts" });
-  const idx = day.sessions.findIndex((s) => s.id === session.id);
-  const nextSession = day.sessions[idx + 1];
-  if (nextSession) acts.append(h("button", { class: "btn primary", type: "button", onClick: () => onNavigate(`#/play/${nextSession.id}`) }, "Next session →"));
-  acts.append(h("button", { class: "btn", type: "button", onClick: () => onNavigate(`#/day/${day.day}`) }, "Day map"));
+  if (!session.isReview) {
+    const idx = day.sessions.findIndex((s) => s.id === session.id);
+    const nextSession = day.sessions[idx + 1];
+    if (nextSession) acts.append(h("button", { class: "btn primary", type: "button", onClick: () => onNavigate(`#/play/${nextSession.id}`) }, "Next session →"));
+    acts.append(h("button", { class: "btn", type: "button", onClick: () => onNavigate(`#/day/${day.day}`) }, "Day map"));
+  }
   acts.append(h("button", { class: "btn ghost", type: "button", onClick: () => onNavigate("#/") }, "Home"));
   root.append(acts);
 

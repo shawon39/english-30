@@ -7,6 +7,7 @@ const K = {
   streak:   NS + "streak",
   points:   NS + "points",
   settings: NS + "settings",
+  mistakes: NS + "mistakes",
 };
 
 const DEFAULTS = {
@@ -14,6 +15,7 @@ const DEFAULTS = {
   [K.streak]:   { current: 0, longest: 0, lastActiveISO: null, daysDone: [] },
   [K.points]:   { total: 0, byDay: {} },
   [K.settings]: { lang: "en", sound: true, reduceMotion: false, theme: "light" },
+  [K.mistakes]: {},
 };
 
 function read(key) {
@@ -47,6 +49,11 @@ export function diffDays(aISO, bISO) {
   const b = new Date(bISO + "T00:00:00Z");
   return Math.round((b - a) / 86400000);
 }
+export function addDays(iso, n) {
+  const d = new Date(iso + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
 
 // --- session results ---
 export function setSessionResult(id, { correct, total, timeMs = null }) {
@@ -63,6 +70,21 @@ export function setSessionResult(id, { correct, total, timeMs = null }) {
   };
   write(K.progress, p);
   return p[id];
+}
+
+// --- mistake bank (spaced review) ---
+export const getMistakes = () => read(K.mistakes);
+export function upsertMistake(itemId, patch) {
+  const m = read(K.mistakes);
+  m[itemId] = { ...(m[itemId] || {}), ...patch };
+  write(K.mistakes, m);
+  return m[itemId];
+}
+export function deleteMistake(itemId) {
+  const m = read(K.mistakes);
+  if (!(itemId in m)) return;
+  delete m[itemId];
+  write(K.mistakes, m);
 }
 
 export function addPoints(day, amount) {
@@ -111,6 +133,7 @@ export function exportAll() {
       streak: read(K.streak),
       points: read(K.points),
       settings: read(K.settings),
+      mistakes: read(K.mistakes),
     },
   };
 }
@@ -121,6 +144,7 @@ export function importAll(obj) {
   if (d.streak)   write(K.streak, d.streak);
   if (d.points)   write(K.points, d.points);
   if (d.settings) write(K.settings, d.settings);
+  if (d.mistakes) write(K.mistakes, d.mistakes);
 }
 export function resetAll() {
   Object.values(K).forEach((k) => localStorage.removeItem(k));

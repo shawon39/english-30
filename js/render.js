@@ -21,7 +21,7 @@ export function h(tag, props = {}, ...kids) {
   return e;
 }
 
-function shuffle(arr) {
+export function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -204,22 +204,53 @@ function renderBuild(item, onResult) {
   return card;
 }
 
+function normalizeForCheck(s) {
+  return s
+    .trim()
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[.!?,;:]+$/g, "")
+    .replace(/\s+/g, " ");
+}
+
 function renderSpeak(item, onResult) {
   const card = h("div", { class: "item item-speak" });
   card.append(h("p", { class: "prompt" }, item.prompt_en));
-  const reveal = h("button", { class: "btn", type: "button" }, "Reveal model answer");
-  const model = h("p", { class: "model hidden" }, item.model_en || "");
-  const mark = h("div", { class: "self-mark hidden" });
-  let done = false;
-  reveal.onclick = () => { model.classList.remove("hidden"); mark.classList.remove("hidden"); reveal.remove(); };
-  const good = h("button", { class: "opt", type: "button" }, "I said it ✓");
-  const meh = h("button", { class: "opt", type: "button" }, "Need practice");
+
+  const input = h("textarea", { class: "speak-input", rows: 2, placeholder: "Type the sentence you'd say…" });
+  const submit = h("button", { class: "btn", type: "button", disabled: true }, "Check");
   const skip = h("button", { class: "btn ghost", type: "button" }, "Skip");
-  good.onclick = () => { if (done) return; done = true; onResult(true); };
-  meh.onclick  = () => { if (done) return; done = true; onResult(false); };
+  input.addEventListener("input", () => { submit.disabled = !input.value.trim(); });
+  card.append(input, h("div", { class: "speak-acts" }, submit, skip));
+
+  let done = false;
   skip.onclick = () => { if (done) return; done = true; onResult(true, true); };
-  mark.append(good, meh);
-  card.append(reveal, model, mark, skip);
+
+  submit.onclick = () => {
+    if (done) return;
+    const typed = input.value.trim();
+    if (!typed) return;
+    input.disabled = true;
+    submit.remove();
+    skip.remove();
+
+    const auto = normalizeForCheck(typed) === normalizeForCheck(item.model_en || "");
+    const result = h(
+      "div",
+      { class: "speak-result" },
+      h("p", { class: "you-said" }, h("span", { class: "tag" }, "You said "), typed),
+      h("p", { class: "model" }, h("span", { class: "tag" }, "Model "), item.model_en || "")
+    );
+    const mark = h("div", { class: "self-mark" });
+    const good = h("button", { class: `opt${auto ? " suggested" : ""}`, type: "button" }, "Correct ✓");
+    const bad = h("button", { class: `opt${!auto ? " suggested" : ""}`, type: "button" }, "Not quite");
+    good.onclick = () => { if (done) return; done = true; onResult(true); };
+    bad.onclick = () => { if (done) return; done = true; onResult(false); };
+    mark.append(good, bad);
+    result.append(mark);
+    card.append(result);
+  };
+
   return card;
 }
 
