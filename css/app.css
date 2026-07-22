@@ -103,6 +103,8 @@ code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px
 .points-label { font-family: var(--font-mono); font-size: 11px; color: var(--accent-text); font-weight: 700; letter-spacing: 0.12em; }
 
 .muted-note { color: var(--muted); font-size: 14px; margin: var(--s-2) 0; }
+.review-cta { display: block; width: 100%; text-align: center; box-sizing: border-box; margin: var(--s-4) 0 0; }
+a.review-cta.btn { text-decoration: none; }
 .missed-note {
   background: var(--note-bg); border: 1px solid var(--note-border);
   color: var(--note-text); border-radius: var(--r-control); padding: 13px 16px;
@@ -260,6 +262,13 @@ code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px
 /* speak */
 .item-speak .model { font-family: var(--font-display); font-size: 20px; color: var(--accent-text); background: var(--accent-soft); border: 1px solid var(--note-border); padding: 14px 16px; border-radius: var(--r-control); margin: var(--s-4) 0; }
 .self-mark { display: flex; gap: var(--s-3); margin-bottom: var(--s-3); }
+.speak-input { width: 100%; font: inherit; font-size: 17px; color: var(--cream); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-control); padding: 14px 16px; resize: vertical; box-shadow: var(--shadow-1); }
+.speak-input:focus { outline: none; border-color: var(--accent); }
+.speak-acts { display: flex; gap: var(--s-3); margin-top: var(--s-3); }
+.speak-acts .btn:first-child { flex: 1; }
+.speak-result .you-said { color: var(--cream); margin: var(--s-4) 0 var(--s-3); }
+.speak-result .tag { margin-right: 6px; }
+.opt.suggested { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
 
 /* explain / note */
 .explain { margin-top: var(--s-4); background: var(--note-bg); border: 1px solid var(--note-border); border-left: 3px solid var(--accent); border-radius: var(--r-control); padding: 14px 16px; animation: rise 0.3s var(--ease-out-soft) both; }

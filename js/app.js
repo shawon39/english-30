@@ -2,7 +2,8 @@
 
 import { CURRICULUM, getDay, TOTAL_SESSIONS, pad, PILLAR_LABEL, GROUPS } from "./curriculum.js";
 import * as store from "./storage.js";
-import { fetchDay, probeAvailableDays, playSession } from "./engine.js";
+import * as srs from "./srs.js";
+import { fetchDay, probeAvailableDays, playSession, buildReviewSession } from "./engine.js";
 import { h } from "./render.js";
 
 const app = document.getElementById("app");
@@ -56,6 +57,7 @@ function themeToggleBtn() {
 // --- routing ---
 function route() {
   const p = location.hash.replace(/^#/, "") || "/";
+  if (p === "/review") return { name: "review" };
   const play = p.match(/^\/play\/(d\d{2}s\d)/);
   if (play) return { name: "play", id: play[1] };
   const day = p.match(/^\/day\/(\d+)/);
@@ -66,6 +68,7 @@ function router() {
   const r = route();
   if (r.name === "day") renderDay(r.day);
   else if (r.name === "play") renderPlay(r.id);
+  else if (r.name === "review") renderReview();
   else renderHome();
   window.scrollTo(0, 0);
 }
@@ -115,6 +118,8 @@ function renderHome() {
     focusBar(doneCount),
     pointsCard(points.total)
   ));
+
+  root.append(reviewCta(srs.countDue()));
 
   if (!probed) root.append(h("div", { class: "muted-note" }, "Checking which days are unlocked…"));
   const note = missedNote(streak, current);
@@ -168,6 +173,13 @@ function pointsCard(total) {
   wrap.append(h("span", { class: "points-label" }, "XP"));
   wrap.append(h("span", { class: "stat-cap" }, "Earned from correct answers"));
   return wrap;
+}
+
+function reviewCta(dueCount) {
+  if (dueCount === 0) {
+    return h("div", { class: "review-cta muted-note" }, "No reviews due — clear more sessions to build your mistake bank.");
+  }
+  return h("a", { class: "btn primary review-cta", href: "#/review" }, `Quick Review — ${dueCount} due →`);
 }
 
 function missedNote(streak, current) {
@@ -294,6 +306,32 @@ async function renderPlay(id) {
     session,
     sessionIdsOfDay: dayMeta.sessions.map((s) => s.id),
     onExit: () => navigate(`#/day/${dayNum}`),
+    onNavigate: navigate,
+  });
+}
+
+// --- REVIEW VIEW (Quick Review, spaced-repetition mistake bank) ---
+async function renderReview() {
+  app.replaceChildren(h("div", { class: "loading" }, "Loading…"));
+
+  const session = await buildReviewSession(10);
+  if (!session) {
+    app.replaceChildren(h("div", { class: "dayview" },
+      backHeader("Quick Review", "#/"),
+      h("div", { class: "locked-panel" },
+        h("p", {}, "Nothing due for review right now."),
+        h("p", { class: "muted-note" }, "Missed items resurface here after a session.")
+      )
+    ));
+    return;
+  }
+
+  await playSession({
+    mount: app,
+    day: { day: 0, sessions: [] },
+    session,
+    sessionIdsOfDay: [],
+    onExit: () => navigate("#/"),
     onNavigate: navigate,
   });
 }
