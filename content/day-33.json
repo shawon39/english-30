@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "2.0",
+  "day": 33,
+  "theme": "Prepositions of time & place",
+  "pillar": "precision",
+  "star": false,
+  "rule_en": "Use in for months, years and enclosed spaces, on for days, dates and surfaces, at for clock times and points. By means not later than a deadline, until means the state continues up to that moment; for takes a length of time, since takes a starting point; during takes a noun, while takes a clause; between compares two things, among sits inside a group.",
+  "rule_bn": "মাস, বছর ও ভেতরের জায়গার আগে in; দিন, তারিখ ও উপরিতলের আগে on; ঘড়ির সময়ের আগে at। by মানে ওই সময়ের মধ্যে শেষ, until মানে ওই সময় পর্যন্ত চলতে থাকা; for-এর পরে সময়ের দৈর্ঘ্য, since-এর পরে শুরুর বিন্দু; during-এর পরে noun, while-এর পরে subject + verb; দুইয়ের মধ্যে between, অনেকের মধ্যে among।",
+  "sessions": [
+    {
+      "id": "d33s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d33s1i1",
+          "type": "error-find",
+          "prompt_en": "We ship the release in Friday afternoon.",
+          "tokens": ["We", "ship", "the", "release", "in", "Friday", "afternoon"],
+          "error_index": 4,
+          "options": ["at", "on", "by"],
+          "answer": "on",
+          "explain_en": "Days and dates take 'on', even with afternoon or morning attached.",
+          "explain_bn": "দিন বা তারিখের আগে on বসে, যেমন on Friday afternoon।"
+        },
+        {
+          "id": "d33s1i2",
+          "type": "error-find",
+          "prompt_en": "Standup starts on 9:15 sharp, so please join early.",
+          "tokens": ["Standup", "starts", "on", "9:15", "sharp,", "so", "please", "join", "early"],
+          "error_index": 2,
+          "options": ["in", "at", "from"],
+          "answer": "at",
+          "explain_en": "A clock time is a point on the day, so it takes 'at'.",
+          "explain_bn": "ঘড়ির নির্দিষ্ট সময় একটি বিন্দু, তাই তার আগে at বসে।"
+        },
+        {
+          "id": "d33s1i3",
+          "type": "error-find",
+          "prompt_en": "The data migration is planned on March, right after the audit.",
+          "tokens": ["The", "data", "migration", "is", "planned", "on", "March,", "right", "after", "the", "audit"],
+          "error_index": 5,
+          "options": ["in", "by", "at"],
+          "answer": "in",
+          "explain_en": "Months, years and seasons take 'in'.",
+          "explain_bn": "মাস, বছর বা ঋতুর আগে in বসে।"
+        },
+        {
+          "id": "d33s1i4",
+          "type": "error-find",
+          "prompt_en": "I left the release checklist in the desk in the war room.",
+          "tokens": ["I", "left", "the", "release", "checklist", "in", "the", "desk", "in", "the", "war", "room"],
+          "error_index": 5,
+          "options": ["at", "over", "on"],
+          "answer": "on",
+          "explain_en": "A desk is a surface, so things sit 'on' it; the room around you stays 'in'.",
+          "explain_bn": "ডেস্ক একটি উপরিতল, তাই on the desk; ঘরের ভেতরে বোঝাতে in the room।"
+        },
+        {
+          "id": "d33s1i5",
+          "type": "error-find",
+          "prompt_en": "The client's delivery team is based on Dhaka.",
+          "tokens": ["The", "client's", "delivery", "team", "is", "based", "on", "Dhaka"],
+          "error_index": 6,
+          "options": ["at", "in", "from"],
+          "answer": "in",
+          "explain_en": "Cities and countries take 'in': based in Dhaka.",
+          "explain_bn": "শহর বা দেশের আগে in বসে, যেমন based in Dhaka।"
+        },
+        {
+          "id": "d33s1i6",
+          "type": "error-find",
+          "prompt_en": "Please merge the hotfix until Thursday so QA can start.",
+          "tokens": ["Please", "merge", "the", "hotfix", "until", "Thursday", "so", "QA", "can", "start"],
+          "error_index": 4,
+          "options": ["since", "by", "during"],
+          "answer": "by",
+          "explain_en": "A deadline for a single action takes 'by', not 'until'.",
+          "explain_bn": "একবারের কাজের শেষ সময়সীমা বোঝাতে by বসে, until নয়।"
+        },
+        {
+          "id": "d33s1i7",
+          "type": "error-find",
+          "prompt_en": "The sandbox stays locked by Monday morning.",
+          "tokens": ["The", "sandbox", "stays", "locked", "by", "Monday", "morning"],
+          "error_index": 4,
+          "options": ["until", "for", "within"],
+          "answer": "until",
+          "explain_en": "A state that continues up to a moment takes 'until'.",
+          "explain_bn": "কোনো অবস্থা নির্দিষ্ট সময় পর্যন্ত চলতে থাকলে until বসে।"
+        },
+        {
+          "id": "d33s1i8",
+          "type": "error-find",
+          "prompt_en": "I have been on call since three weeks.",
+          "tokens": ["I", "have", "been", "on", "call", "since", "three", "weeks"],
+          "error_index": 5,
+          "options": ["from", "in", "for"],
+          "answer": "for",
+          "explain_en": "A length of time takes 'for'; 'since' needs a starting point.",
+          "explain_bn": "সময়ের দৈর্ঘ্য বোঝাতে for; since-এর পরে শুরুর সময় লাগে।"
+        },
+        {
+          "id": "d33s1i9",
+          "type": "error-find",
+          "prompt_en": "We have used this branching model for 2021.",
+          "tokens": ["We", "have", "used", "this", "branching", "model", "for", "2021"],
+          "error_index": 6,
+          "options": ["in", "since", "from"],
+          "answer": "since",
+          "explain_en": "A starting point on the calendar takes 'since'.",
+          "explain_bn": "শুরুর নির্দিষ্ট সময় বোঝাতে since বসে।"
+        },
+        {
+          "id": "d33s1i10",
+          "type": "error-find",
+          "prompt_en": "Nobody deploys anything while the code freeze.",
+          "tokens": ["Nobody", "deploys", "anything", "while", "the", "code", "freeze"],
+          "error_index": 3,
+          "options": ["until", "during", "by"],
+          "answer": "during",
+          "explain_en": "'During' takes a noun; 'while' needs a subject and a verb after it.",
+          "explain_bn": "during-এর পরে noun বসে; while-এর পরে subject ও verb লাগে।"
+        }
+      ]
+    },
+    {
+      "id": "d33s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d33s2i1",
+          "type": "mcq",
+          "prompt_en": "The retro is ___ Thursday, right after the sprint closes.",
+          "options": ["in", "on", "at", "by"],
+          "answer": "on",
+          "explain_en": "Days of the week take 'on'.",
+          "explain_bn": "সপ্তাহের দিনের আগে on বসে।"
+        },
+        {
+          "id": "d33s2i2",
+          "type": "mcq",
+          "prompt_en": "I'll have the estimates ready ___ Friday evening at the latest.",
+          "options": ["until", "since", "by", "for"],
+          "answer": "by",
+          "explain_en": "'By' marks the deadline: not later than Friday evening.",
+          "explain_bn": "শেষ সময়সীমা বোঝাতে by বসে, অর্থাৎ শুক্রবার সন্ধ্যার মধ্যে।"
+        },
+        {
+          "id": "d33s2i3",
+          "type": "mcq",
+          "prompt_en": "We have been running the same integration ___ the last two releases.",
+          "options": ["since", "during", "for", "from"],
+          "answer": "for",
+          "explain_en": "'For' answers how long, and two releases is a stretch of time.",
+          "explain_bn": "কতক্ষণ ধরে বোঝাতে for বসে; দুটি রিলিজ একটি সময়ের দৈর্ঘ্য।"
+        },
+        {
+          "id": "d33s2i4",
+          "type": "mcq",
+          "prompt_en": "The permission bug is somewhere ___ the profile and the permission set.",
+          "options": ["among", "across", "between", "along"],
+          "answer": "between",
+          "explain_en": "Two named things take 'between'.",
+          "explain_bn": "দুটি নির্দিষ্ট জিনিসের মধ্যে বোঝাতে between বসে।"
+        },
+        {
+          "id": "d33s2i5",
+          "type": "mcq",
+          "prompt_en": "Nobody could reach the org ___ the maintenance window.",
+          "options": ["while", "during", "since", "as"],
+          "answer": "during",
+          "explain_en": "'The maintenance window' is a noun phrase, so 'during' fits.",
+          "explain_bn": "the maintenance window একটি noun phrase, তাই এখানে during বসে।"
+        },
+        {
+          "id": "d33s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The daily standup starts ___ 9:15, so please join on time.",
+          "options": ["in", "at", "on"],
+          "answer": "at",
+          "explain_en": "Clock times take 'at'.",
+          "explain_bn": "ঘড়ির সময়ের আগে at বসে।"
+        },
+        {
+          "id": "d33s2i7",
+          "type": "fill-bank",
+          "prompt_en": "I have been waiting for the client's feedback ___ Tuesday.",
+          "options": ["for", "since", "from"],
+          "answer": "since",
+          "explain_en": "Tuesday is the point the waiting started, so 'since'.",
+          "explain_bn": "মঙ্গলবার হলো শুরুর বিন্দু, তাই since বসে।"
+        },
+        {
+          "id": "d33s2i8",
+          "type": "fill-bank",
+          "prompt_en": "The release knowledge is spread ___ four different engineers.",
+          "options": ["between", "among", "in"],
+          "answer": "among",
+          "explain_en": "More than two people means 'among'.",
+          "explain_bn": "দুইয়ের বেশি হলে among বসে।"
+        },
+        {
+          "id": "d33s2i9",
+          "type": "fill-bank",
+          "prompt_en": "Let's keep the sandbox refresh paused ___ the audit is over.",
+          "options": ["by", "during", "until"],
+          "answer": "until",
+          "explain_en": "The pause continues up to that moment, and a clause follows, so 'until'.",
+          "explain_bn": "ওই সময় পর্যন্ত চলতে থাকবে এবং পরে clause আছে, তাই until বসে।"
+        },
+        {
+          "id": "d33s2i10",
+          "type": "fill-bank",
+          "prompt_en": "The deployment guide is ___ the wiki, under Release Process.",
+          "options": ["on", "at", "in"],
+          "answer": "on",
+          "explain_en": "Pages and sites are treated as surfaces: on the wiki, on the page.",
+          "explain_bn": "পেজ বা সাইটকে উপরিতল ধরা হয়, তাই on the wiki বলা হয়।"
+        }
+      ]
+    },
+    {
+      "id": "d33s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d33s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["Thursday", "release", "live", "The", "on", "night", ".", "goes"],
+          "answer": "The release goes live on Thursday night .",
+          "explain_en": "Days take 'on', even with 'night' attached.",
+          "explain_bn": "দিনের আগে on বসে, night যুক্ত হলেও।"
+        },
+        {
+          "id": "d33s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["review", "by", "will", "code", "I", "the", "lunchtime", "finish", "."],
+          "answer": "I will finish the code review by lunchtime .",
+          "explain_en": "A deadline for one action takes 'by'.",
+          "explain_bn": "একটি কাজের শেষ সময়সীমা বোঝাতে by বসে।"
+        },
+        {
+          "id": "d33s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["been", "since", "have", "on", "January", "this", "We", "migration", "."],
+          "answer": "We have been on this migration since January .",
+          "explain_en": "January is the starting point, so 'since'.",
+          "explain_bn": "জানুয়ারি শুরুর বিন্দু, তাই since বসে।"
+        },
+        {
+          "id": "d33s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["the", "during", "deploys", "code", "Nobody", "freeze", "anything", "."],
+          "answer": "Nobody deploys anything during the code freeze .",
+          "explain_en": "'During' is followed by a noun phrase.",
+          "explain_bn": "during-এর পরে noun phrase বসে।"
+        },
+        {
+          "id": "d33s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["stored", "custom", "in", "config", "the", "The", "is", "metadata", "."],
+          "answer": "The config is stored in the custom metadata .",
+          "explain_en": "Something held inside a container takes 'in'.",
+          "explain_bn": "কোনো কিছুর ভেতরে রাখা বোঝাতে in বসে।"
+        },
+        {
+          "id": "d33s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["refresh", "until", "sandbox", "Please", "the", "wait", "completes", "."],
+          "answer": "Please wait until the sandbox refresh completes .",
+          "explain_en": "'Until' can be followed by a full clause.",
+          "explain_bn": "until-এর পরে পুরো clause বসতে পারে।"
+        },
+        {
+          "id": "d33s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["and", "between", "gap", "the", "The", "flow", "trigger", "is", "the", "."],
+          "answer": "The gap is between the trigger and the flow .",
+          "explain_en": "Two items joined by 'and' take 'between'.",
+          "explain_bn": "and দিয়ে যুক্ত দুটি জিনিসের ক্ষেত্রে between বসে।"
+        },
+        {
+          "id": "d33s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["the", "among", "split", "tickets", "We", "three", "engineers", "the", "."],
+          "answer": "We split the tickets among the three engineers .",
+          "explain_en": "A group of more than two takes 'among'.",
+          "explain_bn": "দুইয়ের বেশি জনের মধ্যে ভাগ করলে among বসে।"
+        },
+        {
+          "id": "d33s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about what you will finish by the end of today.",
+          "model_en": "I will finish the code review by the end of the day.",
+          "cloze": ["by the end of the day"],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d33s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence about how long you have been working on your current project.",
+          "model_en": "I have been working on this integration since the start of the sprint.",
+          "cloze": ["since the start of the sprint"],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "2.0",
+  "day": 36,
+  "theme": "Work collocations (make / raise / take)",
+  "pillar": "natural",
+  "star": false,
+  "rule_en": "At work, certain verbs are locked to certain nouns: you make a decision, raise a concern, take ownership, run a test, meet a deadline, draw a conclusion. The verb is fixed by habit, not by logic, so learn the verb and the noun as one chunk.",
+  "rule_bn": "অফিসের ইংরেজিতে নির্দিষ্ট verb নির্দিষ্ট noun-এর সঙ্গেই বসে: make a decision, raise a concern, take ownership, run a test, meet a deadline, draw a conclusion। এটা যুক্তি নয়, অভ্যাস — তাই verb আর noun একসাথে মুখস্থ করো।",
+  "sessions": [
+    {
+      "id": "d36s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d36s1i1",
+          "type": "error-find",
+          "prompt_en": "We should take a decision before the sprint review.",
+          "tokens": ["We", "should", "take", "a", "decision", "before", "the", "sprint", "review"],
+          "error_index": 2,
+          "options": ["do", "make", "give"],
+          "answer": "make",
+          "explain_en": "In English you make a decision.",
+          "explain_bn": "'Decision'-এর সঙ্গে make বসে, take নয়।"
+        },
+        {
+          "id": "d36s1i2",
+          "type": "error-find",
+          "prompt_en": "I want to put a concern about the release date.",
+          "tokens": ["I", "want", "to", "put", "a", "concern", "about", "the", "release", "date"],
+          "error_index": 3,
+          "options": ["say", "tell", "raise"],
+          "answer": "raise",
+          "explain_en": "You raise a concern.",
+          "explain_bn": "Concern-এর সঙ্গে raise বসে।"
+        },
+        {
+          "id": "d36s1i3",
+          "type": "error-find",
+          "prompt_en": "Please give a look at my pull request before standup.",
+          "tokens": ["Please", "give", "a", "look", "at", "my", "pull", "request", "before", "standup"],
+          "error_index": 1,
+          "options": ["take", "make", "see"],
+          "answer": "take",
+          "explain_en": "Take a look at something.",
+          "explain_bn": "'A look'-এর সঙ্গে take বসে।"
+        },
+        {
+          "id": "d36s1i4",
+          "type": "error-find",
+          "prompt_en": "The data migration did good progress overnight.",
+          "tokens": ["The", "data", "migration", "did", "good", "progress", "overnight"],
+          "error_index": 3,
+          "options": ["took", "made", "gave"],
+          "answer": "made",
+          "explain_en": "You make progress, not do progress.",
+          "explain_bn": "Progress-এর সঙ্গে make বসে।"
+        },
+        {
+          "id": "d36s1i5",
+          "type": "error-find",
+          "prompt_en": "I will put a ticket for the integration bug.",
+          "tokens": ["I", "will", "put", "a", "ticket", "for", "the", "integration", "bug"],
+          "error_index": 2,
+          "options": ["give", "do", "raise"],
+          "answer": "raise",
+          "explain_en": "We raise a ticket in Jira.",
+          "explain_bn": "Jira-তে ticket-এর সঙ্গে raise বসে।"
+        },
+        {
+          "id": "d36s1i6",
+          "type": "error-find",
+          "prompt_en": "Someone needs to get ownership of the failing tests.",
+          "tokens": ["Someone", "needs", "to", "get", "ownership", "of", "the", "failing", "tests"],
+          "error_index": 3,
+          "options": ["make", "take", "hold"],
+          "answer": "take",
+          "explain_en": "Take ownership of something.",
+          "explain_bn": "Ownership আর responsibility-র সঙ্গে take বসে।"
+        },
+        {
+          "id": "d36s1i7",
+          "type": "error-find",
+          "prompt_en": "The team will make a full regression test tonight.",
+          "tokens": ["The", "team", "will", "make", "a", "full", "regression", "test", "tonight"],
+          "error_index": 3,
+          "options": ["run", "take", "give"],
+          "answer": "run",
+          "explain_en": "You run a test or a demo.",
+          "explain_bn": "Test বা demo চালাতে run বসে।"
+        },
+        {
+          "id": "d36s1i8",
+          "type": "error-find",
+          "prompt_en": "If we keep this scope, we will not catch the deadline.",
+          "tokens": ["If", "we", "keep", "this", "scope,", "we", "will", "not", "catch", "the", "deadline"],
+          "error_index": 8,
+          "options": ["hold", "meet", "take"],
+          "answer": "meet",
+          "explain_en": "You meet a deadline.",
+          "explain_bn": "Deadline-এর সঙ্গে meet বসে।"
+        },
+        {
+          "id": "d36s1i9",
+          "type": "error-find",
+          "prompt_en": "The team could not find a consensus on the naming convention.",
+          "tokens": ["The", "team", "could", "not", "find", "a", "consensus", "on", "the", "naming", "convention"],
+          "error_index": 4,
+          "options": ["take", "raise", "reach"],
+          "answer": "reach",
+          "explain_en": "You reach a consensus.",
+          "explain_bn": "Consensus-এ পৌঁছাতে reach বসে।"
+        },
+        {
+          "id": "d36s1i10",
+          "type": "error-find",
+          "prompt_en": "It is too early to take a conclusion from these logs.",
+          "tokens": ["It", "is", "too", "early", "to", "take", "a", "conclusion", "from", "these", "logs"],
+          "error_index": 5,
+          "options": ["get", "draw", "put"],
+          "answer": "draw",
+          "explain_en": "You draw a conclusion.",
+          "explain_bn": "Conclusion-এর সঙ্গে draw বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d36s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d36s2i1",
+          "type": "mcq",
+          "prompt_en": "Could you ___ a look at my pull request before standup?",
+          "options": ["make", "do", "take", "give"],
+          "answer": "take",
+          "explain_en": "Take a look.",
+          "explain_bn": "'A look'-এর সঙ্গে take বসে।"
+        },
+        {
+          "id": "d36s2i2",
+          "type": "mcq",
+          "prompt_en": "The client asked us to ___ an exception for their custom object.",
+          "options": ["make", "do", "take", "raise"],
+          "answer": "make",
+          "explain_en": "Make an exception.",
+          "explain_bn": "Exception-এর সঙ্গে make বসে।"
+        },
+        {
+          "id": "d36s2i3",
+          "type": "mcq",
+          "prompt_en": "I would like to ___ a concern about the release date in the retro.",
+          "options": ["tell", "raise", "speak", "put"],
+          "answer": "raise",
+          "explain_en": "Raise a concern or a flag.",
+          "explain_bn": "Concern বা flag-এর সঙ্গে raise বসে।"
+        },
+        {
+          "id": "d36s2i4",
+          "type": "mcq",
+          "prompt_en": "Let us ___ this task down into two smaller tickets.",
+          "options": ["cut", "split", "break", "take"],
+          "answer": "break",
+          "explain_en": "Break a task down into smaller parts.",
+          "explain_bn": "কাজ ছোট ভাগে ভাগ করতে 'break down' বসে।"
+        },
+        {
+          "id": "d36s2i5",
+          "type": "mcq",
+          "prompt_en": "We should ___ a short meeting to align on the scope.",
+          "options": ["put", "do", "make", "hold"],
+          "answer": "hold",
+          "explain_en": "Hold a meeting.",
+          "explain_bn": "Meeting-এর সঙ্গে hold বসে।"
+        },
+        {
+          "id": "d36s2i6",
+          "type": "fill-bank",
+          "prompt_en": "It is hard to ___ a deadline when the requirements keep changing.",
+          "options": ["catch", "meet", "hold"],
+          "answer": "meet",
+          "explain_en": "Meet a deadline.",
+          "explain_bn": "Deadline-এর সঙ্গে meet বসে।"
+        },
+        {
+          "id": "d36s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Can you ___ me some feedback on the design doc today?",
+          "options": ["do", "make", "give"],
+          "answer": "give",
+          "explain_en": "Give feedback.",
+          "explain_bn": "Feedback-এর সঙ্গে give বসে।"
+        },
+        {
+          "id": "d36s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Somebody has to ___ responsibility for the failed deployment.",
+          "options": ["take", "make", "get"],
+          "answer": "take",
+          "explain_en": "Take responsibility.",
+          "explain_bn": "Responsibility-র সঙ্গে take বসে।"
+        },
+        {
+          "id": "d36s2i9",
+          "type": "fill-bank",
+          "prompt_en": "We made good ___ on the data model this sprint.",
+          "options": ["advance", "progress", "movement"],
+          "answer": "progress",
+          "explain_en": "Make progress is the fixed pair.",
+          "explain_bn": "'Make progress' একটা নির্দিষ্ট জোড়া।"
+        },
+        {
+          "id": "d36s2i10",
+          "type": "fill-bank",
+          "prompt_en": "The QA team will ___ a demo for the client tomorrow morning.",
+          "options": ["make", "do", "run"],
+          "answer": "run",
+          "explain_en": "Run a demo or a test.",
+          "explain_bn": "Demo বা test-এর সঙ্গে run বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d36s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d36s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["raise", "I", "ticket", "will", "for", "a", "bug", "this", "."],
+          "answer": "I will raise a ticket for this bug .",
+          "explain_en": "Raise a ticket.",
+          "explain_bn": "Ticket-এর সঙ্গে raise বসে।"
+        },
+        {
+          "id": "d36s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["ownership", "take", "Somebody", "of", "to", "release", "has", "the", "."],
+          "answer": "Somebody has to take ownership of the release .",
+          "explain_en": "Take ownership.",
+          "explain_bn": "Ownership-এর সঙ্গে take বসে।"
+        },
+        {
+          "id": "d36s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["progress", "made", "We", "good", "the", "on", "week", "migration", "this", "."],
+          "answer": "We made good progress on the migration this week .",
+          "explain_en": "Make progress.",
+          "explain_bn": "Progress-এর সঙ্গে make বসে।"
+        },
+        {
+          "id": "d36s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["make", "exception", "We", "an", "cannot", "client", "for", "this", "."],
+          "answer": "We cannot make an exception for this client .",
+          "explain_en": "Make an exception.",
+          "explain_bn": "Exception-এর সঙ্গে make বসে।"
+        },
+        {
+          "id": "d36s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["consensus", "reached", "The", "a", "on", "team", "approach", "the", "finally", "."],
+          "answer": "The team finally reached a consensus on the approach .",
+          "explain_en": "Reach a consensus.",
+          "explain_bn": "Consensus-এ পৌঁছাতে reach বসে।"
+        },
+        {
+          "id": "d36s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["feedback", "gave", "She", "on", "useful", "doc", "me", "design", "my", "."],
+          "answer": "She gave me useful feedback on my design doc .",
+          "explain_en": "Give feedback.",
+          "explain_bn": "Feedback-এর সঙ্গে give বসে।"
+        },
+        {
+          "id": "d36s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["meeting", "hold", "They", "a", "will", "demo", "short", "the", "after", "."],
+          "answer": "They will hold a short meeting after the demo .",
+          "explain_en": "Hold a meeting.",
+          "explain_bn": "Meeting-এর সঙ্গে hold বসে।"
+        },
+        {
+          "id": "d36s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["break", "down", "We", "task", "should", "tickets", "this", "into", "two", "."],
+          "answer": "We should break this task down into two tickets .",
+          "explain_en": "Break a task down.",
+          "explain_bn": "কাজ ভাগ করতে 'break down' বসে।"
+        },
+        {
+          "id": "d36s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about something you flagged or owned this sprint.",
+          "model_en": "I raised a concern about the timeline and took ownership of the fix.",
+          "cloze": ["raised a concern", "took ownership"],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d36s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence about how you handle code review on your team.",
+          "model_en": "I give feedback on the pull request before we hold the review meeting.",
+          "cloze": ["give feedback", "hold the review meeting"],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

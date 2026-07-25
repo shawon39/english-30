@@ -1,0 +1,608 @@
+{
+  "schemaVersion": "2.0",
+  "day": 31,
+  "theme": "Articles: a / an / the / zero",
+  "pillar": "precision",
+  "star": true,
+  "rule_en": "Use 'a/an' the first time you mention a countable thing, and 'the' once you both know which one — including anything unique or already shared. Use no article at all for plural and uncountable nouns in general statements.",
+  "rule_bn": "কোনো গণনীয় জিনিসের প্রথম উল্লেখে 'a/an' বসে, আর দুজনেই কোনটার কথা হচ্ছে বুঝে গেলে 'the' বসে — অনন্য বা আগেই জানা জিনিসের ক্ষেত্রেও 'the'। সাধারণ কথায় বহুবচন আর অগণনীয় শব্দের আগে কোনো article বসে না।",
+  "sessions": [
+    {
+      "id": "d31s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d31s1i1",
+          "type": "error-find",
+          "prompt_en": "I wrote an one-off script to clean up the records.",
+          "tokens": [
+            "I",
+            "wrote",
+            "an",
+            "one-off",
+            "script",
+            "to",
+            "clean",
+            "up",
+            "the",
+            "records"
+          ],
+          "error_index": 2,
+          "options": [
+            "the",
+            "a",
+            "an"
+          ],
+          "answer": "a",
+          "explain_en": "'One-off' starts with a /w/ sound, not a vowel sound → 'a'.",
+          "explain_bn": "'One-off' উচ্চারণ শুরু হয় 'w' ধ্বনি দিয়ে, স্বরধ্বনি দিয়ে নয় — তাই 'a'।"
+        },
+        {
+          "id": "d31s1i2",
+          "type": "error-find",
+          "prompt_en": "They signed a SLA with the new client last week.",
+          "tokens": [
+            "They",
+            "signed",
+            "a",
+            "SLA",
+            "with",
+            "the",
+            "new",
+            "client",
+            "last",
+            "week"
+          ],
+          "error_index": 2,
+          "options": [
+            "the",
+            "an",
+            "a"
+          ],
+          "answer": "an",
+          "explain_en": "We say the letters: 'ess-el-ay' begins with a vowel sound → 'an SLA'.",
+          "explain_bn": "'SLA' পড়া হয় 'এস-এল-এ' — শুরুতে স্বরধ্বনি, তাই 'an SLA'।"
+        },
+        {
+          "id": "d31s1i3",
+          "type": "error-find",
+          "prompt_en": "I raised a ticket this morning, and a ticket is still unassigned.",
+          "tokens": [
+            "I",
+            "raised",
+            "a",
+            "ticket",
+            "this",
+            "morning,",
+            "and",
+            "a",
+            "ticket",
+            "is",
+            "still",
+            "unassigned"
+          ],
+          "error_index": 7,
+          "options": [
+            "a",
+            "the",
+            "one"
+          ],
+          "answer": "the",
+          "explain_en": "Second mention of the same ticket → 'the'.",
+          "explain_bn": "একই ticket-এর দ্বিতীয়বার উল্লেখ, তাই 'the'।"
+        },
+        {
+          "id": "d31s1i4",
+          "type": "error-find",
+          "prompt_en": "Ping me when a build finishes so I can smoke test it.",
+          "tokens": [
+            "Ping",
+            "me",
+            "when",
+            "a",
+            "build",
+            "finishes",
+            "so",
+            "I",
+            "can",
+            "smoke",
+            "test",
+            "it"
+          ],
+          "error_index": 3,
+          "options": [
+            "the",
+            "an",
+            "some"
+          ],
+          "answer": "the",
+          "explain_en": "You both know which build you are waiting on → 'the'.",
+          "explain_bn": "তোমরা দুজনেই জানো কোন build-এর কথা হচ্ছে, তাই 'the'।"
+        },
+        {
+          "id": "d31s1i5",
+          "type": "error-find",
+          "prompt_en": "In my experience, the good tests catch bugs early.",
+          "tokens": [
+            "In",
+            "my",
+            "experience,",
+            "the good",
+            "tests",
+            "catch",
+            "bugs",
+            "early"
+          ],
+          "error_index": 3,
+          "options": [
+            "a good",
+            "good",
+            "the goods"
+          ],
+          "answer": "good",
+          "explain_en": "A general statement about tests in general → plural noun, no article.",
+          "explain_bn": "সাধারণভাবে সব ভালো test-এর কথা বলা হচ্ছে — বহুবচনে article লাগে না।"
+        },
+        {
+          "id": "d31s1i6",
+          "type": "error-find",
+          "prompt_en": "She gave me an advice about scoping the epic.",
+          "tokens": [
+            "She",
+            "gave",
+            "me",
+            "an",
+            "advice",
+            "about",
+            "scoping",
+            "the",
+            "epic"
+          ],
+          "error_index": 3,
+          "options": [
+            "some",
+            "the",
+            "an"
+          ],
+          "answer": "some",
+          "explain_en": "'Advice' is uncountable — never 'an advice'. Use 'some advice'.",
+          "explain_bn": "'Advice' অগণনীয়, তাই 'an advice' হয় না — 'some advice' বলতে হয়।"
+        },
+        {
+          "id": "d31s1i7",
+          "type": "error-find",
+          "prompt_en": "I need an information from the ops team before I close this.",
+          "tokens": [
+            "I",
+            "need",
+            "an",
+            "information",
+            "from",
+            "the",
+            "ops",
+            "team",
+            "before",
+            "I",
+            "close",
+            "this"
+          ],
+          "error_index": 2,
+          "options": [
+            "the",
+            "a",
+            "some"
+          ],
+          "answer": "some",
+          "explain_en": "'Information' is uncountable → 'some information', not 'an information'.",
+          "explain_bn": "'Information' অগণনীয় — 'an information' নয়, 'some information'।"
+        },
+        {
+          "id": "d31s1i8",
+          "type": "error-find",
+          "prompt_en": "Sarah is a only person who can approve the release.",
+          "tokens": [
+            "Sarah",
+            "is",
+            "a",
+            "only",
+            "person",
+            "who",
+            "can",
+            "approve",
+            "the",
+            "release"
+          ],
+          "error_index": 2,
+          "options": [
+            "an",
+            "the",
+            "a"
+          ],
+          "answer": "the",
+          "explain_en": "'Only' makes the person unique → 'the only person'.",
+          "explain_bn": "'Only' মানে জিনিসটা অনন্য — তাই 'the only person'।"
+        },
+        {
+          "id": "d31s1i9",
+          "type": "error-find",
+          "prompt_en": "He told me the patience matters more than speed in code review.",
+          "tokens": [
+            "He",
+            "told",
+            "me",
+            "the patience",
+            "matters",
+            "more",
+            "than",
+            "speed",
+            "in",
+            "code",
+            "review"
+          ],
+          "error_index": 3,
+          "options": [
+            "a patience",
+            "patience",
+            "patiences"
+          ],
+          "answer": "patience",
+          "explain_en": "An abstract quality in general takes no article.",
+          "explain_bn": "সাধারণভাবে কোনো বিমূর্ত গুণের কথা বললে article বসে না।"
+        },
+        {
+          "id": "d31s1i10",
+          "type": "error-find",
+          "prompt_en": "It turned out to be an UI bug, not a data issue.",
+          "tokens": [
+            "It",
+            "turned",
+            "out",
+            "to",
+            "be",
+            "an",
+            "UI",
+            "bug,",
+            "not",
+            "a",
+            "data",
+            "issue"
+          ],
+          "error_index": 5,
+          "options": [
+            "the",
+            "an",
+            "a"
+          ],
+          "answer": "a",
+          "explain_en": "'UI' is said 'you-eye' — a consonant sound → 'a UI bug'.",
+          "explain_bn": "'UI' পড়া হয় 'ইউ-আই', শুরুতে ব্যঞ্জনধ্বনির মতো ধ্বনি — তাই 'a UI bug'।"
+        }
+      ]
+    },
+    {
+      "id": "d31s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d31s2i1",
+          "type": "mcq",
+          "prompt_en": "We hit ___ blocker during the release.",
+          "options": [
+            "the",
+            "a",
+            "an",
+            "some"
+          ],
+          "answer": "a",
+          "explain_en": "First mention of one countable thing → 'a'.",
+          "explain_bn": "একটি গণনীয় জিনিসের প্রথম উল্লেখ, তাই 'a'।"
+        },
+        {
+          "id": "d31s2i2",
+          "type": "mcq",
+          "prompt_en": "I opened a PR yesterday, but ___ PR is still unreviewed.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "some"
+          ],
+          "answer": "the",
+          "explain_en": "Same PR mentioned again → 'the'.",
+          "explain_bn": "একই PR আবার উল্লেখ করা হচ্ছে, তাই 'the'।"
+        },
+        {
+          "id": "d31s2i3",
+          "type": "mcq",
+          "prompt_en": "Can you send me ___ link to the dashboard?",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "answer": "the",
+          "explain_en": "There is one shared dashboard link you both mean → 'the'.",
+          "explain_bn": "দুজনেই নির্দিষ্ট একটি dashboard-এর link বোঝাচ্ছ, তাই 'the'।"
+        },
+        {
+          "id": "d31s2i4",
+          "type": "mcq",
+          "prompt_en": "It was ___ honest mistake in the mapping logic.",
+          "options": [
+            "a",
+            "the",
+            "an",
+            "—"
+          ],
+          "answer": "an",
+          "explain_en": "The 'h' in 'honest' is silent, so it starts with a vowel sound → 'an'.",
+          "explain_bn": "'Honest'-এর 'h' উচ্চারিত হয় না, শুরুতে স্বরধ্বনি — তাই 'an'।"
+        },
+        {
+          "id": "d31s2i5",
+          "type": "mcq",
+          "prompt_en": "Nobody reads ___ documentation until something breaks.",
+          "options": [
+            "a",
+            "the",
+            "an",
+            "—"
+          ],
+          "answer": "—",
+          "explain_en": "Uncountable noun in a general statement → no article.",
+          "explain_bn": "সাধারণ কথায় অগণনীয় শব্দের আগে কোনো article বসে না।"
+        },
+        {
+          "id": "d31s2i6",
+          "type": "fill-bank",
+          "prompt_en": "She gave me ___ advice about the migration.",
+          "options": [
+            "an",
+            "some",
+            "the"
+          ],
+          "answer": "some",
+          "explain_en": "'Advice' is uncountable — no 'a/an'.",
+          "explain_bn": "'Advice' অগণনীয়, তাই 'a/an' বসে না।"
+        },
+        {
+          "id": "d31s2i7",
+          "type": "fill-bank",
+          "prompt_en": "There is ___ new field on the Opportunity object.",
+          "options": [
+            "the",
+            "a",
+            "some"
+          ],
+          "answer": "a",
+          "explain_en": "Introducing one new countable thing → 'a'.",
+          "explain_bn": "নতুন একটি গণনীয় জিনিস প্রথমবার আনা হচ্ছে, তাই 'a'।"
+        },
+        {
+          "id": "d31s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Can you push ___ fix we discussed to the sandbox?",
+          "options": [
+            "a",
+            "the",
+            "an"
+          ],
+          "answer": "the",
+          "explain_en": "'We discussed' identifies which fix → 'the'.",
+          "explain_bn": "'We discussed' বলে দিচ্ছে কোন fix-এর কথা — তাই 'the'।"
+        },
+        {
+          "id": "d31s2i9",
+          "type": "fill-bank",
+          "prompt_en": "I think ___ standups work best under ten minutes.",
+          "options": [
+            "the",
+            "a",
+            "—"
+          ],
+          "answer": "—",
+          "explain_en": "Standups in general → plural noun with no article.",
+          "explain_bn": "সাধারণভাবে সব standup বোঝাচ্ছে — বহুবচনে article লাগে না।"
+        },
+        {
+          "id": "d31s2i10",
+          "type": "fill-bank",
+          "prompt_en": "He is ___ only architect who knows that integration.",
+          "options": [
+            "an",
+            "the",
+            "a"
+          ],
+          "answer": "the",
+          "explain_en": "'Only' means there is just one → 'the'.",
+          "explain_bn": "'Only' মানে একজনই আছে, তাই 'the'।"
+        }
+      ]
+    },
+    {
+      "id": "d31s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d31s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "the",
+            "ticket",
+            "I",
+            "for",
+            "a",
+            "timeout",
+            "opened",
+            "."
+          ],
+          "answer": "I opened a ticket for the timeout .",
+          "explain_en": "New ticket → 'a'; the timeout is already known → 'the'.",
+          "explain_bn": "নতুন ticket তাই 'a'; timeout-টা আগে থেকেই জানা, তাই 'the'।"
+        },
+        {
+          "id": "d31s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "update",
+            "the",
+            "wants",
+            "The",
+            "demo",
+            "an",
+            "client",
+            "before",
+            "."
+          ],
+          "answer": "The client wants an update before the demo .",
+          "explain_en": "'An' before the vowel sound in 'update'; 'the demo' is the one you both know.",
+          "explain_bn": "'Update'-এর শুরুতে স্বরধ্বনি তাই 'an'; demo-টা দুজনেরই জানা তাই 'the'।"
+        },
+        {
+          "id": "d31s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "bug",
+            "and",
+            "We",
+            "still",
+            "the",
+            "found",
+            "open",
+            "a",
+            "is",
+            "bug",
+            "."
+          ],
+          "answer": "We found a bug and the bug is still open .",
+          "explain_en": "First mention 'a bug', second mention 'the bug'.",
+          "explain_bn": "প্রথমবার 'a bug', দ্বিতীয়বার 'the bug'।"
+        },
+        {
+          "id": "d31s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "useful",
+            "me",
+            "feedback",
+            "She",
+            "today",
+            "gave",
+            "some",
+            "."
+          ],
+          "answer": "She gave me some useful feedback today .",
+          "explain_en": "'Feedback' is uncountable → 'some', never 'a'.",
+          "explain_bn": "'Feedback' অগণনীয় — 'a' নয়, 'some'।"
+        },
+        {
+          "id": "d31s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "person",
+            "the",
+            "access",
+            "He",
+            "with",
+            "only",
+            "is",
+            "."
+          ],
+          "answer": "He is the only person with access .",
+          "explain_en": "Unique person → 'the'; 'access' is uncountable and general → no article.",
+          "explain_bn": "একজনই বলে 'the'; 'access' অগণনীয় ও সাধারণ, তাই article নেই।"
+        },
+        {
+          "id": "d31s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "code",
+            "rarely",
+            "Senior",
+            "review",
+            "skip",
+            "engineers",
+            "."
+          ],
+          "answer": "Senior engineers rarely skip code review .",
+          "explain_en": "General statement about a group → plural noun, no article.",
+          "explain_bn": "একটা দলের সম্পর্কে সাধারণ কথা — বহুবচনে article লাগে না।"
+        },
+        {
+          "id": "d31s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "mistake",
+            "an",
+            "the",
+            "It",
+            "in",
+            "honest",
+            "mapping",
+            "was",
+            "."
+          ],
+          "answer": "It was an honest mistake in the mapping .",
+          "explain_en": "Silent 'h' in 'honest' → 'an'; the mapping is a known one → 'the'.",
+          "explain_bn": "'Honest'-এ 'h' নীরব, তাই 'an'; নির্দিষ্ট mapping বোঝাচ্ছে তাই 'the'।"
+        },
+        {
+          "id": "d31s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "from",
+            "some",
+            "team",
+            "I",
+            "the",
+            "information",
+            "ops",
+            "need",
+            "."
+          ],
+          "answer": "I need some information from the ops team .",
+          "explain_en": "'Information' is uncountable → 'some'; the ops team is a specific team → 'the'.",
+          "explain_bn": "'Information' অগণনীয় তাই 'some'; নির্দিষ্ট ops team বোঝাচ্ছে তাই 'the'।"
+        },
+        {
+          "id": "d31s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about a ticket you picked up today. Use 'a' the first time and 'the' the second time.",
+          "model_en": "I picked up a ticket about duplicate leads, and the ticket turned out to be a config issue.",
+          "cloze": [
+            "a ticket",
+            "the ticket"
+          ],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d31s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence about feedback you received at work. Use the zero article correctly.",
+          "model_en": "My lead gave me some useful feedback after the code review, and it saved me an hour.",
+          "cloze": [
+            "some useful feedback"
+          ],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

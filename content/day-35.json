@@ -1,0 +1,429 @@
+{
+  "schemaVersion": "2.0",
+  "day": 35,
+  "theme": "Adjective & noun + preposition",
+  "pillar": "precision",
+  "star": true,
+  "rule_en": "Many adjectives and nouns lock onto one fixed preposition: responsible for, aware of, familiar with, capable of, dependent on, similar to, relevant to, keen on — and reason for, impact on, solution to, approach to, increase in, access to, need for, alternative to. Store the pair as one chunk, not as two separate words.",
+  "rule_bn": "অনেক adjective আর noun-এর সঙ্গে একটাই নির্দিষ্ট preposition বসে: responsible for, aware of, familiar with, capable of, dependent on, similar to, relevant to, keen on; আর reason for, impact on, solution to, approach to, increase in, access to, need for, alternative to. শব্দ দুটো আলাদা নয়, একসাথে একটা চাংক হিসেবে মনে রাখো।",
+  "sessions": [
+    {
+      "id": "d35s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d35s1i1",
+          "type": "error-find",
+          "prompt_en": "I am responsible of the deployment pipeline.",
+          "tokens": ["I", "am", "responsible", "of", "the", "deployment", "pipeline"],
+          "error_index": 3,
+          "options": ["with", "for", "to"],
+          "answer": "for",
+          "explain_en": "Responsible takes 'for'.",
+          "explain_bn": "Responsible-এর পরে সবসময় 'for' বসে।"
+        },
+        {
+          "id": "d35s1i2",
+          "type": "error-find",
+          "prompt_en": "She is not aware about the new release schedule.",
+          "tokens": ["She", "is", "not", "aware", "about", "the", "new", "release", "schedule"],
+          "error_index": 4,
+          "options": ["of", "about", "on"],
+          "answer": "of",
+          "explain_en": "Aware takes 'of', never 'about'.",
+          "explain_bn": "Aware-এর সঙ্গে 'of' বসে, 'about' নয়।"
+        },
+        {
+          "id": "d35s1i3",
+          "type": "error-find",
+          "prompt_en": "Our team is not familiar to the legacy Apex codebase.",
+          "tokens": ["Our", "team", "is", "not", "familiar", "to", "the", "legacy", "Apex", "codebase"],
+          "error_index": 5,
+          "options": ["about", "in", "with"],
+          "answer": "with",
+          "explain_en": "You are familiar with something.",
+          "explain_bn": "Familiar-এর সঙ্গে 'with' বসে।"
+        },
+        {
+          "id": "d35s1i4",
+          "type": "error-find",
+          "prompt_en": "She is fully capable for running the release on her own.",
+          "tokens": ["She", "is", "fully", "capable", "for", "running", "the", "release", "on", "her", "own"],
+          "error_index": 4,
+          "options": ["in", "of", "with"],
+          "answer": "of",
+          "explain_en": "Capable of + -ing.",
+          "explain_bn": "Capable-এর পরে 'of' এবং verb-এর সঙ্গে -ing বসে।"
+        },
+        {
+          "id": "d35s1i5",
+          "type": "error-find",
+          "prompt_en": "The go-live date is dependent from the client sign-off.",
+          "tokens": ["The", "go-live", "date", "is", "dependent", "from", "the", "client", "sign-off"],
+          "error_index": 5,
+          "options": ["from", "in", "on"],
+          "answer": "on",
+          "explain_en": "Dependent takes 'on'.",
+          "explain_bn": "Dependent-এর সঙ্গে 'on' বসে।"
+        },
+        {
+          "id": "d35s1i6",
+          "type": "error-find",
+          "prompt_en": "This ticket is very similar with the one we closed last sprint.",
+          "tokens": ["This", "ticket", "is", "very", "similar", "with", "the", "one", "we", "closed", "last", "sprint"],
+          "error_index": 5,
+          "options": ["to", "as", "for"],
+          "answer": "to",
+          "explain_en": "Similar to, not similar with.",
+          "explain_bn": "Similar-এর পরে 'to' বসে, 'with' নয়।"
+        },
+        {
+          "id": "d35s1i7",
+          "type": "error-find",
+          "prompt_en": "That discussion was not relevant for my part of the project.",
+          "tokens": ["That", "discussion", "was", "not", "relevant", "for", "my", "part", "of", "the", "project"],
+          "error_index": 5,
+          "options": ["about", "to", "on"],
+          "answer": "to",
+          "explain_en": "Relevant takes 'to'.",
+          "explain_bn": "Relevant-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s1i8",
+          "type": "error-find",
+          "prompt_en": "He is really keen at learning the new integration framework.",
+          "tokens": ["He", "is", "really", "keen", "at", "learning", "the", "new", "integration", "framework"],
+          "error_index": 4,
+          "options": ["for", "about", "on"],
+          "answer": "on",
+          "explain_en": "Keen on + -ing.",
+          "explain_bn": "Keen-এর সঙ্গে 'on' বসে।"
+        },
+        {
+          "id": "d35s1i9",
+          "type": "error-find",
+          "prompt_en": "Nobody could explain the reason of the rollback.",
+          "tokens": ["Nobody", "could", "explain", "the", "reason", "of", "the", "rollback"],
+          "error_index": 5,
+          "options": ["about", "for", "in"],
+          "answer": "for",
+          "explain_en": "Reason for something.",
+          "explain_bn": "Reason-এর পরে 'for' বসে।"
+        },
+        {
+          "id": "d35s1i10",
+          "type": "error-find",
+          "prompt_en": "The outage had a serious impact to our biggest client.",
+          "tokens": ["The", "outage", "had", "a", "serious", "impact", "to", "our", "biggest", "client"],
+          "error_index": 6,
+          "options": ["in", "on", "for"],
+          "answer": "on",
+          "explain_en": "Impact on someone or something.",
+          "explain_bn": "Impact-এর পরে 'on' বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d35s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d35s2i1",
+          "type": "mcq",
+          "prompt_en": "The index change had a big impact ___ query performance.",
+          "options": ["to", "on", "in", "for"],
+          "answer": "on",
+          "explain_en": "Impact is always followed by 'on'.",
+          "explain_bn": "Impact-এর পরে সবসময় 'on' বসে।"
+        },
+        {
+          "id": "d35s2i2",
+          "type": "mcq",
+          "prompt_en": "We finally found a clean solution ___ the duplicate record problem.",
+          "options": ["for", "of", "to", "on"],
+          "answer": "to",
+          "explain_en": "A solution to a problem.",
+          "explain_bn": "Solution-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s2i3",
+          "type": "mcq",
+          "prompt_en": "I like your approach ___ code review much better than mine.",
+          "options": ["on", "for", "in", "to"],
+          "answer": "to",
+          "explain_en": "An approach to something.",
+          "explain_bn": "Approach-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s2i4",
+          "type": "mcq",
+          "prompt_en": "We have seen a steady increase ___ API callouts since the last release.",
+          "options": ["in", "of", "on", "for"],
+          "answer": "in",
+          "explain_en": "An increase in a number or amount.",
+          "explain_bn": "Increase-এর পরে 'in' বসে।"
+        },
+        {
+          "id": "d35s2i5",
+          "type": "mcq",
+          "prompt_en": "There is a real need ___ better regression coverage before we scale.",
+          "options": ["of", "to", "for", "in"],
+          "answer": "for",
+          "explain_en": "A need for something.",
+          "explain_bn": "Need (noun)-এর পরে 'for' বসে।"
+        },
+        {
+          "id": "d35s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The offshore team still does not have ___ to the deployment logs.",
+          "options": ["reach", "access", "entry"],
+          "answer": "access",
+          "explain_en": "Access to a system or a resource.",
+          "explain_bn": "সিস্টেমে ঢোকার অনুমতি বোঝাতে 'access to' বসে।"
+        },
+        {
+          "id": "d35s2i7",
+          "type": "fill-bank",
+          "prompt_en": "A managed package is a sensible ___ to building everything in-house.",
+          "options": ["option", "answer", "alternative"],
+          "answer": "alternative",
+          "explain_en": "An alternative to something; 'option' would need 'of'.",
+          "explain_bn": "'Alternative to' বসে; 'option' হলে গঠনটা বদলে যেত।"
+        },
+        {
+          "id": "d35s2i8",
+          "type": "fill-bank",
+          "prompt_en": "The go-live date is dependent ___ the client signing off the test results.",
+          "options": ["on", "for", "with"],
+          "answer": "on",
+          "explain_en": "Dependent on.",
+          "explain_bn": "Dependent-এর সঙ্গে 'on' বসে।"
+        },
+        {
+          "id": "d35s2i9",
+          "type": "fill-bank",
+          "prompt_en": "Everyone on the call should be aware ___ the new escalation policy.",
+          "options": ["about", "of", "with"],
+          "answer": "of",
+          "explain_en": "Aware of.",
+          "explain_bn": "Aware-এর সঙ্গে 'of' বসে।"
+        },
+        {
+          "id": "d35s2i10",
+          "type": "fill-bank",
+          "prompt_en": "I am not very familiar ___ the new billing module yet.",
+          "options": ["to", "about", "with"],
+          "answer": "with",
+          "explain_en": "Familiar with.",
+          "explain_bn": "Familiar-এর সঙ্গে 'with' বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d35s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d35s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["for", "She", "is", "the", "migration", "responsible", "."],
+          "answer": "She is responsible for the migration .",
+          "explain_en": "Responsible for.",
+          "explain_bn": "Responsible-এর পরে 'for' বসে।"
+        },
+        {
+          "id": "d35s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["aware", "The", "of", "client", "the", "is", "delay", "not", "."],
+          "answer": "The client is not aware of the delay .",
+          "explain_en": "Aware of.",
+          "explain_bn": "Aware-এর সঙ্গে 'of' বসে।"
+        },
+        {
+          "id": "d35s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["with", "not", "I", "the", "familiar", "part", "code", "am", "of", "this", "."],
+          "answer": "I am not familiar with this part of the code .",
+          "explain_en": "Familiar with.",
+          "explain_bn": "Familiar-এর সঙ্গে 'with' বসে।"
+        },
+        {
+          "id": "d35s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["dependent", "the", "The", "on", "review", "is", "security", "release", "."],
+          "answer": "The release is dependent on the security review .",
+          "explain_en": "Dependent on.",
+          "explain_bn": "Dependent-এর সঙ্গে 'on' বসে।"
+        },
+        {
+          "id": "d35s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["similar", "This", "the", "is", "to", "bug", "last", "one", "very", "sprint", "from", "."],
+          "answer": "This bug is very similar to the one from last sprint .",
+          "explain_en": "Similar to.",
+          "explain_bn": "Similar-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["solution", "There", "this", "to", "no", "problem", "is", "performance", "simple", "."],
+          "answer": "There is no simple solution to this performance problem .",
+          "explain_en": "Solution to.",
+          "explain_bn": "Solution-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["reason", "the", "Nobody", "for", "explain", "deployment", "could", "the", "failed", "."],
+          "answer": "Nobody could explain the reason for the failed deployment .",
+          "explain_en": "Reason for.",
+          "explain_bn": "Reason-এর পরে 'for' বসে।"
+        },
+        {
+          "id": "d35s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["approach", "We", "to", "a", "testing", "need", "regression", "better", "."],
+          "answer": "We need a better approach to regression testing .",
+          "explain_en": "Approach to.",
+          "explain_bn": "Approach-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about what you are responsible for on your team.",
+          "model_en": "I am responsible for the integration layer and the release process.",
+          "cloze": ["responsible for"],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d35s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence about a change that had an effect on your team this quarter.",
+          "model_en": "The new review policy had a real impact on how fast we ship.",
+          "cloze": ["impact on"],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d35s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d35s4i1",
+          "type": "error-find",
+          "prompt_en": "The intern is not capable for handling a production incident alone.",
+          "tokens": ["The", "intern", "is", "not", "capable", "for", "handling", "a", "production", "incident", "alone"],
+          "error_index": 5,
+          "options": ["in", "of", "to"],
+          "answer": "of",
+          "explain_en": "Capable of + -ing.",
+          "explain_bn": "Capable-এর পরে 'of' বসে।"
+        },
+        {
+          "id": "d35s4i2",
+          "type": "error-find",
+          "prompt_en": "We finally gave the vendor access on the sandbox.",
+          "tokens": ["We", "finally", "gave", "the", "vendor", "access", "on", "the", "sandbox"],
+          "error_index": 6,
+          "options": ["for", "to", "into"],
+          "answer": "to",
+          "explain_en": "Access to something.",
+          "explain_bn": "Access-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s4i3",
+          "type": "error-find",
+          "prompt_en": "There is a growing need of better documentation in this repo.",
+          "tokens": ["There", "is", "a", "growing", "need", "of", "better", "documentation", "in", "this", "repo"],
+          "error_index": 5,
+          "options": ["about", "for", "in"],
+          "answer": "for",
+          "explain_en": "A need for something.",
+          "explain_bn": "Need (noun)-এর পরে 'for' বসে।"
+        },
+        {
+          "id": "d35s4i4",
+          "type": "mcq",
+          "prompt_en": "Most of that thread was not relevant ___ my part of the release.",
+          "options": ["for", "to", "with", "on"],
+          "answer": "to",
+          "explain_en": "Relevant to.",
+          "explain_bn": "Relevant-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s4i5",
+          "type": "mcq",
+          "prompt_en": "He is very keen ___ moving the whole team to scratch orgs.",
+          "options": ["at", "in", "on", "for"],
+          "answer": "on",
+          "explain_en": "Keen on + -ing.",
+          "explain_bn": "Keen-এর সঙ্গে 'on' বসে।"
+        },
+        {
+          "id": "d35s4i6",
+          "type": "mcq",
+          "prompt_en": "In the retro the architect explained the reason ___ the rollback.",
+          "options": ["to", "of", "for", "in"],
+          "answer": "for",
+          "explain_en": "Reason for.",
+          "explain_bn": "Reason-এর পরে 'for' বসে।"
+        },
+        {
+          "id": "d35s4i7",
+          "type": "fill-bank",
+          "prompt_en": "Only two admins have ___ to the production credentials.",
+          "options": ["reach", "access", "view"],
+          "answer": "access",
+          "explain_en": "Access to a system.",
+          "explain_bn": "Access-এর পরে 'to' বসে।"
+        },
+        {
+          "id": "d35s4i8",
+          "type": "fill-bank",
+          "prompt_en": "Everyone in the squad should be ___ of the new on-call schedule.",
+          "options": ["clear", "familiar", "aware"],
+          "answer": "aware",
+          "explain_en": "Only 'aware' fits with 'of' here.",
+          "explain_bn": "'of'-এর সঙ্গে এখানে শুধু 'aware' মানায়।"
+        },
+        {
+          "id": "d35s4i9",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["impact", "The", "on", "had", "client", "a", "our", "outage", "biggest", "serious", "."],
+          "answer": "The outage had a serious impact on our biggest client .",
+          "explain_en": "Impact on.",
+          "explain_bn": "Impact-এর পরে 'on' বসে।"
+        },
+        {
+          "id": "d35s4i10",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["aware", "I", "of", "not", "blocker", "am", "this", "any", "for", "sprint", "."],
+          "answer": "I am not aware of any blocker for this sprint .",
+          "explain_en": "Aware of.",
+          "explain_bn": "Aware-এর সঙ্গে 'of' বসে।"
+        }
+      ]
+    }
+  ]
+}

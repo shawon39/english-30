@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "2.0",
+  "day": 34,
+  "theme": "Verb + preposition (depend on, result in)",
+  "pillar": "precision",
+  "star": true,
+  "rule_en": "Many English verbs carry a fixed preposition that you cannot swap or translate: depend on, consist of, result in, apply for, rely on, contribute to, deal with, focus on, listen to, look into, account for, comply with. With agree, the preposition shifts the meaning: agree with a person, agree to a proposal, agree on a decision.",
+  "rule_bn": "অনেক ইংরেজি verb-এর সাথে একটি নির্দিষ্ট preposition বাঁধা থাকে, যা বদলানো বা বাংলা থেকে অনুবাদ করা যায় না: depend on, consist of, result in, apply for, rely on, contribute to, deal with, focus on, listen to, look into, account for, comply with। agree-এর ক্ষেত্রে preposition অর্থ বদলে দেয়: মানুষের সাথে agree with, প্রস্তাবে agree to, সিদ্ধান্তে agree on।",
+  "sessions": [
+    {
+      "id": "d34s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d34s1i1",
+          "type": "error-find",
+          "prompt_en": "The rollout depends of the client's security review.",
+          "tokens": ["The", "rollout", "depends", "of", "the", "client's", "security", "review"],
+          "error_index": 3,
+          "options": ["from", "on", "about"],
+          "answer": "on",
+          "explain_en": "Depend always takes 'on', never 'of'.",
+          "explain_bn": "depend-এর সাথে সবসময় on বসে, কখনও of নয়।"
+        },
+        {
+          "id": "d34s1i2",
+          "type": "error-find",
+          "prompt_en": "The managed package consists in three separate components.",
+          "tokens": ["The", "managed", "package", "consists", "in", "three", "separate", "components"],
+          "error_index": 4,
+          "options": ["of", "from", "with"],
+          "answer": "of",
+          "explain_en": "Consist of lists the parts something is made from.",
+          "explain_bn": "কোনো কিছু কী কী অংশ নিয়ে গঠিত তা বোঝাতে consist of বসে।"
+        },
+        {
+          "id": "d34s1i3",
+          "type": "error-find",
+          "prompt_en": "The bad merge resulted to two hours of downtime.",
+          "tokens": ["The", "bad", "merge", "resulted", "to", "two", "hours", "of", "downtime"],
+          "error_index": 4,
+          "options": ["with", "from", "in"],
+          "answer": "in",
+          "explain_en": "Result in points to the outcome; result from points back to the cause.",
+          "explain_bn": "ফলাফল বোঝাতে result in, আর কারণ বোঝাতে result from বসে।"
+        },
+        {
+          "id": "d34s1i4",
+          "type": "error-find",
+          "prompt_en": "I applied at three days of leave before the release.",
+          "tokens": ["I", "applied", "at", "three", "days", "of", "leave", "before", "the", "release"],
+          "error_index": 2,
+          "options": ["for", "on", "to"],
+          "answer": "for",
+          "explain_en": "You apply for the thing you want; you apply to the place or programme.",
+          "explain_bn": "যা চাও তার জন্য apply for; আর প্রতিষ্ঠান বা প্রোগ্রামের ক্ষেত্রে apply to।"
+        },
+        {
+          "id": "d34s1i5",
+          "type": "error-find",
+          "prompt_en": "We cannot rely in the sandbox data for this test.",
+          "tokens": ["We", "cannot", "rely", "in", "the", "sandbox", "data", "for", "this", "test"],
+          "error_index": 3,
+          "options": ["at", "on", "with"],
+          "answer": "on",
+          "explain_en": "Rely takes 'on', like depend.",
+          "explain_bn": "depend-এর মতো rely-এর সাথেও on বসে।"
+        },
+        {
+          "id": "d34s1i6",
+          "type": "error-find",
+          "prompt_en": "Every engineer contributed in the release notes.",
+          "tokens": ["Every", "engineer", "contributed", "in", "the", "release", "notes"],
+          "error_index": 3,
+          "options": ["to", "for", "on"],
+          "answer": "to",
+          "explain_en": "Contribute takes 'to' before the thing you add to.",
+          "explain_bn": "যেখানে অবদান রাখা হয় তার আগে contribute to বসে।"
+        },
+        {
+          "id": "d34s1i7",
+          "type": "error-find",
+          "prompt_en": "I will deal about the client escalation after standup.",
+          "tokens": ["I", "will", "deal", "about", "the", "client", "escalation", "after", "standup"],
+          "error_index": 3,
+          "options": ["on", "with", "into"],
+          "answer": "with",
+          "explain_en": "Deal with means handle; 'deal about' does not exist.",
+          "explain_bn": "সামলানো বোঝাতে deal with বসে; deal about বলে কিছু নেই।"
+        },
+        {
+          "id": "d34s1i8",
+          "type": "error-find",
+          "prompt_en": "Let's focus at the failing tests before we refactor.",
+          "tokens": ["Let's", "focus", "at", "the", "failing", "tests", "before", "we", "refactor"],
+          "error_index": 2,
+          "options": ["on", "about", "in"],
+          "answer": "on",
+          "explain_en": "Focus takes 'on' when you choose what to work on.",
+          "explain_bn": "কোন বিষয়ে মনোযোগ দেওয়া হবে তা বোঝাতে focus on বসে।"
+        },
+        {
+          "id": "d34s1i9",
+          "type": "error-find",
+          "prompt_en": "Nobody listened at the on-call engineer during the incident.",
+          "tokens": ["Nobody", "listened", "at", "the", "on-call", "engineer", "during", "the", "incident"],
+          "error_index": 2,
+          "options": ["with", "to", "on"],
+          "answer": "to",
+          "explain_en": "Listen always takes 'to' before the person or thing heard.",
+          "explain_bn": "যাকে বা যা শোনা হয় তার আগে সবসময় listen to বসে।"
+        },
+        {
+          "id": "d34s1i10",
+          "type": "error-find",
+          "prompt_en": "The integration must comply to the client's security policy.",
+          "tokens": ["The", "integration", "must", "comply", "to", "the", "client's", "security", "policy"],
+          "error_index": 4,
+          "options": ["with", "for", "on"],
+          "answer": "with",
+          "explain_en": "Comply with a rule, a policy or a standard.",
+          "explain_bn": "নিয়ম, নীতি বা স্ট্যান্ডার্ড মেনে চলা বোঝাতে comply with বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d34s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d34s2i1",
+          "type": "mcq",
+          "prompt_en": "The outage resulted ___ two hours of downtime for the client.",
+          "options": ["to", "in", "on", "with"],
+          "answer": "in",
+          "explain_en": "The downtime is the outcome, so 'result in'.",
+          "explain_bn": "ডাউনটাইম হলো ফলাফল, তাই result in বসে।"
+        },
+        {
+          "id": "d34s2i2",
+          "type": "mcq",
+          "prompt_en": "Can you look ___ why the batch job keeps failing overnight?",
+          "options": ["at", "for", "into", "on"],
+          "answer": "into",
+          "explain_en": "Look into means investigate a cause.",
+          "explain_bn": "কারণ খুঁজে দেখা বা তদন্ত করা বোঝাতে look into বসে।"
+        },
+        {
+          "id": "d34s2i3",
+          "type": "mcq",
+          "prompt_en": "The retry logic has to account ___ duplicate records in the payload.",
+          "options": ["of", "with", "for", "on"],
+          "answer": "for",
+          "explain_en": "Account for means take something into consideration.",
+          "explain_bn": "কোনো কিছু বিবেচনায় নেওয়া বোঝাতে account for বসে।"
+        },
+        {
+          "id": "d34s2i4",
+          "type": "mcq",
+          "prompt_en": "Our managed package has to comply ___ the client's data retention policy.",
+          "options": ["to", "with", "on", "for"],
+          "answer": "with",
+          "explain_en": "Comply is always followed by 'with'.",
+          "explain_bn": "comply-এর পরে সবসময় with বসে।"
+        },
+        {
+          "id": "d34s2i5",
+          "type": "mcq",
+          "prompt_en": "I agreed ___ the reviewer about the new naming convention.",
+          "options": ["to", "on", "with", "for"],
+          "answer": "with",
+          "explain_en": "You agree with a person, agree to a proposal, and agree on a decision.",
+          "explain_bn": "মানুষের সাথে agree with, প্রস্তাবে agree to, আর সিদ্ধান্তে agree on বসে।"
+        },
+        {
+          "id": "d34s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The estimate depends ___ how big the data migration turns out to be.",
+          "options": ["on", "of", "from"],
+          "answer": "on",
+          "explain_en": "Depend on works before a noun or a question word.",
+          "explain_bn": "noun বা প্রশ্নবোধক শব্দের আগেও depend on বসে।"
+        },
+        {
+          "id": "d34s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Every senior engineer contributed ___ the architecture document.",
+          "options": ["in", "to", "for"],
+          "answer": "to",
+          "explain_en": "Contribute to the document, the project, the discussion.",
+          "explain_bn": "ডকুমেন্ট, প্রজেক্ট বা আলোচনায় অবদান রাখতে contribute to বসে।"
+        },
+        {
+          "id": "d34s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Please focus ___ the blockers first and leave the polish for later.",
+          "options": ["at", "in", "on"],
+          "answer": "on",
+          "explain_en": "Focus on the thing that gets your attention.",
+          "explain_bn": "যেদিকে মনোযোগ দেওয়া হয় তার আগে focus on বসে।"
+        },
+        {
+          "id": "d34s2i9",
+          "type": "fill-bank",
+          "prompt_en": "The release checklist consists ___ twelve manual steps.",
+          "options": ["from", "of", "in"],
+          "answer": "of",
+          "explain_en": "Consist of introduces the parts of the whole.",
+          "explain_bn": "পুরোটা কী কী অংশ নিয়ে গঠিত তা বোঝাতে consist of বসে।"
+        },
+        {
+          "id": "d34s2i10",
+          "type": "fill-bank",
+          "prompt_en": "She applied ___ the internal transfer to the platform team.",
+          "options": ["to", "for", "on"],
+          "answer": "for",
+          "explain_en": "You apply for a role, a transfer or leave.",
+          "explain_bn": "পদ, ট্রান্সফার বা ছুটির জন্য apply for বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d34s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d34s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["depends", "data", "The", "on", "estimate", "the", "volume", "."],
+          "answer": "The estimate depends on the data volume .",
+          "explain_en": "Depend on, never depend of.",
+          "explain_bn": "depend on হয়, depend of কখনও নয়।"
+        },
+        {
+          "id": "d34s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["in", "escalation", "The", "resulted", "a", "outage", "client", "."],
+          "answer": "The outage resulted in a client escalation .",
+          "explain_en": "Result in points forward to the outcome.",
+          "explain_bn": "ফলাফলের দিকে ইঙ্গিত করতে result in বসে।"
+        },
+        {
+          "id": "d34s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["test", "look", "the", "into", "will", "failing", "I", "."],
+          "answer": "I will look into the failing test .",
+          "explain_en": "Look into means investigate.",
+          "explain_bn": "তদন্ত করা বা খুঁজে দেখা বোঝাতে look into বসে।"
+        },
+        {
+          "id": "d34s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["suite", "on", "nightly", "rely", "regression", "We", "the", "."],
+          "answer": "We rely on the nightly regression suite .",
+          "explain_en": "Rely takes 'on'.",
+          "explain_bn": "rely-এর সাথে on বসে।"
+        },
+        {
+          "id": "d34s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["sprint", "agreed", "a", "team", "shorter", "The", "on", "."],
+          "answer": "The team agreed on a shorter sprint .",
+          "explain_en": "Agree on a decision the group reaches together.",
+          "explain_bn": "দলগতভাবে নেওয়া সিদ্ধান্তের ক্ষেত্রে agree on বসে।"
+        },
+        {
+          "id": "d34s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["client", "with", "every", "deals", "He", "escalation", "."],
+          "answer": "He deals with every client escalation .",
+          "explain_en": "Deal with means handle or take care of.",
+          "explain_bn": "সামলানো বা দেখাশোনা করা বোঝাতে deal with বসে।"
+        },
+        {
+          "id": "d34s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["four", "of", "package", "classes", "consists", "The", "Apex", "."],
+          "answer": "The package consists of four Apex classes .",
+          "explain_en": "Consist of lists what the whole is made of.",
+          "explain_bn": "পুরোটা কী নিয়ে গঠিত তা বলতে consist of বসে।"
+        },
+        {
+          "id": "d34s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["blockers", "on", "focus", "today", "the", "Please", "."],
+          "answer": "Please focus on the blockers today .",
+          "explain_en": "Focus on the target of your attention.",
+          "explain_bn": "মনোযোগের লক্ষ্যের আগে focus on বসে।"
+        },
+        {
+          "id": "d34s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about what your current estimate depends on.",
+          "model_en": "My estimate depends on how clean the legacy data turns out to be.",
+          "cloze": ["depends on"],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d34s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence about a problem you are looking into this week.",
+          "model_en": "This week I am looking into why the nightly batch job keeps failing.",
+          "cloze": ["looking into"],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

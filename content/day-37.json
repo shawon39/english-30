@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "2.0",
+  "day": 37,
+  "theme": "Hedging & softening",
+  "pillar": "natural",
+  "star": false,
+  "rule_en": "Soften claims and requests instead of stating them flat: it might be worth…, I'd lean towards…, I'm not sure that…, as far as I know, correct me if I'm wrong. Use contractions (I'd, I'm, that's, we've) — the hedge sounds natural, not weak.",
+  "rule_bn": "সরাসরি না বলে দাবি ও অনুরোধ নরম করো: it might be worth…, I'd lean towards…, I'm not sure that…, as far as I know, correct me if I'm wrong। সাথে contraction ব্যবহার করো (I'd, I'm, that's, we've) — তাতে কথাটা দুর্বল নয়, স্বাভাবিক শোনায়।",
+  "sessions": [
+    {
+      "id": "d37s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d37s1i1",
+          "type": "error-find",
+          "prompt_en": "I think we must hold off on that refactor.",
+          "tokens": ["I", "think", "we", "must", "hold", "off", "on", "that", "refactor"],
+          "error_index": 3,
+          "options": ["must", "should", "need"],
+          "answer": "should",
+          "explain_en": "'Must' sounds like an order to the team; 'should' keeps it a suggestion.",
+          "explain_bn": "'Must' শুনতে আদেশের মতো; 'should' বললে সেটা পরামর্শ থাকে।"
+        },
+        {
+          "id": "d37s1i2",
+          "type": "error-find",
+          "prompt_en": "Your estimate is definitely too optimistic.",
+          "tokens": ["Your", "estimate", "is", "definitely", "too", "optimistic"],
+          "error_index": 3,
+          "options": ["certainly", "surely", "probably"],
+          "answer": "probably",
+          "explain_en": "'Definitely' leaves the other person no room; 'probably' hedges the judgement.",
+          "explain_bn": "'Definitely' বললে অন্যজনের জায়গা থাকে না; 'probably' মন্তব্যটা নরম করে।"
+        },
+        {
+          "id": "d37s1i3",
+          "type": "error-find",
+          "prompt_en": "The refresh runs on Friday, as far as I remember.",
+          "tokens": ["The", "refresh", "runs", "on", "Friday,", "as", "far", "as", "I", "remember"],
+          "error_index": 9,
+          "options": ["know", "think", "believe"],
+          "answer": "know",
+          "explain_en": "The fixed hedge is 'as far as I know' — it flags that your information may be out of date.",
+          "explain_bn": "নির্দিষ্ট ফ্রেজটা হলো 'as far as I know' — মানে তোমার তথ্য পুরোনো হতে পারে।"
+        },
+        {
+          "id": "d37s1i4",
+          "type": "error-find",
+          "prompt_en": "That flow already handles nulls, but correct me if I'm mistaken.",
+          "tokens": ["That", "flow", "already", "handles", "nulls,", "but", "correct", "me", "if", "I'm", "mistaken"],
+          "error_index": 10,
+          "options": ["confused", "wrong", "incorrect"],
+          "answer": "wrong",
+          "explain_en": "The set phrase is 'correct me if I'm wrong' — it invites the fix instead of claiming to be right.",
+          "explain_bn": "প্রচলিত ফ্রেজ 'correct me if I'm wrong' — নিজেকে সঠিক দাবি না করে সংশোধনের সুযোগ দেয়।"
+        },
+        {
+          "id": "d37s1i5",
+          "type": "error-find",
+          "prompt_en": "The regression suite will commence after the sandbox refresh.",
+          "tokens": ["The", "regression", "suite", "will", "commence", "after", "the", "sandbox", "refresh"],
+          "error_index": 4,
+          "options": ["initiate", "proceed", "start"],
+          "answer": "start",
+          "explain_en": "'Commence' is textbook-formal; in a standup people say 'start'.",
+          "explain_bn": "'Commence' বইয়ের ভাষা; standup-এ সবাই 'start' বলে।"
+        },
+        {
+          "id": "d37s1i6",
+          "type": "error-find",
+          "prompt_en": "The managed package is obviously causing the delay.",
+          "tokens": ["The", "managed", "package", "is", "obviously", "causing", "the", "delay"],
+          "error_index": 4,
+          "options": ["apparently", "evidently", "undeniably"],
+          "answer": "apparently",
+          "explain_en": "'Obviously' implies everyone else missed something; 'apparently' reports it without the dig.",
+          "explain_bn": "'Obviously' বললে মনে হয় বাকিরা বোকা; 'apparently' খোঁচা ছাড়াই কথাটা বলে।"
+        },
+        {
+          "id": "d37s1i7",
+          "type": "error-find",
+          "prompt_en": "Our integration tests always fail after a sandbox refresh.",
+          "tokens": ["Our", "integration", "tests", "always", "fail", "after", "a", "sandbox", "refresh"],
+          "error_index": 3,
+          "options": ["never", "usually", "definitely"],
+          "answer": "usually",
+          "explain_en": "Absolutes like 'always' are easy to disprove; 'usually' (or 'tend to fail') is safer and truer.",
+          "explain_bn": "'Always'-এর মতো চূড়ান্ত কথা সহজে ভুল প্রমাণ হয়; 'usually' (বা 'tend to fail') নিরাপদ ও সত্যের কাছাকাছি।"
+        },
+        {
+          "id": "d37s1i8",
+          "type": "error-find",
+          "prompt_en": "I'd like to inquire about the release date.",
+          "tokens": ["I'd", "like", "to", "inquire", "about", "the", "release", "date"],
+          "error_index": 3,
+          "options": ["question", "ask", "interrogate"],
+          "answer": "ask",
+          "explain_en": "'Inquire' reads like a letter from a bank; 'ask' is what a colleague says.",
+          "explain_bn": "'Inquire' ব্যাংকের চিঠির মতো শোনায়; সহকর্মীরা 'ask' বলে।"
+        },
+        {
+          "id": "d37s1i9",
+          "type": "error-find",
+          "prompt_en": "It might be good waiting for the client's sign-off.",
+          "tokens": ["It", "might", "be", "good", "waiting", "for", "the", "client's", "sign-off"],
+          "error_index": 3,
+          "options": ["nice", "fine", "worth"],
+          "answer": "worth",
+          "explain_en": "The natural hedge is 'it might be worth + -ing' for a low-pressure suggestion.",
+          "explain_bn": "স্বাভাবিক হেজ হলো 'it might be worth + -ing' — চাপ ছাড়া পরামর্শ দিতে।"
+        },
+        {
+          "id": "d37s1i10",
+          "type": "error-find",
+          "prompt_en": "I'd sooner we didn't touch the trigger this late.",
+          "tokens": ["I'd", "sooner", "we", "didn't", "touch", "the", "trigger", "this", "late"],
+          "error_index": 1,
+          "options": ["prefer", "rather", "better"],
+          "answer": "rather",
+          "explain_en": "'I'd rather we didn't…' is the everyday way to decline without blocking anyone.",
+          "explain_bn": "'I'd rather we didn't…' — কাউকে আটকে না দিয়ে না বলার সাধারণ উপায়।"
+        }
+      ]
+    },
+    {
+      "id": "d37s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d37s2i1",
+          "type": "mcq",
+          "prompt_en": "___ it might be worth splitting this PR.",
+          "options": ["Obviously,", "Honestly,", "Clearly,", "Certainly,"],
+          "answer": "Honestly,",
+          "explain_en": "'Honestly' opens an opinion; the others assert it as fact before you've argued it.",
+          "explain_bn": "'Honestly' মতামত শুরু করে; বাকিগুলো যুক্তি দেওয়ার আগেই সেটা সত্য বলে চাপায়।"
+        },
+        {
+          "id": "d37s2i2",
+          "type": "mcq",
+          "prompt_en": "That ___ work, but it adds another dependency.",
+          "options": ["must", "will", "could", "shall"],
+          "answer": "could",
+          "explain_en": "'That could work, but…' accepts the idea before raising the cost.",
+          "explain_bn": "'That could work, but…' — আপত্তি তোলার আগে আইডিয়াটা মেনে নেয়।"
+        },
+        {
+          "id": "d37s2i3",
+          "type": "mcq",
+          "prompt_en": "___, the sandbox is still on the old package version.",
+          "options": ["Without doubt", "In fact", "As far as I know", "Beyond question"],
+          "answer": "As far as I know",
+          "explain_en": "It reports what you believe while admitting someone may have newer information.",
+          "explain_bn": "তুমি যা জানো তা বলে, তবু স্বীকার করে যে অন্য কারো কাছে নতুন তথ্য থাকতে পারে।"
+        },
+        {
+          "id": "d37s2i4",
+          "type": "mcq",
+          "prompt_en": "Would it make ___ to move this to next sprint?",
+          "options": ["sense", "meaning", "reason", "logic"],
+          "answer": "sense",
+          "explain_en": "'Would it make sense to…?' proposes without telling anyone what to do.",
+          "explain_bn": "'Would it make sense to…?' — আদেশ না দিয়ে প্রস্তাব দেয়।"
+        },
+        {
+          "id": "d37s2i5",
+          "type": "mcq",
+          "prompt_en": "The deploy ___ to fail when the metadata API is slow.",
+          "options": ["must", "tends", "will", "has"],
+          "answer": "tends",
+          "explain_en": "'Tends to' describes a pattern without claiming it happens every time.",
+          "explain_bn": "'Tends to' একটা প্রবণতা বোঝায়, প্রতিবারই ঘটে এমন দাবি করে না।"
+        },
+        {
+          "id": "d37s2i6",
+          "type": "fill-bank",
+          "prompt_en": "I'd ___ towards the simpler option.",
+          "options": ["bend", "lean", "point"],
+          "answer": "lean",
+          "explain_en": "'I'd lean towards…' states a preference while leaving it open for debate.",
+          "explain_bn": "'I'd lean towards…' পছন্দ জানায়, কিন্তু আলোচনার দরজা খোলা রাখে।"
+        },
+        {
+          "id": "d37s2i7",
+          "type": "fill-bank",
+          "prompt_en": "___ me if I'm wrong, but the flow already covers that case.",
+          "options": ["Fix", "Tell", "Correct"],
+          "answer": "Correct",
+          "explain_en": "'Correct me if I'm wrong' is the fixed opener before contradicting someone.",
+          "explain_bn": "কারো কথার বিপরীতে বলার আগে নির্দিষ্ট ফ্রেজ 'Correct me if I'm wrong'।"
+        },
+        {
+          "id": "d37s2i8",
+          "type": "fill-bank",
+          "prompt_en": "___ not sure that a new object is the right call here.",
+          "options": ["I'm", "I", "Me"],
+          "answer": "I'm",
+          "explain_en": "Contract it — 'I'm not sure that…' is how the hedge actually sounds in speech.",
+          "explain_bn": "Contraction ব্যবহার করো — কথ্য ইংরেজিতে হেজটা 'I'm not sure that…' রূপেই আসে।"
+        },
+        {
+          "id": "d37s2i9",
+          "type": "fill-bank",
+          "prompt_en": "It ___ be worth checking the debug logs first.",
+          "options": ["will", "might", "shall"],
+          "answer": "might",
+          "explain_en": "'It might be worth…' suggests a next step without ordering it.",
+          "explain_bn": "'It might be worth…' পরের ধাপটা প্রস্তাব করে, আদেশ করে না।"
+        },
+        {
+          "id": "d37s2i10",
+          "type": "fill-bank",
+          "prompt_en": "I'd ___ we waited until after the release.",
+          "options": ["sooner", "instead", "rather"],
+          "answer": "rather",
+          "explain_en": "'I'd rather we waited' — past form after 'I'd rather we' for a soft preference.",
+          "explain_bn": "'I'd rather we waited' — 'I'd rather we'-এর পরে past form বসিয়ে নরম পছন্দ বোঝানো হয়।"
+        }
+      ]
+    },
+    {
+      "id": "d37s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d37s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["waiting", "It", "worth", "their", "be", "for", "might", "sign-off", "."],
+          "answer": "It might be worth waiting for their sign-off .",
+          "explain_en": "'It might be worth + -ing' softens the recommendation.",
+          "explain_bn": "'It might be worth + -ing' পরামর্শটা নরম করে।"
+        },
+        {
+          "id": "d37s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["towards", "simpler", "I'd", "option", "lean", "the", "."],
+          "answer": "I'd lean towards the simpler option .",
+          "explain_en": "'I'd lean towards' gives your position without shutting the discussion down.",
+          "explain_bn": "'I'd lean towards' নিজের অবস্থান জানায়, আলোচনা বন্ধ করে না।"
+        },
+        {
+          "id": "d37s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["but", "adds", "That", "dependency", "work,", "it", "could", "another", "."],
+          "answer": "That could work, but it adds another dependency .",
+          "explain_en": "Agree partly, then raise the cost — the standard code-review move.",
+          "explain_bn": "প্রথমে আংশিক সম্মতি, তারপর সমস্যা তোলা — code review-এর স্বাভাবিক ধরন।"
+        },
+        {
+          "id": "d37s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["sure", "I'm", "trigger", "the", "not", "fix", "a", "that", "right", "is", "."],
+          "answer": "I'm not sure that a trigger is the right fix .",
+          "explain_en": "'I'm not sure that…' disagrees without calling anyone wrong.",
+          "explain_bn": "'I'm not sure that…' কাউকে ভুল না বলে দ্বিমত জানায়।"
+        },
+        {
+          "id": "d37s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["release", "far", "I", "As", "know,", "the", "as", "on", "still", "Thursday", "is", "."],
+          "answer": "As far as I know, the release is still on Thursday .",
+          "explain_en": "The hedge sits at the front and covers the whole statement.",
+          "explain_bn": "হেজটা বাক্যের শুরুতে বসে পুরো কথাটাকে ঢেকে দেয়।"
+        },
+        {
+          "id": "d37s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["be", "data", "seems", "It", "issue", "a", "volume", "to", "."],
+          "answer": "It seems to be a data volume issue .",
+          "explain_en": "'Seems to be' reports a finding you haven't fully proved yet.",
+          "explain_bn": "'Seems to be' এমন সিদ্ধান্ত জানায় যা এখনো পুরোপুরি প্রমাণিত নয়।"
+        },
+        {
+          "id": "d37s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["hit", "orgs", "We've", "before", "this", "large", "on", "."],
+          "answer": "We've hit this on large orgs before .",
+          "explain_en": "Contract it — 'we've hit' is what you'd actually say in a standup.",
+          "explain_bn": "Contraction ব্যবহার করো — standup-এ আসলে 'we've hit'-ই বলা হয়।"
+        },
+        {
+          "id": "d37s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["rather", "tested", "I'd", "sandbox", "we", "full", "first", "it", "a", "in", "."],
+          "answer": "I'd rather we tested it in a full sandbox first .",
+          "explain_en": "'I'd rather we + past' pushes for a different plan politely.",
+          "explain_bn": "'I'd rather we + past' ভদ্রভাবে ভিন্ন পরিকল্পনার পক্ষে দাঁড়ায়।"
+        },
+        {
+          "id": "d37s3i9",
+          "type": "speak",
+          "prompt_en": "Soften this: 'Your design is wrong.' Say it as feedback you could give in a code review.",
+          "model_en": "I'm not convinced this design will scale — could we walk through it together?",
+          "cloze": ["I'm not convinced"],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d37s3i10",
+          "type": "speak",
+          "prompt_en": "Soften this: 'We must delay the release.' Say it to your project manager.",
+          "model_en": "It might be worth pushing the release back a day — I'd rather ship it clean.",
+          "cloze": ["It might be worth", "I'd rather"],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    }
+  ]
+}

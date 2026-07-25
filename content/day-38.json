@@ -1,0 +1,429 @@
+{
+  "schemaVersion": "2.0",
+  "day": 38,
+  "theme": "Pushing back & giving feedback",
+  "pillar": "natural",
+  "star": false,
+  "rule_en": "Disagree in two moves: acknowledge, then push back — I see what you mean, but…; that's fair, though…; I'm not convinced that…; my concern is that…. Frame feedback as a flag or a question (one thing I'd flag, have we considered, it might be cleaner to), not a verdict on the person.",
+  "rule_bn": "দ্বিমত দুই ধাপে করো: আগে স্বীকার, তারপর আপত্তি — I see what you mean, but…; that's fair, though…; I'm not convinced that…; my concern is that…। ফিডব্যাক দাও রায়ের মতো নয়, প্রশ্ন বা ফ্ল্যাগ হিসেবে (one thing I'd flag, have we considered, it might be cleaner to)।",
+  "sessions": [
+    {
+      "id": "d38s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d38s1i1",
+          "type": "error-find",
+          "prompt_en": "I see what you mean, and the retry logic still worries me.",
+          "tokens": ["I", "see", "what", "you", "mean,", "and", "the", "retry", "logic", "still", "worries", "me"],
+          "error_index": 5,
+          "options": ["so", "but", "then"],
+          "answer": "but",
+          "explain_en": "The acknowledge-then-disagree pattern needs 'but' to mark the turn.",
+          "explain_bn": "আগে স্বীকার, পরে দ্বিমত — এই গঠনে মোড় বোঝাতে 'but' লাগে।"
+        },
+        {
+          "id": "d38s1i2",
+          "type": "error-find",
+          "prompt_en": "I'm not persuaded this approach will hold at scale.",
+          "tokens": ["I'm", "not", "persuaded", "this", "approach", "will", "hold", "at", "scale"],
+          "error_index": 2,
+          "options": ["convinced", "agreeing", "believing"],
+          "answer": "convinced",
+          "explain_en": "'Persuaded' sounds like a courtroom; engineers say 'I'm not convinced'.",
+          "explain_bn": "'Persuaded' আদালতের ভাষার মতো; ইঞ্জিনিয়াররা বলে 'I'm not convinced'।"
+        },
+        {
+          "id": "d38s1i3",
+          "type": "error-find",
+          "prompt_en": "My concern is if we merge this before the audit.",
+          "tokens": ["My", "concern", "is", "if", "we", "merge", "this", "before", "the", "audit"],
+          "error_index": 3,
+          "options": ["what", "that", "which"],
+          "answer": "that",
+          "explain_en": "The frame is 'my concern is that + clause'.",
+          "explain_bn": "গঠনটা হলো 'my concern is that + clause'।"
+        },
+        {
+          "id": "d38s1i4",
+          "type": "error-find",
+          "prompt_en": "One thing I'd point is the missing null check in the handler.",
+          "tokens": ["One", "thing", "I'd", "point", "is", "the", "missing", "null", "check", "in", "the", "handler"],
+          "error_index": 3,
+          "options": ["mark", "flag", "show"],
+          "answer": "flag",
+          "explain_en": "'One thing I'd flag is…' names an issue without making it an accusation.",
+          "explain_bn": "'One thing I'd flag is…' — অভিযোগ না করে সমস্যাটা চিহ্নিত করে।"
+        },
+        {
+          "id": "d38s1i5",
+          "type": "error-find",
+          "prompt_en": "It might be nicer to move this logic into a service class.",
+          "tokens": ["It", "might", "be", "nicer", "to", "move", "this", "logic", "into", "a", "service", "class"],
+          "error_index": 3,
+          "options": ["cleaner", "prettier", "lovelier"],
+          "answer": "cleaner",
+          "explain_en": "'Cleaner' is the review word for structure; 'nicer' sounds like taste, not engineering.",
+          "explain_bn": "কোড রিভিউতে গঠনের জন্য 'cleaner' বলা হয়; 'nicer' রুচির কথা মনে করায়, ইঞ্জিনিয়ারিংয়ের নয়।"
+        },
+        {
+          "id": "d38s1i6",
+          "type": "error-find",
+          "prompt_en": "Maybe we could stop off on that migration until the client confirms.",
+          "tokens": ["Maybe", "we", "could", "stop", "off", "on", "that", "migration", "until", "the", "client", "confirms"],
+          "error_index": 3,
+          "options": ["pause", "hold", "wait"],
+          "answer": "hold",
+          "explain_en": "The phrasal verb is 'hold off on something' — delay it without cancelling it.",
+          "explain_bn": "Phrasal verb-টা হলো 'hold off on something' — বাতিল না করে দেরি করা।"
+        },
+        {
+          "id": "d38s1i7",
+          "type": "error-find",
+          "prompt_en": "Your naming in the handler class is confusing.",
+          "tokens": ["Your", "naming", "in", "the", "handler", "class", "is", "confusing"],
+          "error_index": 0,
+          "options": ["This", "The", "Our"],
+          "answer": "The",
+          "explain_en": "'Your' makes it about the person; 'the naming' keeps the feedback on the code.",
+          "explain_bn": "'Your' বললে কথাটা ব্যক্তির উপর যায়; 'the naming' বললে ফিডব্যাক কোডেই থাকে।"
+        },
+        {
+          "id": "d38s1i8",
+          "type": "error-find",
+          "prompt_en": "I demand that we roll this back before Friday.",
+          "tokens": ["I", "demand", "that", "we", "roll", "this", "back", "before", "Friday"],
+          "error_index": 1,
+          "options": ["insist", "suggest", "require"],
+          "answer": "suggest",
+          "explain_en": "'Demand' is an ultimatum; 'suggest' still puts the option on the table.",
+          "explain_bn": "'Demand' আলটিমেটাম; 'suggest' বিকল্পটা আলোচনায় রাখে।"
+        },
+        {
+          "id": "d38s1i9",
+          "type": "error-find",
+          "prompt_en": "I'd like to raise an objection to the current approach.",
+          "tokens": ["I'd", "like", "to", "raise", "an", "objection", "to", "the", "current", "approach"],
+          "error_index": 5,
+          "options": ["complaint", "protest", "concern"],
+          "answer": "concern",
+          "explain_en": "You raise a concern at work; 'objection' belongs in a courtroom.",
+          "explain_bn": "কাজের জায়গায় 'concern' তোলা হয়; 'objection' আদালতের শব্দ।"
+        },
+        {
+          "id": "d38s1i10",
+          "type": "error-find",
+          "prompt_en": "That refactor will break every integration test we have.",
+          "tokens": ["That", "refactor", "will", "break", "every", "integration", "test", "we", "have"],
+          "error_index": 2,
+          "options": ["could", "must", "shall"],
+          "answer": "could",
+          "explain_en": "'Could break' warns about a risk; 'will break' predicts failure and invites a fight.",
+          "explain_bn": "'Could break' ঝুঁকির কথা বলে; 'will break' ব্যর্থতা ঘোষণা করে, তর্ক ডেকে আনে।"
+        }
+      ]
+    },
+    {
+      "id": "d38s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d38s2i1",
+          "type": "mcq",
+          "prompt_en": "I see what you mean, ___ I'm still worried about the retry storm.",
+          "options": ["so", "therefore", "but", "hence"],
+          "answer": "but",
+          "explain_en": "Acknowledge, then turn — 'but' carries the pushback.",
+          "explain_bn": "আগে স্বীকার, তারপর মোড় — আপত্তিটা 'but' বহন করে।"
+        },
+        {
+          "id": "d38s2i2",
+          "type": "mcq",
+          "prompt_en": "___ we considered doing this with a Flow instead?",
+          "options": ["Did", "Have", "Are", "Were"],
+          "answer": "Have",
+          "explain_en": "'Have we considered…?' offers your idea as a team question, not a correction.",
+          "explain_bn": "'Have we considered…?' তোমার আইডিয়াকে দলের প্রশ্ন করে তোলে, সংশোধন নয়।"
+        },
+        {
+          "id": "d38s2i3",
+          "type": "mcq",
+          "prompt_en": "My ___ is that we'd be locking ourselves into the managed package.",
+          "options": ["anger", "complaint", "protest", "concern"],
+          "answer": "concern",
+          "explain_en": "'My concern is that…' names the risk without emotion.",
+          "explain_bn": "'My concern is that…' আবেগ ছাড়াই ঝুঁকিটা তুলে ধরে।"
+        },
+        {
+          "id": "d38s2i4",
+          "type": "mcq",
+          "prompt_en": "One thing I'd ___ is the missing test coverage on the batch class.",
+          "options": ["flag", "report", "blame", "accuse"],
+          "answer": "flag",
+          "explain_en": "'Flag' marks the issue for attention; the others point at a culprit.",
+          "explain_bn": "'Flag' সমস্যাটা নজরে আনে; বাকিগুলো দোষী খোঁজে।"
+        },
+        {
+          "id": "d38s2i5",
+          "type": "mcq",
+          "prompt_en": "That's ___, though I'd still like a rollback plan.",
+          "options": ["obvious", "fair", "final", "accurate"],
+          "answer": "fair",
+          "explain_en": "'That's fair, though…' concedes the point and keeps your condition.",
+          "explain_bn": "'That's fair, though…' যুক্তিটা মেনে নেয়, তবু নিজের শর্ত ধরে রাখে।"
+        },
+        {
+          "id": "d38s2i6",
+          "type": "fill-bank",
+          "prompt_en": "I'm not ___ that a queueable solves the timeout.",
+          "options": ["convinced", "convincing", "agreed"],
+          "answer": "convinced",
+          "explain_en": "'I'm not convinced that…' is doubt about the idea, not about the person.",
+          "explain_bn": "'I'm not convinced that…' আইডিয়া নিয়ে সন্দেহ প্রকাশ করে, ব্যক্তিকে নিয়ে নয়।"
+        },
+        {
+          "id": "d38s2i7",
+          "type": "fill-bank",
+          "prompt_en": "It might be cleaner ___ move this into a helper.",
+          "options": ["for", "that", "to"],
+          "answer": "to",
+          "explain_en": "'It might be cleaner to + base verb' is the review formula.",
+          "explain_bn": "কোড রিভিউর সূত্র: 'It might be cleaner to + base verb'।"
+        },
+        {
+          "id": "d38s2i8",
+          "type": "fill-bank",
+          "prompt_en": "Could we ___ off on the migration until the audit closes?",
+          "options": ["hold", "keep", "stay"],
+          "answer": "hold",
+          "explain_en": "'Could we hold off on…?' asks for a delay without blaming the plan.",
+          "explain_bn": "'Could we hold off on…?' পরিকল্পনাকে দোষ না দিয়েই দেরি চায়।"
+        },
+        {
+          "id": "d38s2i9",
+          "type": "fill-bank",
+          "prompt_en": "I'd push ___ on that estimate — QA needs two days.",
+          "options": ["away", "back", "down"],
+          "answer": "back",
+          "explain_en": "'Push back on' is the professional way to say you disagree with a decision.",
+          "explain_bn": "সিদ্ধান্তের সাথে দ্বিমত জানানোর পেশাদার প্রকাশ 'push back on'।"
+        },
+        {
+          "id": "d38s2i10",
+          "type": "fill-bank",
+          "prompt_en": "That's a fair point, ___ I'd still want a test around it.",
+          "options": ["though", "despite", "besides"],
+          "answer": "though",
+          "explain_en": "End-position 'though' softens the objection that follows the concession.",
+          "explain_bn": "ছাড় দেওয়ার পরে আসা আপত্তিটা 'though' দিয়ে নরম হয়।"
+        }
+      ]
+    },
+    {
+      "id": "d38s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d38s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["mean,", "see", "I'd", "what", "but", "I", "add", "still", "test", "you", "a", "."],
+          "answer": "I see what you mean, but I'd still add a test .",
+          "explain_en": "Acknowledge first, then state your condition.",
+          "explain_bn": "আগে স্বীকার করো, তারপর নিজের শর্ত বলো।"
+        },
+        {
+          "id": "d38s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["convinced", "will", "I'm", "rows", "not", "past", "scale", "million", "this", "a", "."],
+          "answer": "I'm not convinced this will scale past a million rows .",
+          "explain_en": "Doubt the design, not the designer.",
+          "explain_bn": "ডিজাইন নিয়ে সন্দেহ করো, ডিজাইনারকে নিয়ে নয়।"
+        },
+        {
+          "id": "d38s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["that", "concern", "blocking", "My", "release", "we'd", "is", "the", "be", "."],
+          "answer": "My concern is that we'd be blocking the release .",
+          "explain_en": "'My concern is that…' turns an objection into a named risk.",
+          "explain_bn": "'My concern is that…' আপত্তিকে স্পষ্ট ঝুঁকিতে বদলে দেয়।"
+        },
+        {
+          "id": "d38s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["flag", "thing", "missing", "One", "coverage", "I'd", "the", "test", "is", "."],
+          "answer": "One thing I'd flag is the missing test coverage .",
+          "explain_en": "A flag reads as helpful; a verdict reads as an attack.",
+          "explain_bn": "Flag শোনায় সাহায্যের মতো; রায় শোনায় আক্রমণের মতো।"
+        },
+        {
+          "id": "d38s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["cleaner", "move", "might", "helper", "It", "into", "be", "class", "this", "a", "to", "."],
+          "answer": "It might be cleaner to move this into a helper class .",
+          "explain_en": "Suggest the improvement as an option, not an instruction.",
+          "explain_bn": "উন্নতির প্রস্তাবটা নির্দেশ নয়, বিকল্প হিসেবে দাও।"
+        },
+        {
+          "id": "d38s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["hold", "like", "migration", "I'd", "until", "off", "Monday", "to", "the", "on", "."],
+          "answer": "I'd like to hold off on the migration until Monday .",
+          "explain_en": "'Hold off on' delays the work without killing it.",
+          "explain_bn": "'Hold off on' কাজটা বাতিল না করে পিছিয়ে দেয়।"
+        },
+        {
+          "id": "d38s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["though", "fair,", "I'd", "plan", "That's", "want", "rollback", "still", "a", "."],
+          "answer": "That's fair, though I'd still want a rollback plan .",
+          "explain_en": "Concede the point, keep your condition — and contract 'that's'.",
+          "explain_bn": "যুক্তিটা মেনে নাও, শর্ত ধরে রাখো — আর 'that's' contraction ব্যবহার করো।"
+        },
+        {
+          "id": "d38s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["push", "that", "I'd", "now", "back", "estimate", "on", "for", "."],
+          "answer": "I'd push back on that estimate for now .",
+          "explain_en": "'I'd push back on…' disagrees clearly but stays collaborative.",
+          "explain_bn": "'I'd push back on…' স্পষ্ট দ্বিমত জানায়, তবু সহযোগিতার সুর রাখে।"
+        },
+        {
+          "id": "d38s3i9",
+          "type": "speak",
+          "prompt_en": "Push back on this: your tech lead says 'We'll skip code review this sprint to hit the deadline.' Say your objection in standup.",
+          "model_en": "I see what you mean about the deadline, but my concern is that we'd be shipping untested code.",
+          "cloze": ["I see what you mean", "my concern is that"],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d38s3i10",
+          "type": "speak",
+          "prompt_en": "Give this feedback kindly: a junior dev's PR has no tests. Say it as a review comment.",
+          "model_en": "One thing I'd flag is the missing tests — it might be cleaner to add a couple before we merge.",
+          "cloze": ["One thing I'd flag", "it might be cleaner to"],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d38s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d38s4i1",
+          "type": "error-find",
+          "prompt_en": "Have we regarded the impact on the reporting layer.",
+          "tokens": ["Have", "we", "regarded", "the", "impact", "on", "the", "reporting", "layer"],
+          "error_index": 2,
+          "options": ["noticed", "considered", "watched"],
+          "answer": "considered",
+          "explain_en": "'Have we considered…' is the set phrase for raising an option with the team.",
+          "explain_bn": "দলকে বিকল্প জানানোর নির্দিষ্ট ফ্রেজ 'Have we considered…'।"
+        },
+        {
+          "id": "d38s4i2",
+          "type": "error-find",
+          "prompt_en": "My worry is that the client will see the downtime.",
+          "tokens": ["My", "worry", "is", "that", "the", "client", "will", "see", "the", "downtime"],
+          "error_index": 1,
+          "options": ["concern", "fear", "panic"],
+          "answer": "concern",
+          "explain_en": "'Concern' sounds measured; 'worry' sounds personal and anxious.",
+          "explain_bn": "'Concern' পরিমিত শোনায়; 'worry' ব্যক্তিগত ও উদ্বিগ্ন শোনায়।"
+        },
+        {
+          "id": "d38s4i3",
+          "type": "error-find",
+          "prompt_en": "You should rewrite this whole class.",
+          "tokens": ["You", "should", "rewrite", "this", "whole", "class"],
+          "error_index": 0,
+          "options": ["They", "One", "We"],
+          "answer": "We",
+          "explain_en": "'We' shares the work; 'you' hands down an order in a review.",
+          "explain_bn": "'We' কাজটা ভাগ করে নেয়; রিভিউতে 'you' আদেশের মতো শোনায়।"
+        },
+        {
+          "id": "d38s4i4",
+          "type": "mcq",
+          "prompt_en": "I'd ___ back on that timeline — QA needs two days.",
+          "options": ["take", "hold", "push", "step"],
+          "answer": "push",
+          "explain_en": "'Push back on' = disagree with a decision, professionally.",
+          "explain_bn": "'Push back on' মানে পেশাদারভাবে সিদ্ধান্তের সাথে দ্বিমত করা।"
+        },
+        {
+          "id": "d38s4i5",
+          "type": "mcq",
+          "prompt_en": "___ what you mean, but the data model still worries me.",
+          "options": ["I saw", "I see", "I am seeing", "I have seen"],
+          "answer": "I see",
+          "explain_en": "'I see what you mean' is fixed in the present simple.",
+          "explain_bn": "'I see what you mean' সবসময় present simple-এ বসে।"
+        },
+        {
+          "id": "d38s4i6",
+          "type": "mcq",
+          "prompt_en": "It might be ___ to keep that logic in one place.",
+          "options": ["clean", "cleanly", "cleaner", "cleanest"],
+          "answer": "cleaner",
+          "explain_en": "The comparative suggests an improvement over what's there now.",
+          "explain_bn": "Comparative রূপটা বোঝায় বর্তমান অবস্থার চেয়ে উন্নতি।"
+        },
+        {
+          "id": "d38s4i7",
+          "type": "fill-bank",
+          "prompt_en": "Could we ___ off on that deploy until Monday?",
+          "options": ["put", "hold", "stop"],
+          "answer": "hold",
+          "explain_en": "'Hold off on' = pause it for now.",
+          "explain_bn": "'Hold off on' মানে আপাতত থামিয়ে রাখা।"
+        },
+        {
+          "id": "d38s4i8",
+          "type": "fill-bank",
+          "prompt_en": "I'm not ___ that we need a new object for this.",
+          "options": ["convince", "convincing", "convinced"],
+          "answer": "convinced",
+          "explain_en": "'I'm not convinced that…' is soft, clear disagreement.",
+          "explain_bn": "'I'm not convinced that…' নরম কিন্তু স্পষ্ট দ্বিমত।"
+        },
+        {
+          "id": "d38s4i9",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["convinced", "that", "I'm", "value", "not", "much", "adds", "."],
+          "answer": "I'm not convinced that adds much value .",
+          "explain_en": "Contract 'I am' — the hedge only sounds natural as 'I'm'.",
+          "explain_bn": "'I am' contract করো — হেজটা 'I'm' রূপেই স্বাভাবিক শোনায়।"
+        },
+        {
+          "id": "d38s4i10",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": ["though", "fair,", "test", "That's", "I'd", "it", "still", "."],
+          "answer": "That's fair, though I'd still test it .",
+          "explain_en": "Concede first, then hold your line with 'though'.",
+          "explain_bn": "আগে ছাড় দাও, তারপর 'though' দিয়ে নিজের অবস্থান ধরে রাখো।"
+        }
+      ]
+    }
+  ]
+}

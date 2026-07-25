@@ -1,0 +1,776 @@
+{
+  "schemaVersion": "2.0",
+  "day": 32,
+  "theme": "Articles: abstract, uncountable & general",
+  "pillar": "precision",
+  "star": true,
+  "rule_en": "Abstract and uncountable nouns — advice, feedback, information, progress, news, software — never take 'a/an'; use 'some' or nothing, and 'the' only when you mean a specific one. Plural generalizations, institutions like 'at university' or 'in hospital', and fixed phrases like 'in production', 'on call' and 'by design' take no article at all.",
+  "rule_bn": "Advice, feedback, information, progress, news, software — এসব অগণনীয়, তাই কখনোই 'a/an' বসে না; দরকার হলে 'some' বা কিছুই না, আর নির্দিষ্ট কিছু বোঝালে তবেই 'the'। সাধারণ বহুবচন, 'at university' বা 'in hospital'-এর মতো প্রতিষ্ঠান, এবং 'in production', 'on call', 'by design'-এর মতো নির্দিষ্ট বাগধারায় কোনো article বসে না।",
+  "sessions": [
+    {
+      "id": "d32s1",
+      "title": "Spot the Error",
+      "type": "error-find",
+      "instruction_en": "Tap the wrong word, then choose the fix.",
+      "items": [
+        {
+          "id": "d32s1i1",
+          "type": "error-find",
+          "prompt_en": "We pushed the fix to the production at midnight.",
+          "tokens": [
+            "We",
+            "pushed",
+            "the",
+            "fix",
+            "to",
+            "the production",
+            "at",
+            "midnight"
+          ],
+          "error_index": 5,
+          "options": [
+            "productions",
+            "production",
+            "a production"
+          ],
+          "answer": "production",
+          "explain_en": "'In/to production' is a fixed phrase with no article.",
+          "explain_bn": "'To production' একটি নির্দিষ্ট বাগধারা — এখানে article বসে না।"
+        },
+        {
+          "id": "d32s1i2",
+          "type": "error-find",
+          "prompt_en": "He shared an information about the outage on Slack.",
+          "tokens": [
+            "He",
+            "shared",
+            "an",
+            "information",
+            "about",
+            "the",
+            "outage",
+            "on",
+            "Slack"
+          ],
+          "error_index": 2,
+          "options": [
+            "the",
+            "some",
+            "an"
+          ],
+          "answer": "some",
+          "explain_en": "'Information' is uncountable — 'some information', never 'an information'.",
+          "explain_bn": "'Information' অগণনীয় — 'an information' নয়, 'some information'।"
+        },
+        {
+          "id": "d32s1i3",
+          "type": "error-find",
+          "prompt_en": "The client asked for a feedback on the prototype.",
+          "tokens": [
+            "The",
+            "client",
+            "asked",
+            "for",
+            "a",
+            "feedback",
+            "on",
+            "the",
+            "prototype"
+          ],
+          "error_index": 4,
+          "options": [
+            "some",
+            "an",
+            "a"
+          ],
+          "answer": "some",
+          "explain_en": "'Feedback' is uncountable — no 'a'.",
+          "explain_bn": "'Feedback' অগণনীয়, তাই 'a' বসে না।"
+        },
+        {
+          "id": "d32s1i4",
+          "type": "error-find",
+          "prompt_en": "We have made a steady progress on the data model.",
+          "tokens": [
+            "We",
+            "have",
+            "made",
+            "a steady",
+            "progress",
+            "on",
+            "the",
+            "data",
+            "model"
+          ],
+          "error_index": 3,
+          "options": [
+            "the steady",
+            "steady",
+            "steadily"
+          ],
+          "answer": "steady",
+          "explain_en": "'Progress' is uncountable — 'make steady progress', not 'a progress'.",
+          "explain_bn": "'Progress' অগণনীয় — 'a progress' নয়, 'steady progress'।"
+        },
+        {
+          "id": "d32s1i5",
+          "type": "error-find",
+          "prompt_en": "My sister is in the hospital for a minor operation.",
+          "tokens": [
+            "My",
+            "sister",
+            "is",
+            "in",
+            "the hospital",
+            "for",
+            "a",
+            "minor",
+            "operation"
+          ],
+          "error_index": 4,
+          "options": [
+            "hospitals",
+            "a hospital",
+            "hospital"
+          ],
+          "answer": "hospital",
+          "explain_en": "'In hospital' means there as a patient — the institution takes no article.",
+          "explain_bn": "রোগী হিসেবে ভর্তি বোঝাতে 'in hospital' — প্রতিষ্ঠানের নামে article বসে না।"
+        },
+        {
+          "id": "d32s1i6",
+          "type": "error-find",
+          "prompt_en": "I studied computer science at the university before I moved into consulting.",
+          "tokens": [
+            "I",
+            "studied",
+            "computer",
+            "science",
+            "at",
+            "the university",
+            "before",
+            "I",
+            "moved",
+            "into",
+            "consulting"
+          ],
+          "error_index": 5,
+          "options": [
+            "a university",
+            "university",
+            "universities"
+          ],
+          "answer": "university",
+          "explain_en": "'At university' means as a student — no article for the institution.",
+          "explain_bn": "ছাত্র হিসেবে পড়ার কথা বোঝাতে 'at university' — এখানে article বসে না।"
+        },
+        {
+          "id": "d32s1i7",
+          "type": "error-find",
+          "prompt_en": "The good architects ask about the data volume first.",
+          "tokens": [
+            "The good",
+            "architects",
+            "ask",
+            "about",
+            "the",
+            "data",
+            "volume",
+            "first"
+          ],
+          "error_index": 0,
+          "options": [
+            "A good",
+            "The goods",
+            "Good"
+          ],
+          "answer": "Good",
+          "explain_en": "A generalization about architects in general → plural, no article.",
+          "explain_bn": "সাধারণভাবে সব ভালো architect-এর কথা — বহুবচনে article লাগে না।"
+        },
+        {
+          "id": "d32s1i8",
+          "type": "error-find",
+          "prompt_en": "That timeout is by the design and not a bug.",
+          "tokens": [
+            "That",
+            "timeout",
+            "is",
+            "by",
+            "the design",
+            "and",
+            "not",
+            "a",
+            "bug"
+          ],
+          "error_index": 4,
+          "options": [
+            "design",
+            "designs",
+            "a design"
+          ],
+          "answer": "design",
+          "explain_en": "'By design' is a fixed phrase — no article.",
+          "explain_bn": "'By design' একটি নির্দিষ্ট বাগধারা — এখানে article বসে না।"
+        },
+        {
+          "id": "d32s1i9",
+          "type": "error-find",
+          "prompt_en": "We bought a new software for the QA team.",
+          "tokens": [
+            "We",
+            "bought",
+            "a",
+            "new",
+            "software",
+            "for",
+            "the",
+            "QA",
+            "team"
+          ],
+          "error_index": 2,
+          "options": [
+            "the",
+            "an",
+            "some"
+          ],
+          "answer": "some",
+          "explain_en": "'Software' is uncountable — 'some new software' or 'a new tool'.",
+          "explain_bn": "'Software' অগণনীয় — 'a new software' নয়, 'some new software'।"
+        },
+        {
+          "id": "d32s1i10",
+          "type": "error-find",
+          "prompt_en": "I am on the call this weekend, so ping me anytime.",
+          "tokens": [
+            "I",
+            "am",
+            "on",
+            "the call",
+            "this",
+            "weekend,",
+            "so",
+            "ping",
+            "me",
+            "anytime"
+          ],
+          "error_index": 3,
+          "options": [
+            "calls",
+            "call",
+            "a call"
+          ],
+          "answer": "call",
+          "explain_en": "'On call' means on duty; 'on the call' means in a specific meeting.",
+          "explain_bn": "'On call' মানে ডিউটিতে আছো; 'on the call' মানে নির্দিষ্ট একটা মিটিংয়ে আছো।"
+        }
+      ]
+    },
+    {
+      "id": "d32s2",
+      "title": "Choose & Fill",
+      "type": "mcq",
+      "instruction_en": "Tap the correct option or chip.",
+      "items": [
+        {
+          "id": "d32s2i1",
+          "type": "mcq",
+          "prompt_en": "Thanks for ___ feedback on the design doc.",
+          "options": [
+            "a",
+            "the",
+            "an",
+            "—"
+          ],
+          "answer": "the",
+          "explain_en": "Specific feedback you both know about → 'the', even though it is uncountable.",
+          "explain_bn": "নির্দিষ্ট feedback বোঝাচ্ছে, তাই অগণনীয় হলেও 'the' বসে।"
+        },
+        {
+          "id": "d32s2i2",
+          "type": "mcq",
+          "prompt_en": "We are making ___ good progress on the integration.",
+          "options": [
+            "a",
+            "the",
+            "—",
+            "an"
+          ],
+          "answer": "—",
+          "explain_en": "'Progress' is uncountable — 'make good progress', never 'a good progress' — no article here.",
+          "explain_bn": "'Progress' অগণনীয় — 'a good progress' নয়, শুধু 'good progress'।"
+        },
+        {
+          "id": "d32s2i3",
+          "type": "mcq",
+          "prompt_en": "The regression only happens in ___ production.",
+          "options": [
+            "the",
+            "a",
+            "—",
+            "an"
+          ],
+          "answer": "—",
+          "explain_en": "'In production' is a fixed phrase with no article.",
+          "explain_bn": "'In production' নির্দিষ্ট বাগধারা — article ছাড়াই বসে।"
+        },
+        {
+          "id": "d32s2i4",
+          "type": "mcq",
+          "prompt_en": "I met him at ___ hospital where my mother works.",
+          "options": [
+            "—",
+            "a",
+            "the",
+            "an"
+          ],
+          "answer": "the",
+          "explain_en": "Here you mean one specific building, not the institution → 'the'.",
+          "explain_bn": "এখানে নির্দিষ্ট একটি ভবনের কথা, প্রতিষ্ঠান হিসেবে নয় — তাই 'the'।"
+        },
+        {
+          "id": "d32s2i5",
+          "type": "mcq",
+          "prompt_en": "In my experience, ___ clients rarely read release notes.",
+          "options": [
+            "the",
+            "a",
+            "some",
+            "—"
+          ],
+          "answer": "—",
+          "explain_en": "Clients in general → plural noun with no article.",
+          "explain_bn": "সাধারণভাবে সব client বোঝাচ্ছে — বহুবচনে article লাগে না।"
+        },
+        {
+          "id": "d32s2i6",
+          "type": "fill-bank",
+          "prompt_en": "The tests pass locally but fail in ___ production.",
+          "options": [
+            "the",
+            "—",
+            "a"
+          ],
+          "answer": "—",
+          "explain_en": "'In production' takes no article.",
+          "explain_bn": "'In production'-এ কোনো article বসে না।"
+        },
+        {
+          "id": "d32s2i7",
+          "type": "fill-bank",
+          "prompt_en": "Can you send me ___ information about the API limits?",
+          "options": [
+            "an",
+            "some",
+            "the"
+          ],
+          "answer": "some",
+          "explain_en": "'Information' is uncountable — 'some information'.",
+          "explain_bn": "'Information' অগণনীয় — তাই 'some information'।"
+        },
+        {
+          "id": "d32s2i8",
+          "type": "fill-bank",
+          "prompt_en": "The field is read-only by ___ design.",
+          "options": [
+            "a",
+            "the",
+            "—"
+          ],
+          "answer": "—",
+          "explain_en": "'By design' is fixed — no article.",
+          "explain_bn": "'By design' নির্দিষ্ট বাগধারা — article ছাড়া।"
+        },
+        {
+          "id": "d32s2i9",
+          "type": "fill-bank",
+          "prompt_en": "He is on ___ call until Monday morning.",
+          "options": [
+            "a",
+            "—",
+            "the"
+          ],
+          "answer": "—",
+          "explain_en": "'On call' means on duty — no article.",
+          "explain_bn": "'On call' মানে ডিউটিতে থাকা — এখানে article বসে না।"
+        },
+        {
+          "id": "d32s2i10",
+          "type": "fill-bank",
+          "prompt_en": "___ documentation he wrote for the connector saved us a week.",
+          "options": [
+            "Some",
+            "The",
+            "A"
+          ],
+          "answer": "The",
+          "explain_en": "'He wrote for the connector' identifies it, so an uncountable noun can take 'the'.",
+          "explain_bn": "'He wrote for the connector' অংশটি নির্দিষ্ট করে দিচ্ছে, তাই অগণনীয় শব্দের আগেও 'the' বসে।"
+        }
+      ]
+    },
+    {
+      "id": "d32s3",
+      "title": "Build It",
+      "type": "build",
+      "instruction_en": "Tap the tiles in the right order. For speak items, say it out loud.",
+      "items": [
+        {
+          "id": "d32s3i1",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "progress",
+            "still",
+            "We",
+            "the",
+            "making",
+            "on",
+            "are",
+            "migration",
+            "."
+          ],
+          "answer": "We are still making progress on the migration .",
+          "explain_en": "'Progress' is uncountable → no article; the migration is specific → 'the'.",
+          "explain_bn": "'Progress' অগণনীয় তাই article নেই; নির্দিষ্ট migration বোঝাচ্ছে তাই 'the'।"
+        },
+        {
+          "id": "d32s3i2",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "shows",
+            "in",
+            "The",
+            "production",
+            "only",
+            "up",
+            "bug",
+            "."
+          ],
+          "answer": "The bug only shows up in production .",
+          "explain_en": "'In production' is a fixed phrase with no article.",
+          "explain_bn": "'In production' বাগধারা — এখানে article বসে না।"
+        },
+        {
+          "id": "d32s3i3",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "useful",
+            "some",
+            "He",
+            "advice",
+            "gave",
+            "scoping",
+            "me",
+            "about",
+            "."
+          ],
+          "answer": "He gave me some useful advice about scoping .",
+          "explain_en": "'Advice' is uncountable → 'some advice', never 'an advice'.",
+          "explain_bn": "'Advice' অগণনীয় — 'an advice' নয়, 'some advice'।"
+        },
+        {
+          "id": "d32s3i4",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "design",
+            "is",
+            "That",
+            "not",
+            "by",
+            "bug",
+            "timeout",
+            "and",
+            "a",
+            "."
+          ],
+          "answer": "That timeout is by design and not a bug .",
+          "explain_en": "'By design' takes no article, but 'a bug' is countable and new.",
+          "explain_bn": "'By design'-এ article নেই, কিন্তু 'bug' গণনীয় ও নতুন তাই 'a bug'।"
+        },
+        {
+          "id": "d32s3i5",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "call",
+            "until",
+            "She",
+            "morning",
+            "on",
+            "Monday",
+            "is",
+            "."
+          ],
+          "answer": "She is on call until Monday morning .",
+          "explain_en": "'On call' is fixed — no article.",
+          "explain_bn": "'On call' নির্দিষ্ট বাগধারা — article ছাড়া।"
+        },
+        {
+          "id": "d32s3i6",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "feedback",
+            "ask",
+            "Good",
+            "early",
+            "for",
+            "engineers",
+            "."
+          ],
+          "answer": "Good engineers ask for feedback early .",
+          "explain_en": "General plural subject and uncountable object → no articles.",
+          "explain_bn": "সাধারণ বহুবচন কর্তা আর অগণনীয় কর্ম — দুটোতেই article লাগে না।"
+        },
+        {
+          "id": "d32s3i7",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "information",
+            "I",
+            "before",
+            "need",
+            "this",
+            "more",
+            "estimate",
+            "I",
+            "."
+          ],
+          "answer": "I need more information before I estimate this .",
+          "explain_en": "Use 'more information', not 'more informations' or 'an information'.",
+          "explain_bn": "'Informations' বা 'an information' নয় — 'more information' বলতে হয়।"
+        },
+        {
+          "id": "d32s3i8",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "hospital",
+            "was",
+            "My",
+            "for",
+            "in",
+            "weeks",
+            "brother",
+            "two",
+            "."
+          ],
+          "answer": "My brother was in hospital for two weeks .",
+          "explain_en": "'In hospital' as a patient → no article.",
+          "explain_bn": "রোগী হিসেবে ভর্তি বোঝাতে 'in hospital' — article ছাড়া।"
+        },
+        {
+          "id": "d32s3i9",
+          "type": "speak",
+          "prompt_en": "Say one sentence about progress on something you are working on. Use 'progress' with no article.",
+          "model_en": "We made good progress on the deployment pipeline this sprint.",
+          "cloze": [
+            "good progress"
+          ],
+          "explain_en": "",
+          "explain_bn": ""
+        },
+        {
+          "id": "d32s3i10",
+          "type": "speak",
+          "prompt_en": "Say one sentence using two fixed phrases: 'by design' and 'in production'.",
+          "model_en": "The retry logic is slow by design, and it only matters in production.",
+          "cloze": [
+            "by design",
+            "in production"
+          ],
+          "explain_en": "",
+          "explain_bn": ""
+        }
+      ]
+    },
+    {
+      "id": "d32s4",
+      "title": "Mixed Drill",
+      "type": "mixed",
+      "instruction_en": "All four types, shuffled. Beat the clock.",
+      "items": [
+        {
+          "id": "d32s4i1",
+          "type": "error-find",
+          "prompt_en": "She sent me a feedback after the demo.",
+          "tokens": [
+            "She",
+            "sent",
+            "me",
+            "a",
+            "feedback",
+            "after",
+            "the",
+            "demo"
+          ],
+          "error_index": 3,
+          "options": [
+            "the",
+            "some",
+            "an"
+          ],
+          "answer": "some",
+          "explain_en": "'Feedback' is uncountable — no 'a'.",
+          "explain_bn": "'Feedback' অগণনীয় — 'a' বসে না।"
+        },
+        {
+          "id": "d32s4i2",
+          "type": "error-find",
+          "prompt_en": "The rollback is running on the production right now.",
+          "tokens": [
+            "The",
+            "rollback",
+            "is",
+            "running",
+            "on",
+            "the production",
+            "right",
+            "now"
+          ],
+          "error_index": 5,
+          "options": [
+            "a production",
+            "productions",
+            "production"
+          ],
+          "answer": "production",
+          "explain_en": "'On production' takes no article in this fixed sense.",
+          "explain_bn": "এই অর্থে 'production'-এর আগে কোনো article বসে না।"
+        },
+        {
+          "id": "d32s4i3",
+          "type": "error-find",
+          "prompt_en": "He was at the university when he first learned Apex.",
+          "tokens": [
+            "He",
+            "was",
+            "at",
+            "the university",
+            "when",
+            "he",
+            "first",
+            "learned",
+            "Apex"
+          ],
+          "error_index": 3,
+          "options": [
+            "university",
+            "universities",
+            "a university"
+          ],
+          "answer": "university",
+          "explain_en": "'At university' as a student → no article.",
+          "explain_bn": "ছাত্র হিসেবে বোঝাতে 'at university' — article ছাড়া।"
+        },
+        {
+          "id": "d32s4i4",
+          "type": "mcq",
+          "prompt_en": "Can you share ___ information you got from the client?",
+          "options": [
+            "a",
+            "the",
+            "an",
+            "—"
+          ],
+          "answer": "the",
+          "explain_en": "'You got from the client' identifies it → 'the information'.",
+          "explain_bn": "'You got from the client' নির্দিষ্ট করে দিচ্ছে — তাই 'the information'।"
+        },
+        {
+          "id": "d32s4i5",
+          "type": "mcq",
+          "prompt_en": "We deploy ___ hotfixes only after a smoke test.",
+          "options": [
+            "the",
+            "a",
+            "—",
+            "an"
+          ],
+          "answer": "—",
+          "explain_en": "Hotfixes in general → plural noun, no article.",
+          "explain_bn": "সাধারণভাবে সব hotfix বোঝাচ্ছে — বহুবচনে article লাগে না।"
+        },
+        {
+          "id": "d32s4i6",
+          "type": "mcq",
+          "prompt_en": "It was ___ honest mistake in the field mapping.",
+          "options": [
+            "a",
+            "the",
+            "an",
+            "—"
+          ],
+          "answer": "an",
+          "explain_en": "'Honest' begins with a vowel sound → 'an'.",
+          "explain_bn": "'Honest'-এর শুরুতে স্বরধ্বনি — তাই 'an'।"
+        },
+        {
+          "id": "d32s4i7",
+          "type": "fill-bank",
+          "prompt_en": "There is ___ news about the contract renewal.",
+          "options": [
+            "a",
+            "some",
+            "the"
+          ],
+          "answer": "some",
+          "explain_en": "'News' is uncountable — 'some news', never 'a news'.",
+          "explain_bn": "'News' অগণনীয় — 'a news' নয়, 'some news'।"
+        },
+        {
+          "id": "d32s4i8",
+          "type": "fill-bank",
+          "prompt_en": "The API is rate limited by ___ design.",
+          "options": [
+            "the",
+            "a",
+            "—"
+          ],
+          "answer": "—",
+          "explain_en": "'By design' is a fixed phrase — no article.",
+          "explain_bn": "'By design' নির্দিষ্ট বাগধারা — article বসে না।"
+        },
+        {
+          "id": "d32s4i9",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "send",
+            "the",
+            "I",
+            "information",
+            "you",
+            "tomorrow",
+            "will",
+            "."
+          ],
+          "answer": "I will send you the information tomorrow .",
+          "explain_en": "Specific information you both know about → 'the', with no plural 's'.",
+          "explain_bn": "নির্দিষ্ট information বোঝাচ্ছে তাই 'the', আর বহুবচনের 's' বসে না।"
+        },
+        {
+          "id": "d32s4i10",
+          "type": "build",
+          "prompt_en": "Build the sentence.",
+          "tiles": [
+            "release",
+            "Most",
+            "notes",
+            "ignore",
+            "clients",
+            "."
+          ],
+          "answer": "Most clients ignore release notes .",
+          "explain_en": "A generalization → plural nouns with no article.",
+          "explain_bn": "সাধারণ কথা — বহুবচন শব্দের আগে কোনো article বসে না।"
+        }
+      ]
+    }
+  ]
+}
