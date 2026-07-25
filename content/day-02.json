@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say one sentence about a task you finished yesterday, using the past simple.",
           "model_en": "I closed three Jira tickets yesterday.",
+          "cloze": ["closed"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one sentence about your career so far using the present perfect with 'for' or 'since'.",
           "model_en": "I have been a Salesforce developer for five years.",
+          "cloze": ["have been"],
           "explain_en": "",
           "explain_bn": ""
         }

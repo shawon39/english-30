@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Make two guesses about why a test is failing, using 'might' and 'could'.",
           "model_en": "It might be a stale fixture, or it could be a timezone bug.",
+          "cloze": ["might be", "could be"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one thing that may change in your team next quarter.",
           "model_en": "We may move to trunk-based development next quarter.",
+          "cloze": ["may move"],
           "explain_en": "",
           "explain_bn": ""
         }

@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Look around your room and make one 'must be' deduction.",
           "model_en": "My neighbor's car is gone — he must be at work already.",
+          "cloze": ["must be"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Reject an impossible explanation using 'can't be'.",
           "model_en": "It can't be a network issue; the other services are fine.",
+          "cloze": ["can't be"],
           "explain_en": "",
           "explain_bn": ""
         }

@@ -599,6 +599,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence about what you were doing yesterday evening when something suddenly interrupted you. Use past continuous for the background action and past simple for the interruption.",
           "model_en": "I was testing the integration yesterday evening when my manager messaged me about an urgent ticket.",
+          "cloze": ["was testing"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -607,6 +608,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence describing two past actions: one that was in progress and one short action that happened during it. Use 'while' with the past continuous.",
           "model_en": "While I was preparing for the interview, the recruiter sent me the final schedule.",
+          "cloze": ["was preparing"],
           "explain_en": "",
           "explain_bn": ""
         }

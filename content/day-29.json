@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say what you did yesterday and what you've finished this week — watch your tenses.",
           "model_en": "Yesterday I reviewed two pull requests, and this week I've closed five tickets.",
+          "cloze": ["I've closed"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Report something a teammate told you, using 'told me'.",
           "model_en": "Nadia told me the client had approved the new flow.",
+          "cloze": ["had approved"],
           "explain_en": "",
           "explain_bn": ""
         }

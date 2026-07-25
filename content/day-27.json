@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Make a deduction about your teammate's day using 'must have'.",
           "model_en": "Her calendar was solid blue, so she must have had back-to-back calls.",
+          "cloze": ["must have had"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Give advice about deployments using 'should' or 'had better'.",
           "model_en": "You should always tag the release before you deploy.",
+          "cloze": ["should always tag"],
           "explain_en": "",
           "explain_bn": ""
         }

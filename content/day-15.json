@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say one present wish about your work setup.",
           "model_en": "I wish I had a second monitor at home.",
+          "cloze": ["had"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one past regret using 'I wish I had…'.",
           "model_en": "I wish I had negotiated my first salary.",
+          "cloze": ["had negotiated"],
           "explain_en": "",
           "explain_bn": ""
         }

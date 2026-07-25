@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Give a junior engineer one piece of advice using 'should'.",
           "model_en": "You should read the existing tests before changing the code.",
+          "cloze": ["should read"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Warn someone about a deadline using 'had better'.",
           "model_en": "You'd better submit the expense report today, or finance will reject it.",
+          "cloze": ["You'd better submit"],
           "explain_en": "",
           "explain_bn": ""
         }

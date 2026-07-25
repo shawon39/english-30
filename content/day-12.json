@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say what you would do if you didn't have to work tomorrow.",
           "model_en": "If I didn't have to work tomorrow, I would sleep in and then go for a long walk.",
+          "cloze": ["didn't have to work", "would sleep"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Give a teammate advice using 'If I were you'.",
           "model_en": "If I were you, I would split that pull request into two smaller ones.",
+          "cloze": ["would split"],
           "explain_en": "",
           "explain_bn": ""
         }

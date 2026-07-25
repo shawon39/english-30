@@ -63,6 +63,35 @@ export async function buildReviewSession(limit = 10) {
   return { id: "review", title: "Quick Review", type: "mixed", isReview: true, items: shuffle(items) };
 }
 
+// Pulls a few items from EARLIER days into a session. Interleaving is what forces
+// real discrimination: without it you know the answer involves the day's rule
+// before you read the sentence. Biased toward days you still get wrong.
+export async function interleavedItems(dayNum, available, count = 3) {
+  if (dayNum <= 1 || count <= 0) return [];
+  // An empty set means the availability probe hasn't finished (e.g. deep-link or
+  // refresh straight into a session) — fall back to "no filter" rather than
+  // silently dropping every prior day. fetchDay below skips anything missing.
+  const filter = available && available.size ? available : null;
+  const prior = [];
+  for (let d = 1; d < dayNum; d++) if (!filter || filter.has(d)) prior.push(d);
+  if (!prior.length) return [];
+
+  const weights = srs.dayWeights();
+  const days = srs.weightedPick(prior, count, (d) => 1 + (weights[d] || 0));
+  const seen = new Set();
+  const out = [];
+  for (const d of days) {
+    let content;
+    try { content = await fetchDay(d); } catch { continue; }
+    const all = (content.sessions || []).flatMap((s) => s.items || []);
+    const pick = shuffle(all).find((it) => it && it.id && !seen.has(it.id));
+    if (!pick) continue;
+    seen.add(pick.id);
+    out.push({ ...pick, _day: d, _interleaved: true });
+  }
+  return out;
+}
+
 function fmtTime(ms) {
   const s = Math.floor(ms / 1000);
   return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
@@ -72,8 +101,11 @@ function fmtTime(ms) {
 export async function playSession({ mount, day, session, sessionIdsOfDay, onExit, onNavigate }) {
   const items = session.items || [];
   const n = items.length;
-  const timed = session.type === "mixed";
+  const limitMs = session.limitMs || null;        // speed round: countdown, ends at 0
+  const maxMistakes = session.maxMistakes || null; // survival: N strikes and it's over
+  const timed = session.type === "mixed" || !!limitMs;
   let i = 0, correct = 0, combo = 0, maxCombo = 0, points = 0;
+  let attempted = 0, wrongs = 0, finished = false;
   const startTs = performance.now();
   const reduce = store.getSettings().reduceMotion;
 
@@ -106,7 +138,23 @@ export async function playSession({ mount, day, session, sessionIdsOfDay, onExit
   mount.replaceChildren(root);
 
   let timer;
-  if (timed) timer = setInterval(() => { timerEl.textContent = fmtTime(performance.now() - startTs); }, 200);
+  if (timed) {
+    timer = setInterval(() => {
+      const elapsed = performance.now() - startTs;
+      if (!limitMs) { timerEl.textContent = fmtTime(elapsed); return; }
+      const left = Math.max(0, limitMs - elapsed);
+      timerEl.textContent = fmtTime(left);
+      timerEl.classList.toggle("urgent", left <= 10000);
+      if (left <= 0) finish("time");
+    }, 200);
+  }
+
+  const livesEl = h("span", { class: "lives mono" });
+  function setLives() {
+    if (!maxMistakes) return;
+    livesEl.textContent = "♥".repeat(Math.max(0, maxMistakes - wrongs));
+  }
+  if (maxMistakes) { root.querySelector(".play-meta").append(livesEl); setLives(); }
 
   function setCombo() {
     comboEl.textContent = combo > 1 ? `combo ×${combo}` : "";
@@ -132,6 +180,8 @@ export async function playSession({ mount, day, session, sessionIdsOfDay, onExit
       answered = true;
       if (!skipped) {
         srs.recordItemResult(items[i], ok);
+        attempted += 1;
+        if (!ok) { wrongs += 1; setLives(); }
         if (ok) {
           combo += 1;
           maxCombo = Math.max(maxCombo, combo);
@@ -150,6 +200,12 @@ export async function playSession({ mount, day, session, sessionIdsOfDay, onExit
         setCombo();
         setTimeout(() => stage.classList.remove("good", "bad"), 600);
       }
+      if (maxMistakes && wrongs >= maxMistakes) {
+        const out = h("button", { class: "btn primary", type: "button", onClick: () => finish("strikes") }, "See result");
+        nav.append(out);
+        out.focus();
+        return;
+      }
       const last = i === n - 1;
       const next = h("button", { class: "btn primary", type: "button", onClick: advance }, last ? "Finish" : "Next");
       nav.append(next);
@@ -160,25 +216,30 @@ export async function playSession({ mount, day, session, sessionIdsOfDay, onExit
     if (!reduce) requestAnimationFrame(() => el.classList.add("in"));
   }
 
-  function advance() { if (i < n - 1) { i += 1; showItem(); } else finish(); }
+  function advance() { if (i < n - 1) { i += 1; showItem(); } else finish("done"); }
 
-  function finish() {
+  function finish(reason = "done") {
+    if (finished) return;
+    finished = true;
     if (timer) clearInterval(timer);
     fill.style.width = "100%";
     const timeMs = timed ? Math.round(performance.now() - startTs) : null;
-    store.setSessionResult(session.id, { correct, total: n, timeMs });
+    // A session that ended early is scored on what was actually attempted.
+    const total = reason === "done" ? n : Math.max(attempted, 1);
+    store.setSessionResult(session.id, { correct, total, timeMs });
     store.markActiveToday();
     if (!session.isReview) store.markDayDoneIfComplete(day.day, sessionIdsOfDay);
-    celebrate({ mount, day, session, correct, n, points, maxCombo, timeMs, onNavigate, reduce });
+    celebrate({ mount, day, session, correct, n: total, points, maxCombo, timeMs, onNavigate, reduce, reason });
   }
 
   showItem();
 }
 
-function celebrate({ mount, day, session, correct, n, points, maxCombo, timeMs, onNavigate, reduce }) {
+function celebrate({ mount, day, session, correct, n, points, maxCombo, timeMs, onNavigate, reduce, reason }) {
   const root = h("div", { class: "celebrate" });
-  root.append(h("div", { class: "cele-check" }, "✓"));
-  root.append(h("h2", { class: "cele-title" }, correct === n ? "Flawless!" : "Session complete"));
+  const TITLES = { time: "Time's up!", strikes: "Out of lives!" };
+  root.append(h("div", { class: "cele-check" }, reason === "strikes" ? "✗" : "✓"));
+  root.append(h("h2", { class: "cele-title" }, TITLES[reason] || (correct === n ? "Flawless!" : "Session complete")));
   root.append(h("div", { class: "cele-score mono" }, `${correct} / ${n}`));
   const pts = h("div", { class: "cele-points mono" }, "+0");
   root.append(pts);

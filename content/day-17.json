@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Make a real promise about your next release using a first conditional.",
           "model_en": "If the smoke tests pass, I will promote the build to production.",
+          "cloze": ["will promote"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one 'if only' regret from this month.",
           "model_en": "If only I had estimated that ticket more honestly.",
+          "cloze": ["had estimated"],
           "explain_en": "",
           "explain_bn": ""
         }

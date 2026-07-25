@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Politely ask a teammate to cover your on-call shift.",
           "model_en": "Could you cover my on-call shift this Saturday? I'll take yours next week.",
+          "cloze": ["Could you cover"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one thing you couldn't do a year ago but can do now.",
           "model_en": "A year ago I couldn't write Apex tests confidently, but now I can.",
+          "cloze": ["couldn't write"],
           "explain_en": "",
           "explain_bn": ""
         }

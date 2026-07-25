@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say what you are doing right now. Use present continuous.",
           "model_en": "I am writing a Jira ticket right now.",
+          "cloze": ["am writing"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one thing you do every workday. Use present simple.",
           "model_en": "I check my emails before the standup.",
+          "cloze": ["check"],
           "explain_en": "",
           "explain_bn": ""
         }

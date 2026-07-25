@@ -74,6 +74,42 @@ export function patternWeights() {
   return weights;
 }
 
+// Per-day weakness score, used to bias interleaved practice toward the patterns
+// still costing you errors. Retired (mastered) items barely count — that is the
+// adaptive part: what you've proven you know stops eating practice time.
+export function dayWeights() {
+  const w = {};
+  Object.values(store.getMistakes()).forEach((m) => {
+    const inc = m.retired ? 0.25 : (m.missCount || 1) * 2;
+    w[m.day] = (w[m.day] || 0) + inc;
+  });
+  return w;
+}
+
+// How many patterns you've fully mastered — real evidence of progress, unlike XP.
+export function masteryStats() {
+  const all = Object.values(store.getMistakes());
+  return {
+    retired: all.filter((m) => m.retired).length,
+    active: all.filter((m) => !m.retired).length,
+    tracked: all.length,
+  };
+}
+
+// Weighted pick without replacement.
+export function weightedPick(candidates, count, weightOf) {
+  const pool = candidates.slice();
+  const out = [];
+  while (pool.length && out.length < count) {
+    const weights = pool.map(weightOf);
+    let r = Math.random() * weights.reduce((a, b) => a + b, 0);
+    let idx = weights.findIndex((w) => (r -= w) <= 0);
+    if (idx < 0) idx = pool.length - 1;
+    out.push(pool.splice(idx, 1)[0]);
+  }
+  return out;
+}
+
 export function pickReviewCandidates(limit = REVIEW_SIZE) {
   const due = dueMistakes();
   if (!due.length) return [];

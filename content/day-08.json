@@ -588,6 +588,7 @@
           "type": "speak",
           "prompt_en": "Say one sentence about a past work habit you have stopped, using 'used to' + base verb.",
           "model_en": "I used to write all my tests after release, but now I write them first.",
+          "cloze": ["used to write"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -596,6 +597,7 @@
           "type": "speak",
           "prompt_en": "Say one sentence describing a repeated past routine on your old team, using 'would' + base verb.",
           "model_en": "On my old team, we would meet every Monday to plan the sprint.",
+          "cloze": ["would meet"],
           "explain_en": "",
           "explain_bn": ""
         }

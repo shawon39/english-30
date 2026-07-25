@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say how your life would be different now if you had studied something else.",
           "model_en": "If I had studied design, I would be building interfaces instead of triggers.",
+          "cloze": ["had studied", "would be"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Describe a past decision that still helps you, using a mixed conditional.",
           "model_en": "If I hadn't joined that first startup, I wouldn't have this network today.",
+          "cloze": ["hadn't joined", "wouldn't have"],
           "explain_en": "",
           "explain_bn": ""
         }

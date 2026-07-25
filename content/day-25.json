@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Ask your manager for a day off, politely.",
           "model_en": "Could I take next Thursday off? I'll hand over the on-call before then.",
+          "cloze": ["Could I take"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Ask a stranger at a conference to watch your laptop.",
           "model_en": "Would you mind keeping an eye on my laptop for two minutes?",
+          "cloze": ["Would you mind"],
           "explain_en": "",
           "explain_bn": ""
         }

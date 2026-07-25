@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say one thing you were going to do this week but haven't yet.",
           "model_en": "I was going to update my resume, but the sprint ate my evenings.",
+          "cloze": ["was going to update"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Describe a team rule using 'supposed to'.",
           "model_en": "We're supposed to demo every feature before it merges.",
+          "cloze": ["We're supposed to demo"],
           "explain_en": "",
           "explain_bn": ""
         }

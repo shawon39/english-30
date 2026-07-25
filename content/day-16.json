@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Set one condition for lending a friend your laptop, using 'as long as'.",
           "model_en": "You can borrow my laptop as long as you don't install anything weird.",
+          "cloze": ["can borrow"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Warn a teammate about a risk using 'unless'.",
           "model_en": "Unless we cap the batch size, this job will time out in production.",
+          "cloze": ["will time out"],
           "explain_en": "",
           "explain_bn": ""
         }

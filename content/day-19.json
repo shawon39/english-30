@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Tell a new hire one rule they must follow and one thing they don't have to do.",
           "model_en": "You must enable two-factor authentication, but you don't have to install the VPN on your phone.",
+          "cloze": ["must enable", "don't have to install"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Describe a past obligation using 'had to'.",
           "model_en": "Last release I had to coordinate three teams across two time zones.",
+          "cloze": ["had to coordinate"],
           "explain_en": "",
           "explain_bn": ""
         }
