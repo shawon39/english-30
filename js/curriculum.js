@@ -48,6 +48,15 @@ const DAYS = [
   [28, "Work English: standups, code reviews, Jira",     "applied",     false, false],
   [29, "Your fast-speech error patterns (targeted)",     "applied",     true,  false],
   [30, "Final boss: mixed timed exam",                   "mastery",     false, true ],
+  // Articles, prepositions and collocations — the errors that survive fluency.
+  [31, "Articles: a / an / the / zero",                  "precision",   true,  false],
+  [32, "Articles: abstract, uncountable & general",      "precision",   true,  true ],
+  [33, "Prepositions of time & place",                   "precision",   false, false],
+  [34, "Verb + preposition (depend on, result in)",      "precision",   true,  false],
+  [35, "Adjective & noun + preposition",                 "precision",   true,  true ],
+  [36, "Work collocations (make / raise / take)",        "natural",     false, false],
+  [37, "Hedging & softening",                            "natural",     false, false],
+  [38, "Pushing back & giving feedback",                 "natural",     false, true ],
 ];
 
 export const CURRICULUM = DAYS.map(([day, theme, pillar, star, heavy]) => {
@@ -56,7 +65,8 @@ export const CURRICULUM = DAYS.map(([day, theme, pillar, star, heavy]) => {
   return { day, theme, pillar, star, heavy, sessions };
 });
 
-export const TOTAL_SESSIONS = CURRICULUM.reduce((a, d) => a + d.sessions.length, 0); // 100
+export const TOTAL_SESSIONS = CURRICULUM.reduce((a, d) => a + d.sessions.length, 0);
+export const TOTAL_DAYS = CURRICULUM.length;
 
 export const PILLAR_LABEL = {
   tense: "Tenses",
@@ -64,6 +74,8 @@ export const PILLAR_LABEL = {
   modal: "Modals",
   applied: "Applied",
   mastery: "Mastery",
+  precision: "Precision",
+  natural: "Natural English",
 };
 
 // Map groups for the home screen (label + day range).
@@ -72,6 +84,7 @@ export const GROUPS = [
   { label: "Conditionals",      pillars: ["conditional"] },
   { label: "Modals",            pillars: ["modal"] },
   { label: "Applied & Mastery", pillars: ["applied", "mastery"] },
+  { label: "Precision & Natural English", pillars: ["precision", "natural"] },
 ];
 
 export function getDay(day) { return CURRICULUM.find((d) => d.day === day); }
