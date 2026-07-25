@@ -605,6 +605,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence about a plan you already decided for your career using 'going to'.",
           "model_en": "I'm going to apply for a senior Salesforce developer role next month.",
+          "cloze": ["I'm going to apply"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -613,6 +614,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence about a fixed work arrangement for tomorrow using the present continuous.",
           "model_en": "I'm presenting the demo to the team at 10 tomorrow.",
+          "cloze": ["I'm presenting"],
           "explain_en": "",
           "explain_bn": ""
         }

@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say one thing you would have done differently in your last project.",
           "model_en": "If I had written tests first, I would have shipped with more confidence.",
+          "cloze": ["had written", "would have shipped"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Describe a past mistake using 'If I hadn't…'.",
           "model_en": "If I hadn't deployed on a Friday, I wouldn't have spent the weekend firefighting.",
+          "cloze": ["hadn't deployed", "wouldn't have spent"],
           "explain_en": "",
           "explain_bn": ""
         }

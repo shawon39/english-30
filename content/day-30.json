@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Summarize your 30-day challenge in two sentences, using a perfect tense and a conditional.",
           "model_en": "I've drilled a hundred sessions in thirty days. If I hadn't practiced daily, my fast speech would still betray me.",
+          "cloze": ["I've drilled", "hadn't practiced"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Make one promise about your English going forward, using 'will' and 'going to'.",
           "model_en": "I will keep reviewing my mistakes, and I'm going to speak up more in client calls.",
+          "cloze": ["will keep", "I'm going to speak"],
           "explain_en": "",
           "explain_bn": ""
         }

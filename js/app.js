@@ -3,8 +3,8 @@
 import { CURRICULUM, getDay, TOTAL_SESSIONS, pad, PILLAR_LABEL, GROUPS } from "./curriculum.js";
 import * as store from "./storage.js";
 import * as srs from "./srs.js";
-import { fetchDay, probeAvailableDays, playSession, buildReviewSession } from "./engine.js";
-import { h } from "./render.js";
+import { fetchDay, probeAvailableDays, playSession, buildReviewSession, interleavedItems } from "./engine.js";
+import { h, shuffle } from "./render.js";
 
 const app = document.getElementById("app");
 let available = new Set();
@@ -116,7 +116,7 @@ function renderHome() {
   root.append(h("section", { class: "stats" },
     streakRing(streak),
     focusBar(doneCount),
-    pointsCard(points.total)
+    masteryCard(points.total)
   ));
 
   root.append(reviewCta(srs.countDue()));
@@ -167,11 +167,15 @@ function focusBar(doneCount) {
   return wrap;
 }
 
-function pointsCard(total) {
+// Leads with patterns mastered rather than XP — "23 errors retired" is evidence you
+// actually got better; a points total is not.
+function masteryCard(totalXp) {
+  const m = srs.masteryStats();
   const wrap = h("div", { class: "stat points-stat" });
-  wrap.append(h("span", { class: "points-num mono" }, String(total)));
-  wrap.append(h("span", { class: "points-label" }, "XP"));
-  wrap.append(h("span", { class: "stat-cap" }, "Earned from correct answers"));
+  wrap.append(h("span", { class: "points-num mono" }, String(m.retired)));
+  wrap.append(h("span", { class: "points-label" }, m.retired === 1 ? "error mastered" : "errors mastered"));
+  wrap.append(h("span", { class: "stat-cap" },
+    m.tracked ? `${m.active} still active · ${totalXp} XP` : `${totalXp} XP · mistakes you fix show up here`));
   return wrap;
 }
 
@@ -291,11 +295,18 @@ async function renderPlay(id) {
   const c = (content.sessions || []).find((s) => s.id === id) || (content.sessions || [])[sn - 1];
   if (!c) { toast("Session not found in content"); return navigate(`#/day/${dayNum}`); }
   const meta = dayMeta.sessions.find((s) => s.id === id) || {};
+
+  // Sessions 1–2 stay blocked on the new rule (you're still learning it).
+  // Sessions 3–4 are consolidation, so mix in earlier days to force discrimination.
+  const consolidation = sn >= 3;
+  const extra = consolidation ? await interleavedItems(dayNum, available, 3) : [];
+  const items = shuffle([...(c.items || []), ...extra]);
+
   const session = {
     id,
     title: c.title || meta.title,
     type: c.type || meta.type,
-    items: c.items || [],
+    items,
     rule: content.rule_en || "",
     rule_bn: content.rule_bn || "",
   };
@@ -311,10 +322,25 @@ async function renderPlay(id) {
 }
 
 // --- REVIEW VIEW (Quick Review, spaced-repetition mistake bank) ---
+// Review comes in different shapes, picked at random — not knowing whether you're
+// about to get a 60-second sprint or a 3-strikes run is most of what keeps it alive.
+const REVIEW_SHAPES = [
+  { title: "Quick Review", size: 10, blurb: "10 items, no pressure." },
+  { title: "Speed Round",  size: 16, limitMs: 60000, blurb: "60 seconds. Go." },
+  { title: "Survival",     size: 16, maxMistakes: 3, blurb: "Three mistakes and it's over." },
+  { title: "Micro Drill",  size: 5,  blurb: "Five items. That's it." },
+];
+
 async function renderReview() {
   app.replaceChildren(h("div", { class: "loading" }, "Loading…"));
 
-  const session = await buildReviewSession(10);
+  const shape = REVIEW_SHAPES[Math.floor(Math.random() * REVIEW_SHAPES.length)];
+  const session = await buildReviewSession(shape.size);
+  if (session) {
+    session.title = shape.title;
+    if (shape.limitMs) session.limitMs = shape.limitMs;
+    if (shape.maxMistakes) session.maxMistakes = shape.maxMistakes;
+  }
   if (!session) {
     app.replaceChildren(h("div", { class: "dayview" },
       backHeader("Quick Review", "#/"),

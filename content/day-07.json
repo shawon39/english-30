@@ -604,6 +604,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence using the future perfect to describe a Salesforce task you will have finished before a future deadline.",
           "model_en": "By the end of this sprint, I will have refactored the trigger logic.",
+          "cloze": ["will have refactored"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -612,6 +613,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence using the future continuous to describe what you will be doing at a specific time tomorrow.",
           "model_en": "At ten o'clock tomorrow, I will be running the integration tests.",
+          "cloze": ["will be running"],
           "explain_en": "",
           "explain_bn": ""
         }

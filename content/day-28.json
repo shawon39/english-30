@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Give your real standup update for today in three sentences.",
           "model_en": "Yesterday I finished the data fix. Today I'm going to write the tests. No blockers.",
+          "cloze": ["I'm going to write"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Leave a polite review comment about a long method.",
           "model_en": "This works, but could we break this method up? It might be hard to test as one piece.",
+          "cloze": ["could we break", "might be"],
           "explain_en": "",
           "explain_bn": ""
         }

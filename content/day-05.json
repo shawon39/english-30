@@ -616,6 +616,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence about something you had already finished before a meeting started yesterday.",
           "model_en": "By the time the standup started, I had already merged my pull request.",
+          "cloze": ["had already merged"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -624,6 +625,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence using past perfect to explain why a deployment failed last week.",
           "model_en": "The deployment failed because we hadn't updated the config file.",
+          "cloze": ["hadn't updated"],
           "explain_en": "",
           "explain_bn": ""
         }

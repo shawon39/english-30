@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say what you were doing when your last meeting started.",
           "model_en": "I was reviewing a pull request when the meeting started.",
+          "cloze": ["was reviewing"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Report one thing your manager said this week, backshifting the tense.",
           "model_en": "My manager said the roadmap was almost final.",
+          "cloze": ["said", "was"],
           "explain_en": "",
           "explain_bn": ""
         }

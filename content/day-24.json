@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Make a polite request to a teammate using 'Would you mind…?'.",
           "model_en": "Would you mind double-checking my SOQL before I run it on production?",
+          "cloze": ["Would you mind"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Describe a childhood routine using 'would'.",
           "model_en": "During summer holidays, we would play cricket until the light faded.",
+          "cloze": ["would play"],
           "explain_en": "",
           "explain_bn": ""
         }

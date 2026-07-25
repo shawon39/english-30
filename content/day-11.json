@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Say what you will do if your next deploy fails.",
           "model_en": "If the deploy fails, I will roll back and check the logs.",
+          "cloze": ["will roll"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Say one thing that always happens if you skip breakfast.",
           "model_en": "If I skip breakfast, I get grumpy before lunch.",
+          "cloze": ["skip", "get"],
           "explain_en": "",
           "explain_bn": ""
         }

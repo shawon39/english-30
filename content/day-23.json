@@ -306,6 +306,7 @@
           "type": "speak",
           "prompt_en": "Explain a mysterious bug from your past using 'must have'.",
           "model_en": "The job ran twice, so someone must have clicked the button during the timeout.",
+          "cloze": ["must have clicked"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -314,6 +315,7 @@
           "type": "speak",
           "prompt_en": "Defend a teammate using 'can't have'.",
           "model_en": "Rafi can't have broken the build; his branch wasn't even merged.",
+          "cloze": ["can't have broken"],
           "explain_en": "",
           "explain_bn": ""
         }

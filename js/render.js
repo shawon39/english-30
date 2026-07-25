@@ -82,7 +82,7 @@ function renderMCQ(item, onResult) {
   card.append(h("p", { class: "prompt" }, item.prompt_en));
   const opts = h("div", { class: "options" });
   let done = false;
-  (item.options || []).forEach((opt) => {
+  shuffle(item.options || []).forEach((opt) => {
     const b = h("button", { class: "opt", type: "button", onClick: () => {
       if (done) return; done = true;
       const ok = opt === item.answer;
@@ -107,7 +107,7 @@ function renderFillBank(item, onResult) {
   card.append(p);
   const chips = h("div", { class: "chips" });
   let done = false;
-  (item.options || []).forEach((opt) => {
+  shuffle(item.options || []).forEach((opt) => {
     const c = h("button", { class: "chip", type: "button", onClick: () => {
       if (done) return; done = true;
       const ok = opt === item.answer;
@@ -151,7 +151,7 @@ function renderErrorFind(item, onResult) {
   card.append(fixWrap);
 
   function showFixes() {
-    (item.options || []).forEach((opt) => {
+    shuffle(item.options || []).forEach((opt) => {
       const b = h("button", { class: "opt", type: "button", onClick: () => {
         if (done) return; done = true;
         const ok = opt === item.answer;
@@ -213,7 +213,110 @@ function normalizeForCheck(s) {
     .replace(/\s+/g, " ");
 }
 
+// Contractions expanded so "hadn't" and "had not" both count as the same answer.
+function canonical(s) {
+  return normalizeForCheck(s)
+    .replace(/\bcan't\b/g, "can not")
+    .replace(/\bwon't\b/g, "will not")
+    .replace(/\bshan't\b/g, "shall not")
+    .replace(/n't\b/g, " not")
+    .replace(/'d better\b/g, "had better")
+    .replace(/'m\b/g, " am")
+    .replace(/'re\b/g, " are")
+    .replace(/'ve\b/g, " have")
+    .replace(/'ll\b/g, " will")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+const sameAnswer = (a, b) => canonical(a) === canonical(b);
+
+// Splits model_en into text/blank alternating parts for the given spans.
+function clozeParts(model, spans) {
+  const parts = [];
+  let rest = model;
+  for (const sp of spans) {
+    const i = rest.indexOf(sp);
+    if (i < 0) return null;
+    parts.push({ text: rest.slice(0, i) }, { blank: sp });
+    rest = rest.slice(i + sp.length);
+  }
+  parts.push({ text: rest });
+  return parts;
+}
+
+// Cloze production: type only the span that carries the grammar.
+function renderCloze(item, onResult, parts) {
+  const card = h("div", { class: "item item-speak" });
+  card.append(h("p", { class: "subhint" }, item.prompt_en));
+
+  const sent = h("p", { class: "cloze-sentence" });
+  const inputs = [];
+  parts.forEach((p) => {
+    if (p.text != null) { sent.append(document.createTextNode(p.text)); return; }
+    const inp = h("input", {
+      class: "cloze-blank", type: "text", autocapitalize: "none", autocomplete: "off",
+      spellcheck: "false", "aria-label": "missing words",
+    });
+    inp.style.width = `${Math.max(5, p.blank.length + 1)}ch`;
+    inp.dataset.answer = p.blank;
+    inputs.push(inp);
+    sent.append(inp);
+  });
+  card.append(sent);
+
+  const submit = h("button", { class: "btn", type: "button", disabled: true }, "Check");
+  const skip = h("button", { class: "btn ghost", type: "button" }, "Skip");
+  card.append(h("div", { class: "speak-acts" }, submit, skip));
+
+  let done = false;
+  const filled = () => inputs.every((i) => i.value.trim());
+  inputs.forEach((i) => i.addEventListener("input", () => { submit.disabled = !filled(); }));
+  inputs.forEach((i, n) => i.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    if (n < inputs.length - 1) inputs[n + 1].focus();
+    else if (filled()) submit.click();
+  }));
+
+  skip.onclick = () => { if (done) return; done = true; onResult(true, true); };
+
+  submit.onclick = () => {
+    if (done || !filled()) return;
+    submit.remove(); skip.remove();
+    let allOk = true;
+    inputs.forEach((inp) => {
+      const ok = sameAnswer(inp.value, inp.dataset.answer);
+      if (!ok) allOk = false;
+      inp.disabled = true;
+      inp.classList.add(ok ? "correct" : "wrong");
+      if (!ok) inp.style.width = `${Math.max(5, inp.value.trim().length + 1)}ch`;
+    });
+
+    const result = h("div", { class: "speak-result" },
+      h("p", { class: "model" }, h("span", { class: "tag" }, "Full sentence "), item.model_en || "")
+    );
+    const mark = h("div", { class: "self-mark" });
+    const good = h("button", { class: `opt${allOk ? " suggested" : ""}`, type: "button" }, "Correct ✓");
+    const bad = h("button", { class: `opt${!allOk ? " suggested" : ""}`, type: "button" }, "Not quite");
+    good.onclick = () => { if (done) return; done = true; card.append(explainBlock(item)); onResult(true); };
+    bad.onclick = () => { if (done) return; done = true; card.append(explainBlock(item)); onResult(false); };
+    mark.append(good, bad);
+    result.append(mark);
+    card.append(result);
+    (allOk ? good : bad).focus();
+  };
+
+  return card;
+}
+
 function renderSpeak(item, onResult) {
+  // Prefer cloze production — typing only the load-bearing span beats retyping
+  // the whole sentence. Falls back to full-sentence typing if spans are missing.
+  if (Array.isArray(item.cloze) && item.cloze.length) {
+    const parts = clozeParts(item.model_en || "", item.cloze);
+    if (parts) return renderCloze(item, onResult, parts);
+  }
+
   const card = h("div", { class: "item item-speak" });
   card.append(h("p", { class: "prompt" }, item.prompt_en));
 
@@ -234,7 +337,7 @@ function renderSpeak(item, onResult) {
     submit.remove();
     skip.remove();
 
-    const auto = normalizeForCheck(typed) === normalizeForCheck(item.model_en || "");
+    const auto = sameAnswer(typed, item.model_en || "");
     const result = h(
       "div",
       { class: "speak-result" },

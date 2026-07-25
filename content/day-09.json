@@ -560,6 +560,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence reporting what a teammate told you yesterday, backshifting a 'will' statement to 'would'.",
           "model_en": "My teammate told me he would merge the pull request after lunch.",
+          "cloze": ["would merge"],
           "explain_en": "",
           "explain_bn": ""
         },
@@ -568,6 +569,7 @@
           "type": "speak",
           "prompt_en": "Say a sentence reporting what your manager said, backshifting a present-tense statement and the word 'today' to 'that day'.",
           "model_en": "My manager said the release was scheduled for that day.",
+          "cloze": ["said", "was scheduled"],
           "explain_en": "",
           "explain_bn": ""
         }
