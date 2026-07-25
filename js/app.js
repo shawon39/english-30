@@ -445,6 +445,8 @@ function openSettings() {
   langRow.append(langSel);
   box.append(langRow);
 
+  box.append(toggleRow("Type every answer", s.typeAnswers, (v) => store.setSettings({ typeAnswers: v })));
+  box.append(h("p", { class: "set-hint" }, "Produce each answer from memory instead of tapping an option. Harder, and much closer to speaking."));
   box.append(toggleRow("Sound effects", s.sound, (v) => store.setSettings({ sound: v })));
   box.append(toggleRow("Reduce motion", s.reduceMotion, (v) => { store.setSettings({ reduceMotion: v }); applySettings(); }));
 

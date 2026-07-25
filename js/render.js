@@ -60,12 +60,18 @@ export function beep(ok) {
 }
 
 // --- dispatch on the ITEM type (so `mixed` sessions work too) ---
+// With settings.typeAnswers on, every objectively-checkable item is produced by
+// typing instead of tapping. error-find still starts by tapping the wrong word —
+// there's nothing to type for "which word is broken" — but the fix is typed.
+const typeMode = () => !!getSettings().typeAnswers;
+
 export function renderItem(item, onResult) {
+  const typed = typeMode();
   switch (item.type) {
     case "error-find": return renderErrorFind(item, onResult);
-    case "mcq":        return renderMCQ(item, onResult);
-    case "fill-bank":  return renderFillBank(item, onResult);
-    case "build":      return renderBuild(item, onResult);
+    case "mcq":        return typed ? renderTypedBlank(item, onResult) : renderMCQ(item, onResult);
+    case "fill-bank":  return typed ? renderTypedBlank(item, onResult) : renderFillBank(item, onResult);
+    case "build":      return typed ? renderTypedBuild(item, onResult) : renderBuild(item, onResult);
     case "speak":      return renderSpeak(item, onResult);
     default:           return renderUnsupported(item, onResult);
   }
@@ -137,8 +143,8 @@ function renderErrorFind(item, onResult) {
       if (idx === item.error_index) {
         t.classList.add("found");
         phase = 2;
-        hint.textContent = "Now tap the correct fix.";
-        showFixes();
+        hint.textContent = typeMode() ? "Now type the correct word." : "Now tap the correct fix.";
+        if (typeMode()) showTypedFix(); else showFixes();
       } else {
         t.classList.add("miss");
         setTimeout(() => t.classList.remove("miss"), 420);
@@ -149,6 +155,29 @@ function renderErrorFind(item, onResult) {
   card.append(sent);
   const fixWrap = h("div", { class: "options" });
   card.append(fixWrap);
+
+  function showTypedFix() {
+    const inp = h("input", {
+      class: "cloze-blank", type: "text", autocapitalize: "none",
+      autocomplete: "off", spellcheck: "false", "aria-label": "the correct word",
+    });
+    inp.style.width = `${Math.max(8, (item.answer || "").length + 2)}ch`;
+    const check = h("button", { class: "btn check", type: "button", disabled: true }, "Check");
+    const reveal = h("button", { class: "btn ghost", type: "button" }, "Show answer");
+    fixWrap.append(h("p", { class: "cloze-sentence" }, inp), h("div", { class: "speak-acts" }, check, reveal));
+
+    inp.addEventListener("input", () => { check.disabled = !inp.value.trim(); });
+    inp.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); if (!check.disabled) check.click(); } });
+
+    const settle = (ok) => {
+      if (done) return; done = true;
+      check.remove(); reveal.remove();
+      settleTyped({ card, item, ok, expected: item.answer, onResult, inputs: [inp] });
+    };
+    check.onclick = () => settle(answerMatches(inp.value, item.answer));
+    reveal.onclick = () => settle(false);
+    inp.focus();
+  }
 
   function showFixes() {
     shuffle(item.options || []).forEach((opt) => {
@@ -229,6 +258,95 @@ function canonical(s) {
     .trim();
 }
 const sameAnswer = (a, b) => canonical(a) === canonical(b);
+
+// Build answers store punctuation as separate tokens ("worked , it"), but nobody
+// types it that way — close the gap before comparing.
+const tightenPunct = (s) => s.replace(/\s+([,.;:?!])/g, "$1");
+const sameSentence = (a, b) => canonical(tightenPunct(a)) === canonical(tightenPunct(b));
+
+// The zero-article answer is an em dash, which no one can type. Accept the
+// things a person would actually reach for instead — including nothing at all.
+const ZERO_ANSWER = "—";
+const ZERO_EQUIV = ["", "-", "--", "—", "none", "nothing", "no article", "zero", "x"];
+function answerMatches(typed, expected) {
+  if (expected === ZERO_ANSWER) return ZERO_EQUIV.includes(typed.trim().toLowerCase());
+  return sameAnswer(typed, expected);
+}
+
+// Shared tail for a typed item: mark it, reveal the answer when wrong, explain, report.
+function settleTyped({ card, item, ok, expected, onResult, inputs }) {
+  inputs.forEach((el) => { el.disabled = true; el.classList.add(ok ? "correct" : "wrong"); });
+  if (!ok) {
+    const shown = expected === ZERO_ANSWER ? "(no article)" : expected;
+    card.append(h("p", { class: "correct-line" }, `Answer: ${shown}`));
+  }
+  card.append(explainBlock(item));
+  onResult(ok);
+}
+
+// Typed variant of mcq / fill-bank: same sentence, but you produce the answer.
+function renderTypedBlank(item, onResult) {
+  const card = h("div", { class: `item item-typed item-${item.type}` });
+  const zero = item.answer === ZERO_ANSWER;
+  const parts = (item.prompt_en || "").split("___");
+
+  const inp = h("input", {
+    class: "cloze-blank", type: "text", autocapitalize: "none",
+    autocomplete: "off", spellcheck: "false", "aria-label": "your answer",
+  });
+  inp.style.width = `${Math.max(6, (item.answer || "").length + 2)}ch`;
+
+  const sent = h("p", { class: "cloze-sentence" });
+  sent.append(document.createTextNode(parts[0] || ""), inp, document.createTextNode(parts[1] || ""));
+  card.append(sent);
+  if (zero) card.append(h("p", { class: "subhint" }, "If nothing belongs here, leave it empty."));
+
+  const check = h("button", { class: "btn check", type: "button", disabled: !zero }, "Check");
+  const reveal = h("button", { class: "btn ghost", type: "button" }, "Show answer");
+  card.append(h("div", { class: "speak-acts" }, check, reveal));
+
+  let done = false;
+  inp.addEventListener("input", () => { check.disabled = !zero && !inp.value.trim(); });
+  inp.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); if (!check.disabled) check.click(); } });
+
+  const finish = (ok) => {
+    if (done) return; done = true;
+    check.remove(); reveal.remove();
+    settleTyped({ card, item, ok, expected: item.answer, onResult, inputs: [inp] });
+  };
+  check.onclick = () => finish(answerMatches(inp.value, item.answer));
+  reveal.onclick = () => finish(false);
+  return card;
+}
+
+// Typed variant of build: the tiles stay as a reference bank, you write the sentence.
+function renderTypedBuild(item, onResult) {
+  const card = h("div", { class: "item item-typed item-build" });
+  card.append(h("p", { class: "subhint" }, "Type the full sentence using these words."));
+
+  const bank = h("div", { class: "build-bank ref" });
+  shuffle(item.tiles || []).forEach((w) => bank.append(h("span", { class: "tile ref" }, w)));
+  card.append(bank);
+
+  const inp = h("textarea", { class: "speak-input", rows: 2, placeholder: "Write the sentence…" });
+  card.append(inp);
+
+  const check = h("button", { class: "btn check", type: "button", disabled: true }, "Check");
+  const reveal = h("button", { class: "btn ghost", type: "button" }, "Show answer");
+  card.append(h("div", { class: "speak-acts" }, check, reveal));
+
+  let done = false;
+  inp.addEventListener("input", () => { check.disabled = !inp.value.trim(); });
+
+  const finish = (ok) => {
+    if (done) return; done = true;
+    check.remove(); reveal.remove();
+    settleTyped({ card, item, ok, expected: tightenPunct(item.answer || ""), onResult, inputs: [inp] });
+  };
+  check.onclick = () => finish(sameSentence(inp.value, item.answer || ""));
+  reveal.onclick = () => finish(false);
+  return card;
+}
 
 // Splits model_en into text/blank alternating parts for the given spans.
 function clozeParts(model, spans) {
