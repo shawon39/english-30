@@ -14,7 +14,7 @@ const DEFAULTS = {
   [K.progress]: {},
   [K.streak]:   { current: 0, longest: 0, lastActiveISO: null, daysDone: [] },
   [K.points]:   { total: 0, byDay: {} },
-  [K.settings]: { lang: "en", sound: true, reduceMotion: false, theme: "light" },
+  [K.settings]: { lang: "en", sound: true, reduceMotion: false, theme: "light", typeAnswers: false },
   [K.mistakes]: {},
 };
 
