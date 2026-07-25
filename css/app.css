@@ -267,6 +267,10 @@ a.review-cta.btn { text-decoration: none; }
 .speak-acts { display: flex; gap: var(--s-3); margin-top: var(--s-3); }
 .speak-acts .btn:first-child { flex: 1; }
 .set-hint { color: var(--muted); font-size: 13px; margin: -6px 0 var(--s-3); max-width: 44ch; }
+.hint-row { display: flex; align-items: center; gap: var(--s-3); flex-wrap: wrap; margin: var(--s-3) 0; min-height: 32px; }
+.btn.tiny { padding: 5px 14px; font-size: 13px; }
+.hint-out { color: var(--accent-text); font-family: var(--font-mono); font-size: 14px; }
+.cloze-blank::placeholder { color: var(--muted); opacity: 0.6; letter-spacing: 1px; }
 .tile.ref { cursor: default; opacity: 0.75; box-shadow: none; }
 .tile.ref:hover { transform: none; border-color: var(--line); }
 .build-bank.ref { margin-bottom: var(--s-4); }

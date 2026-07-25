@@ -162,9 +162,15 @@ function renderErrorFind(item, onResult) {
       autocomplete: "off", spellcheck: "false", "aria-label": "the correct word",
     });
     inp.style.width = `${Math.max(8, (item.answer || "").length + 2)}ch`;
+    inp.placeholder = skeletonFor(item.answer);
     const check = h("button", { class: "btn check", type: "button", disabled: true }, "Check");
     const reveal = h("button", { class: "btn ghost", type: "button" }, "Show answer");
-    fixWrap.append(h("p", { class: "cloze-sentence" }, inp), h("div", { class: "speak-acts" }, check, reveal));
+    fixWrap.append(h("p", { class: "cloze-sentence" }, inp));
+    const opts = item.options || [];
+    if (opts.length > 1) {
+      fixWrap.append(hintRow(() => "one of:  " + shuffle(opts).map((o) => (o === ZERO_ANSWER ? "(nothing)" : o)).join("   ·   ")));
+    }
+    fixWrap.append(h("div", { class: "speak-acts" }, check, reveal));
 
     inp.addEventListener("input", () => { check.disabled = !inp.value.trim(); });
     inp.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); if (!check.disabled) check.click(); } });
@@ -273,6 +279,31 @@ function answerMatches(typed, expected) {
   return sameAnswer(typed, expected);
 }
 
+// --- hints for typed answers ---
+// Without a cue, "I ___ my code right now" could be test / am testing / tested,
+// and you are guessing vocabulary rather than producing a grammar form. Two
+// layers: a shape cue that is always visible, and an on-demand hint.
+
+// One dot per letter, words kept apart: "am testing" -> "•• •••••••".
+function skeletonFor(text) {
+  return (text || "").trim().split(/\s+/).map((w) => "•".repeat(w.length)).join(" ");
+}
+
+// First letter of each word: "had written" -> "h… w…".
+function initialsFor(text) {
+  return (text || "").trim().split(/\s+/).map((w) => w[0] + "…").join(" ");
+}
+
+// A Hint button that reveals `reveal()` text once, then retires itself.
+function hintRow(reveal) {
+  const row = h("div", { class: "hint-row" });
+  const out = h("span", { class: "hint-out" });
+  const btn = h("button", { class: "btn ghost tiny", type: "button" }, "Hint");
+  btn.onclick = () => { out.textContent = reveal(); btn.remove(); };
+  row.append(btn, out);
+  return row;
+}
+
 // Shared tail for a typed item: mark it, reveal the answer when wrong, explain, report.
 function settleTyped({ card, item, ok, expected, onResult, inputs }) {
   inputs.forEach((el) => { el.disabled = true; el.classList.add(ok ? "correct" : "wrong"); });
@@ -295,11 +326,18 @@ function renderTypedBlank(item, onResult) {
     autocomplete: "off", spellcheck: "false", "aria-label": "your answer",
   });
   inp.style.width = `${Math.max(6, (item.answer || "").length + 2)}ch`;
+  if (!zero) inp.placeholder = skeletonFor(item.answer);
 
   const sent = h("p", { class: "cloze-sentence" });
   sent.append(document.createTextNode(parts[0] || ""), inp, document.createTextNode(parts[1] || ""));
   card.append(sent);
   if (zero) card.append(h("p", { class: "subhint" }, "If nothing belongs here, leave it empty."));
+
+  // The item's own distractors make the best hint — you still have to type it.
+  const opts = item.options || [];
+  if (opts.length > 1) {
+    card.append(hintRow(() => "one of:  " + shuffle(opts).map((o) => (o === ZERO_ANSWER ? "(nothing)" : o)).join("   ·   ")));
+  }
 
   const check = h("button", { class: "btn check", type: "button", disabled: !zero }, "Check");
   const reveal = h("button", { class: "btn ghost", type: "button" }, "Show answer");
@@ -376,11 +414,15 @@ function renderCloze(item, onResult, parts) {
       spellcheck: "false", "aria-label": "missing words",
     });
     inp.style.width = `${Math.max(5, p.blank.length + 1)}ch`;
+    inp.placeholder = skeletonFor(p.blank);
     inp.dataset.answer = p.blank;
     inputs.push(inp);
     sent.append(inp);
   });
   card.append(sent);
+
+  // Speak items carry no options, so the hint is the opening letters instead.
+  card.append(hintRow(() => "starts with:  " + inputs.map((i) => initialsFor(i.dataset.answer)).join("   ·   ")));
 
   const submit = h("button", { class: "btn", type: "button", disabled: true }, "Check");
   const skip = h("button", { class: "btn ghost", type: "button" }, "Skip");
