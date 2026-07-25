@@ -1,6 +1,6 @@
 // engine.js — content loading + session player (scoring, combo, streak, persist).
 
-import { pad } from "./curriculum.js";
+import { pad, TOTAL_DAYS } from "./curriculum.js";
 import { renderItem, h, beep, shuffle } from "./render.js";
 import * as store from "./storage.js";
 import * as srs from "./srs.js";
@@ -21,7 +21,7 @@ export async function fetchDay(day) {
 // Probe which day files exist (no manifest). Append-only content "just works".
 export async function probeAvailableDays() {
   const checks = [];
-  for (let d = 1; d <= 30; d++) {
+  for (let d = 1; d <= TOTAL_DAYS; d++) {
     checks.push(
       fetch(contentURL(d), { method: "HEAD" }).then((r) => (r.ok ? d : null)).catch(() => null)
     );
