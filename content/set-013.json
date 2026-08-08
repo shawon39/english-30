@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "3.1",
+  "set": 13,
+  "world": "timeline",
+  "world_bn": "টাইমলাইন",
+  "title_bn": "স্প্রিন্টটা কীভাবে গেল",
+  "desc_bn": "ইনসিডেন্টে তিন দিন, তারপর ফর্মুলার কাজ, শেষে রেট্রো। সিঁড়ি-ভারী সেট — লম্বা বাক্যের দিন।",
+  "minutes": 9,
+  "cheats": [
+    "had started / had closed",
+    "By the end of the week we had",
+    "Until the retro, nobody had"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s013-tm-1",
+          "station": "time-machine",
+          "cheat": "সেই সপ্তাহের কাজ → past simple",
+          "source_date": "2026-07-30",
+          "raw": "I mean directly push into main branch. Do not **need** to create a new branch and create pull request. Directly push it in the main branch",
+          "tokens": [
+            "We",
+            "push",
+            "straight",
+            "to",
+            "main",
+            "and",
+            "skip",
+            "the",
+            "pull",
+            "request",
+            "that",
+            "week."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "pushed",
+                "pushes",
+                "were pushing"
+              ],
+              "answer": "pushed"
+            },
+            {
+              "index": 6,
+              "options": [
+                "skipped",
+                "skips",
+                "were skipping"
+              ],
+              "answer": "skipped"
+            }
+          ],
+          "sharp": "We pushed straight to main and skipped the pull request that week.",
+          "sharp_bn": "সেই সপ্তাহে আমরা সরাসরি main-এ পুশ করেছিলাম আর pull request বাদ দিয়েছিলাম।",
+          "coach_bn": "**that week** যোগ করলেই বোঝা যায় এটা নিয়ম নয়, ব্যতিক্রম। রেট্রোতে এই পার্থক্যটা জরুরি।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s013-ld-1",
+          "station": "ladder",
+          "cheat": "that had started + because + which",
+          "rungs": [
+            "We closed nine tickets.",
+            "We closed nine tickets in a sprint that had started badly.",
+            "We closed nine tickets in a sprint that had started badly, because the first three days went into an incident.",
+            "We closed nine tickets in a sprint that had started badly, because the first three days went into an incident, which nobody had planned for."
+          ],
+          "sharp": "We closed nine tickets in a sprint that had started badly, because the first three days went into an incident, which nobody had planned for.",
+          "sharp_bn": "আমরা নয়টা টিকিট শেষ করেছিলাম, এমন একটা স্প্রিন্টে যেটার শুরুটাই খারাপ ছিল — কারণ প্রথম তিন দিন একটা ইনসিডেন্টে চলে গিয়েছিল, যেটার জন্য কেউ পরিকল্পনা করেনি।",
+          "coach_bn": "৪ শব্দ থেকে ২৮ শব্দ। সংখ্যা দিয়ে শুরু করলে রেট্রোতে কেউ থামায় না।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s013-ld-2",
+          "station": "ladder",
+          "cheat": "so we moved + even though had already seen",
+          "rungs": [
+            "The estimate slipped.",
+            "The estimate slipped by two days.",
+            "The estimate slipped by two days, so we moved the smaller items to the next sprint.",
+            "The estimate slipped by two days, so we moved the smaller items to the next sprint, even though the client had already seen the original plan."
+          ],
+          "sharp": "The estimate slipped by two days, so we moved the smaller items to the next sprint, even though the client had already seen the original plan.",
+          "sharp_bn": "estimate দুই দিন পিছিয়ে গেল, তাই ছোট আইটেমগুলো পরের স্প্রিন্টে সরিয়ে দিলাম — যদিও ক্লায়েন্ট আগের প্ল্যানটা ইতিমধ্যে দেখে ফেলেছিল।",
+          "coach_bn": "খারাপ খবরের সাথে সিদ্ধান্তটাও একই বাক্যে দাও। তাহলে ওটা অজুহাত নয়, ব্যবস্থাপনা শোনায়।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s013-ld-3",
+          "station": "ladder",
+          "cheat": "after had closed + so that + which is the only reason",
+          "rungs": [
+            "I picked up the formula work.",
+            "I picked up the formula work after the incident had closed.",
+            "I picked up the formula work after the incident had closed, so that nothing waited on me for a second week.",
+            "I picked up the formula work after the incident had closed, so that nothing waited on me for a second week, which is the only reason we finished at all."
+          ],
+          "sharp": "I picked up the formula work after the incident had closed, so that nothing waited on me for a second week, which is the only reason we finished at all.",
+          "sharp_bn": "ইনসিডেন্ট বন্ধ হওয়ার পর ফর্মুলার কাজটা ধরলাম, যাতে দ্বিতীয় সপ্তাহে আমার জন্য কিছু আটকে না থাকে — এই একটা কারণেই আমরা আদৌ শেষ করতে পেরেছিলাম।",
+          "coach_bn": "**after the incident had closed** — কোনটা আগে কোনটা পরে, এক ক্লজে ফয়সালা।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s013-ld-4",
+          "station": "ladder",
+          "cheat": "because had pushed + which had already cost",
+          "rungs": [
+            "We agreed on one rule.",
+            "We agreed on one rule at the retro.",
+            "We agreed on one rule at the retro, because two people had pushed straight to main.",
+            "We agreed on one rule at the retro, because two people had pushed straight to main, which had already cost us one rollback."
+          ],
+          "sharp": "We agreed on one rule at the retro, because two people had pushed straight to main, which had already cost us one rollback.",
+          "sharp_bn": "রেট্রোতে আমরা একটা নিয়মে একমত হয়েছিলাম, কারণ দুজন সরাসরি main-এ পুশ করে ফেলেছিল — আর তাতে আমাদের একটা rollback-ও হয়ে গিয়েছিল।",
+          "coach_bn": "**which had already cost us** — সিদ্ধান্তের পেছনে খরচটা বসিয়ে দিলে কেউ তর্ক করে না।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s013-fr-1",
+          "station": "frame",
+          "cheat": "By the end of the week we had ___.",
+          "frame": "By the end of the week we had ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "By the end of the week we had closed nine tickets.",
+              "sharp_bn": "সপ্তাহ শেষে আমরা নয়টা টিকিট শেষ করে ফেলেছিলাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "By the end of the week we had agreed on one new rule.",
+              "sharp_bn": "সপ্তাহ শেষে আমরা একটা নতুন নিয়মে একমত হয়েছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "By the end of the week I had cooked only twice.",
+              "sharp_bn": "সপ্তাহ শেষে আমি মোটে দুইবার রান্না করেছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "By the end of the week we had visited both families.",
+              "sharp_bn": "সপ্তাহ শেষে আমরা দুই পরিবারেই ঘুরে এসেছিলাম।"
+            }
+          ],
+          "sharp": "By the end of the week we had closed nine tickets.",
+          "reps": 4,
+          "coach_bn": "রেট্রো শুরু করার ছাঁচ। সংখ্যা বসাও — **nine tickets**, **twice** — তাহলে কেউ আন্দাজ করে না।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s013-bw-1",
+          "station": "backward",
+          "cheat": "By the end of the week + had pushed into",
+          "chunks": [
+            "By the end of the week,",
+            "we had closed everything",
+            "that the incident",
+            "had pushed into the backlog."
+          ],
+          "sharp": "By the end of the week, we had closed everything that the incident had pushed into the backlog.",
+          "sharp_bn": "সপ্তাহ শেষ হতে হতে ইনসিডেন্ট যা কিছু backlog-এ ঠেলে দিয়েছিল, সবই আমরা শেষ করে ফেলেছিলাম।",
+          "coach_bn": "লেজ আগে: **had pushed into the backlog** → পুরোটা। দুটো **had** পাশাপাশি বসানোর প্র্যাকটিস।",
+          "reps": 3,
+          "target_sec": 11
+        },
+        {
+          "id": "s013-bw-2",
+          "station": "backward",
+          "cheat": "Until the retro, nobody had noticed",
+          "chunks": [
+            "Until the retro,",
+            "nobody had noticed",
+            "that two of us",
+            "were fixing the same field."
+          ],
+          "sharp": "Until the retro, nobody had noticed that two of us were fixing the same field.",
+          "sharp_bn": "রেট্রোর আগ পর্যন্ত কেউ খেয়াল করেনি যে আমরা দুজন একই ফিল্ড ঠিক করছিলাম।",
+          "coach_bn": "**Until X, nobody had noticed** — অপচয় ধরা পড়ার গল্প বলার সবচেয়ে পরিষ্কার ছাঁচ।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s013-bw-3",
+          "station": "backward",
+          "cheat": "By the time + had not · দৈনন্দিন",
+          "chunks": [
+            "By the time the weekend arrived,",
+            "I had not opened",
+            "a single personal project",
+            "for eleven days."
+          ],
+          "sharp": "By the time the weekend arrived, I had not opened a single personal project for eleven days.",
+          "sharp_bn": "সপ্তাহান্ত আসতে আসতে টানা এগারো দিন আমি নিজের একটা প্রজেক্টও খুলিনি।",
+          "coach_bn": "নেতিবাচক past perfect — **had not opened**। যা করোনি সেটাও টাইমলাইনের অংশ।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s013-if-1",
+          "station": "if-machine",
+          "cheat": "If + had not V3 → would have V3",
+          "tiles": [
+            "If the incident",
+            "had not taken three days,",
+            "we would have finished",
+            "the whole sprint."
+          ],
+          "sharp": "If the incident had not taken three days, we would have finished the whole sprint.",
+          "sharp_bn": "ইনসিডেন্টে তিন দিন না গেলে আমরা পুরো স্প্রিন্টটাই শেষ করে ফেলতাম।",
+          "coach_bn": "রেট্রোর সবচেয়ে কাজের বাক্য: কারণ আর ফল, কারো নাম ছাড়াই।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s013-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had protected one evening,",
+            "I would have finished",
+            "my own project too."
+          ],
+          "sharp": "If I had protected one evening, I would have finished my own project too.",
+          "sharp_bn": "একটা সন্ধ্যা আলাদা করে রাখলে নিজের প্রজেক্টটাও শেষ করে ফেলতাম।",
+          "coach_bn": "**had protected one evening** — নিজের সময় নিয়ে কথা বলার ভাষা। কাজে আর বাসায় একই কাঠামো।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s013-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — রেট্রো",
+          "prompt_bn": "স্প্রিন্টটা রেট্রোতে বলো: শুরুটা কেমন ছিল, মাঝখানে কী হলো, সপ্তাহ শেষে কতদূর পৌঁছেছিলে, কী চোখ এড়িয়ে গিয়েছিল, আর সময়টা কোথায় গেল।",
+          "checklist": [
+            "had started / had closed",
+            "By the end of the week we had",
+            "Until the retro, nobody had",
+            "so that / even though",
+            "If ___ had not ___, we would have ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "The sprint had started badly, because the first three days went into an incident that nobody had planned for. I picked up the formula work after the incident had closed, so that nothing waited on me for a second week. By the end of the week, we had closed everything that the incident had pushed into the backlog. Until the retro, nobody had noticed that two of us were fixing the same field. If the incident had not taken three days, we would have finished the whole sprint.",
+          "coach_bn": "পাঁচটা বাক্য, পাঁচটা সময়স্তর। রেট্রোতে ক্রম ঠিক থাকলে কেউ \"তারপর কী হলো\" জিজ্ঞেস করে না।"
+        }
+      ]
+    }
+  ]
+}

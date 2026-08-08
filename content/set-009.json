@@ -111,43 +111,6 @@
       ]
     },
     {
-      "station": "ladder",
-      "items": [
-        {
-          "id": "s009-ld-1",
-          "station": "ladder",
-          "cheat": "could + so that + which",
-          "rungs": [
-            "We could score every provider.",
-            "We could score every provider on accuracy and uptime.",
-            "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion.",
-            "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time."
-          ],
-          "sharp": "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time.",
-          "sharp_bn": "প্রতিটা provider-কে accuracy আর uptime দিয়ে নম্বর দিতে পারি, যাতে বাছাইটা আর মতামতের ব্যাপার না থাকে — গতবার ওভাবেই তো আমাদের এক সপ্তাহ গেল।",
-          "coach_bn": "প্রস্তাবের সাথে গতবারের ক্ষতিটা জুড়ে দাও। **which is how we lost a week** — এক ক্লজে যুক্তি পোক্ত।",
-          "reps": 3,
-          "target_sec": 14
-        },
-        {
-          "id": "s009-ld-2",
-          "station": "ladder",
-          "cheat": "I would + so that + even though",
-          "rungs": [
-            "I would run one long call.",
-            "I would run one long call through each provider.",
-            "I would run one long call through each provider, so that we see accuracy where it actually matters.",
-            "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon."
-          ],
-          "sharp": "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon.",
-          "sharp_bn": "প্রতিটা provider দিয়ে একটা করে লম্বা কল চালাতাম, যাতে যেখানে accuracy আসলে দরকার সেখানেই সেটা দেখা যায় — যদিও তাতে একটা বাড়তি বিকেল যাবে।",
-          "coach_bn": "খরচটা নিজেই স্বীকার করো (**even though**) — তাহলে কেউ সেটা দিয়ে আক্রমণ করতে পারে না।",
-          "reps": 3,
-          "target_sec": 14
-        }
-      ]
-    },
-    {
       "station": "backward",
       "items": [
         {
@@ -303,6 +266,43 @@
           "coach_bn": "**would pay half of what we pay now** — কল্পনা আর বাস্তব এক বাক্যে পাশাপাশি।",
           "reps": 3,
           "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s009-ld-1",
+          "station": "ladder",
+          "cheat": "could + so that + which",
+          "rungs": [
+            "We could score every provider.",
+            "We could score every provider on accuracy and uptime.",
+            "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion.",
+            "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time."
+          ],
+          "sharp": "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time.",
+          "sharp_bn": "প্রতিটা provider-কে accuracy আর uptime দিয়ে নম্বর দিতে পারি, যাতে বাছাইটা আর মতামতের ব্যাপার না থাকে — গতবার ওভাবেই তো আমাদের এক সপ্তাহ গেল।",
+          "coach_bn": "প্রস্তাবের সাথে গতবারের ক্ষতিটা জুড়ে দাও। **which is how we lost a week** — এক ক্লজে যুক্তি পোক্ত।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s009-ld-2",
+          "station": "ladder",
+          "cheat": "I would + so that + even though",
+          "rungs": [
+            "I would run one long call.",
+            "I would run one long call through each provider.",
+            "I would run one long call through each provider, so that we see accuracy where it actually matters.",
+            "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon."
+          ],
+          "sharp": "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon.",
+          "sharp_bn": "প্রতিটা provider দিয়ে একটা করে লম্বা কল চালাতাম, যাতে যেখানে accuracy আসলে দরকার সেখানেই সেটা দেখা যায় — যদিও তাতে একটা বাড়তি বিকেল যাবে।",
+          "coach_bn": "খরচটা নিজেই স্বীকার করো (**even though**) — তাহলে কেউ সেটা দিয়ে আক্রমণ করতে পারে না।",
+          "reps": 3,
+          "target_sec": 14
         }
       ]
     },

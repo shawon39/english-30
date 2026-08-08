@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "3.1",
+  "set": 16,
+  "world": "meeting",
+  "world_bn": "মিটিং বস",
+  "title_bn": "অন্য টিমের সাথে",
+  "desc_bn": "কেউ না জানিয়ে deploy করেছে, তুমি আটকে আছো — ভদ্রভাবে না বলা আর চাওয়ার সেট। ছাঁচ-ভারী।",
+  "minutes": 7,
+  "cheats": [
+    "We are blocked on ___",
+    "Would it be possible to ___",
+    "I would rather not ___ until ___"
+  ],
+  "stations": [
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s016-fr-1",
+          "station": "frame",
+          "cheat": "We are blocked on ___.",
+          "frame": "We are blocked on ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "We are blocked on the sandbox refresh.",
+              "sharp_bn": "আমরা sandbox refresh-এ আটকে আছি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "We are blocked on one permission that only your team can grant.",
+              "sharp_bn": "আমরা এমন একটা permission-এ আটকে আছি যেটা শুধু তোমাদের টিম দিতে পারে।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "We are blocked on one signature from the office.",
+              "sharp_bn": "আমরা অফিসের একটা সইয়ের জন্য আটকে আছি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "We are blocked on the landlord, who has not replied all week.",
+              "sharp_bn": "আমরা বাড়িওয়ালার জন্য আটকে আছি, যে সারা সপ্তাহ উত্তর দেয়নি।"
+            }
+          ],
+          "sharp": "We are blocked on the sandbox refresh.",
+          "reps": 4,
+          "coach_bn": "**blocked on** — দোষ না দিয়ে নির্ভরতা বোঝানো। এক শব্দে বোঝা যায় কার হাতে বল।",
+          "target_sec": 6
+        },
+        {
+          "id": "s016-fr-2",
+          "station": "frame",
+          "cheat": "I would rather not ___ until ___.",
+          "frame": "I would rather not ___ until ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "I would rather not promise a date until the audit is finished.",
+              "sharp_bn": "অডিট শেষ না হওয়া পর্যন্ত আমি বরং কোনো তারিখ দিতে চাই না।"
+            },
+            {
+              "scene": "office",
+              "sharp": "I would rather not touch that object until we have a backup.",
+              "sharp_bn": "ব্যাকআপ না নেওয়া পর্যন্ত আমি বরং ওই object-এ হাত দিতে চাই না।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I would rather not book anything until the leave is approved.",
+              "sharp_bn": "ছুটি অনুমোদন না হওয়া পর্যন্ত আমি বরং কিছু বুক করতে চাই না।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I would rather not decide until I have seen the place myself.",
+              "sharp_bn": "জায়গাটা নিজে না দেখা পর্যন্ত আমি বরং সিদ্ধান্ত নিতে চাই না।"
+            }
+          ],
+          "sharp": "I would rather not promise a date until the audit is finished.",
+          "reps": 4,
+          "coach_bn": "**I would rather not … until …** — না বলা, কিন্তু শর্তসহ। দরজা খোলা থাকে, তাই কেউ রাগ করে না।",
+          "target_sec": 8
+        },
+        {
+          "id": "s016-fr-3",
+          "station": "frame",
+          "cheat": "Would it be possible to ___?",
+          "frame": "Would it be possible to ___?",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Would it be possible to give us read access first?",
+              "sharp_bn": "আগে শুধু read access দেওয়া যাবে?"
+            },
+            {
+              "scene": "office",
+              "sharp": "Would it be possible to move the review to Thursday?",
+              "sharp_bn": "রিভিউটা বৃহস্পতিবারে সরানো যাবে?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Would it be possible to come an hour later?",
+              "sharp_bn": "এক ঘণ্টা পরে আসা যাবে?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Would it be possible to keep one seat for me?",
+              "sharp_bn": "আমার জন্য একটা সিট রাখা যাবে?"
+            }
+          ],
+          "sharp": "Would it be possible to give us read access first?",
+          "reps": 4,
+          "coach_bn": "\"Can you\" থেকে **Would it be possible to** অনেক নরম। না বলার জায়গা রাখলে হ্যাঁ পাওয়া সহজ হয়।",
+          "target_sec": 7
+        },
+        {
+          "id": "s016-fr-4",
+          "station": "frame",
+          "cheat": "Before you ___, could you ___?",
+          "frame": "Before you ___, could you ___?",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Before you deploy, could you tell me which org you are pointing at?",
+              "sharp_bn": "deploy করার আগে বলবে কোন org-এ করছো?"
+            },
+            {
+              "scene": "office",
+              "sharp": "Before you merge, could you check whether the field is still used?",
+              "sharp_bn": "merge করার আগে দেখে নেবে ফিল্ডটা এখনো ব্যবহার হচ্ছে কি না?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before you order, could you ask if anyone is fasting?",
+              "sharp_bn": "অর্ডার করার আগে জিজ্ঞেস করে নেবে কেউ রোজা আছে কি না?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before you leave, could you lock the back door?",
+              "sharp_bn": "বেরোনোর আগে পেছনের দরজাটা লাগিয়ে দেবে?"
+            }
+          ],
+          "sharp": "Before you deploy, could you tell me which org you are pointing at?",
+          "reps": 4,
+          "coach_bn": "নিয়ম চাপানোর বদলে অনুরোধ। **Before you X, could you Y** — একই নিয়ম, শূন্য সংঘাত।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s016-tm-1",
+          "station": "time-machine",
+          "cheat": "যা হয়েছিল → past simple",
+          "source_date": "2026-07-29",
+          "raw": "Who did you deploy? Why **didn't** you take any permission from my site?",
+          "tokens": [
+            "They",
+            "deploy",
+            "to",
+            "my",
+            "org",
+            "and",
+            "nobody",
+            "asks",
+            "me",
+            "first."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "deployed",
+                "deploys",
+                "were deploying"
+              ],
+              "answer": "deployed"
+            },
+            {
+              "index": 7,
+              "options": [
+                "asked",
+                "asks",
+                "was asking"
+              ],
+              "answer": "asked"
+            }
+          ],
+          "sharp": "They deployed to my org and nobody asked me first.",
+          "sharp_bn": "ওরা আমার org-এ deploy করে ফেলল, আর কেউ আমাকে আগে জিজ্ঞেসও করল না।",
+          "coach_bn": "অভিযোগটা অতীতে বললে ওটা ঘটনা হয়ে যায়। বর্তমানে বললে আক্রমণ শোনায়।",
+          "reps": 3,
+          "target_sec": 7
+        },
+        {
+          "id": "s016-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple ×২",
+          "source_date": "2026-07-29",
+          "raw": "Just ask me, **I'll I'll** give you the permission and y you just do it by navigating and clicking writing. Okay.",
+          "tokens": [
+            "I",
+            "give",
+            "them",
+            "the",
+            "permission",
+            "and",
+            "they",
+            "finish",
+            "it",
+            "in",
+            "ten",
+            "minutes."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "gave",
+                "gives",
+                "was giving"
+              ],
+              "answer": "gave"
+            },
+            {
+              "index": 7,
+              "options": [
+                "finished",
+                "finishes",
+                "were finishing"
+              ],
+              "answer": "finished"
+            }
+          ],
+          "sharp": "I gave them the permission and they finished it in ten minutes.",
+          "sharp_bn": "আমি ওদের permission দিলাম, আর ওরা দশ মিনিটেই কাজটা শেষ করল।",
+          "coach_bn": "তোমার লাইনে **I'll I'll** — দুইবার। অতীতে **gave** একবারেই বেরোয়।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s016-ld-1",
+          "station": "ladder",
+          "cheat": "until + so + which is why",
+          "rungs": [
+            "We are blocked on your side.",
+            "We are blocked on your side until the sandbox refresh finishes.",
+            "We are blocked on your side until the sandbox refresh finishes, so nothing on our list can move today.",
+            "We are blocked on your side until the sandbox refresh finishes, so nothing on our list can move today, which is why I raised it here rather than in a message."
+          ],
+          "sharp": "We are blocked on your side until the sandbox refresh finishes, so nothing on our list can move today, which is why I raised it here rather than in a message.",
+          "sharp_bn": "sandbox refresh শেষ না হওয়া পর্যন্ত আমরা তোমাদের দিকে আটকে আছি, তাই আজ আমাদের তালিকার কিছুই এগোতে পারছে না — সেজন্যই মেসেজে না বলে এখানে তুললাম।",
+          "coach_bn": "কেন মিটিংয়ে তুলছো সেটাও বলে দাও। তাহলে ব্যাপারটা নালিশ নয়, জরুরি মনে হয়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s016-bw-1",
+          "station": "backward",
+          "cheat": "Would it be possible to + so that",
+          "chunks": [
+            "Would it be possible to give us",
+            "read access first,",
+            "so that we can start",
+            "while the rest is being approved?"
+          ],
+          "sharp": "Would it be possible to give us read access first, so that we can start while the rest is being approved?",
+          "sharp_bn": "আগে শুধু read access দেওয়া যাবে? যাতে বাকিটা অ্যাপ্রুভ হওয়ার ফাঁকেই আমরা শুরু করতে পারি।",
+          "coach_bn": "পুরোটা না পেলে **অংশটা** চাও। আলোচনায় আটকে যাওয়ার সবচেয়ে ভালো উদ্ধার।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s016-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3",
+          "tiles": [
+            "If your team",
+            "had asked me first,",
+            "the deploy would not have gone",
+            "to the wrong org."
+          ],
+          "sharp": "If your team had asked me first, the deploy would not have gone to the wrong org.",
+          "sharp_bn": "তোমাদের টিম আগে জিজ্ঞেস করলে deploy-টা ভুল org-এ যেত না।",
+          "coach_bn": "কর্তা **the deploy** — মানুষ নয়, ঘটনা। তাই কেউ আত্মরক্ষায় নামে না।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s016-if-2",
+          "station": "if-machine",
+          "cheat": "If + past → would (2nd conditional)",
+          "tiles": [
+            "If we",
+            "got read access today,",
+            "we would stop blocking",
+            "your review as well."
+          ],
+          "sharp": "If we got read access today, we would stop blocking your review as well.",
+          "sharp_bn": "আজ read access পেলে আমরা তোমাদের রিভিউটাও আর আটকে রাখতাম না।",
+          "coach_bn": "তোমার চাওয়ার সাথে **ওদের লাভ** জুড়ে দাও। তখন ওটা আর অনুরোধ থাকে না।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s016-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If you",
+            "had told me on Monday,",
+            "I would have kept",
+            "the whole afternoon free."
+          ],
+          "sharp": "If you had told me on Monday, I would have kept the whole afternoon free.",
+          "sharp_bn": "সোমবারে বললে পুরো বিকেলটাই খালি রাখতাম।",
+          "coach_bn": "একই ছাঁচ, বাসার কথায়। অভিযোগ নয় — কী করতে পারতে সেটাই বলা।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s016-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — অন্য টিম",
+          "prompt_bn": "অন্য টিমের সাথে কথা বলছো: কী হয়েছিল বলো, এখন কোথায় আটকে আছো বলো, ভদ্রভাবে একটা ছোট জিনিস চাও, একটা জিনিসে না বলো, আর কী করলে এটা হতোই না বলো।",
+          "checklist": [
+            "past simple দিয়ে যা হয়েছিল",
+            "We are blocked on ___",
+            "Would it be possible to ___",
+            "I would rather not ___ until ___",
+            "If ___ had ___, would not have ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "They deployed to my org last week and nobody asked me first. We are blocked on the sandbox refresh, so nothing on our list can move today. Would it be possible to give us read access first, so that we can start while the rest is being approved? I would rather not promise a date until the audit is finished. If your team had asked me first, the deploy would not have gone to the wrong org.",
+          "coach_bn": "ঘটনা → বাধা → ছোট চাওয়া → ভদ্র না → প্রতিকার। পাঁচ ধাপ, একবারও গলা না চড়িয়ে।"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "schemaVersion": "3.1",
+  "set": 19,
+  "world": "proposal",
+  "world_bn": "প্রপোজাল",
+  "title_bn": "হাতের কাজ কমানো",
+  "desc_bn": "সাপ্তাহিক রিপোর্ট নিজে চলুক, ব্রাঞ্চের একটা নিয়ম থাকুক — অটোমেশনের প্রস্তাব সংখ্যা দিয়ে।",
+  "minutes": 8,
+  "cheats": [
+    "The cheapest fix here is",
+    "That would save us",
+    "If ___ ran on its own"
+  ],
+  "stations": [
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s019-fr-1",
+          "station": "frame",
+          "cheat": "The cheapest fix here is ___.",
+          "frame": "The cheapest fix here is ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "The cheapest fix here is a weekly report that runs on its own.",
+              "sharp_bn": "এখানে সবচেয়ে সস্তা সমাধান হলো একটা সাপ্তাহিক রিপোর্ট যেটা নিজে চলে।"
+            },
+            {
+              "scene": "office",
+              "sharp": "The cheapest fix here is one branch rule that everyone follows.",
+              "sharp_bn": "এখানে সবচেয়ে সস্তা সমাধান হলো একটাই ব্রাঞ্চ নিয়ম যেটা সবাই মানে।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The cheapest fix here is one shared list on the fridge.",
+              "sharp_bn": "এখানে সবচেয়ে সস্তা সমাধান হলো ফ্রিজে একটা সবার তালিকা।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The cheapest fix here is leaving ten minutes earlier.",
+              "sharp_bn": "এখানে সবচেয়ে সস্তা সমাধান হলো দশ মিনিট আগে বেরোনো।"
+            }
+          ],
+          "sharp": "The cheapest fix here is a weekly report that runs on its own.",
+          "reps": 4,
+          "coach_bn": "**cheapest fix** — ছোট প্রস্তাবকে বুদ্ধিমান শোনায়, কৃপণ নয়। মিটিংয়ে এই শব্দটা কাজ করে।",
+          "target_sec": 8
+        },
+        {
+          "id": "s019-fr-2",
+          "station": "frame",
+          "cheat": "That would save us ___.",
+          "frame": "That would save us ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "That would save us four hours a month across the team.",
+              "sharp_bn": "তাতে টিম মিলিয়ে মাসে চার ঘণ্টা বাঁচত।"
+            },
+            {
+              "scene": "office",
+              "sharp": "That would save us one rollback every sprint.",
+              "sharp_bn": "তাতে প্রতি স্প্রিন্টে একটা করে rollback বাঁচত।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "That would save us an argument every Friday.",
+              "sharp_bn": "তাতে প্রতি শুক্রবারে একটা করে তর্ক বাঁচত।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "That would save us about an hour every morning.",
+              "sharp_bn": "তাতে প্রতি সকালে প্রায় এক ঘণ্টা বাঁচত।"
+            }
+          ],
+          "sharp": "That would save us four hours a month across the team.",
+          "reps": 4,
+          "coach_bn": "প্রস্তাবের পরের বাক্যটা সবসময় **That would save us …**। সংখ্যা ছাড়া প্রস্তাব শুধু মতামত।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s019-ld-1",
+          "station": "ladder",
+          "cheat": "that we run by hand + so that + which is",
+          "rungs": [
+            "I would automate the report.",
+            "I would automate the report that we run by hand every Monday.",
+            "I would automate the report that we run by hand every Monday, so that nobody spends an hour on it again.",
+            "I would automate the report that we run by hand every Monday, so that nobody spends an hour on it again, which is four hours a month across the team."
+          ],
+          "sharp": "I would automate the report that we run by hand every Monday, so that nobody spends an hour on it again, which is four hours a month across the team.",
+          "sharp_bn": "প্রতি সোমবার যে রিপোর্টটা আমরা হাতে বানাই সেটা আমি অটোমেট করতাম, যাতে আর কাউকে ওতে এক ঘণ্টা দিতে না হয় — টিম মিলিয়ে যেটা মাসে চার ঘণ্টা।",
+          "coach_bn": "শেষে সংখ্যা বসাও: **four hours a month**। প্রস্তাবের সাথে হিসাব থাকলে সিদ্ধান্ত দ্রুত আসে।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s019-ld-2",
+          "station": "ladder",
+          "cheat": "for everything that + so that + even though",
+          "rungs": [
+            "We could keep one branch rule.",
+            "We could keep one branch rule for everything that touches production.",
+            "We could keep one branch rule for everything that touches production, so that a rollback never depends on who pushed last.",
+            "We could keep one branch rule for everything that touches production, so that a rollback never depends on who pushed last, even though it slows a small fix by ten minutes."
+          ],
+          "sharp": "We could keep one branch rule for everything that touches production, so that a rollback never depends on who pushed last, even though it slows a small fix by ten minutes.",
+          "sharp_bn": "production ছোঁয় এমন সবকিছুর জন্য আমরা একটাই ব্রাঞ্চ নিয়ম রাখতে পারি, যাতে rollback কখনো কে শেষে পুশ করেছে তার উপর নির্ভর না করে — যদিও তাতে ছোট একটা ফিক্স দশ মিনিট দেরি হবে।",
+          "coach_bn": "খরচটা নিজে বলে দিলে কেউ ওটা দিয়ে প্রস্তাব ফেলে দিতে পারে না।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s019-if-1",
+          "station": "if-machine",
+          "cheat": "If + past → would (2nd conditional)",
+          "tiles": [
+            "If the report",
+            "ran on its own,",
+            "nobody would open the meeting",
+            "by asking for numbers."
+          ],
+          "sharp": "If the report ran on its own, nobody would open the meeting by asking for numbers.",
+          "sharp_bn": "রিপোর্টটা নিজে চললে কেউ মিটিং শুরুই করত না সংখ্যা চেয়ে।",
+          "coach_bn": "ফলটা এমন কিছু বেছে নাও যেটা সবাই ভোগ করে। তখন প্রস্তাবটা সবার হয়ে যায়।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s019-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have lost",
+          "tiles": [
+            "If we",
+            "had set the branch rule in January,",
+            "we would not have lost a day",
+            "to that rollback."
+          ],
+          "sharp": "If we had set the branch rule in January, we would not have lost a day to that rollback.",
+          "sharp_bn": "জানুয়ারিতেই ব্রাঞ্চ নিয়মটা করলে ওই rollback-এ আমাদের একটা দিন যেত না।",
+          "coach_bn": "অতীতের একটা আসল ক্ষতি দেখাও। **lost a day** — প্রস্তাবের সবচেয়ে শক্ত ভিত্তি।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s019-if-3",
+          "station": "if-machine",
+          "cheat": "If + past → would never · দৈনন্দিন",
+          "tiles": [
+            "If the bills",
+            "went out automatically,",
+            "I would never pay",
+            "a late fee again."
+          ],
+          "sharp": "If the bills went out automatically, I would never pay a late fee again.",
+          "sharp_bn": "বিলগুলো নিজে থেকে কেটে গেলে আর কখনো দেরির জরিমানা দিতে হতো না।",
+          "coach_bn": "**would never … again** — বারবার হওয়া সমস্যার একবারে সমাধান বোঝায়।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s019-tm-1",
+          "station": "time-machine",
+          "cheat": "past simple ×৩",
+          "source_date": "2026-08-03",
+          "raw": "Can you **run** a report in the last four or five days, including today? how many times **is** this org used for this MCP. Okay.",
+          "tokens": [
+            "Nobody",
+            "tracks",
+            "how",
+            "often",
+            "the",
+            "org",
+            "is",
+            "used,",
+            "so",
+            "we",
+            "guess",
+            "at",
+            "the",
+            "numbers."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "tracked",
+                "tracks",
+                "was tracking"
+              ],
+              "answer": "tracked"
+            },
+            {
+              "index": 6,
+              "options": [
+                "was",
+                "is",
+                "has been"
+              ],
+              "answer": "was"
+            },
+            {
+              "index": 10,
+              "options": [
+                "guessed",
+                "guesses",
+                "were guessing"
+              ],
+              "answer": "guessed"
+            }
+          ],
+          "sharp": "Nobody tracked how often the org was used, so we guessed at the numbers.",
+          "sharp_bn": "org-টা কতবার ব্যবহার হচ্ছে কেউ হিসাব রাখত না, তাই আমরা সংখ্যাগুলো আন্দাজ করতাম।",
+          "coach_bn": "প্রস্তাবের আগে সমস্যাটা অতীতে বসাও। **we guessed** — এক শব্দে পুরো ঘাটতিটা স্বীকার করা।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s019-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + still",
+          "source_date": "2026-08-06",
+          "raw": "Also, **they're** adver advertising **some kind of** credits as well, so how long I **can** use them free.",
+          "tokens": [
+            "We",
+            "watch",
+            "the",
+            "free",
+            "credits",
+            "closely",
+            "and",
+            "still",
+            "lose",
+            "track",
+            "of",
+            "the",
+            "spend."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "watched",
+                "watches",
+                "were watching"
+              ],
+              "answer": "watched"
+            },
+            {
+              "index": 8,
+              "options": [
+                "lost",
+                "loses",
+                "were losing"
+              ],
+              "answer": "lost"
+            }
+          ],
+          "sharp": "We watched the free credits closely and still lost track of the spend.",
+          "sharp_bn": "ফ্রি ক্রেডিটগুলো আমরা মন দিয়েই দেখতাম, তবু খরচের হিসাব হারিয়ে ফেলতাম।",
+          "coach_bn": "**still lost** — চেষ্টা করেও হারানো। এই স্বীকারোক্তিটাই প্রস্তাবটাকে বিশ্বাসযোগ্য করে।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s019-bw-1",
+          "station": "backward",
+          "cheat": "If + would + instead of",
+          "chunks": [
+            "If the numbers arrived on their own,",
+            "we would spend the meeting",
+            "deciding what to do",
+            "instead of collecting them."
+          ],
+          "sharp": "If the numbers arrived on their own, we would spend the meeting deciding what to do instead of collecting them.",
+          "sharp_bn": "সংখ্যাগুলো নিজে থেকে এসে গেলে মিটিংটা সংখ্যা জোগাড়ে নয়, কী করব সেটা ঠিক করতেই যেত।",
+          "coach_bn": "লেজ আগে: **instead of collecting them** → পুরোটা। **A instead of B** — প্রস্তাবের সবচেয়ে স্পষ্ট তুলনা।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s019-bw-2",
+          "station": "backward",
+          "cheat": "If + would stop · দৈনন্দিন",
+          "chunks": [
+            "If the bills paid themselves on the first,",
+            "I would stop losing",
+            "an evening every month",
+            "to the same five apps."
+          ],
+          "sharp": "If the bills paid themselves on the first, I would stop losing an evening every month to the same five apps.",
+          "sharp_bn": "বিলগুলো প্রতি মাসের এক তারিখে নিজে থেকে কাটলে একই পাঁচটা অ্যাপের পেছনে প্রতি মাসে একটা সন্ধ্যা হারাতাম না।",
+          "coach_bn": "একই অটোমেশন যুক্তি, বাসার খরচে। অফিসে যেটা \"হাতের কাজ\", বাসায় সেটাও তাই।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s019-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — অটোমেশন পিচ",
+          "prompt_bn": "হাতের কাজ কমানোর প্রস্তাব দাও: এখন কী হাতে হয়, তাতে কত সময় যায়, তুমি কী বসাতে চাও, তাতে কী বাঁচবে, আর আগে করলে কোন ক্ষতিটা এড়ানো যেত।",
+          "checklist": [
+            "past simple দিয়ে এখনকার অবস্থা",
+            "The cheapest fix here is",
+            "so that / even though",
+            "That would save us ___",
+            "If we had ___, we would not have lost ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Nobody tracked how often the org was used, so we guessed at the numbers every Monday. The cheapest fix here is a weekly report that runs on its own. That would save us four hours a month across the team, and if the report ran on its own, nobody would open the meeting by asking for numbers. We could also keep one branch rule for everything that touches production, even though it slows a small fix by ten minutes. If we had set that rule in January, we would not have lost a day to that rollback.",
+          "coach_bn": "অবস্থা → সমাধান → হিসাব → নজির। চারটা ধাপ, আর প্রতিটাতে একটা করে সংখ্যা।"
+        }
+      ]
+    }
+  ]
+}

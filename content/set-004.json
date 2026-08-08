@@ -13,6 +13,112 @@
   ],
   "stations": [
     {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s004-fr-1",
+          "station": "frame",
+          "cheat": "If we ___, we could ___.",
+          "frame": "If we ___, we could ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "If we shipped the MCP first, we could learn what customers actually ask for.",
+              "sharp_bn": "আগে MCP ছাড়লে কাস্টমার আসলে কী চায় সেটা জানতে পারতাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "If we cached the org context, we could cut the response time in half.",
+              "sharp_bn": "org context ক্যাশ করলে রেসপন্স টাইম অর্ধেকে নামত।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "If we cooked on Sunday, we could eat properly all week.",
+              "sharp_bn": "রবিবারে রান্না করে রাখলে সারা সপ্তাহ ঠিকমতো খাওয়া যেত।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "If we shared one car, we could save on parking every day.",
+              "sharp_bn": "একটা গাড়ি ভাগ করে নিলে রোজ পার্কিংয়ের টাকা বাঁচত।"
+            }
+          ],
+          "sharp": "If we shipped the MCP first, we could learn what customers actually ask for.",
+          "reps": 4,
+          "coach_bn": "**If + past → would/could** — বাস্তবে সম্ভব, এখনো করা হয়নি। প্রস্তাবের ইঞ্জিন।",
+          "target_sec": 9
+        },
+        {
+          "id": "s004-fr-2",
+          "station": "frame",
+          "cheat": "What I would suggest is ___.",
+          "frame": "What I would suggest is ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "What I would suggest is shipping the MCP to two customers first.",
+              "sharp_bn": "আমার প্রস্তাব হলো, MCP-টা আগে দুইজন কাস্টমারকে দেওয়া।"
+            },
+            {
+              "scene": "office",
+              "sharp": "What I would suggest is keeping the old field until the migration finishes.",
+              "sharp_bn": "আমার প্রস্তাব হলো, migration শেষ না হওয়া পর্যন্ত পুরনো ফিল্ডটা রেখে দেওয়া।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "What I would suggest is leaving before the evening rush.",
+              "sharp_bn": "আমার মত হলো, সন্ধ্যার ভিড়ের আগেই বেরিয়ে পড়া।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "What I would suggest is ordering less and seeing if it is enough.",
+              "sharp_bn": "আমার মত হলো, কম অর্ডার করে দেখা যথেষ্ট হয় কি না।"
+            }
+          ],
+          "sharp": "What I would suggest is shipping the MCP to two customers first.",
+          "reps": 4,
+          "coach_bn": "\"I think we should\" থেকে **What I would suggest is** অনেক বেশি সিনিয়র শোনায় — একই কথা, বেশি ওজন।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s004-ld-1",
+          "station": "ladder",
+          "cheat": "could + instead of + so that + which",
+          "rungs": [
+            "We could build our own engine.",
+            "We could build our own engine instead of depending on one provider.",
+            "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile.",
+            "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile, which is what the customer keeps asking for."
+          ],
+          "sharp": "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile, which is what the customer keeps asking for.",
+          "sharp_bn": "একটা প্রোভাইডারের উপর নির্ভর না করে আমরা নিজেদের ইঞ্জিন বানাতে পারি, যাতে একই মস্তিষ্ক Salesforce-এ আর মোবাইলে দুই জায়গাতেই চলে — কাস্টমার তো এটাই বারবার চাইছে।",
+          "coach_bn": "**could** দিয়ে প্রস্তাব দিলে জোর করা হয় না, দরজা খোলা থাকে। ইঞ্জিনিয়ারিং মিটিংয়ের ভাষা।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s004-ld-2",
+          "station": "ladder",
+          "cheat": "I would + that + so that + even though",
+          "rungs": [
+            "I would add one tool.",
+            "I would add one tool that holds the org context.",
+            "I would add one tool that holds the org context, so that every request starts with the right account.",
+            "I would add one tool that holds the org context, so that every request starts with the right account, even though it costs us one extra call."
+          ],
+          "sharp": "I would add one tool that holds the org context, so that every request starts with the right account, even though it costs us one extra call.",
+          "sharp_bn": "আমি একটাই টুল যোগ করতাম যেটা org-এর context ধরে রাখে, যাতে প্রতিটা রিকোয়েস্ট সঠিক অ্যাকাউন্ট থেকে শুরু হয় — যদিও তাতে একটা বাড়তি কল লাগে।",
+          "coach_bn": "**I would add** = আমার মত, চাপিয়ে দেওয়া না। আর **even though** দিয়ে খরচটা নিজেই স্বীকার করলে বিশ্বাসযোগ্যতা বাড়ে।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
       "station": "time-machine",
       "items": [
         {
@@ -112,149 +218,6 @@
       ]
     },
     {
-      "station": "ladder",
-      "items": [
-        {
-          "id": "s004-ld-1",
-          "station": "ladder",
-          "cheat": "could + instead of + so that + which",
-          "rungs": [
-            "We could build our own engine.",
-            "We could build our own engine instead of depending on one provider.",
-            "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile.",
-            "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile, which is what the customer keeps asking for."
-          ],
-          "sharp": "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile, which is what the customer keeps asking for.",
-          "sharp_bn": "একটা প্রোভাইডারের উপর নির্ভর না করে আমরা নিজেদের ইঞ্জিন বানাতে পারি, যাতে একই মস্তিষ্ক Salesforce-এ আর মোবাইলে দুই জায়গাতেই চলে — কাস্টমার তো এটাই বারবার চাইছে।",
-          "coach_bn": "**could** দিয়ে প্রস্তাব দিলে জোর করা হয় না, দরজা খোলা থাকে। ইঞ্জিনিয়ারিং মিটিংয়ের ভাষা।",
-          "reps": 3,
-          "target_sec": 14
-        },
-        {
-          "id": "s004-ld-2",
-          "station": "ladder",
-          "cheat": "I would + that + so that + even though",
-          "rungs": [
-            "I would add one tool.",
-            "I would add one tool that holds the org context.",
-            "I would add one tool that holds the org context, so that every request starts with the right account.",
-            "I would add one tool that holds the org context, so that every request starts with the right account, even though it costs us one extra call."
-          ],
-          "sharp": "I would add one tool that holds the org context, so that every request starts with the right account, even though it costs us one extra call.",
-          "sharp_bn": "আমি একটাই টুল যোগ করতাম যেটা org-এর context ধরে রাখে, যাতে প্রতিটা রিকোয়েস্ট সঠিক অ্যাকাউন্ট থেকে শুরু হয় — যদিও তাতে একটা বাড়তি কল লাগে।",
-          "coach_bn": "**I would add** = আমার মত, চাপিয়ে দেওয়া না। আর **even though** দিয়ে খরচটা নিজেই স্বীকার করলে বিশ্বাসযোগ্যতা বাড়ে।",
-          "reps": 3,
-          "target_sec": 14
-        }
-      ]
-    },
-    {
-      "station": "backward",
-      "items": [
-        {
-          "id": "s004-bw-1",
-          "station": "backward",
-          "cheat": "If we + would + before we",
-          "chunks": [
-            "If we shipped the MCP first,",
-            "we would learn what customers actually ask",
-            "before we spent a quarter",
-            "building our own engine."
-          ],
-          "sharp": "If we shipped the MCP first, we would learn what customers actually ask before we spent a quarter building our own engine.",
-          "sharp_bn": "আগে MCP-টা ছাড়লে কাস্টমার আসলে কী চায় সেটা জেনে যেতাম — নিজেদের ইঞ্জিনের পেছনে পুরো একটা কোয়ার্টার ঢালার আগেই।",
-          "coach_bn": "দ্বিতীয় কন্ডিশনাল: **If we shipped … we would learn**। সম্ভব, কিন্তু এখনো হয়নি।",
-          "reps": 3,
-          "target_sec": 13
-        },
-        {
-          "id": "s004-bw-2",
-          "station": "backward",
-          "cheat": "If we + would + দৈনন্দিন",
-          "chunks": [
-            "If we left an hour earlier,",
-            "we would miss the traffic",
-            "and still reach the wedding",
-            "before the food ran out."
-          ],
-          "sharp": "If we left an hour earlier, we would miss the traffic and still reach the wedding before the food ran out.",
-          "sharp_bn": "এক ঘণ্টা আগে বেরোলে জ্যামটা এড়াতাম, আর খাবার শেষ হওয়ার আগেই বিয়েবাড়ি পৌঁছে যেতাম।",
-          "coach_bn": "একই ছাঁচ, বাসার সিদ্ধান্তে। **would miss / would reach** — কল্পনার ফল।",
-          "reps": 3,
-          "target_sec": 12
-        }
-      ]
-    },
-    {
-      "station": "frame",
-      "items": [
-        {
-          "id": "s004-fr-1",
-          "station": "frame",
-          "cheat": "If we ___, we could ___.",
-          "frame": "If we ___, we could ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "If we shipped the MCP first, we could learn what customers actually ask for.",
-              "sharp_bn": "আগে MCP ছাড়লে কাস্টমার আসলে কী চায় সেটা জানতে পারতাম।"
-            },
-            {
-              "scene": "office",
-              "sharp": "If we cached the org context, we could cut the response time in half.",
-              "sharp_bn": "org context ক্যাশ করলে রেসপন্স টাইম অর্ধেকে নামত।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "If we cooked on Sunday, we could eat properly all week.",
-              "sharp_bn": "রবিবারে রান্না করে রাখলে সারা সপ্তাহ ঠিকমতো খাওয়া যেত।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "If we shared one car, we could save on parking every day.",
-              "sharp_bn": "একটা গাড়ি ভাগ করে নিলে রোজ পার্কিংয়ের টাকা বাঁচত।"
-            }
-          ],
-          "sharp": "If we shipped the MCP first, we could learn what customers actually ask for.",
-          "reps": 4,
-          "coach_bn": "**If + past → would/could** — বাস্তবে সম্ভব, এখনো করা হয়নি। প্রস্তাবের ইঞ্জিন।",
-          "target_sec": 9
-        },
-        {
-          "id": "s004-fr-2",
-          "station": "frame",
-          "cheat": "What I would suggest is ___.",
-          "frame": "What I would suggest is ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "What I would suggest is shipping the MCP to two customers first.",
-              "sharp_bn": "আমার প্রস্তাব হলো, MCP-টা আগে দুইজন কাস্টমারকে দেওয়া।"
-            },
-            {
-              "scene": "office",
-              "sharp": "What I would suggest is keeping the old field until the migration finishes.",
-              "sharp_bn": "আমার প্রস্তাব হলো, migration শেষ না হওয়া পর্যন্ত পুরনো ফিল্ডটা রেখে দেওয়া।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "What I would suggest is leaving before the evening rush.",
-              "sharp_bn": "আমার মত হলো, সন্ধ্যার ভিড়ের আগেই বেরিয়ে পড়া।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "What I would suggest is ordering less and seeing if it is enough.",
-              "sharp_bn": "আমার মত হলো, কম অর্ডার করে দেখা যথেষ্ট হয় কি না।"
-            }
-          ],
-          "sharp": "What I would suggest is shipping the MCP to two customers first.",
-          "reps": 4,
-          "coach_bn": "\"I think we should\" থেকে **What I would suggest is** অনেক বেশি সিনিয়র শোনায় — একই কথা, বেশি ওজন।",
-          "target_sec": 8
-        }
-      ]
-    },
-    {
       "station": "if-machine",
       "items": [
         {
@@ -304,6 +267,43 @@
           "coach_bn": "নিজের অভ্যাস নিয়ে প্রস্তাব — একই ব্যাকরণ, চাপ কম। এখানেই রেপ সবচেয়ে সহজে বসে।",
           "reps": 3,
           "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s004-bw-1",
+          "station": "backward",
+          "cheat": "If we + would + before we",
+          "chunks": [
+            "If we shipped the MCP first,",
+            "we would learn what customers actually ask",
+            "before we spent a quarter",
+            "building our own engine."
+          ],
+          "sharp": "If we shipped the MCP first, we would learn what customers actually ask before we spent a quarter building our own engine.",
+          "sharp_bn": "আগে MCP-টা ছাড়লে কাস্টমার আসলে কী চায় সেটা জেনে যেতাম — নিজেদের ইঞ্জিনের পেছনে পুরো একটা কোয়ার্টার ঢালার আগেই।",
+          "coach_bn": "দ্বিতীয় কন্ডিশনাল: **If we shipped … we would learn**। সম্ভব, কিন্তু এখনো হয়নি।",
+          "reps": 3,
+          "target_sec": 13
+        },
+        {
+          "id": "s004-bw-2",
+          "station": "backward",
+          "cheat": "If we + would + দৈনন্দিন",
+          "chunks": [
+            "If we left an hour earlier,",
+            "we would miss the traffic",
+            "and still reach the wedding",
+            "before the food ran out."
+          ],
+          "sharp": "If we left an hour earlier, we would miss the traffic and still reach the wedding before the food ran out.",
+          "sharp_bn": "এক ঘণ্টা আগে বেরোলে জ্যামটা এড়াতাম, আর খাবার শেষ হওয়ার আগেই বিয়েবাড়ি পৌঁছে যেতাম।",
+          "coach_bn": "একই ছাঁচ, বাসার সিদ্ধান্তে। **would miss / would reach** — কল্পনার ফল।",
+          "reps": 3,
+          "target_sec": 12
         }
       ]
     },

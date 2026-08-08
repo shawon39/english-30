@@ -148,39 +148,55 @@
       ]
     },
     {
-      "station": "backward",
+      "station": "if-machine",
       "items": [
         {
-          "id": "s007-bw-1",
-          "station": "backward",
-          "cheat": "By the time + had already been V3",
-          "chunks": [
-            "By the time the audit started,",
-            "the duplicate certificates had already",
-            "been counted twice",
-            "in every monthly report."
+          "id": "s007-if-1",
+          "station": "if-machine",
+          "cheat": "If + had been V3 → would have V3",
+          "tiles": [
+            "If the duplicate",
+            "had been caught in week one,",
+            "the report would have balanced",
+            "every month."
           ],
-          "sharp": "By the time the audit started, the duplicate certificates had already been counted twice in every monthly report.",
-          "sharp_bn": "অডিট শুরু হওয়ার আগেই ডুপ্লিকেট সার্টিফিকেটগুলো প্রতিটা মাসিক রিপোর্টে দুইবার করে গোনা হয়ে গিয়েছিল।",
-          "coach_bn": "লেজ থেকে: **in every monthly report** → **been counted twice in…** → পুরোটা। লম্বা বাক্যের ভয় এভাবেই ভাঙে।",
+          "sharp": "If the duplicate had been caught in week one, the report would have balanced every month.",
+          "sharp_bn": "ডুপ্লিকেটটা প্রথম সপ্তাহেই ধরা পড়লে রিপোর্ট প্রতি মাসেই মিলত।",
+          "coach_bn": "প্যাসিভ **had been caught** — কে ধরত সেটা না বলেই কথাটা শেষ। মিটিংয়ে নিরাপদ।",
           "reps": 3,
-          "target_sec": 11
+          "target_sec": 10
         },
         {
-          "id": "s007-bw-2",
-          "station": "backward",
-          "cheat": "had bought + had changed · দৈনন্দিন",
-          "chunks": [
-            "I had bought the tickets in the morning,",
-            "but by the evening",
-            "the plan had changed",
-            "and nobody told me."
+          "id": "s007-if-2",
+          "station": "if-machine",
+          "cheat": "If + had not V3 → would have V3",
+          "tiles": [
+            "If I",
+            "had not run the command early,",
+            "we would have waited another day",
+            "for approval."
           ],
-          "sharp": "I had bought the tickets in the morning, but by the evening the plan had changed and nobody told me.",
-          "sharp_bn": "সকালেই টিকিটগুলো কেটে ফেলেছিলাম, কিন্তু সন্ধ্যার মধ্যে প্ল্যানটা বদলে গিয়েছিল — আর কেউ আমাকে বলেনি।",
-          "coach_bn": "দুটো **had** পাশাপাশি: তোমার কেনা আগে, প্ল্যান বদল পরে। ক্রমটা শব্দই বলে দেয়।",
+          "sharp": "If I had not run the command early, we would have waited another day for approval.",
+          "sharp_bn": "কমান্ডটা আগে না চালালে অ্যাপ্রুভালের জন্য আরও একদিন বসে থাকতে হতো।",
+          "coach_bn": "নেগেটিভ শর্ত, পজিটিভ ফল — নিজের কাজের দাম বোঝানোর ভদ্র উপায়।",
           "reps": 3,
-          "target_sec": 12
+          "target_sec": 10
+        },
+        {
+          "id": "s007-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If somebody",
+            "had told me about the change,",
+            "I would not have bought",
+            "the tickets."
+          ],
+          "sharp": "If somebody had told me about the change, I would not have bought the tickets.",
+          "sharp_bn": "বদলটার কথা কেউ বললে টিকিটগুলো কাটতাম না।",
+          "coach_bn": "**somebody** — কারো নাম না নিয়েই অভিযোগটা পৌঁছে যায়।",
+          "reps": 3,
+          "target_sec": 10
         }
       ]
     },
@@ -254,55 +270,39 @@
       ]
     },
     {
-      "station": "if-machine",
+      "station": "backward",
       "items": [
         {
-          "id": "s007-if-1",
-          "station": "if-machine",
-          "cheat": "If + had been V3 → would have V3",
-          "tiles": [
-            "If the duplicate",
-            "had been caught in week one,",
-            "the report would have balanced",
-            "every month."
+          "id": "s007-bw-1",
+          "station": "backward",
+          "cheat": "By the time + had already been V3",
+          "chunks": [
+            "By the time the audit started,",
+            "the duplicate certificates had already",
+            "been counted twice",
+            "in every monthly report."
           ],
-          "sharp": "If the duplicate had been caught in week one, the report would have balanced every month.",
-          "sharp_bn": "ডুপ্লিকেটটা প্রথম সপ্তাহেই ধরা পড়লে রিপোর্ট প্রতি মাসেই মিলত।",
-          "coach_bn": "প্যাসিভ **had been caught** — কে ধরত সেটা না বলেই কথাটা শেষ। মিটিংয়ে নিরাপদ।",
+          "sharp": "By the time the audit started, the duplicate certificates had already been counted twice in every monthly report.",
+          "sharp_bn": "অডিট শুরু হওয়ার আগেই ডুপ্লিকেট সার্টিফিকেটগুলো প্রতিটা মাসিক রিপোর্টে দুইবার করে গোনা হয়ে গিয়েছিল।",
+          "coach_bn": "লেজ থেকে: **in every monthly report** → **been counted twice in…** → পুরোটা। লম্বা বাক্যের ভয় এভাবেই ভাঙে।",
           "reps": 3,
-          "target_sec": 10
+          "target_sec": 11
         },
         {
-          "id": "s007-if-2",
-          "station": "if-machine",
-          "cheat": "If + had not V3 → would have V3",
-          "tiles": [
-            "If I",
-            "had not run the command early,",
-            "we would have waited another day",
-            "for approval."
+          "id": "s007-bw-2",
+          "station": "backward",
+          "cheat": "had bought + had changed · দৈনন্দিন",
+          "chunks": [
+            "I had bought the tickets in the morning,",
+            "but by the evening",
+            "the plan had changed",
+            "and nobody told me."
           ],
-          "sharp": "If I had not run the command early, we would have waited another day for approval.",
-          "sharp_bn": "কমান্ডটা আগে না চালালে অ্যাপ্রুভালের জন্য আরও একদিন বসে থাকতে হতো।",
-          "coach_bn": "নেগেটিভ শর্ত, পজিটিভ ফল — নিজের কাজের দাম বোঝানোর ভদ্র উপায়।",
+          "sharp": "I had bought the tickets in the morning, but by the evening the plan had changed and nobody told me.",
+          "sharp_bn": "সকালেই টিকিটগুলো কেটে ফেলেছিলাম, কিন্তু সন্ধ্যার মধ্যে প্ল্যানটা বদলে গিয়েছিল — আর কেউ আমাকে বলেনি।",
+          "coach_bn": "দুটো **had** পাশাপাশি: তোমার কেনা আগে, প্ল্যান বদল পরে। ক্রমটা শব্দই বলে দেয়।",
           "reps": 3,
-          "target_sec": 10
-        },
-        {
-          "id": "s007-if-3",
-          "station": "if-machine",
-          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
-          "tiles": [
-            "If somebody",
-            "had told me about the change,",
-            "I would not have bought",
-            "the tickets."
-          ],
-          "sharp": "If somebody had told me about the change, I would not have bought the tickets.",
-          "sharp_bn": "বদলটার কথা কেউ বললে টিকিটগুলো কাটতাম না।",
-          "coach_bn": "**somebody** — কারো নাম না নিয়েই অভিযোগটা পৌঁছে যায়।",
-          "reps": 3,
-          "target_sec": 10
+          "target_sec": 12
         }
       ]
     },

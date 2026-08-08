@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "3.1",
+  "set": 15,
+  "world": "standup-replay",
+  "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+  "title_bn": "বাসার দিনটা",
+  "desc_bn": "অফিসের একটা কথাও নেই — নামাজ, বাজার, রান্না, বৃষ্টি আর পরিবারের ফোন। বর্ণনা-ভারী সেট।",
+  "minutes": 8,
+  "cheats": [
+    "was …ing when",
+    "had already",
+    "After I ___, I ___"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s015-tm-1",
+          "station": "time-machine",
+          "cheat": "সকালের গল্প → past simple",
+          "tokens": [
+            "I",
+            "wake",
+            "up",
+            "before",
+            "the",
+            "alarm",
+            "and",
+            "the",
+            "whole",
+            "house",
+            "still",
+            "sleeps."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "woke",
+                "wakes",
+                "was waking"
+              ],
+              "answer": "woke"
+            },
+            {
+              "index": 11,
+              "options": [
+                "slept",
+                "sleeps",
+                "is sleeping"
+              ],
+              "answer": "slept"
+            }
+          ],
+          "sharp": "I woke up before the alarm and the whole house still slept.",
+          "sharp_bn": "অ্যালার্মের আগেই ঘুম ভাঙল, আর পুরো বাসা তখনো ঘুমাচ্ছিল।",
+          "coach_bn": "**woke / slept** — দুটোই irregular. রোজকার গল্পের প্রথম বাক্যেই এগুলো লাগে।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s015-tm-2",
+          "station": "time-machine",
+          "cheat": "was …ing + when + past simple",
+          "tokens": [
+            "I",
+            "am",
+            "praying",
+            "when",
+            "the",
+            "phone",
+            "starts",
+            "ringing",
+            "in",
+            "the",
+            "other",
+            "room."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "was",
+                "am",
+                "have been"
+              ],
+              "answer": "was"
+            },
+            {
+              "index": 6,
+              "options": [
+                "started",
+                "starts",
+                "was starting"
+              ],
+              "answer": "started"
+            }
+          ],
+          "sharp": "I was praying when the phone started ringing in the other room.",
+          "sharp_bn": "নামাজ পড়ছিলাম, তখনই পাশের ঘরে ফোনটা বাজতে শুরু করল।",
+          "coach_bn": "চলতে থাকা কাজ **was praying**, হঠাৎ ঘটনা **started**। অফিসে যেটা কাজ করে, বাসাতেও সেটাই।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s015-tm-3",
+          "station": "time-machine",
+          "cheat": "past simple + already",
+          "tokens": [
+            "We",
+            "go",
+            "to",
+            "the",
+            "market",
+            "late",
+            "and",
+            "the",
+            "good",
+            "fish",
+            "is",
+            "already",
+            "gone."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "went",
+                "goes",
+                "were going"
+              ],
+              "answer": "went"
+            },
+            {
+              "index": 10,
+              "options": [
+                "was",
+                "is",
+                "has been"
+              ],
+              "answer": "was"
+            }
+          ],
+          "sharp": "We went to the market late and the good fish was already gone.",
+          "sharp_bn": "বাজারে দেরিতে গেলাম, আর ভালো মাছগুলো ততক্ষণে শেষ।",
+          "coach_bn": "**was already gone** — পৌঁছানোর আগেই শেষ। এই \"আগেই\" বোঝানোটাই তোমার সবচেয়ে বড় ফাঁক।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s015-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If I",
+            "had left for the market an hour earlier,",
+            "I would have found",
+            "better fish."
+          ],
+          "sharp": "If I had left for the market an hour earlier, I would have found better fish.",
+          "sharp_bn": "এক ঘণ্টা আগে বাজারে গেলে ভালো মাছ পেতাম।",
+          "coach_bn": "রোজকার আফসোস, ঠিক সেই ব্যাকরণ যা RCA মিটিংয়ে লাগে। চাপ কম, তাই দ্রুত বসে।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s015-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If the rain",
+            "had held off for five minutes,",
+            "we would have reached home",
+            "completely dry."
+          ],
+          "sharp": "If the rain had held off for five minutes, we would have reached home completely dry.",
+          "sharp_bn": "বৃষ্টিটা আর পাঁচ মিনিট পরে নামলে আমরা শুকনো অবস্থাতেই বাসায় পৌঁছাতাম।",
+          "coach_bn": "কর্তা **the rain** — জিনিসকে কর্তা বানানোর প্র্যাকটিস। অফিসে এটাই \"the deploy\", \"the build\" হবে।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s015-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3",
+          "tiles": [
+            "If I",
+            "had answered the first call,",
+            "my brother would not have worried",
+            "all evening."
+          ],
+          "sharp": "If I had answered the first call, my brother would not have worried all evening.",
+          "sharp_bn": "প্রথম কলটা ধরলে ভাই সারা সন্ধ্যা দুশ্চিন্তা করত না।",
+          "coach_bn": "অন্যের উপর নিজের কাজের প্রভাব। **would not have worried** — সম্পর্কের ভাষা।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s015-ld-1",
+          "station": "ladder",
+          "cheat": "so that + which is the first time",
+          "rungs": [
+            "I cooked in the morning.",
+            "I cooked in the morning for the whole day.",
+            "I cooked in the morning for the whole day, so that nobody had to order anything at night.",
+            "I cooked in the morning for the whole day, so that nobody had to order anything at night, which is the first time that has happened this month."
+          ],
+          "sharp": "I cooked in the morning for the whole day, so that nobody had to order anything at night, which is the first time that has happened this month.",
+          "sharp_bn": "সকালেই সারা দিনের রান্না করে রাখলাম, যাতে রাতে কাউকে কিছু অর্ডার করতে না হয় — এই মাসে এই প্রথম এমনটা হলো।",
+          "coach_bn": "৪ শব্দ থেকে ২৬ শব্দ, বাসার গল্পে। যে ছাঁচ এখানে সহজে আসে, মিটিংয়েও সেটাই আসবে।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s015-ld-2",
+          "station": "ladder",
+          "cheat": "while we were + so + even though",
+          "rungs": [
+            "The rain started.",
+            "The rain started while we were still on the road.",
+            "The rain started while we were still on the road, so we waited under a shop for twenty minutes.",
+            "The rain started while we were still on the road, so we waited under a shop for twenty minutes, even though we were only five minutes from home."
+          ],
+          "sharp": "The rain started while we were still on the road, so we waited under a shop for twenty minutes, even though we were only five minutes from home.",
+          "sharp_bn": "রাস্তায় থাকতেই বৃষ্টি শুরু হলো, তাই একটা দোকানের নিচে বিশ মিনিট দাঁড়িয়ে রইলাম — যদিও বাসা মোটে পাঁচ মিনিটের পথ ছিল।",
+          "coach_bn": "**while we were still on the road** — দুটো ঘটনা একসাথে চলছিল। ক্রম নয়, সহাবস্থান।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s015-ld-3",
+          "station": "ladder",
+          "cheat": "just after I had + because he had seen",
+          "rungs": [
+            "My brother called.",
+            "My brother called just after I had put the phone down.",
+            "My brother called just after I had put the phone down, because he had seen my message an hour late.",
+            "My brother called just after I had put the phone down, because he had seen my message an hour late, which is exactly how it goes every week."
+          ],
+          "sharp": "My brother called just after I had put the phone down, because he had seen my message an hour late, which is exactly how it goes every week.",
+          "sharp_bn": "ফোনটা রাখার ঠিক পরেই ভাই কল দিল, কারণ সে আমার মেসেজটা এক ঘণ্টা দেরিতে দেখেছিল — প্রতি সপ্তাহে ঠিক এভাবেই হয়।",
+          "coach_bn": "একই বাক্যে তিনটা অতীত: **called**, **had put**, **had seen**। কোনটা কার আগে, শব্দই বলে দেয়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s015-bw-1",
+          "station": "backward",
+          "cheat": "By the time + had already filled up",
+          "chunks": [
+            "By the time I reached the mosque,",
+            "the first row had already filled up",
+            "and I prayed",
+            "near the door."
+          ],
+          "sharp": "By the time I reached the mosque, the first row had already filled up and I prayed near the door.",
+          "sharp_bn": "মসজিদে পৌঁছাতে পৌঁছাতে প্রথম কাতার ভরে গিয়েছিল, তাই দরজার কাছেই নামাজ পড়লাম।",
+          "coach_bn": "লেজ আগে: **near the door** → **and I prayed near the door** → পুরোটা।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s015-fr-1",
+          "station": "frame",
+          "cheat": "After I ___, I ___.",
+          "frame": "After I ___, I ___.",
+          "fills": [
+            {
+              "scene": "daily",
+              "sharp": "After I finished the cooking, I slept for an hour.",
+              "sharp_bn": "রান্না শেষ করার পর এক ঘণ্টা ঘুমালাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "After I dropped my sister, I went straight to the market.",
+              "sharp_bn": "বোনকে নামিয়ে দিয়ে সোজা বাজারে চলে গেলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "After the rain stopped, we walked the rest of the way.",
+              "sharp_bn": "বৃষ্টি থামার পর বাকি পথটা হেঁটেই গেলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "After I put the phone down, my brother called me back.",
+              "sharp_bn": "ফোনটা রাখার পর ভাই আবার কল দিল।"
+            }
+          ],
+          "sharp": "After I finished the cooking, I slept for an hour.",
+          "reps": 4,
+          "coach_bn": "**After I X, I Y** — সবচেয়ে সহজ ক্রম-ছাঁচ। চারবার বললে দিনের গল্প আর আটকায় না।",
+          "target_sec": 7
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s015-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — পুরো দিন",
+          "prompt_bn": "কাল তোমার দিনটা কেমন গেল বলো — সকাল থেকে রাত পর্যন্ত। অফিসের একটা কথাও নয়।",
+          "checklist": [
+            "was …ing when",
+            "had already",
+            "After I ___, I ___",
+            "so that / even though",
+            "would have"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "I woke up before the alarm and the whole house still slept. I was praying when the phone started ringing in the other room. We went to the market late and the good fish was already gone. After I finished the cooking, I slept for an hour. The rain started while we were still on the road, so we waited under a shop for twenty minutes. If I had left for the market an hour earlier, I would have found better fish.",
+          "coach_bn": "পুরো সেটে অফিসের একটা শব্দও নেই — ইচ্ছে করেই। ব্যাকরণ যেন কাজের সাথে আটকে না যায়, যেকোনো গল্পে খাটে।"
+        }
+      ]
+    }
+  ]
+}
