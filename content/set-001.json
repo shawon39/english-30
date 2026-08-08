@@ -1,0 +1,340 @@
+{
+  "schemaVersion": "3.1",
+  "set": 1,
+  "world": "standup-replay",
+  "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+  "title_bn": "গতকালের কাজ",
+  "desc_bn": "ফর্মুলা ফিল্ড, মেটাডেটা চেক আর আইকনের কাজ — স্ট্যান্ডআপে যেভাবে বলতে হয় সেভাবে।",
+  "minutes": 8,
+  "cheats": [
+    "was …ing + when",
+    "which / because",
+    "would have"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s001-tm-1",
+          "station": "time-machine",
+          "cheat": "শেষ হওয়া কাজ → past simple",
+          "source_date": "2026-07-29",
+          "raw": "Okay, I **have deployed** the the formulas. Okay, now can you do a quick check that any anything here like account contract value **is** greater than total contract value",
+          "tokens": [
+            "I",
+            "deploy",
+            "the",
+            "formula",
+            "fields,",
+            "then",
+            "I",
+            "check",
+            "every",
+            "contract",
+            "value."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "deployed",
+                "deploy",
+                "was deploying"
+              ],
+              "answer": "deployed"
+            },
+            {
+              "index": 7,
+              "options": [
+                "checked",
+                "checks",
+                "am checking"
+              ],
+              "answer": "checked"
+            }
+          ],
+          "sharp": "I deployed the formula fields, then I checked every contract value.",
+          "sharp_bn": "ফর্মুলা ফিল্ডগুলো deploy করলাম, তারপর প্রতিটা contract value মিলিয়ে দেখলাম।",
+          "coach_bn": "স্ট্যান্ডআপের মেরুদণ্ড: **past simple + past simple**। কাজ শেষ, তাই দুটোই অতীতে।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s001-tm-2",
+          "station": "time-machine",
+          "cheat": "was …ing + when + past simple",
+          "source_date": "2026-07-29",
+          "raw": "Can **check** the relevant metadata, like where it **is** used, maybe a bit class or flows, I'm not sure, just check that",
+          "tokens": [
+            "I",
+            "am",
+            "checking",
+            "where",
+            "the",
+            "field",
+            "is",
+            "used",
+            "when",
+            "I",
+            "find",
+            "two",
+            "broken",
+            "flows."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "was",
+                "am",
+                "have been"
+              ],
+              "answer": "was"
+            },
+            {
+              "index": 10,
+              "options": [
+                "found",
+                "finds",
+                "was finding"
+              ],
+              "answer": "found"
+            }
+          ],
+          "sharp": "I was checking where the field is used when I found two broken flows.",
+          "sharp_bn": "ফিল্ডটা কোথায় ব্যবহার হচ্ছে দেখছিলাম, তখনই দুটো ভাঙা flow পেলাম।",
+          "coach_bn": "চলতে থাকা কাজ **was checking**, হঠাৎ আবিষ্কার **found**। এই জোড়াটাই দিনের গল্প বলে দেয়।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s001-ld-1",
+          "station": "ladder",
+          "cheat": "so that + because + which",
+          "source_date": "2026-07-30",
+          "raw": "not sure **maybe** **you know** **some kind of** icon that it will think like an architect, **something like that**",
+          "rungs": [
+            "I redesigned the icon.",
+            "I redesigned the icon so that it reads as an architect.",
+            "I redesigned the icon so that it reads as an architect, because the old one looked like a child's drawing.",
+            "I redesigned the icon so that it reads as an architect, because the old one looked like a child's drawing, which was the first thing everyone noticed."
+          ],
+          "sharp": "I redesigned the icon so that it reads as an architect, because the old one looked like a child's drawing, which was the first thing everyone noticed.",
+          "sharp_bn": "আইকনটা নতুন করে বানালাম যাতে দেখলেই architect বোঝা যায়, কারণ আগেরটা বাচ্চার আঁকার মতো লাগত — আর ওটাই সবার প্রথমে চোখে পড়ত।",
+          "coach_bn": "৪ শব্দ থেকে ২৭ শব্দ। **so that / because / which** — এই তিনটাই তোমার ৪৬২টা \"so\"-এর জায়গা নেবে।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s001-ld-2",
+          "station": "ladder",
+          "cheat": "that had been + so that + even though",
+          "source_date": "2026-07-28",
+          "rungs": [
+            "I pushed the fix.",
+            "I pushed the fix that had been sitting in review.",
+            "I pushed the fix that had been sitting in review, so that the client could test it today.",
+            "I pushed the fix that had been sitting in review, so that the client could test it today, even though nobody had approved it yet."
+          ],
+          "sharp": "I pushed the fix that had been sitting in review, so that the client could test it today, even though nobody had approved it yet.",
+          "sharp_bn": "রিভিউতে পড়ে থাকা ফিক্সটা পুশ করে দিলাম, যাতে ক্লায়েন্ট আজই টেস্ট করতে পারে — যদিও তখনো কেউ অ্যাপ্রুভ করেনি।",
+          "coach_bn": "**had been sitting** মানে ঘটনার আগে থেকেই চলছিল। এই স্তরটাই তোমার গল্পে নেই।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s001-bw-1",
+          "station": "backward",
+          "cheat": "which is why + past simple",
+          "source_date": "2026-07-29",
+          "raw": "Yeah, once I only **say** that deploy, then deploy, otherwise don't **do** this. I don't know you have the memory",
+          "chunks": [
+            "I only pushed to production",
+            "after you confirmed it,",
+            "which is why nothing",
+            "went out unreviewed yesterday."
+          ],
+          "sharp": "I only pushed to production after you confirmed it, which is why nothing went out unreviewed yesterday.",
+          "sharp_bn": "তুমি কনফার্ম করার পরেই কেবল production-এ পুশ করেছি — সেজন্যই গতকাল রিভিউ ছাড়া কিছু যায়নি।",
+          "coach_bn": "লেজটা আগে মুখস্থ করো — **went out unreviewed yesterday**। শেষটা রেডি থাকলে বাক্য মাঝপথে ভাঙে না।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s001-bw-2",
+          "station": "backward",
+          "cheat": "long after + had + দৈনন্দিন",
+          "chunks": [
+            "I finally opened the laptop",
+            "at eleven last night,",
+            "long after everyone else",
+            "had gone to sleep."
+          ],
+          "sharp": "I finally opened the laptop at eleven last night, long after everyone else had gone to sleep.",
+          "sharp_bn": "কাল রাত এগারোটায় শেষমেশ ল্যাপটপটা খুললাম — বাকি সবাই ঘুমিয়ে যাওয়ার অনেক পরে।",
+          "coach_bn": "একই কাঠামো, অফিসের বাইরে। **had gone** = অন্যদের ঘুম আগে, তোমার ল্যাপটপ পরে।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s001-fr-1",
+          "station": "frame",
+          "cheat": "Yesterday I ___, and then I ___.",
+          "frame": "Yesterday I ___, and then I ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Yesterday I reviewed the pull request, and then I merged it into main.",
+              "sharp_bn": "গতকাল pull request-টা রিভিউ করলাম, তারপর main-এ merge করে দিলাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Yesterday I traced the null contract value, and then I raised a ticket for it.",
+              "sharp_bn": "গতকাল খালি contract value-টা কোথা থেকে আসছে বের করলাম, তারপর একটা টিকিট খুললাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Yesterday I finished work early, and then I went for a long walk.",
+              "sharp_bn": "গতকাল কাজ তাড়াতাড়ি শেষ করলাম, তারপর অনেকক্ষণ হাঁটলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Yesterday I cooked at home, and then I slept before midnight.",
+              "sharp_bn": "গতকাল বাসায় রান্না করলাম, তারপর বারোটার আগেই ঘুমিয়ে পড়লাম।"
+            }
+          ],
+          "sharp": "Yesterday I reviewed the pull request, and then I merged it into main.",
+          "reps": 4,
+          "coach_bn": "চারবার একই ছাঁচ। চতুর্থবারে **past + and then + past** আর ভাবতে হয় না — এটাই automaticity।",
+          "target_sec": 8
+        },
+        {
+          "id": "s001-fr-2",
+          "station": "frame",
+          "cheat": "I was ___ when ___.",
+          "frame": "I was ___ when ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "I was writing the standup notes when the build turned red.",
+              "sharp_bn": "স্ট্যান্ডআপের নোট লিখছিলাম, তখনই বিল্ডটা লাল হয়ে গেল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "I was joining the call when my laptop restarted itself.",
+              "sharp_bn": "কলে ঢুকছিলাম, তখনই ল্যাপটপটা নিজে থেকে রিস্টার্ট নিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I was crossing the road when it started raining.",
+              "sharp_bn": "রাস্তা পার হচ্ছিলাম, তখনই বৃষ্টি শুরু হলো।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I was eating lunch when my sister called from home.",
+              "sharp_bn": "দুপুরের খাবার খাচ্ছিলাম, তখনই বোন বাসা থেকে ফোন দিল।"
+            }
+          ],
+          "sharp": "I was writing the standup notes when the build turned red.",
+          "reps": 4,
+          "coach_bn": "গল্পের ইঞ্জিন। লম্বা কাজ **was …ing**, হঠাৎ ঘটনা **past simple** — উল্টে গেলে শ্রোতা টাইমলাইন হারায়।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s001-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If I",
+            "had checked the flows first,",
+            "I would have caught",
+            "the broken field sooner."
+          ],
+          "sharp": "If I had checked the flows first, I would have caught the broken field sooner.",
+          "sharp_bn": "আগে flow-গুলো দেখলে ভাঙা ফিল্ডটা অনেক আগেই ধরতে পারতাম।",
+          "coach_bn": "**would have caught** — আফসোস প্রকাশের ছাঁচ। তোমার ট্রান্সক্রিপ্টে ০ বার।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s001-if-2",
+          "station": "if-machine",
+          "cheat": "If + had not V3 → would have V3",
+          "tiles": [
+            "If the review",
+            "had not taken three days,",
+            "we would have shipped it",
+            "on Monday."
+          ],
+          "sharp": "If the review had not taken three days, we would have shipped it on Monday.",
+          "sharp_bn": "রিভিউতে তিন দিন না লাগলে সোমবারেই জিনিসটা শিপ করে দিতাম।",
+          "coach_bn": "নেগেটিভ ভার্সন: **had not taken**। দোষ না দিয়ে কারণ বলার সবচেয়ে ভদ্র উপায়।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s001-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had left the office at six,",
+            "I would have reached home",
+            "before the rain."
+          ],
+          "sharp": "If I had left the office at six, I would have reached home before the rain.",
+          "sharp_bn": "ছয়টায় অফিস থেকে বেরোলে বৃষ্টির আগেই বাসায় পৌঁছে যেতাম।",
+          "coach_bn": "অফিস আর বাসা — একই ছাঁচ। যেটায় বেশি রেপ পড়ে সেটাই আগে মুখে আসে।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s001-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — একই গল্প তিনবার",
+          "prompt_bn": "কালকের দিনটা স্ট্যান্ডআপে যেভাবে বলবে সেভাবে বলো: সকালে কী করছিলে, কোথায় আটকালে, কীভাবে সমাধান করলে, আর আগে কী করলে সময় বাঁচত।",
+          "checklist": [
+            "was …ing + when",
+            "past simple + and then",
+            "which / because",
+            "so that",
+            "would have"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "I was reviewing the contract formulas yesterday morning when I noticed two totals that did not add up. I traced it to a field that had been renamed last sprint, which is why every number below it was wrong. I pushed a fix so that QA can retest today. If I had checked the flows first, I would have caught it a day earlier.",
+          "coach_bn": "৬০ → ৪৫ → ৩০ সেকেন্ড। সময় কমলে **filler বাদ পড়ে, clause থেকে যায়** — এটাই ফ্লুয়েন্সি তৈরির মুহূর্ত।"
+        }
+      ]
+    }
+  ]
+}

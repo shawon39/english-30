@@ -1,0 +1,356 @@
+{
+  "schemaVersion": "3.1",
+  "set": 5,
+  "world": "meeting",
+  "world_bn": "মিটিং বস",
+  "title_bn": "মিটিংয়ে প্রশ্ন",
+  "desc_bn": "অবজেক্ট আর ফিল্ডের নাম চাওয়া, root cause জিজ্ঞেস করা, রেপরা কীভাবে ব্যবহার করে জানা — ভদ্র কিন্তু স্পষ্ট।",
+  "minutes": 8,
+  "cheats": [
+    "Could you walk me through",
+    "Would you mind",
+    "I would rather"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s005-tm-1",
+          "station": "time-machine",
+          "cheat": "past simple ×৩",
+          "source_date": "2026-07-29",
+          "raw": "So for this field where I mean for the annual contract value formula where I **have** to update it, okay. **Give** me the object name and field exactly",
+          "tokens": [
+            "Nobody",
+            "tells",
+            "me",
+            "which",
+            "object",
+            "holds",
+            "the",
+            "field,",
+            "so",
+            "I",
+            "ask",
+            "twice."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "told",
+                "tells",
+                "was telling"
+              ],
+              "answer": "told"
+            },
+            {
+              "index": 5,
+              "options": [
+                "held",
+                "holds",
+                "was holding"
+              ],
+              "answer": "held"
+            },
+            {
+              "index": 10,
+              "options": [
+                "asked",
+                "asks",
+                "was asking"
+              ],
+              "answer": "asked"
+            }
+          ],
+          "sharp": "Nobody told me which object held the field, so I asked twice.",
+          "sharp_bn": "কোন object-এ ফিল্ডটা আছে কেউ বলেনি, তাই আমাকে দুইবার জিজ্ঞেস করতে হয়েছিল।",
+          "coach_bn": "তিনটা ক্রিয়াই অতীতে — একটা বাদ পড়লেই টাইমলাইন ভাঙে। এই কার্ডটাই সবচেয়ে ভালো ওয়ার্ম-আপ।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s005-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + nobody gave",
+          "source_date": "2026-08-06",
+          "raw": "**Give** me an example how sales rep **use** it, when they will use it. Do you use in a live call or do you use it in the— in after—",
+          "tokens": [
+            "I",
+            "ask",
+            "how",
+            "the",
+            "reps",
+            "use",
+            "it,",
+            "and",
+            "nobody",
+            "gives",
+            "me",
+            "one",
+            "real",
+            "example."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "asked",
+                "asks",
+                "was asking"
+              ],
+              "answer": "asked"
+            },
+            {
+              "index": 5,
+              "options": [
+                "used",
+                "uses",
+                "were using"
+              ],
+              "answer": "used"
+            },
+            {
+              "index": 9,
+              "options": [
+                "gave",
+                "gives",
+                "was giving"
+              ],
+              "answer": "gave"
+            }
+          ],
+          "sharp": "I asked how the reps used it, and nobody gave me one real example.",
+          "sharp_bn": "রেপরা এটা কীভাবে ব্যবহার করে জিজ্ঞেস করলাম, কিন্তু কেউ একটাও বাস্তব উদাহরণ দিল না।",
+          "coach_bn": "তোমার আসল লাইনে **give me** দুইবার। অতীতে বসালে অভিযোগটা ঘটনা হয়ে যায় — অনেক বেশি কাজে দেয়।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s005-ld-1",
+          "station": "ladder",
+          "cheat": "Could you walk me through + before + so that + even though",
+          "rungs": [
+            "Could you walk me through the change?",
+            "Could you walk me through the change before we approve it?",
+            "Could you walk me through the change before we approve it, so that everyone knows what breaks?",
+            "Could you walk me through the change before we approve it, so that everyone knows what breaks, even though the deadline is tomorrow?"
+          ],
+          "sharp": "Could you walk me through the change before we approve it, so that everyone knows what breaks, even though the deadline is tomorrow?",
+          "sharp_bn": "অ্যাপ্রুভ করার আগে বদলটা একটু ধরে ধরে বুঝিয়ে দেবে? যাতে কী কী ভাঙবে সবাই জানে — যদিও ডেডলাইন কালকেই।",
+          "coach_bn": "**Could you walk me through** — তোমার \"give me\"-র সবচেয়ে বড় আপগ্রেড। একই চাওয়া, কিন্তু তুমি লিড করছো।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s005-ld-2",
+          "station": "ladder",
+          "cheat": "I would rather + until + because + which",
+          "rungs": [
+            "I would rather wait.",
+            "I would rather wait until the audit is finished.",
+            "I would rather wait until the audit is finished, because we still do not know how the record type appeared.",
+            "I would rather wait until the audit is finished, because we still do not know how the record type appeared, which makes any estimate a guess."
+          ],
+          "sharp": "I would rather wait until the audit is finished, because we still do not know how the record type appeared, which makes any estimate a guess.",
+          "sharp_bn": "আমি বরং অডিট শেষ হওয়া পর্যন্ত অপেক্ষা করতাম, কারণ record type-টা কীভাবে এল সেটা আমরা এখনো জানি না — তাই যেকোনো estimate আন্দাজ ছাড়া কিছু না।",
+          "coach_bn": "**I would rather** = ভদ্রভাবে 'না'। 'No' না বলেই আপত্তি জানানোর সবচেয়ে নিরাপদ পথ।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s005-bw-1",
+          "station": "backward",
+          "cheat": "Would you mind + so that",
+          "source_date": "2026-07-29",
+          "raw": "So for this field... **Give** me the object name and field exactly and give me the exact",
+          "chunks": [
+            "Would you mind sending the exact object",
+            "and field name,",
+            "so that I stop guessing",
+            "every time I open the org?"
+          ],
+          "sharp": "Would you mind sending the exact object and field name, so that I stop guessing every time I open the org?",
+          "sharp_bn": "অবজেক্ট আর ফিল্ডের ঠিক নামটা একটু পাঠাবে? যাতে org খুললেই আমাকে আন্দাজ করতে না হয়।",
+          "coach_bn": "**Would you mind + …ing** — সবচেয়ে ভদ্র রিকোয়েস্ট। লেজ থেকে গেঁথে নাও, তাহলে মাঝপথে থামবে না।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s005-bw-2",
+          "station": "backward",
+          "cheat": "Could you + so that + দৈনন্দিন",
+          "chunks": [
+            "Could you tell me the address once more,",
+            "so that I do not",
+            "call you again",
+            "from the wrong street?"
+          ],
+          "sharp": "Could you tell me the address once more, so that I do not call you again from the wrong street?",
+          "sharp_bn": "ঠিকানাটা আরেকবার বলবে? যাতে ভুল রাস্তা থেকে তোমাকে আবার ফোন করতে না হয়।",
+          "coach_bn": "একই ছাঁচ, রাস্তায়। ভদ্র প্রশ্ন অফিসেও যা, বাইরেও তা।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s005-fr-1",
+          "station": "frame",
+          "cheat": "Could you walk me through ___?",
+          "frame": "Could you walk me through ___?",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Could you walk me through how the reps use it on a live call?",
+              "sharp_bn": "রেপরা লাইভ কলে এটা কীভাবে ব্যবহার করে, একটু ধরে ধরে বলবে?"
+            },
+            {
+              "scene": "office",
+              "sharp": "Could you walk me through what changed since last sprint?",
+              "sharp_bn": "গত স্প্রিন্টের পর কী কী বদলেছে, একটু বুঝিয়ে বলবে?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Could you walk me through how you cooked this?",
+              "sharp_bn": "এটা কীভাবে রাঁধলে, একটু বলবে?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Could you walk me through how to get there by bus?",
+              "sharp_bn": "ওখানে বাসে কীভাবে যেতে হয়, একটু বুঝিয়ে বলবে?"
+            }
+          ],
+          "sharp": "Could you walk me through how the reps use it on a live call?",
+          "reps": 4,
+          "coach_bn": "চারবার। পঞ্চমবার মিটিংয়ে নিজে থেকেই বেরিয়ে আসবে — সেটাই মাসল মেমোরি।",
+          "target_sec": 9
+        },
+        {
+          "id": "s005-fr-2",
+          "station": "frame",
+          "cheat": "Even though ___, I would still ___.",
+          "frame": "Even though ___, I would still ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Even though the deploy passed, I would still hold it until Monday.",
+              "sharp_bn": "যদিও deploy পাস করেছে, আমি তবু সোমবার পর্যন্ত আটকে রাখতাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Even though the numbers look fine, I would still check the old records.",
+              "sharp_bn": "যদিও সংখ্যাগুলো ঠিক দেখাচ্ছে, আমি তবু পুরনো রেকর্ডগুলো দেখে নিতাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Even though it looks close, I would still take an auto.",
+              "sharp_bn": "যদিও কাছেই মনে হচ্ছে, আমি তবু একটা অটো নিতাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Even though I am tired, I would still finish it tonight.",
+              "sharp_bn": "যদিও ক্লান্ত লাগছে, আমি তবু আজ রাতেই শেষ করতাম।"
+            }
+          ],
+          "sharp": "Even though the deploy passed, I would still hold it until Monday.",
+          "reps": 4,
+          "coach_bn": "**Even though … I would still …** — অন্যের যুক্তি মেনে নিয়েও নিজের অবস্থানে থাকা। মিটিংয়ে সোনার লাইন।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s005-if-1",
+          "station": "if-machine",
+          "cheat": "If + could → would (ভদ্র অনুরোধ)",
+          "tiles": [
+            "If you",
+            "could share the exact field name,",
+            "I would stop guessing",
+            "every morning."
+          ],
+          "sharp": "If you could share the exact field name, I would stop guessing every morning.",
+          "sharp_bn": "ফিল্ডের ঠিক নামটা দিলে রোজ সকালে আমাকে আন্দাজ করতে হতো না।",
+          "coach_bn": "রিকোয়েস্টকে কন্ডিশনালে মুড়ে দিলে চাপটা নরম হয়, কিন্তু চাওয়াটা স্পষ্ট থাকে।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s005-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If we",
+            "had agreed on the root cause first,",
+            "this meeting",
+            "would have taken ten minutes."
+          ],
+          "sharp": "If we had agreed on the root cause first, this meeting would have taken ten minutes.",
+          "sharp_bn": "root cause-টা আগে ঠিক করে নিলে এই মিটিংটা দশ মিনিটেই শেষ হতো।",
+          "coach_bn": "মিটিং লম্বা হলে এই এক লাইনেই সবাই থামে। শেখো, রেখে দাও।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s005-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If you",
+            "had told me earlier,",
+            "I would have come",
+            "with you."
+          ],
+          "sharp": "If you had told me earlier, I would have come with you.",
+          "sharp_bn": "আগে বললে আমিও তোমার সাথে যেতাম।",
+          "coach_bn": "ছোট, রোজকার, আর একদম একই ব্যাকরণ। এটাই সবচেয়ে দ্রুত মুখে বসে।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s005-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — মিটিং",
+          "prompt_bn": "রিভিউ মিটিংয়ে তুমি কথা বলছো: যা বোঝোনি সেটা জিজ্ঞেস করো, ভদ্রভাবে আপত্তি জানাও, আর কী থাকলে মিটিংটা ছোট হতো সেটা বলো।",
+          "checklist": [
+            "Could you walk me through",
+            "Would you mind ___ing",
+            "I would rather",
+            "Even though ___, I would still ___",
+            "would have taken"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Could you walk me through what changed since last sprint, so that everyone knows what breaks? Would you mind sending the exact object and field name as well? Even though the deploy passed, I would rather wait until the audit is finished, because we still do not know how the record type appeared. If we had agreed on the root cause first, this meeting would have taken ten minutes.",
+          "coach_bn": "চারটা কাজ: প্রশ্ন, অনুরোধ, আপত্তি, আর সময় বাঁচানোর মন্তব্য। মিটিংয়ে তোমার লাগবে ঠিক এই চারটাই।"
+        }
+      ]
+    }
+  ]
+}

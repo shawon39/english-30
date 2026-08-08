@@ -1,0 +1,333 @@
+{
+  "schemaVersion": "3.1",
+  "set": 6,
+  "world": "standup-replay",
+  "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+  "title_bn": "গতকাল যা ভাঙল",
+  "desc_bn": "নামাজ অ্যাপের অ্যানিমেশন, ফন্ট আর মোবাইল লেআউট — ভাঙা জিনিস কীভাবে বলতে হয়।",
+  "minutes": 8,
+  "cheats": [
+    "It kept ___ until I ___",
+    "The problem was that",
+    "would have seen"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s006-tm-1",
+          "station": "time-machine",
+          "cheat": "বারবার হওয়া ঘটনা → past simple",
+          "source_date": "2026-08-05",
+          "raw": "Also, you know that the prayer space, still the man **is** going of the out of his space, it's it's going outside, so **fix** it.",
+          "tokens": [
+            "The",
+            "figure",
+            "moves",
+            "outside",
+            "its",
+            "box",
+            "every",
+            "time",
+            "the",
+            "animation",
+            "starts."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "moved",
+                "moves",
+                "was moving"
+              ],
+              "answer": "moved"
+            },
+            {
+              "index": 10,
+              "options": [
+                "started",
+                "starts",
+                "was starting"
+              ],
+              "answer": "started"
+            }
+          ],
+          "sharp": "The figure moved outside its box every time the animation started.",
+          "sharp_bn": "অ্যানিমেশন শুরু হলেই ফিগারটা তার বক্সের বাইরে চলে যেত।",
+          "coach_bn": "তোমার আসল লাইনে **it's it's** — দুইবার। অতীতে বসালে বাক্যটা এক টানে বেরোয়।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s006-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + যা ঠিক ছিল",
+          "source_date": "2026-08-05",
+          "raw": "Currently you **have** only added the for Surah. And also when I play the whole Sura and it **is** good that for each eye it indicating is going down fine",
+          "tokens": [
+            "I",
+            "play",
+            "the",
+            "whole",
+            "surah",
+            "and",
+            "the",
+            "highlight",
+            "follows",
+            "each",
+            "line",
+            "correctly."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "played",
+                "plays",
+                "was playing"
+              ],
+              "answer": "played"
+            },
+            {
+              "index": 8,
+              "options": [
+                "followed",
+                "follows",
+                "was following"
+              ],
+              "answer": "followed"
+            }
+          ],
+          "sharp": "I played the whole surah and the highlight followed each line correctly.",
+          "sharp_bn": "পুরো সূরাটা চালালাম, আর হাইলাইটটা প্রতিটা লাইন ঠিকঠাক ধরে গেল।",
+          "coach_bn": "যা কাজ করেছে সেটাও অতীতে বলো। স্ট্যান্ডআপে শুধু ভাঙা জিনিস না — যা দাঁড়িয়েছে সেটাও রিপোর্ট।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s006-ld-1",
+          "station": "ladder",
+          "cheat": "that were + so that + which",
+          "rungs": [
+            "I replaced the fonts.",
+            "I replaced the fonts that were breaking on Bangla.",
+            "I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line.",
+            "I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line, which is what made the whole page look cheap before."
+          ],
+          "sharp": "I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line, which is what made the whole page look cheap before.",
+          "sharp_bn": "বাংলায় ভেঙে যাওয়া ফন্টগুলো বদলে দিলাম, যাতে আরবি আর ইংরেজি একই লাইনে বসে — আগে ঠিক এই জিনিসটাই পুরো পেজটাকে সস্তা দেখাত।",
+          "coach_bn": "**that were breaking** = চলতে থাকা সমস্যা। এক শব্দে বোঝানো যায় যে এটা একবারের ঘটনা ছিল না।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s006-ld-2",
+          "station": "ladder",
+          "cheat": "because + had built + which",
+          "rungs": [
+            "I added my name.",
+            "I added my name in the bottom right corner.",
+            "I added my name in the bottom right corner, because nobody could tell who had built the page.",
+            "I added my name in the bottom right corner, because nobody could tell who had built the page, which mattered more than I expected."
+          ],
+          "sharp": "I added my name in the bottom right corner, because nobody could tell who had built the page, which mattered more than I expected.",
+          "sharp_bn": "নিচের ডান কোণে নিজের নামটা বসিয়ে দিলাম, কারণ পেজটা কে বানিয়েছে সেটা কেউ বুঝত না — আর ব্যাপারটা ভেবেছিলাম যতটা, তার চেয়ে বেশি জরুরি ছিল।",
+          "coach_bn": "**who had built** — নামটা যোগ করার আগেই বানানোর কাজ শেষ। দুটো অতীতের ক্রম।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s006-bw-1",
+          "station": "backward",
+          "cheat": "only after + which is why",
+          "chunks": [
+            "I only shipped the layout change",
+            "after it looked right on my phone,",
+            "which is why nobody",
+            "complained about mobile this time."
+          ],
+          "sharp": "I only shipped the layout change after it looked right on my phone, which is why nobody complained about mobile this time.",
+          "sharp_bn": "নিজের ফোনে ঠিকঠাক দেখানোর পরেই কেবল লেআউটটা ছেড়েছি — সেজন্যই এবার মোবাইল নিয়ে কেউ অভিযোগ করেনি।",
+          "coach_bn": "লেজ আগে: **complained about mobile this time** → পুরোটা। শেষটা রেডি থাকলে শুরুটা ভয় লাগে না।",
+          "reps": 3,
+          "target_sec": 13
+        },
+        {
+          "id": "s006-bw-2",
+          "station": "backward",
+          "cheat": "had promised + by then had already · দৈনন্দিন",
+          "chunks": [
+            "I had promised to call at nine,",
+            "but the meeting ran late",
+            "and by then everyone at home",
+            "had already eaten."
+          ],
+          "sharp": "I had promised to call at nine, but the meeting ran late and by then everyone at home had already eaten.",
+          "sharp_bn": "নয়টায় ফোন করব বলেছিলাম, কিন্তু মিটিং দেরি হয়ে গেল — ততক্ষণে বাসার সবাই খেয়ে ফেলেছিল।",
+          "coach_bn": "একই বাক্যে তিন স্তর: **had promised** → **ran** → **had already eaten**। এটাই আসল টাইমলাইন বলা।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s006-fr-1",
+          "station": "frame",
+          "cheat": "It kept ___ing until I ___.",
+          "frame": "It kept ___ing until I ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "It kept crashing on mobile until I fixed the viewport.",
+              "sharp_bn": "viewport ঠিক না করা পর্যন্ত মোবাইলে বারবার ক্র্যাশ করছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "It kept showing the old font until I cleared the cache.",
+              "sharp_bn": "ক্যাশ ক্লিয়ার না করা পর্যন্ত পুরনো ফন্টটাই দেখাচ্ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It kept raining until I finally reached the office.",
+              "sharp_bn": "অফিসে না পৌঁছানো পর্যন্ত বৃষ্টি হয়েই যাচ্ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "He kept calling until I picked up the phone.",
+              "sharp_bn": "ফোন না ধরা পর্যন্ত সে কল করেই যাচ্ছিল।"
+            }
+          ],
+          "sharp": "It kept crashing on mobile until I fixed the viewport.",
+          "reps": 4,
+          "coach_bn": "**kept + …ing** = বিরক্তিকরভাবে চলতেই থাকা। একটা শব্দে হতাশাটাও চলে আসে।",
+          "target_sec": 7
+        },
+        {
+          "id": "s006-fr-2",
+          "station": "frame",
+          "cheat": "The problem was that ___.",
+          "frame": "The problem was that ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "The problem was that the figure moved outside its box.",
+              "sharp_bn": "সমস্যা ছিল, ফিগারটা তার বক্সের বাইরে চলে যাচ্ছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "The problem was that nobody had tested it on a small screen.",
+              "sharp_bn": "সমস্যা ছিল, ছোট স্ক্রিনে কেউ এটা টেস্ট করেনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The problem was that I had left my charger at home.",
+              "sharp_bn": "সমস্যা ছিল, চার্জারটা বাসায় ফেলে এসেছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The problem was that the shop closed earlier on Fridays.",
+              "sharp_bn": "সমস্যা ছিল, শুক্রবারে দোকানটা আগেই বন্ধ হয়ে যেত।"
+            }
+          ],
+          "sharp": "The problem was that the figure moved outside its box.",
+          "reps": 4,
+          "coach_bn": "\"the problem is\" নয় — ঘটনাটা শেষ, তাই **was**। তোমার সবচেয়ে ঘন ঘন slip এখানেই।",
+          "target_sec": 7
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s006-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If I",
+            "had tested it on my phone first,",
+            "I would have seen the broken layout",
+            "immediately."
+          ],
+          "sharp": "If I had tested it on my phone first, I would have seen the broken layout immediately.",
+          "sharp_bn": "আগে নিজের ফোনে টেস্ট করলে ভাঙা লেআউটটা সাথে সাথেই চোখে পড়ত।",
+          "coach_bn": "**would have seen** — নিজের ভুল স্বীকার করার সবচেয়ে পেশাদার রূপ।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s006-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3",
+          "tiles": [
+            "If the fonts",
+            "had loaded properly,",
+            "the Bangla would not have looked",
+            "broken."
+          ],
+          "sharp": "If the fonts had loaded properly, the Bangla would not have looked broken.",
+          "sharp_bn": "ফন্টগুলো ঠিকমতো লোড হলে বাংলাটা ভাঙা দেখাত না।",
+          "coach_bn": "জিনিসকে কর্তা বানাও — **the fonts had loaded**। কাউকে দোষ না দিয়েই কারণ বলা যায়।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s006-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had charged the laptop at night,",
+            "I would not have lost",
+            "the whole morning."
+          ],
+          "sharp": "If I had charged the laptop at night, I would not have lost the whole morning.",
+          "sharp_bn": "রাতে ল্যাপটপটা চার্জ দিলে পুরো সকালটা নষ্ট হতো না।",
+          "coach_bn": "রোজকার আফসোস — একই ছাঁচ, শূন্য চাপ। এখানেই রেপ সবচেয়ে দ্রুত বসে।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s006-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — যা ভাঙল",
+          "prompt_bn": "গতকাল অ্যাপে কী কী ভেঙেছিল বলো: কোনটা বারবার হচ্ছিল, আসল সমস্যা কী ছিল, কীভাবে ঠিক করলে, আর আগে কী করলে সাথে সাথে ধরা পড়ত।",
+          "checklist": [
+            "past simple দিয়ে ঘটনা",
+            "It kept ___ing until",
+            "The problem was that",
+            "had already / who had built",
+            "would have seen"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "The figure moved outside its box every time the animation started, and it kept crashing on mobile until I fixed the viewport. The problem was that nobody had tested it on a small screen. I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line. If I had tested it on my phone first, I would have seen the broken layout immediately.",
+          "coach_bn": "\"অনেক কিছু ভেঙেছিল\" নয় — কী, কেন, কীভাবে, আর কী করলে বাঁচা যেত। চারটা আলাদা ব্যাকরণ, একটাই গল্প।"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2134 @@
+{
+ "_note": "Authored language only. Run tools/build_sets.py to expand into content/set-NNN.json. Raw lines are quoted from the VoiceInk export; **marks** highlight the weak spot.",
+ "sets": [
+  {
+   "n": 1,
+   "world": "standup-replay",
+   "title_bn": "গতকালের কাজ",
+   "desc_bn": "ফর্মুলা ফিল্ড, মেটাডেটা চেক আর আইকনের কাজ — স্ট্যান্ডআপে যেভাবে বলতে হয় সেভাবে।",
+   "cheats": [
+    "was …ing + when",
+    "which / because",
+    "would have"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "শেষ হওয়া কাজ → past simple",
+     "date": "2026-07-29",
+     "raw": "Okay, I **have deployed** the the formulas. Okay, now can you do a quick check that any anything here like account contract value **is** greater than total contract value",
+     "tokens": "I deploy the formula fields, then I check every contract value.",
+     "flip": {
+      "deploy": [
+       "deployed",
+       "deploy",
+       "was deploying"
+      ],
+      "check": [
+       "checked",
+       "checks",
+       "am checking"
+      ]
+     },
+     "sharp": "I deployed the formula fields, then I checked every contract value.",
+     "bn": "ফর্মুলা ফিল্ডগুলো deploy করলাম, তারপর প্রতিটা contract value মিলিয়ে দেখলাম।",
+     "coach": "স্ট্যান্ডআপের মেরুদণ্ড: **past simple + past simple**। কাজ শেষ, তাই দুটোই অতীতে।"
+    },
+    {
+     "st": "tm",
+     "cheat": "was …ing + when + past simple",
+     "date": "2026-07-29",
+     "raw": "Can **check** the relevant metadata, like where it **is** used, maybe a bit class or flows, I'm not sure, just check that",
+     "tokens": "I am checking where the field is used when I find two broken flows.",
+     "flip": {
+      "am": [
+       "was",
+       "am",
+       "have been"
+      ],
+      "find": [
+       "found",
+       "finds",
+       "was finding"
+      ]
+     },
+     "sharp": "I was checking where the field is used when I found two broken flows.",
+     "bn": "ফিল্ডটা কোথায় ব্যবহার হচ্ছে দেখছিলাম, তখনই দুটো ভাঙা flow পেলাম।",
+     "coach": "চলতে থাকা কাজ **was checking**, হঠাৎ আবিষ্কার **found**। এই জোড়াটাই দিনের গল্প বলে দেয়।"
+    },
+    {
+     "st": "ld",
+     "cheat": "so that + because + which",
+     "date": "2026-07-30",
+     "raw": "not sure **maybe** **you know** **some kind of** icon that it will think like an architect, **something like that**",
+     "rungs": [
+      "I redesigned the icon.",
+      "I redesigned the icon so that it reads as an architect.",
+      "I redesigned the icon so that it reads as an architect, because the old one looked like a child's drawing.",
+      "I redesigned the icon so that it reads as an architect, because the old one looked like a child's drawing, which was the first thing everyone noticed."
+     ],
+     "bn": "আইকনটা নতুন করে বানালাম যাতে দেখলেই architect বোঝা যায়, কারণ আগেরটা বাচ্চার আঁকার মতো লাগত — আর ওটাই সবার প্রথমে চোখে পড়ত।",
+     "coach": "৪ শব্দ থেকে ২৭ শব্দ। **so that / because / which** — এই তিনটাই তোমার ৪৬২টা \"so\"-এর জায়গা নেবে।"
+    },
+    {
+     "st": "ld",
+     "cheat": "that had been + so that + even though",
+     "date": "2026-07-28",
+     "rungs": [
+      "I pushed the fix.",
+      "I pushed the fix that had been sitting in review.",
+      "I pushed the fix that had been sitting in review, so that the client could test it today.",
+      "I pushed the fix that had been sitting in review, so that the client could test it today, even though nobody had approved it yet."
+     ],
+     "bn": "রিভিউতে পড়ে থাকা ফিক্সটা পুশ করে দিলাম, যাতে ক্লায়েন্ট আজই টেস্ট করতে পারে — যদিও তখনো কেউ অ্যাপ্রুভ করেনি।",
+     "coach": "**had been sitting** মানে ঘটনার আগে থেকেই চলছিল। এই স্তরটাই তোমার গল্পে নেই।"
+    },
+    {
+     "st": "bw",
+     "cheat": "which is why + past simple",
+     "date": "2026-07-29",
+     "raw": "Yeah, once I only **say** that deploy, then deploy, otherwise don't **do** this. I don't know you have the memory",
+     "chunks": [
+      "I only pushed to production",
+      "after you confirmed it,",
+      "which is why nothing",
+      "went out unreviewed yesterday."
+     ],
+     "bn": "তুমি কনফার্ম করার পরেই কেবল production-এ পুশ করেছি — সেজন্যই গতকাল রিভিউ ছাড়া কিছু যায়নি।",
+     "coach": "লেজটা আগে মুখস্থ করো — **went out unreviewed yesterday**। শেষটা রেডি থাকলে বাক্য মাঝপথে ভাঙে না।"
+    },
+    {
+     "st": "bw",
+     "cheat": "long after + had + দৈনন্দিন",
+     "chunks": [
+      "I finally opened the laptop",
+      "at eleven last night,",
+      "long after everyone else",
+      "had gone to sleep."
+     ],
+     "bn": "কাল রাত এগারোটায় শেষমেশ ল্যাপটপটা খুললাম — বাকি সবাই ঘুমিয়ে যাওয়ার অনেক পরে।",
+     "coach": "একই কাঠামো, অফিসের বাইরে। **had gone** = অন্যদের ঘুম আগে, তোমার ল্যাপটপ পরে।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Yesterday I ___, and then I ___.",
+     "frame": "Yesterday I ___, and then I ___.",
+     "fills": [
+      [
+       "Yesterday I reviewed the pull request, and then I merged it into main.",
+       "গতকাল pull request-টা রিভিউ করলাম, তারপর main-এ merge করে দিলাম।",
+       "office"
+      ],
+      [
+       "Yesterday I traced the null contract value, and then I raised a ticket for it.",
+       "গতকাল খালি contract value-টা কোথা থেকে আসছে বের করলাম, তারপর একটা টিকিট খুললাম।",
+       "office"
+      ],
+      [
+       "Yesterday I finished work early, and then I went for a long walk.",
+       "গতকাল কাজ তাড়াতাড়ি শেষ করলাম, তারপর অনেকক্ষণ হাঁটলাম।",
+       "daily"
+      ],
+      [
+       "Yesterday I cooked at home, and then I slept before midnight.",
+       "গতকাল বাসায় রান্না করলাম, তারপর বারোটার আগেই ঘুমিয়ে পড়লাম।",
+       "daily"
+      ]
+     ],
+     "coach": "চারবার একই ছাঁচ। চতুর্থবারে **past + and then + past** আর ভাবতে হয় না — এটাই automaticity।"
+    },
+    {
+     "st": "fr",
+     "cheat": "I was ___ when ___.",
+     "frame": "I was ___ when ___.",
+     "fills": [
+      [
+       "I was writing the standup notes when the build turned red.",
+       "স্ট্যান্ডআপের নোট লিখছিলাম, তখনই বিল্ডটা লাল হয়ে গেল।",
+       "office"
+      ],
+      [
+       "I was joining the call when my laptop restarted itself.",
+       "কলে ঢুকছিলাম, তখনই ল্যাপটপটা নিজে থেকে রিস্টার্ট নিল।",
+       "office"
+      ],
+      [
+       "I was crossing the road when it started raining.",
+       "রাস্তা পার হচ্ছিলাম, তখনই বৃষ্টি শুরু হলো।",
+       "daily"
+      ],
+      [
+       "I was eating lunch when my sister called from home.",
+       "দুপুরের খাবার খাচ্ছিলাম, তখনই বোন বাসা থেকে ফোন দিল।",
+       "daily"
+      ]
+     ],
+     "coach": "গল্পের ইঞ্জিন। লম্বা কাজ **was …ing**, হঠাৎ ঘটনা **past simple** — উল্টে গেলে শ্রোতা টাইমলাইন হারায়।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3",
+     "tiles": [
+      "If I",
+      "had checked the flows first,",
+      "I would have caught",
+      "the broken field sooner."
+     ],
+     "bn": "আগে flow-গুলো দেখলে ভাঙা ফিল্ডটা অনেক আগেই ধরতে পারতাম।",
+     "coach": "**would have caught** — আফসোস প্রকাশের ছাঁচ। তোমার ট্রান্সক্রিপ্টে ০ বার।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had not V3 → would have V3",
+     "tiles": [
+      "If the review",
+      "had not taken three days,",
+      "we would have shipped it",
+      "on Monday."
+     ],
+     "bn": "রিভিউতে তিন দিন না লাগলে সোমবারেই জিনিসটা শিপ করে দিতাম।",
+     "coach": "নেগেটিভ ভার্সন: **had not taken**। দোষ না দিয়ে কারণ বলার সবচেয়ে ভদ্র উপায়।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+     "tiles": [
+      "If I",
+      "had left the office at six,",
+      "I would have reached home",
+      "before the rain."
+     ],
+     "bn": "ছয়টায় অফিস থেকে বেরোলে বৃষ্টির আগেই বাসায় পৌঁছে যেতাম।",
+     "coach": "অফিস আর বাসা — একই ছাঁচ। যেটায় বেশি রেপ পড়ে সেটাই আগে মুখে আসে।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — একই গল্প তিনবার",
+     "prompt_bn": "কালকের দিনটা স্ট্যান্ডআপে যেভাবে বলবে সেভাবে বলো: সকালে কী করছিলে, কোথায় আটকালে, কীভাবে সমাধান করলে, আর আগে কী করলে সময় বাঁচত।",
+     "checklist": [
+      "was …ing + when",
+      "past simple + and then",
+      "which / because",
+      "so that",
+      "would have"
+     ],
+     "model": "I was reviewing the contract formulas yesterday morning when I noticed two totals that did not add up. I traced it to a field that had been renamed last sprint, which is why every number below it was wrong. I pushed a fix so that QA can retest today. If I had checked the flows first, I would have caught it a day earlier.",
+     "coach": "৬০ → ৪৫ → ৩০ সেকেন্ড। সময় কমলে **filler বাদ পড়ে, clause থেকে যায়** — এটাই ফ্লুয়েন্সি তৈরির মুহূর্ত।"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "world": "timeline",
+   "title_bn": "তার আগেই যা হয়েছিল",
+   "desc_bn": "pro-rated বিলিং, partial copy থেকে production, আর passkey-র ঝামেলা — কোনটা কার আগে, সেটা বলতে শেখা।",
+   "cheats": [
+    "had already",
+    "by the time",
+    "Before that, we had"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "শেষ হওয়া প্রসেস → past simple",
+     "date": "2026-08-03",
+     "raw": "This **is** a NGMT dev org environment, so we actually don't **use** it actually. What we **implement** implement features in partial copy sandbox first then we **move** it to the production",
+     "tokens": "We implement the feature in partial copy first, then we move it to production.",
+     "flip": {
+      "implement": [
+       "implemented",
+       "implements",
+       "are implementing"
+      ],
+      "move": [
+       "moved",
+       "moves",
+       "were moving"
+      ]
+     },
+     "sharp": "We implemented the feature in partial copy first, then we moved it to production.",
+     "bn": "ফিচারটা আগে partial copy-তে করলাম, তারপর production-এ সরালাম।",
+     "coach": "তোমার আসল লাইনে **implement implement** — দুইবার। অতীতে বসালে শব্দটা একবারেই বেরোয়।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + before me",
+     "date": "2026-08-03",
+     "raw": "the thing **is** like we **have** two people **use** the same system. So the other people did set up the pass keys, okay. now it's not working for me.",
+     "tokens": "Two of us share the account, and he adds the passkeys before me.",
+     "flip": {
+      "share": [
+       "shared",
+       "shares",
+       "were sharing"
+      ],
+      "adds": [
+       "added",
+       "add",
+       "was adding"
+      ]
+     },
+     "sharp": "Two of us shared the account, and he added the passkeys before me.",
+     "bn": "অ্যাকাউন্টটা আমরা দুজনে ব্যবহার করতাম, আর সে আমার আগেই passkey বসিয়ে ফেলল।",
+     "coach": "**before me** দিয়ে ক্রম বোঝানো ভালো, কিন্তু পরের ধাপে **had already** শিখবে — ওটা আরও নিখুঁত।"
+    },
+    {
+     "st": "ld",
+     "cheat": "had already been + which is why + even though",
+     "date": "2026-08-03",
+     "rungs": [
+      "The passkeys had already been set up.",
+      "The passkeys had already been set up by the time I tried to log in.",
+      "The passkeys had already been set up by the time I tried to log in, which is why my laptop kept rejecting me.",
+      "The passkeys had already been set up by the time I tried to log in, which is why my laptop kept rejecting me, even though nothing had changed on my side."
+     ],
+     "bn": "আমি লগইনের চেষ্টা করার আগেই passkey বসানো হয়ে গিয়েছিল — সেজন্যই ল্যাপটপ বারবার ফিরিয়ে দিচ্ছিল, যদিও আমার দিকে কিছুই বদলায়নি।",
+     "coach": "**had already been set up** — তোমার ১৯৫ মিনিটে \"had\" এসেছে ০ বার। এখান থেকেই শুরু।"
+    },
+    {
+     "st": "ld",
+     "cheat": "We had + before + so that",
+     "rungs": [
+      "We had tested it in partial copy.",
+      "We had tested it in partial copy before anything went to production.",
+      "We had tested it in partial copy before anything went to production, so that a bad merge could never reach a customer.",
+      "We had tested it in partial copy before anything went to production, so that a bad merge could never reach a customer, which is the rule we agreed on last sprint."
+     ],
+     "bn": "production-এ কিছু যাওয়ার আগেই আমরা partial copy-তে টেস্ট করে রেখেছিলাম, যাতে খারাপ merge কখনো কাস্টমার পর্যন্ত না পৌঁছায় — গত স্প্রিন্টে এই নিয়মেই আমরা রাজি হয়েছিলাম।",
+     "coach": "প্রসেস বোঝানোর সময় **had + before** জোড়াটা তোমাকে সিনিয়র শোনায়।"
+    },
+    {
+     "st": "bw",
+     "cheat": "By the time + had already + that had been",
+     "date": "2026-07-28",
+     "raw": "no, no, no. there **are** two issues that's right. One **is** formula field, another one **is** this over calculating two things.",
+     "chunks": [
+      "By the time the client emailed,",
+      "we had already found the formula",
+      "that had been double counting",
+      "the contract value."
+     ],
+     "bn": "ক্লায়েন্ট মেইল করার আগেই আমরা সেই ফর্মুলাটা পেয়ে গিয়েছিলাম, যেটা contract value দুইবার করে গুনছিল।",
+     "coach": "লেজ আগে: **the contract value** → **that had been double counting the contract value** → পুরোটা। রিস্টার্ট লুপ এখানেই মরে।"
+    },
+    {
+     "st": "bw",
+     "cheat": "had already + by the time · দৈনন্দিন",
+     "chunks": [
+      "I had left home early,",
+      "but the bus had already gone",
+      "by the time I reached",
+      "the main road."
+     ],
+     "bn": "বাসা থেকে তাড়াতাড়িই বেরিয়েছিলাম, কিন্তু মেইন রোডে পৌঁছাতে পৌঁছাতে বাসটা চলে গিয়েছিল।",
+     "coach": "একই বাক্যে দুটো **had** — একটা তোমার বেরোনো, একটা বাসের চলে যাওয়া। ক্রমটা শ্রোতা নিজেই বুঝে নেয়।"
+    },
+    {
+     "st": "fr",
+     "cheat": "By the time ___, I had already ___.",
+     "frame": "By the time ___, I had already ___.",
+     "fills": [
+      [
+       "By the time the standup started, I had already read the failing logs.",
+       "স্ট্যান্ডআপ শুরু হওয়ার আগেই আমি ফেল করা লগগুলো পড়ে ফেলেছিলাম।",
+       "office"
+      ],
+      [
+       "By the time you replied, I had already deployed both files.",
+       "তুমি উত্তর দেওয়ার আগেই আমি দুটো ফাইলই deploy করে ফেলেছিলাম।",
+       "office"
+      ],
+      [
+       "By the time I got home, I had already eaten on the way.",
+       "বাসায় পৌঁছানোর আগেই আমি পথে খেয়ে নিয়েছিলাম।",
+       "daily"
+      ],
+      [
+       "By the time the film started, I had already fallen asleep.",
+       "সিনেমা শুরু হওয়ার আগেই আমি ঘুমিয়ে পড়েছিলাম।",
+       "daily"
+      ]
+     ],
+     "coach": "**By the time X, I had already Y** — দুটো অতীতের ক্রম এক ছাঁচে। চারবার বললে আর ভাবতে হবে না।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Before that, we had ___.",
+     "frame": "Before that, we had ___.",
+     "fills": [
+      [
+       "Before that, we had never touched the record type settings.",
+       "তার আগে আমরা record type সেটিংসে কখনো হাত দিইনি।",
+       "office"
+      ],
+      [
+       "Before that, we had run the same query every single morning.",
+       "তার আগে আমরা প্রতিদিন সকালে একই query চালাতাম।",
+       "office"
+      ],
+      [
+       "Before that, I had never cooked anything on my own.",
+       "তার আগে আমি নিজে কখনো কিছু রান্না করিনি।",
+       "daily"
+      ],
+      [
+       "Before that, we had lived in the same building for years.",
+       "তার আগে আমরা বছরের পর বছর একই বিল্ডিংয়ে ছিলাম।",
+       "daily"
+      ]
+     ],
+     "coach": "গল্পে পেছনে ফেরার সুইচ। **Before that, we had…** বললেই শ্রোতা বুঝে যায় তুমি আগের ধাপে যাচ্ছো।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would never have V3",
+     "tiles": [
+      "If we",
+      "had caught the double counting earlier,",
+      "the client would never have seen",
+      "a wrong invoice."
+     ],
+     "bn": "দুইবার গোনার ব্যাপারটা আগে ধরতে পারলে ক্লায়েন্ট কখনো ভুল ইনভয়েসই দেখত না।",
+     "coach": "**would never have seen** — 'never' বসিয়ে জোরটা বাড়ে, কাউকে দোষ না দিয়েই।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had been V3 → would have been V3",
+     "tiles": [
+      "If the passkeys",
+      "had been set up together,",
+      "neither of us",
+      "would have been locked out."
+     ],
+     "bn": "passkey দুটো একসাথে বসালে আমাদের কেউই আটকা পড়তাম না।",
+     "coach": "প্যাসিভ ভার্সন — কে করেছে সেটা না বলে ঘটনাটা বলা যায়। পোস্টমর্টেমে এটাই ভদ্র পথ।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+     "tiles": [
+      "If I",
+      "had checked the bus timing,",
+      "I would not have waited",
+      "half an hour."
+     ],
+     "bn": "বাসের সময়টা দেখে নিলে আধা ঘণ্টা দাঁড়িয়ে থাকতে হতো না।",
+     "coach": "রোজকার আফসোস, একই কাঠামো। **would not have waited** — এক টানে বলার প্র্যাকটিস।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — ক্রম ঠিক রেখে",
+     "prompt_bn": "contract value ভুল আসার পুরো টাইমলাইনটা বলো: কোনটা আগে হয়েছিল, কোনটা পরে, আর ক্লায়েন্ট জানার আগে তোমরা কতদূর পৌঁছেছিলে।",
+     "checklist": [
+      "had already",
+      "by the time",
+      "before that",
+      "which is why",
+      "would never have"
+     ],
+     "model": "Before that, we had run the same contract query every morning without a problem. Last sprint someone renamed a field, and by the time the client emailed, we had already found the formula that had been double counting the value. The fix itself took ten minutes, which is why nobody escalated it. If we had caught the double counting earlier, the client would never have seen a wrong invoice.",
+     "coach": "ক্রম বোঝাতে **had** ছাড়া উপায় নেই। তিন রাউন্ডে ওটাই মুখে বসে যাবে।"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "world": "postmortem",
+   "title_bn": "কী করলে বাঁচা যেত",
+   "desc_bn": "record type bug, শূন্য TCV আর ৭০-বনাম-০৭ ফর্মুলা — RCA মিটিংয়ে যেভাবে বলতে হয়।",
+   "cheats": [
+    "If + had → would have",
+    "should have",
+    "wouldn't have had to"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "শেষ হওয়া ব্যর্থতা → past simple",
+     "date": "2026-07-29",
+     "raw": "Maybe those **are** old records. Can you check the date and and why a TCV **is** 0 and all contract value is there because of I don't know.",
+     "tokens": "Nobody checks the old records, so the total contract value stays at zero.",
+     "flip": {
+      "checks": [
+       "checked",
+       "checks",
+       "was checking"
+      ],
+      "stays": [
+       "stayed",
+       "stays",
+       "is staying"
+      ]
+     },
+     "sharp": "Nobody checked the old records, so the total contract value stayed at zero.",
+     "bn": "পুরনো রেকর্ডগুলো কেউ দেখেনি, তাই total contract value শূন্যতেই থেকে গেল।",
+     "coach": "RCA-র প্রথম বাক্য সবসময় অতীতে। **checked / stayed** — ঘটনাটা শেষ, বিশ্লেষণ এখন।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + while",
+     "date": "2026-08-04",
+     "raw": "Are you sure it **is** 70 instead of 07? Check it very carefully because transfers formula field works different.ly",
+     "tokens": "The formula shows seventy while the field actually keeps zero seven.",
+     "flip": {
+      "shows": [
+       "showed",
+       "shows",
+       "was showing"
+      ],
+      "keeps": [
+       "kept",
+       "keeps",
+       "was keeping"
+      ]
+     },
+     "sharp": "The formula showed seventy while the field actually kept zero seven.",
+     "bn": "ফর্মুলাটা সত্তর দেখাচ্ছিল, অথচ ফিল্ডে আসলে ছিল শূন্য-সাত।",
+     "coach": "**while** দিয়ে দুটো সত্য পাশাপাশি বসে — বিরোধটা শ্রোতা নিজেই ধরে ফেলে।"
+    },
+    {
+     "st": "ld",
+     "cheat": "that nobody had V3 + because + which",
+     "rungs": [
+      "We shipped a wrong total.",
+      "We shipped a wrong total that nobody had reviewed.",
+      "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field.",
+      "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field, which is exactly what a guard would have caught."
+     ],
+     "bn": "আমরা এমন একটা ভুল টোটাল পাঠিয়েছিলাম যেটা কেউ রিভিউ করেনি, কারণ ফর্মুলাটা পুরনো একটা ফিল্ড থেকে কপি করা হয়েছিল — আর ঠিক এটাই একটা guard ধরে ফেলত।",
+     "coach": "একটা বাক্যে ঘটনা, কারণ আর সমাধান। **had reviewed / had been copied / would have caught** — তিন স্তর।"
+    },
+    {
+     "st": "ld",
+     "cheat": "who had no + should have been + so",
+     "rungs": [
+      "The record type appeared.",
+      "The record type appeared for a user who had no permission.",
+      "The record type appeared for a user who had no permission, which should have been impossible.",
+      "The record type appeared for a user who had no permission, which should have been impossible, so we treated it as a security bug."
+     ],
+     "bn": "record type-টা এমন একজনের কাছে দেখা গিয়েছিল যার কোনো permission ছিল না — যেটা হওয়ারই কথা ছিল না, তাই আমরা এটাকে সিকিউরিটি বাগ ধরে নিয়েছিলাম।",
+     "coach": "**should have been impossible** — অভিযোগ না করেই গুরুত্ব বোঝানোর লাইন। মিটিংয়ে এটা কাজ করে।"
+    },
+    {
+     "st": "bw",
+     "cheat": "Nobody had V3 + so + who was never",
+     "date": "2026-08-06",
+     "raw": "Is it like a pipeline **randomly just select** one record type, there **was no guard** or something like that.",
+     "chunks": [
+      "Nobody had put a guard on the pipeline,",
+      "so a random record type",
+      "could reach a user",
+      "who was never given it."
+     ],
+     "bn": "pipeline-এ কেউ কোনো guard বসায়নি, তাই যেকোনো record type এমন একজনের কাছে পৌঁছে যেতে পারত যাকে ওটা কখনো দেওয়াই হয়নি।",
+     "coach": "লেজ থেকে গাঁথো: **who was never given it** → **could reach a user who…** → পুরোটা।"
+    },
+    {
+     "st": "bw",
+     "cheat": "had not V3 + so + দৈনন্দিন",
+     "chunks": [
+      "I had not checked the weather,",
+      "so I left without an umbrella",
+      "and reached the office",
+      "completely soaked."
+     ],
+     "bn": "আবহাওয়াটা দেখে নিইনি, তাই ছাতা ছাড়াই বেরিয়ে গেলাম আর অফিসে পৌঁছালাম পুরো ভিজে।",
+     "coach": "একই কাঠামো, বাসার গল্পে। **had not checked** = ভুলটা আগে, ফল পরে।"
+    },
+    {
+     "st": "fr",
+     "cheat": "If we had ___, we would not have ___.",
+     "frame": "If we had ___, we would not have ___.",
+     "fills": [
+      [
+       "If we had reviewed the formula, we would not have sent a wrong invoice.",
+       "ফর্মুলাটা রিভিউ করলে আমরা ভুল ইনভয়েস পাঠাতাম না।",
+       "office"
+      ],
+      [
+       "If we had added a guard, we would not have spent two days on the audit.",
+       "একটা guard বসালে অডিটের পেছনে দুই দিন যেত না।",
+       "office"
+      ],
+      [
+       "If we had booked earlier, we would not have paid double.",
+       "আগে বুক করলে আমাদের দ্বিগুণ দিতে হতো না।",
+       "daily"
+      ],
+      [
+       "If I had set one more alarm, I would not have missed the train.",
+       "আর একটা অ্যালার্ম দিলে ট্রেনটা মিস করতাম না।",
+       "daily"
+      ]
+     ],
+     "coach": "RCA-র সবচেয়ে দামি ছাঁচ। চারবার বললে **would not have** আর আটকাবে না।"
+    },
+    {
+     "st": "fr",
+     "cheat": "We should have ___ before ___.",
+     "frame": "We should have ___ before ___.",
+     "fills": [
+      [
+       "We should have tested the formula before pushing it to production.",
+       "production-এ পুশ করার আগে ফর্মুলাটা টেস্ট করা উচিত ছিল।",
+       "office"
+      ],
+      [
+       "We should have asked the client before changing the record type.",
+       "record type বদলানোর আগে ক্লায়েন্টকে জিজ্ঞেস করা উচিত ছিল।",
+       "office"
+      ],
+      [
+       "I should have eaten something before leaving the house.",
+       "বাসা থেকে বেরোনোর আগে কিছু খাওয়া উচিত ছিল।",
+       "daily"
+      ],
+      [
+       "We should have called first before going all the way there.",
+       "অতদূর যাওয়ার আগে একবার ফোন করা উচিত ছিল।",
+       "daily"
+      ]
+     ],
+     "coach": "**should have + V3** — অতীতের অনুশোচনা। 'we' বললে দোষটা ভাগ হয়ে যায়, টিম মিটিংয়ে সেটাই ঠিক।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3",
+     "tiles": [
+      "If somebody",
+      "had reviewed the formula,",
+      "the client would not have received",
+      "a wrong invoice."
+     ],
+     "bn": "কেউ ফর্মুলাটা রিভিউ করলে ক্লায়েন্ট ভুল ইনভয়েস পেত না।",
+     "coach": "**somebody** দিয়ে শুরু করলে নাম ধরে দোষ দিতে হয় না — কিন্তু সমস্যাটা স্পষ্ট থাকে।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → none of this would have V3",
+     "tiles": [
+      "If the pipeline",
+      "had checked permissions,",
+      "none of this",
+      "would have reached a real user."
+     ],
+     "bn": "pipeline যদি permission মিলিয়ে দেখত, এসবের কিছুই আসল ইউজার পর্যন্ত পৌঁছাত না।",
+     "coach": "**none of this would have reached** — এক লাইনে পুরো ইনসিডেন্টের ওজন।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+     "tiles": [
+      "If I",
+      "had carried an umbrella,",
+      "I would not have arrived",
+      "completely soaked."
+     ],
+     "bn": "ছাতাটা নিলে পুরো ভিজে পৌঁছাতে হতো না।",
+     "coach": "অফিস আর বাসা এক ছাঁচে। যত জায়গায় খাটে, তত তাড়াতাড়ি মুখে বসে।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — RCA",
+     "prompt_bn": "record type bug-টার RCA দাও: কী হয়েছিল, কেন সম্ভব হলো, আগে কী থাকলে আটকানো যেত, আর এখন কী বসাচ্ছো।",
+     "checklist": [
+      "past simple দিয়ে ঘটনা",
+      "had already / had been",
+      "should have been",
+      "if + had → would have",
+      "which is why"
+     ],
+     "model": "A user opened a task and saw a record type he had never been given. Nobody had put a guard on the pipeline, which is why a random record type could reach anyone. It should have been impossible, so we treated it as a security bug rather than a display issue. If the pipeline had checked permissions, none of this would have reached a real user, so the fix is a permission check before the record type is chosen.",
+     "coach": "RCA-র চার ধাপ: ঘটনা → কারণ → কেন হওয়ার কথা ছিল না → কী করলে বাঁচা যেত। প্রতিটা ধাপের ব্যাকরণ আলাদা।"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "world": "proposal",
+   "title_bn": "প্রস্তাব দেওয়া",
+   "desc_bn": "RocketPhone MCP, নিজস্ব AI ইঞ্জিন আর org-context টুল — আইডিয়া পিচ করার ভাষা।",
+   "cheats": [
+    "If we ___, we could ___",
+    "What I would suggest is",
+    "it would make sense to"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "নজির টানা → past simple",
+     "tokens": "Last quarter we build our own connector, and it saves the team a week.",
+     "flip": {
+      "build": [
+       "built",
+       "builds",
+       "were building"
+      ],
+      "saves": [
+       "saved",
+       "saves",
+       "was saving"
+      ]
+     },
+     "sharp": "Last quarter we built our own connector, and it saved the team a week.",
+     "bn": "গত কোয়ার্টারে আমরা নিজেদের connector বানিয়েছিলাম, আর তাতে টিমের এক সপ্তাহ বেঁচে গিয়েছিল।",
+     "coach": "প্রস্তাবের আগে নজির। **built / saved** — অতীতের প্রমাণ দিয়ে শুরু করলে প্রস্তাব ওজন পায়।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + nobody",
+     "date": "2026-08-07",
+     "raw": "maybe can we **add** a tool that, one tool **keep** the context of the org? How about that? Before process any request related to Call Insights",
+     "tokens": "Every request goes to the model and nobody adds any context about the org.",
+     "flip": {
+      "goes": [
+       "went",
+       "goes",
+       "was going"
+      ],
+      "adds": [
+       "added",
+       "adds",
+       "was adding"
+      ]
+     },
+     "sharp": "Every request went to the model and nobody added any context about the org.",
+     "bn": "প্রতিটা রিকোয়েস্ট মডেলে যেত, কিন্তু org-এর কোনো context কেউ জুড়ত না।",
+     "coach": "সমস্যাটা অতীতে বসাও, তারপর সমাধান বর্তমানে দাও — পিচের স্বাভাবিক ছন্দ।"
+    },
+    {
+     "st": "ld",
+     "cheat": "could + instead of + so that + which",
+     "rungs": [
+      "We could build our own engine.",
+      "We could build our own engine instead of depending on one provider.",
+      "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile.",
+      "We could build our own engine instead of depending on one provider, so that the same brain works inside Salesforce and on mobile, which is what the customer keeps asking for."
+     ],
+     "bn": "একটা প্রোভাইডারের উপর নির্ভর না করে আমরা নিজেদের ইঞ্জিন বানাতে পারি, যাতে একই মস্তিষ্ক Salesforce-এ আর মোবাইলে দুই জায়গাতেই চলে — কাস্টমার তো এটাই বারবার চাইছে।",
+     "coach": "**could** দিয়ে প্রস্তাব দিলে জোর করা হয় না, দরজা খোলা থাকে। ইঞ্জিনিয়ারিং মিটিংয়ের ভাষা।"
+    },
+    {
+     "st": "ld",
+     "cheat": "I would + that + so that + even though",
+     "rungs": [
+      "I would add one tool.",
+      "I would add one tool that holds the org context.",
+      "I would add one tool that holds the org context, so that every request starts with the right account.",
+      "I would add one tool that holds the org context, so that every request starts with the right account, even though it costs us one extra call."
+     ],
+     "bn": "আমি একটাই টুল যোগ করতাম যেটা org-এর context ধরে রাখে, যাতে প্রতিটা রিকোয়েস্ট সঠিক অ্যাকাউন্ট থেকে শুরু হয় — যদিও তাতে একটা বাড়তি কল লাগে।",
+     "coach": "**I would add** = আমার মত, চাপিয়ে দেওয়া না। আর **even though** দিয়ে খরচটা নিজেই স্বীকার করলে বিশ্বাসযোগ্যতা বাড়ে।"
+    },
+    {
+     "st": "bw",
+     "cheat": "If we + would + before we",
+     "chunks": [
+      "If we shipped the MCP first,",
+      "we would learn what customers actually ask",
+      "before we spent a quarter",
+      "building our own engine."
+     ],
+     "bn": "আগে MCP-টা ছাড়লে কাস্টমার আসলে কী চায় সেটা জেনে যেতাম — নিজেদের ইঞ্জিনের পেছনে পুরো একটা কোয়ার্টার ঢালার আগেই।",
+     "coach": "দ্বিতীয় কন্ডিশনাল: **If we shipped … we would learn**। সম্ভব, কিন্তু এখনো হয়নি।"
+    },
+    {
+     "st": "bw",
+     "cheat": "If we + would + দৈনন্দিন",
+     "chunks": [
+      "If we left an hour earlier,",
+      "we would miss the traffic",
+      "and still reach the wedding",
+      "before the food ran out."
+     ],
+     "bn": "এক ঘণ্টা আগে বেরোলে জ্যামটা এড়াতাম, আর খাবার শেষ হওয়ার আগেই বিয়েবাড়ি পৌঁছে যেতাম।",
+     "coach": "একই ছাঁচ, বাসার সিদ্ধান্তে। **would miss / would reach** — কল্পনার ফল।"
+    },
+    {
+     "st": "fr",
+     "cheat": "If we ___, we could ___.",
+     "frame": "If we ___, we could ___.",
+     "fills": [
+      [
+       "If we shipped the MCP first, we could learn what customers actually ask for.",
+       "আগে MCP ছাড়লে কাস্টমার আসলে কী চায় সেটা জানতে পারতাম।",
+       "office"
+      ],
+      [
+       "If we cached the org context, we could cut the response time in half.",
+       "org context ক্যাশ করলে রেসপন্স টাইম অর্ধেকে নামত।",
+       "office"
+      ],
+      [
+       "If we cooked on Sunday, we could eat properly all week.",
+       "রবিবারে রান্না করে রাখলে সারা সপ্তাহ ঠিকমতো খাওয়া যেত।",
+       "daily"
+      ],
+      [
+       "If we shared one car, we could save on parking every day.",
+       "একটা গাড়ি ভাগ করে নিলে রোজ পার্কিংয়ের টাকা বাঁচত।",
+       "daily"
+      ]
+     ],
+     "coach": "**If + past → would/could** — বাস্তবে সম্ভব, এখনো করা হয়নি। প্রস্তাবের ইঞ্জিন।"
+    },
+    {
+     "st": "fr",
+     "cheat": "What I would suggest is ___.",
+     "frame": "What I would suggest is ___.",
+     "fills": [
+      [
+       "What I would suggest is shipping the MCP to two customers first.",
+       "আমার প্রস্তাব হলো, MCP-টা আগে দুইজন কাস্টমারকে দেওয়া।",
+       "office"
+      ],
+      [
+       "What I would suggest is keeping the old field until the migration finishes.",
+       "আমার প্রস্তাব হলো, migration শেষ না হওয়া পর্যন্ত পুরনো ফিল্ডটা রেখে দেওয়া।",
+       "office"
+      ],
+      [
+       "What I would suggest is leaving before the evening rush.",
+       "আমার মত হলো, সন্ধ্যার ভিড়ের আগেই বেরিয়ে পড়া।",
+       "daily"
+      ],
+      [
+       "What I would suggest is ordering less and seeing if it is enough.",
+       "আমার মত হলো, কম অর্ডার করে দেখা যথেষ্ট হয় কি না।",
+       "daily"
+      ]
+     ],
+     "coach": "\"I think we should\" থেকে **What I would suggest is** অনেক বেশি সিনিয়র শোনায় — একই কথা, বেশি ওজন।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not be V-ing now",
+     "tiles": [
+      "If we",
+      "had built our own engine last year,",
+      "we would not be depending",
+      "on one provider now."
+     ],
+     "bn": "গত বছর নিজেদের ইঞ্জিন বানালে আজ একটা প্রোভাইডারের উপর ঝুলে থাকতাম না।",
+     "coach": "মিশ্র কন্ডিশনাল: অতীতের সিদ্ধান্ত, **এখনকার** ফল। আর্কিটেকচার তর্কে এটাই সবচেয়ে ধারালো বাক্য।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + past → would (2nd conditional)",
+     "tiles": [
+      "If the tool",
+      "remembered the org,",
+      "every answer would start",
+      "from the right account."
+     ],
+     "bn": "টুলটা org মনে রাখলে প্রতিটা উত্তরই সঠিক অ্যাকাউন্ট থেকে শুরু হতো।",
+     "coach": "**remembered → would start**। খেয়াল করো: if-এর দিকে past, ফলের দিকে would।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + past → would not · দৈনন্দিন",
+     "tiles": [
+      "If I",
+      "planned the week on Sunday,",
+      "I would not lose an hour",
+      "every morning."
+     ],
+     "bn": "রবিবারে সপ্তাহটা গুছিয়ে নিলে রোজ সকালে এক ঘণ্টা নষ্ট হতো না।",
+     "coach": "নিজের অভ্যাস নিয়ে প্রস্তাব — একই ব্যাকরণ, চাপ কম। এখানেই রেপ সবচেয়ে সহজে বসে।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — পিচ",
+     "prompt_bn": "RocketPhone MCP-র প্রস্তাবটা দাও: এখন কী সমস্যা, তুমি কী করতে চাও, কেন এখনই, আর গত বছর অন্যরকম করলে আজ কোথায় থাকতাম।",
+     "checklist": [
+      "সমস্যা past simple-এ",
+      "If we ___, we could ___",
+      "What I would suggest is",
+      "so that / even though",
+      "If we had ___, we would not be ___ now"
+     ],
+     "model": "Every request went to the model and nobody added any context about the org, so the answers were generic. What I would suggest is one tool that holds the org context, so that every request starts from the right account. If we shipped that to two customers first, we could learn what they actually ask for before we spent a quarter building our own engine. If we had built the engine last year, we would not be depending on one provider now.",
+     "coach": "পিচের চার ধাপ: সমস্যা → প্রস্তাব → ছোট পরীক্ষা → জরুরি কেন। চারটার ব্যাকরণ চার রকম, তাই একসাথে প্র্যাকটিস।"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "world": "meeting",
+   "title_bn": "মিটিংয়ে প্রশ্ন",
+   "desc_bn": "অবজেক্ট আর ফিল্ডের নাম চাওয়া, root cause জিজ্ঞেস করা, রেপরা কীভাবে ব্যবহার করে জানা — ভদ্র কিন্তু স্পষ্ট।",
+   "cheats": [
+    "Could you walk me through",
+    "Would you mind",
+    "I would rather"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "past simple ×৩",
+     "date": "2026-07-29",
+     "raw": "So for this field where I mean for the annual contract value formula where I **have** to update it, okay. **Give** me the object name and field exactly",
+     "tokens": "Nobody tells me which object holds the field, so I ask twice.",
+     "flip": {
+      "tells": [
+       "told",
+       "tells",
+       "was telling"
+      ],
+      "holds": [
+       "held",
+       "holds",
+       "was holding"
+      ],
+      "ask": [
+       "asked",
+       "asks",
+       "was asking"
+      ]
+     },
+     "sharp": "Nobody told me which object held the field, so I asked twice.",
+     "bn": "কোন object-এ ফিল্ডটা আছে কেউ বলেনি, তাই আমাকে দুইবার জিজ্ঞেস করতে হয়েছিল।",
+     "coach": "তিনটা ক্রিয়াই অতীতে — একটা বাদ পড়লেই টাইমলাইন ভাঙে। এই কার্ডটাই সবচেয়ে ভালো ওয়ার্ম-আপ।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + nobody gave",
+     "date": "2026-08-06",
+     "raw": "**Give** me an example how sales rep **use** it, when they will use it. Do you use in a live call or do you use it in the— in after—",
+     "tokens": "I ask how the reps use it, and nobody gives me one real example.",
+     "flip": {
+      "ask": [
+       "asked",
+       "asks",
+       "was asking"
+      ],
+      "use": [
+       "used",
+       "uses",
+       "were using"
+      ],
+      "gives": [
+       "gave",
+       "gives",
+       "was giving"
+      ]
+     },
+     "sharp": "I asked how the reps used it, and nobody gave me one real example.",
+     "bn": "রেপরা এটা কীভাবে ব্যবহার করে জিজ্ঞেস করলাম, কিন্তু কেউ একটাও বাস্তব উদাহরণ দিল না।",
+     "coach": "তোমার আসল লাইনে **give me** দুইবার। অতীতে বসালে অভিযোগটা ঘটনা হয়ে যায় — অনেক বেশি কাজে দেয়।"
+    },
+    {
+     "st": "ld",
+     "cheat": "Could you walk me through + before + so that + even though",
+     "rungs": [
+      "Could you walk me through the change?",
+      "Could you walk me through the change before we approve it?",
+      "Could you walk me through the change before we approve it, so that everyone knows what breaks?",
+      "Could you walk me through the change before we approve it, so that everyone knows what breaks, even though the deadline is tomorrow?"
+     ],
+     "bn": "অ্যাপ্রুভ করার আগে বদলটা একটু ধরে ধরে বুঝিয়ে দেবে? যাতে কী কী ভাঙবে সবাই জানে — যদিও ডেডলাইন কালকেই।",
+     "coach": "**Could you walk me through** — তোমার \"give me\"-র সবচেয়ে বড় আপগ্রেড। একই চাওয়া, কিন্তু তুমি লিড করছো।"
+    },
+    {
+     "st": "ld",
+     "cheat": "I would rather + until + because + which",
+     "rungs": [
+      "I would rather wait.",
+      "I would rather wait until the audit is finished.",
+      "I would rather wait until the audit is finished, because we still do not know how the record type appeared.",
+      "I would rather wait until the audit is finished, because we still do not know how the record type appeared, which makes any estimate a guess."
+     ],
+     "bn": "আমি বরং অডিট শেষ হওয়া পর্যন্ত অপেক্ষা করতাম, কারণ record type-টা কীভাবে এল সেটা আমরা এখনো জানি না — তাই যেকোনো estimate আন্দাজ ছাড়া কিছু না।",
+     "coach": "**I would rather** = ভদ্রভাবে 'না'। 'No' না বলেই আপত্তি জানানোর সবচেয়ে নিরাপদ পথ।"
+    },
+    {
+     "st": "bw",
+     "cheat": "Would you mind + so that",
+     "date": "2026-07-29",
+     "raw": "So for this field... **Give** me the object name and field exactly and give me the exact",
+     "chunks": [
+      "Would you mind sending the exact object",
+      "and field name,",
+      "so that I stop guessing",
+      "every time I open the org?"
+     ],
+     "bn": "অবজেক্ট আর ফিল্ডের ঠিক নামটা একটু পাঠাবে? যাতে org খুললেই আমাকে আন্দাজ করতে না হয়।",
+     "coach": "**Would you mind + …ing** — সবচেয়ে ভদ্র রিকোয়েস্ট। লেজ থেকে গেঁথে নাও, তাহলে মাঝপথে থামবে না।"
+    },
+    {
+     "st": "bw",
+     "cheat": "Could you + so that + দৈনন্দিন",
+     "chunks": [
+      "Could you tell me the address once more,",
+      "so that I do not",
+      "call you again",
+      "from the wrong street?"
+     ],
+     "bn": "ঠিকানাটা আরেকবার বলবে? যাতে ভুল রাস্তা থেকে তোমাকে আবার ফোন করতে না হয়।",
+     "coach": "একই ছাঁচ, রাস্তায়। ভদ্র প্রশ্ন অফিসেও যা, বাইরেও তা।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Could you walk me through ___?",
+     "frame": "Could you walk me through ___?",
+     "fills": [
+      [
+       "Could you walk me through how the reps use it on a live call?",
+       "রেপরা লাইভ কলে এটা কীভাবে ব্যবহার করে, একটু ধরে ধরে বলবে?",
+       "office"
+      ],
+      [
+       "Could you walk me through what changed since last sprint?",
+       "গত স্প্রিন্টের পর কী কী বদলেছে, একটু বুঝিয়ে বলবে?",
+       "office"
+      ],
+      [
+       "Could you walk me through how you cooked this?",
+       "এটা কীভাবে রাঁধলে, একটু বলবে?",
+       "daily"
+      ],
+      [
+       "Could you walk me through how to get there by bus?",
+       "ওখানে বাসে কীভাবে যেতে হয়, একটু বুঝিয়ে বলবে?",
+       "daily"
+      ]
+     ],
+     "coach": "চারবার। পঞ্চমবার মিটিংয়ে নিজে থেকেই বেরিয়ে আসবে — সেটাই মাসল মেমোরি।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Even though ___, I would still ___.",
+     "frame": "Even though ___, I would still ___.",
+     "fills": [
+      [
+       "Even though the deploy passed, I would still hold it until Monday.",
+       "যদিও deploy পাস করেছে, আমি তবু সোমবার পর্যন্ত আটকে রাখতাম।",
+       "office"
+      ],
+      [
+       "Even though the numbers look fine, I would still check the old records.",
+       "যদিও সংখ্যাগুলো ঠিক দেখাচ্ছে, আমি তবু পুরনো রেকর্ডগুলো দেখে নিতাম।",
+       "office"
+      ],
+      [
+       "Even though it looks close, I would still take an auto.",
+       "যদিও কাছেই মনে হচ্ছে, আমি তবু একটা অটো নিতাম।",
+       "daily"
+      ],
+      [
+       "Even though I am tired, I would still finish it tonight.",
+       "যদিও ক্লান্ত লাগছে, আমি তবু আজ রাতেই শেষ করতাম।",
+       "daily"
+      ]
+     ],
+     "coach": "**Even though … I would still …** — অন্যের যুক্তি মেনে নিয়েও নিজের অবস্থানে থাকা। মিটিংয়ে সোনার লাইন।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + could → would (ভদ্র অনুরোধ)",
+     "tiles": [
+      "If you",
+      "could share the exact field name,",
+      "I would stop guessing",
+      "every morning."
+     ],
+     "bn": "ফিল্ডের ঠিক নামটা দিলে রোজ সকালে আমাকে আন্দাজ করতে হতো না।",
+     "coach": "রিকোয়েস্টকে কন্ডিশনালে মুড়ে দিলে চাপটা নরম হয়, কিন্তু চাওয়াটা স্পষ্ট থাকে।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3",
+     "tiles": [
+      "If we",
+      "had agreed on the root cause first,",
+      "this meeting",
+      "would have taken ten minutes."
+     ],
+     "bn": "root cause-টা আগে ঠিক করে নিলে এই মিটিংটা দশ মিনিটেই শেষ হতো।",
+     "coach": "মিটিং লম্বা হলে এই এক লাইনেই সবাই থামে। শেখো, রেখে দাও।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+     "tiles": [
+      "If you",
+      "had told me earlier,",
+      "I would have come",
+      "with you."
+     ],
+     "bn": "আগে বললে আমিও তোমার সাথে যেতাম।",
+     "coach": "ছোট, রোজকার, আর একদম একই ব্যাকরণ। এটাই সবচেয়ে দ্রুত মুখে বসে।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — মিটিং",
+     "prompt_bn": "রিভিউ মিটিংয়ে তুমি কথা বলছো: যা বোঝোনি সেটা জিজ্ঞেস করো, ভদ্রভাবে আপত্তি জানাও, আর কী থাকলে মিটিংটা ছোট হতো সেটা বলো।",
+     "checklist": [
+      "Could you walk me through",
+      "Would you mind ___ing",
+      "I would rather",
+      "Even though ___, I would still ___",
+      "would have taken"
+     ],
+     "model": "Could you walk me through what changed since last sprint, so that everyone knows what breaks? Would you mind sending the exact object and field name as well? Even though the deploy passed, I would rather wait until the audit is finished, because we still do not know how the record type appeared. If we had agreed on the root cause first, this meeting would have taken ten minutes.",
+     "coach": "চারটা কাজ: প্রশ্ন, অনুরোধ, আপত্তি, আর সময় বাঁচানোর মন্তব্য। মিটিংয়ে তোমার লাগবে ঠিক এই চারটাই।"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "world": "standup-replay",
+   "title_bn": "গতকাল যা ভাঙল",
+   "desc_bn": "নামাজ অ্যাপের অ্যানিমেশন, ফন্ট আর মোবাইল লেআউট — ভাঙা জিনিস কীভাবে বলতে হয়।",
+   "cheats": [
+    "It kept ___ until I ___",
+    "The problem was that",
+    "would have seen"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "বারবার হওয়া ঘটনা → past simple",
+     "date": "2026-08-05",
+     "raw": "Also, you know that the prayer space, still the man **is** going of the out of his space, it's it's going outside, so **fix** it.",
+     "tokens": "The figure moves outside its box every time the animation starts.",
+     "flip": {
+      "moves": [
+       "moved",
+       "moves",
+       "was moving"
+      ],
+      "starts": [
+       "started",
+       "starts",
+       "was starting"
+      ]
+     },
+     "sharp": "The figure moved outside its box every time the animation started.",
+     "bn": "অ্যানিমেশন শুরু হলেই ফিগারটা তার বক্সের বাইরে চলে যেত।",
+     "coach": "তোমার আসল লাইনে **it's it's** — দুইবার। অতীতে বসালে বাক্যটা এক টানে বেরোয়।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + যা ঠিক ছিল",
+     "date": "2026-08-05",
+     "raw": "Currently you **have** only added the for Surah. And also when I play the whole Sura and it **is** good that for each eye it indicating is going down fine",
+     "tokens": "I play the whole surah and the highlight follows each line correctly.",
+     "flip": {
+      "play": [
+       "played",
+       "plays",
+       "was playing"
+      ],
+      "follows": [
+       "followed",
+       "follows",
+       "was following"
+      ]
+     },
+     "sharp": "I played the whole surah and the highlight followed each line correctly.",
+     "bn": "পুরো সূরাটা চালালাম, আর হাইলাইটটা প্রতিটা লাইন ঠিকঠাক ধরে গেল।",
+     "coach": "যা কাজ করেছে সেটাও অতীতে বলো। স্ট্যান্ডআপে শুধু ভাঙা জিনিস না — যা দাঁড়িয়েছে সেটাও রিপোর্ট।"
+    },
+    {
+     "st": "ld",
+     "cheat": "that were + so that + which",
+     "rungs": [
+      "I replaced the fonts.",
+      "I replaced the fonts that were breaking on Bangla.",
+      "I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line.",
+      "I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line, which is what made the whole page look cheap before."
+     ],
+     "bn": "বাংলায় ভেঙে যাওয়া ফন্টগুলো বদলে দিলাম, যাতে আরবি আর ইংরেজি একই লাইনে বসে — আগে ঠিক এই জিনিসটাই পুরো পেজটাকে সস্তা দেখাত।",
+     "coach": "**that were breaking** = চলতে থাকা সমস্যা। এক শব্দে বোঝানো যায় যে এটা একবারের ঘটনা ছিল না।"
+    },
+    {
+     "st": "ld",
+     "cheat": "because + had built + which",
+     "rungs": [
+      "I added my name.",
+      "I added my name in the bottom right corner.",
+      "I added my name in the bottom right corner, because nobody could tell who had built the page.",
+      "I added my name in the bottom right corner, because nobody could tell who had built the page, which mattered more than I expected."
+     ],
+     "bn": "নিচের ডান কোণে নিজের নামটা বসিয়ে দিলাম, কারণ পেজটা কে বানিয়েছে সেটা কেউ বুঝত না — আর ব্যাপারটা ভেবেছিলাম যতটা, তার চেয়ে বেশি জরুরি ছিল।",
+     "coach": "**who had built** — নামটা যোগ করার আগেই বানানোর কাজ শেষ। দুটো অতীতের ক্রম।"
+    },
+    {
+     "st": "bw",
+     "cheat": "only after + which is why",
+     "chunks": [
+      "I only shipped the layout change",
+      "after it looked right on my phone,",
+      "which is why nobody",
+      "complained about mobile this time."
+     ],
+     "bn": "নিজের ফোনে ঠিকঠাক দেখানোর পরেই কেবল লেআউটটা ছেড়েছি — সেজন্যই এবার মোবাইল নিয়ে কেউ অভিযোগ করেনি।",
+     "coach": "লেজ আগে: **complained about mobile this time** → পুরোটা। শেষটা রেডি থাকলে শুরুটা ভয় লাগে না।"
+    },
+    {
+     "st": "bw",
+     "cheat": "had promised + by then had already · দৈনন্দিন",
+     "chunks": [
+      "I had promised to call at nine,",
+      "but the meeting ran late",
+      "and by then everyone at home",
+      "had already eaten."
+     ],
+     "bn": "নয়টায় ফোন করব বলেছিলাম, কিন্তু মিটিং দেরি হয়ে গেল — ততক্ষণে বাসার সবাই খেয়ে ফেলেছিল।",
+     "coach": "একই বাক্যে তিন স্তর: **had promised** → **ran** → **had already eaten**। এটাই আসল টাইমলাইন বলা।"
+    },
+    {
+     "st": "fr",
+     "cheat": "It kept ___ing until I ___.",
+     "frame": "It kept ___ing until I ___.",
+     "fills": [
+      [
+       "It kept crashing on mobile until I fixed the viewport.",
+       "viewport ঠিক না করা পর্যন্ত মোবাইলে বারবার ক্র্যাশ করছিল।",
+       "office"
+      ],
+      [
+       "It kept showing the old font until I cleared the cache.",
+       "ক্যাশ ক্লিয়ার না করা পর্যন্ত পুরনো ফন্টটাই দেখাচ্ছিল।",
+       "office"
+      ],
+      [
+       "It kept raining until I finally reached the office.",
+       "অফিসে না পৌঁছানো পর্যন্ত বৃষ্টি হয়েই যাচ্ছিল।",
+       "daily"
+      ],
+      [
+       "He kept calling until I picked up the phone.",
+       "ফোন না ধরা পর্যন্ত সে কল করেই যাচ্ছিল।",
+       "daily"
+      ]
+     ],
+     "coach": "**kept + …ing** = বিরক্তিকরভাবে চলতেই থাকা। একটা শব্দে হতাশাটাও চলে আসে।"
+    },
+    {
+     "st": "fr",
+     "cheat": "The problem was that ___.",
+     "frame": "The problem was that ___.",
+     "fills": [
+      [
+       "The problem was that the figure moved outside its box.",
+       "সমস্যা ছিল, ফিগারটা তার বক্সের বাইরে চলে যাচ্ছিল।",
+       "office"
+      ],
+      [
+       "The problem was that nobody had tested it on a small screen.",
+       "সমস্যা ছিল, ছোট স্ক্রিনে কেউ এটা টেস্ট করেনি।",
+       "office"
+      ],
+      [
+       "The problem was that I had left my charger at home.",
+       "সমস্যা ছিল, চার্জারটা বাসায় ফেলে এসেছিলাম।",
+       "daily"
+      ],
+      [
+       "The problem was that the shop closed earlier on Fridays.",
+       "সমস্যা ছিল, শুক্রবারে দোকানটা আগেই বন্ধ হয়ে যেত।",
+       "daily"
+      ]
+     ],
+     "coach": "\"the problem is\" নয় — ঘটনাটা শেষ, তাই **was**। তোমার সবচেয়ে ঘন ঘন slip এখানেই।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3",
+     "tiles": [
+      "If I",
+      "had tested it on my phone first,",
+      "I would have seen the broken layout",
+      "immediately."
+     ],
+     "bn": "আগে নিজের ফোনে টেস্ট করলে ভাঙা লেআউটটা সাথে সাথেই চোখে পড়ত।",
+     "coach": "**would have seen** — নিজের ভুল স্বীকার করার সবচেয়ে পেশাদার রূপ।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3",
+     "tiles": [
+      "If the fonts",
+      "had loaded properly,",
+      "the Bangla would not have looked",
+      "broken."
+     ],
+     "bn": "ফন্টগুলো ঠিকমতো লোড হলে বাংলাটা ভাঙা দেখাত না।",
+     "coach": "জিনিসকে কর্তা বানাও — **the fonts had loaded**। কাউকে দোষ না দিয়েই কারণ বলা যায়।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+     "tiles": [
+      "If I",
+      "had charged the laptop at night,",
+      "I would not have lost",
+      "the whole morning."
+     ],
+     "bn": "রাতে ল্যাপটপটা চার্জ দিলে পুরো সকালটা নষ্ট হতো না।",
+     "coach": "রোজকার আফসোস — একই ছাঁচ, শূন্য চাপ। এখানেই রেপ সবচেয়ে দ্রুত বসে।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — যা ভাঙল",
+     "prompt_bn": "গতকাল অ্যাপে কী কী ভেঙেছিল বলো: কোনটা বারবার হচ্ছিল, আসল সমস্যা কী ছিল, কীভাবে ঠিক করলে, আর আগে কী করলে সাথে সাথে ধরা পড়ত।",
+     "checklist": [
+      "past simple দিয়ে ঘটনা",
+      "It kept ___ing until",
+      "The problem was that",
+      "had already / who had built",
+      "would have seen"
+     ],
+     "model": "The figure moved outside its box every time the animation started, and it kept crashing on mobile until I fixed the viewport. The problem was that nobody had tested it on a small screen. I replaced the fonts that were breaking on Bangla, so that Arabic and English sit on the same line. If I had tested it on my phone first, I would have seen the broken layout immediately.",
+     "coach": "\"অনেক কিছু ভেঙেছিল\" নয় — কী, কেন, কীভাবে, আর কী করলে বাঁচা যেত। চারটা আলাদা ব্যাকরণ, একটাই গল্প।"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "world": "timeline",
+   "title_bn": "কোনটা কার আগে",
+   "desc_bn": "ডুপ্লিকেট সার্টিফিকেট, allow-list কমান্ড আর মাসিক রিপোর্ট — ক্রম গুলিয়ে ফেললে গল্পই হারায়।",
+   "cheats": [
+    "had already been",
+    "Until then, we had",
+    "by the time"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "শেষ হওয়া ঘটনা → past simple",
+     "date": "2026-07-27",
+     "raw": "Yeah, it actually **happens**. So some of the self-first certifications **are** already duplicated so you know technologies **are** improving and yeah and it's it happens.",
+     "tokens": "The system creates two certificates and nobody notices the duplicate for weeks.",
+     "flip": {
+      "creates": [
+       "created",
+       "creates",
+       "was creating"
+      ],
+      "notices": [
+       "noticed",
+       "notices",
+       "was noticing"
+      ]
+     },
+     "sharp": "The system created two certificates and nobody noticed the duplicate for weeks.",
+     "bn": "সিস্টেমটা দুটো সার্টিফিকেট বানিয়ে ফেলেছিল, আর ডুপ্লিকেটটা কয়েক সপ্তাহ কারো চোখেই পড়েনি।",
+     "coach": "তোমার লাইনে **it's it happens** — তিনবার ঘুরে ফিরে। অতীতে একটাই ক্রিয়া লাগে।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + then",
+     "date": "2026-07-29",
+     "raw": "Yeah, always gi there **is** a command pending for it, okay. So I always **run** and then you'll run. It will be allowed list or something like that",
+     "tokens": "I run the command first and then the allow list picks it up.",
+     "flip": {
+      "run": [
+       "ran",
+       "runs",
+       "was running"
+      ],
+      "picks": [
+       "picked",
+       "picks",
+       "was picking"
+      ]
+     },
+     "sharp": "I ran the command first and then the allow list picked it up.",
+     "bn": "আগে কমান্ডটা চালালাম, তারপর allow list সেটা ধরে নিল।",
+     "coach": "**ran** — irregular, তাই মুখে আটকায়। এই কার্ডে সেটাই টার্গেট।"
+    },
+    {
+     "st": "ld",
+     "cheat": "had been + before + which + even though",
+     "rungs": [
+      "The duplicate had been there for weeks.",
+      "The duplicate had been there for weeks before anyone opened a ticket.",
+      "The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced.",
+      "The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced, even though the query itself was correct."
+     ],
+     "bn": "কেউ টিকিট খোলার অনেক আগে থেকেই ডুপ্লিকেটটা ছিল — সেজন্যই রিপোর্ট কখনো মিলত না, যদিও query-টা নিজে ঠিকই ছিল।",
+     "coach": "**had been there for weeks** — সমস্যা কতদিনের সেটা এক ক্লজে। ম্যানেজার এই তথ্যটাই আগে চায়।"
+    },
+    {
+     "st": "ld",
+     "cheat": "had already + by the time + so + which",
+     "rungs": [
+      "I had already run the command.",
+      "I had already run the command by the time you asked me to.",
+      "I had already run the command by the time you asked me to, so the allow list was up to date.",
+      "I had already run the command by the time you asked me to, so the allow list was up to date, which saved us another round of approvals."
+     ],
+     "bn": "তুমি বলার আগেই কমান্ডটা চালিয়ে ফেলেছিলাম, তাই allow list হালনাগাদই ছিল — এতে আরেক দফা অ্যাপ্রুভাল বেঁচে গেল।",
+     "coach": "**had already run … by the time you asked** — নিজের কাজ জাহির না করেই বলা হয়ে যায়।"
+    },
+    {
+     "st": "bw",
+     "cheat": "By the time + had already been V3",
+     "chunks": [
+      "By the time the audit started,",
+      "the duplicate certificates had already",
+      "been counted twice",
+      "in every monthly report."
+     ],
+     "bn": "অডিট শুরু হওয়ার আগেই ডুপ্লিকেট সার্টিফিকেটগুলো প্রতিটা মাসিক রিপোর্টে দুইবার করে গোনা হয়ে গিয়েছিল।",
+     "coach": "লেজ থেকে: **in every monthly report** → **been counted twice in…** → পুরোটা। লম্বা বাক্যের ভয় এভাবেই ভাঙে।"
+    },
+    {
+     "st": "bw",
+     "cheat": "had bought + had changed · দৈনন্দিন",
+     "chunks": [
+      "I had bought the tickets in the morning,",
+      "but by the evening",
+      "the plan had changed",
+      "and nobody told me."
+     ],
+     "bn": "সকালেই টিকিটগুলো কেটে ফেলেছিলাম, কিন্তু সন্ধ্যার মধ্যে প্ল্যানটা বদলে গিয়েছিল — আর কেউ আমাকে বলেনি।",
+     "coach": "দুটো **had** পাশাপাশি: তোমার কেনা আগে, প্ল্যান বদল পরে। ক্রমটা শব্দই বলে দেয়।"
+    },
+    {
+     "st": "fr",
+     "cheat": "___ had already ___ when I ___.",
+     "frame": "___ had already ___ when I ___.",
+     "fills": [
+      [
+       "The build had already failed twice when I opened the logs.",
+       "লগ খোলার আগেই বিল্ডটা দুইবার ফেল করে ফেলেছিল।",
+       "office"
+      ],
+      [
+       "The client had already replied when I finished writing the summary.",
+       "সামারিটা লেখা শেষ করার আগেই ক্লায়েন্ট উত্তর দিয়ে ফেলেছিল।",
+       "office"
+      ],
+      [
+       "The rain had already stopped when I found my umbrella.",
+       "ছাতাটা খুঁজে পাওয়ার আগেই বৃষ্টি থেমে গিয়েছিল।",
+       "daily"
+      ],
+      [
+       "Everyone had already left when I reached the restaurant.",
+       "রেস্টুরেন্টে পৌঁছানোর আগেই সবাই চলে গিয়েছিল।",
+       "daily"
+      ]
+     ],
+     "coach": "**had already + when** — দুটো অতীতের মধ্যে কোনটা আগে, সেটা এক ছাঁচে ফয়সালা।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Until then, we had never ___.",
+     "frame": "Until then, we had never ___.",
+     "fills": [
+      [
+       "Until then, we had never seen a duplicate certificate.",
+       "তার আগ পর্যন্ত আমরা কখনো ডুপ্লিকেট সার্টিফিকেট দেখিনি।",
+       "office"
+      ],
+      [
+       "Until then, we had never needed an allow list at all.",
+       "তার আগ পর্যন্ত আমাদের allow list-এর দরকারই পড়েনি।",
+       "office"
+      ],
+      [
+       "Until then, I had never travelled anywhere alone.",
+       "তার আগ পর্যন্ত আমি কোথাও একা যাইনি।",
+       "daily"
+      ],
+      [
+       "Until then, we had never missed a single Friday.",
+       "তার আগ পর্যন্ত আমরা একটা শুক্রবারও বাদ দিইনি।",
+       "daily"
+      ]
+     ],
+     "coach": "**Until then, we had never…** — ঘটনাটা যে ব্যতিক্রম, সেটা এক লাইনে প্রতিষ্ঠা করে দেয়।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had been V3 → would have V3",
+     "tiles": [
+      "If the duplicate",
+      "had been caught in week one,",
+      "the report would have balanced",
+      "every month."
+     ],
+     "bn": "ডুপ্লিকেটটা প্রথম সপ্তাহেই ধরা পড়লে রিপোর্ট প্রতি মাসেই মিলত।",
+     "coach": "প্যাসিভ **had been caught** — কে ধরত সেটা না বলেই কথাটা শেষ। মিটিংয়ে নিরাপদ।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had not V3 → would have V3",
+     "tiles": [
+      "If I",
+      "had not run the command early,",
+      "we would have waited another day",
+      "for approval."
+     ],
+     "bn": "কমান্ডটা আগে না চালালে অ্যাপ্রুভালের জন্য আরও একদিন বসে থাকতে হতো।",
+     "coach": "নেগেটিভ শর্ত, পজিটিভ ফল — নিজের কাজের দাম বোঝানোর ভদ্র উপায়।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+     "tiles": [
+      "If somebody",
+      "had told me about the change,",
+      "I would not have bought",
+      "the tickets."
+     ],
+     "bn": "বদলটার কথা কেউ বললে টিকিটগুলো কাটতাম না।",
+     "coach": "**somebody** — কারো নাম না নিয়েই অভিযোগটা পৌঁছে যায়।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — ক্রম",
+     "prompt_bn": "ডুপ্লিকেট সার্টিফিকেটের ঘটনাটা ক্রম ধরে বলো: কতদিন ধরে চলছিল, অডিটের সময় কতদূর গড়িয়েছিল, তুমি কী আগেই করে রেখেছিলে, আর আগে ধরা পড়লে কী হতো।",
+     "checklist": [
+      "had been there for weeks",
+      "by the time ___ had already",
+      "Until then, we had never",
+      "which is why",
+      "would have balanced"
+     ],
+     "model": "Until then, we had never seen a duplicate certificate. The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced. By the time the audit started, the certificates had already been counted twice in every monthly report. I had already run the command by the time you asked me to, so the allow list was up to date. If the duplicate had been caught in week one, the report would have balanced every month.",
+     "coach": "পাঁচটা বাক্য, পাঁচটা আলাদা সময়স্তর। ক্রম ঠিক থাকলে শ্রোতাকে কিছু জিজ্ঞেস করতে হয় না।"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "world": "postmortem",
+   "title_bn": "কেন ভাঙল",
+   "desc_bn": "ট্রান্সক্রিপ্ট প্রোভাইডার বাছাই আর রিভিউ ছাড়া অ্যানিমেশন — সিদ্ধান্তের ভুল কীভাবে ব্যাখ্যা করবে।",
+   "cheats": [
+    "The real cause was that",
+    "We would not have ___ if we had ___",
+    "would never have"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "সিদ্ধান্তের ফল → past simple",
+     "date": "2026-08-06",
+     "raw": "Can you **give** me— can **tell** me which dictation refunding is good and give me a score of it?",
+     "tokens": "We pick the cheapest transcript provider and the accuracy drops in every long call.",
+     "flip": {
+      "pick": [
+       "picked",
+       "picks",
+       "were picking"
+      ],
+      "drops": [
+       "dropped",
+       "drops",
+       "was dropping"
+      ]
+     },
+     "sharp": "We picked the cheapest transcript provider and the accuracy dropped in every long call.",
+     "bn": "আমরা সবচেয়ে সস্তা transcript provider-টা নিয়েছিলাম, আর লম্বা কলে প্রতিবারই accuracy পড়ে যাচ্ছিল।",
+     "coach": "সিদ্ধান্ত আর তার ফল — দুটোই অতীতে। **picked / dropped** এক নিঃশ্বাসে।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + nobody caught",
+     "date": "2026-08-05",
+     "tokens": "The renderer places the figure outside the frame and nobody catches it in review.",
+     "flip": {
+      "places": [
+       "placed",
+       "places",
+       "was placing"
+      ],
+      "catches": [
+       "caught",
+       "catches",
+       "was catching"
+      ]
+     },
+     "sharp": "The renderer placed the figure outside the frame and nobody caught it in review.",
+     "bn": "renderer-টা ফিগারটাকে ফ্রেমের বাইরে বসিয়ে দিয়েছিল, আর রিভিউতে কেউ সেটা ধরেনি।",
+     "coach": "**caught** — catch-এর past. বলতে গিয়ে 'catched' বেরিয়ে যায় কি না খেয়াল করো।"
+    },
+    {
+     "st": "ld",
+     "cheat": "without + which is why + even though",
+     "rungs": [
+      "We chose the wrong provider.",
+      "We chose the wrong provider without testing a long call.",
+      "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo.",
+      "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage."
+     ],
+     "bn": "লম্বা কল টেস্ট না করেই আমরা ভুল provider বেছেছিলাম — সেজন্যই ডেমোতে accuracy ঠিক লাগছিল, যদিও আসল ব্যবহারে সেটা ভেঙে পড়ত।",
+     "coach": "**without + …ing** — একটা শব্দে পুরো ভুলটা বলা হয়ে যায়। RCA-তে খুব কাজের।"
+    },
+    {
+     "st": "ld",
+     "cheat": "so + kept + which",
+     "rungs": [
+      "Nobody reviewed the animation.",
+      "Nobody reviewed the animation on a real device.",
+      "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame.",
+      "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first."
+     ],
+     "bn": "আসল ডিভাইসে কেউ অ্যানিমেশনটা রিভিউ করেনি, তাই ফিগারটা বারবার ফ্রেমের বাইরে হেঁটে যাচ্ছিল — আর প্রত্যেক ইউজারের চোখে প্রথমেই ওটাই পড়ত।",
+     "coach": "**kept walking** — বারবার হওয়া মানে একটাই ঘটনা নয়, প্যাটার্ন। শব্দটা সেটাই বোঝায়।"
+    },
+    {
+     "st": "bw",
+     "cheat": "had judged + so nothing warned us",
+     "chunks": [
+      "We had judged the provider on a two minute demo,",
+      "so nothing warned us",
+      "about what would happen",
+      "in a forty minute call."
+     ],
+     "bn": "দুই মিনিটের ডেমো দেখেই আমরা provider-টা বিচার করেছিলাম, তাই চল্লিশ মিনিটের কলে কী হবে সেটা কিছুই আগাম জানায়নি।",
+     "coach": "লেজ আগে: **in a forty minute call** → **about what would happen in…** → পুরোটা।"
+    },
+    {
+     "st": "bw",
+     "cheat": "had trusted + so + ended up · দৈনন্দিন",
+     "chunks": [
+      "I had trusted the map,",
+      "so I never asked anyone",
+      "and ended up walking",
+      "in the wrong direction for twenty minutes."
+     ],
+     "bn": "ম্যাপটার উপর ভরসা করেছিলাম, তাই কাউকে জিজ্ঞেসই করিনি — শেষে বিশ মিনিট উল্টো দিকে হাঁটলাম।",
+     "coach": "**ended up + …ing** — অনিচ্ছাকৃত ফল বোঝানোর সবচেয়ে স্বাভাবিক শব্দ।"
+    },
+    {
+     "st": "fr",
+     "cheat": "We would not have ___ if we had ___.",
+     "frame": "We would not have ___ if we had ___.",
+     "fills": [
+      [
+       "We would not have switched providers twice if we had tested a long call first.",
+       "আগে একটা লম্বা কল টেস্ট করলে আমাদের দুইবার provider বদলাতে হতো না।",
+       "office"
+      ],
+      [
+       "We would not have lost a week if we had reviewed it on a real phone.",
+       "আসল ফোনে রিভিউ করলে আমাদের একটা সপ্তাহ নষ্ট হতো না।",
+       "office"
+      ],
+      [
+       "I would not have walked so far if I had asked one person.",
+       "একজনকে জিজ্ঞেস করলে এতদূর হাঁটতে হতো না।",
+       "daily"
+      ],
+      [
+       "We would not have paid twice if we had kept the receipt.",
+       "রসিদটা রাখলে আমাদের দুইবার টাকা দিতে হতো না।",
+       "daily"
+      ]
+     ],
+     "coach": "ফলটা আগে, শর্তটা পরে — একই কন্ডিশনাল উল্টো ক্রমে। দুই ক্রমেই সাবলীল হতে হবে।"
+    },
+    {
+     "st": "fr",
+     "cheat": "The real cause was that ___.",
+     "frame": "The real cause was that ___.",
+     "fills": [
+      [
+       "The real cause was that we had never tested a long call.",
+       "আসল কারণ ছিল, আমরা কখনো লম্বা কল টেস্ট করিনি।",
+       "office"
+      ],
+      [
+       "The real cause was that nobody owned the review step.",
+       "আসল কারণ ছিল, রিভিউ ধাপটার দায়িত্ব কারো ছিল না।",
+       "office"
+      ],
+      [
+       "The real cause was that I had not looked at the timetable.",
+       "আসল কারণ ছিল, আমি সময়সূচিটা দেখিনি।",
+       "daily"
+      ],
+      [
+       "The real cause was that we had assumed it stayed open late.",
+       "আসল কারণ ছিল, আমরা ধরে নিয়েছিলাম ওটা রাত পর্যন্ত খোলা থাকে।",
+       "daily"
+      ]
+     ],
+     "coach": "\"the problem\" নয় — **the real cause**। উপসর্গ আর কারণের পার্থক্যটাই RCA-র পুরো কাজ।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3",
+     "tiles": [
+      "If we",
+      "had tested a forty minute call,",
+      "we would have caught the accuracy drop",
+      "before signing."
+     ],
+     "bn": "চল্লিশ মিনিটের একটা কল টেস্ট করলে সই করার আগেই accuracy পড়ে যাওয়াটা ধরতে পারতাম।",
+     "coach": "**before signing** — কখন ধরা পড়ত সেটা যোগ করলে যুক্তিটা আর আন্দাজ থাকে না।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had been V3 → would never have V3",
+     "tiles": [
+      "If the animation",
+      "had been reviewed on a phone,",
+      "the figure would never have left",
+      "the frame."
+     ],
+     "bn": "অ্যানিমেশনটা ফোনে রিভিউ হলে ফিগারটা কখনো ফ্রেমের বাইরে যেতই না।",
+     "coach": "**would never have left** — 'never' বসিয়ে নিশ্চয়তাটা জোরালো হয়।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+     "tiles": [
+      "If I",
+      "had asked one person,",
+      "I would not have walked",
+      "in the wrong direction."
+     ],
+     "bn": "একজনকে জিজ্ঞেস করলে উল্টো দিকে হাঁটতাম না।",
+     "coach": "ছোট, রোজকার, একই কাঠামো — মুখে বসার জন্য এটাই সবচেয়ে সহজ প্রবেশপথ।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — কেন ভাঙল",
+     "prompt_bn": "provider বাছাইয়ের ভুলটা ব্যাখ্যা করো: কী সিদ্ধান্ত নিয়েছিলে, ডেমোতে কেন ঠিক লাগছিল, আসল কারণ কী ছিল, আর কী করলে সই করার আগেই ধরা পড়ত।",
+     "checklist": [
+      "past simple দিয়ে সিদ্ধান্ত",
+      "without + …ing",
+      "The real cause was that",
+      "had judged / had never tested",
+      "If we had ___, we would have ___"
+     ],
+     "model": "We picked the cheapest transcript provider and the accuracy dropped in every long call. We chose it without testing a long call, which is why it looked fine in the demo even though it collapsed in real usage. The real cause was that we had judged the provider on a two minute demo, so nothing warned us about a forty minute call. If we had tested a forty minute call, we would have caught the accuracy drop before signing.",
+     "coach": "এক গল্পে সিদ্ধান্ত, উপসর্গ, আসল কারণ আর প্রতিকার। এটাই ভালো পোস্টমর্টেমের আকার।"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "world": "proposal",
+   "title_bn": "কোনটা বেছে নেব",
+   "desc_bn": "প্রোভাইডার তুলনা, ফ্রি ক্রেডিট আর প্রতিযোগী যাচাই — মতামত নয়, যুক্তি দিয়ে সিদ্ধান্ত।",
+   "cheats": [
+    "It would make sense to",
+    "Rather than ___, we could ___",
+    "If we ___, we would ___"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "তুলনার ফল → past simple",
+     "date": "2026-07-31",
+     "raw": "Just to double check this is the right choice. Compare with various brand, various product and all other **things** and **give me** the result, okay",
+     "tokens": "We compare three providers and the cheapest one wins on price alone.",
+     "flip": {
+      "compare": [
+       "compared",
+       "compares",
+       "were comparing"
+      ],
+      "wins": [
+       "won",
+       "wins",
+       "was winning"
+      ]
+     },
+     "sharp": "We compared three providers and the cheapest one won on price alone.",
+     "bn": "তিনটা provider মিলিয়ে দেখলাম, আর সবচেয়ে সস্তাটা শুধু দামের জোরেই জিতে গেল।",
+     "coach": "**won** — win-এর past. \"winned\" বেরিয়ে আসছে কি না কান পেতে শোনো।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + then",
+     "date": "2026-08-06",
+     "raw": "So do I **get** some kind of free credits if I **use** this model?",
+     "tokens": "We use the free credits first and then the bill grows every month.",
+     "flip": {
+      "use": [
+       "used",
+       "uses",
+       "were using"
+      ],
+      "grows": [
+       "grew",
+       "grows",
+       "was growing"
+      ]
+     },
+     "sharp": "We used the free credits first and then the bill grew every month.",
+     "bn": "আগে ফ্রি ক্রেডিটগুলো খরচ করলাম, তারপর প্রতি মাসেই বিলটা বাড়তে থাকল।",
+     "coach": "**grew** — grow-এর past. ছোট শব্দ, কিন্তু ভুল হলেই কানে লাগে।"
+    },
+    {
+     "st": "ld",
+     "cheat": "could + so that + which",
+     "rungs": [
+      "We could score every provider.",
+      "We could score every provider on accuracy and uptime.",
+      "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion.",
+      "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time."
+     ],
+     "bn": "প্রতিটা provider-কে accuracy আর uptime দিয়ে নম্বর দিতে পারি, যাতে বাছাইটা আর মতামতের ব্যাপার না থাকে — গতবার ওভাবেই তো আমাদের এক সপ্তাহ গেল।",
+     "coach": "প্রস্তাবের সাথে গতবারের ক্ষতিটা জুড়ে দাও। **which is how we lost a week** — এক ক্লজে যুক্তি পোক্ত।"
+    },
+    {
+     "st": "ld",
+     "cheat": "I would + so that + even though",
+     "rungs": [
+      "I would run one long call.",
+      "I would run one long call through each provider.",
+      "I would run one long call through each provider, so that we see accuracy where it actually matters.",
+      "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon."
+     ],
+     "bn": "প্রতিটা provider দিয়ে একটা করে লম্বা কল চালাতাম, যাতে যেখানে accuracy আসলে দরকার সেখানেই সেটা দেখা যায় — যদিও তাতে একটা বাড়তি বিকেল যাবে।",
+     "coach": "খরচটা নিজেই স্বীকার করো (**even though**) — তাহলে কেউ সেটা দিয়ে আক্রমণ করতে পারে না।"
+    },
+    {
+     "st": "bw",
+     "cheat": "If we + would + which provider",
+     "chunks": [
+      "If we scored them on the same call,",
+      "we would know within a day",
+      "which provider survives",
+      "a real customer conversation."
+     ],
+     "bn": "একই কলে সবাইকে নম্বর দিলে একদিনের মধ্যেই জানতাম, আসল কাস্টমার কথোপকথনে কোন provider টিকে থাকে।",
+     "coach": "লেজ আগে: **a real customer conversation** → **which provider survives…** → পুরোটা।"
+    },
+    {
+     "st": "bw",
+     "cheat": "If we + would + দৈনন্দিন",
+     "chunks": [
+      "If we cooked twice a week,",
+      "we would spend less",
+      "and still eat better",
+      "than we do now."
+     ],
+     "bn": "সপ্তাহে দুইবার রান্না করলে খরচ কমত, আর এখনকার চেয়ে ভালোই খেতাম।",
+     "coach": "একই দ্বিতীয় কন্ডিশনাল, বাসার সিদ্ধান্তে। ব্যাকরণ এক, চাপ শূন্য।"
+    },
+    {
+     "st": "fr",
+     "cheat": "It would make sense to ___ before ___.",
+     "frame": "It would make sense to ___ before ___.",
+     "fills": [
+      [
+       "It would make sense to test one long call before we sign anything.",
+       "কিছুতে সই করার আগে একটা লম্বা কল টেস্ট করাই যুক্তিসঙ্গত।",
+       "office"
+      ],
+      [
+       "It would make sense to check the competitors before we build our own.",
+       "নিজেরা বানানোর আগে প্রতিযোগীরা কী করছে দেখাই যুক্তিসঙ্গত।",
+       "office"
+      ],
+      [
+       "It would make sense to eat something before we leave.",
+       "বেরোনোর আগে কিছু খেয়ে নেওয়াই যুক্তিসঙ্গত।",
+       "daily"
+      ],
+      [
+       "It would make sense to book the tickets before the weekend.",
+       "সপ্তাহান্তের আগেই টিকিটগুলো কেটে ফেলা যুক্তিসঙ্গত।",
+       "daily"
+      ]
+     ],
+     "coach": "**It would make sense to** — নিজের নাম না জড়িয়ে প্রস্তাব দেওয়া। বিরোধিতা করা কঠিন হয়ে যায়।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Rather than ___, we could ___.",
+     "frame": "Rather than ___ing, we could ___.",
+     "fills": [
+      [
+       "Rather than guessing on price, we could score them on accuracy.",
+       "দাম দেখে আন্দাজ করার বদলে accuracy দিয়ে নম্বর দিতে পারি।",
+       "office"
+      ],
+      [
+       "Rather than building everything, we could ship one small tool first.",
+       "সবকিছু বানানোর বদলে আগে একটা ছোট টুল ছাড়তে পারি।",
+       "office"
+      ],
+      [
+       "Rather than ordering every night, we could cook on Sunday.",
+       "রোজ রাতে অর্ডার করার বদলে রবিবারে রান্না করে রাখতে পারি।",
+       "daily"
+      ],
+      [
+       "Rather than taking two cars, we could leave together.",
+       "দুটো গাড়ি নেওয়ার বদলে একসাথে বেরোতে পারি।",
+       "daily"
+      ]
+     ],
+     "coach": "**Rather than X, we could Y** — 'না' না বলেই বিকল্প দেওয়া। আলোচনার সবচেয়ে কাজের ছাঁচ।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + past → would (2nd conditional)",
+     "tiles": [
+      "If we",
+      "scored them on the same call,",
+      "the decision would take one afternoon",
+      "instead of one week."
+     ],
+     "bn": "একই কলে সবাইকে নম্বর দিলে সিদ্ধান্তটা এক সপ্তাহের বদলে এক বিকেলেই হয়ে যেত।",
+     "coach": "**instead of one week** — সংখ্যা দিয়ে তুলনা দিলে প্রস্তাব আর মতামত থাকে না।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3",
+     "tiles": [
+      "If the free credits",
+      "had lasted longer,",
+      "we would not have moved",
+      "so quickly."
+     ],
+     "bn": "ফ্রি ক্রেডিটগুলো আরও টিকলে আমরা এত তাড়াহুড়ো করতাম না।",
+     "coach": "অতীতের ব্যাখ্যা দিয়ে বর্তমানের সিদ্ধান্ত সাজানো — পিচের ভেতরে ইতিহাস।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + past → would · দৈনন্দিন",
+     "tiles": [
+      "If we",
+      "booked earlier,",
+      "we would pay half",
+      "of what we pay now."
+     ],
+     "bn": "আগে বুক করলে এখন যা দিই তার অর্ধেকেই হয়ে যেত।",
+     "coach": "**would pay half of what we pay now** — কল্পনা আর বাস্তব এক বাক্যে পাশাপাশি।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — সিদ্ধান্ত",
+     "prompt_bn": "transcript provider বাছাইয়ের প্রস্তাব দাও: গতবার কী হয়েছিল, তুমি কীভাবে বাছতে চাও, বিকল্পটা কী, আর এতে কত সময় বাঁচবে।",
+     "checklist": [
+      "past simple দিয়ে গতবার",
+      "It would make sense to",
+      "Rather than ___, we could ___",
+      "If we ___, we would ___",
+      "so that / even though"
+     ],
+     "model": "Last time we compared three providers and the cheapest one won on price alone, and the accuracy dropped in every long call. Rather than guessing on price, we could score them on accuracy and uptime, so that the choice stops being a matter of opinion. It would make sense to test one long call before we sign anything. If we scored them on the same call, the decision would take one afternoon instead of one week.",
+     "coach": "ইতিহাস → বিকল্প → প্রস্তাব → লাভ। চারটা ধাপ, চারটা ভিন্ন ছাঁচ — মিটিংয়ে এই ক্রমেই সবচেয়ে কাজ হয়।"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "world": "meeting",
+   "title_bn": "বুঝিয়ে বলা ও রাজি করানো",
+   "desc_bn": "সাপোর্টকে scoped তথ্য দেওয়া, রেপদের ব্যবহার বোঝা, আর ভুল বোঝাবুঝি ঠেকানো।",
+   "cheats": [
+    "Just to make sure I understood",
+    "Would you mind ___ing",
+    "would not have gone wrong"
+   ],
+   "cards": [
+    {
+     "st": "tm",
+     "cheat": "past simple ×২",
+     "date": "2026-08-06",
+     "raw": "Because their customer service asks for Including scoped, carefully selected Salesforce permission info for him. So that's why I **want** to know about it.",
+     "tokens": "Support asks for the permission details and I send them the whole profile.",
+     "flip": {
+      "asks": [
+       "asked",
+       "asks",
+       "was asking"
+      ],
+      "send": [
+       "sent",
+       "sends",
+       "was sending"
+      ]
+     },
+     "sharp": "Support asked for the permission details and I sent them the whole profile.",
+     "bn": "সাপোর্ট permission-এর নির্দিষ্ট তথ্য চেয়েছিল, আর আমি পুরো profile-টাই পাঠিয়ে দিয়েছিলাম।",
+     "coach": "**sent** — send-এর past। ভুলটা স্বীকার করার সবচেয়ে সোজা বাক্য, কোনো অজুহাত ছাড়া।"
+    },
+    {
+     "st": "tm",
+     "cheat": "past simple + during",
+     "date": "2026-08-06",
+     "raw": "**Give me** an example how sales rep **use** it, when they will use it. Do you use in a live call",
+     "tokens": "The rep opens the panel during the call and checks the summary.",
+     "flip": {
+      "opens": [
+       "opened",
+       "opens",
+       "was opening"
+      ],
+      "checks": [
+       "checked",
+       "checks",
+       "was checking"
+      ]
+     },
+     "sharp": "The rep opened the panel during the call and checked the summary.",
+     "bn": "রেপ কলের মাঝেই প্যানেলটা খুলল আর সামারিটা দেখে নিল।",
+     "coach": "উদাহরণ দেওয়ার সময় অতীত ব্যবহার করলে সেটা কল্পনা নয়, ঘটনা শোনায়।"
+    },
+    {
+     "st": "ld",
+     "cheat": "before + so that + which",
+     "rungs": [
+      "I need one thing from you.",
+      "I need one thing from you before the call tomorrow.",
+      "I need one thing from you before the call tomorrow, so that I do not have to guess in front of the customer.",
+      "I need one thing from you before the call tomorrow, so that I do not have to guess in front of the customer, which is exactly what happened last week."
+     ],
+     "bn": "কালকের কলের আগে তোমার কাছ থেকে একটা জিনিস দরকার, যাতে কাস্টমারের সামনে আমাকে আন্দাজ করতে না হয় — গত সপ্তাহে ঠিক ওটাই হয়েছিল।",
+     "coach": "চাওয়ার সাথে কারণ আর নজির। **which is exactly what happened last week** — না বলার জায়গা থাকে না।"
+    },
+    {
+     "st": "ld",
+     "cheat": "Let me make sure + because + which",
+     "rungs": [
+      "Let me make sure I understood.",
+      "Let me make sure I understood what you are asking for.",
+      "Let me make sure I understood what you are asking for, because we used two different words for the same field.",
+      "Let me make sure I understood what you are asking for, because we used two different words for the same field, which is how the last ticket went wrong."
+     ],
+     "bn": "তুমি ঠিক কী চাইছ সেটা আমি ঠিক বুঝেছি কি না নিশ্চিত হয়ে নিই, কারণ একই ফিল্ডের জন্য আমরা দুইরকম শব্দ ব্যবহার করেছি — গত টিকিটটা এভাবেই ভুল হয়েছিল।",
+     "coach": "**Let me make sure I understood** — মিটিংয়ে ভুল বোঝাবুঝি থামানোর একক সবচেয়ে কার্যকর বাক্য।"
+    },
+    {
+     "st": "bw",
+     "cheat": "Would you mind + so that",
+     "chunks": [
+      "Would you mind confirming the scope in writing,",
+      "so that support and I",
+      "send the customer",
+      "exactly the same answer?"
+     ],
+     "bn": "scope-টা একটু লিখিতভাবে নিশ্চিত করবে? যাতে সাপোর্ট আর আমি কাস্টমারকে হুবহু একই উত্তর দিই।",
+     "coach": "**Would you mind + …ing** — সবচেয়ে ভদ্র অনুরোধ। লেজ আগে গাঁথলে প্রশ্নটা মাঝপথে ভাঙে না।"
+    },
+    {
+     "st": "bw",
+     "cheat": "Could you + so that · দৈনন্দিন",
+     "chunks": [
+      "Could you send the location on WhatsApp,",
+      "so that I do not",
+      "have to stop and ask",
+      "at every turn?"
+     ],
+     "bn": "লোকেশনটা একটু WhatsApp-এ পাঠাবে? যাতে প্রতি মোড়ে থেমে জিজ্ঞেস করতে না হয়।",
+     "coach": "অফিস আর রাস্তা — ভদ্র অনুরোধের ছাঁচ একটাই।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Just to make sure I understood, ___.",
+     "frame": "Just to make sure I understood, ___.",
+     "fills": [
+      [
+       "Just to make sure I understood, you want the audit scoped to one profile.",
+       "ঠিক বুঝেছি কি না দেখি — তুমি চাও অডিটটা একটা profile-এ সীমাবদ্ধ থাক।",
+       "office"
+      ],
+      [
+       "Just to make sure I understood, the field should stay until the migration ends.",
+       "ঠিক বুঝেছি কি না দেখি — migration শেষ না হওয়া পর্যন্ত ফিল্ডটা থাকবে।",
+       "office"
+      ],
+      [
+       "Just to make sure I understood, we are meeting at eight, not nine.",
+       "ঠিক বুঝেছি কি না দেখি — আমরা আটটায় দেখা করছি, নয়টায় নয়।",
+       "daily"
+      ],
+      [
+       "Just to make sure I understood, you want me to bring the documents too.",
+       "ঠিক বুঝেছি কি না দেখি — তুমি চাও আমি কাগজগুলোও নিয়ে যাই।",
+       "daily"
+      ]
+     ],
+     "coach": "প্রতিবার বলার আগে এই লাইনটা বসালে ভুল বোঝাবুঝি মিটিংয়েই ধরা পড়ে, টিকিটে নয়।"
+    },
+    {
+     "st": "fr",
+     "cheat": "Would you mind ___ing ___?",
+     "frame": "Would you mind ___ing ___?",
+     "fills": [
+      [
+       "Would you mind confirming that in writing before I reply to support?",
+       "সাপোর্টকে উত্তর দেওয়ার আগে ওটা একটু লিখিতভাবে নিশ্চিত করবে?",
+       "office"
+      ],
+      [
+       "Would you mind sharing the exact object name so I stop guessing?",
+       "অবজেক্টের ঠিক নামটা একটু দেবে, যাতে আমাকে আন্দাজ করতে না হয়?",
+       "office"
+      ],
+      [
+       "Would you mind sending me the address once more?",
+       "ঠিকানাটা আরেকবার পাঠাবে?",
+       "daily"
+      ],
+      [
+       "Would you mind waiting five minutes while I finish this?",
+       "এটা শেষ করতে পাঁচ মিনিট একটু অপেক্ষা করবে?",
+       "daily"
+      ]
+     ],
+     "coach": "**mind**-এর পরে সবসময় **…ing**। \"Would you mind to send\" — এটাই সবচেয়ে কমন ফাঁদ।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + could → would",
+     "tiles": [
+      "If you",
+      "could confirm the scope today,",
+      "I would send support one clean answer",
+      "tomorrow."
+     ],
+     "bn": "scope-টা আজ নিশ্চিত করতে পারলে কালই সাপোর্টকে একটা পরিষ্কার উত্তর পাঠিয়ে দিতাম।",
+     "coach": "চাপ না দিয়ে ডেডলাইন বসানো। **If you could … I would …** — দুই দিকেই ভদ্রতা।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would not have V3",
+     "tiles": [
+      "If we",
+      "had used the same word for that field,",
+      "the last ticket would not have gone",
+      "wrong."
+     ],
+     "bn": "ওই ফিল্ডটার জন্য আমরা একই শব্দ ব্যবহার করলে গত টিকিটটা ভুল হতো না।",
+     "coach": "**we** দিয়ে শুরু — দোষটা ভাগ করে নিলে কেউ আত্মরক্ষায় নামে না।"
+    },
+    {
+     "st": "if",
+     "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+     "tiles": [
+      "If you",
+      "had sent the location,",
+      "I would have reached",
+      "on time."
+     ],
+     "bn": "লোকেশনটা পাঠালে আমি সময়মতোই পৌঁছাতাম।",
+     "coach": "ছোট বাক্য, কিন্তু ছাঁচটা মিটিংয়েরটার সাথে হুবহু এক। এখানেই দ্রুত বসে যায়।"
+    },
+    {
+     "st": "boss",
+     "cheat": "৪ / ৩ / ২ — মিটিং",
+     "prompt_bn": "সাপোর্টের রিকোয়েস্টটা নিয়ে কথা বলো: কী চাওয়া হয়েছিল, তুমি কী পাঠিয়েছিলে, এখন কী দরকার, আর গতবার কেন ভুল হয়েছিল।",
+     "checklist": [
+      "past simple দিয়ে যা হয়েছিল",
+      "Just to make sure I understood",
+      "Would you mind ___ing",
+      "so that / because",
+      "would not have gone wrong"
+     ],
+     "model": "Support asked for the permission details and I sent them the whole profile, which was more than they needed. Just to make sure I understood, you want the audit scoped to one profile. Would you mind confirming that in writing, so that support and I send the customer exactly the same answer? We used two different words for the same field last time, and if we had used the same word, the last ticket would not have gone wrong.",
+     "coach": "স্বীকার → নিশ্চিত → অনুরোধ → কারণ। ভুল বোঝাবুঝির মিটিং এই চার ধাপেই শেষ হয়।"
+    }
+   ]
+  }
+ ]
+}

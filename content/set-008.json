@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "3.1",
+  "set": 8,
+  "world": "postmortem",
+  "world_bn": "পোস্টমর্টেম",
+  "title_bn": "কেন ভাঙল",
+  "desc_bn": "ট্রান্সক্রিপ্ট প্রোভাইডার বাছাই আর রিভিউ ছাড়া অ্যানিমেশন — সিদ্ধান্তের ভুল কীভাবে ব্যাখ্যা করবে।",
+  "minutes": 8,
+  "cheats": [
+    "The real cause was that",
+    "We would not have ___ if we had ___",
+    "would never have"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s008-tm-1",
+          "station": "time-machine",
+          "cheat": "সিদ্ধান্তের ফল → past simple",
+          "source_date": "2026-08-06",
+          "raw": "Can you **give** me— can **tell** me which dictation refunding is good and give me a score of it?",
+          "tokens": [
+            "We",
+            "pick",
+            "the",
+            "cheapest",
+            "transcript",
+            "provider",
+            "and",
+            "the",
+            "accuracy",
+            "drops",
+            "in",
+            "every",
+            "long",
+            "call."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "picked",
+                "picks",
+                "were picking"
+              ],
+              "answer": "picked"
+            },
+            {
+              "index": 9,
+              "options": [
+                "dropped",
+                "drops",
+                "was dropping"
+              ],
+              "answer": "dropped"
+            }
+          ],
+          "sharp": "We picked the cheapest transcript provider and the accuracy dropped in every long call.",
+          "sharp_bn": "আমরা সবচেয়ে সস্তা transcript provider-টা নিয়েছিলাম, আর লম্বা কলে প্রতিবারই accuracy পড়ে যাচ্ছিল।",
+          "coach_bn": "সিদ্ধান্ত আর তার ফল — দুটোই অতীতে। **picked / dropped** এক নিঃশ্বাসে।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s008-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + nobody caught",
+          "source_date": "2026-08-05",
+          "tokens": [
+            "The",
+            "renderer",
+            "places",
+            "the",
+            "figure",
+            "outside",
+            "the",
+            "frame",
+            "and",
+            "nobody",
+            "catches",
+            "it",
+            "in",
+            "review."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "placed",
+                "places",
+                "was placing"
+              ],
+              "answer": "placed"
+            },
+            {
+              "index": 10,
+              "options": [
+                "caught",
+                "catches",
+                "was catching"
+              ],
+              "answer": "caught"
+            }
+          ],
+          "sharp": "The renderer placed the figure outside the frame and nobody caught it in review.",
+          "sharp_bn": "renderer-টা ফিগারটাকে ফ্রেমের বাইরে বসিয়ে দিয়েছিল, আর রিভিউতে কেউ সেটা ধরেনি।",
+          "coach_bn": "**caught** — catch-এর past. বলতে গিয়ে 'catched' বেরিয়ে যায় কি না খেয়াল করো।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s008-ld-1",
+          "station": "ladder",
+          "cheat": "without + which is why + even though",
+          "rungs": [
+            "We chose the wrong provider.",
+            "We chose the wrong provider without testing a long call.",
+            "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo.",
+            "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage."
+          ],
+          "sharp": "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage.",
+          "sharp_bn": "লম্বা কল টেস্ট না করেই আমরা ভুল provider বেছেছিলাম — সেজন্যই ডেমোতে accuracy ঠিক লাগছিল, যদিও আসল ব্যবহারে সেটা ভেঙে পড়ত।",
+          "coach_bn": "**without + …ing** — একটা শব্দে পুরো ভুলটা বলা হয়ে যায়। RCA-তে খুব কাজের।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s008-ld-2",
+          "station": "ladder",
+          "cheat": "so + kept + which",
+          "rungs": [
+            "Nobody reviewed the animation.",
+            "Nobody reviewed the animation on a real device.",
+            "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame.",
+            "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first."
+          ],
+          "sharp": "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first.",
+          "sharp_bn": "আসল ডিভাইসে কেউ অ্যানিমেশনটা রিভিউ করেনি, তাই ফিগারটা বারবার ফ্রেমের বাইরে হেঁটে যাচ্ছিল — আর প্রত্যেক ইউজারের চোখে প্রথমেই ওটাই পড়ত।",
+          "coach_bn": "**kept walking** — বারবার হওয়া মানে একটাই ঘটনা নয়, প্যাটার্ন। শব্দটা সেটাই বোঝায়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s008-bw-1",
+          "station": "backward",
+          "cheat": "had judged + so nothing warned us",
+          "chunks": [
+            "We had judged the provider on a two minute demo,",
+            "so nothing warned us",
+            "about what would happen",
+            "in a forty minute call."
+          ],
+          "sharp": "We had judged the provider on a two minute demo, so nothing warned us about what would happen in a forty minute call.",
+          "sharp_bn": "দুই মিনিটের ডেমো দেখেই আমরা provider-টা বিচার করেছিলাম, তাই চল্লিশ মিনিটের কলে কী হবে সেটা কিছুই আগাম জানায়নি।",
+          "coach_bn": "লেজ আগে: **in a forty minute call** → **about what would happen in…** → পুরোটা।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s008-bw-2",
+          "station": "backward",
+          "cheat": "had trusted + so + ended up · দৈনন্দিন",
+          "chunks": [
+            "I had trusted the map,",
+            "so I never asked anyone",
+            "and ended up walking",
+            "in the wrong direction for twenty minutes."
+          ],
+          "sharp": "I had trusted the map, so I never asked anyone and ended up walking in the wrong direction for twenty minutes.",
+          "sharp_bn": "ম্যাপটার উপর ভরসা করেছিলাম, তাই কাউকে জিজ্ঞেসই করিনি — শেষে বিশ মিনিট উল্টো দিকে হাঁটলাম।",
+          "coach_bn": "**ended up + …ing** — অনিচ্ছাকৃত ফল বোঝানোর সবচেয়ে স্বাভাবিক শব্দ।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s008-fr-1",
+          "station": "frame",
+          "cheat": "We would not have ___ if we had ___.",
+          "frame": "We would not have ___ if we had ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "We would not have switched providers twice if we had tested a long call first.",
+              "sharp_bn": "আগে একটা লম্বা কল টেস্ট করলে আমাদের দুইবার provider বদলাতে হতো না।"
+            },
+            {
+              "scene": "office",
+              "sharp": "We would not have lost a week if we had reviewed it on a real phone.",
+              "sharp_bn": "আসল ফোনে রিভিউ করলে আমাদের একটা সপ্তাহ নষ্ট হতো না।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I would not have walked so far if I had asked one person.",
+              "sharp_bn": "একজনকে জিজ্ঞেস করলে এতদূর হাঁটতে হতো না।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "We would not have paid twice if we had kept the receipt.",
+              "sharp_bn": "রসিদটা রাখলে আমাদের দুইবার টাকা দিতে হতো না।"
+            }
+          ],
+          "sharp": "We would not have switched providers twice if we had tested a long call first.",
+          "reps": 4,
+          "coach_bn": "ফলটা আগে, শর্তটা পরে — একই কন্ডিশনাল উল্টো ক্রমে। দুই ক্রমেই সাবলীল হতে হবে।",
+          "target_sec": 10
+        },
+        {
+          "id": "s008-fr-2",
+          "station": "frame",
+          "cheat": "The real cause was that ___.",
+          "frame": "The real cause was that ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "The real cause was that we had never tested a long call.",
+              "sharp_bn": "আসল কারণ ছিল, আমরা কখনো লম্বা কল টেস্ট করিনি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "The real cause was that nobody owned the review step.",
+              "sharp_bn": "আসল কারণ ছিল, রিভিউ ধাপটার দায়িত্ব কারো ছিল না।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The real cause was that I had not looked at the timetable.",
+              "sharp_bn": "আসল কারণ ছিল, আমি সময়সূচিটা দেখিনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The real cause was that we had assumed it stayed open late.",
+              "sharp_bn": "আসল কারণ ছিল, আমরা ধরে নিয়েছিলাম ওটা রাত পর্যন্ত খোলা থাকে।"
+            }
+          ],
+          "sharp": "The real cause was that we had never tested a long call.",
+          "reps": 4,
+          "coach_bn": "\"the problem\" নয় — **the real cause**। উপসর্গ আর কারণের পার্থক্যটাই RCA-র পুরো কাজ।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s008-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If we",
+            "had tested a forty minute call,",
+            "we would have caught the accuracy drop",
+            "before signing."
+          ],
+          "sharp": "If we had tested a forty minute call, we would have caught the accuracy drop before signing.",
+          "sharp_bn": "চল্লিশ মিনিটের একটা কল টেস্ট করলে সই করার আগেই accuracy পড়ে যাওয়াটা ধরতে পারতাম।",
+          "coach_bn": "**before signing** — কখন ধরা পড়ত সেটা যোগ করলে যুক্তিটা আর আন্দাজ থাকে না।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s008-if-2",
+          "station": "if-machine",
+          "cheat": "If + had been V3 → would never have V3",
+          "tiles": [
+            "If the animation",
+            "had been reviewed on a phone,",
+            "the figure would never have left",
+            "the frame."
+          ],
+          "sharp": "If the animation had been reviewed on a phone, the figure would never have left the frame.",
+          "sharp_bn": "অ্যানিমেশনটা ফোনে রিভিউ হলে ফিগারটা কখনো ফ্রেমের বাইরে যেতই না।",
+          "coach_bn": "**would never have left** — 'never' বসিয়ে নিশ্চয়তাটা জোরালো হয়।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s008-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had asked one person,",
+            "I would not have walked",
+            "in the wrong direction."
+          ],
+          "sharp": "If I had asked one person, I would not have walked in the wrong direction.",
+          "sharp_bn": "একজনকে জিজ্ঞেস করলে উল্টো দিকে হাঁটতাম না।",
+          "coach_bn": "ছোট, রোজকার, একই কাঠামো — মুখে বসার জন্য এটাই সবচেয়ে সহজ প্রবেশপথ।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s008-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — কেন ভাঙল",
+          "prompt_bn": "provider বাছাইয়ের ভুলটা ব্যাখ্যা করো: কী সিদ্ধান্ত নিয়েছিলে, ডেমোতে কেন ঠিক লাগছিল, আসল কারণ কী ছিল, আর কী করলে সই করার আগেই ধরা পড়ত।",
+          "checklist": [
+            "past simple দিয়ে সিদ্ধান্ত",
+            "without + …ing",
+            "The real cause was that",
+            "had judged / had never tested",
+            "If we had ___, we would have ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "We picked the cheapest transcript provider and the accuracy dropped in every long call. We chose it without testing a long call, which is why it looked fine in the demo even though it collapsed in real usage. The real cause was that we had judged the provider on a two minute demo, so nothing warned us about a forty minute call. If we had tested a forty minute call, we would have caught the accuracy drop before signing.",
+          "coach_bn": "এক গল্পে সিদ্ধান্ত, উপসর্গ, আসল কারণ আর প্রতিকার। এটাই ভালো পোস্টমর্টেমের আকার।"
+        }
+      ]
+    }
+  ]
+}

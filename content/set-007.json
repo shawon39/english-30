@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "3.1",
+  "set": 7,
+  "world": "timeline",
+  "world_bn": "টাইমলাইন",
+  "title_bn": "কোনটা কার আগে",
+  "desc_bn": "ডুপ্লিকেট সার্টিফিকেট, allow-list কমান্ড আর মাসিক রিপোর্ট — ক্রম গুলিয়ে ফেললে গল্পই হারায়।",
+  "minutes": 8,
+  "cheats": [
+    "had already been",
+    "Until then, we had",
+    "by the time"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s007-tm-1",
+          "station": "time-machine",
+          "cheat": "শেষ হওয়া ঘটনা → past simple",
+          "source_date": "2026-07-27",
+          "raw": "Yeah, it actually **happens**. So some of the self-first certifications **are** already duplicated so you know technologies **are** improving and yeah and it's it happens.",
+          "tokens": [
+            "The",
+            "system",
+            "creates",
+            "two",
+            "certificates",
+            "and",
+            "nobody",
+            "notices",
+            "the",
+            "duplicate",
+            "for",
+            "weeks."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "created",
+                "creates",
+                "was creating"
+              ],
+              "answer": "created"
+            },
+            {
+              "index": 7,
+              "options": [
+                "noticed",
+                "notices",
+                "was noticing"
+              ],
+              "answer": "noticed"
+            }
+          ],
+          "sharp": "The system created two certificates and nobody noticed the duplicate for weeks.",
+          "sharp_bn": "সিস্টেমটা দুটো সার্টিফিকেট বানিয়ে ফেলেছিল, আর ডুপ্লিকেটটা কয়েক সপ্তাহ কারো চোখেই পড়েনি।",
+          "coach_bn": "তোমার লাইনে **it's it happens** — তিনবার ঘুরে ফিরে। অতীতে একটাই ক্রিয়া লাগে।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s007-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + then",
+          "source_date": "2026-07-29",
+          "raw": "Yeah, always gi there **is** a command pending for it, okay. So I always **run** and then you'll run. It will be allowed list or something like that",
+          "tokens": [
+            "I",
+            "run",
+            "the",
+            "command",
+            "first",
+            "and",
+            "then",
+            "the",
+            "allow",
+            "list",
+            "picks",
+            "it",
+            "up."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "ran",
+                "runs",
+                "was running"
+              ],
+              "answer": "ran"
+            },
+            {
+              "index": 10,
+              "options": [
+                "picked",
+                "picks",
+                "was picking"
+              ],
+              "answer": "picked"
+            }
+          ],
+          "sharp": "I ran the command first and then the allow list picked it up.",
+          "sharp_bn": "আগে কমান্ডটা চালালাম, তারপর allow list সেটা ধরে নিল।",
+          "coach_bn": "**ran** — irregular, তাই মুখে আটকায়। এই কার্ডে সেটাই টার্গেট।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s007-ld-1",
+          "station": "ladder",
+          "cheat": "had been + before + which + even though",
+          "rungs": [
+            "The duplicate had been there for weeks.",
+            "The duplicate had been there for weeks before anyone opened a ticket.",
+            "The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced.",
+            "The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced, even though the query itself was correct."
+          ],
+          "sharp": "The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced, even though the query itself was correct.",
+          "sharp_bn": "কেউ টিকিট খোলার অনেক আগে থেকেই ডুপ্লিকেটটা ছিল — সেজন্যই রিপোর্ট কখনো মিলত না, যদিও query-টা নিজে ঠিকই ছিল।",
+          "coach_bn": "**had been there for weeks** — সমস্যা কতদিনের সেটা এক ক্লজে। ম্যানেজার এই তথ্যটাই আগে চায়।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s007-ld-2",
+          "station": "ladder",
+          "cheat": "had already + by the time + so + which",
+          "rungs": [
+            "I had already run the command.",
+            "I had already run the command by the time you asked me to.",
+            "I had already run the command by the time you asked me to, so the allow list was up to date.",
+            "I had already run the command by the time you asked me to, so the allow list was up to date, which saved us another round of approvals."
+          ],
+          "sharp": "I had already run the command by the time you asked me to, so the allow list was up to date, which saved us another round of approvals.",
+          "sharp_bn": "তুমি বলার আগেই কমান্ডটা চালিয়ে ফেলেছিলাম, তাই allow list হালনাগাদই ছিল — এতে আরেক দফা অ্যাপ্রুভাল বেঁচে গেল।",
+          "coach_bn": "**had already run … by the time you asked** — নিজের কাজ জাহির না করেই বলা হয়ে যায়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s007-bw-1",
+          "station": "backward",
+          "cheat": "By the time + had already been V3",
+          "chunks": [
+            "By the time the audit started,",
+            "the duplicate certificates had already",
+            "been counted twice",
+            "in every monthly report."
+          ],
+          "sharp": "By the time the audit started, the duplicate certificates had already been counted twice in every monthly report.",
+          "sharp_bn": "অডিট শুরু হওয়ার আগেই ডুপ্লিকেট সার্টিফিকেটগুলো প্রতিটা মাসিক রিপোর্টে দুইবার করে গোনা হয়ে গিয়েছিল।",
+          "coach_bn": "লেজ থেকে: **in every monthly report** → **been counted twice in…** → পুরোটা। লম্বা বাক্যের ভয় এভাবেই ভাঙে।",
+          "reps": 3,
+          "target_sec": 11
+        },
+        {
+          "id": "s007-bw-2",
+          "station": "backward",
+          "cheat": "had bought + had changed · দৈনন্দিন",
+          "chunks": [
+            "I had bought the tickets in the morning,",
+            "but by the evening",
+            "the plan had changed",
+            "and nobody told me."
+          ],
+          "sharp": "I had bought the tickets in the morning, but by the evening the plan had changed and nobody told me.",
+          "sharp_bn": "সকালেই টিকিটগুলো কেটে ফেলেছিলাম, কিন্তু সন্ধ্যার মধ্যে প্ল্যানটা বদলে গিয়েছিল — আর কেউ আমাকে বলেনি।",
+          "coach_bn": "দুটো **had** পাশাপাশি: তোমার কেনা আগে, প্ল্যান বদল পরে। ক্রমটা শব্দই বলে দেয়।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s007-fr-1",
+          "station": "frame",
+          "cheat": "___ had already ___ when I ___.",
+          "frame": "___ had already ___ when I ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "The build had already failed twice when I opened the logs.",
+              "sharp_bn": "লগ খোলার আগেই বিল্ডটা দুইবার ফেল করে ফেলেছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "The client had already replied when I finished writing the summary.",
+              "sharp_bn": "সামারিটা লেখা শেষ করার আগেই ক্লায়েন্ট উত্তর দিয়ে ফেলেছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The rain had already stopped when I found my umbrella.",
+              "sharp_bn": "ছাতাটা খুঁজে পাওয়ার আগেই বৃষ্টি থেমে গিয়েছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Everyone had already left when I reached the restaurant.",
+              "sharp_bn": "রেস্টুরেন্টে পৌঁছানোর আগেই সবাই চলে গিয়েছিল।"
+            }
+          ],
+          "sharp": "The build had already failed twice when I opened the logs.",
+          "reps": 4,
+          "coach_bn": "**had already + when** — দুটো অতীতের মধ্যে কোনটা আগে, সেটা এক ছাঁচে ফয়সালা।",
+          "target_sec": 8
+        },
+        {
+          "id": "s007-fr-2",
+          "station": "frame",
+          "cheat": "Until then, we had never ___.",
+          "frame": "Until then, we had never ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Until then, we had never seen a duplicate certificate.",
+              "sharp_bn": "তার আগ পর্যন্ত আমরা কখনো ডুপ্লিকেট সার্টিফিকেট দেখিনি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Until then, we had never needed an allow list at all.",
+              "sharp_bn": "তার আগ পর্যন্ত আমাদের allow list-এর দরকারই পড়েনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Until then, I had never travelled anywhere alone.",
+              "sharp_bn": "তার আগ পর্যন্ত আমি কোথাও একা যাইনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Until then, we had never missed a single Friday.",
+              "sharp_bn": "তার আগ পর্যন্ত আমরা একটা শুক্রবারও বাদ দিইনি।"
+            }
+          ],
+          "sharp": "Until then, we had never seen a duplicate certificate.",
+          "reps": 4,
+          "coach_bn": "**Until then, we had never…** — ঘটনাটা যে ব্যতিক্রম, সেটা এক লাইনে প্রতিষ্ঠা করে দেয়।",
+          "target_sec": 6
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s007-if-1",
+          "station": "if-machine",
+          "cheat": "If + had been V3 → would have V3",
+          "tiles": [
+            "If the duplicate",
+            "had been caught in week one,",
+            "the report would have balanced",
+            "every month."
+          ],
+          "sharp": "If the duplicate had been caught in week one, the report would have balanced every month.",
+          "sharp_bn": "ডুপ্লিকেটটা প্রথম সপ্তাহেই ধরা পড়লে রিপোর্ট প্রতি মাসেই মিলত।",
+          "coach_bn": "প্যাসিভ **had been caught** — কে ধরত সেটা না বলেই কথাটা শেষ। মিটিংয়ে নিরাপদ।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s007-if-2",
+          "station": "if-machine",
+          "cheat": "If + had not V3 → would have V3",
+          "tiles": [
+            "If I",
+            "had not run the command early,",
+            "we would have waited another day",
+            "for approval."
+          ],
+          "sharp": "If I had not run the command early, we would have waited another day for approval.",
+          "sharp_bn": "কমান্ডটা আগে না চালালে অ্যাপ্রুভালের জন্য আরও একদিন বসে থাকতে হতো।",
+          "coach_bn": "নেগেটিভ শর্ত, পজিটিভ ফল — নিজের কাজের দাম বোঝানোর ভদ্র উপায়।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s007-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If somebody",
+            "had told me about the change,",
+            "I would not have bought",
+            "the tickets."
+          ],
+          "sharp": "If somebody had told me about the change, I would not have bought the tickets.",
+          "sharp_bn": "বদলটার কথা কেউ বললে টিকিটগুলো কাটতাম না।",
+          "coach_bn": "**somebody** — কারো নাম না নিয়েই অভিযোগটা পৌঁছে যায়।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s007-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — ক্রম",
+          "prompt_bn": "ডুপ্লিকেট সার্টিফিকেটের ঘটনাটা ক্রম ধরে বলো: কতদিন ধরে চলছিল, অডিটের সময় কতদূর গড়িয়েছিল, তুমি কী আগেই করে রেখেছিলে, আর আগে ধরা পড়লে কী হতো।",
+          "checklist": [
+            "had been there for weeks",
+            "by the time ___ had already",
+            "Until then, we had never",
+            "which is why",
+            "would have balanced"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Until then, we had never seen a duplicate certificate. The duplicate had been there for weeks before anyone opened a ticket, which is why the report never balanced. By the time the audit started, the certificates had already been counted twice in every monthly report. I had already run the command by the time you asked me to, so the allow list was up to date. If the duplicate had been caught in week one, the report would have balanced every month.",
+          "coach_bn": "পাঁচটা বাক্য, পাঁচটা আলাদা সময়স্তর। ক্রম ঠিক থাকলে শ্রোতাকে কিছু জিজ্ঞেস করতে হয় না।"
+        }
+      ]
+    }
+  ]
+}

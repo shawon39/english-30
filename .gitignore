@@ -6,3 +6,11 @@
 
 # Exported progress backups (these live in the browser, not the repo)
 progress.json
+replay-progress.json
+
+# Personal transcript exports and everything mined straight out of them.
+# These carry client names, colleague names and internal org detail, and this
+# repository is public — so they stay on your machine. Point tools/mine.py at
+# your own export instead; see tools/README.md.
+tools/*.csv
+tools/briefs.json

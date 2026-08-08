@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "3.1",
+  "set": 10,
+  "world": "meeting",
+  "world_bn": "মিটিং বস",
+  "title_bn": "বুঝিয়ে বলা ও রাজি করানো",
+  "desc_bn": "সাপোর্টকে scoped তথ্য দেওয়া, রেপদের ব্যবহার বোঝা, আর ভুল বোঝাবুঝি ঠেকানো।",
+  "minutes": 8,
+  "cheats": [
+    "Just to make sure I understood",
+    "Would you mind ___ing",
+    "would not have gone wrong"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s010-tm-1",
+          "station": "time-machine",
+          "cheat": "past simple ×২",
+          "source_date": "2026-08-06",
+          "raw": "Because their customer service asks for Including scoped, carefully selected Salesforce permission info for him. So that's why I **want** to know about it.",
+          "tokens": [
+            "Support",
+            "asks",
+            "for",
+            "the",
+            "permission",
+            "details",
+            "and",
+            "I",
+            "send",
+            "them",
+            "the",
+            "whole",
+            "profile."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "asked",
+                "asks",
+                "was asking"
+              ],
+              "answer": "asked"
+            },
+            {
+              "index": 8,
+              "options": [
+                "sent",
+                "sends",
+                "was sending"
+              ],
+              "answer": "sent"
+            }
+          ],
+          "sharp": "Support asked for the permission details and I sent them the whole profile.",
+          "sharp_bn": "সাপোর্ট permission-এর নির্দিষ্ট তথ্য চেয়েছিল, আর আমি পুরো profile-টাই পাঠিয়ে দিয়েছিলাম।",
+          "coach_bn": "**sent** — send-এর past। ভুলটা স্বীকার করার সবচেয়ে সোজা বাক্য, কোনো অজুহাত ছাড়া।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s010-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + during",
+          "source_date": "2026-08-06",
+          "raw": "**Give me** an example how sales rep **use** it, when they will use it. Do you use in a live call",
+          "tokens": [
+            "The",
+            "rep",
+            "opens",
+            "the",
+            "panel",
+            "during",
+            "the",
+            "call",
+            "and",
+            "checks",
+            "the",
+            "summary."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "opened",
+                "opens",
+                "was opening"
+              ],
+              "answer": "opened"
+            },
+            {
+              "index": 9,
+              "options": [
+                "checked",
+                "checks",
+                "was checking"
+              ],
+              "answer": "checked"
+            }
+          ],
+          "sharp": "The rep opened the panel during the call and checked the summary.",
+          "sharp_bn": "রেপ কলের মাঝেই প্যানেলটা খুলল আর সামারিটা দেখে নিল।",
+          "coach_bn": "উদাহরণ দেওয়ার সময় অতীত ব্যবহার করলে সেটা কল্পনা নয়, ঘটনা শোনায়।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s010-ld-1",
+          "station": "ladder",
+          "cheat": "before + so that + which",
+          "rungs": [
+            "I need one thing from you.",
+            "I need one thing from you before the call tomorrow.",
+            "I need one thing from you before the call tomorrow, so that I do not have to guess in front of the customer.",
+            "I need one thing from you before the call tomorrow, so that I do not have to guess in front of the customer, which is exactly what happened last week."
+          ],
+          "sharp": "I need one thing from you before the call tomorrow, so that I do not have to guess in front of the customer, which is exactly what happened last week.",
+          "sharp_bn": "কালকের কলের আগে তোমার কাছ থেকে একটা জিনিস দরকার, যাতে কাস্টমারের সামনে আমাকে আন্দাজ করতে না হয় — গত সপ্তাহে ঠিক ওটাই হয়েছিল।",
+          "coach_bn": "চাওয়ার সাথে কারণ আর নজির। **which is exactly what happened last week** — না বলার জায়গা থাকে না।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s010-ld-2",
+          "station": "ladder",
+          "cheat": "Let me make sure + because + which",
+          "rungs": [
+            "Let me make sure I understood.",
+            "Let me make sure I understood what you are asking for.",
+            "Let me make sure I understood what you are asking for, because we used two different words for the same field.",
+            "Let me make sure I understood what you are asking for, because we used two different words for the same field, which is how the last ticket went wrong."
+          ],
+          "sharp": "Let me make sure I understood what you are asking for, because we used two different words for the same field, which is how the last ticket went wrong.",
+          "sharp_bn": "তুমি ঠিক কী চাইছ সেটা আমি ঠিক বুঝেছি কি না নিশ্চিত হয়ে নিই, কারণ একই ফিল্ডের জন্য আমরা দুইরকম শব্দ ব্যবহার করেছি — গত টিকিটটা এভাবেই ভুল হয়েছিল।",
+          "coach_bn": "**Let me make sure I understood** — মিটিংয়ে ভুল বোঝাবুঝি থামানোর একক সবচেয়ে কার্যকর বাক্য।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s010-bw-1",
+          "station": "backward",
+          "cheat": "Would you mind + so that",
+          "chunks": [
+            "Would you mind confirming the scope in writing,",
+            "so that support and I",
+            "send the customer",
+            "exactly the same answer?"
+          ],
+          "sharp": "Would you mind confirming the scope in writing, so that support and I send the customer exactly the same answer?",
+          "sharp_bn": "scope-টা একটু লিখিতভাবে নিশ্চিত করবে? যাতে সাপোর্ট আর আমি কাস্টমারকে হুবহু একই উত্তর দিই।",
+          "coach_bn": "**Would you mind + …ing** — সবচেয়ে ভদ্র অনুরোধ। লেজ আগে গাঁথলে প্রশ্নটা মাঝপথে ভাঙে না।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s010-bw-2",
+          "station": "backward",
+          "cheat": "Could you + so that · দৈনন্দিন",
+          "chunks": [
+            "Could you send the location on WhatsApp,",
+            "so that I do not",
+            "have to stop and ask",
+            "at every turn?"
+          ],
+          "sharp": "Could you send the location on WhatsApp, so that I do not have to stop and ask at every turn?",
+          "sharp_bn": "লোকেশনটা একটু WhatsApp-এ পাঠাবে? যাতে প্রতি মোড়ে থেমে জিজ্ঞেস করতে না হয়।",
+          "coach_bn": "অফিস আর রাস্তা — ভদ্র অনুরোধের ছাঁচ একটাই।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s010-fr-1",
+          "station": "frame",
+          "cheat": "Just to make sure I understood, ___.",
+          "frame": "Just to make sure I understood, ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Just to make sure I understood, you want the audit scoped to one profile.",
+              "sharp_bn": "ঠিক বুঝেছি কি না দেখি — তুমি চাও অডিটটা একটা profile-এ সীমাবদ্ধ থাক।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Just to make sure I understood, the field should stay until the migration ends.",
+              "sharp_bn": "ঠিক বুঝেছি কি না দেখি — migration শেষ না হওয়া পর্যন্ত ফিল্ডটা থাকবে।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Just to make sure I understood, we are meeting at eight, not nine.",
+              "sharp_bn": "ঠিক বুঝেছি কি না দেখি — আমরা আটটায় দেখা করছি, নয়টায় নয়।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Just to make sure I understood, you want me to bring the documents too.",
+              "sharp_bn": "ঠিক বুঝেছি কি না দেখি — তুমি চাও আমি কাগজগুলোও নিয়ে যাই।"
+            }
+          ],
+          "sharp": "Just to make sure I understood, you want the audit scoped to one profile.",
+          "reps": 4,
+          "coach_bn": "প্রতিবার বলার আগে এই লাইনটা বসালে ভুল বোঝাবুঝি মিটিংয়েই ধরা পড়ে, টিকিটে নয়।",
+          "target_sec": 9
+        },
+        {
+          "id": "s010-fr-2",
+          "station": "frame",
+          "cheat": "Would you mind ___ing ___?",
+          "frame": "Would you mind ___ing ___?",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Would you mind confirming that in writing before I reply to support?",
+              "sharp_bn": "সাপোর্টকে উত্তর দেওয়ার আগে ওটা একটু লিখিতভাবে নিশ্চিত করবে?"
+            },
+            {
+              "scene": "office",
+              "sharp": "Would you mind sharing the exact object name so I stop guessing?",
+              "sharp_bn": "অবজেক্টের ঠিক নামটা একটু দেবে, যাতে আমাকে আন্দাজ করতে না হয়?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Would you mind sending me the address once more?",
+              "sharp_bn": "ঠিকানাটা আরেকবার পাঠাবে?"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Would you mind waiting five minutes while I finish this?",
+              "sharp_bn": "এটা শেষ করতে পাঁচ মিনিট একটু অপেক্ষা করবে?"
+            }
+          ],
+          "sharp": "Would you mind confirming that in writing before I reply to support?",
+          "reps": 4,
+          "coach_bn": "**mind**-এর পরে সবসময় **…ing**। \"Would you mind to send\" — এটাই সবচেয়ে কমন ফাঁদ।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s010-if-1",
+          "station": "if-machine",
+          "cheat": "If + could → would",
+          "tiles": [
+            "If you",
+            "could confirm the scope today,",
+            "I would send support one clean answer",
+            "tomorrow."
+          ],
+          "sharp": "If you could confirm the scope today, I would send support one clean answer tomorrow.",
+          "sharp_bn": "scope-টা আজ নিশ্চিত করতে পারলে কালই সাপোর্টকে একটা পরিষ্কার উত্তর পাঠিয়ে দিতাম।",
+          "coach_bn": "চাপ না দিয়ে ডেডলাইন বসানো। **If you could … I would …** — দুই দিকেই ভদ্রতা।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s010-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3",
+          "tiles": [
+            "If we",
+            "had used the same word for that field,",
+            "the last ticket would not have gone",
+            "wrong."
+          ],
+          "sharp": "If we had used the same word for that field, the last ticket would not have gone wrong.",
+          "sharp_bn": "ওই ফিল্ডটার জন্য আমরা একই শব্দ ব্যবহার করলে গত টিকিটটা ভুল হতো না।",
+          "coach_bn": "**we** দিয়ে শুরু — দোষটা ভাগ করে নিলে কেউ আত্মরক্ষায় নামে না।",
+          "reps": 3,
+          "target_sec": 11
+        },
+        {
+          "id": "s010-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If you",
+            "had sent the location,",
+            "I would have reached",
+            "on time."
+          ],
+          "sharp": "If you had sent the location, I would have reached on time.",
+          "sharp_bn": "লোকেশনটা পাঠালে আমি সময়মতোই পৌঁছাতাম।",
+          "coach_bn": "ছোট বাক্য, কিন্তু ছাঁচটা মিটিংয়েরটার সাথে হুবহু এক। এখানেই দ্রুত বসে যায়।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s010-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — মিটিং",
+          "prompt_bn": "সাপোর্টের রিকোয়েস্টটা নিয়ে কথা বলো: কী চাওয়া হয়েছিল, তুমি কী পাঠিয়েছিলে, এখন কী দরকার, আর গতবার কেন ভুল হয়েছিল।",
+          "checklist": [
+            "past simple দিয়ে যা হয়েছিল",
+            "Just to make sure I understood",
+            "Would you mind ___ing",
+            "so that / because",
+            "would not have gone wrong"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Support asked for the permission details and I sent them the whole profile, which was more than they needed. Just to make sure I understood, you want the audit scoped to one profile. Would you mind confirming that in writing, so that support and I send the customer exactly the same answer? We used two different words for the same field last time, and if we had used the same word, the last ticket would not have gone wrong.",
+          "coach_bn": "স্বীকার → নিশ্চিত → অনুরোধ → কারণ। ভুল বোঝাবুঝির মিটিং এই চার ধাপেই শেষ হয়।"
+        }
+      ]
+    }
+  ]
+}
