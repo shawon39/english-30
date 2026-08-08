@@ -17,9 +17,35 @@ from pathlib import Path
 STATIONS = {"time-machine", "ladder", "backward", "frame", "if-machine", "boss"}
 COMMON = ("id", "station", "cheat", "coach_bn")
 
+# No contractions in anything the learner has to say. A contraction hides the very
+# auxiliary these drills exist to teach — "we'd retrieved" could be "we would" or
+# "we had", and past perfect is the whole point. Possessives are not contractions,
+# so only pronoun forms and n't are matched. Quoted speech (`raw`, and the coach
+# lines that quote it) is exempt: those are his own words and must stay verbatim.
+CONTRACTION = re.compile(
+    r"\b(?:[A-Za-z]+n't"
+    r"|(?:I|you|we|they|he|she|it|that|there|who|what|let|here)'(?:s|re|ll|ve|d|m))\b",
+    re.I,
+)
+SPOKEN_FIELDS = ("sharp", "model_en", "cheat")
+SPOKEN_LISTS = ("rungs", "chunks", "tiles", "tokens", "checklist")
+
+
+def check_contractions(it: dict, where: str, errs: list[str]) -> None:
+    spoken = [it.get(f) or "" for f in SPOKEN_FIELDS]
+    for key in SPOKEN_LISTS:
+        spoken += it.get(key) or []
+    spoken += [f.get("sharp", "") for f in it.get("fills") or []]
+    spoken += [o for s in it.get("slots") or [] for o in s.get("options", [])]
+    for text in spoken:
+        for m in CONTRACTION.finditer(text):
+            errs.append(f"{where}: contraction {m.group()!r} — spell it out "
+                        f"({text[:56]!r})")
+
 
 def check_item(it: dict, where: str, errs: list[str]) -> None:
     add = lambda m: errs.append(f"{where}: {m}")
+    check_contractions(it, where, errs)
     for f in COMMON:
         if not it.get(f):
             add(f"missing {f}")
