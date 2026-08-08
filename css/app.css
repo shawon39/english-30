@@ -416,6 +416,23 @@ button { font: inherit; color: inherit; background: none; border: none; margin: 
   animation: slideup var(--dur-state) var(--ease) both;
 }
 @keyframes slideup { from { transform: translate(-50%, 100%); } to { transform: translate(-50%, 0); } }
+
+/* A sheet rising from the bottom edge is right on a phone, where the thumb is.
+   On a laptop there is no bottom edge to rise from, so it centres instead. */
+@media (min-width: 680px) {
+  .sheet {
+    top: 50%; bottom: auto;
+    transform: translate(-50%, -50%);
+    border-radius: var(--r-modal);
+    padding-bottom: var(--s-5);
+    max-height: min(84vh, 760px);
+    animation: popin var(--dur-state) var(--ease) both;
+  }
+  @keyframes popin {
+    from { opacity: 0; transform: translate(-50%, calc(-50% + 14px)) scale(0.97); }
+    to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  }
+}
 .sheet h3 { font-family: var(--font-display); font-size: 21px; margin: 0 0 var(--s-4); }
 .field { display: flex; align-items: center; gap: var(--s-3); padding: var(--s-3) 0; border-bottom: 1px solid var(--line); }
 .field:last-of-type { border-bottom: none; }
