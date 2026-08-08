@@ -523,3 +523,18 @@ html[data-motion="off"] *, html[data-motion="off"] *::before, html[data-motion="
 .playbtn .tri .ico { color: inherit; }
 .ltag { display: flex; align-items: center; gap: 6px; }
 .ltag .ico { color: var(--correct-text); }
+
+/* Review and mixed drill: two compact entry points, not two more full cards. */
+.actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 9px; }
+.actiontile {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  padding: 14px var(--s-4); border: 1px solid var(--line); border-radius: var(--r-cell);
+  background: var(--surface);
+  transition: background var(--dur-micro) var(--ease), border-color var(--dur-micro) var(--ease);
+}
+.actiontile:hover { background: var(--surface-hover); border-color: var(--line-strong); }
+.actiontile .ic { color: var(--accent-text); }
+.actiontile .t { font-family: var(--font-bn); font-size: 15px; font-weight: 600; display: block; }
+.actiontile .s { font-family: var(--font-bn); font-size: 12.5px; color: var(--muted); display: block; margin-top: 2px; }
+.actiontile .chev { margin-left: auto; color: var(--muted); transition: transform var(--dur-micro) var(--ease); }
+.actiontile:hover .chev { transform: translateX(3px); }
