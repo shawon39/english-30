@@ -19,10 +19,19 @@ export async function fetchSet(id) {
   return json;
 }
 
+/** The manifest carries everything the home screen shows, in one request. */
+export async function fetchIndex() {
+  const res = await fetch("content/index.json", { cache: "no-cache" });
+  if (!res.ok) throw new Error("no manifest");
+  const json = await res.json();
+  if (!Array.isArray(json.sets) || !json.sets.length) throw new Error("empty manifest");
+  return json.sets;
+}
+
 /**
- * Which sets exist, without a manifest to keep in sync. Sets are numbered without
- * gaps, so walking until the first miss keeps this to one wasted request instead of
- * spraying 404s for every slot that has not been generated yet.
+ * Fallback for a content directory built by hand, with no manifest. Sets are
+ * numbered without gaps, so walking until the first miss costs one wasted request
+ * rather than spraying 404s for every slot that does not exist yet.
  */
 export async function probeSets(max = 200) {
   const found = [];

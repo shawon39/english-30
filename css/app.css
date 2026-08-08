@@ -48,26 +48,53 @@ button { font: inherit; color: inherit; background: none; border: none; margin: 
 .iconbtn:hover { background: var(--surface-hover); border-color: var(--line-strong); }
 
 /* ============================ home ============================ */
-.hero { display: grid; grid-template-columns: auto 1fr; gap: var(--s-5); align-items: center; padding: var(--s-4) 0 var(--s-6); }
 
-.ring { position: relative; width: 104px; height: 104px; flex: none; }
-.ring svg { transform: rotate(-90deg); display: block; }
-.ring .track { stroke: var(--rail); }
-.ring .fill { stroke: var(--accent); stroke-linecap: round; transition: stroke-dashoffset var(--dur-reward) var(--ease); }
-.ring .label { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; }
-.ring .label .n { font-family: var(--font-mono); font-weight: 700; font-size: 30px; line-height: 1; letter-spacing: -0.02em; }
-.ring .label .k { font-family: var(--font-bn); font-size: 11px; color: var(--muted); margin-top: 3px; }
+/* A strip, not a hero. Two large zeros used to fill half a phone screen before
+   the first thing worth tapping came into view. */
+.stats3 {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+  margin: var(--s-3) 0 var(--s-5);
+}
+.stat3 {
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: var(--r-cell); padding: 12px 10px; text-align: center;
+}
+.stat3 .n {
+  font-weight: 700; font-size: 24px; line-height: 1.1;
+  letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: var(--muted);
+}
+.stat3.hot .n { color: var(--accent-text); }
+.stat3 .k { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.3; }
 
-.repcount .n {
-  font-family: var(--font-mono); font-weight: 700;
-  font-size: clamp(40px, 12vw, 56px); line-height: 1; letter-spacing: -0.03em;
-  font-variant-numeric: tabular-nums;
+/* The set map. Twenty full cards is a scroll; twenty tiles is a screen. */
+.setgrid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 8px; margin-bottom: var(--s-2);
 }
-.repcount .k {
-  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--muted); display: block; margin-top: 8px;
+.settile {
+  aspect-ratio: 1; display: grid; place-content: center; gap: 5px;
+  border: 1px solid var(--line); border-radius: var(--r-cell);
+  background: var(--surface); color: var(--muted);
+  transition: transform var(--dur-micro) var(--ease-spring),
+              background var(--dur-micro) var(--ease), border-color var(--dur-micro) var(--ease);
 }
-.repcount .sub { font-family: var(--font-bn); font-size: 14px; color: var(--muted); margin-top: 6px; }
+.settile:hover { background: var(--surface-hover); border-color: var(--line-strong); }
+.settile:active { transform: scale(0.95); }
+.settile .n { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; }
+.settile .ico { margin: 0 auto; }
+.settile.done {
+  background: var(--accent-soft); border-color: var(--note-border); color: var(--accent-text);
+}
+.settile.now {
+  border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; color: var(--cream);
+}
+.settile.now .ico { color: var(--accent-text); }
+
+.sectionlabel .count {
+  margin-left: auto; font-size: 12px; color: var(--muted);
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: var(--r-pill); padding: 2px 9px;
+}
 
 /* set card */
 .setcard {
@@ -93,6 +120,16 @@ button { font: inherit; color: inherit; background: none; border: none; margin: 
 .setcard h2 { font-family: var(--font-display); font-weight: 600; font-size: 26px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.015em; }
 .setcard .desc { font-family: var(--font-bn); color: var(--muted); font-size: 15px; margin: 0 0 var(--s-4); }
 .setcard .meta { display: flex; flex-wrap: wrap; gap: 7px; }
+.setcard .top .ic { color: var(--accent-text); }
+.setcard .go {
+  display: flex; align-items: center; gap: 7px;
+  padding: 12px var(--s-5); border-top: 1px solid var(--line);
+  background: var(--accent-soft); color: var(--accent-text);
+  font-family: var(--font-bn); font-size: 15px; font-weight: 600;
+}
+.setcard .go .ico { margin-left: auto; }
+.setcard.hero:hover .go .ico { transform: translateX(3px); }
+.setcard .go .ico { transition: transform var(--dur-micro) var(--ease); }
 
 .tag {
   font-family: var(--font-mono); font-size: 11px; padding: 4px 10px;
@@ -411,8 +448,9 @@ footer.foot { margin-top: var(--s-7); padding-top: var(--s-5); border-top: 1px s
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .container { padding: 0 var(--s-4) var(--s-7); }
-  .hero { grid-template-columns: 1fr; gap: var(--s-4); }
-  .ring { width: 88px; height: 88px; }
+  .stat3 { padding: 11px 8px; }
+  .stat3 .n { font-size: 21px; }
+  .stat3 .k { font-size: 11px; }
   .sharp { font-size: 19px; }
   .rung.top p { font-size: 18px; }
   .finish .big { font-size: 52px; }
@@ -441,7 +479,6 @@ html[data-motion="off"] *, html[data-motion="off"] *::before, html[data-motion="
 .scene,
 .round,
 .fillcount,
-.ring .label .k,
 .finish .cell .k {
   font-family: var(--font-bn);
   letter-spacing: 0;
@@ -457,12 +494,12 @@ html[data-motion="off"] *, html[data-motion="off"] *::before, html[data-motion="
 .fillcount { font-size: 12.5px; }
 
 /* Latin-only labels keep the tracked mono treatment. */
-.repcount .k, .card .head .stamp, .rate, .check, .frame, .tag, .rung .rn { font-family: var(--font-mono); }
+.card .head .stamp, .rate, .check, .frame, .tag, .rung .rn { font-family: var(--font-mono); }
 .tag { letter-spacing: 0; }
 
 /* Home breathes without a dead band between the hero and the first set. */
-.hero { padding-bottom: var(--s-4); }
 .sectionlabel { margin-top: var(--s-5); }
+.stats3 + .sectionlabel { margin-top: 0; }
 
 /* ---------------------------------------------------------------
    Icons. Inline SVG on one 24-unit grid, inheriting currentColor,

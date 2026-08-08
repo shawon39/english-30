@@ -136,6 +136,33 @@ def build_set(spec: dict) -> dict:
     }
 
 
+def write_index(out: Path) -> int:
+    """A manifest of everything the home screen needs.
+
+    Without it the app discovers sets by probing set-000, set-001 ... until one
+    is missing, then downloads every set file just to render a title. That is
+    forty-one requests before the first tap on a phone. This makes it one.
+    """
+    sets = []
+    for path in sorted(out.glob("set-*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        sets.append({
+            "set": doc["set"],
+            "world": doc.get("world", ""),
+            "world_bn": doc.get("world_bn", ""),
+            "title_bn": doc.get("title_bn", ""),
+            "desc_bn": doc.get("desc_bn", ""),
+            "minutes": doc.get("minutes", 7),
+            "cheats": doc.get("cheats", []),
+            "cards": sum(len(g.get("items", [])) for g in doc.get("stations", [])),
+        })
+    sets.sort(key=lambda s: s["set"])
+    (out / "index.json").write_text(
+        json.dumps({"schemaVersion": "3.1", "sets": sets}, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8")
+    return len(sets)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("authored", type=Path)
@@ -155,7 +182,8 @@ def main() -> int:
         path.write_text(json.dumps(built, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         cards = sum(len(g["items"]) for g in built["stations"])
         print(f"  set-{spec['n']:03d}  {built['world']:15s} {cards:2d} cards  ~{built['minutes']} min")
-    print(f"built {len(src['sets'])} sets -> {args.out}/")
+    total = write_index(args.out)
+    print(f"built {len(src['sets'])} sets -> {args.out}/  ·  index.json lists {total}")
     return 0
 
 
