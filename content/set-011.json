@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "3.1",
+  "set": 11,
+  "world": "meeting",
+  "world_bn": "মিটিং বস",
+  "title_bn": "কাস্টমারের সামনে",
+  "desc_bn": "লাইভ কলে অ্যাকাউন্ট দেখা, দেরির কারণ বলা আর আজ কী দিতে পারবে জানানো। ছাঁচ-ভারী, তাই দ্রুত।",
+  "minutes": 7,
+  "cheats": [
+    "What I can do today is",
+    "I will get back to you",
+    "It took longer because"
+  ],
+  "stations": [
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s011-fr-1",
+          "station": "frame",
+          "cheat": "Let me confirm that before I ___.",
+          "frame": "Let me confirm that before I ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Let me confirm that before I promise a date.",
+              "sharp_bn": "তারিখ দেওয়ার আগে জিনিসটা একটু নিশ্চিত হয়ে নিই।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Let me confirm that before I change anything in production.",
+              "sharp_bn": "production-এ কিছু বদলানোর আগে জিনিসটা নিশ্চিত হয়ে নিই।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Let me confirm that before I book the tickets.",
+              "sharp_bn": "টিকিট কাটার আগে জিনিসটা একটু নিশ্চিত হয়ে নিই।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Let me confirm that before I tell everyone at home.",
+              "sharp_bn": "বাসার সবাইকে বলার আগে জিনিসটা নিশ্চিত হয়ে নিই।"
+            }
+          ],
+          "sharp": "Let me confirm that before I promise a date.",
+          "reps": 4,
+          "coach_bn": "**Let me confirm** — কথা দেওয়ার আগে নিজেকে সময় দেওয়ার সবচেয়ে পেশাদার উপায়।",
+          "target_sec": 6
+        },
+        {
+          "id": "s011-fr-2",
+          "station": "frame",
+          "cheat": "I will get back to you ___.",
+          "frame": "I will get back to you ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "I will get back to you as soon as the audit finishes.",
+              "sharp_bn": "অডিট শেষ হওয়ামাত্রই তোমাকে জানাবো।"
+            },
+            {
+              "scene": "office",
+              "sharp": "I will get back to you with the exact field name today.",
+              "sharp_bn": "ঠিক ফিল্ডের নামটা নিয়ে আজই তোমাকে জানাবো।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I will get back to you once I have spoken to my brother.",
+              "sharp_bn": "ভাইয়ের সাথে কথা বলে তোমাকে জানাবো।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I will get back to you after I reach home.",
+              "sharp_bn": "বাসায় পৌঁছে তোমাকে জানাবো।"
+            }
+          ],
+          "sharp": "I will get back to you as soon as the audit finishes.",
+          "reps": 4,
+          "coach_bn": "প্রতিটা ভরাটে একটা শর্ত বা সময় আছে। খালি \"I will get back to you\" বললে ওটা এড়িয়ে যাওয়া শোনায়।",
+          "target_sec": 8
+        },
+        {
+          "id": "s011-fr-3",
+          "station": "frame",
+          "cheat": "What I can do today is ___.",
+          "frame": "What I can do today is ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "What I can do today is send you the exact fields.",
+              "sharp_bn": "আজ আমি যেটা পারি সেটা হলো ঠিক ফিল্ডগুলো পাঠানো।"
+            },
+            {
+              "scene": "office",
+              "sharp": "What I can do today is give your team read access.",
+              "sharp_bn": "আজ আমি যেটা পারি সেটা হলো তোমার টিমকে read access দেওয়া।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "What I can do today is pick up the documents.",
+              "sharp_bn": "আজ আমি যেটা পারি সেটা হলো কাগজগুলো নিয়ে আসা।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "What I can do today is drop the parcel on my way.",
+              "sharp_bn": "আজ আমি যেটা পারি সেটা হলো যাওয়ার পথে পার্সেলটা দিয়ে দেওয়া।"
+            }
+          ],
+          "sharp": "What I can do today is send you the exact fields.",
+          "reps": 4,
+          "coach_bn": "সীমা টানার ভদ্র ছাঁচ। **today** শব্দটাই বুঝিয়ে দেয় বাকিটা পরে।",
+          "target_sec": 8
+        },
+        {
+          "id": "s011-fr-4",
+          "station": "frame",
+          "cheat": "It took longer because ___.",
+          "frame": "It took longer because ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "It took longer because the sandbox was still refreshing.",
+              "sharp_bn": "বেশি সময় লেগেছে কারণ sandbox তখনো refresh হচ্ছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "It took longer because nobody owned the review step.",
+              "sharp_bn": "বেশি সময় লেগেছে কারণ রিভিউ ধাপটার দায়িত্ব কারো ছিল না।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It took longer because the road was completely blocked.",
+              "sharp_bn": "বেশি সময় লেগেছে কারণ রাস্তাটা পুরো বন্ধ ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It took longer because the shop had already closed.",
+              "sharp_bn": "বেশি সময় লেগেছে কারণ দোকানটা আগেই বন্ধ হয়ে গিয়েছিল।"
+            }
+          ],
+          "sharp": "It took longer because the sandbox was still refreshing.",
+          "reps": 4,
+          "coach_bn": "দেরির কারণ অতীতে বলো, ক্ষমা চেয়ো না। **It took longer because** — তথ্য, অজুহাত নয়।",
+          "target_sec": 6
+        }
+      ]
+    },
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s011-tm-1",
+          "station": "time-machine",
+          "cheat": "কলে যা দেখেছো → past simple",
+          "source_date": "2026-08-06",
+          "raw": "Everything was first. Everything **is** good. There **is** no issue. This— everything **is** working fine. I don't know what she was trying to say.",
+          "tokens": [
+            "I",
+            "check",
+            "the",
+            "account",
+            "on",
+            "the",
+            "call",
+            "and",
+            "everything",
+            "works",
+            "fine."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "checked",
+                "checks",
+                "was checking"
+              ],
+              "answer": "checked"
+            },
+            {
+              "index": 9,
+              "options": [
+                "worked",
+                "works",
+                "was working"
+              ],
+              "answer": "worked"
+            }
+          ],
+          "sharp": "I checked the account on the call and everything worked fine.",
+          "sharp_bn": "কলের মধ্যেই অ্যাকাউন্টটা দেখলাম, আর সবকিছু ঠিকঠাক কাজ করছিল।",
+          "coach_bn": "কাস্টমারকে **checked** বললে বোঝায় কাজটা শেষ; **checking** বললে মনে হয় এখনো চলছে। ওরা এই পার্থক্যটা ধরে ফেলে।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s011-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple ×৩",
+          "source_date": "2026-08-06",
+          "raw": "As he **doesn't have** the access, I checked for him. But I **haven't** seen any issues, and she doesn't have any RocketVideo related permission.",
+          "tokens": [
+            "He",
+            "has",
+            "no",
+            "access,",
+            "so",
+            "I",
+            "open",
+            "the",
+            "record",
+            "and",
+            "share",
+            "the",
+            "details",
+            "with",
+            "him."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "had",
+                "has",
+                "was having"
+              ],
+              "answer": "had"
+            },
+            {
+              "index": 6,
+              "options": [
+                "opened",
+                "opens",
+                "was opening"
+              ],
+              "answer": "opened"
+            },
+            {
+              "index": 10,
+              "options": [
+                "shared",
+                "shares",
+                "was sharing"
+              ],
+              "answer": "shared"
+            }
+          ],
+          "sharp": "He had no access, so I opened the record and shared the details with him.",
+          "sharp_bn": "তার অ্যাকসেস ছিল না, তাই আমি রেকর্ডটা খুলে বিস্তারিত তাকে জানালাম।",
+          "coach_bn": "তিনটা ক্রিয়াই অতীতে। একটাও বর্তমানে থেকে গেলে মনে হবে সমস্যাটা এখনো চলছে।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s011-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If I",
+            "had promised a date yesterday,",
+            "I would have missed it",
+            "by two days."
+          ],
+          "sharp": "If I had promised a date yesterday, I would have missed it by two days.",
+          "sharp_bn": "গতকাল একটা তারিখ দিয়ে দিলে সেটা দুই দিন পার করে ফেলতাম।",
+          "coach_bn": "কেন তুমি তারিখ দাওনি, সেটা এক লাইনে ব্যাখ্যা। সতর্কতা তখন দুর্বলতা মনে হয় না।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s011-if-2",
+          "station": "if-machine",
+          "cheat": "If + past → would (2nd conditional)",
+          "tiles": [
+            "If your team",
+            "gave us access this morning,",
+            "we would finish the audit",
+            "today."
+          ],
+          "sharp": "If your team gave us access this morning, we would finish the audit today.",
+          "sharp_bn": "তোমার টিম আজ সকালে অ্যাকসেস দিলে অডিটটা আজকেই শেষ করে ফেলতাম।",
+          "coach_bn": "চাপ না দিয়ে বল ঠেলে দেওয়া। শর্তটা ওদের হাতে, ফলটা ওদের লাভে।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s011-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had known the road was closed,",
+            "I would have left",
+            "much earlier."
+          ],
+          "sharp": "If I had known the road was closed, I would have left much earlier.",
+          "sharp_bn": "রাস্তা বন্ধ জানলে অনেক আগেই বেরোতাম।",
+          "coach_bn": "একই ছাঁচ, রাস্তায়। **had known** — জানাটা আগে, বেরোনোটা পরে।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s011-ld-1",
+          "station": "ladder",
+          "cheat": "before + once I have + so that",
+          "rungs": [
+            "I will get back to you.",
+            "I will get back to you before the end of the day.",
+            "I will get back to you before the end of the day, once I have checked the permission set.",
+            "I will get back to you before the end of the day, once I have checked the permission set, so that I do not promise anything I cannot deliver."
+          ],
+          "sharp": "I will get back to you before the end of the day, once I have checked the permission set, so that I do not promise anything I cannot deliver.",
+          "sharp_bn": "দিন শেষ হওয়ার আগেই তোমাকে জানাবো, permission set-টা দেখে নেওয়ার পর — যাতে এমন কিছু কথা না দিই যেটা রাখতে পারবো না।",
+          "coach_bn": "কাস্টমারকে **কখন** জানাবে সেটা বলা তার চেয়েও জরুরি যে **কী** জানাবে। সময়টা বলে দিলে ওরা আর তাড়া দেয় না।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s011-bw-1",
+          "station": "backward",
+          "cheat": "What I can do today + so that",
+          "chunks": [
+            "What I can do today",
+            "is send you the exact fields,",
+            "so that your team can start",
+            "without waiting for the full audit."
+          ],
+          "sharp": "What I can do today is send you the exact fields, so that your team can start without waiting for the full audit.",
+          "sharp_bn": "আজ আমি যেটা করতে পারি সেটা হলো ঠিক ফিল্ডগুলো তোমাকে পাঠানো, যাতে পুরো অডিটের জন্য অপেক্ষা না করেই তোমার টিম শুরু করতে পারে।",
+          "coach_bn": "\"আমি পারবো না\" বলার বদলে **যা পারবে সেটা** বলো। একই সীমাবদ্ধতা, কিন্তু তুমি সমাধান দিচ্ছো।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s011-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — কাস্টমার কল",
+          "prompt_bn": "কাস্টমারের সাথে কলে আছো: কী দেখেছো বলো, দেরির কারণ বলো, আজ কী দিতে পারবে বলো, কখন জানাবে বলো, আর কী হলে আজই শেষ হতো সেটা বলো।",
+          "checklist": [
+            "past simple দিয়ে যা দেখেছো",
+            "It took longer because",
+            "What I can do today is",
+            "I will get back to you ___",
+            "If your team ___, we would ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "I checked the account on the call and everything worked fine on our side. He had no access, so I opened the record and shared the details with him. It took longer because the sandbox was still refreshing. What I can do today is send you the exact fields, and I will get back to you before the end of the day. If your team gave us access this morning, we would finish the audit today.",
+          "coach_bn": "কাস্টমার চারটা জিনিস শুনতে চায়: কী হয়েছে, কেন দেরি, আজ কী পাবে, কবে খবর। চারটার ব্যাকরণ চার রকম।"
+        }
+      ]
+    }
+  ]
+}

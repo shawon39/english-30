@@ -111,6 +111,75 @@
       ]
     },
     {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s001-fr-1",
+          "station": "frame",
+          "cheat": "Yesterday I ___, and then I ___.",
+          "frame": "Yesterday I ___, and then I ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Yesterday I reviewed the pull request, and then I merged it into main.",
+              "sharp_bn": "গতকাল pull request-টা রিভিউ করলাম, তারপর main-এ merge করে দিলাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Yesterday I traced the null contract value, and then I raised a ticket for it.",
+              "sharp_bn": "গতকাল খালি contract value-টা কোথা থেকে আসছে বের করলাম, তারপর একটা টিকিট খুললাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Yesterday I finished work early, and then I went for a long walk.",
+              "sharp_bn": "গতকাল কাজ তাড়াতাড়ি শেষ করলাম, তারপর অনেকক্ষণ হাঁটলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Yesterday I cooked at home, and then I slept before midnight.",
+              "sharp_bn": "গতকাল বাসায় রান্না করলাম, তারপর বারোটার আগেই ঘুমিয়ে পড়লাম।"
+            }
+          ],
+          "sharp": "Yesterday I reviewed the pull request, and then I merged it into main.",
+          "reps": 4,
+          "coach_bn": "চারবার একই ছাঁচ। চতুর্থবারে **past + and then + past** আর ভাবতে হয় না — এটাই automaticity।",
+          "target_sec": 8
+        },
+        {
+          "id": "s001-fr-2",
+          "station": "frame",
+          "cheat": "I was ___ when ___.",
+          "frame": "I was ___ when ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "I was writing the standup notes when the build turned red.",
+              "sharp_bn": "স্ট্যান্ডআপের নোট লিখছিলাম, তখনই বিল্ডটা লাল হয়ে গেল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "I was joining the call when my laptop restarted itself.",
+              "sharp_bn": "কলে ঢুকছিলাম, তখনই ল্যাপটপটা নিজে থেকে রিস্টার্ট নিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I was crossing the road when it started raining.",
+              "sharp_bn": "রাস্তা পার হচ্ছিলাম, তখনই বৃষ্টি শুরু হলো।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I was eating lunch when my sister called from home.",
+              "sharp_bn": "দুপুরের খাবার খাচ্ছিলাম, তখনই বোন বাসা থেকে ফোন দিল।"
+            }
+          ],
+          "sharp": "I was writing the standup notes when the build turned red.",
+          "reps": 4,
+          "coach_bn": "গল্পের ইঞ্জিন। লম্বা কাজ **was …ing**, হঠাৎ ঘটনা **past simple** — উল্টে গেলে শ্রোতা টাইমলাইন হারায়।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
       "station": "ladder",
       "items": [
         {
@@ -186,75 +255,6 @@
           "coach_bn": "একই কাঠামো, অফিসের বাইরে। **had gone** = অন্যদের ঘুম আগে, তোমার ল্যাপটপ পরে।",
           "reps": 3,
           "target_sec": 10
-        }
-      ]
-    },
-    {
-      "station": "frame",
-      "items": [
-        {
-          "id": "s001-fr-1",
-          "station": "frame",
-          "cheat": "Yesterday I ___, and then I ___.",
-          "frame": "Yesterday I ___, and then I ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "Yesterday I reviewed the pull request, and then I merged it into main.",
-              "sharp_bn": "গতকাল pull request-টা রিভিউ করলাম, তারপর main-এ merge করে দিলাম।"
-            },
-            {
-              "scene": "office",
-              "sharp": "Yesterday I traced the null contract value, and then I raised a ticket for it.",
-              "sharp_bn": "গতকাল খালি contract value-টা কোথা থেকে আসছে বের করলাম, তারপর একটা টিকিট খুললাম।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "Yesterday I finished work early, and then I went for a long walk.",
-              "sharp_bn": "গতকাল কাজ তাড়াতাড়ি শেষ করলাম, তারপর অনেকক্ষণ হাঁটলাম।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "Yesterday I cooked at home, and then I slept before midnight.",
-              "sharp_bn": "গতকাল বাসায় রান্না করলাম, তারপর বারোটার আগেই ঘুমিয়ে পড়লাম।"
-            }
-          ],
-          "sharp": "Yesterday I reviewed the pull request, and then I merged it into main.",
-          "reps": 4,
-          "coach_bn": "চারবার একই ছাঁচ। চতুর্থবারে **past + and then + past** আর ভাবতে হয় না — এটাই automaticity।",
-          "target_sec": 8
-        },
-        {
-          "id": "s001-fr-2",
-          "station": "frame",
-          "cheat": "I was ___ when ___.",
-          "frame": "I was ___ when ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "I was writing the standup notes when the build turned red.",
-              "sharp_bn": "স্ট্যান্ডআপের নোট লিখছিলাম, তখনই বিল্ডটা লাল হয়ে গেল।"
-            },
-            {
-              "scene": "office",
-              "sharp": "I was joining the call when my laptop restarted itself.",
-              "sharp_bn": "কলে ঢুকছিলাম, তখনই ল্যাপটপটা নিজে থেকে রিস্টার্ট নিল।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "I was crossing the road when it started raining.",
-              "sharp_bn": "রাস্তা পার হচ্ছিলাম, তখনই বৃষ্টি শুরু হলো।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "I was eating lunch when my sister called from home.",
-              "sharp_bn": "দুপুরের খাবার খাচ্ছিলাম, তখনই বোন বাসা থেকে ফোন দিল।"
-            }
-          ],
-          "sharp": "I was writing the standup notes when the build turned red.",
-          "reps": 4,
-          "coach_bn": "গল্পের ইঞ্জিন। লম্বা কাজ **was …ing**, হঠাৎ ঘটনা **past simple** — উল্টে গেলে শ্রোতা টাইমলাইন হারায়।",
-          "target_sec": 8
         }
       ]
     },

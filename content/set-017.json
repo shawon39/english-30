@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "3.1",
+  "set": 17,
+  "world": "postmortem",
+  "world_bn": "পোস্টমর্টেম",
+  "title_bn": "খালি ফিল্ড, ভুল রিপোর্ট",
+  "desc_bn": "নয়টা রেকর্ড খালি contract ID নিয়ে কাস্টমারের কাছে গেল, আর দুটো ফিল্ডে একই সংখ্যা। যদি-ভারী সেট।",
+  "minutes": 7,
+  "cheats": [
+    "Nobody had ___, which is how ___",
+    "The check existed, but ___",
+    "would never have reached"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s017-tm-1",
+          "station": "time-machine",
+          "cheat": "সংখ্যা দিয়ে ঘটনা → past simple",
+          "source_date": "2026-07-29",
+          "raw": "**can can** I just give a end user a warning that where c contract ID and **some kind of** information should not be null. Okay, they **have** to review it.",
+          "tokens": [
+            "Nine",
+            "records",
+            "reach",
+            "the",
+            "customer",
+            "with",
+            "an",
+            "empty",
+            "contract",
+            "ID",
+            "and",
+            "nobody",
+            "warns",
+            "them."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "reached",
+                "reaches",
+                "were reaching"
+              ],
+              "answer": "reached"
+            },
+            {
+              "index": 12,
+              "options": [
+                "warned",
+                "warns",
+                "was warning"
+              ],
+              "answer": "warned"
+            }
+          ],
+          "sharp": "Nine records reached the customer with an empty contract ID and nobody warned them.",
+          "sharp_bn": "নয়টা রেকর্ড খালি contract ID নিয়ে কাস্টমারের কাছে পৌঁছে গিয়েছিল, আর কেউ ওদের সতর্ক করেনি।",
+          "coach_bn": "তোমার লাইনে **can can** — দুইবার শুরু। ইনসিডেন্টে সংখ্যা দিয়ে শুরু করলে কেউ গুরুত্ব কমাতে পারে না।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s017-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + ভুলটা বাছা",
+          "source_date": "2026-07-29",
+          "raw": "Why there **are** two total months. One **is** total month number and the other one is total month. Why you **have** used two?",
+          "tokens": [
+            "Two",
+            "fields",
+            "hold",
+            "the",
+            "same",
+            "number",
+            "and",
+            "the",
+            "report",
+            "picks",
+            "the",
+            "wrong",
+            "one."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "held",
+                "holds",
+                "were holding"
+              ],
+              "answer": "held"
+            },
+            {
+              "index": 9,
+              "options": [
+                "picked",
+                "picks",
+                "was picking"
+              ],
+              "answer": "picked"
+            }
+          ],
+          "sharp": "Two fields held the same number and the report picked the wrong one.",
+          "sharp_bn": "দুটো ফিল্ডে একই সংখ্যা ছিল, আর রিপোর্টটা ভুলটাই বেছে নিল।",
+          "coach_bn": "**held / picked** — দুটোই অতীতে। একটা বর্তমানে রেখে দিলে মনে হবে বাগটা এখনো চলছে।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s017-fr-1",
+          "station": "frame",
+          "cheat": "It only surfaced when ___.",
+          "frame": "It only surfaced when ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "It only surfaced when the customer opened the renewal.",
+              "sharp_bn": "ধরা পড়ল তখনই, যখন কাস্টমার renewal-টা খুলল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "It only surfaced when we ran the report on a full year.",
+              "sharp_bn": "ধরা পড়ল তখনই, যখন পুরো এক বছরের রিপোর্ট চালালাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It only surfaced when I checked the receipt at home.",
+              "sharp_bn": "ধরা পড়ল তখনই, যখন বাসায় এসে রসিদটা মিলিয়ে দেখলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It only surfaced when the guests had already arrived.",
+              "sharp_bn": "ধরা পড়ল তখনই, যখন মেহমানরা এসে পড়েছে।"
+            }
+          ],
+          "sharp": "It only surfaced when the customer opened the renewal.",
+          "reps": 4,
+          "coach_bn": "**It only surfaced when** — কখন ধরা পড়ল সেটা বললে বোঝা যায় কেন এতদিন লুকিয়ে ছিল।",
+          "target_sec": 6
+        },
+        {
+          "id": "s017-fr-2",
+          "station": "frame",
+          "cheat": "The check existed, but ___.",
+          "frame": "The ___ existed, but ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "The check existed, but it never ran on old records.",
+              "sharp_bn": "চেকটা ছিল, কিন্তু পুরনো রেকর্ডে সেটা কখনো চলত না।"
+            },
+            {
+              "scene": "office",
+              "sharp": "The validation existed, but nobody had switched it on.",
+              "sharp_bn": "validation-টা ছিল, কিন্তু কেউ ওটা চালু করেনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The alarm existed, but I had set it for the wrong day.",
+              "sharp_bn": "অ্যালার্মটা ছিল, কিন্তু আমি ভুল দিনে দিয়ে রেখেছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The list existed, but I had left it at home.",
+              "sharp_bn": "তালিকাটা ছিল, কিন্তু আমি ওটা বাসায় ফেলে এসেছিলাম।"
+            }
+          ],
+          "sharp": "The check existed, but it never ran on old records.",
+          "reps": 4,
+          "coach_bn": "\"আমাদের কিছুই ছিল না\" বলার চেয়ে **ছিল, কিন্তু কাজ করেনি** বলা অনেক সৎ আর কাজের।",
+          "target_sec": 7
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s017-if-1",
+          "station": "if-machine",
+          "cheat": "If + had been V3 → would have reached",
+          "tiles": [
+            "If the field",
+            "had been required from the start,",
+            "no empty contract ID would have reached",
+            "a customer."
+          ],
+          "sharp": "If the field had been required from the start, no empty contract ID would have reached a customer.",
+          "sharp_bn": "ফিল্ডটা শুরু থেকেই required থাকলে খালি contract ID নিয়ে কিছুই কাস্টমার পর্যন্ত পৌঁছাত না।",
+          "coach_bn": "**no empty contract ID would have reached** — কর্তা জিনিস, তাই কারো দিকে আঙুল ওঠে না।",
+          "reps": 3,
+          "target_sec": 11
+        },
+        {
+          "id": "s017-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "tiles": [
+            "If we",
+            "had kept one field instead of two,",
+            "the report would have picked the right number",
+            "every time."
+          ],
+          "sharp": "If we had kept one field instead of two, the report would have picked the right number every time.",
+          "sharp_bn": "দুটোর বদলে একটা ফিল্ড রাখলে রিপোর্ট প্রতিবারই সঠিক সংখ্যাটা নিত।",
+          "coach_bn": "সমাধানটাও কন্ডিশনালেই বলে দেওয়া যায়। আলাদা করে \"আমার প্রস্তাব\" বলার দরকার পড়ে না।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s017-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · সময়",
+          "tiles": [
+            "If the warning",
+            "had fired on save,",
+            "the user would have fixed it",
+            "in seconds."
+          ],
+          "sharp": "If the warning had fired on save, the user would have fixed it in seconds.",
+          "sharp_bn": "সেভ করার সময় সতর্কতাটা উঠলে ইউজার কয়েক সেকেন্ডেই ঠিক করে ফেলত।",
+          "coach_bn": "**in seconds** — খরচটা সময়ে মাপলে যুক্তিটা আর মতামত থাকে না।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s017-if-4",
+          "station": "if-machine",
+          "cheat": "If + past → would never (2nd conditional)",
+          "tiles": [
+            "If we",
+            "ran the report weekly,",
+            "a gap like this",
+            "would never last a month."
+          ],
+          "sharp": "If we ran the report weekly, a gap like this would never last a month.",
+          "sharp_bn": "রিপোর্টটা সাপ্তাহিক চালালে এরকম ফাঁক কখনো এক মাস টিকত না।",
+          "coach_bn": "পোস্টমর্টেমের শেষ বাক্য সবসময় ভবিষ্যতের দিকে। অতীত ব্যাখ্যা করে ভবিষ্যৎ প্রস্তাব করো।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s017-if-5",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had checked the list before leaving,",
+            "I would not have gone back",
+            "twice."
+          ],
+          "sharp": "If I had checked the list before leaving, I would not have gone back twice.",
+          "sharp_bn": "বেরোনোর আগে তালিকাটা দেখে নিলে দুইবার ফিরতে হতো না।",
+          "coach_bn": "একই কাঠামো, বাজারের গল্পে। যত ছোট গল্পে খাটবে, তত দ্রুত মুখে বসবে।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s017-bw-1",
+          "station": "backward",
+          "cheat": "had carried + so whichever",
+          "chunks": [
+            "Two fields had carried the same number",
+            "for months,",
+            "so whichever one the report picked",
+            "looked correct on its own."
+          ],
+          "sharp": "Two fields had carried the same number for months, so whichever one the report picked looked correct on its own.",
+          "sharp_bn": "মাসের পর মাস দুটো ফিল্ডে একই সংখ্যা বসে ছিল, তাই রিপোর্ট যেটাই নিত সেটাই আলাদা করে দেখলে ঠিক লাগত।",
+          "coach_bn": "লেজ আগে: **looked correct on its own** → পুরোটা। কেন এতদিন ধরা পড়েনি, সেটার উত্তর এই এক বাক্যেই।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s017-ld-1",
+          "station": "ladder",
+          "cheat": "because nobody had + which is how",
+          "rungs": [
+            "The warning never fired.",
+            "The warning never fired for the records that mattered.",
+            "The warning never fired for the records that mattered, because nobody had marked the field as required.",
+            "The warning never fired for the records that mattered, because nobody had marked the field as required, which is how nine of them reached the customer."
+          ],
+          "sharp": "The warning never fired for the records that mattered, because nobody had marked the field as required, which is how nine of them reached the customer.",
+          "sharp_bn": "যে রেকর্ডগুলো আসলে জরুরি, তাদের জন্য সতর্কতাটা কখনো ওঠেইনি — কারণ কেউ ফিল্ডটাকে required করে রাখেনি; এভাবেই নয়টা কাস্টমারের কাছে চলে গিয়েছিল।",
+          "coach_bn": "**which is how nine of them reached** — কারণ থেকে ফল পর্যন্ত এক ক্লজে। RCA-তে এটাই শেষ ধাপ।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s017-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — ডেটা ইনসিডেন্ট",
+          "prompt_bn": "খালি contract ID-র ঘটনাটা ব্যাখ্যা করো: কী কাস্টমারের কাছে গেল, কেন সতর্কতা ওঠেনি, কেন এতদিন ধরা পড়েনি, আর কী থাকলে হতোই না।",
+          "checklist": [
+            "সংখ্যা দিয়ে past simple",
+            "because nobody had ___",
+            "It only surfaced when ___",
+            "The check existed, but ___",
+            "If ___ had been ___, would have reached"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Nine records reached the customer with an empty contract ID and nobody warned them. The warning never fired for the records that mattered, because nobody had marked the field as required. Two fields had carried the same number for months, so whichever one the report picked looked correct on its own. It only surfaced when the customer opened the renewal. If the field had been required from the start, no empty contract ID would have reached a customer.",
+          "coach_bn": "ক্ষতি → কারণ → কেন লুকিয়ে ছিল → কখন ধরা পড়ল → প্রতিকার। পাঁচ ধাপেই একটা ইনসিডেন্ট রিপোর্ট শেষ।"
+        }
+      ]
+    }
+  ]
+}

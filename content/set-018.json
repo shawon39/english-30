@@ -1,0 +1,290 @@
+{
+  "schemaVersion": "3.1",
+  "set": 18,
+  "world": "timeline",
+  "world_bn": "টাইমলাইন",
+  "title_bn": "শেখার পথ",
+  "desc_bn": "ডকুমেন্টেশনে হাল ছাড়া, প্রম্পট লেখা, সার্টিফিকেশন আর memory সরানো — কোনটা কার আগে এসেছিল। সিঁড়ি-ভারী।",
+  "minutes": 9,
+  "cheats": [
+    "Before I ___, I had never ___",
+    "By the time ___, I had already ___",
+    "which is why"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s018-tm-1",
+          "station": "time-machine",
+          "cheat": "সেই বছরের অভ্যাস → past simple",
+          "source_date": "2026-07-27",
+          "raw": "These two prompts **work** very well for me to understand a concept, any kind of **things**, okay. So, any way to improve them so that it will be **more easy**.",
+          "tokens": [
+            "I",
+            "write",
+            "two",
+            "prompts",
+            "and",
+            "they",
+            "carry",
+            "me",
+            "through",
+            "every",
+            "new",
+            "concept",
+            "that",
+            "year."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "wrote",
+                "writes",
+                "was writing"
+              ],
+              "answer": "wrote"
+            },
+            {
+              "index": 6,
+              "options": [
+                "carried",
+                "carries",
+                "were carrying"
+              ],
+              "answer": "carried"
+            }
+          ],
+          "sharp": "I wrote two prompts and they carried me through every new concept that year.",
+          "sharp_bn": "দুটো প্রম্পট লিখেছিলাম, আর সেই বছর প্রতিটা নতুন ধারণা ওগুলোই আমাকে পার করিয়ে দিয়েছিল।",
+          "coach_bn": "**that year** যোগ করলেই গল্পটা সময়ের ভেতরে বসে যায়। সময় ছাড়া বললে ওটা মতামত শোনায়।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s018-bw-1",
+          "station": "backward",
+          "cheat": "Before I + had felt",
+          "chunks": [
+            "Before I built the prompts,",
+            "every new topic had felt",
+            "like starting again",
+            "from nothing."
+          ],
+          "sharp": "Before I built the prompts, every new topic had felt like starting again from nothing.",
+          "sharp_bn": "প্রম্পটগুলো বানানোর আগে প্রতিটা নতুন বিষয় মনে হতো শূন্য থেকে আবার শুরু করছি।",
+          "coach_bn": "**had felt** — অতীতের আগের অনুভূতি। শেখার গল্পে এই স্তরটাই \"আগে কেমন ছিল\" বোঝায়।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s018-bw-2",
+          "station": "backward",
+          "cheat": "By the time + had already used",
+          "chunks": [
+            "By the time I sat the exam,",
+            "I had already used",
+            "most of the objects",
+            "on a real customer org."
+          ],
+          "sharp": "By the time I sat the exam, I had already used most of the objects on a real customer org.",
+          "sharp_bn": "পরীক্ষায় বসার আগেই বেশিরভাগ object আমি আসল কাস্টমার org-এ ব্যবহার করে ফেলেছিলাম।",
+          "coach_bn": "লেজ আগে: **on a real customer org** → পুরোটা। ইন্টারভিউতে এই বাক্যটা এক নিঃশ্বাসে লাগবে।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s018-bw-3",
+          "station": "backward",
+          "cheat": "had bought + had finished · দৈনন্দিন",
+          "chunks": [
+            "I had bought three books that year,",
+            "but by December",
+            "I had finished",
+            "only the shortest one."
+          ],
+          "sharp": "I had bought three books that year, but by December I had finished only the shortest one.",
+          "sharp_bn": "সেই বছর তিনটা বই কিনেছিলাম, কিন্তু ডিসেম্বরের মধ্যে শুধু সবচেয়ে ছোটটাই শেষ করতে পেরেছিলাম।",
+          "coach_bn": "দুটো **had** পাশাপাশি: কেনা আগে, শেষ করা পরে। নিজেকে নিয়ে সৎ হওয়ার ছাঁচ।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s018-ld-1",
+          "station": "ladder",
+          "cheat": "because had done + which is why",
+          "rungs": [
+            "I started with the documentation.",
+            "I started with the documentation and gave up in two days.",
+            "I started with the documentation and gave up in two days, because nothing there connected to work I had actually done.",
+            "I started with the documentation and gave up in two days, because nothing there connected to work I had actually done, which is why the second attempt looked completely different."
+          ],
+          "sharp": "I started with the documentation and gave up in two days, because nothing there connected to work I had actually done, which is why the second attempt looked completely different.",
+          "sharp_bn": "ডকুমেন্টেশন দিয়ে শুরু করে দুই দিনেই হাল ছেড়ে দিয়েছিলাম, কারণ ওখানকার কিছুই আমার আসল কাজের সাথে মিলত না — সেজন্যই দ্বিতীয়বারের চেষ্টাটা একদম আলাদা ছিল।",
+          "coach_bn": "ব্যর্থতাটাও টাইমলাইনের অংশ। **gave up in two days** বলতে পারা মানে তুমি নিজের শেখার ইতিহাস জানো।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s018-ld-2",
+          "station": "ladder",
+          "cheat": "until + so that + which cut",
+          "rungs": [
+            "I rewrote the prompt.",
+            "I rewrote the prompt until it explained things the way I think.",
+            "I rewrote the prompt until it explained things the way I think, so that every new topic started from something I already knew.",
+            "I rewrote the prompt until it explained things the way I think, so that every new topic started from something I already knew, which cut my reading time roughly in half."
+          ],
+          "sharp": "I rewrote the prompt until it explained things the way I think, so that every new topic started from something I already knew, which cut my reading time roughly in half.",
+          "sharp_bn": "প্রম্পটটা বারবার লিখেছি যতক্ষণ না সেটা আমার ভাবনার ধরনেই ব্যাখ্যা করতে শুরু করল, যাতে প্রতিটা নতুন বিষয় আমার জানা কিছু থেকে শুরু হয় — তাতে পড়ার সময় প্রায় অর্ধেক হয়ে গিয়েছিল।",
+          "coach_bn": "**which cut my reading time roughly in half** — শেখার গল্পে সংখ্যা বসাও, তাহলে ওটা আর গল্প থাকে না।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s018-ld-3",
+          "station": "ladder",
+          "cheat": "because had already shipped + which made",
+          "rungs": [
+            "The certification came later.",
+            "The certification came later than the real learning.",
+            "The certification came later than the real learning, because I had already shipped most of it at work.",
+            "The certification came later than the real learning, because I had already shipped most of it at work, which made the exam feel like a formality."
+          ],
+          "sharp": "The certification came later than the real learning, because I had already shipped most of it at work, which made the exam feel like a formality.",
+          "sharp_bn": "সার্টিফিকেশনটা আসল শেখার অনেক পরে এসেছিল, কারণ ওর বেশিরভাগ জিনিস আমি কাজেই করে ফেলেছিলাম — তাই পরীক্ষাটা নিয়মরক্ষার মতো লেগেছিল।",
+          "coach_bn": "**had already shipped** — কাগজের আগে কাজ। ইন্টারভিউতে এই ক্রমটা বলতে পারা বড় সুবিধা।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s018-ld-4",
+          "station": "ladder",
+          "cheat": "so that + even though",
+          "rungs": [
+            "I moved the memory out.",
+            "I moved the memory out of the tool and into the server.",
+            "I moved the memory out of the tool and into the server, so that every machine I use starts from the same context.",
+            "I moved the memory out of the tool and into the server, so that every machine I use starts from the same context, even though it took a whole weekend to set up."
+          ],
+          "sharp": "I moved the memory out of the tool and into the server, so that every machine I use starts from the same context, even though it took a whole weekend to set up.",
+          "sharp_bn": "memory-টা টুল থেকে সরিয়ে সার্ভারে নিয়েছিলাম, যাতে আমি যে মেশিনই ব্যবহার করি সবগুলো একই context থেকে শুরু করে — যদিও সেটআপ করতে পুরো একটা সপ্তাহান্ত লেগেছিল।",
+          "coach_bn": "সিদ্ধান্তের খরচটা নিজেই বলো (**even though it took a whole weekend**)। তখন সিদ্ধান্তটা ভাবনাচিন্তার ফল মনে হয়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s018-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have saved",
+          "tiles": [
+            "If I",
+            "had built the prompts a year earlier,",
+            "I would have saved myself",
+            "months of reading."
+          ],
+          "sharp": "If I had built the prompts a year earlier, I would have saved myself months of reading.",
+          "sharp_bn": "প্রম্পটগুলো এক বছর আগে বানালে নিজের কয়েক মাসের পড়া বেঁচে যেত।",
+          "coach_bn": "**would have saved myself** — নিজের সিদ্ধান্তের হিসাব। আফসোস নয়, শেখা।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s018-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had read twenty pages a night,",
+            "I would have finished",
+            "all three books."
+          ],
+          "sharp": "If I had read twenty pages a night, I would have finished all three books.",
+          "sharp_bn": "রোজ রাতে বিশ পাতা পড়লে তিনটা বই-ই শেষ হয়ে যেত।",
+          "coach_bn": "ছোট সংখ্যা, বড় ফল। **twenty pages a night** — নির্দিষ্ট করলে বাক্যটা বিশ্বাসযোগ্য হয়।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s018-fr-1",
+          "station": "frame",
+          "cheat": "Before I ___, I had never ___.",
+          "frame": "Before I ___, I had never ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Before I wrote those prompts, I had never finished a concept in one sitting.",
+              "sharp_bn": "ওই প্রম্পটগুলো লেখার আগে আমি কখনো এক বসায় একটা ধারণা শেষ করিনি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Before I moved the memory out, I had never trusted a second machine.",
+              "sharp_bn": "memory সরানোর আগে আমি কখনো দ্বিতীয় মেশিনে ভরসা করিনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before I started cooking, I had never planned a week of food.",
+              "sharp_bn": "রান্না শুরু করার আগে আমি কখনো এক সপ্তাহের খাবার পরিকল্পনা করিনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before that trip, I had never travelled without a plan.",
+              "sharp_bn": "ওই ভ্রমণের আগে আমি কখনো পরিকল্পনা ছাড়া বেরোইনি।"
+            }
+          ],
+          "sharp": "Before I wrote those prompts, I had never finished a concept in one sitting.",
+          "reps": 4,
+          "coach_bn": "**Before I X, I had never Y** — আগে-পরে বোঝানোর সবচেয়ে পরিষ্কার ছাঁচ। নিজের বদলটা এক বাক্যে।",
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s018-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — শেখার ইতিহাস",
+          "prompt_bn": "কীভাবে শিখেছো সেটা বলো: প্রথমে কী চেষ্টা করেছিলে, কেন কাজ করেনি, তারপর কী বদলালে, পরীক্ষার সময় কতদূর ছিলে, আর আগে করলে কী হতো।",
+          "checklist": [
+            "Before I ___, I had never ___",
+            "gave up ___ because ___ had ___",
+            "so that / even though",
+            "By the time ___, I had already ___",
+            "If I had ___, I would have ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Before I built the prompts, every new topic had felt like starting again from nothing. I started with the documentation and gave up in two days, because nothing there connected to work I had actually done. I rewrote the prompt until it explained things the way I think, which cut my reading time roughly in half. By the time I sat the exam, I had already used most of the objects on a real customer org. If I had built the prompts a year earlier, I would have saved myself months of reading.",
+          "coach_bn": "শেখার গল্প বলতে পারা ইন্টারভিউয়ের অর্ধেক। ক্রম ঠিক থাকলে তুমি শিক্ষার্থী নয়, অভিজ্ঞ শোনাও।"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "schemaVersion": "3.1",
+  "set": 12,
+  "world": "postmortem",
+  "world_bn": "পোস্টমর্টেম",
+  "title_bn": "ডেমোতে ভাঙল",
+  "desc_bn": "ল্যাপটপে চলল, শেয়ার স্ক্রিনে ভাঙল — ক্লায়েন্টের সামনে ভেঙে যাওয়া ডেমোর ব্যাখ্যা। যদি-ভারী সেট।",
+  "minutes": 7,
+  "cheats": [
+    "nobody had ___, so ___",
+    "We should have ___ before",
+    "would never have"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s012-tm-1",
+          "station": "time-machine",
+          "cheat": "চেষ্টার ফল → past simple",
+          "source_date": "2026-07-27",
+          "raw": "**I have I have tried.** Actually this **is** not working. So how about this solution? I'm not sure. Just check it and let me know",
+          "tokens": [
+            "I",
+            "try",
+            "it",
+            "twice",
+            "before",
+            "the",
+            "demo",
+            "and",
+            "it",
+            "still",
+            "fails",
+            "on",
+            "the",
+            "same",
+            "screen."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "tried",
+                "tries",
+                "was trying"
+              ],
+              "answer": "tried"
+            },
+            {
+              "index": 10,
+              "options": [
+                "failed",
+                "fails",
+                "was failing"
+              ],
+              "answer": "failed"
+            }
+          ],
+          "sharp": "I tried it twice before the demo and it still failed on the same screen.",
+          "sharp_bn": "ডেমোর আগে দুইবার চেষ্টা করলাম, তবু একই স্ক্রিনেই আটকে গেল।",
+          "coach_bn": "তোমার লাইনে **I have I have tried** — দুইবার শুরু। অতীতে একবারেই কাজ শেষ।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s012-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple ×২ · irregular",
+          "tokens": [
+            "The",
+            "demo",
+            "runs",
+            "fine",
+            "on",
+            "my",
+            "laptop",
+            "and",
+            "breaks",
+            "on",
+            "the",
+            "shared",
+            "screen."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "ran",
+                "runs",
+                "was running"
+              ],
+              "answer": "ran"
+            },
+            {
+              "index": 8,
+              "options": [
+                "broke",
+                "breaks",
+                "was breaking"
+              ],
+              "answer": "broke"
+            }
+          ],
+          "sharp": "The demo ran fine on my laptop and broke on the shared screen.",
+          "sharp_bn": "ডেমোটা আমার ল্যাপটপে ঠিকঠাক চলল, আর শেয়ার করা স্ক্রিনে ভেঙে গেল।",
+          "coach_bn": "**ran** আর **broke** — দুটোই irregular. ডেমো-বিপর্যয়ের গল্পে এই জোড়াটা বারবার লাগবে।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s012-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would never have V3",
+          "tiles": [
+            "If we",
+            "had rehearsed on the same screen,",
+            "the layout would never have",
+            "collapsed."
+          ],
+          "sharp": "If we had rehearsed on the same screen, the layout would never have collapsed.",
+          "sharp_bn": "একই স্ক্রিনে রিহার্সাল করলে লেআউটটা কখনো ভেঙেই পড়ত না।",
+          "coach_bn": "**would never have collapsed** — 'never' বসালে নিশ্চয়তাটা জোরালো হয়।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s012-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → no ___ would have V3",
+          "tiles": [
+            "If somebody",
+            "had frozen the branch,",
+            "no new commit would have reached",
+            "the demo."
+          ],
+          "sharp": "If somebody had frozen the branch, no new commit would have reached the demo.",
+          "sharp_bn": "কেউ ব্রাঞ্চটা আটকে দিলে নতুন কোনো commit ডেমো পর্যন্ত পৌঁছাত না।",
+          "coach_bn": "কর্তা **no new commit** — জিনিসকে কর্তা বানালে কেউ ব্যক্তিগতভাবে নেয় না।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s012-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have run out",
+          "tiles": [
+            "If the client",
+            "had asked one more question,",
+            "we would have run out",
+            "of answers."
+          ],
+          "sharp": "If the client had asked one more question, we would have run out of answers.",
+          "sharp_bn": "ক্লায়েন্ট আর একটা প্রশ্ন করলে আমাদের উত্তর ফুরিয়ে যেত।",
+          "coach_bn": "নিজের দুর্বলতা আগে স্বীকার করলে কেউ ওটা দিয়ে আঘাত করতে পারে না।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s012-if-4",
+          "station": "if-machine",
+          "cheat": "If + past → would not (2nd conditional)",
+          "tiles": [
+            "If we",
+            "ran the demo from a recording,",
+            "a bad network would not matter",
+            "at all."
+          ],
+          "sharp": "If we ran the demo from a recording, a bad network would not matter at all.",
+          "sharp_bn": "ডেমোটা রেকর্ডিং থেকে চালালে খারাপ নেটওয়ার্কে কিছুই যেত আসত না।",
+          "coach_bn": "পোস্টমর্টেমের শেষে সবসময় একটা প্রস্তাব রাখো। **If we ran … would not matter** — সমাধানের ভাষা।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s012-if-5",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had left the house on time,",
+            "I would not have joined the call",
+            "from the road."
+          ],
+          "sharp": "If I had left the house on time, I would not have joined the call from the road.",
+          "sharp_bn": "সময়মতো বাসা থেকে বেরোলে রাস্তা থেকে কলে ঢুকতে হতো না।",
+          "coach_bn": "রোজকার সংস্করণ। একই ছাঁচ যত জায়গায় খাটে, তত দ্রুত মুখে বসে।",
+          "reps": 3,
+          "target_sec": 11
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s012-fr-1",
+          "station": "frame",
+          "cheat": "We should have ___ before the demo.",
+          "frame": "We should have ___ before ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "We should have rehearsed on the same screen before the demo.",
+              "sharp_bn": "ডেমোর আগে একই স্ক্রিনে রিহার্সাল করা উচিত ছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "We should have frozen the branch before the demo.",
+              "sharp_bn": "ডেমোর আগে ব্রাঞ্চটা আটকে দেওয়া উচিত ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "I should have charged the phone before the trip.",
+              "sharp_bn": "রওনা দেওয়ার আগে ফোনটা চার্জ দেওয়া উচিত ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "We should have checked the timing before the booking.",
+              "sharp_bn": "বুকিংয়ের আগে সময়টা দেখে নেওয়া উচিত ছিল।"
+            }
+          ],
+          "sharp": "We should have rehearsed on the same screen before the demo.",
+          "reps": 4,
+          "coach_bn": "**should have + V3** — অতীতের অনুশোচনা। \"we\" বললে দোষ ভাগ হয়, কেউ আত্মরক্ষায় নামে না।",
+          "target_sec": 8
+        },
+        {
+          "id": "s012-fr-2",
+          "station": "frame",
+          "cheat": "Nobody had ___, so ___.",
+          "frame": "Nobody had ___, so ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Nobody had tested the projector, so the layout collapsed.",
+              "sharp_bn": "কেউ প্রজেক্টরটা টেস্ট করেনি, তাই লেআউটটা ভেঙে পড়ল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Nobody had frozen the branch, so a new commit went in overnight.",
+              "sharp_bn": "কেউ ব্রাঞ্চটা আটকায়নি, তাই রাতারাতি একটা নতুন commit ঢুকে গেল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Nobody had checked the weather, so we got completely wet.",
+              "sharp_bn": "কেউ আবহাওয়াটা দেখেনি, তাই আমরা পুরো ভিজে গেলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Nobody had booked a table, so we waited for an hour.",
+              "sharp_bn": "কেউ টেবিল বুক করেনি, তাই আমাদের এক ঘণ্টা অপেক্ষা করতে হলো।"
+            }
+          ],
+          "sharp": "Nobody had tested the projector, so the layout collapsed.",
+          "reps": 4,
+          "coach_bn": "**Nobody had X, so Y** — কারণ আর ফল এক ছাঁচে, নাম না নিয়েই। RCA-র কাজের ঘোড়া।",
+          "target_sec": 6
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s012-ld-1",
+          "station": "ladder",
+          "cheat": "nobody had + which is why + even though",
+          "rungs": [
+            "The demo failed.",
+            "The demo failed on the one screen nobody had tested.",
+            "The demo failed on the one screen nobody had tested, which is why it looked fine an hour earlier.",
+            "The demo failed on the one screen nobody had tested, which is why it looked fine an hour earlier, even though the build had not changed at all."
+          ],
+          "sharp": "The demo failed on the one screen nobody had tested, which is why it looked fine an hour earlier, even though the build had not changed at all.",
+          "sharp_bn": "ডেমোটা ঠিক সেই স্ক্রিনেই ভাঙল যেটা কেউ টেস্ট করেনি — সেজন্যই এক ঘণ্টা আগেও সব ঠিক লাগছিল, যদিও বিল্ডে কিছুই বদলায়নি।",
+          "coach_bn": "**nobody had tested** এক ক্লজেই পুরো কারণ। দোষ কারো ঘাড়ে না চাপিয়েই ফাঁকটা দেখানো যায়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s012-bw-1",
+          "station": "backward",
+          "cheat": "had rehearsed + so nothing prepared us",
+          "chunks": [
+            "We had rehearsed on a laptop,",
+            "so nothing prepared us",
+            "for what the projector did",
+            "to the layout."
+          ],
+          "sharp": "We had rehearsed on a laptop, so nothing prepared us for what the projector did to the layout.",
+          "sharp_bn": "আমরা ল্যাপটপে রিহার্সাল করেছিলাম, তাই প্রজেক্টর লেআউটটার সাথে কী করবে সেটার জন্য কিছুই আমাদের তৈরি করেনি।",
+          "coach_bn": "লেজ আগে: **to the layout** → **for what the projector did to the layout** → পুরোটা।",
+          "reps": 3,
+          "target_sec": 11
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s012-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — ডেমো পোস্টমর্টেম",
+          "prompt_bn": "ডেমো ভেঙে যাওয়ার ঘটনাটা ব্যাখ্যা করো: কী ঘটল, ঘণ্টাখানেক আগে কেন সব ঠিক লাগছিল, আসল ফাঁকটা কোথায় ছিল, আর পরেরবার কী বদলাচ্ছো।",
+          "checklist": [
+            "past simple দিয়ে ঘটনা",
+            "Nobody had ___, so ___",
+            "which is why",
+            "We should have ___ before",
+            "If we had ___, would never have ___"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "The demo ran fine on my laptop and broke on the shared screen. I tried it twice before we started and it still failed on the same screen. Nobody had tested the projector, so the layout collapsed, which is why it looked fine an hour earlier. We should have rehearsed on the same screen before the demo. If we had rehearsed there, the layout would never have collapsed, so from now on we run the demo from a recording.",
+          "coach_bn": "ঘটনা → কেন আগে ধরা পড়েনি → ফাঁক → প্রতিকার। চার ধাপ, চার রকম ব্যাকরণ।"
+        }
+      ]
+    }
+  ]
+}

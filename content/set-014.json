@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "3.1",
+  "set": 14,
+  "world": "proposal",
+  "world_bn": "প্রপোজাল",
+  "title_bn": "নিজের ক্যারিয়ার নিয়ে",
+  "desc_bn": "আর্কিটেক্ট হওয়ার পথ, সার্টিফিকেশন আর নিজের scope চাওয়া — ম্যানেজারের সাথে যে কথাটা বলা কঠিন।",
+  "minutes": 8,
+  "cheats": [
+    "What I am aiming for is",
+    "I would like ___, so that ___",
+    "If I took ___, I would ___"
+  ],
+  "stations": [
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s014-fr-1",
+          "station": "frame",
+          "cheat": "What I am aiming for is ___.",
+          "frame": "What I am aiming for is ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "What I am aiming for is one design I own end to end.",
+              "sharp_bn": "আমি চাই এমন একটা ডিজাইন যেটা শুরু থেকে শেষ পর্যন্ত আমার।"
+            },
+            {
+              "scene": "office",
+              "sharp": "What I am aiming for is a review role on the next integration.",
+              "sharp_bn": "আমি চাই পরের integration-এ রিভিউয়ের দায়িত্বটা।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "What I am aiming for is one free evening every week.",
+              "sharp_bn": "আমি চাই সপ্তাহে অন্তত একটা খালি সন্ধ্যা।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "What I am aiming for is finishing the course before Ramadan.",
+              "sharp_bn": "আমি চাই রমজানের আগেই কোর্সটা শেষ করতে।"
+            }
+          ],
+          "sharp": "What I am aiming for is one design I own end to end.",
+          "reps": 4,
+          "coach_bn": "**aiming for** — চাওয়াটাকে লক্ষ্য বানিয়ে দেয়, আবদার নয়। ক্যারিয়ার আলোচনার সবচেয়ে কাজের শব্দ।",
+          "target_sec": 8
+        },
+        {
+          "id": "s014-fr-2",
+          "station": "frame",
+          "cheat": "If I took ___, I would ___.",
+          "frame": "If I took ___, I would ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "If I took the architect track, I would need one mentor inside the team.",
+              "sharp_bn": "আর্কিটেক্ট ট্র্যাকটা নিলে টিমের ভেতরে একজন মেন্টর দরকার হতো।"
+            },
+            {
+              "scene": "office",
+              "sharp": "If I took the integration work, I would learn far more than I do now.",
+              "sharp_bn": "integration-এর কাজটা নিলে এখনকার চেয়ে অনেক বেশি শিখতাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "If I took the early bus, I would reach before the traffic.",
+              "sharp_bn": "আগের বাসটা ধরলে জ্যামের আগেই পৌঁছে যেতাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "If I took one day off, I would come back much sharper.",
+              "sharp_bn": "একদিন ছুটি নিলে অনেক তরতাজা হয়ে ফিরতাম।"
+            }
+          ],
+          "sharp": "If I took the architect track, I would need one mentor inside the team.",
+          "reps": 4,
+          "coach_bn": "**If I took … I would …** — সম্ভাবনা নিয়ে কথা, দাবি নয়। ম্যানেজার তখন আলোচনায় বসে।",
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s014-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have been ___ by now",
+          "tiles": [
+            "If I",
+            "had asked for that scope last year,",
+            "I would have been on the design side",
+            "by now."
+          ],
+          "sharp": "If I had asked for that scope last year, I would have been on the design side by now.",
+          "sharp_bn": "গত বছরই ওই scope-টা চাইলে এতদিনে ডিজাইনের দিকেই থাকতাম।",
+          "coach_bn": "অতীতের সিদ্ধান্ত, **এখনকার** ফল। মিশ্র কন্ডিশনাল — নিজের কথা বলার সবচেয়ে ধারালো রূপ।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s014-if-2",
+          "station": "if-machine",
+          "cheat": "If + past → would (2nd conditional)",
+          "tiles": [
+            "If the team",
+            "gave me one integration,",
+            "I would show",
+            "what I can actually do."
+          ],
+          "sharp": "If the team gave me one integration, I would show what I can actually do.",
+          "sharp_bn": "টিম আমাকে একটা integration দিলে আমি দেখাতে পারতাম আসলে আমি কী পারি।",
+          "coach_bn": "ছোট চাওয়া, বড় প্রতিশ্রুতি। **one integration** — নির্দিষ্ট চাইলে না বলা কঠিন।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s014-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had studied one hour a day,",
+            "I would have finished the certification",
+            "months ago."
+          ],
+          "sharp": "If I had studied one hour a day, I would have finished the certification months ago.",
+          "sharp_bn": "রোজ এক ঘণ্টা পড়লে সার্টিফিকেশনটা কয়েক মাস আগেই শেষ হয়ে যেত।",
+          "coach_bn": "নিজের সাথে সৎ হওয়ার বাক্য। একই ছাঁচ, শুধু কর্তা তুমি নিজে।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s014-ld-1",
+          "station": "ladder",
+          "cheat": "I would like + so that + which",
+          "rungs": [
+            "I would like more scope.",
+            "I would like more scope on the architecture side.",
+            "I would like more scope on the architecture side, so that I stop being the person who only fixes fields.",
+            "I would like more scope on the architecture side, so that I stop being the person who only fixes fields, which is where most of this year has gone."
+          ],
+          "sharp": "I would like more scope on the architecture side, so that I stop being the person who only fixes fields, which is where most of this year has gone.",
+          "sharp_bn": "আমি আর্কিটেকচারের দিকে আরও scope চাই, যাতে শুধু ফিল্ড ঠিক করার লোক হয়ে না থাকি — এই বছরের বেশিরভাগ সময় তো ওখানেই গেছে।",
+          "coach_bn": "চাওয়ার সাথে **কারণ** জুড়ে দাও। খালি \"I want more work\" শুনলে কেউ নড়ে না।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s014-ld-2",
+          "station": "ladder",
+          "cheat": "because covered + which saved",
+          "rungs": [
+            "I took the certification.",
+            "I took the certification in the same month as the migration.",
+            "I took the certification in the same month as the migration, because the two covered exactly the same ground.",
+            "I took the certification in the same month as the migration, because the two covered exactly the same ground, which saved me about three weekends."
+          ],
+          "sharp": "I took the certification in the same month as the migration, because the two covered exactly the same ground, which saved me about three weekends.",
+          "sharp_bn": "migration-এর মাসেই সার্টিফিকেশনটা নিয়েছিলাম, কারণ দুটোতে একই জিনিস পড়ত — তাতে আমার প্রায় তিনটা সপ্তাহান্ত বেঁচে গিয়েছিল।",
+          "coach_bn": "নিজের কাজের হিসাব দেওয়ার সময় **which saved me** দিয়ে শেষ করো। বড়াই না করেই মূল্যটা বলা হয়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s014-tm-1",
+          "station": "time-machine",
+          "cheat": "অভ্যাসের গল্প → past simple",
+          "source_date": "2026-07-27",
+          "raw": "Yeah, **we we we are** using new technologies day by day. **So so** that's yeah.",
+          "tokens": [
+            "We",
+            "adopt",
+            "a",
+            "new",
+            "tool",
+            "every",
+            "month",
+            "and",
+            "nobody",
+            "writes",
+            "down",
+            "what",
+            "we",
+            "learn."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "adopted",
+                "adopts",
+                "were adopting"
+              ],
+              "answer": "adopted"
+            },
+            {
+              "index": 9,
+              "options": [
+                "wrote",
+                "writes",
+                "was writing"
+              ],
+              "answer": "wrote"
+            },
+            {
+              "index": 13,
+              "options": [
+                "learned",
+                "learns",
+                "were learning"
+              ],
+              "answer": "learned"
+            }
+          ],
+          "sharp": "We adopted a new tool every month and nobody wrote down what we learned.",
+          "sharp_bn": "প্রতি মাসে আমরা একটা নতুন টুল ধরতাম, আর কী শিখলাম সেটা কেউ লিখে রাখত না।",
+          "coach_bn": "তোমার লাইনে **we we we** — তিনবার। অতীতে বসালে বাক্যটা একবারেই দাঁড়িয়ে যায়।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s014-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + nobody gave",
+          "source_date": "2026-07-28",
+          "raw": "What do you **think** about sales or channel? I **think** that's good. I don't know, but things **are** okay, **it's it's** really good.",
+          "tokens": [
+            "I",
+            "ask",
+            "for",
+            "feedback",
+            "on",
+            "my",
+            "scope",
+            "and",
+            "nobody",
+            "gives",
+            "me",
+            "a",
+            "straight",
+            "answer."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "asked",
+                "asks",
+                "was asking"
+              ],
+              "answer": "asked"
+            },
+            {
+              "index": 9,
+              "options": [
+                "gave",
+                "gives",
+                "was giving"
+              ],
+              "answer": "gave"
+            }
+          ],
+          "sharp": "I asked for feedback on my scope and nobody gave me a straight answer.",
+          "sharp_bn": "নিজের scope নিয়ে মতামত চেয়েছিলাম, কিন্তু কেউ সোজাসুজি উত্তর দেয়নি।",
+          "coach_bn": "ক্যারিয়ারের কথা অতীতে বললে সেটা অভিযোগ নয়, তথ্য হয়ে যায়। পার্থক্যটা ম্যানেজার টের পায়।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s014-bw-1",
+          "station": "backward",
+          "cheat": "What I am aiming for + not ___ that",
+          "chunks": [
+            "What I am aiming for",
+            "is one design I own end to end,",
+            "not five tickets",
+            "that somebody else scoped."
+          ],
+          "sharp": "What I am aiming for is one design I own end to end, not five tickets that somebody else scoped.",
+          "sharp_bn": "আমি যেটা চাই সেটা হলো একটা ডিজাইন যেটার শুরু থেকে শেষ পর্যন্ত আমার, অন্য কারো ঠিক করে দেওয়া পাঁচটা টিকিট নয়।",
+          "coach_bn": "**A, not B** — কী চাও আর কী চাও না, এক বাক্যে। ক্যারিয়ারের আলোচনায় এটাই সবচেয়ে স্পষ্ট।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s014-bw-2",
+          "station": "backward",
+          "cheat": "had promised + had already gone · দৈনন্দিন",
+          "chunks": [
+            "I had promised myself one hour of study",
+            "every evening,",
+            "but by Thursday",
+            "that hour had already gone."
+          ],
+          "sharp": "I had promised myself one hour of study every evening, but by Thursday that hour had already gone.",
+          "sharp_bn": "রোজ সন্ধ্যায় এক ঘণ্টা পড়ার কথা নিজেকে দিয়েছিলাম, কিন্তু বৃহস্পতিবারের মধ্যেই সেই ঘণ্টাটা হারিয়ে গিয়েছিল।",
+          "coach_bn": "**had promised … had already gone** — নিজের সাথে করা প্রতিজ্ঞা আর তার পরিণতি, দুটোই অতীতের।",
+          "reps": 3,
+          "target_sec": 11
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s014-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — ক্যারিয়ার",
+          "prompt_bn": "ম্যানেজারের সাথে ক্যারিয়ার নিয়ে কথা বলছো: এই বছর কী করেছো, কী চাও, কেন এখন, আর গত বছর চাইলে আজ কোথায় থাকতে।",
+          "checklist": [
+            "past simple দিয়ে এই বছর",
+            "What I am aiming for is",
+            "I would like ___, so that ___",
+            "If the team ___, I would ___",
+            "If I had ___, I would have been ___ by now"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "We adopted a new tool every month and nobody wrote down what we learned, so most of that knowledge stayed with me. I took the certification in the same month as the migration, because the two covered exactly the same ground. What I am aiming for is one design I own end to end, not five tickets that somebody else scoped. If the team gave me one integration, I would show what I can actually do. If I had asked for that scope last year, I would have been on the design side by now.",
+          "coach_bn": "প্রমাণ → চাওয়া → কারণ → আফসোস। প্রমাণ ছাড়া চাওয়াটা আবদার, প্রমাণসহ চাওয়াটা প্রস্তাব।"
+        }
+      ]
+    }
+  ]
+}

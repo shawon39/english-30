@@ -13,180 +13,6 @@
   ],
   "stations": [
     {
-      "station": "time-machine",
-      "items": [
-        {
-          "id": "s008-tm-1",
-          "station": "time-machine",
-          "cheat": "সিদ্ধান্তের ফল → past simple",
-          "source_date": "2026-08-06",
-          "raw": "Can you **give** me— can **tell** me which dictation refunding is good and give me a score of it?",
-          "tokens": [
-            "We",
-            "pick",
-            "the",
-            "cheapest",
-            "transcript",
-            "provider",
-            "and",
-            "the",
-            "accuracy",
-            "drops",
-            "in",
-            "every",
-            "long",
-            "call."
-          ],
-          "slots": [
-            {
-              "index": 1,
-              "options": [
-                "picked",
-                "picks",
-                "were picking"
-              ],
-              "answer": "picked"
-            },
-            {
-              "index": 9,
-              "options": [
-                "dropped",
-                "drops",
-                "was dropping"
-              ],
-              "answer": "dropped"
-            }
-          ],
-          "sharp": "We picked the cheapest transcript provider and the accuracy dropped in every long call.",
-          "sharp_bn": "আমরা সবচেয়ে সস্তা transcript provider-টা নিয়েছিলাম, আর লম্বা কলে প্রতিবারই accuracy পড়ে যাচ্ছিল।",
-          "coach_bn": "সিদ্ধান্ত আর তার ফল — দুটোই অতীতে। **picked / dropped** এক নিঃশ্বাসে।",
-          "reps": 3,
-          "target_sec": 9
-        },
-        {
-          "id": "s008-tm-2",
-          "station": "time-machine",
-          "cheat": "past simple + nobody caught",
-          "source_date": "2026-08-05",
-          "tokens": [
-            "The",
-            "renderer",
-            "places",
-            "the",
-            "figure",
-            "outside",
-            "the",
-            "frame",
-            "and",
-            "nobody",
-            "catches",
-            "it",
-            "in",
-            "review."
-          ],
-          "slots": [
-            {
-              "index": 2,
-              "options": [
-                "placed",
-                "places",
-                "was placing"
-              ],
-              "answer": "placed"
-            },
-            {
-              "index": 10,
-              "options": [
-                "caught",
-                "catches",
-                "was catching"
-              ],
-              "answer": "caught"
-            }
-          ],
-          "sharp": "The renderer placed the figure outside the frame and nobody caught it in review.",
-          "sharp_bn": "renderer-টা ফিগারটাকে ফ্রেমের বাইরে বসিয়ে দিয়েছিল, আর রিভিউতে কেউ সেটা ধরেনি।",
-          "coach_bn": "**caught** — catch-এর past. বলতে গিয়ে 'catched' বেরিয়ে যায় কি না খেয়াল করো।",
-          "reps": 3,
-          "target_sec": 9
-        }
-      ]
-    },
-    {
-      "station": "ladder",
-      "items": [
-        {
-          "id": "s008-ld-1",
-          "station": "ladder",
-          "cheat": "without + which is why + even though",
-          "rungs": [
-            "We chose the wrong provider.",
-            "We chose the wrong provider without testing a long call.",
-            "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo.",
-            "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage."
-          ],
-          "sharp": "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage.",
-          "sharp_bn": "লম্বা কল টেস্ট না করেই আমরা ভুল provider বেছেছিলাম — সেজন্যই ডেমোতে accuracy ঠিক লাগছিল, যদিও আসল ব্যবহারে সেটা ভেঙে পড়ত।",
-          "coach_bn": "**without + …ing** — একটা শব্দে পুরো ভুলটা বলা হয়ে যায়। RCA-তে খুব কাজের।",
-          "reps": 3,
-          "target_sec": 14
-        },
-        {
-          "id": "s008-ld-2",
-          "station": "ladder",
-          "cheat": "so + kept + which",
-          "rungs": [
-            "Nobody reviewed the animation.",
-            "Nobody reviewed the animation on a real device.",
-            "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame.",
-            "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first."
-          ],
-          "sharp": "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first.",
-          "sharp_bn": "আসল ডিভাইসে কেউ অ্যানিমেশনটা রিভিউ করেনি, তাই ফিগারটা বারবার ফ্রেমের বাইরে হেঁটে যাচ্ছিল — আর প্রত্যেক ইউজারের চোখে প্রথমেই ওটাই পড়ত।",
-          "coach_bn": "**kept walking** — বারবার হওয়া মানে একটাই ঘটনা নয়, প্যাটার্ন। শব্দটা সেটাই বোঝায়।",
-          "reps": 3,
-          "target_sec": 14
-        }
-      ]
-    },
-    {
-      "station": "backward",
-      "items": [
-        {
-          "id": "s008-bw-1",
-          "station": "backward",
-          "cheat": "had judged + so nothing warned us",
-          "chunks": [
-            "We had judged the provider on a two minute demo,",
-            "so nothing warned us",
-            "about what would happen",
-            "in a forty minute call."
-          ],
-          "sharp": "We had judged the provider on a two minute demo, so nothing warned us about what would happen in a forty minute call.",
-          "sharp_bn": "দুই মিনিটের ডেমো দেখেই আমরা provider-টা বিচার করেছিলাম, তাই চল্লিশ মিনিটের কলে কী হবে সেটা কিছুই আগাম জানায়নি।",
-          "coach_bn": "লেজ আগে: **in a forty minute call** → **about what would happen in…** → পুরোটা।",
-          "reps": 3,
-          "target_sec": 14
-        },
-        {
-          "id": "s008-bw-2",
-          "station": "backward",
-          "cheat": "had trusted + so + ended up · দৈনন্দিন",
-          "chunks": [
-            "I had trusted the map,",
-            "so I never asked anyone",
-            "and ended up walking",
-            "in the wrong direction for twenty minutes."
-          ],
-          "sharp": "I had trusted the map, so I never asked anyone and ended up walking in the wrong direction for twenty minutes.",
-          "sharp_bn": "ম্যাপটার উপর ভরসা করেছিলাম, তাই কাউকে জিজ্ঞেসই করিনি — শেষে বিশ মিনিট উল্টো দিকে হাঁটলাম।",
-          "coach_bn": "**ended up + …ing** — অনিচ্ছাকৃত ফল বোঝানোর সবচেয়ে স্বাভাবিক শব্দ।",
-          "reps": 3,
-          "target_sec": 12
-        }
-      ]
-    },
-    {
       "station": "frame",
       "items": [
         {
@@ -305,6 +131,180 @@
           "coach_bn": "ছোট, রোজকার, একই কাঠামো — মুখে বসার জন্য এটাই সবচেয়ে সহজ প্রবেশপথ।",
           "reps": 3,
           "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s008-tm-1",
+          "station": "time-machine",
+          "cheat": "সিদ্ধান্তের ফল → past simple",
+          "source_date": "2026-08-06",
+          "raw": "Can you **give** me— can **tell** me which dictation refunding is good and give me a score of it?",
+          "tokens": [
+            "We",
+            "pick",
+            "the",
+            "cheapest",
+            "transcript",
+            "provider",
+            "and",
+            "the",
+            "accuracy",
+            "drops",
+            "in",
+            "every",
+            "long",
+            "call."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "picked",
+                "picks",
+                "were picking"
+              ],
+              "answer": "picked"
+            },
+            {
+              "index": 9,
+              "options": [
+                "dropped",
+                "drops",
+                "was dropping"
+              ],
+              "answer": "dropped"
+            }
+          ],
+          "sharp": "We picked the cheapest transcript provider and the accuracy dropped in every long call.",
+          "sharp_bn": "আমরা সবচেয়ে সস্তা transcript provider-টা নিয়েছিলাম, আর লম্বা কলে প্রতিবারই accuracy পড়ে যাচ্ছিল।",
+          "coach_bn": "সিদ্ধান্ত আর তার ফল — দুটোই অতীতে। **picked / dropped** এক নিঃশ্বাসে।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s008-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + nobody caught",
+          "source_date": "2026-08-05",
+          "tokens": [
+            "The",
+            "renderer",
+            "places",
+            "the",
+            "figure",
+            "outside",
+            "the",
+            "frame",
+            "and",
+            "nobody",
+            "catches",
+            "it",
+            "in",
+            "review."
+          ],
+          "slots": [
+            {
+              "index": 2,
+              "options": [
+                "placed",
+                "places",
+                "was placing"
+              ],
+              "answer": "placed"
+            },
+            {
+              "index": 10,
+              "options": [
+                "caught",
+                "catches",
+                "was catching"
+              ],
+              "answer": "caught"
+            }
+          ],
+          "sharp": "The renderer placed the figure outside the frame and nobody caught it in review.",
+          "sharp_bn": "renderer-টা ফিগারটাকে ফ্রেমের বাইরে বসিয়ে দিয়েছিল, আর রিভিউতে কেউ সেটা ধরেনি।",
+          "coach_bn": "**caught** — catch-এর past. বলতে গিয়ে 'catched' বেরিয়ে যায় কি না খেয়াল করো।",
+          "reps": 3,
+          "target_sec": 9
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s008-bw-1",
+          "station": "backward",
+          "cheat": "had judged + so nothing warned us",
+          "chunks": [
+            "We had judged the provider on a two minute demo,",
+            "so nothing warned us",
+            "about what would happen",
+            "in a forty minute call."
+          ],
+          "sharp": "We had judged the provider on a two minute demo, so nothing warned us about what would happen in a forty minute call.",
+          "sharp_bn": "দুই মিনিটের ডেমো দেখেই আমরা provider-টা বিচার করেছিলাম, তাই চল্লিশ মিনিটের কলে কী হবে সেটা কিছুই আগাম জানায়নি।",
+          "coach_bn": "লেজ আগে: **in a forty minute call** → **about what would happen in…** → পুরোটা।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s008-bw-2",
+          "station": "backward",
+          "cheat": "had trusted + so + ended up · দৈনন্দিন",
+          "chunks": [
+            "I had trusted the map,",
+            "so I never asked anyone",
+            "and ended up walking",
+            "in the wrong direction for twenty minutes."
+          ],
+          "sharp": "I had trusted the map, so I never asked anyone and ended up walking in the wrong direction for twenty minutes.",
+          "sharp_bn": "ম্যাপটার উপর ভরসা করেছিলাম, তাই কাউকে জিজ্ঞেসই করিনি — শেষে বিশ মিনিট উল্টো দিকে হাঁটলাম।",
+          "coach_bn": "**ended up + …ing** — অনিচ্ছাকৃত ফল বোঝানোর সবচেয়ে স্বাভাবিক শব্দ।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s008-ld-1",
+          "station": "ladder",
+          "cheat": "without + which is why + even though",
+          "rungs": [
+            "We chose the wrong provider.",
+            "We chose the wrong provider without testing a long call.",
+            "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo.",
+            "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage."
+          ],
+          "sharp": "We chose the wrong provider without testing a long call, which is why the accuracy looked fine in the demo, even though it collapsed in real usage.",
+          "sharp_bn": "লম্বা কল টেস্ট না করেই আমরা ভুল provider বেছেছিলাম — সেজন্যই ডেমোতে accuracy ঠিক লাগছিল, যদিও আসল ব্যবহারে সেটা ভেঙে পড়ত।",
+          "coach_bn": "**without + …ing** — একটা শব্দে পুরো ভুলটা বলা হয়ে যায়। RCA-তে খুব কাজের।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s008-ld-2",
+          "station": "ladder",
+          "cheat": "so + kept + which",
+          "rungs": [
+            "Nobody reviewed the animation.",
+            "Nobody reviewed the animation on a real device.",
+            "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame.",
+            "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first."
+          ],
+          "sharp": "Nobody reviewed the animation on a real device, so the figure kept walking out of its frame, which every single user noticed first.",
+          "sharp_bn": "আসল ডিভাইসে কেউ অ্যানিমেশনটা রিভিউ করেনি, তাই ফিগারটা বারবার ফ্রেমের বাইরে হেঁটে যাচ্ছিল — আর প্রত্যেক ইউজারের চোখে প্রথমেই ওটাই পড়ত।",
+          "coach_bn": "**kept walking** — বারবার হওয়া মানে একটাই ঘটনা নয়, প্যাটার্ন। শব্দটা সেটাই বোঝায়।",
+          "reps": 3,
+          "target_sec": 14
         }
       ]
     },

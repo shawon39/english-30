@@ -13,6 +13,112 @@
   ],
   "stations": [
     {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s006-fr-1",
+          "station": "frame",
+          "cheat": "It kept ___ing until I ___.",
+          "frame": "It kept ___ing until I ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "It kept crashing on mobile until I fixed the viewport.",
+              "sharp_bn": "viewport ঠিক না করা পর্যন্ত মোবাইলে বারবার ক্র্যাশ করছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "It kept showing the old font until I cleared the cache.",
+              "sharp_bn": "ক্যাশ ক্লিয়ার না করা পর্যন্ত পুরনো ফন্টটাই দেখাচ্ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It kept raining until I finally reached the office.",
+              "sharp_bn": "অফিসে না পৌঁছানো পর্যন্ত বৃষ্টি হয়েই যাচ্ছিল।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "He kept calling until I picked up the phone.",
+              "sharp_bn": "ফোন না ধরা পর্যন্ত সে কল করেই যাচ্ছিল।"
+            }
+          ],
+          "sharp": "It kept crashing on mobile until I fixed the viewport.",
+          "reps": 4,
+          "coach_bn": "**kept + …ing** = বিরক্তিকরভাবে চলতেই থাকা। একটা শব্দে হতাশাটাও চলে আসে।",
+          "target_sec": 7
+        },
+        {
+          "id": "s006-fr-2",
+          "station": "frame",
+          "cheat": "The problem was that ___.",
+          "frame": "The problem was that ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "The problem was that the figure moved outside its box.",
+              "sharp_bn": "সমস্যা ছিল, ফিগারটা তার বক্সের বাইরে চলে যাচ্ছিল।"
+            },
+            {
+              "scene": "office",
+              "sharp": "The problem was that nobody had tested it on a small screen.",
+              "sharp_bn": "সমস্যা ছিল, ছোট স্ক্রিনে কেউ এটা টেস্ট করেনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The problem was that I had left my charger at home.",
+              "sharp_bn": "সমস্যা ছিল, চার্জারটা বাসায় ফেলে এসেছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "The problem was that the shop closed earlier on Fridays.",
+              "sharp_bn": "সমস্যা ছিল, শুক্রবারে দোকানটা আগেই বন্ধ হয়ে যেত।"
+            }
+          ],
+          "sharp": "The problem was that the figure moved outside its box.",
+          "reps": 4,
+          "coach_bn": "\"the problem is\" নয় — ঘটনাটা শেষ, তাই **was**। তোমার সবচেয়ে ঘন ঘন slip এখানেই।",
+          "target_sec": 7
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s006-bw-1",
+          "station": "backward",
+          "cheat": "only after + which is why",
+          "chunks": [
+            "I only shipped the layout change",
+            "after it looked right on my phone,",
+            "which is why nobody",
+            "complained about mobile this time."
+          ],
+          "sharp": "I only shipped the layout change after it looked right on my phone, which is why nobody complained about mobile this time.",
+          "sharp_bn": "নিজের ফোনে ঠিকঠাক দেখানোর পরেই কেবল লেআউটটা ছেড়েছি — সেজন্যই এবার মোবাইল নিয়ে কেউ অভিযোগ করেনি।",
+          "coach_bn": "লেজ আগে: **complained about mobile this time** → পুরোটা। শেষটা রেডি থাকলে শুরুটা ভয় লাগে না।",
+          "reps": 3,
+          "target_sec": 13
+        },
+        {
+          "id": "s006-bw-2",
+          "station": "backward",
+          "cheat": "had promised + by then had already · দৈনন্দিন",
+          "chunks": [
+            "I had promised to call at nine,",
+            "but the meeting ran late",
+            "and by then everyone at home",
+            "had already eaten."
+          ],
+          "sharp": "I had promised to call at nine, but the meeting ran late and by then everyone at home had already eaten.",
+          "sharp_bn": "নয়টায় ফোন করব বলেছিলাম, কিন্তু মিটিং দেরি হয়ে গেল — ততক্ষণে বাসার সবাই খেয়ে ফেলেছিল।",
+          "coach_bn": "একই বাক্যে তিন স্তর: **had promised** → **ran** → **had already eaten**। এটাই আসল টাইমলাইন বলা।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
       "station": "time-machine",
       "items": [
         {
@@ -142,112 +248,6 @@
           "coach_bn": "**who had built** — নামটা যোগ করার আগেই বানানোর কাজ শেষ। দুটো অতীতের ক্রম।",
           "reps": 3,
           "target_sec": 14
-        }
-      ]
-    },
-    {
-      "station": "backward",
-      "items": [
-        {
-          "id": "s006-bw-1",
-          "station": "backward",
-          "cheat": "only after + which is why",
-          "chunks": [
-            "I only shipped the layout change",
-            "after it looked right on my phone,",
-            "which is why nobody",
-            "complained about mobile this time."
-          ],
-          "sharp": "I only shipped the layout change after it looked right on my phone, which is why nobody complained about mobile this time.",
-          "sharp_bn": "নিজের ফোনে ঠিকঠাক দেখানোর পরেই কেবল লেআউটটা ছেড়েছি — সেজন্যই এবার মোবাইল নিয়ে কেউ অভিযোগ করেনি।",
-          "coach_bn": "লেজ আগে: **complained about mobile this time** → পুরোটা। শেষটা রেডি থাকলে শুরুটা ভয় লাগে না।",
-          "reps": 3,
-          "target_sec": 13
-        },
-        {
-          "id": "s006-bw-2",
-          "station": "backward",
-          "cheat": "had promised + by then had already · দৈনন্দিন",
-          "chunks": [
-            "I had promised to call at nine,",
-            "but the meeting ran late",
-            "and by then everyone at home",
-            "had already eaten."
-          ],
-          "sharp": "I had promised to call at nine, but the meeting ran late and by then everyone at home had already eaten.",
-          "sharp_bn": "নয়টায় ফোন করব বলেছিলাম, কিন্তু মিটিং দেরি হয়ে গেল — ততক্ষণে বাসার সবাই খেয়ে ফেলেছিল।",
-          "coach_bn": "একই বাক্যে তিন স্তর: **had promised** → **ran** → **had already eaten**। এটাই আসল টাইমলাইন বলা।",
-          "reps": 3,
-          "target_sec": 12
-        }
-      ]
-    },
-    {
-      "station": "frame",
-      "items": [
-        {
-          "id": "s006-fr-1",
-          "station": "frame",
-          "cheat": "It kept ___ing until I ___.",
-          "frame": "It kept ___ing until I ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "It kept crashing on mobile until I fixed the viewport.",
-              "sharp_bn": "viewport ঠিক না করা পর্যন্ত মোবাইলে বারবার ক্র্যাশ করছিল।"
-            },
-            {
-              "scene": "office",
-              "sharp": "It kept showing the old font until I cleared the cache.",
-              "sharp_bn": "ক্যাশ ক্লিয়ার না করা পর্যন্ত পুরনো ফন্টটাই দেখাচ্ছিল।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "It kept raining until I finally reached the office.",
-              "sharp_bn": "অফিসে না পৌঁছানো পর্যন্ত বৃষ্টি হয়েই যাচ্ছিল।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "He kept calling until I picked up the phone.",
-              "sharp_bn": "ফোন না ধরা পর্যন্ত সে কল করেই যাচ্ছিল।"
-            }
-          ],
-          "sharp": "It kept crashing on mobile until I fixed the viewport.",
-          "reps": 4,
-          "coach_bn": "**kept + …ing** = বিরক্তিকরভাবে চলতেই থাকা। একটা শব্দে হতাশাটাও চলে আসে।",
-          "target_sec": 7
-        },
-        {
-          "id": "s006-fr-2",
-          "station": "frame",
-          "cheat": "The problem was that ___.",
-          "frame": "The problem was that ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "The problem was that the figure moved outside its box.",
-              "sharp_bn": "সমস্যা ছিল, ফিগারটা তার বক্সের বাইরে চলে যাচ্ছিল।"
-            },
-            {
-              "scene": "office",
-              "sharp": "The problem was that nobody had tested it on a small screen.",
-              "sharp_bn": "সমস্যা ছিল, ছোট স্ক্রিনে কেউ এটা টেস্ট করেনি।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "The problem was that I had left my charger at home.",
-              "sharp_bn": "সমস্যা ছিল, চার্জারটা বাসায় ফেলে এসেছিলাম।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "The problem was that the shop closed earlier on Fridays.",
-              "sharp_bn": "সমস্যা ছিল, শুক্রবারে দোকানটা আগেই বন্ধ হয়ে যেত।"
-            }
-          ],
-          "sharp": "The problem was that the figure moved outside its box.",
-          "reps": 4,
-          "coach_bn": "\"the problem is\" নয় — ঘটনাটা শেষ, তাই **was**। তোমার সবচেয়ে ঘন ঘন slip এখানেই।",
-          "target_sec": 7
         }
       ]
     },

@@ -13,6 +13,75 @@
   ],
   "stations": [
     {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s002-fr-1",
+          "station": "frame",
+          "cheat": "By the time ___, I had already ___.",
+          "frame": "By the time ___, I had already ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "By the time the standup started, I had already read the failing logs.",
+              "sharp_bn": "স্ট্যান্ডআপ শুরু হওয়ার আগেই আমি ফেল করা লগগুলো পড়ে ফেলেছিলাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "By the time you replied, I had already deployed both files.",
+              "sharp_bn": "তুমি উত্তর দেওয়ার আগেই আমি দুটো ফাইলই deploy করে ফেলেছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "By the time I got home, I had already eaten on the way.",
+              "sharp_bn": "বাসায় পৌঁছানোর আগেই আমি পথে খেয়ে নিয়েছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "By the time the film started, I had already fallen asleep.",
+              "sharp_bn": "সিনেমা শুরু হওয়ার আগেই আমি ঘুমিয়ে পড়েছিলাম।"
+            }
+          ],
+          "sharp": "By the time the standup started, I had already read the failing logs.",
+          "reps": 4,
+          "coach_bn": "**By the time X, I had already Y** — দুটো অতীতের ক্রম এক ছাঁচে। চারবার বললে আর ভাবতে হবে না।",
+          "target_sec": 8
+        },
+        {
+          "id": "s002-fr-2",
+          "station": "frame",
+          "cheat": "Before that, we had ___.",
+          "frame": "Before that, we had ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Before that, we had never touched the record type settings.",
+              "sharp_bn": "তার আগে আমরা record type সেটিংসে কখনো হাত দিইনি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Before that, we had run the same query every single morning.",
+              "sharp_bn": "তার আগে আমরা প্রতিদিন সকালে একই query চালাতাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before that, I had never cooked anything on my own.",
+              "sharp_bn": "তার আগে আমি নিজে কখনো কিছু রান্না করিনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before that, we had lived in the same building for years.",
+              "sharp_bn": "তার আগে আমরা বছরের পর বছর একই বিল্ডিংয়ে ছিলাম।"
+            }
+          ],
+          "sharp": "Before that, we had never touched the record type settings.",
+          "reps": 4,
+          "coach_bn": "গল্পে পেছনে ফেরার সুইচ। **Before that, we had…** বললেই শ্রোতা বুঝে যায় তুমি আগের ধাপে যাচ্ছো।",
+          "target_sec": 7
+        }
+      ]
+    },
+    {
       "station": "time-machine",
       "items": [
         {
@@ -151,114 +220,6 @@
       ]
     },
     {
-      "station": "backward",
-      "items": [
-        {
-          "id": "s002-bw-1",
-          "station": "backward",
-          "cheat": "By the time + had already + that had been",
-          "source_date": "2026-07-28",
-          "raw": "no, no, no. there **are** two issues that's right. One **is** formula field, another one **is** this over calculating two things.",
-          "chunks": [
-            "By the time the client emailed,",
-            "we had already found the formula",
-            "that had been double counting",
-            "the contract value."
-          ],
-          "sharp": "By the time the client emailed, we had already found the formula that had been double counting the contract value.",
-          "sharp_bn": "ক্লায়েন্ট মেইল করার আগেই আমরা সেই ফর্মুলাটা পেয়ে গিয়েছিলাম, যেটা contract value দুইবার করে গুনছিল।",
-          "coach_bn": "লেজ আগে: **the contract value** → **that had been double counting the contract value** → পুরোটা। রিস্টার্ট লুপ এখানেই মরে।",
-          "reps": 3,
-          "target_sec": 12
-        },
-        {
-          "id": "s002-bw-2",
-          "station": "backward",
-          "cheat": "had already + by the time · দৈনন্দিন",
-          "chunks": [
-            "I had left home early,",
-            "but the bus had already gone",
-            "by the time I reached",
-            "the main road."
-          ],
-          "sharp": "I had left home early, but the bus had already gone by the time I reached the main road.",
-          "sharp_bn": "বাসা থেকে তাড়াতাড়িই বেরিয়েছিলাম, কিন্তু মেইন রোডে পৌঁছাতে পৌঁছাতে বাসটা চলে গিয়েছিল।",
-          "coach_bn": "একই বাক্যে দুটো **had** — একটা তোমার বেরোনো, একটা বাসের চলে যাওয়া। ক্রমটা শ্রোতা নিজেই বুঝে নেয়।",
-          "reps": 3,
-          "target_sec": 12
-        }
-      ]
-    },
-    {
-      "station": "frame",
-      "items": [
-        {
-          "id": "s002-fr-1",
-          "station": "frame",
-          "cheat": "By the time ___, I had already ___.",
-          "frame": "By the time ___, I had already ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "By the time the standup started, I had already read the failing logs.",
-              "sharp_bn": "স্ট্যান্ডআপ শুরু হওয়ার আগেই আমি ফেল করা লগগুলো পড়ে ফেলেছিলাম।"
-            },
-            {
-              "scene": "office",
-              "sharp": "By the time you replied, I had already deployed both files.",
-              "sharp_bn": "তুমি উত্তর দেওয়ার আগেই আমি দুটো ফাইলই deploy করে ফেলেছিলাম।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "By the time I got home, I had already eaten on the way.",
-              "sharp_bn": "বাসায় পৌঁছানোর আগেই আমি পথে খেয়ে নিয়েছিলাম।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "By the time the film started, I had already fallen asleep.",
-              "sharp_bn": "সিনেমা শুরু হওয়ার আগেই আমি ঘুমিয়ে পড়েছিলাম।"
-            }
-          ],
-          "sharp": "By the time the standup started, I had already read the failing logs.",
-          "reps": 4,
-          "coach_bn": "**By the time X, I had already Y** — দুটো অতীতের ক্রম এক ছাঁচে। চারবার বললে আর ভাবতে হবে না।",
-          "target_sec": 8
-        },
-        {
-          "id": "s002-fr-2",
-          "station": "frame",
-          "cheat": "Before that, we had ___.",
-          "frame": "Before that, we had ___.",
-          "fills": [
-            {
-              "scene": "office",
-              "sharp": "Before that, we had never touched the record type settings.",
-              "sharp_bn": "তার আগে আমরা record type সেটিংসে কখনো হাত দিইনি।"
-            },
-            {
-              "scene": "office",
-              "sharp": "Before that, we had run the same query every single morning.",
-              "sharp_bn": "তার আগে আমরা প্রতিদিন সকালে একই query চালাতাম।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "Before that, I had never cooked anything on my own.",
-              "sharp_bn": "তার আগে আমি নিজে কখনো কিছু রান্না করিনি।"
-            },
-            {
-              "scene": "daily",
-              "sharp": "Before that, we had lived in the same building for years.",
-              "sharp_bn": "তার আগে আমরা বছরের পর বছর একই বিল্ডিংয়ে ছিলাম।"
-            }
-          ],
-          "sharp": "Before that, we had never touched the record type settings.",
-          "reps": 4,
-          "coach_bn": "গল্পে পেছনে ফেরার সুইচ। **Before that, we had…** বললেই শ্রোতা বুঝে যায় তুমি আগের ধাপে যাচ্ছো।",
-          "target_sec": 7
-        }
-      ]
-    },
-    {
       "station": "if-machine",
       "items": [
         {
@@ -308,6 +269,45 @@
           "coach_bn": "রোজকার আফসোস, একই কাঠামো। **would not have waited** — এক টানে বলার প্র্যাকটিস।",
           "reps": 3,
           "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s002-bw-1",
+          "station": "backward",
+          "cheat": "By the time + had already + that had been",
+          "source_date": "2026-07-28",
+          "raw": "no, no, no. there **are** two issues that's right. One **is** formula field, another one **is** this over calculating two things.",
+          "chunks": [
+            "By the time the client emailed,",
+            "we had already found the formula",
+            "that had been double counting",
+            "the contract value."
+          ],
+          "sharp": "By the time the client emailed, we had already found the formula that had been double counting the contract value.",
+          "sharp_bn": "ক্লায়েন্ট মেইল করার আগেই আমরা সেই ফর্মুলাটা পেয়ে গিয়েছিলাম, যেটা contract value দুইবার করে গুনছিল।",
+          "coach_bn": "লেজ আগে: **the contract value** → **that had been double counting the contract value** → পুরোটা। রিস্টার্ট লুপ এখানেই মরে।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s002-bw-2",
+          "station": "backward",
+          "cheat": "had already + by the time · দৈনন্দিন",
+          "chunks": [
+            "I had left home early,",
+            "but the bus had already gone",
+            "by the time I reached",
+            "the main road."
+          ],
+          "sharp": "I had left home early, but the bus had already gone by the time I reached the main road.",
+          "sharp_bn": "বাসা থেকে তাড়াতাড়িই বেরিয়েছিলাম, কিন্তু মেইন রোডে পৌঁছাতে পৌঁছাতে বাসটা চলে গিয়েছিল।",
+          "coach_bn": "একই বাক্যে দুটো **had** — একটা তোমার বেরোনো, একটা বাসের চলে যাওয়া। ক্রমটা শ্রোতা নিজেই বুঝে নেয়।",
+          "reps": 3,
+          "target_sec": 12
         }
       ]
     },

@@ -110,78 +110,55 @@
       ]
     },
     {
-      "station": "ladder",
+      "station": "if-machine",
       "items": [
         {
-          "id": "s003-ld-1",
-          "station": "ladder",
-          "cheat": "that nobody had V3 + because + which",
-          "rungs": [
-            "We shipped a wrong total.",
-            "We shipped a wrong total that nobody had reviewed.",
-            "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field.",
-            "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field, which is exactly what a guard would have caught."
+          "id": "s003-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3",
+          "tiles": [
+            "If somebody",
+            "had reviewed the formula,",
+            "the client would not have received",
+            "a wrong invoice."
           ],
-          "sharp": "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field, which is exactly what a guard would have caught.",
-          "sharp_bn": "আমরা এমন একটা ভুল টোটাল পাঠিয়েছিলাম যেটা কেউ রিভিউ করেনি, কারণ ফর্মুলাটা পুরনো একটা ফিল্ড থেকে কপি করা হয়েছিল — আর ঠিক এটাই একটা guard ধরে ফেলত।",
-          "coach_bn": "একটা বাক্যে ঘটনা, কারণ আর সমাধান। **had reviewed / had been copied / would have caught** — তিন স্তর।",
+          "sharp": "If somebody had reviewed the formula, the client would not have received a wrong invoice.",
+          "sharp_bn": "কেউ ফর্মুলাটা রিভিউ করলে ক্লায়েন্ট ভুল ইনভয়েস পেত না।",
+          "coach_bn": "**somebody** দিয়ে শুরু করলে নাম ধরে দোষ দিতে হয় না — কিন্তু সমস্যাটা স্পষ্ট থাকে।",
           "reps": 3,
-          "target_sec": 14
+          "target_sec": 10
         },
         {
-          "id": "s003-ld-2",
-          "station": "ladder",
-          "cheat": "who had no + should have been + so",
-          "rungs": [
-            "The record type appeared.",
-            "The record type appeared for a user who had no permission.",
-            "The record type appeared for a user who had no permission, which should have been impossible.",
-            "The record type appeared for a user who had no permission, which should have been impossible, so we treated it as a security bug."
+          "id": "s003-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → none of this would have V3",
+          "tiles": [
+            "If the pipeline",
+            "had checked permissions,",
+            "none of this",
+            "would have reached a real user."
           ],
-          "sharp": "The record type appeared for a user who had no permission, which should have been impossible, so we treated it as a security bug.",
-          "sharp_bn": "record type-টা এমন একজনের কাছে দেখা গিয়েছিল যার কোনো permission ছিল না — যেটা হওয়ারই কথা ছিল না, তাই আমরা এটাকে সিকিউরিটি বাগ ধরে নিয়েছিলাম।",
-          "coach_bn": "**should have been impossible** — অভিযোগ না করেই গুরুত্ব বোঝানোর লাইন। মিটিংয়ে এটা কাজ করে।",
+          "sharp": "If the pipeline had checked permissions, none of this would have reached a real user.",
+          "sharp_bn": "pipeline যদি permission মিলিয়ে দেখত, এসবের কিছুই আসল ইউজার পর্যন্ত পৌঁছাত না।",
+          "coach_bn": "**none of this would have reached** — এক লাইনে পুরো ইনসিডেন্টের ওজন।",
           "reps": 3,
-          "target_sec": 14
-        }
-      ]
-    },
-    {
-      "station": "backward",
-      "items": [
-        {
-          "id": "s003-bw-1",
-          "station": "backward",
-          "cheat": "Nobody had V3 + so + who was never",
-          "source_date": "2026-08-06",
-          "raw": "Is it like a pipeline **randomly just select** one record type, there **was no guard** or something like that.",
-          "chunks": [
-            "Nobody had put a guard on the pipeline,",
-            "so a random record type",
-            "could reach a user",
-            "who was never given it."
-          ],
-          "sharp": "Nobody had put a guard on the pipeline, so a random record type could reach a user who was never given it.",
-          "sharp_bn": "pipeline-এ কেউ কোনো guard বসায়নি, তাই যেকোনো record type এমন একজনের কাছে পৌঁছে যেতে পারত যাকে ওটা কখনো দেওয়াই হয়নি।",
-          "coach_bn": "লেজ থেকে গাঁথো: **who was never given it** → **could reach a user who…** → পুরোটা।",
-          "reps": 3,
-          "target_sec": 13
+          "target_sec": 10
         },
         {
-          "id": "s003-bw-2",
-          "station": "backward",
-          "cheat": "had not V3 + so + দৈনন্দিন",
-          "chunks": [
-            "I had not checked the weather,",
-            "so I left without an umbrella",
-            "and reached the office",
+          "id": "s003-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had carried an umbrella,",
+            "I would not have arrived",
             "completely soaked."
           ],
-          "sharp": "I had not checked the weather, so I left without an umbrella and reached the office completely soaked.",
-          "sharp_bn": "আবহাওয়াটা দেখে নিইনি, তাই ছাতা ছাড়াই বেরিয়ে গেলাম আর অফিসে পৌঁছালাম পুরো ভিজে।",
-          "coach_bn": "একই কাঠামো, বাসার গল্পে। **had not checked** = ভুলটা আগে, ফল পরে।",
+          "sharp": "If I had carried an umbrella, I would not have arrived completely soaked.",
+          "sharp_bn": "ছাতাটা নিলে পুরো ভিজে পৌঁছাতে হতো না।",
+          "coach_bn": "অফিস আর বাসা এক ছাঁচে। যত জায়গায় খাটে, তত তাড়াতাড়ি মুখে বসে।",
           "reps": 3,
-          "target_sec": 11
+          "target_sec": 8
         }
       ]
     },
@@ -255,55 +232,78 @@
       ]
     },
     {
-      "station": "if-machine",
+      "station": "backward",
       "items": [
         {
-          "id": "s003-if-1",
-          "station": "if-machine",
-          "cheat": "If + had V3 → would not have V3",
-          "tiles": [
-            "If somebody",
-            "had reviewed the formula,",
-            "the client would not have received",
-            "a wrong invoice."
+          "id": "s003-bw-1",
+          "station": "backward",
+          "cheat": "Nobody had V3 + so + who was never",
+          "source_date": "2026-08-06",
+          "raw": "Is it like a pipeline **randomly just select** one record type, there **was no guard** or something like that.",
+          "chunks": [
+            "Nobody had put a guard on the pipeline,",
+            "so a random record type",
+            "could reach a user",
+            "who was never given it."
           ],
-          "sharp": "If somebody had reviewed the formula, the client would not have received a wrong invoice.",
-          "sharp_bn": "কেউ ফর্মুলাটা রিভিউ করলে ক্লায়েন্ট ভুল ইনভয়েস পেত না।",
-          "coach_bn": "**somebody** দিয়ে শুরু করলে নাম ধরে দোষ দিতে হয় না — কিন্তু সমস্যাটা স্পষ্ট থাকে।",
+          "sharp": "Nobody had put a guard on the pipeline, so a random record type could reach a user who was never given it.",
+          "sharp_bn": "pipeline-এ কেউ কোনো guard বসায়নি, তাই যেকোনো record type এমন একজনের কাছে পৌঁছে যেতে পারত যাকে ওটা কখনো দেওয়াই হয়নি।",
+          "coach_bn": "লেজ থেকে গাঁথো: **who was never given it** → **could reach a user who…** → পুরোটা।",
           "reps": 3,
-          "target_sec": 10
+          "target_sec": 13
         },
         {
-          "id": "s003-if-2",
-          "station": "if-machine",
-          "cheat": "If + had V3 → none of this would have V3",
-          "tiles": [
-            "If the pipeline",
-            "had checked permissions,",
-            "none of this",
-            "would have reached a real user."
-          ],
-          "sharp": "If the pipeline had checked permissions, none of this would have reached a real user.",
-          "sharp_bn": "pipeline যদি permission মিলিয়ে দেখত, এসবের কিছুই আসল ইউজার পর্যন্ত পৌঁছাত না।",
-          "coach_bn": "**none of this would have reached** — এক লাইনে পুরো ইনসিডেন্টের ওজন।",
-          "reps": 3,
-          "target_sec": 10
-        },
-        {
-          "id": "s003-if-3",
-          "station": "if-machine",
-          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
-          "tiles": [
-            "If I",
-            "had carried an umbrella,",
-            "I would not have arrived",
+          "id": "s003-bw-2",
+          "station": "backward",
+          "cheat": "had not V3 + so + দৈনন্দিন",
+          "chunks": [
+            "I had not checked the weather,",
+            "so I left without an umbrella",
+            "and reached the office",
             "completely soaked."
           ],
-          "sharp": "If I had carried an umbrella, I would not have arrived completely soaked.",
-          "sharp_bn": "ছাতাটা নিলে পুরো ভিজে পৌঁছাতে হতো না।",
-          "coach_bn": "অফিস আর বাসা এক ছাঁচে। যত জায়গায় খাটে, তত তাড়াতাড়ি মুখে বসে।",
+          "sharp": "I had not checked the weather, so I left without an umbrella and reached the office completely soaked.",
+          "sharp_bn": "আবহাওয়াটা দেখে নিইনি, তাই ছাতা ছাড়াই বেরিয়ে গেলাম আর অফিসে পৌঁছালাম পুরো ভিজে।",
+          "coach_bn": "একই কাঠামো, বাসার গল্পে। **had not checked** = ভুলটা আগে, ফল পরে।",
           "reps": 3,
-          "target_sec": 8
+          "target_sec": 11
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s003-ld-1",
+          "station": "ladder",
+          "cheat": "that nobody had V3 + because + which",
+          "rungs": [
+            "We shipped a wrong total.",
+            "We shipped a wrong total that nobody had reviewed.",
+            "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field.",
+            "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field, which is exactly what a guard would have caught."
+          ],
+          "sharp": "We shipped a wrong total that nobody had reviewed, because the formula had been copied from an old field, which is exactly what a guard would have caught.",
+          "sharp_bn": "আমরা এমন একটা ভুল টোটাল পাঠিয়েছিলাম যেটা কেউ রিভিউ করেনি, কারণ ফর্মুলাটা পুরনো একটা ফিল্ড থেকে কপি করা হয়েছিল — আর ঠিক এটাই একটা guard ধরে ফেলত।",
+          "coach_bn": "একটা বাক্যে ঘটনা, কারণ আর সমাধান। **had reviewed / had been copied / would have caught** — তিন স্তর।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s003-ld-2",
+          "station": "ladder",
+          "cheat": "who had no + should have been + so",
+          "rungs": [
+            "The record type appeared.",
+            "The record type appeared for a user who had no permission.",
+            "The record type appeared for a user who had no permission, which should have been impossible.",
+            "The record type appeared for a user who had no permission, which should have been impossible, so we treated it as a security bug."
+          ],
+          "sharp": "The record type appeared for a user who had no permission, which should have been impossible, so we treated it as a security bug.",
+          "sharp_bn": "record type-টা এমন একজনের কাছে দেখা গিয়েছিল যার কোনো permission ছিল না — যেটা হওয়ারই কথা ছিল না, তাই আমরা এটাকে সিকিউরিটি বাগ ধরে নিয়েছিলাম।",
+          "coach_bn": "**should have been impossible** — অভিযোগ না করেই গুরুত্ব বোঝানোর লাইন। মিটিংয়ে এটা কাজ করে।",
+          "reps": 3,
+          "target_sec": 14
         }
       ]
     },
