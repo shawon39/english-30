@@ -1,28 +1,51 @@
-# English 30
+# রিপ্লে — Replay
 
-A 30-day, 100-session tap-first grammar drilling game (tenses, conditionals, modals).
-Vanilla HTML + CSS + ES modules. No build step. See [PLAN.md](PLAN.md) for the full design.
+তোমার নিজের কথা থেকে বানানো স্পিকিং ড্রিল। লক্ষ্য একটাই: **অতীত ঘটনা, হাইপোথেটিক্যাল
+সিচুয়েশন আর লম্বা জটিল বাক্য** মুখে বসানো — রুল মুখস্থ করে নয়, রেপ দিয়ে।
 
-## Run locally
+প্রতিটা বাক্য তোমার VoiceInk ট্রান্সক্রিপ্ট থেকে নেওয়া (৪৬৬ রেকর্ডিং · ২০,১২৭ শব্দ)।
+কার্ডে প্রথমেই তোমার আসল লাইনটা দেখবে, তারপর তার নিখুঁত রিপ্লে।
 
-ES modules need to be served over HTTP (not `file://`). From the project root:
+ডিজাইন ও ডায়াগনোসিসের পুরো যুক্তি: [PLAN-V3.md](PLAN-V3.md)
+
+## ছয়টা স্টেশন
+
+| স্টেশন | ড্রিল |
+|---|---|
+| ⏪ টাইম মেশিন | present-এ বলা ঘটনা ট্যাপ করে past-এ ফ্লিপ করো |
+| 🪜 সিঁড়ি | ৫ শব্দ → ২৩ শব্দ, প্রতি ধাপে এক clause |
+| 🧵 উল্টো গাঁথা | বাক্যের লেজ আগে, তারপর সামনে জোড়া |
+| 🧩 ছাঁচ | এক প্যাটার্ন, পাঁচ ভরাট (অফিস + দৈনন্দিন) |
+| 🌀 যদি-মেশিন | আসল ঘটনা → `would have` ভার্সন |
+| 🎤 বস | একই গল্প ৬০ → ৪৫ → ৩০ সেকেন্ডে |
+
+প্রতিটা টার্গেট বাক্যে 🔊 অডিও (ব্রাউজারের স্পিচ ইঞ্জিন), ০.৭৫× / ১× / ১.২৫× গতি,
+আর যে শব্দটা বাজছে সেটা হাইলাইট হয়।
+
+## লোকালি চালানো
+
+ES modules HTTP-তে লাগে (`file://` চলবে না):
 
 ```bash
 python3 -m http.server 8000
-# then open http://localhost:8000
+# http://localhost:8000
 ```
 
-## Add content (your 10 shots)
+## গ্রামার আর্কাইভ
 
-Drop day files into `content/` as `day-01.json` … `day-30.json` (schema `2.0`, see PLAN.md).
-The home map auto-detects which days exist and unlocks them. Append-only — nothing to wire up.
+পুরনো ৩৮ দিনের গ্রামার কোর্সটা [`/archive/`](archive/) -এ অক্ষত আছে — হোম স্ক্রিনের
+📚 বোতাম থেকে এক ট্যাপ দূরে। ওটার প্রগ্রেসও (`eng30:v2:*`) আলাদা কী-তে থাকায় হারায়নি।
 
-`content/day-01.json` ships as a hand-built sample to validate the schema and feel; overwrite it with your Shot 1.
+## কনটেন্ট যোগ করা
 
-## Deploy (GitHub Pages)
+`content/set-000.json`, `set-001.json` … ফাইল ড্রপ করো (স্কিমা `3.1`, PLAN-V3.md দেখো)।
+অ্যাপ নিজেই খুঁজে নেয় — নম্বরে ফাঁক রেখো না, প্রথম ফাঁকেই খোঁজা থামে।
 
-Push to GitHub → Settings → Pages → deploy from branch (root). `.nojekyll` keeps Pages from touching the files.
+## প্রগ্রেস
 
-## Your progress
+ব্রাউজারের `localStorage`-এ (`eng30:v3:*`)। হোম থেকে **ব্যাকআপ** দিয়ে
+`replay-progress.json` নামিয়ে রাখো, **ফেরাও** দিয়ে অন্য ডিভাইসে নাও।
 
-Lives in this browser's `localStorage`. Use **Export** on the home screen to download `progress.json` as a backup, and **Import** to restore it or move to another device.
+## ডিপ্লয়
+
+GitHub Pages → Settings → Pages → deploy from branch (root)। `.nojekyll` আছে।

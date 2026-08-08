@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "3.1",
+  "set": 0,
+  "world": "standup-replay",
+  "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+  "title_bn": "গতকাল কী হয়েছিল",
+  "desc_bn": "তোমার নিজের ৬ আগস্টের record-type bug আর deploy-এর কথা — এবার অতীতে বসিয়ে, লম্বা করে, এক দমে।",
+  "minutes": 8,
+  "cheats": ["was …ing + when", "had already", "would have"],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s000-tm-1",
+          "station": "time-machine",
+          "cheat": "শেষ হওয়া ঘটনা → past simple",
+          "source_date": "2026-08-06",
+          "raw": "After we **give** the new record type and previously there was a custom record type there, it **wouldn't create** any issue before. So what **is** the issue?",
+          "tokens": ["After", "we", "add", "the", "new", "record", "type,", "PipeLaunch", "starts", "picking", "the", "wrong", "one."],
+          "slots": [
+            { "index": 2, "options": ["added", "add", "was adding"], "answer": "added" },
+            { "index": 8, "options": ["started", "starts", "was starting"], "answer": "started" }
+          ],
+          "sharp": "After we added the new record type, PipeLaunch started picking the wrong one.",
+          "sharp_bn": "নতুন record type যোগ করার পর PipeLaunch ভুলটা বাছা শুরু করলো।",
+          "coach_bn": "ঘটনাটা শেষ হয়ে গেছে, তাই **added / started**। তোমার আসল লাইনে পুরো গল্পটা present-এ বলা ছিল — শ্রোতাকে টাইমলাইনটা নিজে বানিয়ে নিতে হয়েছিল।",
+          "target_sec": 6,
+          "reps": 3
+        },
+        {
+          "id": "s000-tm-2",
+          "station": "time-machine",
+          "cheat": "was …ing + when + past simple",
+          "source_date": "2026-08-05",
+          "raw": "At the local host server I **am seeing** like something I have made some kind of improvement regarding the visual edition",
+          "tokens": ["I", "am", "checking", "localhost", "when", "the", "layout", "breaks", "on", "mobile."],
+          "slots": [
+            { "index": 1, "options": ["was", "am", "have been"], "answer": "was" },
+            { "index": 7, "options": ["broke", "breaks", "was breaking"], "answer": "broke" }
+          ],
+          "sharp": "I was checking localhost when the layout broke on mobile.",
+          "sharp_bn": "আমি localhost দেখছিলাম, ঠিক তখনই মোবাইলে লেআউটটা ভেঙে গেল।",
+          "coach_bn": "চলতে থাকা কাজ = **was checking**, হঠাৎ ঘটনা = **broke**। গল্প বলার সবচেয়ে কাজের জোড়া — একবার মুখে বসলে যেকোনো ঘটনা বলা যায়।",
+          "target_sec": 6,
+          "reps": 3
+        },
+        {
+          "id": "s000-tm-3",
+          "station": "time-machine",
+          "cheat": "একই ছাঁচ · দৈনন্দিন",
+          "tokens": ["I", "am", "waiting", "for", "the", "bus", "when", "the", "rain", "starts."],
+          "slots": [
+            { "index": 1, "options": ["was", "am", "were"], "answer": "was" },
+            { "index": 9, "options": ["started", "starts", "was starting"], "answer": "started" }
+          ],
+          "sharp": "I was waiting for the bus when the rain started.",
+          "sharp_bn": "আমি বাসের জন্য দাঁড়িয়ে ছিলাম, তখনই বৃষ্টিটা শুরু হলো।",
+          "coach_bn": "অফিসের বাইরেও একই ইঞ্জিন। **was + …ing … when … past simple** — বাসার গল্প, ট্রাফিকের গল্প, সব এই ছাঁচে।",
+          "target_sec": 5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s000-ld-1",
+          "station": "ladder",
+          "cheat": "we'd retrieved + so that + even though",
+          "source_date": "2026-07-28",
+          "raw": "Okay, now the two files you have retrieved from MGMT production, I want to deploy them MGMT UT. Okay, **so** can you do this?",
+          "rungs": [
+            "I deployed the two files.",
+            "I deployed the two files we'd retrieved from production.",
+            "I deployed the two files we'd retrieved from production, so that UAT could start on time.",
+            "I deployed the two files we'd retrieved from production, so that UAT could start on time, even though the sandbox refresh was still running."
+          ],
+          "sharp": "I deployed the two files we'd retrieved from production, so that UAT could start on time, even though the sandbox refresh was still running.",
+          "sharp_bn": "production থেকে আনা ফাইল দুটো deploy করে দিয়েছিলাম, যাতে UAT সময়মতো শুরু হতে পারে — যদিও sandbox refresh তখনো চলছিল।",
+          "coach_bn": "৫ শব্দ থেকে ২৩ শব্দ, কিন্তু কোনো ধাপে লাফ নেই। **we'd retrieved** জিভে নতুন — ঠিক সেজন্যই তিনবার।",
+          "target_sec": 9,
+          "reps": 3
+        },
+        {
+          "id": "s000-ld-2",
+          "station": "ladder",
+          "cheat": "even though he'd been + which is why",
+          "source_date": "2026-08-06",
+          "raw": "Even he **doesn't know** the— even though he **doesn't know** the— even though he **doesn't have** the permission of that record type",
+          "rungs": [
+            "Mike hit a bug.",
+            "Mike hit a bug he couldn't explain.",
+            "Mike hit a bug he couldn't explain, even though he'd never been given that permission.",
+            "Mike hit a bug he couldn't explain, even though he'd never been given that permission, which is why I ran the audit."
+          ],
+          "sharp": "Mike hit a bug he couldn't explain, even though he'd never been given that permission, which is why I ran the audit.",
+          "sharp_bn": "Mike এমন একটা bug-এ পড়েছিল যেটা সে ব্যাখ্যা করতে পারছিল না — যদিও ওই permission তাকে কখনো দেওয়াই হয়নি; সেজন্যই আমি অডিটটা চালিয়েছিলাম।",
+          "coach_bn": "এই **even though**-তেই তুমি তিনবার রিস্টার্ট নিয়েছিলে। এবার সিঁড়ি বেয়ে ওঠায় ক্লজটা আগে থেকেই মুখে বসে থাকবে।",
+          "target_sec": 10,
+          "reps": 3
+        },
+        {
+          "id": "s000-ld-3",
+          "station": "ladder",
+          "cheat": "I'd been + because + while · দৈনন্দিন",
+          "rungs": [
+            "I missed the call.",
+            "I missed the call I'd been waiting for.",
+            "I missed the call I'd been waiting for, because my phone was on silent.",
+            "I missed the call I'd been waiting for, because my phone was on silent while I was in the standup."
+          ],
+          "sharp": "I missed the call I'd been waiting for, because my phone was on silent while I was in the standup.",
+          "sharp_bn": "যে কলটার জন্য অপেক্ষা করছিলাম সেটাই মিস করলাম, কারণ standup-এ থাকার সময় ফোনটা সাইলেন্ট ছিল।",
+          "coach_bn": "**because** আর **while** — তোমার ৪৬২টা \"so\"-এর আসল বদলি। একই বাক্যে দুটো কারণ জোড়া যায়।",
+          "target_sec": 9,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s000-bw-1",
+          "station": "backward",
+          "cheat": "I'd already + by the time",
+          "source_date": "2026-08-06",
+          "raw": "Have you checked the right object? carefully check that maybe bookmark definition or **something** custom objects are there.",
+          "chunks": [
+            "I'd already checked the standard objects,",
+            "so by the time you asked,",
+            "the only thing left",
+            "was the custom bookmark definition."
+          ],
+          "sharp": "I'd already checked the standard objects, so by the time you asked, the only thing left was the custom bookmark definition.",
+          "sharp_bn": "standard object-গুলো আমি আগেই দেখে ফেলেছিলাম, তাই তুমি যখন জিজ্ঞেস করলে তখন বাকি ছিল শুধু custom bookmark definition-টা।",
+          "coach_bn": "লেজ আগে মুখস্থ হলে বাক্যটা আর মাঝপথে ভাঙে না। **had already** তোমার ট্রান্সক্রিপ্টে ০ বার — এখান থেকেই শুরু।",
+          "target_sec": 10,
+          "reps": 3
+        },
+        {
+          "id": "s000-bw-2",
+          "station": "backward",
+          "cheat": "I'd left + by the time · দৈনন্দিন",
+          "chunks": [
+            "I'd left home early,",
+            "but by the time I reached the office,",
+            "the meeting had already",
+            "moved to another room."
+          ],
+          "sharp": "I'd left home early, but by the time I reached the office, the meeting had already moved to another room.",
+          "sharp_bn": "বাসা থেকে তাড়াতাড়িই বেরিয়েছিলাম, কিন্তু অফিসে পৌঁছাতে পৌঁছাতে মিটিংটা আরেক রুমে সরে গিয়েছিল।",
+          "coach_bn": "দুটো অতীত, একটা আরেকটার আগে — **had left … had already moved**। এই স্তরটাই তোমার গল্পে এখন নেই।",
+          "target_sec": 9,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s000-fr-1",
+          "station": "frame",
+          "cheat": "By the time ___, we had already ___.",
+          "frame": "By the time ___, we had already ___.",
+          "fills": [
+            { "scene": "office", "sharp": "By the time the client called, we had already pushed the fix.", "sharp_bn": "ক্লায়েন্ট ফোন করার আগেই আমরা ফিক্সটা পুশ করে ফেলেছিলাম।" },
+            { "scene": "office", "sharp": "By the time QA opened the ticket, we had already found the root cause.", "sharp_bn": "QA টিকিট খোলার আগেই আমরা root cause বের করে ফেলেছিলাম।" },
+            { "scene": "office", "sharp": "By the time the sprint ended, we had already merged both branches.", "sharp_bn": "স্প্রিন্ট শেষ হওয়ার আগেই আমরা দুটো ব্রাঞ্চই merge করে ফেলেছিলাম।" },
+            { "scene": "daily", "sharp": "By the time I got to the shop, they had already closed.", "sharp_bn": "আমি দোকানে পৌঁছানোর আগেই ওরা বন্ধ করে দিয়েছিল।" },
+            { "scene": "daily", "sharp": "By the time the rain stopped, I had already missed the bus.", "sharp_bn": "বৃষ্টি থামার আগেই আমি বাসটা মিস করে ফেলেছিলাম।" }
+          ],
+          "sharp": "By the time the client called, we had already pushed the fix.",
+          "coach_bn": "পাঁচবার একই ছাঁচ — পঞ্চমবারে আর ভাবতে হয় না, এটাই automaticity। **had already** এখন তোমার।",
+          "target_sec": 5,
+          "reps": 5
+        },
+        {
+          "id": "s000-fr-2",
+          "station": "frame",
+          "cheat": "Even though ___, ___.",
+          "frame": "Even though ___, ___.",
+          "fills": [
+            { "scene": "office", "sharp": "Even though he didn't have that permission, the record type still showed up.", "sharp_bn": "যদিও তার ওই permission ছিল না, record type-টা তবু দেখাচ্ছিল।" },
+            { "scene": "office", "sharp": "Even though we tested it in partial copy, it broke in production.", "sharp_bn": "যদিও আমরা partial copy-তে টেস্ট করেছিলাম, production-এ ভেঙে গেল।" },
+            { "scene": "office", "sharp": "Even though the deploy passed, UAT was still blocked.", "sharp_bn": "যদিও deploy পাস করেছিল, UAT তবু আটকে ছিল।" },
+            { "scene": "daily", "sharp": "Even though I left early, I still got stuck in traffic.", "sharp_bn": "যদিও তাড়াতাড়ি বেরিয়েছিলাম, তবু জ্যামে আটকে গেলাম।" },
+            { "scene": "daily", "sharp": "Even though I set three alarms, I woke up late.", "sharp_bn": "যদিও তিনটা অ্যালার্ম দিয়েছিলাম, তবু দেরিতে উঠেছি।" }
+          ],
+          "sharp": "Even though he didn't have that permission, the record type still showed up.",
+          "coach_bn": "তোমার ট্রান্সক্রিপ্টে **even though** ছিল ৬ বার, আর তিনবারই রিস্টার্ট লুপে ভেঙেছে। পাঁচ ভরাটের পর আর ভাঙবে না।",
+          "target_sec": 5,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s000-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would have V3",
+          "source_date": "2026-08-06",
+          "raw": "Is it like a pipeline **randomly just select** one record type, there **was no guard** or something like that.",
+          "tiles": ["If PipeLaunch", "had respected", "the profile defaults,", "the task", "would have been created", "with the right record type."],
+          "sharp": "If PipeLaunch had respected the profile defaults, the task would have been created with the right record type.",
+          "sharp_bn": "PipeLaunch যদি profile default মানতো, task-টা সঠিক record type নিয়েই তৈরি হতো।",
+          "coach_bn": "RCA মিটিংয়ের সবচেয়ে দামি বাক্য — **would have**। তোমার ১৯৫ মিনিটে এসেছে ০ বার।",
+          "target_sec": 8,
+          "reps": 3
+        },
+        {
+          "id": "s000-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → wouldn't have had to",
+          "source_date": "2026-07-28",
+          "raw": "but we used to say that it should be not less than a month… if you want to do pro-rated calculation, that **a lot of stuff need** to be changed.",
+          "tiles": ["If we", "had agreed on", "pro-rated billing", "from the start,", "we wouldn't have had to", "change so much later."],
+          "sharp": "If we had agreed on pro-rated billing from the start, we wouldn't have had to change so much later.",
+          "sharp_bn": "শুরুতেই যদি pro-rated billing-এ একমত হতাম, পরে এত কিছু বদলাতেই হতো না।",
+          "coach_bn": "প্রস্তাব ঠেকানোর ভদ্র অস্ত্র। **wouldn't have had to** — এক নিঃশ্বাসে বলার প্র্যাকটিস করো।",
+          "target_sec": 8,
+          "reps": 3
+        },
+        {
+          "id": "s000-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → wouldn't have · দৈনন্দিন",
+          "tiles": ["If I", "had left", "ten minutes earlier,", "I wouldn't have missed", "the whole standup."],
+          "sharp": "If I had left ten minutes earlier, I wouldn't have missed the whole standup.",
+          "sharp_bn": "দশ মিনিট আগে বেরোলে পুরো standup-টা মিস করতাম না।",
+          "coach_bn": "আফসোস প্রকাশের ছাঁচ। বাসা, ট্রাফিক, খাবার — সব গল্পে একই কাঠামো খাটে।",
+          "target_sec": 6,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s000-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — একই গল্প, তিনবার",
+          "prompt_bn": "গতকালের PipeLaunch record-type bug-টা শুরু থেকে শেষ পর্যন্ত বলো: কী করছিলে, কখন ধরা পড়ল, তার আগে কী হয়ে গিয়েছিল, আর কী করলে এড়ানো যেত।",
+          "checklist": [
+            "was …ing + when",
+            "had already / by the time",
+            "even though",
+            "which is why / so that",
+            "would have"
+          ],
+          "rounds": [60, 45, 30],
+          "model_en": "I was auditing Mike's profile when I noticed the wrong record type. By the time he reported it, the task had already been created twice, even though he'd never been given that permission. If PipeLaunch had respected the profile defaults, none of it would have happened, which is why I've asked for a guard on the pipeline.",
+          "coach_bn": "একই গল্প ৬০ → ৪৫ → ৩০ সেকেন্ডে। সময় কমলে ফিলার বাদ পড়ে, ক্লজগুলো থেকে যায় — **এটাই ফ্লুয়েন্সি তৈরির আসল মুহূর্ত।**"
+        }
+      ]
+    }
+  ]
+}
