@@ -227,6 +227,7 @@ function timeMachine(item, ctx, done) {
   const choicesBox = h("div", { class: "choices" });
 
   const prompt = shell.layer("অতীতে ফেরাও — লাল শব্দগুলো ট্যাপ করো", row, choicesBox);
+  let openToken = 0;   // guards the deferred clear below against a fast next tap
 
   item.tokens.forEach((tok, idx) => {
     const slot = slots.find((s) => s.index === idx);
@@ -241,6 +242,7 @@ function timeMachine(item, ctx, done) {
   });
 
   function openChoices(btn, slot) {
+    openToken += 1;
     [...row.querySelectorAll(".slot")].forEach((b) => b.setAttribute("aria-expanded", "false"));
     btn.setAttribute("aria-expanded", "true");
     choicesBox.replaceChildren(
@@ -262,7 +264,10 @@ function timeMachine(item, ctx, done) {
       haptic();
       ctx.onScore(10, "solve");
       solved += 1;
-      setTimeout(() => choicesBox.replaceChildren(), 220);
+      // Let the green flash land, then clear — unless the learner has already
+      // opened the next slot, whose options would otherwise vanish under them.
+      const token = openToken;
+      setTimeout(() => { if (openToken === token) choicesBox.replaceChildren(); }, 220);
       if (solved === slots.length) reveal();
     } else {
       chip.classList.add("no");

@@ -90,13 +90,13 @@
           "source_date": "2026-08-06",
           "raw": "Even he **doesn't know** the— even though he **doesn't know** the— even though he **doesn't have** the permission of that record type",
           "rungs": [
-            "Mike hit a bug.",
-            "Mike hit a bug he couldn't explain.",
-            "Mike hit a bug he couldn't explain, even though he'd never been given that permission.",
-            "Mike hit a bug he couldn't explain, even though he'd never been given that permission, which is why I ran the audit."
+            "One user hit a bug.",
+            "One user hit a bug he couldn't explain.",
+            "One user hit a bug he couldn't explain, even though he'd never been given that permission.",
+            "One user hit a bug he couldn't explain, even though he'd never been given that permission, which is why I ran the audit."
           ],
-          "sharp": "Mike hit a bug he couldn't explain, even though he'd never been given that permission, which is why I ran the audit.",
-          "sharp_bn": "Mike এমন একটা bug-এ পড়েছিল যেটা সে ব্যাখ্যা করতে পারছিল না — যদিও ওই permission তাকে কখনো দেওয়াই হয়নি; সেজন্যই আমি অডিটটা চালিয়েছিলাম।",
+          "sharp": "One user hit a bug he couldn't explain, even though he'd never been given that permission, which is why I ran the audit.",
+          "sharp_bn": "একজন ইউজার এমন একটা bug-এ পড়েছিল যেটা সে ব্যাখ্যা করতে পারছিল না — যদিও ওই permission তাকে কখনো দেওয়াই হয়নি; সেজন্যই আমি অডিটটা চালিয়েছিলাম।",
           "coach_bn": "এই **even though**-তেই তুমি তিনবার রিস্টার্ট নিয়েছিলে। এবার সিঁড়ি বেয়ে ওঠায় ক্লজটা আগে থেকেই মুখে বসে থাকবে।",
           "target_sec": 10,
           "reps": 3
@@ -255,7 +255,7 @@
             "would have"
           ],
           "rounds": [60, 45, 30],
-          "model_en": "I was auditing Mike's profile when I noticed the wrong record type. By the time he reported it, the task had already been created twice, even though he'd never been given that permission. If PipeLaunch had respected the profile defaults, none of it would have happened, which is why I've asked for a guard on the pipeline.",
+          "model_en": "I was auditing one user's profile when I noticed the wrong record type. By the time he reported it, the task had already been created twice, even though he'd never been given that permission. If PipeLaunch had respected the profile defaults, none of it would have happened, which is why I've asked for a guard on the pipeline.",
           "coach_bn": "একই গল্প ৬০ → ৪৫ → ৩০ সেকেন্ডে। সময় কমলে ফিলার বাদ পড়ে, ক্লজগুলো থেকে যায় — **এটাই ফ্লুয়েন্সি তৈরির আসল মুহূর্ত।**"
         }
       ]

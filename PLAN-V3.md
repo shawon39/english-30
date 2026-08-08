@@ -154,13 +154,25 @@ Ladder items add `rungs[]`; frame items add `frame` + `fills[]`. The four common
 
 ## 10. Roadmap
 
-1. **Archive + new shell** — move current app to `/archive/`, new home with rep counter
-   and archive button. Zero risk.
-2. **Set 0, hand-built** — one full set (~22 cards) from the real transcript + card
-   renderer + audio. Feel test on the user's phone; pivot here if it doesn't land.
-3. **Miner** — `tools/mine.py`: 466-row CSV → ~35 sets tagged by world, business + daily
-   mixed. Bangla spot-checked by the user.
+**Steps 1-3 are built and merged.** The app runs at the repo root, the old grammar
+course sits untouched under `/archive/`, and 11 sets (134 cards, ~639 reps) ship out of
+the `tools/` pipeline. Step 4 is open.
+
+1. ~~**Archive + new shell**~~ — done. The whole app moved to `/archive/` as a pure
+   rename, zero edits; the new home carries the rep counter and the archive button.
+2. ~~**Set 0, hand-built**~~ — done. 14 cards from the real transcript, card renderer,
+   `speechSynthesis` audio with rate control and karaoke highlighting.
+3. ~~**Miner**~~ — done, but not as estimated. `tools/mine.py` → briefs,
+   `tools/build_sets.py` → schema 3.1, `tools/validate.py` → the gate. The CSV yields
+   150 briefs spread evenly over the five worlds, and 10 authored sets shipped.
+
+   The original "~35 sets" assumed the transcript held narration to lift. It does not:
+   240 lines are a drillable length, but only 52 contain any past-tense token and 72
+   open with a bare imperative — the corpus is instructions issued to an assistant,
+   which is the same fact as the zero past-perfect count. So a brief now describes what
+   a line should *become*, and one real situation feeds several cards.
 4. **Polish + rematch** — combo flare, sound, reduce-motion, monthly rematch report.
+   Still open.
 
 Decisions taken (vetoable): name **রিপ্লে (Replay)**; reps counted by tap first
 (mic verification experiment after Set 0); Bangla always visible with a

@@ -1,0 +1,340 @@
+{
+  "schemaVersion": "3.1",
+  "set": 2,
+  "world": "timeline",
+  "world_bn": "টাইমলাইন",
+  "title_bn": "তার আগেই যা হয়েছিল",
+  "desc_bn": "pro-rated বিলিং, partial copy থেকে production, আর passkey-র ঝামেলা — কোনটা কার আগে, সেটা বলতে শেখা।",
+  "minutes": 8,
+  "cheats": [
+    "had already",
+    "by the time",
+    "Before that, we had"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s002-tm-1",
+          "station": "time-machine",
+          "cheat": "শেষ হওয়া প্রসেস → past simple",
+          "source_date": "2026-08-03",
+          "raw": "This **is** a NGMT dev org environment, so we actually don't **use** it actually. What we **implement** implement features in partial copy sandbox first then we **move** it to the production",
+          "tokens": [
+            "We",
+            "implement",
+            "the",
+            "feature",
+            "in",
+            "partial",
+            "copy",
+            "first,",
+            "then",
+            "we",
+            "move",
+            "it",
+            "to",
+            "production."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "implemented",
+                "implements",
+                "are implementing"
+              ],
+              "answer": "implemented"
+            },
+            {
+              "index": 10,
+              "options": [
+                "moved",
+                "moves",
+                "were moving"
+              ],
+              "answer": "moved"
+            }
+          ],
+          "sharp": "We implemented the feature in partial copy first, then we moved it to production.",
+          "sharp_bn": "ফিচারটা আগে partial copy-তে করলাম, তারপর production-এ সরালাম।",
+          "coach_bn": "তোমার আসল লাইনে **implement implement** — দুইবার। অতীতে বসালে শব্দটা একবারেই বেরোয়।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s002-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + before me",
+          "source_date": "2026-08-03",
+          "raw": "the thing **is** like we **have** two people **use** the same system. So the other people did set up the pass keys, okay. now it's not working for me.",
+          "tokens": [
+            "Two",
+            "of",
+            "us",
+            "share",
+            "the",
+            "account,",
+            "and",
+            "he",
+            "adds",
+            "the",
+            "passkeys",
+            "before",
+            "me."
+          ],
+          "slots": [
+            {
+              "index": 3,
+              "options": [
+                "shared",
+                "shares",
+                "were sharing"
+              ],
+              "answer": "shared"
+            },
+            {
+              "index": 8,
+              "options": [
+                "added",
+                "add",
+                "was adding"
+              ],
+              "answer": "added"
+            }
+          ],
+          "sharp": "Two of us shared the account, and he added the passkeys before me.",
+          "sharp_bn": "অ্যাকাউন্টটা আমরা দুজনে ব্যবহার করতাম, আর সে আমার আগেই passkey বসিয়ে ফেলল।",
+          "coach_bn": "**before me** দিয়ে ক্রম বোঝানো ভালো, কিন্তু পরের ধাপে **had already** শিখবে — ওটা আরও নিখুঁত।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s002-ld-1",
+          "station": "ladder",
+          "cheat": "had already been + which is why + even though",
+          "source_date": "2026-08-03",
+          "rungs": [
+            "The passkeys had already been set up.",
+            "The passkeys had already been set up by the time I tried to log in.",
+            "The passkeys had already been set up by the time I tried to log in, which is why my laptop kept rejecting me.",
+            "The passkeys had already been set up by the time I tried to log in, which is why my laptop kept rejecting me, even though nothing had changed on my side."
+          ],
+          "sharp": "The passkeys had already been set up by the time I tried to log in, which is why my laptop kept rejecting me, even though nothing had changed on my side.",
+          "sharp_bn": "আমি লগইনের চেষ্টা করার আগেই passkey বসানো হয়ে গিয়েছিল — সেজন্যই ল্যাপটপ বারবার ফিরিয়ে দিচ্ছিল, যদিও আমার দিকে কিছুই বদলায়নি।",
+          "coach_bn": "**had already been set up** — তোমার ১৯৫ মিনিটে \"had\" এসেছে ০ বার। এখান থেকেই শুরু।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s002-ld-2",
+          "station": "ladder",
+          "cheat": "We had + before + so that",
+          "rungs": [
+            "We had tested it in partial copy.",
+            "We had tested it in partial copy before anything went to production.",
+            "We had tested it in partial copy before anything went to production, so that a bad merge could never reach a customer.",
+            "We had tested it in partial copy before anything went to production, so that a bad merge could never reach a customer, which is the rule we agreed on last sprint."
+          ],
+          "sharp": "We had tested it in partial copy before anything went to production, so that a bad merge could never reach a customer, which is the rule we agreed on last sprint.",
+          "sharp_bn": "production-এ কিছু যাওয়ার আগেই আমরা partial copy-তে টেস্ট করে রেখেছিলাম, যাতে খারাপ merge কখনো কাস্টমার পর্যন্ত না পৌঁছায় — গত স্প্রিন্টে এই নিয়মেই আমরা রাজি হয়েছিলাম।",
+          "coach_bn": "প্রসেস বোঝানোর সময় **had + before** জোড়াটা তোমাকে সিনিয়র শোনায়।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s002-bw-1",
+          "station": "backward",
+          "cheat": "By the time + had already + that had been",
+          "source_date": "2026-07-28",
+          "raw": "no, no, no. there **are** two issues that's right. One **is** formula field, another one **is** this over calculating two things.",
+          "chunks": [
+            "By the time the client emailed,",
+            "we had already found the formula",
+            "that had been double counting",
+            "the contract value."
+          ],
+          "sharp": "By the time the client emailed, we had already found the formula that had been double counting the contract value.",
+          "sharp_bn": "ক্লায়েন্ট মেইল করার আগেই আমরা সেই ফর্মুলাটা পেয়ে গিয়েছিলাম, যেটা contract value দুইবার করে গুনছিল।",
+          "coach_bn": "লেজ আগে: **the contract value** → **that had been double counting the contract value** → পুরোটা। রিস্টার্ট লুপ এখানেই মরে।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s002-bw-2",
+          "station": "backward",
+          "cheat": "had already + by the time · দৈনন্দিন",
+          "chunks": [
+            "I had left home early,",
+            "but the bus had already gone",
+            "by the time I reached",
+            "the main road."
+          ],
+          "sharp": "I had left home early, but the bus had already gone by the time I reached the main road.",
+          "sharp_bn": "বাসা থেকে তাড়াতাড়িই বেরিয়েছিলাম, কিন্তু মেইন রোডে পৌঁছাতে পৌঁছাতে বাসটা চলে গিয়েছিল।",
+          "coach_bn": "একই বাক্যে দুটো **had** — একটা তোমার বেরোনো, একটা বাসের চলে যাওয়া। ক্রমটা শ্রোতা নিজেই বুঝে নেয়।",
+          "reps": 3,
+          "target_sec": 12
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s002-fr-1",
+          "station": "frame",
+          "cheat": "By the time ___, I had already ___.",
+          "frame": "By the time ___, I had already ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "By the time the standup started, I had already read the failing logs.",
+              "sharp_bn": "স্ট্যান্ডআপ শুরু হওয়ার আগেই আমি ফেল করা লগগুলো পড়ে ফেলেছিলাম।"
+            },
+            {
+              "scene": "office",
+              "sharp": "By the time you replied, I had already deployed both files.",
+              "sharp_bn": "তুমি উত্তর দেওয়ার আগেই আমি দুটো ফাইলই deploy করে ফেলেছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "By the time I got home, I had already eaten on the way.",
+              "sharp_bn": "বাসায় পৌঁছানোর আগেই আমি পথে খেয়ে নিয়েছিলাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "By the time the film started, I had already fallen asleep.",
+              "sharp_bn": "সিনেমা শুরু হওয়ার আগেই আমি ঘুমিয়ে পড়েছিলাম।"
+            }
+          ],
+          "sharp": "By the time the standup started, I had already read the failing logs.",
+          "reps": 4,
+          "coach_bn": "**By the time X, I had already Y** — দুটো অতীতের ক্রম এক ছাঁচে। চারবার বললে আর ভাবতে হবে না।",
+          "target_sec": 8
+        },
+        {
+          "id": "s002-fr-2",
+          "station": "frame",
+          "cheat": "Before that, we had ___.",
+          "frame": "Before that, we had ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Before that, we had never touched the record type settings.",
+              "sharp_bn": "তার আগে আমরা record type সেটিংসে কখনো হাত দিইনি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Before that, we had run the same query every single morning.",
+              "sharp_bn": "তার আগে আমরা প্রতিদিন সকালে একই query চালাতাম।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before that, I had never cooked anything on my own.",
+              "sharp_bn": "তার আগে আমি নিজে কখনো কিছু রান্না করিনি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Before that, we had lived in the same building for years.",
+              "sharp_bn": "তার আগে আমরা বছরের পর বছর একই বিল্ডিংয়ে ছিলাম।"
+            }
+          ],
+          "sharp": "Before that, we had never touched the record type settings.",
+          "reps": 4,
+          "coach_bn": "গল্পে পেছনে ফেরার সুইচ। **Before that, we had…** বললেই শ্রোতা বুঝে যায় তুমি আগের ধাপে যাচ্ছো।",
+          "target_sec": 7
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s002-if-1",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would never have V3",
+          "tiles": [
+            "If we",
+            "had caught the double counting earlier,",
+            "the client would never have seen",
+            "a wrong invoice."
+          ],
+          "sharp": "If we had caught the double counting earlier, the client would never have seen a wrong invoice.",
+          "sharp_bn": "দুইবার গোনার ব্যাপারটা আগে ধরতে পারলে ক্লায়েন্ট কখনো ভুল ইনভয়েসই দেখত না।",
+          "coach_bn": "**would never have seen** — 'never' বসিয়ে জোরটা বাড়ে, কাউকে দোষ না দিয়েই।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s002-if-2",
+          "station": "if-machine",
+          "cheat": "If + had been V3 → would have been V3",
+          "tiles": [
+            "If the passkeys",
+            "had been set up together,",
+            "neither of us",
+            "would have been locked out."
+          ],
+          "sharp": "If the passkeys had been set up together, neither of us would have been locked out.",
+          "sharp_bn": "passkey দুটো একসাথে বসালে আমাদের কেউই আটকা পড়তাম না।",
+          "coach_bn": "প্যাসিভ ভার্সন — কে করেছে সেটা না বলে ঘটনাটা বলা যায়। পোস্টমর্টেমে এটাই ভদ্র পথ।",
+          "reps": 3,
+          "target_sec": 10
+        },
+        {
+          "id": "s002-if-3",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3 · দৈনন্দিন",
+          "tiles": [
+            "If I",
+            "had checked the bus timing,",
+            "I would not have waited",
+            "half an hour."
+          ],
+          "sharp": "If I had checked the bus timing, I would not have waited half an hour.",
+          "sharp_bn": "বাসের সময়টা দেখে নিলে আধা ঘণ্টা দাঁড়িয়ে থাকতে হতো না।",
+          "coach_bn": "রোজকার আফসোস, একই কাঠামো। **would not have waited** — এক টানে বলার প্র্যাকটিস।",
+          "reps": 3,
+          "target_sec": 10
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s002-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — ক্রম ঠিক রেখে",
+          "prompt_bn": "contract value ভুল আসার পুরো টাইমলাইনটা বলো: কোনটা আগে হয়েছিল, কোনটা পরে, আর ক্লায়েন্ট জানার আগে তোমরা কতদূর পৌঁছেছিলে।",
+          "checklist": [
+            "had already",
+            "by the time",
+            "before that",
+            "which is why",
+            "would never have"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Before that, we had run the same contract query every morning without a problem. Last sprint someone renamed a field, and by the time the client emailed, we had already found the formula that had been double counting the value. The fix itself took ten minutes, which is why nobody escalated it. If we had caught the double counting earlier, the client would never have seen a wrong invoice.",
+          "coach_bn": "ক্রম বোঝাতে **had** ছাড়া উপায় নেই। তিন রাউন্ডে ওটাই মুখে বসে যাবে।"
+        }
+      ]
+    }
+  ]
+}

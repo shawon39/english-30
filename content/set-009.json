@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "3.1",
+  "set": 9,
+  "world": "proposal",
+  "world_bn": "প্রপোজাল",
+  "title_bn": "কোনটা বেছে নেব",
+  "desc_bn": "প্রোভাইডার তুলনা, ফ্রি ক্রেডিট আর প্রতিযোগী যাচাই — মতামত নয়, যুক্তি দিয়ে সিদ্ধান্ত।",
+  "minutes": 8,
+  "cheats": [
+    "It would make sense to",
+    "Rather than ___, we could ___",
+    "If we ___, we would ___"
+  ],
+  "stations": [
+    {
+      "station": "time-machine",
+      "items": [
+        {
+          "id": "s009-tm-1",
+          "station": "time-machine",
+          "cheat": "তুলনার ফল → past simple",
+          "source_date": "2026-07-31",
+          "raw": "Just to double check this is the right choice. Compare with various brand, various product and all other **things** and **give me** the result, okay",
+          "tokens": [
+            "We",
+            "compare",
+            "three",
+            "providers",
+            "and",
+            "the",
+            "cheapest",
+            "one",
+            "wins",
+            "on",
+            "price",
+            "alone."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "compared",
+                "compares",
+                "were comparing"
+              ],
+              "answer": "compared"
+            },
+            {
+              "index": 8,
+              "options": [
+                "won",
+                "wins",
+                "was winning"
+              ],
+              "answer": "won"
+            }
+          ],
+          "sharp": "We compared three providers and the cheapest one won on price alone.",
+          "sharp_bn": "তিনটা provider মিলিয়ে দেখলাম, আর সবচেয়ে সস্তাটা শুধু দামের জোরেই জিতে গেল।",
+          "coach_bn": "**won** — win-এর past. \"winned\" বেরিয়ে আসছে কি না কান পেতে শোনো।",
+          "reps": 3,
+          "target_sec": 8
+        },
+        {
+          "id": "s009-tm-2",
+          "station": "time-machine",
+          "cheat": "past simple + then",
+          "source_date": "2026-08-06",
+          "raw": "So do I **get** some kind of free credits if I **use** this model?",
+          "tokens": [
+            "We",
+            "use",
+            "the",
+            "free",
+            "credits",
+            "first",
+            "and",
+            "then",
+            "the",
+            "bill",
+            "grows",
+            "every",
+            "month."
+          ],
+          "slots": [
+            {
+              "index": 1,
+              "options": [
+                "used",
+                "uses",
+                "were using"
+              ],
+              "answer": "used"
+            },
+            {
+              "index": 10,
+              "options": [
+                "grew",
+                "grows",
+                "was growing"
+              ],
+              "answer": "grew"
+            }
+          ],
+          "sharp": "We used the free credits first and then the bill grew every month.",
+          "sharp_bn": "আগে ফ্রি ক্রেডিটগুলো খরচ করলাম, তারপর প্রতি মাসেই বিলটা বাড়তে থাকল।",
+          "coach_bn": "**grew** — grow-এর past. ছোট শব্দ, কিন্তু ভুল হলেই কানে লাগে।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "ladder",
+      "items": [
+        {
+          "id": "s009-ld-1",
+          "station": "ladder",
+          "cheat": "could + so that + which",
+          "rungs": [
+            "We could score every provider.",
+            "We could score every provider on accuracy and uptime.",
+            "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion.",
+            "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time."
+          ],
+          "sharp": "We could score every provider on accuracy and uptime, so that the choice stops being a matter of opinion, which is how we lost a week last time.",
+          "sharp_bn": "প্রতিটা provider-কে accuracy আর uptime দিয়ে নম্বর দিতে পারি, যাতে বাছাইটা আর মতামতের ব্যাপার না থাকে — গতবার ওভাবেই তো আমাদের এক সপ্তাহ গেল।",
+          "coach_bn": "প্রস্তাবের সাথে গতবারের ক্ষতিটা জুড়ে দাও। **which is how we lost a week** — এক ক্লজে যুক্তি পোক্ত।",
+          "reps": 3,
+          "target_sec": 14
+        },
+        {
+          "id": "s009-ld-2",
+          "station": "ladder",
+          "cheat": "I would + so that + even though",
+          "rungs": [
+            "I would run one long call.",
+            "I would run one long call through each provider.",
+            "I would run one long call through each provider, so that we see accuracy where it actually matters.",
+            "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon."
+          ],
+          "sharp": "I would run one long call through each provider, so that we see accuracy where it actually matters, even though it costs us an extra afternoon.",
+          "sharp_bn": "প্রতিটা provider দিয়ে একটা করে লম্বা কল চালাতাম, যাতে যেখানে accuracy আসলে দরকার সেখানেই সেটা দেখা যায় — যদিও তাতে একটা বাড়তি বিকেল যাবে।",
+          "coach_bn": "খরচটা নিজেই স্বীকার করো (**even though**) — তাহলে কেউ সেটা দিয়ে আক্রমণ করতে পারে না।",
+          "reps": 3,
+          "target_sec": 14
+        }
+      ]
+    },
+    {
+      "station": "backward",
+      "items": [
+        {
+          "id": "s009-bw-1",
+          "station": "backward",
+          "cheat": "If we + would + which provider",
+          "chunks": [
+            "If we scored them on the same call,",
+            "we would know within a day",
+            "which provider survives",
+            "a real customer conversation."
+          ],
+          "sharp": "If we scored them on the same call, we would know within a day which provider survives a real customer conversation.",
+          "sharp_bn": "একই কলে সবাইকে নম্বর দিলে একদিনের মধ্যেই জানতাম, আসল কাস্টমার কথোপকথনে কোন provider টিকে থাকে।",
+          "coach_bn": "লেজ আগে: **a real customer conversation** → **which provider survives…** → পুরোটা।",
+          "reps": 3,
+          "target_sec": 12
+        },
+        {
+          "id": "s009-bw-2",
+          "station": "backward",
+          "cheat": "If we + would + দৈনন্দিন",
+          "chunks": [
+            "If we cooked twice a week,",
+            "we would spend less",
+            "and still eat better",
+            "than we do now."
+          ],
+          "sharp": "If we cooked twice a week, we would spend less and still eat better than we do now.",
+          "sharp_bn": "সপ্তাহে দুইবার রান্না করলে খরচ কমত, আর এখনকার চেয়ে ভালোই খেতাম।",
+          "coach_bn": "একই দ্বিতীয় কন্ডিশনাল, বাসার সিদ্ধান্তে। ব্যাকরণ এক, চাপ শূন্য।",
+          "reps": 3,
+          "target_sec": 11
+        }
+      ]
+    },
+    {
+      "station": "frame",
+      "items": [
+        {
+          "id": "s009-fr-1",
+          "station": "frame",
+          "cheat": "It would make sense to ___ before ___.",
+          "frame": "It would make sense to ___ before ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "It would make sense to test one long call before we sign anything.",
+              "sharp_bn": "কিছুতে সই করার আগে একটা লম্বা কল টেস্ট করাই যুক্তিসঙ্গত।"
+            },
+            {
+              "scene": "office",
+              "sharp": "It would make sense to check the competitors before we build our own.",
+              "sharp_bn": "নিজেরা বানানোর আগে প্রতিযোগীরা কী করছে দেখাই যুক্তিসঙ্গত।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It would make sense to eat something before we leave.",
+              "sharp_bn": "বেরোনোর আগে কিছু খেয়ে নেওয়াই যুক্তিসঙ্গত।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "It would make sense to book the tickets before the weekend.",
+              "sharp_bn": "সপ্তাহান্তের আগেই টিকিটগুলো কেটে ফেলা যুক্তিসঙ্গত।"
+            }
+          ],
+          "sharp": "It would make sense to test one long call before we sign anything.",
+          "reps": 4,
+          "coach_bn": "**It would make sense to** — নিজের নাম না জড়িয়ে প্রস্তাব দেওয়া। বিরোধিতা করা কঠিন হয়ে যায়।",
+          "target_sec": 8
+        },
+        {
+          "id": "s009-fr-2",
+          "station": "frame",
+          "cheat": "Rather than ___, we could ___.",
+          "frame": "Rather than ___ing, we could ___.",
+          "fills": [
+            {
+              "scene": "office",
+              "sharp": "Rather than guessing on price, we could score them on accuracy.",
+              "sharp_bn": "দাম দেখে আন্দাজ করার বদলে accuracy দিয়ে নম্বর দিতে পারি।"
+            },
+            {
+              "scene": "office",
+              "sharp": "Rather than building everything, we could ship one small tool first.",
+              "sharp_bn": "সবকিছু বানানোর বদলে আগে একটা ছোট টুল ছাড়তে পারি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Rather than ordering every night, we could cook on Sunday.",
+              "sharp_bn": "রোজ রাতে অর্ডার করার বদলে রবিবারে রান্না করে রাখতে পারি।"
+            },
+            {
+              "scene": "daily",
+              "sharp": "Rather than taking two cars, we could leave together.",
+              "sharp_bn": "দুটো গাড়ি নেওয়ার বদলে একসাথে বেরোতে পারি।"
+            }
+          ],
+          "sharp": "Rather than guessing on price, we could score them on accuracy.",
+          "reps": 4,
+          "coach_bn": "**Rather than X, we could Y** — 'না' না বলেই বিকল্প দেওয়া। আলোচনার সবচেয়ে কাজের ছাঁচ।",
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "if-machine",
+      "items": [
+        {
+          "id": "s009-if-1",
+          "station": "if-machine",
+          "cheat": "If + past → would (2nd conditional)",
+          "tiles": [
+            "If we",
+            "scored them on the same call,",
+            "the decision would take one afternoon",
+            "instead of one week."
+          ],
+          "sharp": "If we scored them on the same call, the decision would take one afternoon instead of one week.",
+          "sharp_bn": "একই কলে সবাইকে নম্বর দিলে সিদ্ধান্তটা এক সপ্তাহের বদলে এক বিকেলেই হয়ে যেত।",
+          "coach_bn": "**instead of one week** — সংখ্যা দিয়ে তুলনা দিলে প্রস্তাব আর মতামত থাকে না।",
+          "reps": 3,
+          "target_sec": 11
+        },
+        {
+          "id": "s009-if-2",
+          "station": "if-machine",
+          "cheat": "If + had V3 → would not have V3",
+          "tiles": [
+            "If the free credits",
+            "had lasted longer,",
+            "we would not have moved",
+            "so quickly."
+          ],
+          "sharp": "If the free credits had lasted longer, we would not have moved so quickly.",
+          "sharp_bn": "ফ্রি ক্রেডিটগুলো আরও টিকলে আমরা এত তাড়াহুড়ো করতাম না।",
+          "coach_bn": "অতীতের ব্যাখ্যা দিয়ে বর্তমানের সিদ্ধান্ত সাজানো — পিচের ভেতরে ইতিহাস।",
+          "reps": 3,
+          "target_sec": 9
+        },
+        {
+          "id": "s009-if-3",
+          "station": "if-machine",
+          "cheat": "If + past → would · দৈনন্দিন",
+          "tiles": [
+            "If we",
+            "booked earlier,",
+            "we would pay half",
+            "of what we pay now."
+          ],
+          "sharp": "If we booked earlier, we would pay half of what we pay now.",
+          "sharp_bn": "আগে বুক করলে এখন যা দিই তার অর্ধেকেই হয়ে যেত।",
+          "coach_bn": "**would pay half of what we pay now** — কল্পনা আর বাস্তব এক বাক্যে পাশাপাশি।",
+          "reps": 3,
+          "target_sec": 8
+        }
+      ]
+    },
+    {
+      "station": "boss",
+      "items": [
+        {
+          "id": "s009-boss-1",
+          "station": "boss",
+          "cheat": "৪ / ৩ / ২ — সিদ্ধান্ত",
+          "prompt_bn": "transcript provider বাছাইয়ের প্রস্তাব দাও: গতবার কী হয়েছিল, তুমি কীভাবে বাছতে চাও, বিকল্পটা কী, আর এতে কত সময় বাঁচবে।",
+          "checklist": [
+            "past simple দিয়ে গতবার",
+            "It would make sense to",
+            "Rather than ___, we could ___",
+            "If we ___, we would ___",
+            "so that / even though"
+          ],
+          "rounds": [
+            60,
+            45,
+            30
+          ],
+          "model_en": "Last time we compared three providers and the cheapest one won on price alone, and the accuracy dropped in every long call. Rather than guessing on price, we could score them on accuracy and uptime, so that the choice stops being a matter of opinion. It would make sense to test one long call before we sign anything. If we scored them on the same call, the decision would take one afternoon instead of one week.",
+          "coach_bn": "ইতিহাস → বিকল্প → প্রস্তাব → লাভ। চারটা ধাপ, চারটা ভিন্ন ছাঁচ — মিটিংয়ে এই ক্রমেই সবচেয়ে কাজ হয়।"
+        }
+      ]
+    }
+  ]
+}
