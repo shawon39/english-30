@@ -1,0 +1,285 @@
+{
+ "schemaVersion": "3.1",
+ "sets": [
+  {
+   "set": 0,
+   "world": "standup-replay",
+   "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+   "title_bn": "গতকাল কী হয়েছিল",
+   "desc_bn": "তোমার নিজের ৬ আগস্টের record-type bug আর deploy-এর কথা — এবার অতীতে বসিয়ে, লম্বা করে, এক দমে।",
+   "minutes": 8,
+   "cheats": [
+    "was …ing + when",
+    "had already",
+    "would have"
+   ],
+   "cards": 14
+  },
+  {
+   "set": 1,
+   "world": "standup-replay",
+   "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+   "title_bn": "গতকালের কাজ",
+   "desc_bn": "ফর্মুলা ফিল্ড, মেটাডেটা চেক আর আইকনের কাজ — স্ট্যান্ডআপে যেভাবে বলতে হয় সেভাবে।",
+   "minutes": 8,
+   "cheats": [
+    "was …ing + when",
+    "which / because",
+    "would have"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 2,
+   "world": "timeline",
+   "world_bn": "টাইমলাইন",
+   "title_bn": "তার আগেই যা হয়েছিল",
+   "desc_bn": "pro-rated বিলিং, partial copy থেকে production, আর passkey-র ঝামেলা — কোনটা কার আগে, সেটা বলতে শেখা।",
+   "minutes": 8,
+   "cheats": [
+    "had already",
+    "by the time",
+    "Before that, we had"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 3,
+   "world": "postmortem",
+   "world_bn": "পোস্টমর্টেম",
+   "title_bn": "কী করলে বাঁচা যেত",
+   "desc_bn": "record type bug, শূন্য TCV আর ৭০-বনাম-০৭ ফর্মুলা — RCA মিটিংয়ে যেভাবে বলতে হয়।",
+   "minutes": 8,
+   "cheats": [
+    "If + had → would have",
+    "should have",
+    "would not have had to"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 4,
+   "world": "proposal",
+   "world_bn": "প্রপোজাল",
+   "title_bn": "প্রস্তাব দেওয়া",
+   "desc_bn": "RocketPhone MCP, নিজস্ব AI ইঞ্জিন আর org-context টুল — আইডিয়া পিচ করার ভাষা।",
+   "minutes": 8,
+   "cheats": [
+    "If we ___, we could ___",
+    "What I would suggest is",
+    "it would make sense to"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 5,
+   "world": "meeting",
+   "world_bn": "মিটিং বস",
+   "title_bn": "মিটিংয়ে প্রশ্ন",
+   "desc_bn": "অবজেক্ট আর ফিল্ডের নাম চাওয়া, root cause জিজ্ঞেস করা, রেপরা কীভাবে ব্যবহার করে জানা — ভদ্র কিন্তু স্পষ্ট।",
+   "minutes": 8,
+   "cheats": [
+    "Could you walk me through",
+    "Would you mind",
+    "I would rather"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 6,
+   "world": "standup-replay",
+   "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+   "title_bn": "গতকাল যা ভাঙল",
+   "desc_bn": "নামাজ অ্যাপের অ্যানিমেশন, ফন্ট আর মোবাইল লেআউট — ভাঙা জিনিস কীভাবে বলতে হয়।",
+   "minutes": 8,
+   "cheats": [
+    "It kept ___ until I ___",
+    "The problem was that",
+    "would have seen"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 7,
+   "world": "timeline",
+   "world_bn": "টাইমলাইন",
+   "title_bn": "কোনটা কার আগে",
+   "desc_bn": "ডুপ্লিকেট সার্টিফিকেট, allow-list কমান্ড আর মাসিক রিপোর্ট — ক্রম গুলিয়ে ফেললে গল্পই হারায়।",
+   "minutes": 8,
+   "cheats": [
+    "had already been",
+    "Until then, we had",
+    "by the time"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 8,
+   "world": "postmortem",
+   "world_bn": "পোস্টমর্টেম",
+   "title_bn": "কেন ভাঙল",
+   "desc_bn": "ট্রান্সক্রিপ্ট প্রোভাইডার বাছাই আর রিভিউ ছাড়া অ্যানিমেশন — সিদ্ধান্তের ভুল কীভাবে ব্যাখ্যা করবে।",
+   "minutes": 8,
+   "cheats": [
+    "The real cause was that",
+    "We would not have ___ if we had ___",
+    "would never have"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 9,
+   "world": "proposal",
+   "world_bn": "প্রপোজাল",
+   "title_bn": "কোনটা বেছে নেব",
+   "desc_bn": "প্রোভাইডার তুলনা, ফ্রি ক্রেডিট আর প্রতিযোগী যাচাই — মতামত নয়, যুক্তি দিয়ে সিদ্ধান্ত।",
+   "minutes": 8,
+   "cheats": [
+    "It would make sense to",
+    "Rather than ___, we could ___",
+    "If we ___, we would ___"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 10,
+   "world": "meeting",
+   "world_bn": "মিটিং বস",
+   "title_bn": "বুঝিয়ে বলা ও রাজি করানো",
+   "desc_bn": "সাপোর্টকে scoped তথ্য দেওয়া, রেপদের ব্যবহার বোঝা, আর ভুল বোঝাবুঝি ঠেকানো।",
+   "minutes": 8,
+   "cheats": [
+    "Just to make sure I understood",
+    "Would you mind ___ing",
+    "would not have gone wrong"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 11,
+   "world": "meeting",
+   "world_bn": "মিটিং বস",
+   "title_bn": "কাস্টমারের সামনে",
+   "desc_bn": "লাইভ কলে অ্যাকাউন্ট দেখা, দেরির কারণ বলা আর আজ কী দিতে পারবে জানানো। ছাঁচ-ভারী, তাই দ্রুত।",
+   "minutes": 7,
+   "cheats": [
+    "What I can do today is",
+    "I will get back to you",
+    "It took longer because"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 12,
+   "world": "postmortem",
+   "world_bn": "পোস্টমর্টেম",
+   "title_bn": "ডেমোতে ভাঙল",
+   "desc_bn": "ল্যাপটপে চলল, শেয়ার স্ক্রিনে ভাঙল — ক্লায়েন্টের সামনে ভেঙে যাওয়া ডেমোর ব্যাখ্যা। যদি-ভারী সেট।",
+   "minutes": 7,
+   "cheats": [
+    "nobody had ___, so ___",
+    "We should have ___ before",
+    "would never have"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 13,
+   "world": "timeline",
+   "world_bn": "টাইমলাইন",
+   "title_bn": "স্প্রিন্টটা কীভাবে গেল",
+   "desc_bn": "ইনসিডেন্টে তিন দিন, তারপর ফর্মুলার কাজ, শেষে রেট্রো। সিঁড়ি-ভারী সেট — লম্বা বাক্যের দিন।",
+   "minutes": 9,
+   "cheats": [
+    "had started / had closed",
+    "By the end of the week we had",
+    "Until the retro, nobody had"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 14,
+   "world": "proposal",
+   "world_bn": "প্রপোজাল",
+   "title_bn": "নিজের ক্যারিয়ার নিয়ে",
+   "desc_bn": "আর্কিটেক্ট হওয়ার পথ, সার্টিফিকেশন আর নিজের scope চাওয়া — ম্যানেজারের সাথে যে কথাটা বলা কঠিন।",
+   "minutes": 8,
+   "cheats": [
+    "What I am aiming for is",
+    "I would like ___, so that ___",
+    "If I took ___, I would ___"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 15,
+   "world": "standup-replay",
+   "world_bn": "স্ট্যান্ডআপ রিপ্লে",
+   "title_bn": "বাসার দিনটা",
+   "desc_bn": "অফিসের একটা কথাও নেই — নামাজ, বাজার, রান্না, বৃষ্টি আর পরিবারের ফোন। বর্ণনা-ভারী সেট।",
+   "minutes": 8,
+   "cheats": [
+    "was …ing when",
+    "had already",
+    "After I ___, I ___"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 16,
+   "world": "meeting",
+   "world_bn": "মিটিং বস",
+   "title_bn": "অন্য টিমের সাথে",
+   "desc_bn": "কেউ না জানিয়ে deploy করেছে, তুমি আটকে আছো — ভদ্রভাবে না বলা আর চাওয়ার সেট। ছাঁচ-ভারী।",
+   "minutes": 7,
+   "cheats": [
+    "We are blocked on ___",
+    "Would it be possible to ___",
+    "I would rather not ___ until ___"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 17,
+   "world": "postmortem",
+   "world_bn": "পোস্টমর্টেম",
+   "title_bn": "খালি ফিল্ড, ভুল রিপোর্ট",
+   "desc_bn": "নয়টা রেকর্ড খালি contract ID নিয়ে কাস্টমারের কাছে গেল, আর দুটো ফিল্ডে একই সংখ্যা। যদি-ভারী সেট।",
+   "minutes": 7,
+   "cheats": [
+    "Nobody had ___, which is how ___",
+    "The check existed, but ___",
+    "would never have reached"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 18,
+   "world": "timeline",
+   "world_bn": "টাইমলাইন",
+   "title_bn": "শেখার পথ",
+   "desc_bn": "ডকুমেন্টেশনে হাল ছাড়া, প্রম্পট লেখা, সার্টিফিকেশন আর memory সরানো — কোনটা কার আগে এসেছিল। সিঁড়ি-ভারী।",
+   "minutes": 9,
+   "cheats": [
+    "Before I ___, I had never ___",
+    "By the time ___, I had already ___",
+    "which is why"
+   ],
+   "cards": 12
+  },
+  {
+   "set": 19,
+   "world": "proposal",
+   "world_bn": "প্রপোজাল",
+   "title_bn": "হাতের কাজ কমানো",
+   "desc_bn": "সাপ্তাহিক রিপোর্ট নিজে চলুক, ব্রাঞ্চের একটা নিয়ম থাকুক — অটোমেশনের প্রস্তাব সংখ্যা দিয়ে।",
+   "minutes": 8,
+   "cheats": [
+    "The cheapest fix here is",
+    "That would save us",
+    "If ___ ran on its own"
+   ],
+   "cards": 12
+  }
+ ]
+}

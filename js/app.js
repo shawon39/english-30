@@ -4,7 +4,7 @@ import { h } from "./stations.js";
 import { ico } from "./icons.js";
 import * as store from "./store.js";
 import * as audio from "./audio.js";
-import { fetchSet, probeSets, playSet } from "./player.js";
+import { fetchSet, fetchIndex, probeSets, playSet } from "./player.js";
 
 const mount = document.getElementById("app");
 let available = [];
@@ -37,23 +37,34 @@ function topbar() {
   );
 }
 
-function ring(streak) {
-  const R = 46, C = 2 * Math.PI * R;
-  const goal = 7;
-  const pct = Math.min(1, (streak.current % goal || (streak.current ? goal : 0)) / goal);
-  return h("div", { class: "ring" },
-    h("div", {
-      html: `<svg width="104" height="104" viewBox="0 0 104 104" aria-hidden="true">
-        <circle class="track" cx="52" cy="52" r="${R}" fill="none" stroke-width="7"></circle>
-        <circle class="fill" cx="52" cy="52" r="${R}" fill="none" stroke-width="7"
-          stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - pct)}"></circle>
-      </svg>`
-    }),
-    h("div", { class: "label" },
-      h("div", { class: "n" }, String(streak.current)),
-      h("div", { class: "k" }, "দিন")
-    )
-  );
+const WORLD_ICON = {
+  "standup-replay": "rewind",
+  timeline: "contract",
+  postmortem: "fork",
+  proposal: "expand",
+  meeting: "mic",
+};
+
+const setKey = (id) => String(id).padStart(3, "0");
+
+/** A compact strip beats a hero: at zero it says the same thing in a fifth of the height. */
+function statStrip(stats, streak) {
+  const cell = (n, label, hot) =>
+    h("div", { class: `stat3${hot ? " hot" : ""}` },
+      h("div", { class: "n mono" }, n),
+      h("div", { class: "k bn" }, label));
+  return h("div", { class: "stats3" },
+    cell(String(streak.current), "দিনের স্ট্রিক", streak.current > 0),
+    cell(stats.reps.toLocaleString("en-US"), "মোট রেপ", stats.reps > 0),
+    cell(stats.points.toLocaleString("en-US"), "পয়েন্ট", stats.points > 0));
+}
+
+/** The next set to play: the first unplayed one, else whichever was played longest ago. */
+function nextSetId(stats, ids) {
+  const fresh = ids.find((id) => !stats.sets[setKey(id)]);
+  if (fresh !== undefined) return fresh;
+  return [...ids].sort((a, b) =>
+    Date.parse(stats.sets[setKey(a)].at || 0) - Date.parse(stats.sets[setKey(b)].at || 0))[0];
 }
 
 /* --------------------------------------------------------------- home */
@@ -62,57 +73,76 @@ async function renderHome() {
   const stats = store.getStats();
   const streak = store.getStreak();
   const due = store.dueMistakes().length;
+  const donePlaying = store.playedToday();
 
-  const wrap = h("div", {},
-    topbar(),
-    h("div", { class: "hero" },
-      ring(streak),
-      h("div", { class: "repcount" },
-        h("div", { class: "n" }, stats.reps.toLocaleString("en-US")),
-        h("span", { class: "k" }, "lifetime reps"),
-        h("div", { class: "sub bn" }, stats.points ? `${stats.points.toLocaleString("en-US")} পয়েন্ট · সেরা স্ট্রিক ${streak.longest} দিন` : "প্রথম সেটটা খেলে ফেলো")
-      )
-    )
-  );
-
-  const list = h("div", {});
-  wrap.append(h("div", { class: "sectionlabel" },
-    store.playedToday() ? ico("check", 14) : null,
-    store.playedToday() ? "আজকের কাজ শেষ" : "আজকের সেট"), list);
-
-  if (!available.length) available = await probeSets();
+  const wrap = h("div", {}, topbar(), statStrip(stats, streak));
 
   if (!available.length) {
-    list.append(h("div", { class: "note bn" }, "কোনো সেট পাওয়া গেল না। content/set-000.json আছে কি না দেখো।"));
-  } else {
-    for (const id of available) {
-      let set;
-      try { set = await fetchSet(id); } catch { continue; }
-      const key = String(id).padStart(3, "0");
-      const rec = stats.sets[key];
-      const cardCount = (set.stations || []).reduce((n, s) => n + (s.items?.length || 0), 0);
-      list.append(
-        h("button", {
-          class: "setcard", type: "button",
-          onclick: () => { location.hash = `#/set/${id}`; },
-        },
-          h("div", { class: "top" },
-            h("span", { class: "world mono" }, `সেট ${key} · ${set.world_bn || set.world || ""}`),
-            h("span", { class: `badge mono${rec ? " done" : ""}` }, rec ? `সেরা ${rec.best}` : "নতুন")
-          ),
-          h("div", { class: "body" },
-            h("h2", {}, set.title_bn || set.title || `সেট ${key}`),
-            h("p", { class: "desc" }, set.desc_bn || ""),
-            h("div", { class: "meta" },
-              h("span", { class: "tag" }, `${cardCount} কার্ড`),
-              h("span", { class: "tag" }, set.minutes ? `~${set.minutes} মিনিট` : "~৭ মিনিট"),
-              ...(set.cheats || []).slice(0, 3).map((c) => h("span", { class: "tag accent" }, c))
-            )
-          )
-        )
-      );
+    try {
+      available = await fetchIndex();
+    } catch {
+      // No manifest: fall back to probing and read each set file directly.
+      const ids = await probeSets();
+      available = (await Promise.all(ids.map((id) =>
+        fetchSet(id).then((s) => ({ ...s, set: id })).catch(() => null)
+      ))).filter(Boolean);
     }
   }
+
+  if (!available.length) {
+    wrap.append(h("div", { class: "note bn" }, "কোনো সেট পাওয়া গেল না। content/index.json আছে কি না দেখো।"));
+    mount.replaceChildren(wrap);
+    return;
+  }
+
+  const byId = new Map(available.map((s) => [s.set, s]));
+  const ids = available.map((s) => s.set);
+  const nextId = nextSetId(stats, ids);
+  const next = byId.get(nextId);
+
+  wrap.append(h("div", { class: "sectionlabel" },
+    donePlaying ? ico("check", 14) : null,
+    donePlaying ? "আজ শেষ — আরেকটা?" : "আজকের সেট"));
+
+  if (next) {
+    const rec = stats.sets[setKey(nextId)];
+    const cards = next.cards ?? (next.stations || []).reduce((n, st) => n + (st.items?.length || 0), 0);
+    wrap.append(
+      h("button", { class: "setcard hero", type: "button", onclick: () => { location.hash = `#/set/${nextId}`; } },
+        h("div", { class: "top" },
+          ico(WORLD_ICON[next.world] || "frame", 16, "ic"),
+          h("span", { class: "world mono" }, `সেট ${setKey(nextId)} · ${next.world_bn || next.world || ""}`),
+          h("span", { class: `badge mono${rec ? " done" : ""}` }, rec ? `সেরা ${rec.best}` : "নতুন")
+        ),
+        h("div", { class: "body" },
+          h("h2", {}, next.title_bn || `সেট ${setKey(nextId)}`),
+          h("p", { class: "desc" }, next.desc_bn || ""),
+          h("div", { class: "meta" },
+            h("span", { class: "tag" }, `${cards} কার্ড`),
+            h("span", { class: "tag" }, `~${next.minutes || 7} মিনিট`),
+            ...(next.cheats || []).slice(0, 2).map((c) => h("span", { class: "tag accent" }, c))
+          )
+        ),
+        h("div", { class: "go" }, h("span", { class: "bn" }, "শুরু করো"), ico("right", 17))
+      )
+    );
+  }
+
+  // Twenty full-size cards is a scroll, not a screen. The rest live as a map.
+  wrap.append(h("div", { class: "sectionlabel" }, `সব সেট`, h("span", { class: "count mono" }, `${ids.length}`)));
+  const grid = h("div", { class: "setgrid" });
+  ids.forEach((id) => {
+    const set = byId.get(id);
+    const rec = stats.sets[setKey(id)];
+    const cls = `settile${rec ? " done" : ""}${id === nextId ? " now" : ""}`;
+    grid.append(h("button", {
+      class: cls, type: "button",
+      title: `${set.title_bn || ""} · ${set.world_bn || ""}`,
+      "aria-label": `সেট ${setKey(id)} — ${set.title_bn || ""}`,
+      onclick: () => { location.hash = `#/set/${id}`; },
+    }, ico(WORLD_ICON[set.world] || "frame", 17), h("span", { class: "n" }, setKey(id))));
+  });
+  wrap.append(grid);
 
   wrap.append(
     h("div", { class: "sectionlabel" }, "আরও"),
