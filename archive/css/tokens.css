@@ -95,27 +95,3 @@
 
   color-scheme: dark;
 }
-
-/* ---------------------------------------------------------------
-   Replay (v3) additions. Layered on top of Ember Ledger above so
-   the archive and the new app stay visually one family.
-   --------------------------------------------------------------- */
-:root {
-  --past: #6366F1;                                 /* the "flipped to past" state */
-  --past-bg: rgba(99, 102, 241, 0.10);
-  --past-text: #4338CA;
-  --past-line: rgba(99, 102, 241, 0.40);
-  --hp: #16A34A;
-  --hp-low: #E11D48;
-  --rail: rgba(24, 24, 27, 0.06);                  /* ladder rails, timer troughs */
-  --col-wide: 720px;
-}
-:root[data-theme="dark"] {
-  --past: #818CF8;
-  --past-bg: rgba(129, 140, 248, 0.16);
-  --past-text: #A5B4FC;
-  --past-line: rgba(129, 140, 248, 0.45);
-  --hp: #22C55E;
-  --hp-low: #F43F5E;
-  --rail: rgba(244, 244, 245, 0.07);
-}
