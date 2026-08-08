@@ -1,6 +1,7 @@
 // player.js — plays one set: card after card, tracking reps, combo, HP and points.
 
 import { h, renderCard } from "./stations.js";
+import { ico } from "./icons.js";
 import * as store from "./store.js";
 import * as audio from "./audio.js";
 
@@ -46,7 +47,7 @@ export function playSet(mount, set, { onExit, onFinish }) {
   const hpFill = h("i", {});
   const hpBar = h("div", { class: "hpbar", title: "ফ্লুয়েন্সি মিটার" }, hpFill);
   const comboEl = h("span", { class: "combo" }, "");
-  const back = h("button", { class: "iconbtn", type: "button", "aria-label": "হোমে ফেরো", onclick: () => { audio.stop(); onExit(); } }, "←");
+  const back = h("button", { class: "iconbtn", type: "button", "aria-label": "হোমে ফেরো", onclick: () => { audio.stop(); onExit(); } }, ico("left", 19));
 
   const bar = h("div", { class: "playerbar" }, back, dots, hpBar, comboEl);
   const stage = h("div", {});
@@ -98,7 +99,7 @@ export function playSet(mount, set, { onExit, onFinish }) {
       advanced = true;
       store.clearMiss(item.id);
       const next = h("button", { class: "btn", type: "button", onclick: () => { idx += 1; show(); } },
-        idx === cards.length - 1 ? "ফলাফল দেখো →" : "পরের কার্ড →");
+        idx === cards.length - 1 ? "ফলাফল দেখো" : "পরের কার্ড", ico("right", 16));
       stage.append(h("div", { style: "display:flex;justify-content:center;padding:8px 0 32px" }, next));
       next.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });

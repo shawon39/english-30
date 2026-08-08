@@ -1,6 +1,7 @@
 // app.js — routing, home screen, settings.
 
 import { h } from "./stations.js";
+import { ico } from "./icons.js";
 import * as store from "./store.js";
 import * as audio from "./audio.js";
 import { fetchSet, probeSets, playSet } from "./player.js";
@@ -30,9 +31,9 @@ function toast(msg) {
 
 function topbar() {
   return h("div", { class: "topbar" },
-    h("div", { class: "brand" }, h("span", { class: "glyph" }, "⏪"), h("span", {}, "রিপ্লে")),
+    h("div", { class: "brand" }, ico("rewind", 22, "glyph"), h("span", {}, "রিপ্লে")),
     h("div", { class: "spacer" }),
-    h("button", { class: "iconbtn", type: "button", "aria-label": "সেটিংস", onclick: openSettings }, "⚙")
+    h("button", { class: "iconbtn", type: "button", "aria-label": "সেটিংস", onclick: openSettings }, ico("sliders", 19))
   );
 }
 
@@ -75,7 +76,9 @@ async function renderHome() {
   );
 
   const list = h("div", {});
-  wrap.append(h("div", { class: "sectionlabel" }, store.playedToday() ? "আজকের কাজ শেষ ✓" : "আজকের সেট"), list);
+  wrap.append(h("div", { class: "sectionlabel" },
+    store.playedToday() ? ico("check", 14) : null,
+    store.playedToday() ? "আজকের কাজ শেষ" : "আজকের সেট"), list);
 
   if (!available.length) available = await probeSets();
 
@@ -115,23 +118,23 @@ async function renderHome() {
     h("div", { class: "sectionlabel" }, "আরও"),
     h("div", { class: "rowlinks" },
       h("a", { class: "rowlink", href: "archive/" },
-        h("span", { class: "ic" }, "📚"),
+        ico("archive", 20, "ic"),
         h("span", { class: "t bn" }, "গ্রামার আর্কাইভ", h("small", {}, "পুরনো ৩৮ দিনের কোর্স — অক্ষত, প্রগ্রেসসহ")),
-        h("span", { class: "chev" }, "→")
+        ico("right", 18, "chev")
       ),
       due ? h("div", { class: "rowlink" },
-        h("span", { class: "ic" }, "🔁"),
+        ico("repeat", 20, "ic"),
         h("span", { class: "t bn" }, `${due}টা কার্ড রিভিউয়ের অপেক্ষায়`, h("small", {}, "যেগুলোতে হোঁচট খেয়েছিলে, সেটের ভেতরেই ফিরে আসবে")),
       ) : null,
       h("button", { class: "rowlink", type: "button", onclick: doExport },
-        h("span", { class: "ic" }, "⬇"),
+        ico("download", 20, "ic"),
         h("span", { class: "t bn" }, "প্রগ্রেস ব্যাকআপ", h("small", {}, "replay-progress.json নামিয়ে রাখো")),
-        h("span", { class: "chev" }, "→")
+        ico("right", 18, "chev")
       ),
       h("button", { class: "rowlink", type: "button", onclick: doImport },
-        h("span", { class: "ic" }, "⬆"),
+        ico("upload", 20, "ic"),
         h("span", { class: "t bn" }, "ব্যাকআপ ফেরাও", h("small", {}, "অন্য ডিভাইস থেকে আনো")),
-        h("span", { class: "chev" }, "→")
+        ico("right", 18, "chev")
       )
     ),
     h("footer", { class: "foot" }, "প্রতিটা বাক্য তোমার নিজের VoiceInk ট্রান্সক্রিপ্ট থেকে নেওয়া।")

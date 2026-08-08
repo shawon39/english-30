@@ -3,6 +3,7 @@
 // same ending: hear the target, see the Bangla, say it N times against a clock.
 
 import * as audio from "./audio.js";
+import { ico } from "./icons.js";
 import { getSettings } from "./store.js";
 
 export function h(tag, props = {}, ...kids) {
@@ -25,12 +26,12 @@ export function shuffle(arr) {
 }
 
 const STATION_META = {
-  "time-machine": { ic: "⏪", name: "টাইম মেশিন" },
-  ladder:         { ic: "🪜", name: "সিঁড়ি" },
-  backward:       { ic: "🧵", name: "উল্টো গাঁথা" },
-  frame:          { ic: "🧩", name: "ছাঁচ" },
-  "if-machine":   { ic: "🌀", name: "যদি-মেশিন" },
-  boss:           { ic: "🎤", name: "বস রাউন্ড" },
+  "time-machine": { ic: "rewind",   name: "টাইম মেশিন" },
+  ladder:         { ic: "expand",   name: "সিঁড়ি" },
+  backward:       { ic: "contract", name: "উল্টো গাঁথা" },
+  frame:          { ic: "frame",    name: "ছাঁচ" },
+  "if-machine":   { ic: "fork",     name: "যদি-মেশিন" },
+  boss:           { ic: "mic",      name: "বস রাউন্ড" },
 };
 
 function haptic(ms = 12) {
@@ -40,9 +41,9 @@ function haptic(ms = 12) {
 /* ------------------------------------------------------------------ shell */
 
 function cardShell(item) {
-  const meta = STATION_META[item.station] || { ic: "•", name: item.station };
+  const meta = STATION_META[item.station] || { ic: "frame", name: item.station };
   const head = h("div", { class: "head" },
-    h("span", { class: "ic" }, meta.ic),
+    ico(meta.ic, 17, "ic"),
     h("span", { class: "cheat mono" }, item.cheat || meta.name),
     item.source_date ? h("span", { class: "stamp" }, item.source_date) : null
   );
@@ -98,27 +99,29 @@ function audioRow(text, karaoke) {
   const rates = [0.75, 1, 1.25];
   let rate = getSettings().rate || 1;
 
+  const glyph = h("span", { class: "tri" }, ico("play", 11));
   const btn = h("button", { class: "playbtn", type: "button", "aria-label": "টার্গেট বাক্যটি শোনো" },
-    h("span", { class: "tri" }, "▶"), h("span", {}, "শোনো"));
+    glyph, h("span", {}, "শোনো"));
 
   const rateBtns = rates.map((r) =>
     h("button", {
       class: "rate", type: "button", "aria-pressed": String(r === rate),
       onclick: () => { rate = r; rateBtns.forEach((b, i) => b.setAttribute("aria-pressed", String(rates[i] === r))); },
-    }, r === 0.75 ? "🐢 0.75×" : r === 1 ? "1×" : "⚡ 1.25×")
+    }, r === 1 ? "1×" : `${r}×`)
   );
 
   let stop = null;
   btn.addEventListener("click", () => {
     if (btn.dataset.playing === "1") { stop?.(); reset(); return; }
     btn.dataset.playing = "1";
+    glyph.replaceChildren(ico("stop", 11));
     stop = audio.speak(text, {
       rate,
       onBoundary: (ci) => karaoke?.lightAt(ci),
       onEnd: reset,
     });
   });
-  function reset() { btn.dataset.playing = "0"; karaoke?.clear(); }
+  function reset() { btn.dataset.playing = "0"; glyph.replaceChildren(ico("play", 11)); karaoke?.clear(); }
 
   return h("div", { class: "audio" }, btn, h("div", { class: "rates" }, ...rateBtns));
 }
@@ -130,7 +133,7 @@ function bnBlock(text) {
   if (getSettings().bnMode !== "challenge") return h("p", { class: "bnline" }, text);
 
   const wrap = h("div", {});
-  const veil = h("button", { class: "bnveil", type: "button" }, "🇧🇩", h("span", {}, "বাংলা দেখতে ট্যাপ করো"));
+  const veil = h("button", { class: "bnveil", type: "button" }, ico("eye", 16), h("span", {}, "বাংলা দেখতে ট্যাপ করো"));
   veil.addEventListener("click", () => { wrap.replaceChildren(h("p", { class: "bnline" }, text)); });
   wrap.append(veil);
   return wrap;
@@ -149,20 +152,20 @@ function repRow({ reps = 3, seconds = 6, label = "বলো", ctx, onDone }) {
   let timeoutId = null;
 
   const pips = h("div", { class: "pips" }, ...Array.from({ length: reps }, () => h("span", { class: "pip" })));
-  const btn = h("button", { class: "speak", type: "button" }, "🎙 ", label);
+  const btn = h("button", { class: "speak", type: "button" }, ico("mic", 15), label);
   const meta = h("span", { class: "repmeta" }, `${reps} রেপ · টার্গেট ${seconds}s`);
   const bar = h("i", {});
   const timer = h("div", { class: "timer" }, bar);
 
   function paint() {
     [...pips.children].forEach((p, i) => p.classList.toggle("on", i < done));
-    meta.textContent = done >= reps ? "শেষ ✓" : `${reps - done} রেপ বাকি · ${seconds}s`;
+    meta.textContent = done >= reps ? "শেষ" : `${reps - done} রেপ বাকি · ${seconds}s`;
   }
 
   function startRep() {
     running = true;
     btn.classList.add("live");
-    btn.replaceChildren(document.createTextNode("✓ বলেছি"));
+    btn.replaceChildren(ico("check", 15), document.createTextNode("বলেছি"));
     timer.classList.remove("over");
     bar.style.animation = "none";
     void bar.offsetWidth;                       // restart the CSS animation
@@ -186,10 +189,10 @@ function repRow({ reps = 3, seconds = 6, label = "বলো", ctx, onDone }) {
 
     if (done >= reps) {
       btn.disabled = true;
-      btn.replaceChildren(document.createTextNode("✓ কার্ড শেষ"));
+      btn.replaceChildren(ico("check", 15), document.createTextNode("কার্ড শেষ"));
       onDone?.();
     } else {
-      btn.replaceChildren(document.createTextNode("🎙 আবার"));
+      btn.replaceChildren(ico("mic", 15), document.createTextNode("আবার"));
     }
   }
 
@@ -271,7 +274,7 @@ function timeMachine(item, ctx, done) {
   }
 
   function reveal() {
-    prompt.querySelector(".ltag").textContent = "অতীতে ফেরানো হলো ✓";
+    prompt.querySelector(".ltag").replaceChildren(ico("check", 13), document.createTextNode("অতীতে ফেরানো হলো"));
     ending(shell, item, ctx, done);
     shell.card.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
@@ -310,7 +313,7 @@ function progressive(item, ctx, done, { reversed }) {
   audioLayer.prepend(k.node);
   audioLayer.style.display = "none";
 
-  const btn = h("button", { class: "speak", type: "button" }, "🎙 বলো");
+  const btn = h("button", { class: "speak", type: "button" }, ico("mic", 15), "বলো");
   const meta = h("span", { class: "repmeta" }, `ধাপ ১ / ${steps.length}`);
   const foot = shell.layer(null, h("div", { class: "repbar" }, btn, meta));
 
@@ -329,7 +332,7 @@ function progressive(item, ctx, done, { reversed }) {
     if (at < steps.length) {
       show(at);
       meta.textContent = `ধাপ ${at + 1} / ${steps.length}`;
-      if (at === steps.length - 1) btn.replaceChildren(document.createTextNode("🎙 পুরোটা বলো"));
+      if (at === steps.length - 1) btn.replaceChildren(ico("mic", 15), document.createTextNode("পুরোটা বলো"));
     } else {
       foot.remove();
       audioLayer.style.display = "";
@@ -386,7 +389,7 @@ function frameSwap(item, ctx, done) {
   const counter = line.querySelector(".fillcount");
 
   const bnHost = shell.layer("অর্থ", h("div", {}));
-  const btn = h("button", { class: "speak", type: "button" }, "🎙 বলো");
+  const btn = h("button", { class: "speak", type: "button" }, ico("mic", 15), "বলো");
   const meta = h("span", { class: "repmeta" });
   shell.layer(null, h("div", { class: "repbar" }, btn, meta));
 
@@ -412,7 +415,7 @@ function frameSwap(item, ctx, done) {
     else {
       ctx.onScore(10, "solve");
       btn.disabled = true;
-      btn.replaceChildren(document.createTextNode("✓ কার্ড শেষ"));
+      btn.replaceChildren(ico("check", 15), document.createTextNode("কার্ড শেষ"));
       if (item.coach_bn) shell.layer("কোচ", h("p", { class: "coachline", html: item.coach_bn.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>") }));
       done();
     }
@@ -465,7 +468,7 @@ function ifMachine(item, ctx, done) {
       [...line.querySelectorAll(".tile")].forEach((b) => { b.disabled = true; });
       haptic();
       ctx.onScore(15, "solve");
-      zone.querySelector(".ltag").textContent = "ঠিক আছে ✓";
+      zone.querySelector(".ltag").replaceChildren(ico("check", 13), document.createTextNode("ঠিক আছে"));
       tray.remove();
       ending(shell, item, ctx, done);
       shell.card.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -492,7 +495,7 @@ function boss(item, ctx, done) {
 
   const checks = (item.checklist || []).map((c) =>
     h("button", { class: "check", type: "button", "aria-pressed": "false" },
-      h("span", { class: "box" }, "✓"), h("span", {}, c))
+      h("span", { class: "box" }, ico("check", 12)), h("span", {}, c))
   );
   checks.forEach((b) => b.addEventListener("click", () => {
     const on = b.getAttribute("aria-pressed") === "true";
@@ -508,7 +511,7 @@ function boss(item, ctx, done) {
   );
   const bar = h("i", {});
   const timer = h("div", { class: "timer" }, bar);
-  const btn = h("button", { class: "speak", type: "button" }, "🎙 রাউন্ড ১ শুরু");
+  const btn = h("button", { class: "speak", type: "button" }, ico("mic", 15), "রাউন্ড ১ শুরু");
   const meta = h("span", { class: "repmeta" }, "একই গল্প, প্রতিবার কম সময়ে");
   let running = false, tid = null;
 
@@ -523,7 +526,7 @@ function boss(item, ctx, done) {
       bar.style.animation = `drain ${times[at]}s linear forwards`;
       tid = setTimeout(() => timer.classList.add("over"), times[at] * 1000);
       btn.classList.add("live");
-      btn.replaceChildren(document.createTextNode("✓ বলা শেষ"));
+      btn.replaceChildren(ico("check", 15), document.createTextNode("বলা শেষ"));
       return;
     }
     clearTimeout(tid);
@@ -540,11 +543,11 @@ function boss(item, ctx, done) {
     at += 1;
     if (at < times.length) {
       roundEls[at].classList.add("now");
-      btn.replaceChildren(document.createTextNode(`🎙 রাউন্ড ${at + 1} শুরু`));
+      btn.replaceChildren(ico("mic", 15), document.createTextNode(`রাউন্ড ${at + 1} শুরু`));
       meta.textContent = `এবার ${times[at]} সেকেন্ডে`;
     } else {
       btn.disabled = true;
-      btn.replaceChildren(document.createTextNode("✓ বস শেষ"));
+      btn.replaceChildren(ico("check", 15), document.createTextNode("বস শেষ"));
       meta.textContent = "তিন রাউন্ড শেষ";
       if (item.model_en) {
         const k = karaokeSentence(item.model_en);

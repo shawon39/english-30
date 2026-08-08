@@ -463,3 +463,26 @@ html[data-motion="off"] *, html[data-motion="off"] *::before, html[data-motion="
 /* Home breathes without a dead band between the hero and the first set. */
 .hero { padding-bottom: var(--s-4); }
 .sectionlabel { margin-top: var(--s-5); }
+
+/* ---------------------------------------------------------------
+   Icons. Inline SVG on one 24-unit grid, inheriting currentColor,
+   so every glyph is identical on every platform and stays sharp at
+   any density instead of falling back to a vendor's emoji artwork.
+   --------------------------------------------------------------- */
+.ico { display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.ico svg { display: block; shape-rendering: geometricPrecision; }
+
+.brand .glyph { color: var(--accent-text); }
+.card .head .ic { color: var(--accent-text); }
+.rowlink .ic { color: var(--accent-text); }
+.rowlink .chev { color: var(--muted); transition: transform var(--dur-micro) var(--ease); }
+.rowlink:hover .chev { transform: translateX(3px); }
+.sectionlabel { display: flex; align-items: center; gap: 7px; }
+.sectionlabel .ico { color: var(--correct-text); }
+.speak .ico, .btn .ico { margin-right: -2px; }
+.check .box .ico { color: transparent; transition: color var(--dur-micro) var(--ease); }
+.check[aria-pressed="true"] .box .ico { color: #fff; }
+.bnveil .ico { color: var(--muted); }
+.playbtn .tri .ico { color: inherit; }
+.ltag { display: flex; align-items: center; gap: 6px; }
+.ltag .ico { color: var(--correct-text); }
