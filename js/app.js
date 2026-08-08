@@ -4,7 +4,7 @@ import { h } from "./stations.js";
 import { ico } from "./icons.js";
 import * as store from "./store.js";
 import * as audio from "./audio.js";
-import { fetchSet, fetchIndex, probeSets, playSet } from "./player.js";
+import { fetchSet, fetchIndex, probeSets, playSet, buildReview, buildMixed } from "./player.js";
 
 const mount = document.getElementById("app");
 let available = [];
@@ -57,6 +57,13 @@ function statStrip(stats, streak) {
     cell(String(streak.current), "দিনের স্ট্রিক", streak.current > 0),
     cell(stats.reps.toLocaleString("en-US"), "মোট রেপ", stats.reps > 0),
     cell(stats.points.toLocaleString("en-US"), "পয়েন্ট", stats.points > 0));
+}
+
+function actionTile(icon, title, sub, hash) {
+  return h("button", { class: "actiontile", type: "button", onclick: () => { location.hash = hash; } },
+    ico(icon, 20, "ic"),
+    h("span", {}, h("span", { class: "t" }, title), h("span", { class: "s" }, sub)),
+    ico("right", 17, "chev"));
 }
 
 /** The next set to play: the first unplayed one, else whichever was played longest ago. */
@@ -128,6 +135,18 @@ async function renderHome() {
     );
   }
 
+  const playedIds = ids.filter((id) => stats.sets[setKey(id)]);
+  const actions = h("div", { class: "actions" });
+  if (due) {
+    actions.append(actionTile("repeat", "রিভিউ", `${due}টা কার্ডে হোঁচট খেয়েছিলে`, "#/review"));
+  }
+  if (playedIds.length >= 2) {
+    actions.append(actionTile("shuffle", "মিক্সড ড্রিল", `${playedIds.length}টা সেট থেকে ১২ কার্ড`, "#/mixed"));
+  }
+  if (actions.children.length) {
+    wrap.append(h("div", { class: "sectionlabel" }, "আরও অনুশীলন"), actions);
+  }
+
   // Twenty full-size cards is a scroll, not a screen. The rest live as a map.
   wrap.append(h("div", { class: "sectionlabel" }, `সব সেট`, h("span", { class: "count mono" }, `${ids.length}`)));
   const grid = h("div", { class: "setgrid" });
@@ -152,10 +171,6 @@ async function renderHome() {
         h("span", { class: "t bn" }, "গ্রামার আর্কাইভ", h("small", {}, "পুরনো ৩৮ দিনের কোর্স — অক্ষত, প্রগ্রেসসহ")),
         ico("right", 18, "chev")
       ),
-      due ? h("div", { class: "rowlink" },
-        ico("repeat", 20, "ic"),
-        h("span", { class: "t bn" }, `${due}টা কার্ড রিভিউয়ের অপেক্ষায়`, h("small", {}, "যেগুলোতে হোঁচট খেয়েছিলে, সেটের ভেতরেই ফিরে আসবে")),
-      ) : null,
       h("button", { class: "rowlink", type: "button", onclick: doExport },
         ico("download", 20, "ic"),
         h("span", { class: "t bn" }, "প্রগ্রেস ব্যাকআপ", h("small", {}, "replay-progress.json নামিয়ে রাখো")),
@@ -188,6 +203,42 @@ async function renderSet(id) {
   const host = h("div", {});
   mount.replaceChildren(host);
   playSet(host, set, {
+    onExit: () => { location.hash = "#/"; },
+    onFinish: () => { location.hash = "#/"; },
+  });
+}
+
+/** Review and mixed drill are assembled on the fly rather than loaded from a file. */
+async function renderSession(kind) {
+  mount.replaceChildren(h("div", { class: "loading bn" }, "তৈরি হচ্ছে…"));
+  let session = null;
+  try {
+    if (kind === "review") {
+      session = await buildReview();
+    } else {
+      if (!available.length) {
+        try { available = await fetchIndex(); } catch { available = []; }
+      }
+      const stats = store.getStats();
+      const played = available.map((s) => s.set).filter((id) => stats.sets[setKey(id)]);
+      session = await buildMixed(played);
+    }
+  } catch {
+    session = null;
+  }
+
+  if (!session) {
+    mount.replaceChildren(topbar(),
+      h("div", { class: "note bn" }, kind === "review"
+        ? "রিভিউ করার মতো কিছু নেই — কোথাও হোঁচট খাওনি।"
+        : "মিক্সড ড্রিলের জন্য আগে অন্তত দুইটা সেট খেলো।"),
+      h("button", { class: "btn", type: "button", onclick: () => { location.hash = "#/"; } }, "হোমে ফেরো"));
+    return;
+  }
+
+  const host = h("div", {});
+  mount.replaceChildren(host);
+  playSet(host, session, {
     onExit: () => { location.hash = "#/"; },
     onFinish: () => { location.hash = "#/"; },
   });
@@ -304,6 +355,8 @@ function doImport() {
 
 function route() {
   audio.stop();
+  if (location.hash.startsWith("#/review")) return renderSession("review");
+  if (location.hash.startsWith("#/mixed")) return renderSession("mixed");
   const m = location.hash.match(/^#\/set\/(\d+)/);
   if (m) return renderSet(Number(m[1]));
   return renderHome();

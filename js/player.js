@@ -1,6 +1,6 @@
 // player.js — plays one set: card after card, tracking reps, combo, HP and points.
 
-import { h, renderCard } from "./stations.js";
+import { h, renderCard, shuffle } from "./stations.js";
 import { ico } from "./icons.js";
 import * as store from "./store.js";
 import * as audio from "./audio.js";
@@ -44,10 +44,95 @@ export async function probeSets(max = 200) {
   return found;
 }
 
+// Easiest station first, hardest last. Which cards appear is random; the shape of
+// the climb is not.
+const GRADIENT = ["time-machine", "frame", "if-machine", "ladder", "backward", "boss"];
+const byGradient = (items) =>
+  [...items].sort((a, b) => GRADIENT.indexOf(a.station) - GRADIENT.indexOf(b.station));
+
+/** The cards you fumbled, pulled back out of the sets they came from. */
+export async function buildReview(limit = 12) {
+  const due = store.dueMistakes();
+  if (!due.length) return null;
+
+  const bySet = new Map();
+  due.forEach((d) => {
+    if (!bySet.has(d.setId)) bySet.set(d.setId, []);
+    bySet.get(d.setId).push(d);
+  });
+
+  const items = [];
+  for (const [setId, recs] of bySet) {
+    let content;
+    try {
+      content = await fetchSet(setId);
+    } catch {
+      recs.forEach((r) => store.clearMiss(r.itemId)); // its set is gone
+      continue;
+    }
+    const all = (content.stations || []).flatMap((st) =>
+      (st.items || []).map((it) => ({ ...it, station: it.station || st.station })));
+    recs.forEach((r) => {
+      const hit = all.find((it) => it.id === r.itemId);
+      if (hit) items.push({ ...hit, _set: setId });
+      else store.clearMiss(r.itemId); // the card no longer exists
+    });
+  }
+  if (!items.length) return null;
+
+  return {
+    set: "review",
+    title_bn: "রিভিউ",
+    finish_bn: "রিভিউ শেষ",
+    stations: [{ station: "mixed", items: byGradient(items).slice(0, limit) }],
+  };
+}
+
+/** A fresh combination every time, drawn from every set already played. */
+export async function buildMixed(ids, limit = 12) {
+  const loaded = (await Promise.all(ids.map((id) =>
+    fetchSet(id).then((set) => ({ id, set })).catch(() => null)
+  ))).filter(Boolean);
+
+  const byStation = new Map();
+  loaded.forEach(({ id, set }) => {
+    (set.stations || []).forEach((st) => {
+      (st.items || []).forEach((it) => {
+        const station = it.station || st.station;
+        if (station === "boss") return; // three timed rounds does not belong in a sampler
+        if (!byStation.has(station)) byStation.set(station, []);
+        byStation.get(station).push({ ...it, station, _set: id });
+      });
+    });
+  });
+  if (!byStation.size) return null;
+
+  // Round-robin across stations so a drill is never four frames in a row.
+  const groups = [...byStation.values()].map(shuffle);
+  const picked = [];
+  for (let i = 0; picked.length < limit && groups.some((g) => g.length); i++) {
+    const g = groups[i % groups.length];
+    if (g.length) picked.push(g.pop());
+  }
+  if (picked.length < 4) return null;
+
+  return {
+    set: "mixed",
+    title_bn: "মিক্সড ড্রিল",
+    finish_bn: "মিক্সড ড্রিল শেষ",
+    stations: [{ station: "mixed", items: byGradient(picked) }],
+  };
+}
+
 export function playSet(mount, set, { onExit, onFinish }) {
-  const cards = (set.stations || []).flatMap((st) =>
-    (st.items || []).map((it) => ({ ...it, station: it.station || st.station }))
-  );
+  // Cards are shuffled inside their own station but never across stations: the
+  // warm-up gradient — tap a verb first, talk for sixty seconds last — is the
+  // reason a set is playable at all. A review or mixed session arrives as one
+  // "mixed" group that byGradient already ordered, so it is left alone.
+  const cards = (set.stations || []).flatMap((st) => {
+    const items = st.station === "mixed" ? (st.items || []) : shuffle(st.items || []);
+    return items.map((it) => ({ ...it, station: it.station || st.station }));
+  });
 
   let idx = 0, points = 0, reps = 0, hp = MAX_HP, combo = 0, bestCombo = 0, misses = 0;
 
@@ -91,7 +176,7 @@ export function playSet(mount, set, { onExit, onFinish }) {
     },
     onMiss(itemId) {
       misses += 1;
-      store.logMiss(itemId, set.set);
+      store.logMiss(itemId, cards.find((c) => c.id === itemId)?._set ?? set.set);
     },
     onRep() { reps += 1; },
   };
@@ -124,7 +209,7 @@ export function playSet(mount, set, { onExit, onFinish }) {
 
     stage.replaceChildren(h("div", { class: "finish" },
       h("div", { class: "big mono" }, `+${points}`),
-      h("h2", { class: "bn" }, "সেট শেষ"),
+      h("h2", { class: "bn" }, set.finish_bn || "সেট শেষ"),
       h("p", {}, `${reps} রেপ · ফ্লুয়েন্সি বোনাস +${bonus}`),
       h("div", { class: "grid" },
         h("div", { class: "cell" }, h("div", { class: "n mono" }, String(stats.reps)), h("div", { class: "k" }, "মোট রেপ")),
