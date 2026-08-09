@@ -4,7 +4,7 @@ import { h } from "./stations.js";
 import { ico } from "./icons.js";
 import * as store from "./store.js";
 import * as audio from "./audio.js";
-import { fetchSet, fetchIndex, probeSets, playSet, buildReview, buildMixed } from "./player.js";
+import { fetchSet, fetchIndex, probeSets, playSet, buildReview, buildMixed, sessionKey, rebuildSession } from "./player.js";
 
 const mount = document.getElementById("app");
 let available = [];
@@ -66,12 +66,72 @@ function actionTile(icon, title, sub, hash) {
     ico("right", 17, "chev"));
 }
 
-/** The next set to play: the first unplayed one, else whichever was played longest ago. */
-function nextSetId(stats, ids) {
-  const fresh = ids.find((id) => !stats.sets[setKey(id)]);
+/**
+ * The next set to play: the first unplayed one, else whichever was played longest
+ * ago. Sets you are already part-way through are skipped — they have their own
+ * card at the top of the screen, and offering the same set twice reads as a bug.
+ */
+function nextSetId(stats, ids, skip = new Set()) {
+  const pool = ids.filter((id) => !skip.has(id));
+  const list = pool.length ? pool : ids;
+  const fresh = list.find((id) => !stats.sets[setKey(id)]);
   if (fresh !== undefined) return fresh;
-  return [...ids].sort((a, b) =>
+  return [...list].sort((a, b) =>
     Date.parse(stats.sets[setKey(a)].at || 0) - Date.parse(stats.sets[setKey(b)].at || 0))[0];
+}
+
+/* -------------------------------------------------------------- resume */
+
+const SESSION_BN = { review: "রিভিউ", mixed: "মিক্সড ড্রিল" };
+
+/** "৩ ঘণ্টা আগে" — enough to tell last night's set from last month's. */
+function agoBn(iso) {
+  const min = Math.floor((Date.now() - Date.parse(iso)) / 6e4);
+  if (!Number.isFinite(min) || min < 1) return "এইমাত্র";
+  if (min < 60) return `${min} মিনিট আগে`;
+  const hr = Math.floor(min / 60);
+  if (hr < 24) return `${hr} ঘণ্টা আগে`;
+  return `${Math.floor(hr / 24)} দিন আগে`;
+}
+
+const isSetSession = (p) => typeof p.setId === "number";
+const sessionHash = (p) => (isSetSession(p) ? `#/set/${p.setId}` : `#/${p.setId}`);
+const sessionDone = (p) => Math.min(p.idx || 0, p.total || 0);
+
+function sessionTitle(p, byId) {
+  if (!isSetSession(p)) return SESSION_BN[p.setId] || "সেশন";
+  return byId.get(p.setId)?.title_bn || p.title_bn || `সেট ${setKey(p.setId)}`;
+}
+
+/** The one thing the home screen owes a returning learner: the card they stopped on. */
+function resumeCard(p, byId) {
+  const total = p.total || 0;
+  const done = sessionDone(p);
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  const over = done >= total;
+  const set = isSetSession(p) ? byId.get(p.setId) : null;
+
+  return h("button", {
+    class: "setcard hero resume", type: "button",
+    onclick: () => { location.hash = sessionHash(p); },
+  },
+    h("div", { class: "top" },
+      ico(isSetSession(p) ? (WORLD_ICON[set?.world] || "frame") : "repeat", 16, "ic"),
+      h("span", { class: "world mono" }, isSetSession(p)
+        ? `সেট ${setKey(p.setId)} · ${set?.world_bn || ""}`
+        : SESSION_BN[p.setId] || ""),
+      h("span", { class: "badge when" }, agoBn(p.at))
+    ),
+    h("div", { class: "body" },
+      h("h2", {}, sessionTitle(p, byId)),
+      h("div", { class: "resumebar" }, h("i", { style: `width:${pct}%` })),
+      h("p", { class: "resumemeta bn" }, over
+        ? `সব ${total}টা কার্ড শেষ — শুধু ফলাফলটা বাকি`
+        : `${total}টার মধ্যে ${done}টা শেষ · ${p.points || 0} পয়েন্ট জমা আছে`)
+    ),
+    h("div", { class: "go" },
+      h("span", { class: "bn" }, over ? "ফলাফল দেখো" : "চালিয়ে যাও"), ico("right", 17))
+  );
 }
 
 /* --------------------------------------------------------------- home */
@@ -104,14 +164,32 @@ async function renderHome() {
 
   const byId = new Map(available.map((s) => [s.set, s]));
   const ids = available.map((s) => s.set);
-  const nextId = nextSetId(stats, ids);
-  const next = byId.get(nextId);
 
-  wrap.append(h("div", { class: "sectionlabel" },
-    donePlaying ? ico("check", 14) : null,
-    donePlaying ? "আজ শেষ — আরেকটা?" : "আজকের সেট"));
+  // Half-finished sessions come first: picking one back up beats starting a new set.
+  const open = store.openSessions().filter((p) => !isSetSession(p) || byId.has(p.setId));
+  const openBySet = new Map(open.filter(isSetSession).map((p) => [p.setId, p]));
+  if (open.length) {
+    wrap.append(h("div", { class: "sectionlabel" }, ico("repeat", 14), "যেখানে থেমেছিলে"));
+    wrap.append(resumeCard(open[0], byId));
+    if (open.length > 1) {
+      const more = h("div", { class: "actions" });
+      open.slice(1).forEach((p) => more.append(actionTile(
+        isSetSession(p) ? (WORLD_ICON[byId.get(p.setId)?.world] || "frame") : "repeat",
+        sessionTitle(p, byId),
+        `${sessionDone(p)} / ${p.total || 0} কার্ড · ${agoBn(p.at)}`,
+        sessionHash(p))));
+      wrap.append(more);
+    }
+  }
+
+  const nextId = nextSetId(stats, ids, new Set(openBySet.keys()));
+  const next = openBySet.has(nextId) ? null : byId.get(nextId);
 
   if (next) {
+    wrap.append(h("div", { class: "sectionlabel" },
+      donePlaying ? ico("check", 14) : null,
+      donePlaying ? "আজ শেষ — আরেকটা?" : open.length ? "নতুন সেট" : "আজকের সেট"));
+
     const rec = stats.sets[setKey(nextId)];
     const cards = next.cards ?? (next.stations || []).reduce((n, st) => n + (st.items?.length || 0), 0);
     wrap.append(
@@ -135,12 +213,14 @@ async function renderHome() {
     );
   }
 
+  // A session already offered above as a resume is not offered again down here.
+  const openKinds = new Set(open.filter((p) => !isSetSession(p)).map((p) => p.setId));
   const playedIds = ids.filter((id) => stats.sets[setKey(id)]);
   const actions = h("div", { class: "actions" });
-  if (due) {
+  if (due && !openKinds.has("review")) {
     actions.append(actionTile("repeat", "রিভিউ", `${due}টা কার্ডে হোঁচট খেয়েছিলে`, "#/review"));
   }
-  if (playedIds.length >= 2) {
+  if (playedIds.length >= 2 && !openKinds.has("mixed")) {
     actions.append(actionTile("shuffle", "মিক্সড ড্রিল", `${playedIds.length}টা সেট থেকে ১২ কার্ড`, "#/mixed"));
   }
   if (actions.children.length) {
@@ -153,11 +233,16 @@ async function renderHome() {
   ids.forEach((id) => {
     const set = byId.get(id);
     const rec = stats.sets[setKey(id)];
-    const cls = `settile${rec ? " done" : ""}${id === nextId ? " now" : ""}`;
+    const half = openBySet.get(id);
+    // A tile you are part-way through carries its own fill line, so the map shows
+    // at a glance which set is waiting mid-deck rather than merely unplayed.
+    const pct = half && half.total ? Math.round((sessionDone(half) / half.total) * 100) : 0;
+    const cls = `settile${rec ? " done" : ""}${!half && id === nextId ? " now" : ""}${half ? " part" : ""}`;
     grid.append(h("button", {
       class: cls, type: "button",
-      title: `${set.title_bn || ""} · ${set.world_bn || ""}`,
-      "aria-label": `সেট ${setKey(id)} — ${set.title_bn || ""}`,
+      style: half ? `--p:${pct}%` : null,
+      title: `${set.title_bn || ""} · ${set.world_bn || ""}${half ? ` · ${sessionDone(half)}/${half.total} কার্ড শেষ` : ""}`,
+      "aria-label": `সেট ${setKey(id)} — ${set.title_bn || ""}${half ? `, ${sessionDone(half)} / ${half.total} কার্ড শেষ` : ""}`,
       onclick: () => { location.hash = `#/set/${id}`; },
     }, ico(WORLD_ICON[set.world] || "frame", 17), h("span", { class: "n" }, setKey(id))));
   });
@@ -192,17 +277,30 @@ async function renderHome() {
 
 async function renderSet(id) {
   mount.replaceChildren(h("div", { class: "loading bn" }, "সেট লোড হচ্ছে…"));
-  let set;
-  try {
-    set = await fetchSet(id);
-  } catch {
-    mount.replaceChildren(topbar(), h("div", { class: "note bn" }, "এই সেটটা পাওয়া গেল না।"),
-      h("button", { class: "btn", type: "button", onclick: () => { location.hash = "#/"; } }, "হোমে ফেরো"));
-    return;
+
+  // A saved checkpoint wins: the same deck, the same order, the card you stopped on.
+  const key = sessionKey(id);
+  const saved = store.getProgressFor(key);
+  let set = null, resume = null;
+  if (saved) {
+    set = await rebuildSession(saved);
+    if (set) resume = saved;
+    else store.clearProgress(key);   // the set was rebuilt under the save
+  }
+
+  if (!set) {
+    try {
+      set = await fetchSet(id);
+    } catch {
+      mount.replaceChildren(topbar(), h("div", { class: "note bn" }, "এই সেটটা পাওয়া গেল না।"),
+        h("button", { class: "btn", type: "button", onclick: () => { location.hash = "#/"; } }, "হোমে ফেরো"));
+      return;
+    }
   }
   const host = h("div", {});
   mount.replaceChildren(host);
   playSet(host, set, {
+    resume,
     onExit: () => { location.hash = "#/"; },
     onFinish: () => { location.hash = "#/"; },
   });
@@ -211,20 +309,33 @@ async function renderSet(id) {
 /** Review and mixed drill are assembled on the fly rather than loaded from a file. */
 async function renderSession(kind) {
   mount.replaceChildren(h("div", { class: "loading bn" }, "তৈরি হচ্ছে…"));
-  let session = null;
-  try {
-    if (kind === "review") {
-      session = await buildReview();
-    } else {
-      if (!available.length) {
-        try { available = await fetchIndex(); } catch { available = []; }
+
+  // A half-played review or drill is resumed as-is rather than reassembled — the
+  // second half of a session should be the cards the first half promised.
+  const key = sessionKey(kind);
+  const saved = store.getProgressFor(key);
+  let session = null, resume = null;
+  if (saved) {
+    session = await rebuildSession(saved);
+    if (session) resume = saved;
+    else store.clearProgress(key);
+  }
+
+  if (!session) {
+    try {
+      if (kind === "review") {
+        session = await buildReview();
+      } else {
+        if (!available.length) {
+          try { available = await fetchIndex(); } catch { available = []; }
+        }
+        const stats = store.getStats();
+        const played = available.map((s) => s.set).filter((id) => stats.sets[setKey(id)]);
+        session = await buildMixed(played);
       }
-      const stats = store.getStats();
-      const played = available.map((s) => s.set).filter((id) => stats.sets[setKey(id)]);
-      session = await buildMixed(played);
+    } catch {
+      session = null;
     }
-  } catch {
-    session = null;
   }
 
   if (!session) {
@@ -239,6 +350,7 @@ async function renderSession(kind) {
   const host = h("div", {});
   mount.replaceChildren(host);
   playSet(host, session, {
+    resume,
     onExit: () => { location.hash = "#/"; },
     onFinish: () => { location.hash = "#/"; },
   });

@@ -124,7 +124,42 @@ export async function buildMixed(ids, limit = 12) {
   };
 }
 
-export function playSet(mount, set, { onExit, onFinish }) {
+/** One resume slot per playable thing: every set keeps its own, as do review and mixed. */
+export function sessionKey(setId) {
+  return typeof setId === "number" ? `set:${String(setId).padStart(3, "0")}` : String(setId);
+}
+
+/**
+ * Turns a saved checkpoint back into a playable set. The deck is rebuilt from the
+ * card ids that were actually dealt, in the order they were dealt, so resuming
+ * lands on the card you left rather than on a freshly shuffled stranger. It comes
+ * back as one pre-ordered "mixed" station, which playSet leaves untouched.
+ * Returns null if the content moved on under the save — then it is honest to restart.
+ */
+export async function rebuildSession(saved) {
+  if (!saved || !Array.isArray(saved.order) || !saved.order.length) return null;
+
+  const byId = new Map();
+  for (const sourceId of new Set(saved.order.map(([, s]) => s))) {
+    let content;
+    try { content = await fetchSet(sourceId); } catch { return null; }
+    (content.stations || []).forEach((st) => (st.items || []).forEach((it) => {
+      byId.set(it.id, { ...it, station: it.station || st.station, _set: sourceId });
+    }));
+  }
+
+  const items = saved.order.map(([id]) => byId.get(id));
+  if (items.some((it) => !it)) return null;   // a card was rewritten or dropped
+
+  return {
+    set: saved.setId,
+    title_bn: saved.title_bn || "",
+    finish_bn: saved.finish_bn || "",
+    stations: [{ station: "mixed", items }],
+  };
+}
+
+export function playSet(mount, set, { onExit, onFinish, resume = null }) {
   // Cards are shuffled inside their own station but never across stations: the
   // warm-up gradient — tap a verb first, talk for sixty seconds last — is the
   // reason a set is playable at all. A review or mixed session arrives as one
@@ -133,8 +168,42 @@ export function playSet(mount, set, { onExit, onFinish }) {
     const items = st.station === "mixed" ? (st.items || []) : shuffle(st.items || []);
     return items.map((it) => ({ ...it, station: it.station || st.station }));
   });
+  const key = sessionKey(set.set);
 
   let idx = 0, points = 0, reps = 0, hp = MAX_HP, combo = 0, bestCombo = 0, misses = 0;
+
+  // Picking up where you stopped. A card is checkpointed only once it is finished,
+  // so the worst a crash mid-card can cost is that one card's reps.
+  let resumedAt = 0;
+  if (resume && resume.idx > 0 && resume.idx <= cards.length) {
+    idx = resumedAt = resume.idx;
+    points = resume.points || 0;
+    reps = resume.reps || 0;
+    hp = Number.isFinite(resume.hp) ? resume.hp : MAX_HP;
+    combo = resume.combo || 0;
+    bestCombo = resume.bestCombo || 0;
+    misses = resume.misses || 0;
+  }
+
+  function checkpoint(nextIdx) {
+    if (nextIdx <= 0) return;
+    store.saveProgress(key, {
+      setId: set.set,
+      title_bn: set.title_bn || "",
+      finish_bn: set.finish_bn || "",
+      order: cards.map((c) => [c.id, c._set ?? set.set]),
+      total: cards.length,
+      idx: nextIdx,
+      points, reps, hp, combo, bestCombo, misses,
+    });
+  }
+
+  function restart() {
+    store.clearProgress(key);
+    idx = 0; points = 0; reps = 0; hp = MAX_HP; combo = 0; bestCombo = 0; misses = 0;
+    resumedAt = 0;
+    show();
+  }
 
   const dots = h("div", { class: "progressdots" },
     ...cards.map(() => h("span", { class: "pdot" })));
@@ -192,16 +261,27 @@ export function playSet(mount, set, { onExit, onFinish }) {
       if (advanced) return;
       advanced = true;
       store.clearMiss(item.id);
+      // The card is banked before the tap that leaves it, so walking away here
+      // and coming back tomorrow opens on the next card, not on this one again.
+      checkpoint(idx + 1);
       const next = h("button", { class: "btn", type: "button", onclick: () => { idx += 1; show(); } },
         idx === cards.length - 1 ? "ফলাফল দেখো" : "পরের কার্ড", ico("right", 16));
       stage.append(h("div", { style: "display:flex;justify-content:center;padding:8px 0 32px" }, next));
       next.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
-    stage.replaceChildren(node);
+
+    const note = idx === resumedAt && resumedAt > 0
+      ? h("div", { class: "resumenote" },
+          ico("repeat", 15, "ic"),
+          h("span", { class: "bn" }, `আগের জায়গা থেকে — কার্ড ${idx + 1} / ${cards.length}`),
+          h("button", { class: "restart bn", type: "button", onclick: restart }, "শুরু থেকে"))
+      : null;
+    stage.replaceChildren(...(note ? [note, node] : [node]));
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function finish() {
+    store.clearProgress(key);
     const accuracy = cards.length ? Math.round((1 - misses / (cards.length + misses)) * 100) : 100;
     const bonus = Math.round(hp / 4);
     points += bonus;
@@ -219,7 +299,7 @@ export function playSet(mount, set, { onExit, onFinish }) {
       misses ? h("p", { class: "note bn" }, `${misses}টা কার্ডে হোঁচট খেয়েছো — ওগুলো দুই দিন পর আবার ফিরে আসবে।`) : null,
       h("div", { style: "display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px" },
         h("button", { class: "btn", type: "button", onclick: () => { audio.stop(); onFinish(); } }, "হোমে ফেরো"),
-        h("button", { class: "btn ghost", type: "button", onclick: () => { idx = 0; points = 0; reps = 0; hp = MAX_HP; combo = 0; misses = 0; show(); } }, "আবার খেলো")
+        h("button", { class: "btn ghost", type: "button", onclick: restart }, "আবার খেলো")
       )
     ));
     [...dots.children].forEach((d) => { d.classList.add("done"); d.classList.remove("now"); });

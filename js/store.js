@@ -7,6 +7,7 @@ const K = {
   streak: NS + "streak",     // { current, longest, lastActiveISO, days: [] }
   settings: NS + "settings",
   mistakes: NS + "mistakes", // { itemId: { setId, misses, due, at } }
+  progress: NS + "progress", // { "set:003": { order, idx, points, … } } — where you stopped
 };
 
 const DEFAULTS = {
@@ -21,6 +22,7 @@ const DEFAULTS = {
     motion: "on",
   },
   [K.mistakes]: {},
+  [K.progress]: {},
 };
 
 function read(key) {
@@ -111,6 +113,45 @@ export function dueMistakes() {
     .map(([itemId, r]) => ({ itemId, ...r }));
 }
 
+/* --------------------------------------------------------------- resume */
+
+/**
+ * A set is fourteen cards and an evening rarely holds all of them. Every time a
+ * card is finished the player drops a checkpoint here — the exact deck it dealt,
+ * the card you were on, and the score so far — so closing the tab costs nothing.
+ * Each set keeps its own slot, as do the review and mixed sessions.
+ */
+const PROGRESS_TTL_DAYS = 45;
+
+export function getProgress() {
+  const all = read(K.progress);
+  const cutoff = Date.now() - PROGRESS_TTL_DAYS * 864e5;
+  const live = Object.fromEntries(
+    Object.entries(all).filter(([, p]) => p && Date.parse(p.at) > cutoff));
+  if (Object.keys(live).length !== Object.keys(all).length) write(K.progress, live);
+  return live;
+}
+
+export const getProgressFor = (key) => getProgress()[key] || null;
+
+export function saveProgress(key, session) {
+  const all = getProgress();
+  all[key] = { ...session, at: new Date().toISOString() };
+  return write(K.progress, all);
+}
+
+export function clearProgress(key) {
+  const all = getProgress();
+  if (all[key]) { delete all[key]; write(K.progress, all); }
+}
+
+/** Every unfinished session, the one you touched last on top. */
+export function openSessions() {
+  return Object.entries(getProgress())
+    .map(([key, p]) => ({ key, ...p }))
+    .sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
+}
+
 export function exportAll() {
   return {
     app: "replay",
@@ -120,6 +161,7 @@ export function exportAll() {
     streak: read(K.streak),
     settings: read(K.settings),
     mistakes: read(K.mistakes),
+    progress: read(K.progress),
   };
 }
 
@@ -129,6 +171,8 @@ export function importAll(data) {
   if (data.streak) write(K.streak, data.streak);
   if (data.settings) write(K.settings, data.settings);
   if (data.mistakes) write(K.mistakes, data.mistakes);
+  // Older backups predate resume and simply carry no half-finished sessions.
+  if (data.progress) write(K.progress, data.progress);
 }
 
 export function resetAll() {
