@@ -199,8 +199,10 @@ function repRow({ reps = 3, seconds = 6, label = "বলো", ctx, onDone }) {
   btn.addEventListener("click", () => (running ? endRep() : startRep()));
   paint();
 
+  // The tap target sits last — on the right, under the thumb. The DOM order matches
+  // the visual order so tabbing and reading still run left to right.
   return h("div", {},
-    h("div", { class: "repbar" }, btn, meta, pips),
+    h("div", { class: "repbar" }, meta, pips, btn),
     timer
   );
 }
@@ -320,7 +322,7 @@ function progressive(item, ctx, done, { reversed }) {
 
   const btn = h("button", { class: "speak", type: "button" }, ico("mic", 15), "বলো");
   const meta = h("span", { class: "repmeta" }, `ধাপ ১ / ${steps.length}`);
-  const foot = shell.layer(null, h("div", { class: "repbar" }, btn, meta));
+  const foot = shell.layer(null, h("div", { class: "repbar" }, meta, btn));
 
   function show(i) {
     rows[i].classList.remove("hidden");
@@ -396,7 +398,7 @@ function frameSwap(item, ctx, done) {
   const bnHost = shell.layer("অর্থ", h("div", {}));
   const btn = h("button", { class: "speak", type: "button" }, ico("mic", 15), "বলো");
   const meta = h("span", { class: "repmeta" });
-  shell.layer(null, h("div", { class: "repbar" }, btn, meta));
+  shell.layer(null, h("div", { class: "repbar" }, meta, btn));
 
   let karaoke = k;
   function paint() {
@@ -521,7 +523,7 @@ function boss(item, ctx, done) {
   let running = false, tid = null;
 
   shell.layer("৪ / ৩ / ২", h("div", { class: "rounds" }, ...roundEls), timer,
-    h("div", { class: "repbar", style: "margin-top:16px" }, btn, meta));
+    h("div", { class: "repbar", style: "margin-top:16px" }, meta, btn));
 
   btn.addEventListener("click", () => {
     if (!running) {
